@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class BargroupgapValidator(_plotly_utils.basevalidators.NumberValidator):
+class BargroupgapValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="bargroupgap", parent_name="layout", **kwargs):
         super(BargroupgapValidator, self).__init__(
             plotly_name=plotly_name,

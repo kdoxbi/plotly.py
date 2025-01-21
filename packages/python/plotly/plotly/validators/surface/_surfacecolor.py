@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SurfacecolorValidator(_plotly_utils.basevalidators.DataArrayValidator):
+class SurfacecolorValidator(_bv.DataArrayValidator):
     def __init__(self, plotly_name="surfacecolor", parent_name="surface", **kwargs):
         super(SurfacecolorValidator, self).__init__(
             plotly_name=plotly_name,

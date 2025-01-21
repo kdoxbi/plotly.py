@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SurfacecolorsrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class SurfacecolorsrcValidator(_bv.SrcValidator):
     def __init__(self, plotly_name="surfacecolorsrc", parent_name="surface", **kwargs):
         super(SurfacecolorsrcValidator, self).__init__(
             plotly_name=plotly_name,

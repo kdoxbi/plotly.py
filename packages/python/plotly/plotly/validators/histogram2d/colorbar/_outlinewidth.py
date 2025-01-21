@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class OutlinewidthValidator(_plotly_utils.basevalidators.NumberValidator):
+class OutlinewidthValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="outlinewidth", parent_name="histogram2d.colorbar", **kwargs
     ):

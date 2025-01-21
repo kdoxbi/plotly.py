@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class GeojsonValidator(_plotly_utils.basevalidators.AnyValidator):
+class GeojsonValidator(_bv.AnyValidator):
     def __init__(self, plotly_name="geojson", parent_name="choroplethmap", **kwargs):
         super(GeojsonValidator, self).__init__(
             plotly_name=plotly_name,

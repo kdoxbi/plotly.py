@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SizeValidator(_plotly_utils.basevalidators.NumberValidator):
+class SizeValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="size", parent_name="layout.slider.font", **kwargs):
         super(SizeValidator, self).__init__(
             plotly_name=plotly_name,

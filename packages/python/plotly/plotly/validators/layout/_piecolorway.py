@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class PiecolorwayValidator(_plotly_utils.basevalidators.ColorlistValidator):
+class PiecolorwayValidator(_bv.ColorlistValidator):
     def __init__(self, plotly_name="piecolorway", parent_name="layout", **kwargs):
         super(PiecolorwayValidator, self).__init__(
             plotly_name=plotly_name,

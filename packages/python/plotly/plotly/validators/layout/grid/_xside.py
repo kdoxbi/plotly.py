@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class XsideValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class XsideValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="xside", parent_name="layout.grid", **kwargs):
         super(XsideValidator, self).__init__(
             plotly_name=plotly_name,

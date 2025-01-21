@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class UsrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class UsrcValidator(_bv.SrcValidator):
     def __init__(self, plotly_name="usrc", parent_name="streamtube", **kwargs):
         super(UsrcValidator, self).__init__(
             plotly_name=plotly_name,

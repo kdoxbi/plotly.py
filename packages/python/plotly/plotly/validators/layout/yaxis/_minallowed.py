@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class MinallowedValidator(_plotly_utils.basevalidators.AnyValidator):
+class MinallowedValidator(_bv.AnyValidator):
     def __init__(self, plotly_name="minallowed", parent_name="layout.yaxis", **kwargs):
         super(MinallowedValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ConeValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
+class ConeValidator(_bv.CompoundArrayValidator):
     def __init__(
         self, plotly_name="cone", parent_name="layout.template.data", **kwargs
     ):

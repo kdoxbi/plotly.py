@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class MinsizeValidator(_plotly_utils.basevalidators.NumberValidator):
+class MinsizeValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="minsize", parent_name="layout.uniformtext", **kwargs
     ):

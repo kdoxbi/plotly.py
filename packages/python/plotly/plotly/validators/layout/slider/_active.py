@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ActiveValidator(_plotly_utils.basevalidators.NumberValidator):
+class ActiveValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="active", parent_name="layout.slider", **kwargs):
         super(ActiveValidator, self).__init__(
             plotly_name=plotly_name,

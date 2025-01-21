@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class PackingValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class PackingValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="packing", parent_name="treemap.tiling", **kwargs):
         super(PackingValidator, self).__init__(
             plotly_name=plotly_name,

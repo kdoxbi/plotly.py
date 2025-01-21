@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class AutoexpandValidator(_plotly_utils.basevalidators.BooleanValidator):
+class AutoexpandValidator(_bv.BooleanValidator):
     def __init__(self, plotly_name="autoexpand", parent_name="layout.margin", **kwargs):
         super(AutoexpandValidator, self).__init__(
             plotly_name=plotly_name,

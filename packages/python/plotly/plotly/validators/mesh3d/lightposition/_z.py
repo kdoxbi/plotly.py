@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ZValidator(_plotly_utils.basevalidators.NumberValidator):
+class ZValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="z", parent_name="mesh3d.lightposition", **kwargs):
         super(ZValidator, self).__init__(
             plotly_name=plotly_name,

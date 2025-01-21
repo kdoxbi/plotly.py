@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class DatarevisionValidator(_plotly_utils.basevalidators.AnyValidator):
+class DatarevisionValidator(_bv.AnyValidator):
     def __init__(self, plotly_name="datarevision", parent_name="layout", **kwargs):
         super(DatarevisionValidator, self).__init__(
             plotly_name=plotly_name,

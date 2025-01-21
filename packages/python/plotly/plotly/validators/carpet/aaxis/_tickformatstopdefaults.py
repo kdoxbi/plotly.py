@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TickformatstopdefaultsValidator(_plotly_utils.basevalidators.CompoundValidator):
+class TickformatstopdefaultsValidator(_bv.CompoundValidator):
     def __init__(
         self, plotly_name="tickformatstopdefaults", parent_name="carpet.aaxis", **kwargs
     ):

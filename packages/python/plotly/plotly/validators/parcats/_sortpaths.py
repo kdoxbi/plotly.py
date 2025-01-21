@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SortpathsValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class SortpathsValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="sortpaths", parent_name="parcats", **kwargs):
         super(SortpathsValidator, self).__init__(
             plotly_name=plotly_name,

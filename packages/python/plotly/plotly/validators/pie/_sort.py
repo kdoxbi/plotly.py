@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SortValidator(_plotly_utils.basevalidators.BooleanValidator):
+class SortValidator(_bv.BooleanValidator):
     def __init__(self, plotly_name="sort", parent_name="pie", **kwargs):
         super(SortValidator, self).__init__(
             plotly_name=plotly_name,

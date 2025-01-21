@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ColormodelValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class ColormodelValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="colormodel", parent_name="image", **kwargs):
         super(ColormodelValidator, self).__init__(
             plotly_name=plotly_name,

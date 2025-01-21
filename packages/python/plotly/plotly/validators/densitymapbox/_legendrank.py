@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class LegendrankValidator(_plotly_utils.basevalidators.NumberValidator):
+class LegendrankValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="legendrank", parent_name="densitymapbox", **kwargs):
         super(LegendrankValidator, self).__init__(
             plotly_name=plotly_name,

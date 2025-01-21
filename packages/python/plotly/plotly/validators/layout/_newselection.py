@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class NewselectionValidator(_plotly_utils.basevalidators.CompoundValidator):
+class NewselectionValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="newselection", parent_name="layout", **kwargs):
         super(NewselectionValidator, self).__init__(
             plotly_name=plotly_name,

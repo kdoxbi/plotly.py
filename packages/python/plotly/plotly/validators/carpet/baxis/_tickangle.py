@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TickangleValidator(_plotly_utils.basevalidators.AngleValidator):
+class TickangleValidator(_bv.AngleValidator):
     def __init__(self, plotly_name="tickangle", parent_name="carpet.baxis", **kwargs):
         super(TickangleValidator, self).__init__(
             plotly_name=plotly_name,

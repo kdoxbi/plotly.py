@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class AutobinxValidator(_plotly_utils.basevalidators.BooleanValidator):
+class AutobinxValidator(_bv.BooleanValidator):
     def __init__(self, plotly_name="autobinx", parent_name="histogram2d", **kwargs):
         super(AutobinxValidator, self).__init__(
             plotly_name=plotly_name,

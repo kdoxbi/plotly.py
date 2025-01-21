@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class MaxallowedValidator(_plotly_utils.basevalidators.AnyValidator):
+class MaxallowedValidator(_bv.AnyValidator):
     def __init__(
         self, plotly_name="maxallowed", parent_name="layout.scene.xaxis", **kwargs
     ):

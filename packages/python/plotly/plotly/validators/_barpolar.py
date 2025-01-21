@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class BarpolarValidator(_plotly_utils.basevalidators.CompoundValidator):
+class BarpolarValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="barpolar", parent_name="", **kwargs):
         super(BarpolarValidator, self).__init__(
             plotly_name=plotly_name,

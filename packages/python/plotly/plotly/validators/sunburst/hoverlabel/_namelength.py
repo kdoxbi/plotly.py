@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class NamelengthValidator(_plotly_utils.basevalidators.IntegerValidator):
+class NamelengthValidator(_bv.IntegerValidator):
     def __init__(
         self, plotly_name="namelength", parent_name="sunburst.hoverlabel", **kwargs
     ):

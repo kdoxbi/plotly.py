@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class StartValidator(_plotly_utils.basevalidators.NumberValidator):
+class StartValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="start", parent_name="scatter.fillgradient", **kwargs
     ):

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ShowticklabelsValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class ShowticklabelsValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="showticklabels", parent_name="carpet.baxis", **kwargs
     ):

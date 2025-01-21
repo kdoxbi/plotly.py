@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class WidthsrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class WidthsrcValidator(_bv.SrcValidator):
     def __init__(
         self, plotly_name="widthsrc", parent_name="scattergeo.marker.line", **kwargs
     ):

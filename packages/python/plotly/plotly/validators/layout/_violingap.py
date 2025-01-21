@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ViolingapValidator(_plotly_utils.basevalidators.NumberValidator):
+class ViolingapValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="violingap", parent_name="layout", **kwargs):
         super(ViolingapValidator, self).__init__(
             plotly_name=plotly_name,

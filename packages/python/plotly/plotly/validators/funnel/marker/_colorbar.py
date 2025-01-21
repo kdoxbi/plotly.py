@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ColorbarValidator(_plotly_utils.basevalidators.CompoundValidator):
+class ColorbarValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="colorbar", parent_name="funnel.marker", **kwargs):
         super(ColorbarValidator, self).__init__(
             plotly_name=plotly_name,

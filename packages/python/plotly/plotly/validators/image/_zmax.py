@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ZmaxValidator(_plotly_utils.basevalidators.InfoArrayValidator):
+class ZmaxValidator(_bv.InfoArrayValidator):
     def __init__(self, plotly_name="zmax", parent_name="image", **kwargs):
         super(ZmaxValidator, self).__init__(
             plotly_name=plotly_name,

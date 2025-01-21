@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class AutotypenumbersValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class AutotypenumbersValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="autotypenumbers", parent_name="carpet.aaxis", **kwargs
     ):

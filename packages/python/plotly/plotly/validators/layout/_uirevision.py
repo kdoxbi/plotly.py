@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class UirevisionValidator(_plotly_utils.basevalidators.AnyValidator):
+class UirevisionValidator(_bv.AnyValidator):
     def __init__(self, plotly_name="uirevision", parent_name="layout", **kwargs):
         super(UirevisionValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class Q1SrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class Q1SrcValidator(_bv.SrcValidator):
     def __init__(self, plotly_name="q1src", parent_name="box", **kwargs):
         super(Q1SrcValidator, self).__init__(
             plotly_name=plotly_name,

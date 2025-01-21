@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TexttemplateValidator(_plotly_utils.basevalidators.StringValidator):
+class TexttemplateValidator(_bv.StringValidator):
     def __init__(
         self, plotly_name="texttemplate", parent_name="scatterpolargl", **kwargs
     ):

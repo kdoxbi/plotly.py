@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class PadValidator(_plotly_utils.basevalidators.CompoundValidator):
+class PadValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="pad", parent_name="treemap.marker", **kwargs):
         super(PadValidator, self).__init__(
             plotly_name=plotly_name,

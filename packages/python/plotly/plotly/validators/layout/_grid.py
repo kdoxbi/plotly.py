@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class GridValidator(_plotly_utils.basevalidators.CompoundValidator):
+class GridValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="grid", parent_name="layout", **kwargs):
         super(GridValidator, self).__init__(
             plotly_name=plotly_name,

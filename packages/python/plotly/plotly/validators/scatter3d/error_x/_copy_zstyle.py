@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class Copy_ZstyleValidator(_plotly_utils.basevalidators.BooleanValidator):
+class Copy_ZstyleValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="copy_zstyle", parent_name="scatter3d.error_x", **kwargs
     ):

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CandlestickValidator(_plotly_utils.basevalidators.CompoundValidator):
+class CandlestickValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="candlestick", parent_name="", **kwargs):
         super(CandlestickValidator, self).__init__(
             plotly_name=plotly_name,

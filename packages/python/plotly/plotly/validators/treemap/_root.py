@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class RootValidator(_plotly_utils.basevalidators.CompoundValidator):
+class RootValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="root", parent_name="treemap", **kwargs):
         super(RootValidator, self).__init__(
             plotly_name=plotly_name,

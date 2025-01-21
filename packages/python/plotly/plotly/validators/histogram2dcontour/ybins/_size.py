@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SizeValidator(_plotly_utils.basevalidators.AnyValidator):
+class SizeValidator(_bv.AnyValidator):
     def __init__(
         self, plotly_name="size", parent_name="histogram2dcontour.ybins", **kwargs
     ):

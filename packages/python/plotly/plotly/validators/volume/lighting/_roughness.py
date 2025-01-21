@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class RoughnessValidator(_plotly_utils.basevalidators.NumberValidator):
+class RoughnessValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="roughness", parent_name="volume.lighting", **kwargs
     ):

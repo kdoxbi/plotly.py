@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class OrientationValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class OrientationValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="orientation", parent_name="cone.colorbar", **kwargs
     ):

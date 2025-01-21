@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class VisibleValidator(_plotly_utils.basevalidators.BooleanValidator):
+class VisibleValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="visible", parent_name="histogram.error_x", **kwargs
     ):

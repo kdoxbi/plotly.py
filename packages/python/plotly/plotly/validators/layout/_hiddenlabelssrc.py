@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class HiddenlabelssrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class HiddenlabelssrcValidator(_bv.SrcValidator):
     def __init__(self, plotly_name="hiddenlabelssrc", parent_name="layout", **kwargs):
         super(HiddenlabelssrcValidator, self).__init__(
             plotly_name=plotly_name,

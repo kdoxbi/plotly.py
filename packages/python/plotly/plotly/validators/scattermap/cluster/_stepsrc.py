@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class StepsrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class StepsrcValidator(_bv.SrcValidator):
     def __init__(
         self, plotly_name="stepsrc", parent_name="scattermap.cluster", **kwargs
     ):

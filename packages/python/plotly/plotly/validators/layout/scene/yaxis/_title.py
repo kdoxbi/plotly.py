@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TitleValidator(_plotly_utils.basevalidators.TitleValidator):
+class TitleValidator(_bv.TitleValidator):
     def __init__(self, plotly_name="title", parent_name="layout.scene.yaxis", **kwargs):
         super(TitleValidator, self).__init__(
             plotly_name=plotly_name,

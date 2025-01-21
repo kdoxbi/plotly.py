@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class XaxisValidator(_plotly_utils.basevalidators.SubplotidValidator):
+class XaxisValidator(_bv.SubplotidValidator):
     def __init__(self, plotly_name="xaxis", parent_name="histogram2dcontour", **kwargs):
         super(XaxisValidator, self).__init__(
             plotly_name=plotly_name,

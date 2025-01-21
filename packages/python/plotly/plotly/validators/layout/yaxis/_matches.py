@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class MatchesValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class MatchesValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="matches", parent_name="layout.yaxis", **kwargs):
         super(MatchesValidator, self).__init__(
             plotly_name=plotly_name,

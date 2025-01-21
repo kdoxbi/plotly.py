@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class WeightValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class WeightValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="weight", parent_name="scatterpolargl.textfont", **kwargs
     ):

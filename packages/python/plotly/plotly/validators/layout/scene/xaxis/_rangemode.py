@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class RangemodeValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class RangemodeValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="rangemode", parent_name="layout.scene.xaxis", **kwargs
     ):

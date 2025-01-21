@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class YanchorValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class YanchorValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="yanchor", parent_name="scatter3d.line.colorbar", **kwargs
     ):

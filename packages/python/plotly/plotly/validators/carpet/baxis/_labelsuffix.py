@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class LabelsuffixValidator(_plotly_utils.basevalidators.StringValidator):
+class LabelsuffixValidator(_bv.StringValidator):
     def __init__(self, plotly_name="labelsuffix", parent_name="carpet.baxis", **kwargs):
         super(LabelsuffixValidator, self).__init__(
             plotly_name=plotly_name,

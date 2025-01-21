@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class DtickValidator(_plotly_utils.basevalidators.AnyValidator):
+class DtickValidator(_bv.AnyValidator):
     def __init__(
         self, plotly_name="dtick", parent_name="icicle.marker.colorbar", **kwargs
     ):

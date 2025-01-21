@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ShowlinesValidator(_plotly_utils.basevalidators.BooleanValidator):
+class ShowlinesValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="showlines", parent_name="contour.contours", **kwargs
     ):

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class IcicleValidator(_plotly_utils.basevalidators.CompoundValidator):
+class IcicleValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="icicle", parent_name="", **kwargs):
         super(IcicleValidator, self).__init__(
             plotly_name=plotly_name,

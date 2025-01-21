@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CumulativeValidator(_plotly_utils.basevalidators.CompoundValidator):
+class CumulativeValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="cumulative", parent_name="histogram", **kwargs):
         super(CumulativeValidator, self).__init__(
             plotly_name=plotly_name,

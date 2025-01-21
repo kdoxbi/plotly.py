@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class HeatmapValidator(_plotly_utils.basevalidators.CompoundValidator):
+class HeatmapValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="heatmap", parent_name="", **kwargs):
         super(HeatmapValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SourceValidator(_plotly_utils.basevalidators.DataArrayValidator):
+class SourceValidator(_bv.DataArrayValidator):
     def __init__(self, plotly_name="source", parent_name="sankey.link", **kwargs):
         super(SourceValidator, self).__init__(
             plotly_name=plotly_name,

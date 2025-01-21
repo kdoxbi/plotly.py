@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TracerefValidator(_plotly_utils.basevalidators.IntegerValidator):
+class TracerefValidator(_bv.IntegerValidator):
     def __init__(self, plotly_name="traceref", parent_name="scatter.error_x", **kwargs):
         super(TracerefValidator, self).__init__(
             plotly_name=plotly_name,

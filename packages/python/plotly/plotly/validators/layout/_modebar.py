@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ModebarValidator(_plotly_utils.basevalidators.CompoundValidator):
+class ModebarValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="modebar", parent_name="layout", **kwargs):
         super(ModebarValidator, self).__init__(
             plotly_name=plotly_name,

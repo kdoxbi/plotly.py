@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class PointsValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class PointsValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="points", parent_name="violin", **kwargs):
         super(PointsValidator, self).__init__(
             plotly_name=plotly_name,

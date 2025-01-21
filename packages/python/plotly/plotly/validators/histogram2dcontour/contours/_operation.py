@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class OperationValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class OperationValidator(_bv.EnumeratedValidator):
     def __init__(
         self,
         plotly_name="operation",

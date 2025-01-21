@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class StreamValidator(_plotly_utils.basevalidators.CompoundValidator):
+class StreamValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="stream", parent_name="heatmap", **kwargs):
         super(StreamValidator, self).__init__(
             plotly_name=plotly_name,

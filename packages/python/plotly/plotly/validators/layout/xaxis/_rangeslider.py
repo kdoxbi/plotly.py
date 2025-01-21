@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class RangesliderValidator(_plotly_utils.basevalidators.CompoundValidator):
+class RangesliderValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="rangeslider", parent_name="layout.xaxis", **kwargs):
         super(RangesliderValidator, self).__init__(
             plotly_name=plotly_name,

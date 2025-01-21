@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class PlacementValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class PlacementValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="placement", parent_name="layout.map.layer.symbol", **kwargs
     ):

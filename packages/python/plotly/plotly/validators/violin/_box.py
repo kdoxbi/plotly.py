@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class BoxValidator(_plotly_utils.basevalidators.CompoundValidator):
+class BoxValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="box", parent_name="violin", **kwargs):
         super(BoxValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class LabelssrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class LabelssrcValidator(_bv.SrcValidator):
     def __init__(self, plotly_name="labelssrc", parent_name="funnelarea", **kwargs):
         super(LabelssrcValidator, self).__init__(
             plotly_name=plotly_name,

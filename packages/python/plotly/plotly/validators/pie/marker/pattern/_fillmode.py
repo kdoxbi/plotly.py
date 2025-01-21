@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class FillmodeValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class FillmodeValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="fillmode", parent_name="pie.marker.pattern", **kwargs
     ):

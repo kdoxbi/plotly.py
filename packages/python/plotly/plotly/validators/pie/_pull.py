@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class PullValidator(_plotly_utils.basevalidators.NumberValidator):
+class PullValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="pull", parent_name="pie", **kwargs):
         super(PullValidator, self).__init__(
             plotly_name=plotly_name,

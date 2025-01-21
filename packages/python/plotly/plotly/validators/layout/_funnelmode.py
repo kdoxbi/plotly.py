@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class FunnelmodeValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class FunnelmodeValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="funnelmode", parent_name="layout", **kwargs):
         super(FunnelmodeValidator, self).__init__(
             plotly_name=plotly_name,

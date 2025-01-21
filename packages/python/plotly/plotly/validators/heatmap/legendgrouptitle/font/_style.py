@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class StyleValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class StyleValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="style", parent_name="heatmap.legendgrouptitle.font", **kwargs
     ):

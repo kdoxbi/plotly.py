@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ItemdoubleclickValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class ItemdoubleclickValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="itemdoubleclick", parent_name="layout.legend", **kwargs
     ):

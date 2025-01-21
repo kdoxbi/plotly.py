@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class GridshapeValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class GridshapeValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="gridshape", parent_name="layout.polar", **kwargs):
         super(GridshapeValidator, self).__init__(
             plotly_name=plotly_name,

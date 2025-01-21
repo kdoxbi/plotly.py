@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class BsrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class BsrcValidator(_bv.SrcValidator):
     def __init__(self, plotly_name="bsrc", parent_name="contourcarpet", **kwargs):
         super(BsrcValidator, self).__init__(
             plotly_name=plotly_name,

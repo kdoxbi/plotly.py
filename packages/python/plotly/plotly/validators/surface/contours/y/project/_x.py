@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class XValidator(_plotly_utils.basevalidators.BooleanValidator):
+class XValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="x", parent_name="surface.contours.y.project", **kwargs
     ):

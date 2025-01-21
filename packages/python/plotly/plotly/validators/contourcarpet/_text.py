@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TextValidator(_plotly_utils.basevalidators.DataArrayValidator):
+class TextValidator(_bv.DataArrayValidator):
     def __init__(self, plotly_name="text", parent_name="contourcarpet", **kwargs):
         super(TextValidator, self).__init__(
             plotly_name=plotly_name,

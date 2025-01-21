@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SpikedashValidator(_plotly_utils.basevalidators.DashValidator):
+class SpikedashValidator(_bv.DashValidator):
     def __init__(self, plotly_name="spikedash", parent_name="layout.yaxis", **kwargs):
         super(SpikedashValidator, self).__init__(
             plotly_name=plotly_name,

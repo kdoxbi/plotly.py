@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class HeaderValidator(_plotly_utils.basevalidators.CompoundValidator):
+class HeaderValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="header", parent_name="table", **kwargs):
         super(HeaderValidator, self).__init__(
             plotly_name=plotly_name,

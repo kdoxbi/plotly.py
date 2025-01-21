@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class DividerwidthValidator(_plotly_utils.basevalidators.NumberValidator):
+class DividerwidthValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="dividerwidth", parent_name="layout.xaxis", **kwargs
     ):

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class XtypeValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class XtypeValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="xtype", parent_name="heatmap", **kwargs):
         super(XtypeValidator, self).__init__(
             plotly_name=plotly_name,

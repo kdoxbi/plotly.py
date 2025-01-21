@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class BackoffValidator(_plotly_utils.basevalidators.NumberValidator):
+class BackoffValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="backoff", parent_name="scatter.line", **kwargs):
         super(BackoffValidator, self).__init__(
             plotly_name=plotly_name,

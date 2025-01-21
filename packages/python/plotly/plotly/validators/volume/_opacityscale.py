@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class OpacityscaleValidator(_plotly_utils.basevalidators.AnyValidator):
+class OpacityscaleValidator(_bv.AnyValidator):
     def __init__(self, plotly_name="opacityscale", parent_name="volume", **kwargs):
         super(OpacityscaleValidator, self).__init__(
             plotly_name=plotly_name,

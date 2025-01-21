@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TextcaseValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class TextcaseValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="textcase", parent_name="layout.updatemenu.font", **kwargs
     ):

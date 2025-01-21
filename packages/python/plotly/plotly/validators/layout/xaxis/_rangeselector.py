@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class RangeselectorValidator(_plotly_utils.basevalidators.CompoundValidator):
+class RangeselectorValidator(_bv.CompoundValidator):
     def __init__(
         self, plotly_name="rangeselector", parent_name="layout.xaxis", **kwargs
     ):

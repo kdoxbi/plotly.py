@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class DragmodeValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class DragmodeValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="dragmode", parent_name="layout.scene", **kwargs):
         super(DragmodeValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class OutlinecolorValidator(_plotly_utils.basevalidators.ColorValidator):
+class OutlinecolorValidator(_bv.ColorValidator):
     def __init__(
         self, plotly_name="outlinecolor", parent_name="choroplethmap.colorbar", **kwargs
     ):

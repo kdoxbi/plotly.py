@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ButtonsValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
+class ButtonsValidator(_bv.CompoundArrayValidator):
     def __init__(
         self, plotly_name="buttons", parent_name="layout.updatemenu", **kwargs
     ):

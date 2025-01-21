@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SankeyValidator(_plotly_utils.basevalidators.CompoundValidator):
+class SankeyValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="sankey", parent_name="", **kwargs):
         super(SankeyValidator, self).__init__(
             plotly_name=plotly_name,

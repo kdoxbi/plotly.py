@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class LowerfencesrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class LowerfencesrcValidator(_bv.SrcValidator):
     def __init__(self, plotly_name="lowerfencesrc", parent_name="box", **kwargs):
         super(LowerfencesrcValidator, self).__init__(
             plotly_name=plotly_name,

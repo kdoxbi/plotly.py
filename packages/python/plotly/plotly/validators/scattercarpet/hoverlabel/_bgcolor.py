@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class BgcolorValidator(_plotly_utils.basevalidators.ColorValidator):
+class BgcolorValidator(_bv.ColorValidator):
     def __init__(
         self, plotly_name="bgcolor", parent_name="scattercarpet.hoverlabel", **kwargs
     ):

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class NotchspansrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class NotchspansrcValidator(_bv.SrcValidator):
     def __init__(self, plotly_name="notchspansrc", parent_name="box", **kwargs):
         super(NotchspansrcValidator, self).__init__(
             plotly_name=plotly_name,

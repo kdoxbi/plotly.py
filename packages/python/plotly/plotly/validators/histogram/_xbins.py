@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class XbinsValidator(_plotly_utils.basevalidators.CompoundValidator):
+class XbinsValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="xbins", parent_name="histogram", **kwargs):
         super(XbinsValidator, self).__init__(
             plotly_name=plotly_name,

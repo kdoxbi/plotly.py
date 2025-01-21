@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ExponentformatValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class ExponentformatValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="exponentformat", parent_name="choropleth.colorbar", **kwargs
     ):

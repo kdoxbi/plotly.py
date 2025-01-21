@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class StepsValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
+class StepsValidator(_bv.CompoundArrayValidator):
     def __init__(self, plotly_name="steps", parent_name="indicator.gauge", **kwargs):
         super(StepsValidator, self).__init__(
             plotly_name=plotly_name,

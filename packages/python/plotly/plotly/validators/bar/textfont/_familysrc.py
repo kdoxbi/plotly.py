@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class FamilysrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class FamilysrcValidator(_bv.SrcValidator):
     def __init__(self, plotly_name="familysrc", parent_name="bar.textfont", **kwargs):
         super(FamilysrcValidator, self).__init__(
             plotly_name=plotly_name,

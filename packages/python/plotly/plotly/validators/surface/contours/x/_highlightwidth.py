@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class HighlightwidthValidator(_plotly_utils.basevalidators.NumberValidator):
+class HighlightwidthValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="highlightwidth", parent_name="surface.contours.x", **kwargs
     ):

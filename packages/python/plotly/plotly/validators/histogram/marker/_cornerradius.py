@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CornerradiusValidator(_plotly_utils.basevalidators.AnyValidator):
+class CornerradiusValidator(_bv.AnyValidator):
     def __init__(
         self, plotly_name="cornerradius", parent_name="histogram.marker", **kwargs
     ):

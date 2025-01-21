@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ShowValidator(_plotly_utils.basevalidators.BooleanValidator):
+class ShowValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="show", parent_name="scatter3d.projection.y", **kwargs
     ):

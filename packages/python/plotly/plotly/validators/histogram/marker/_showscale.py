@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ShowscaleValidator(_plotly_utils.basevalidators.BooleanValidator):
+class ShowscaleValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="showscale", parent_name="histogram.marker", **kwargs
     ):

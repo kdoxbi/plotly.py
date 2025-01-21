@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class FlipValidator(_plotly_utils.basevalidators.FlaglistValidator):
+class FlipValidator(_bv.FlaglistValidator):
     def __init__(self, plotly_name="flip", parent_name="icicle.tiling", **kwargs):
         super(FlipValidator, self).__init__(
             plotly_name=plotly_name,

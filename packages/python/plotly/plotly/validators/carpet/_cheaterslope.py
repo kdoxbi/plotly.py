@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CheaterslopeValidator(_plotly_utils.basevalidators.NumberValidator):
+class CheaterslopeValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="cheaterslope", parent_name="carpet", **kwargs):
         super(CheaterslopeValidator, self).__init__(
             plotly_name=plotly_name,

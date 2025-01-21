@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class HoleValidator(_plotly_utils.basevalidators.NumberValidator):
+class HoleValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="hole", parent_name="layout.polar", **kwargs):
         super(HoleValidator, self).__init__(
             plotly_name=plotly_name,

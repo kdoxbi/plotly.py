@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ZerolinecolorValidator(_plotly_utils.basevalidators.ColorValidator):
+class ZerolinecolorValidator(_bv.ColorValidator):
     def __init__(
         self, plotly_name="zerolinecolor", parent_name="layout.scene.xaxis", **kwargs
     ):

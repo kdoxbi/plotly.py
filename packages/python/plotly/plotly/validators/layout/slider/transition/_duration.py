@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class DurationValidator(_plotly_utils.basevalidators.NumberValidator):
+class DurationValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="duration", parent_name="layout.slider.transition", **kwargs
     ):

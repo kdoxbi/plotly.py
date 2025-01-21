@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class FramecolorValidator(_plotly_utils.basevalidators.ColorValidator):
+class FramecolorValidator(_bv.ColorValidator):
     def __init__(self, plotly_name="framecolor", parent_name="layout.geo", **kwargs):
         super(FramecolorValidator, self).__init__(
             plotly_name=plotly_name,

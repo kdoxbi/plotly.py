@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class FramewidthValidator(_plotly_utils.basevalidators.NumberValidator):
+class FramewidthValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="framewidth", parent_name="layout.geo", **kwargs):
         super(FramewidthValidator, self).__init__(
             plotly_name=plotly_name,

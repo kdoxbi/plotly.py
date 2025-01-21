@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class YclickValidator(_plotly_utils.basevalidators.AnyValidator):
+class YclickValidator(_bv.AnyValidator):
     def __init__(self, plotly_name="yclick", parent_name="layout.annotation", **kwargs):
         super(YclickValidator, self).__init__(
             plotly_name=plotly_name,

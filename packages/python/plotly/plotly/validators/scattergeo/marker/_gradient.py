@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class GradientValidator(_plotly_utils.basevalidators.CompoundValidator):
+class GradientValidator(_bv.CompoundValidator):
     def __init__(
         self, plotly_name="gradient", parent_name="scattergeo.marker", **kwargs
     ):

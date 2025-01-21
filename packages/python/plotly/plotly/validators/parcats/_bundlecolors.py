@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class BundlecolorsValidator(_plotly_utils.basevalidators.BooleanValidator):
+class BundlecolorsValidator(_bv.BooleanValidator):
     def __init__(self, plotly_name="bundlecolors", parent_name="parcats", **kwargs):
         super(BundlecolorsValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class StepmodeValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class StepmodeValidator(_bv.EnumeratedValidator):
     def __init__(
         self,
         plotly_name="stepmode",

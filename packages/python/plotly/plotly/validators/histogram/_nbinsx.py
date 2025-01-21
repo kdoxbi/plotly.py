@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class NbinsxValidator(_plotly_utils.basevalidators.IntegerValidator):
+class NbinsxValidator(_bv.IntegerValidator):
     def __init__(self, plotly_name="nbinsx", parent_name="histogram", **kwargs):
         super(NbinsxValidator, self).__init__(
             plotly_name=plotly_name,

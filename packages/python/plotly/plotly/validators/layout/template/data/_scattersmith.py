@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ScattersmithValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
+class ScattersmithValidator(_bv.CompoundArrayValidator):
     def __init__(
         self, plotly_name="scattersmith", parent_name="layout.template.data", **kwargs
     ):

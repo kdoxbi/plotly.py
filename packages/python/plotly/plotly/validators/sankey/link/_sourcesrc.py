@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SourcesrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class SourcesrcValidator(_bv.SrcValidator):
     def __init__(self, plotly_name="sourcesrc", parent_name="sankey.link", **kwargs):
         super(SourcesrcValidator, self).__init__(
             plotly_name=plotly_name,

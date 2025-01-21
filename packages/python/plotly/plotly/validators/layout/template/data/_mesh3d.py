@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class Mesh3DValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
+class Mesh3DValidator(_bv.CompoundArrayValidator):
     def __init__(
         self, plotly_name="mesh3d", parent_name="layout.template.data", **kwargs
     ):

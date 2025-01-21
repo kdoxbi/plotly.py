@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TokenValidator(_plotly_utils.basevalidators.StringValidator):
+class TokenValidator(_bv.StringValidator):
     def __init__(
         self, plotly_name="token", parent_name="histogram2dcontour.stream", **kwargs
     ):

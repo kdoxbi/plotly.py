@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class OhlcValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
+class OhlcValidator(_bv.CompoundArrayValidator):
     def __init__(
         self, plotly_name="ohlc", parent_name="layout.template.data", **kwargs
     ):

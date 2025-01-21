@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class StreamtubeValidator(_plotly_utils.basevalidators.CompoundValidator):
+class StreamtubeValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="streamtube", parent_name="", **kwargs):
         super(StreamtubeValidator, self).__init__(
             plotly_name=plotly_name,

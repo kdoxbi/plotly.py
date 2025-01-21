@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class MeasureValidator(_plotly_utils.basevalidators.DataArrayValidator):
+class MeasureValidator(_bv.DataArrayValidator):
     def __init__(self, plotly_name="measure", parent_name="waterfall", **kwargs):
         super(MeasureValidator, self).__init__(
             plotly_name=plotly_name,

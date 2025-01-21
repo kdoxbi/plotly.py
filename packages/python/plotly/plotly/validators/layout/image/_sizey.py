@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SizeyValidator(_plotly_utils.basevalidators.NumberValidator):
+class SizeyValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="sizey", parent_name="layout.image", **kwargs):
         super(SizeyValidator, self).__init__(
             plotly_name=plotly_name,

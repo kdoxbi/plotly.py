@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class UnselectedValidator(_plotly_utils.basevalidators.CompoundValidator):
+class UnselectedValidator(_bv.CompoundValidator):
     def __init__(
         self, plotly_name="unselected", parent_name="scatterternary", **kwargs
     ):

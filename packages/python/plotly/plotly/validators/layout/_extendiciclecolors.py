@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ExtendiciclecolorsValidator(_plotly_utils.basevalidators.BooleanValidator):
+class ExtendiciclecolorsValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="extendiciclecolors", parent_name="layout", **kwargs
     ):

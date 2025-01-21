@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SequentialValidator(_plotly_utils.basevalidators.ColorscaleValidator):
+class SequentialValidator(_bv.ColorscaleValidator):
     def __init__(
         self, plotly_name="sequential", parent_name="layout.colorscale", **kwargs
     ):

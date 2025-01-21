@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class UpperfencesrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class UpperfencesrcValidator(_bv.SrcValidator):
     def __init__(self, plotly_name="upperfencesrc", parent_name="box", **kwargs):
         super(UpperfencesrcValidator, self).__init__(
             plotly_name=plotly_name,

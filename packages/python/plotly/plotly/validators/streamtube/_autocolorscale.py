@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class AutocolorscaleValidator(_plotly_utils.basevalidators.BooleanValidator):
+class AutocolorscaleValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="autocolorscale", parent_name="streamtube", **kwargs
     ):

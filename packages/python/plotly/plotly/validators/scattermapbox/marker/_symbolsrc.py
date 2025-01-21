@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SymbolsrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class SymbolsrcValidator(_bv.SrcValidator):
     def __init__(
         self, plotly_name="symbolsrc", parent_name="scattermapbox.marker", **kwargs
     ):

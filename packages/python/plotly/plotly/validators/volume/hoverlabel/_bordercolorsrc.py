@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class BordercolorsrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class BordercolorsrcValidator(_bv.SrcValidator):
     def __init__(
         self, plotly_name="bordercolorsrc", parent_name="volume.hoverlabel", **kwargs
     ):

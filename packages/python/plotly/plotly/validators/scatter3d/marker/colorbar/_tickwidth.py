@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TickwidthValidator(_plotly_utils.basevalidators.NumberValidator):
+class TickwidthValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="tickwidth", parent_name="scatter3d.marker.colorbar", **kwargs
     ):

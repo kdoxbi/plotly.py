@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class XhoverformatValidator(_plotly_utils.basevalidators.StringValidator):
+class XhoverformatValidator(_bv.StringValidator):
     def __init__(self, plotly_name="xhoverformat", parent_name="splom", **kwargs):
         super(XhoverformatValidator, self).__init__(
             plotly_name=plotly_name,

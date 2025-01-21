@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CustomdataValidator(_plotly_utils.basevalidators.DataArrayValidator):
+class CustomdataValidator(_bv.DataArrayValidator):
     def __init__(
         self, plotly_name="customdata", parent_name="histogram2dcontour", **kwargs
     ):

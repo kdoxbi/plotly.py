@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ShowactiveValidator(_plotly_utils.basevalidators.BooleanValidator):
+class ShowactiveValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="showactive", parent_name="layout.updatemenu", **kwargs
     ):

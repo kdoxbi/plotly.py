@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class HovertemplatesrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class HovertemplatesrcValidator(_bv.SrcValidator):
     def __init__(
         self, plotly_name="hovertemplatesrc", parent_name="densitymapbox", **kwargs
     ):

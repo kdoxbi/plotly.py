@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class NotchwidthValidator(_plotly_utils.basevalidators.NumberValidator):
+class NotchwidthValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="notchwidth", parent_name="box", **kwargs):
         super(NotchwidthValidator, self).__init__(
             plotly_name=plotly_name,

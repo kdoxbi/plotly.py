@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class UpValidator(_plotly_utils.basevalidators.CompoundValidator):
+class UpValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="up", parent_name="layout.scene.camera", **kwargs):
         super(UpValidator, self).__init__(
             plotly_name=plotly_name,

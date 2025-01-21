@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class XaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
+class XaxisValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="xaxis", parent_name="layout", **kwargs):
         super(XaxisValidator, self).__init__(
             plotly_name=plotly_name,

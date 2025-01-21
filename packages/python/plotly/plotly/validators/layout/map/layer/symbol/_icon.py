@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class IconValidator(_plotly_utils.basevalidators.StringValidator):
+class IconValidator(_bv.StringValidator):
     def __init__(
         self, plotly_name="icon", parent_name="layout.map.layer.symbol", **kwargs
     ):

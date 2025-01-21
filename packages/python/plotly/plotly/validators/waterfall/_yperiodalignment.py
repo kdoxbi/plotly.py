@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class YperiodalignmentValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class YperiodalignmentValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="yperiodalignment", parent_name="waterfall", **kwargs
     ):

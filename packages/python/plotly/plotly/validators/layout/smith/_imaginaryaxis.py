@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ImaginaryaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
+class ImaginaryaxisValidator(_bv.CompoundValidator):
     def __init__(
         self, plotly_name="imaginaryaxis", parent_name="layout.smith", **kwargs
     ):

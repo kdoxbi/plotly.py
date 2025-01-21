@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CountValidator(_plotly_utils.basevalidators.NumberValidator):
+class CountValidator(_bv.NumberValidator):
     def __init__(
         self,
         plotly_name="count",

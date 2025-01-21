@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class DensitymapboxValidator(_plotly_utils.basevalidators.CompoundValidator):
+class DensitymapboxValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="densitymapbox", parent_name="", **kwargs):
         super(DensitymapboxValidator, self).__init__(
             plotly_name=plotly_name,

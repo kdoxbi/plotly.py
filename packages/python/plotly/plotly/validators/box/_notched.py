@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class NotchedValidator(_plotly_utils.basevalidators.BooleanValidator):
+class NotchedValidator(_bv.BooleanValidator):
     def __init__(self, plotly_name="notched", parent_name="box", **kwargs):
         super(NotchedValidator, self).__init__(
             plotly_name=plotly_name,

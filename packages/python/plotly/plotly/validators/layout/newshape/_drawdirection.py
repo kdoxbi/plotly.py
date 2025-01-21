@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class DrawdirectionValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class DrawdirectionValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="drawdirection", parent_name="layout.newshape", **kwargs
     ):

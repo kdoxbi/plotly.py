@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SpikemodeValidator(_plotly_utils.basevalidators.FlaglistValidator):
+class SpikemodeValidator(_bv.FlaglistValidator):
     def __init__(self, plotly_name="spikemode", parent_name="layout.yaxis", **kwargs):
         super(SpikemodeValidator, self).__init__(
             plotly_name=plotly_name,

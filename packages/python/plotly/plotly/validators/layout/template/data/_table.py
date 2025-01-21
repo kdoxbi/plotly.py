@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TableValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
+class TableValidator(_bv.CompoundArrayValidator):
     def __init__(
         self, plotly_name="table", parent_name="layout.template.data", **kwargs
     ):

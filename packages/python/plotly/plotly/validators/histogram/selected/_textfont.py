@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TextfontValidator(_plotly_utils.basevalidators.CompoundValidator):
+class TextfontValidator(_bv.CompoundValidator):
     def __init__(
         self, plotly_name="textfont", parent_name="histogram.selected", **kwargs
     ):

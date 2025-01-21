@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CircleValidator(_plotly_utils.basevalidators.CompoundValidator):
+class CircleValidator(_bv.CompoundValidator):
     def __init__(
         self, plotly_name="circle", parent_name="layout.mapbox.layer", **kwargs
     ):

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class BaseratioValidator(_plotly_utils.basevalidators.NumberValidator):
+class BaseratioValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="baseratio", parent_name="funnelarea", **kwargs):
         super(BaseratioValidator, self).__init__(
             plotly_name=plotly_name,

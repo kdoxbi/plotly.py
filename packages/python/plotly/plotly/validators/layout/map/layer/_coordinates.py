@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CoordinatesValidator(_plotly_utils.basevalidators.AnyValidator):
+class CoordinatesValidator(_bv.AnyValidator):
     def __init__(
         self, plotly_name="coordinates", parent_name="layout.map.layer", **kwargs
     ):

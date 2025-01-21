@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class LocationmodeValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class LocationmodeValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="locationmode", parent_name="choropleth", **kwargs):
         super(LocationmodeValidator, self).__init__(
             plotly_name=plotly_name,

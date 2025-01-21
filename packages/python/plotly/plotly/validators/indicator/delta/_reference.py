@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ReferenceValidator(_plotly_utils.basevalidators.NumberValidator):
+class ReferenceValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="reference", parent_name="indicator.delta", **kwargs
     ):

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ArrowheadValidator(_plotly_utils.basevalidators.IntegerValidator):
+class ArrowheadValidator(_bv.IntegerValidator):
     def __init__(
         self, plotly_name="arrowhead", parent_name="layout.scene.annotation", **kwargs
     ):

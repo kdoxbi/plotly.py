@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class VertexnormalsepsilonValidator(_plotly_utils.basevalidators.NumberValidator):
+class VertexnormalsepsilonValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="vertexnormalsepsilon", parent_name="cone.lighting", **kwargs
     ):

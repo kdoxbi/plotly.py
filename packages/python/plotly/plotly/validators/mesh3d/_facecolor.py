@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class FacecolorValidator(_plotly_utils.basevalidators.DataArrayValidator):
+class FacecolorValidator(_bv.DataArrayValidator):
     def __init__(self, plotly_name="facecolor", parent_name="mesh3d", **kwargs):
         super(FacecolorValidator, self).__init__(
             plotly_name=plotly_name,

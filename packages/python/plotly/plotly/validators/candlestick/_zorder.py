@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ZorderValidator(_plotly_utils.basevalidators.IntegerValidator):
+class ZorderValidator(_bv.IntegerValidator):
     def __init__(self, plotly_name="zorder", parent_name="candlestick", **kwargs):
         super(ZorderValidator, self).__init__(
             plotly_name=plotly_name,

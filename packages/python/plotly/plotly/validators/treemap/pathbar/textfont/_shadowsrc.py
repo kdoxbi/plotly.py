@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ShadowsrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class ShadowsrcValidator(_bv.SrcValidator):
     def __init__(
         self, plotly_name="shadowsrc", parent_name="treemap.pathbar.textfont", **kwargs
     ):

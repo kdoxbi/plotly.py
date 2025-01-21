@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class WeightsrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class WeightsrcValidator(_bv.SrcValidator):
     def __init__(
         self, plotly_name="weightsrc", parent_name="treemap.insidetextfont", **kwargs
     ):

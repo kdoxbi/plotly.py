@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class BranchvaluesValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class BranchvaluesValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="branchvalues", parent_name="sunburst", **kwargs):
         super(BranchvaluesValidator, self).__init__(
             plotly_name=plotly_name,

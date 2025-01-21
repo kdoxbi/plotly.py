@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class MinzoomValidator(_plotly_utils.basevalidators.NumberValidator):
+class MinzoomValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="minzoom", parent_name="layout.map.layer", **kwargs):
         super(MinzoomValidator, self).__init__(
             plotly_name=plotly_name,

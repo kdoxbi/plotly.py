@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ShowtickprefixValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class ShowtickprefixValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="showtickprefix", parent_name="histogram2d.colorbar", **kwargs
     ):

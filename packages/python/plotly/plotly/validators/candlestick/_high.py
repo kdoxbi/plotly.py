@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class HighValidator(_plotly_utils.basevalidators.DataArrayValidator):
+class HighValidator(_bv.DataArrayValidator):
     def __init__(self, plotly_name="high", parent_name="candlestick", **kwargs):
         super(HighValidator, self).__init__(
             plotly_name=plotly_name,

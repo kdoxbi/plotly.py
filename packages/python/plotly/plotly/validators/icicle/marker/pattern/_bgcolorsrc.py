@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class BgcolorsrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class BgcolorsrcValidator(_bv.SrcValidator):
     def __init__(
         self, plotly_name="bgcolorsrc", parent_name="icicle.marker.pattern", **kwargs
     ):

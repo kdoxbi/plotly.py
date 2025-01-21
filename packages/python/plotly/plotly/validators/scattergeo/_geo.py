@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class GeoValidator(_plotly_utils.basevalidators.SubplotidValidator):
+class GeoValidator(_bv.SubplotidValidator):
     def __init__(self, plotly_name="geo", parent_name="scattergeo", **kwargs):
         super(GeoValidator, self).__init__(
             plotly_name=plotly_name,

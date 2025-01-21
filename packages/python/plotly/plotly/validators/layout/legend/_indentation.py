@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class IndentationValidator(_plotly_utils.basevalidators.NumberValidator):
+class IndentationValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="indentation", parent_name="layout.legend", **kwargs
     ):

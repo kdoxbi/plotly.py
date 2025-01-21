@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class StandoffValidator(_plotly_utils.basevalidators.NumberValidator):
+class StandoffValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="standoff", parent_name="layout.xaxis.title", **kwargs
     ):

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class BackgroundcolorValidator(_plotly_utils.basevalidators.ColorValidator):
+class BackgroundcolorValidator(_bv.ColorValidator):
     def __init__(
         self, plotly_name="backgroundcolor", parent_name="layout.scene.zaxis", **kwargs
     ):

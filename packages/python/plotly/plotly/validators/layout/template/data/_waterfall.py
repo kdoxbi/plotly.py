@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class WaterfallValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
+class WaterfallValidator(_bv.CompoundArrayValidator):
     def __init__(
         self, plotly_name="waterfall", parent_name="layout.template.data", **kwargs
     ):

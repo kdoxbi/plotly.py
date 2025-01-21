@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class LonaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
+class LonaxisValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="lonaxis", parent_name="layout.geo", **kwargs):
         super(LonaxisValidator, self).__init__(
             plotly_name=plotly_name,

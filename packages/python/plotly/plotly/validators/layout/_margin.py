@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class MarginValidator(_plotly_utils.basevalidators.CompoundValidator):
+class MarginValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="margin", parent_name="layout", **kwargs):
         super(MarginValidator, self).__init__(
             plotly_name=plotly_name,

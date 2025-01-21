@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class MinorgridwidthValidator(_plotly_utils.basevalidators.NumberValidator):
+class MinorgridwidthValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="minorgridwidth", parent_name="carpet.aaxis", **kwargs
     ):

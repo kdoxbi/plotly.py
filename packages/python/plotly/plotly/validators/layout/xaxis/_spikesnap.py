@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SpikesnapValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class SpikesnapValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="spikesnap", parent_name="layout.xaxis", **kwargs):
         super(SpikesnapValidator, self).__init__(
             plotly_name=plotly_name,

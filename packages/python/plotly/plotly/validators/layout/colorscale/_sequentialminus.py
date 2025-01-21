@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SequentialminusValidator(_plotly_utils.basevalidators.ColorscaleValidator):
+class SequentialminusValidator(_bv.ColorscaleValidator):
     def __init__(
         self, plotly_name="sequentialminus", parent_name="layout.colorscale", **kwargs
     ):

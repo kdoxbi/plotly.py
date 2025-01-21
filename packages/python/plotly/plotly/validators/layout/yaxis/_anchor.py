@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class AnchorValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class AnchorValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="anchor", parent_name="layout.yaxis", **kwargs):
         super(AnchorValidator, self).__init__(
             plotly_name=plotly_name,

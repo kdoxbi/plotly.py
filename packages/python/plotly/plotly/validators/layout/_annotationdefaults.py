@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class AnnotationdefaultsValidator(_plotly_utils.basevalidators.CompoundValidator):
+class AnnotationdefaultsValidator(_bv.CompoundValidator):
     def __init__(
         self, plotly_name="annotationdefaults", parent_name="layout", **kwargs
     ):

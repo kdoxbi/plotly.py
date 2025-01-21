@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class MaxdepthValidator(_plotly_utils.basevalidators.IntegerValidator):
+class MaxdepthValidator(_bv.IntegerValidator):
     def __init__(self, plotly_name="maxdepth", parent_name="sunburst", **kwargs):
         super(MaxdepthValidator, self).__init__(
             plotly_name=plotly_name,

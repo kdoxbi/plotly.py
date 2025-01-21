@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ClusterValidator(_plotly_utils.basevalidators.CompoundValidator):
+class ClusterValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="cluster", parent_name="scattermap", **kwargs):
         super(ClusterValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SdValidator(_plotly_utils.basevalidators.DataArrayValidator):
+class SdValidator(_bv.DataArrayValidator):
     def __init__(self, plotly_name="sd", parent_name="box", **kwargs):
         super(SdValidator, self).__init__(
             plotly_name=plotly_name,

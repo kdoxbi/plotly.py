@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class OutlierwidthValidator(_plotly_utils.basevalidators.NumberValidator):
+class OutlierwidthValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="outlierwidth", parent_name="box.marker.line", **kwargs
     ):

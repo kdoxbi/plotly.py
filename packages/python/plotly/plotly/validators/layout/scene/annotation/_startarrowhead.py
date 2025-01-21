@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class StartarrowheadValidator(_plotly_utils.basevalidators.IntegerValidator):
+class StartarrowheadValidator(_bv.IntegerValidator):
     def __init__(
         self,
         plotly_name="startarrowhead",

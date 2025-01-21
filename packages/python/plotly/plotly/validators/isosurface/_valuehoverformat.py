@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ValuehoverformatValidator(_plotly_utils.basevalidators.StringValidator):
+class ValuehoverformatValidator(_bv.StringValidator):
     def __init__(
         self, plotly_name="valuehoverformat", parent_name="isosurface", **kwargs
     ):

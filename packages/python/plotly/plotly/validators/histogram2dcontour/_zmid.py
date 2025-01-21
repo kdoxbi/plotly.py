@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ZmidValidator(_plotly_utils.basevalidators.NumberValidator):
+class ZmidValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="zmid", parent_name="histogram2dcontour", **kwargs):
         super(ZmidValidator, self).__init__(
             plotly_name=plotly_name,

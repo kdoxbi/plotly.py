@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class IsosurfaceValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
+class IsosurfaceValidator(_bv.CompoundArrayValidator):
     def __init__(
         self, plotly_name="isosurface", parent_name="layout.template.data", **kwargs
     ):

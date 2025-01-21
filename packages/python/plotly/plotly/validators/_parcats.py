@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ParcatsValidator(_plotly_utils.basevalidators.CompoundValidator):
+class ParcatsValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="parcats", parent_name="", **kwargs):
         super(ParcatsValidator, self).__init__(
             plotly_name=plotly_name,

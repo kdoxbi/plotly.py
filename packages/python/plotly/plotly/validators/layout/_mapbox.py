@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class MapboxValidator(_plotly_utils.basevalidators.CompoundValidator):
+class MapboxValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="mapbox", parent_name="layout", **kwargs):
         super(MapboxValidator, self).__init__(
             plotly_name=plotly_name,

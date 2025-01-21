@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class XpadValidator(_plotly_utils.basevalidators.NumberValidator):
+class XpadValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="xpad", parent_name="volume.colorbar", **kwargs):
         super(XpadValidator, self).__init__(
             plotly_name=plotly_name,

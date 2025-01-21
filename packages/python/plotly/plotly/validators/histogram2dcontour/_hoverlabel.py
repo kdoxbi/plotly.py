@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class HoverlabelValidator(_plotly_utils.basevalidators.CompoundValidator):
+class HoverlabelValidator(_bv.CompoundValidator):
     def __init__(
         self, plotly_name="hoverlabel", parent_name="histogram2dcontour", **kwargs
     ):

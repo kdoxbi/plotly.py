@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class WaterfallgroupgapValidator(_plotly_utils.basevalidators.NumberValidator):
+class WaterfallgroupgapValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="waterfallgroupgap", parent_name="layout", **kwargs):
         super(WaterfallgroupgapValidator, self).__init__(
             plotly_name=plotly_name,

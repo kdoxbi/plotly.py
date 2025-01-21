@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ScalemodeValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class ScalemodeValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="scalemode", parent_name="violin", **kwargs):
         super(ScalemodeValidator, self).__init__(
             plotly_name=plotly_name,

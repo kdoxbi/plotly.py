@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class AlignValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class AlignValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="align", parent_name="densitymap.hoverlabel", **kwargs
     ):

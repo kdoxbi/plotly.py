@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class LenmodeValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class LenmodeValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="lenmode", parent_name="treemap.marker.colorbar", **kwargs
     ):

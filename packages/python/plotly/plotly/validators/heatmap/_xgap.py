@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class XgapValidator(_plotly_utils.basevalidators.NumberValidator):
+class XgapValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="xgap", parent_name="heatmap", **kwargs):
         super(XgapValidator, self).__init__(
             plotly_name=plotly_name,

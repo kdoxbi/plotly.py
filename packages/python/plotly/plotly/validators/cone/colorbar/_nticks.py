@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class NticksValidator(_plotly_utils.basevalidators.IntegerValidator):
+class NticksValidator(_bv.IntegerValidator):
     def __init__(self, plotly_name="nticks", parent_name="cone.colorbar", **kwargs):
         super(NticksValidator, self).__init__(
             plotly_name=plotly_name,

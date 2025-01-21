@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class RiverwidthValidator(_plotly_utils.basevalidators.NumberValidator):
+class RiverwidthValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="riverwidth", parent_name="layout.geo", **kwargs):
         super(RiverwidthValidator, self).__init__(
             plotly_name=plotly_name,

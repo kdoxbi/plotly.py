@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class Tick0Validator(_plotly_utils.basevalidators.NumberValidator):
+class Tick0Validator(_bv.NumberValidator):
     def __init__(self, plotly_name="tick0", parent_name="carpet.baxis", **kwargs):
         super(Tick0Validator, self).__init__(
             plotly_name=plotly_name,

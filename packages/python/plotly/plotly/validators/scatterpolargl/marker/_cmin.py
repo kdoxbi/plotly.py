@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CminValidator(_plotly_utils.basevalidators.NumberValidator):
+class CminValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="cmin", parent_name="scatterpolargl.marker", **kwargs
     ):

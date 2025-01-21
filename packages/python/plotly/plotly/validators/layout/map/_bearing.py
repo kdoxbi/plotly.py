@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class BearingValidator(_plotly_utils.basevalidators.NumberValidator):
+class BearingValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="bearing", parent_name="layout.map", **kwargs):
         super(BearingValidator, self).__init__(
             plotly_name=plotly_name,

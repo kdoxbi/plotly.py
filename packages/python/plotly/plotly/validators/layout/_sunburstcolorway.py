@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SunburstcolorwayValidator(_plotly_utils.basevalidators.ColorlistValidator):
+class SunburstcolorwayValidator(_bv.ColorlistValidator):
     def __init__(self, plotly_name="sunburstcolorway", parent_name="layout", **kwargs):
         super(SunburstcolorwayValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ClickmodeValidator(_plotly_utils.basevalidators.FlaglistValidator):
+class ClickmodeValidator(_bv.FlaglistValidator):
     def __init__(self, plotly_name="clickmode", parent_name="layout", **kwargs):
         super(ClickmodeValidator, self).__init__(
             plotly_name=plotly_name,

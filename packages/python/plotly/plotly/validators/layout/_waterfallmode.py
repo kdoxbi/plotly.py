@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class WaterfallmodeValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class WaterfallmodeValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="waterfallmode", parent_name="layout", **kwargs):
         super(WaterfallmodeValidator, self).__init__(
             plotly_name=plotly_name,

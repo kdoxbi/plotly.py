@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ShowticklabelsValidator(_plotly_utils.basevalidators.BooleanValidator):
+class ShowticklabelsValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="showticklabels", parent_name="layout.xaxis", **kwargs
     ):

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class YValidator(_plotly_utils.basevalidators.NumberValidator):
+class YValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="y", parent_name="scatterpolargl.marker.colorbar", **kwargs
     ):

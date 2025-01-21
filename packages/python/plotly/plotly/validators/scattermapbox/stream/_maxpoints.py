@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class MaxpointsValidator(_plotly_utils.basevalidators.NumberValidator):
+class MaxpointsValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="maxpoints", parent_name="scattermapbox.stream", **kwargs
     ):

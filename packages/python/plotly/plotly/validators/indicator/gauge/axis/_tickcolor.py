@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TickcolorValidator(_plotly_utils.basevalidators.ColorValidator):
+class TickcolorValidator(_bv.ColorValidator):
     def __init__(
         self, plotly_name="tickcolor", parent_name="indicator.gauge.axis", **kwargs
     ):

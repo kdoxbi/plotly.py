@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class HighlightcolorValidator(_plotly_utils.basevalidators.ColorValidator):
+class HighlightcolorValidator(_bv.ColorValidator):
     def __init__(
         self, plotly_name="highlightcolor", parent_name="surface.contours.z", **kwargs
     ):

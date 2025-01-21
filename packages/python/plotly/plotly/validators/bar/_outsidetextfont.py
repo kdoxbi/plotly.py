@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class OutsidetextfontValidator(_plotly_utils.basevalidators.CompoundValidator):
+class OutsidetextfontValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="outsidetextfont", parent_name="bar", **kwargs):
         super(OutsidetextfontValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class DirectionValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class DirectionValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="direction", parent_name="layout.updatemenu", **kwargs
     ):

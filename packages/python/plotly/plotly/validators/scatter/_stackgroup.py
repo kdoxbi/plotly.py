@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class StackgroupValidator(_plotly_utils.basevalidators.StringValidator):
+class StackgroupValidator(_bv.StringValidator):
     def __init__(self, plotly_name="stackgroup", parent_name="scatter", **kwargs):
         super(StackgroupValidator, self).__init__(
             plotly_name=plotly_name,

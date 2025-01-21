@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class DimensionsValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
+class DimensionsValidator(_bv.CompoundArrayValidator):
     def __init__(self, plotly_name="dimensions", parent_name="parcats", **kwargs):
         super(DimensionsValidator, self).__init__(
             plotly_name=plotly_name,

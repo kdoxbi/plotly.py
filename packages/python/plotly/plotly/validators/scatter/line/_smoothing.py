@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SmoothingValidator(_plotly_utils.basevalidators.NumberValidator):
+class SmoothingValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="smoothing", parent_name="scatter.line", **kwargs):
         super(SmoothingValidator, self).__init__(
             plotly_name=plotly_name,

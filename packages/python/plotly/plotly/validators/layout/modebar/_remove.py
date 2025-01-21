@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class RemoveValidator(_plotly_utils.basevalidators.StringValidator):
+class RemoveValidator(_bv.StringValidator):
     def __init__(self, plotly_name="remove", parent_name="layout.modebar", **kwargs):
         super(RemoveValidator, self).__init__(
             plotly_name=plotly_name,

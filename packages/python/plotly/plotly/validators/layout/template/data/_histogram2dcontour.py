@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class Histogram2DcontourValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
+class Histogram2DcontourValidator(_bv.CompoundArrayValidator):
     def __init__(
         self,
         plotly_name="histogram2dcontour",

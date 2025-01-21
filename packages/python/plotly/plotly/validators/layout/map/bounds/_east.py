@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class EastValidator(_plotly_utils.basevalidators.NumberValidator):
+class EastValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="east", parent_name="layout.map.bounds", **kwargs):
         super(EastValidator, self).__init__(
             plotly_name=plotly_name,

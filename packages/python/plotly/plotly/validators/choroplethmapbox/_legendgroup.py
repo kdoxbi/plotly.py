@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class LegendgroupValidator(_plotly_utils.basevalidators.StringValidator):
+class LegendgroupValidator(_bv.StringValidator):
     def __init__(
         self, plotly_name="legendgroup", parent_name="choroplethmapbox", **kwargs
     ):

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CaptureeventsValidator(_plotly_utils.basevalidators.BooleanValidator):
+class CaptureeventsValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="captureevents", parent_name="layout.annotation", **kwargs
     ):

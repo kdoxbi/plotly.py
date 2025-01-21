@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ArrowcolorValidator(_plotly_utils.basevalidators.ColorValidator):
+class ArrowcolorValidator(_bv.ColorValidator):
     def __init__(
         self, plotly_name="arrowcolor", parent_name="layout.annotation", **kwargs
     ):

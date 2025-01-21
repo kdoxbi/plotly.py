@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class FormatValidator(_plotly_utils.basevalidators.DataArrayValidator):
+class FormatValidator(_bv.DataArrayValidator):
     def __init__(self, plotly_name="format", parent_name="table.cells", **kwargs):
         super(FormatValidator, self).__init__(
             plotly_name=plotly_name,

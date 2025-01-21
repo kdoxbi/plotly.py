@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class VisibleValidator(_plotly_utils.basevalidators.BooleanValidator):
+class VisibleValidator(_bv.BooleanValidator):
     def __init__(self, plotly_name="visible", parent_name="bar.error_y", **kwargs):
         super(VisibleValidator, self).__init__(
             plotly_name=plotly_name,

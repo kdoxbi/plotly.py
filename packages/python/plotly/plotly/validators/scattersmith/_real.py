@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class RealValidator(_plotly_utils.basevalidators.DataArrayValidator):
+class RealValidator(_bv.DataArrayValidator):
     def __init__(self, plotly_name="real", parent_name="scattersmith", **kwargs):
         super(RealValidator, self).__init__(
             plotly_name=plotly_name,

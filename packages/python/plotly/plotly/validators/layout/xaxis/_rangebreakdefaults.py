@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class RangebreakdefaultsValidator(_plotly_utils.basevalidators.CompoundValidator):
+class RangebreakdefaultsValidator(_bv.CompoundValidator):
     def __init__(
         self, plotly_name="rangebreakdefaults", parent_name="layout.xaxis", **kwargs
     ):

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class WestValidator(_plotly_utils.basevalidators.NumberValidator):
+class WestValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="west", parent_name="layout.mapbox.bounds", **kwargs
     ):

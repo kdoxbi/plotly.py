@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CmidValidator(_plotly_utils.basevalidators.NumberValidator):
+class CmidValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="cmid", parent_name="parcats.line", **kwargs):
         super(CmidValidator, self).__init__(
             plotly_name=plotly_name,

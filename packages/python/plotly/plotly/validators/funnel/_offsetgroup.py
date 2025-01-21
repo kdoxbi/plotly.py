@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class OffsetgroupValidator(_plotly_utils.basevalidators.StringValidator):
+class OffsetgroupValidator(_bv.StringValidator):
     def __init__(self, plotly_name="offsetgroup", parent_name="funnel", **kwargs):
         super(OffsetgroupValidator, self).__init__(
             plotly_name=plotly_name,

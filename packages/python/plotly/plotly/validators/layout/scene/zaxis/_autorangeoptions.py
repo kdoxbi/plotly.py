@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class AutorangeoptionsValidator(_plotly_utils.basevalidators.CompoundValidator):
+class AutorangeoptionsValidator(_bv.CompoundValidator):
     def __init__(
         self, plotly_name="autorangeoptions", parent_name="layout.scene.zaxis", **kwargs
     ):

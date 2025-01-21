@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class LabelaliasValidator(_plotly_utils.basevalidators.AnyValidator):
+class LabelaliasValidator(_bv.AnyValidator):
     def __init__(
         self, plotly_name="labelalias", parent_name="parcoords.line.colorbar", **kwargs
     ):

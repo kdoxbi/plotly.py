@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class MinValidator(_plotly_utils.basevalidators.NumberValidator):
+class MinValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="min", parent_name="layout.ternary.caxis", **kwargs):
         super(MinValidator, self).__init__(
             plotly_name=plotly_name,

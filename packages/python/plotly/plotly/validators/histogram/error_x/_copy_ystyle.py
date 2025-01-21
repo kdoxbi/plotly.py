@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class Copy_YstyleValidator(_plotly_utils.basevalidators.BooleanValidator):
+class Copy_YstyleValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="copy_ystyle", parent_name="histogram.error_x", **kwargs
     ):

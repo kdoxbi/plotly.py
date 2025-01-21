@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ConstraintowardValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class ConstraintowardValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="constraintoward", parent_name="layout.xaxis", **kwargs
     ):

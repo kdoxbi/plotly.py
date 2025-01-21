@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class LabelformatValidator(_plotly_utils.basevalidators.StringValidator):
+class LabelformatValidator(_bv.StringValidator):
     def __init__(
         self,
         plotly_name="labelformat",

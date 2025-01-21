@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SurfaceValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
+class SurfaceValidator(_bv.CompoundArrayValidator):
     def __init__(
         self, plotly_name="surface", parent_name="layout.template.data", **kwargs
     ):

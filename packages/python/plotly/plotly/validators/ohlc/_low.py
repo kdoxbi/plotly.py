@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class LowValidator(_plotly_utils.basevalidators.DataArrayValidator):
+class LowValidator(_bv.DataArrayValidator):
     def __init__(self, plotly_name="low", parent_name="ohlc", **kwargs):
         super(LowValidator, self).__init__(
             plotly_name=plotly_name,

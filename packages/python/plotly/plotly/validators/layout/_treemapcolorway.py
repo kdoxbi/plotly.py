@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TreemapcolorwayValidator(_plotly_utils.basevalidators.ColorlistValidator):
+class TreemapcolorwayValidator(_bv.ColorlistValidator):
     def __init__(self, plotly_name="treemapcolorway", parent_name="layout", **kwargs):
         super(TreemapcolorwayValidator, self).__init__(
             plotly_name=plotly_name,

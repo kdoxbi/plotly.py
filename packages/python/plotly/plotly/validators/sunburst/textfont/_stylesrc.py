@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class StylesrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class StylesrcValidator(_bv.SrcValidator):
     def __init__(
         self, plotly_name="stylesrc", parent_name="sunburst.textfont", **kwargs
     ):

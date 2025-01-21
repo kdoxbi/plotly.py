@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SpecularValidator(_plotly_utils.basevalidators.NumberValidator):
+class SpecularValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="specular", parent_name="volume.lighting", **kwargs):
         super(SpecularValidator, self).__init__(
             plotly_name=plotly_name,

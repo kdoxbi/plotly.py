@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ShowlabelsValidator(_plotly_utils.basevalidators.BooleanValidator):
+class ShowlabelsValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="showlabels", parent_name="contourcarpet.contours", **kwargs
     ):

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SeparatethousandsValidator(_plotly_utils.basevalidators.BooleanValidator):
+class SeparatethousandsValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="separatethousands", parent_name="layout.yaxis", **kwargs
     ):

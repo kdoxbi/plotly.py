@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class AyValidator(_plotly_utils.basevalidators.NumberValidator):
+class AyValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="ay", parent_name="layout.scene.annotation", **kwargs
     ):

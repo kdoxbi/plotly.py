@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ContoursValidator(_plotly_utils.basevalidators.CompoundValidator):
+class ContoursValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="contours", parent_name="contour", **kwargs):
         super(ContoursValidator, self).__init__(
             plotly_name=plotly_name,

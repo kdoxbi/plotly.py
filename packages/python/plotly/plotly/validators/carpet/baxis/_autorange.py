@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class AutorangeValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class AutorangeValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="autorange", parent_name="carpet.baxis", **kwargs):
         super(AutorangeValidator, self).__init__(
             plotly_name=plotly_name,

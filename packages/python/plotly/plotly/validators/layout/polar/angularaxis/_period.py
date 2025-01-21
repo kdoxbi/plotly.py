@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class PeriodValidator(_plotly_utils.basevalidators.NumberValidator):
+class PeriodValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="period", parent_name="layout.polar.angularaxis", **kwargs
     ):

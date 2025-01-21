@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class GrouptitlefontValidator(_plotly_utils.basevalidators.CompoundValidator):
+class GrouptitlefontValidator(_bv.CompoundValidator):
     def __init__(
         self, plotly_name="grouptitlefont", parent_name="layout.legend", **kwargs
     ):

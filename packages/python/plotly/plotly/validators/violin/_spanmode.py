@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SpanmodeValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class SpanmodeValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="spanmode", parent_name="violin", **kwargs):
         super(SpanmodeValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class LonsrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class LonsrcValidator(_bv.SrcValidator):
     def __init__(self, plotly_name="lonsrc", parent_name="densitymap", **kwargs):
         super(LonsrcValidator, self).__init__(
             plotly_name=plotly_name,

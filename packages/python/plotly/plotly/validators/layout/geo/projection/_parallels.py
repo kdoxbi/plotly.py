@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ParallelsValidator(_plotly_utils.basevalidators.InfoArrayValidator):
+class ParallelsValidator(_bv.InfoArrayValidator):
     def __init__(
         self, plotly_name="parallels", parent_name="layout.geo.projection", **kwargs
     ):

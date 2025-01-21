@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ItemsizingValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class ItemsizingValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="itemsizing", parent_name="layout.legend", **kwargs):
         super(ItemsizingValidator, self).__init__(
             plotly_name=plotly_name,

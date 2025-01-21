@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CsrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class CsrcValidator(_bv.SrcValidator):
     def __init__(self, plotly_name="csrc", parent_name="scatterternary", **kwargs):
         super(CsrcValidator, self).__init__(
             plotly_name=plotly_name,

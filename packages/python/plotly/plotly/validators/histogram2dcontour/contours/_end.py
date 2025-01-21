@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class EndValidator(_plotly_utils.basevalidators.NumberValidator):
+class EndValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="end", parent_name="histogram2dcontour.contours", **kwargs
     ):

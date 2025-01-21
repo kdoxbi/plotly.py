@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ActiveshapeValidator(_plotly_utils.basevalidators.CompoundValidator):
+class ActiveshapeValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="activeshape", parent_name="layout", **kwargs):
         super(ActiveshapeValidator, self).__init__(
             plotly_name=plotly_name,

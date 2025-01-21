@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class InsidetextorientationValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class InsidetextorientationValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="insidetextorientation", parent_name="pie", **kwargs
     ):

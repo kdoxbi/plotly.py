@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class EntrywidthmodeValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class EntrywidthmodeValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="entrywidthmode", parent_name="layout.legend", **kwargs
     ):

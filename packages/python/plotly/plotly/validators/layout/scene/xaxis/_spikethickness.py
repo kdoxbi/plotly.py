@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SpikethicknessValidator(_plotly_utils.basevalidators.NumberValidator):
+class SpikethicknessValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="spikethickness", parent_name="layout.scene.xaxis", **kwargs
     ):

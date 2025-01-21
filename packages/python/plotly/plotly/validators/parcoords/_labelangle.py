@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class LabelangleValidator(_plotly_utils.basevalidators.AngleValidator):
+class LabelangleValidator(_bv.AngleValidator):
     def __init__(self, plotly_name="labelangle", parent_name="parcoords", **kwargs):
         super(LabelangleValidator, self).__init__(
             plotly_name=plotly_name,

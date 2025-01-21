@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class LegendwidthValidator(_plotly_utils.basevalidators.NumberValidator):
+class LegendwidthValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="legendwidth", parent_name="scattersmith", **kwargs):
         super(LegendwidthValidator, self).__init__(
             plotly_name=plotly_name,

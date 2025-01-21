@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class DlabelValidator(_plotly_utils.basevalidators.NumberValidator):
+class DlabelValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="dlabel", parent_name="pie", **kwargs):
         super(DlabelValidator, self).__init__(
             plotly_name=plotly_name,

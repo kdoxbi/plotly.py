@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ColoraxisValidator(_plotly_utils.basevalidators.SubplotidValidator):
+class ColoraxisValidator(_bv.SubplotidValidator):
     def __init__(self, plotly_name="coloraxis", parent_name="parcoords.line", **kwargs):
         super(ColoraxisValidator, self).__init__(
             plotly_name=plotly_name,

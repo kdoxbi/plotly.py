@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class MatchesValidator(_plotly_utils.basevalidators.BooleanValidator):
+class MatchesValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="matches", parent_name="splom.dimension.axis", **kwargs
     ):

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ConnectgapsValidator(_plotly_utils.basevalidators.BooleanValidator):
+class ConnectgapsValidator(_bv.BooleanValidator):
     def __init__(self, plotly_name="connectgaps", parent_name="heatmap", **kwargs):
         super(ConnectgapsValidator, self).__init__(
             plotly_name=plotly_name,

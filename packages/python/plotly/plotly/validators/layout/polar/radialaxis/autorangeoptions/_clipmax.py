@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ClipmaxValidator(_plotly_utils.basevalidators.AnyValidator):
+class ClipmaxValidator(_bv.AnyValidator):
     def __init__(
         self,
         plotly_name="clipmax",

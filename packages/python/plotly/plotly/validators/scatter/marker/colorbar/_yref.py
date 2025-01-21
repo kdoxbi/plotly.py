@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class YrefValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class YrefValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="yref", parent_name="scatter.marker.colorbar", **kwargs
     ):

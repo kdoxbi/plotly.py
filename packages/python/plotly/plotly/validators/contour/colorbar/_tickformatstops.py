@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TickformatstopsValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
+class TickformatstopsValidator(_bv.CompoundArrayValidator):
     def __init__(
         self, plotly_name="tickformatstops", parent_name="contour.colorbar", **kwargs
     ):

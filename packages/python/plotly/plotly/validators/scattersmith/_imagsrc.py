@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ImagsrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class ImagsrcValidator(_bv.SrcValidator):
     def __init__(self, plotly_name="imagsrc", parent_name="scattersmith", **kwargs):
         super(ImagsrcValidator, self).__init__(
             plotly_name=plotly_name,

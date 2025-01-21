@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class MultiselectValidator(_plotly_utils.basevalidators.BooleanValidator):
+class MultiselectValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="multiselect", parent_name="parcoords.dimension", **kwargs
     ):

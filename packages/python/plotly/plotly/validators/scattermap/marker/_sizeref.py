@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SizerefValidator(_plotly_utils.basevalidators.NumberValidator):
+class SizerefValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="sizeref", parent_name="scattermap.marker", **kwargs
     ):

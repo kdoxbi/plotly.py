@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TickformatValidator(_plotly_utils.basevalidators.StringValidator):
+class TickformatValidator(_bv.StringValidator):
     def __init__(self, plotly_name="tickformat", parent_name="carpet.aaxis", **kwargs):
         super(TickformatValidator, self).__init__(
             plotly_name=plotly_name,

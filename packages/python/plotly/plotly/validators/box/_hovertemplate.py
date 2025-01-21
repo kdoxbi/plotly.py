@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class HovertemplateValidator(_plotly_utils.basevalidators.StringValidator):
+class HovertemplateValidator(_bv.StringValidator):
     def __init__(self, plotly_name="hovertemplate", parent_name="box", **kwargs):
         super(HovertemplateValidator, self).__init__(
             plotly_name=plotly_name,

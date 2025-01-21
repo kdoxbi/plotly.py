@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CValidator(_plotly_utils.basevalidators.DataArrayValidator):
+class CValidator(_bv.DataArrayValidator):
     def __init__(self, plotly_name="c", parent_name="scatterternary", **kwargs):
         super(CValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class DensitymapValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
+class DensitymapValidator(_bv.CompoundArrayValidator):
     def __init__(
         self, plotly_name="densitymap", parent_name="layout.template.data", **kwargs
     ):

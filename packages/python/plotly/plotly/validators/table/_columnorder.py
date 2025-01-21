@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ColumnorderValidator(_plotly_utils.basevalidators.DataArrayValidator):
+class ColumnorderValidator(_bv.DataArrayValidator):
     def __init__(self, plotly_name="columnorder", parent_name="table", **kwargs):
         super(ColumnorderValidator, self).__init__(
             plotly_name=plotly_name,

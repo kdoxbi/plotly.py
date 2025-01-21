@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class XcalendarValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class XcalendarValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="xcalendar", parent_name="candlestick", **kwargs):
         super(XcalendarValidator, self).__init__(
             plotly_name=plotly_name,

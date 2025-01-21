@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class AutorangeValidator(_plotly_utils.basevalidators.BooleanValidator):
+class AutorangeValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="autorange", parent_name="layout.xaxis.rangeslider", **kwargs
     ):

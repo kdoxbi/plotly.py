@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SoliditysrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class SoliditysrcValidator(_bv.SrcValidator):
     def __init__(
         self, plotly_name="soliditysrc", parent_name="barpolar.marker.pattern", **kwargs
     ):

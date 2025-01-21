@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CmaxValidator(_plotly_utils.basevalidators.NumberValidator):
+class CmaxValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="cmax", parent_name="parcats.line", **kwargs):
         super(CmaxValidator, self).__init__(
             plotly_name=plotly_name,

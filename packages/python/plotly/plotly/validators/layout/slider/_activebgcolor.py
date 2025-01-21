@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ActivebgcolorValidator(_plotly_utils.basevalidators.ColorValidator):
+class ActivebgcolorValidator(_bv.ColorValidator):
     def __init__(
         self, plotly_name="activebgcolor", parent_name="layout.slider", **kwargs
     ):

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SizemodeValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class SizemodeValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="sizemode", parent_name="scattercarpet.marker", **kwargs
     ):

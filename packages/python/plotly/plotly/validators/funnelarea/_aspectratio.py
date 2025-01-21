@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class AspectratioValidator(_plotly_utils.basevalidators.NumberValidator):
+class AspectratioValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="aspectratio", parent_name="funnelarea", **kwargs):
         super(AspectratioValidator, self).__init__(
             plotly_name=plotly_name,

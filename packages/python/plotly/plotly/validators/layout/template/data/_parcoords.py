@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ParcoordsValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
+class ParcoordsValidator(_bv.CompoundArrayValidator):
     def __init__(
         self, plotly_name="parcoords", parent_name="layout.template.data", **kwargs
     ):

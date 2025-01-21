@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TypesrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class TypesrcValidator(_bv.SrcValidator):
     def __init__(
         self, plotly_name="typesrc", parent_name="scatter.marker.gradient", **kwargs
     ):

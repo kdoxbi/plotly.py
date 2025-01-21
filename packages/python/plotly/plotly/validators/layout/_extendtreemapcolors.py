@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ExtendtreemapcolorsValidator(_plotly_utils.basevalidators.BooleanValidator):
+class ExtendtreemapcolorsValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="extendtreemapcolors", parent_name="layout", **kwargs
     ):

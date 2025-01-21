@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class BorderpadValidator(_plotly_utils.basevalidators.NumberValidator):
+class BorderpadValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="borderpad", parent_name="layout.scene.annotation", **kwargs
     ):

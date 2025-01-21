@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class HovercolorValidator(_plotly_utils.basevalidators.ColorValidator):
+class HovercolorValidator(_bv.ColorValidator):
     def __init__(self, plotly_name="hovercolor", parent_name="sankey.link", **kwargs):
         super(HovercolorValidator, self).__init__(
             plotly_name=plotly_name,

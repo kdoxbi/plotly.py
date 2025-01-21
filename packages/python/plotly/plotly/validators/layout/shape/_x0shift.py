@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class X0ShiftValidator(_plotly_utils.basevalidators.NumberValidator):
+class X0ShiftValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="x0shift", parent_name="layout.shape", **kwargs):
         super(X0ShiftValidator, self).__init__(
             plotly_name=plotly_name,

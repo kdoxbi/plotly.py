@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SceneValidator(_plotly_utils.basevalidators.SubplotidValidator):
+class SceneValidator(_bv.SubplotidValidator):
     def __init__(self, plotly_name="scene", parent_name="isosurface", **kwargs):
         super(SceneValidator, self).__init__(
             plotly_name=plotly_name,

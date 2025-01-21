@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class AutocontourValidator(_plotly_utils.basevalidators.BooleanValidator):
+class AutocontourValidator(_bv.BooleanValidator):
     def __init__(self, plotly_name="autocontour", parent_name="contour", **kwargs):
         super(AutocontourValidator, self).__init__(
             plotly_name=plotly_name,

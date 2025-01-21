@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class FamilyValidator(_plotly_utils.basevalidators.StringValidator):
+class FamilyValidator(_bv.StringValidator):
     def __init__(
         self, plotly_name="family", parent_name="isosurface.hoverlabel.font", **kwargs
     ):

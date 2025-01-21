@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CoastlinewidthValidator(_plotly_utils.basevalidators.NumberValidator):
+class CoastlinewidthValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="coastlinewidth", parent_name="layout.geo", **kwargs
     ):

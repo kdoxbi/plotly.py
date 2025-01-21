@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class LightingValidator(_plotly_utils.basevalidators.CompoundValidator):
+class LightingValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="lighting", parent_name="surface", **kwargs):
         super(LightingValidator, self).__init__(
             plotly_name=plotly_name,

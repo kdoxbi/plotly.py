@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TickvalsValidator(_plotly_utils.basevalidators.DataArrayValidator):
+class TickvalsValidator(_bv.DataArrayValidator):
     def __init__(
         self, plotly_name="tickvals", parent_name="layout.ternary.aaxis", **kwargs
     ):

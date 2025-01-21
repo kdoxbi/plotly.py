@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class LinepositionValidator(_plotly_utils.basevalidators.FlaglistValidator):
+class LinepositionValidator(_bv.FlaglistValidator):
     def __init__(
         self, plotly_name="lineposition", parent_name="treemap.textfont", **kwargs
     ):

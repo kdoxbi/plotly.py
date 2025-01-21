@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class GroupnormValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class GroupnormValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="groupnorm", parent_name="scatter", **kwargs):
         super(GroupnormValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ShowaxeslabelsValidator(_plotly_utils.basevalidators.BooleanValidator):
+class ShowaxeslabelsValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="showaxeslabels", parent_name="layout.scene.xaxis", **kwargs
     ):

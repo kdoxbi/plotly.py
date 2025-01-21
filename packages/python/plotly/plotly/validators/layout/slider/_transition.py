@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TransitionValidator(_plotly_utils.basevalidators.CompoundValidator):
+class TransitionValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="transition", parent_name="layout.slider", **kwargs):
         super(TransitionValidator, self).__init__(
             plotly_name=plotly_name,

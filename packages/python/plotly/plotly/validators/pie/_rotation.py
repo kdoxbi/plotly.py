@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class RotationValidator(_plotly_utils.basevalidators.AngleValidator):
+class RotationValidator(_bv.AngleValidator):
     def __init__(self, plotly_name="rotation", parent_name="pie", **kwargs):
         super(RotationValidator, self).__init__(
             plotly_name=plotly_name,

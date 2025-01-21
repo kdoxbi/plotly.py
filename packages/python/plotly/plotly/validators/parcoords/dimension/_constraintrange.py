@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ConstraintrangeValidator(_plotly_utils.basevalidators.InfoArrayValidator):
+class ConstraintrangeValidator(_bv.InfoArrayValidator):
     def __init__(
         self, plotly_name="constraintrange", parent_name="parcoords.dimension", **kwargs
     ):

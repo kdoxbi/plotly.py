@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class XrefValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class XrefValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="xref", parent_name="barpolar.marker.colorbar", **kwargs
     ):

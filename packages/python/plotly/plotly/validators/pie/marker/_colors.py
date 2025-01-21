@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ColorsValidator(_plotly_utils.basevalidators.DataArrayValidator):
+class ColorsValidator(_bv.DataArrayValidator):
     def __init__(self, plotly_name="colors", parent_name="pie.marker", **kwargs):
         super(ColorsValidator, self).__init__(
             plotly_name=plotly_name,

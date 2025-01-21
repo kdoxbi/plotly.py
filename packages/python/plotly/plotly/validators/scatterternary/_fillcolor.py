@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class FillcolorValidator(_plotly_utils.basevalidators.ColorValidator):
+class FillcolorValidator(_bv.ColorValidator):
     def __init__(self, plotly_name="fillcolor", parent_name="scatterternary", **kwargs):
         super(FillcolorValidator, self).__init__(
             plotly_name=plotly_name,

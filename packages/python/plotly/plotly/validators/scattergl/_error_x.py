@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class Error_XValidator(_plotly_utils.basevalidators.CompoundValidator):
+class Error_XValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="error_x", parent_name="scattergl", **kwargs):
         super(Error_XValidator, self).__init__(
             plotly_name=plotly_name,

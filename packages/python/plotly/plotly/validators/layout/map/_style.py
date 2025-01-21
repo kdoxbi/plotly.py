@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class StyleValidator(_plotly_utils.basevalidators.AnyValidator):
+class StyleValidator(_bv.AnyValidator):
     def __init__(self, plotly_name="style", parent_name="layout.map", **kwargs):
         super(StyleValidator, self).__init__(
             plotly_name=plotly_name,

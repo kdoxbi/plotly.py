@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class BoxmodeValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class BoxmodeValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="boxmode", parent_name="layout", **kwargs):
         super(BoxmodeValidator, self).__init__(
             plotly_name=plotly_name,

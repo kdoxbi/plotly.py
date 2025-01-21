@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SpikesidesValidator(_plotly_utils.basevalidators.BooleanValidator):
+class SpikesidesValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="spikesides", parent_name="layout.scene.xaxis", **kwargs
     ):

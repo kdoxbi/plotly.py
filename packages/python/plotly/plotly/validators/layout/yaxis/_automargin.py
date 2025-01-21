@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class AutomarginValidator(_plotly_utils.basevalidators.FlaglistValidator):
+class AutomarginValidator(_bv.FlaglistValidator):
     def __init__(self, plotly_name="automargin", parent_name="layout.yaxis", **kwargs):
         super(AutomarginValidator, self).__init__(
             plotly_name=plotly_name,

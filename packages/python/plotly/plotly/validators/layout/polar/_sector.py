@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SectorValidator(_plotly_utils.basevalidators.InfoArrayValidator):
+class SectorValidator(_bv.InfoArrayValidator):
     def __init__(self, plotly_name="sector", parent_name="layout.polar", **kwargs):
         super(SectorValidator, self).__init__(
             plotly_name=plotly_name,

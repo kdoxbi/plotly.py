@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class HovertextsrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class HovertextsrcValidator(_bv.SrcValidator):
     def __init__(self, plotly_name="hovertextsrc", parent_name="bar", **kwargs):
         super(HovertextsrcValidator, self).__init__(
             plotly_name=plotly_name,

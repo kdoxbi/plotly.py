@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ZoomValidator(_plotly_utils.basevalidators.NumberValidator):
+class ZoomValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="zoom", parent_name="layout.map", **kwargs):
         super(ZoomValidator, self).__init__(
             plotly_name=plotly_name,

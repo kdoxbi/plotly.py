@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TicklabelstepValidator(_plotly_utils.basevalidators.IntegerValidator):
+class TicklabelstepValidator(_bv.IntegerValidator):
     def __init__(
         self,
         plotly_name="ticklabelstep",

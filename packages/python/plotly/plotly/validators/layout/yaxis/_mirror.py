@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class MirrorValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class MirrorValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="mirror", parent_name="layout.yaxis", **kwargs):
         super(MirrorValidator, self).__init__(
             plotly_name=plotly_name,

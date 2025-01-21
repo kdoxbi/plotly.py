@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TicklabelmodeValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class TicklabelmodeValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="ticklabelmode", parent_name="layout.yaxis", **kwargs
     ):

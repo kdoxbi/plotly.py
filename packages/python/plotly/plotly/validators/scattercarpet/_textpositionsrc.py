@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TextpositionsrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class TextpositionsrcValidator(_bv.SrcValidator):
     def __init__(
         self, plotly_name="textpositionsrc", parent_name="scattercarpet", **kwargs
     ):

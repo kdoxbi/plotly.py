@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class IsrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class IsrcValidator(_bv.SrcValidator):
     def __init__(self, plotly_name="isrc", parent_name="mesh3d", **kwargs):
         super(IsrcValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class IncreasingValidator(_plotly_utils.basevalidators.CompoundValidator):
+class IncreasingValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="increasing", parent_name="candlestick", **kwargs):
         super(IncreasingValidator, self).__init__(
             plotly_name=plotly_name,

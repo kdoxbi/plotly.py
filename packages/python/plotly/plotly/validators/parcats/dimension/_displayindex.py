@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class DisplayindexValidator(_plotly_utils.basevalidators.IntegerValidator):
+class DisplayindexValidator(_bv.IntegerValidator):
     def __init__(
         self, plotly_name="displayindex", parent_name="parcats.dimension", **kwargs
     ):

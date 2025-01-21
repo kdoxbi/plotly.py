@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ShowexponentValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class ShowexponentValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="showexponent", parent_name="streamtube.colorbar", **kwargs
     ):

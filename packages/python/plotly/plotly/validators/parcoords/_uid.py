@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class UidValidator(_plotly_utils.basevalidators.StringValidator):
+class UidValidator(_bv.StringValidator):
     def __init__(self, plotly_name="uid", parent_name="parcoords", **kwargs):
         super(UidValidator, self).__init__(
             plotly_name=plotly_name,

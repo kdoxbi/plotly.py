@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class LabelfontValidator(_plotly_utils.basevalidators.CompoundValidator):
+class LabelfontValidator(_bv.CompoundValidator):
     def __init__(
         self, plotly_name="labelfont", parent_name="contourcarpet.contours", **kwargs
     ):

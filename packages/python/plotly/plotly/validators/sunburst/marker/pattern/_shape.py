@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ShapeValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class ShapeValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="shape", parent_name="sunburst.marker.pattern", **kwargs
     ):

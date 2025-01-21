@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class MeasuresrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class MeasuresrcValidator(_bv.SrcValidator):
     def __init__(self, plotly_name="measuresrc", parent_name="waterfall", **kwargs):
         super(MeasuresrcValidator, self).__init__(
             plotly_name=plotly_name,

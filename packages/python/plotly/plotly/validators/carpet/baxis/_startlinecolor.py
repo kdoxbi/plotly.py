@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class StartlinecolorValidator(_plotly_utils.basevalidators.ColorValidator):
+class StartlinecolorValidator(_bv.ColorValidator):
     def __init__(
         self, plotly_name="startlinecolor", parent_name="carpet.baxis", **kwargs
     ):

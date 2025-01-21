@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class FgopacityValidator(_plotly_utils.basevalidators.NumberValidator):
+class FgopacityValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="fgopacity", parent_name="funnelarea.marker.pattern", **kwargs
     ):

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ColorscaleValidator(_plotly_utils.basevalidators.ColorscaleValidator):
+class ColorscaleValidator(_bv.ColorscaleValidator):
     def __init__(
         self, plotly_name="colorscale", parent_name="scattersmith.marker", **kwargs
     ):

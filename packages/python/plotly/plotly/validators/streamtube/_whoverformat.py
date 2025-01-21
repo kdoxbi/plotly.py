@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class WhoverformatValidator(_plotly_utils.basevalidators.StringValidator):
+class WhoverformatValidator(_bv.StringValidator):
     def __init__(self, plotly_name="whoverformat", parent_name="streamtube", **kwargs):
         super(WhoverformatValidator, self).__init__(
             plotly_name=plotly_name,

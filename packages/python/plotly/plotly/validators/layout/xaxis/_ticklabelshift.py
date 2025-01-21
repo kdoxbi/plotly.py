@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TicklabelshiftValidator(_plotly_utils.basevalidators.IntegerValidator):
+class TicklabelshiftValidator(_bv.IntegerValidator):
     def __init__(
         self, plotly_name="ticklabelshift", parent_name="layout.xaxis", **kwargs
     ):

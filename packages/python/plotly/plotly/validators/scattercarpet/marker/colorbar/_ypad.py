@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class YpadValidator(_plotly_utils.basevalidators.NumberValidator):
+class YpadValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="ypad", parent_name="scattercarpet.marker.colorbar", **kwargs
     ):

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class EndValidator(_plotly_utils.basevalidators.AnyValidator):
+class EndValidator(_bv.AnyValidator):
     def __init__(self, plotly_name="end", parent_name="histogram2d.xbins", **kwargs):
         super(EndValidator, self).__init__(
             plotly_name=plotly_name,

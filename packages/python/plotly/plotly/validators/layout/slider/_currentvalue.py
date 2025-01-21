@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CurrentvalueValidator(_plotly_utils.basevalidators.CompoundValidator):
+class CurrentvalueValidator(_bv.CompoundValidator):
     def __init__(
         self, plotly_name="currentvalue", parent_name="layout.slider", **kwargs
     ):

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class RangefontValidator(_plotly_utils.basevalidators.CompoundValidator):
+class RangefontValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="rangefont", parent_name="parcoords", **kwargs):
         super(RangefontValidator, self).__init__(
             plotly_name=plotly_name,

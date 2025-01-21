@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ShowupperhalfValidator(_plotly_utils.basevalidators.BooleanValidator):
+class ShowupperhalfValidator(_bv.BooleanValidator):
     def __init__(self, plotly_name="showupperhalf", parent_name="splom", **kwargs):
         super(ShowupperhalfValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ActivecolorValidator(_plotly_utils.basevalidators.ColorValidator):
+class ActivecolorValidator(_bv.ColorValidator):
     def __init__(
         self,
         plotly_name="activecolor",

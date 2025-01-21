@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ColorsrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class ColorsrcValidator(_bv.SrcValidator):
     def __init__(
         self, plotly_name="colorsrc", parent_name="scatter3d.marker", **kwargs
     ):

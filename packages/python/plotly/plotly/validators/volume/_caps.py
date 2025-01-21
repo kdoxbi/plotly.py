@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CapsValidator(_plotly_utils.basevalidators.CompoundValidator):
+class CapsValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="caps", parent_name="volume", **kwargs):
         super(CapsValidator, self).__init__(
             plotly_name=plotly_name,

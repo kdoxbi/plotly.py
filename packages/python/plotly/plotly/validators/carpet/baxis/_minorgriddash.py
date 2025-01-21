@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class MinorgriddashValidator(_plotly_utils.basevalidators.DashValidator):
+class MinorgriddashValidator(_bv.DashValidator):
     def __init__(
         self, plotly_name="minorgriddash", parent_name="carpet.baxis", **kwargs
     ):

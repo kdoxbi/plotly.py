@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TracerefminusValidator(_plotly_utils.basevalidators.IntegerValidator):
+class TracerefminusValidator(_bv.IntegerValidator):
     def __init__(
         self, plotly_name="tracerefminus", parent_name="scatter3d.error_x", **kwargs
     ):

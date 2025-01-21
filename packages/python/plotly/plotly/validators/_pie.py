@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class PieValidator(_plotly_utils.basevalidators.CompoundValidator):
+class PieValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="pie", parent_name="", **kwargs):
         super(PieValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ImageValidator(_plotly_utils.basevalidators.CompoundValidator):
+class ImageValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="image", parent_name="", **kwargs):
         super(ImageValidator, self).__init__(
             plotly_name=plotly_name,

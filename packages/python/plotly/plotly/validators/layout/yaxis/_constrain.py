@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ConstrainValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class ConstrainValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="constrain", parent_name="layout.yaxis", **kwargs):
         super(ConstrainValidator, self).__init__(
             plotly_name=plotly_name,

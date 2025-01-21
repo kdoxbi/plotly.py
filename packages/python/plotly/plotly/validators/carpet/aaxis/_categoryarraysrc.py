@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CategoryarraysrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class CategoryarraysrcValidator(_bv.SrcValidator):
     def __init__(
         self, plotly_name="categoryarraysrc", parent_name="carpet.aaxis", **kwargs
     ):

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TicklabelindexValidator(_plotly_utils.basevalidators.IntegerValidator):
+class TicklabelindexValidator(_bv.IntegerValidator):
     def __init__(
         self, plotly_name="ticklabelindex", parent_name="layout.yaxis", **kwargs
     ):

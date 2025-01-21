@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class RotationValidator(_plotly_utils.basevalidators.CompoundValidator):
+class RotationValidator(_bv.CompoundValidator):
     def __init__(
         self, plotly_name="rotation", parent_name="layout.geo.projection", **kwargs
     ):

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class YperiodValidator(_plotly_utils.basevalidators.AnyValidator):
+class YperiodValidator(_bv.AnyValidator):
     def __init__(self, plotly_name="yperiod", parent_name="scatter", **kwargs):
         super(YperiodValidator, self).__init__(
             plotly_name=plotly_name,

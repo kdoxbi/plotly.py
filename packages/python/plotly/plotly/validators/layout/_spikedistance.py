@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SpikedistanceValidator(_plotly_utils.basevalidators.IntegerValidator):
+class SpikedistanceValidator(_bv.IntegerValidator):
     def __init__(self, plotly_name="spikedistance", parent_name="layout", **kwargs):
         super(SpikedistanceValidator, self).__init__(
             plotly_name=plotly_name,

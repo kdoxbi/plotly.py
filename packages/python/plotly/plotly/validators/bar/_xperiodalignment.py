@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class XperiodalignmentValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class XperiodalignmentValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="xperiodalignment", parent_name="bar", **kwargs):
         super(XperiodalignmentValidator, self).__init__(
             plotly_name=plotly_name,

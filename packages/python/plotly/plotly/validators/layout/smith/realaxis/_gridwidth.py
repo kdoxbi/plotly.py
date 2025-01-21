@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class GridwidthValidator(_plotly_utils.basevalidators.NumberValidator):
+class GridwidthValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="gridwidth", parent_name="layout.smith.realaxis", **kwargs
     ):

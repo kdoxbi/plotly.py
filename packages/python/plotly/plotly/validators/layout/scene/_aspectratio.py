@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class AspectratioValidator(_plotly_utils.basevalidators.CompoundValidator):
+class AspectratioValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="aspectratio", parent_name="layout.scene", **kwargs):
         super(AspectratioValidator, self).__init__(
             plotly_name=plotly_name,

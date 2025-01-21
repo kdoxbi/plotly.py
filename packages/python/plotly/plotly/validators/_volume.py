@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class VolumeValidator(_plotly_utils.basevalidators.CompoundValidator):
+class VolumeValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="volume", parent_name="", **kwargs):
         super(VolumeValidator, self).__init__(
             plotly_name=plotly_name,

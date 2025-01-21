@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class VertexcolorValidator(_plotly_utils.basevalidators.DataArrayValidator):
+class VertexcolorValidator(_bv.DataArrayValidator):
     def __init__(self, plotly_name="vertexcolor", parent_name="mesh3d", **kwargs):
         super(VertexcolorValidator, self).__init__(
             plotly_name=plotly_name,

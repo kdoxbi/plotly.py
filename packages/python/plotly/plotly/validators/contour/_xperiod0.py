@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class Xperiod0Validator(_plotly_utils.basevalidators.AnyValidator):
+class Xperiod0Validator(_bv.AnyValidator):
     def __init__(self, plotly_name="xperiod0", parent_name="contour", **kwargs):
         super(Xperiod0Validator, self).__init__(
             plotly_name=plotly_name,

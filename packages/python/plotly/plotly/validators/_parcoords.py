@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ParcoordsValidator(_plotly_utils.basevalidators.CompoundValidator):
+class ParcoordsValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="parcoords", parent_name="", **kwargs):
         super(ParcoordsValidator, self).__init__(
             plotly_name=plotly_name,

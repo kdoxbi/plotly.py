@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class IsomaxValidator(_plotly_utils.basevalidators.NumberValidator):
+class IsomaxValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="isomax", parent_name="isosurface", **kwargs):
         super(IsomaxValidator, self).__init__(
             plotly_name=plotly_name,

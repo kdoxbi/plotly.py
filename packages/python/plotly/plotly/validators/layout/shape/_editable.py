@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class EditableValidator(_plotly_utils.basevalidators.BooleanValidator):
+class EditableValidator(_bv.BooleanValidator):
     def __init__(self, plotly_name="editable", parent_name="layout.shape", **kwargs):
         super(EditableValidator, self).__init__(
             plotly_name=plotly_name,

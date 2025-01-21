@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class RadialaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
+class RadialaxisValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="radialaxis", parent_name="layout.polar", **kwargs):
         super(RadialaxisValidator, self).__init__(
             plotly_name=plotly_name,

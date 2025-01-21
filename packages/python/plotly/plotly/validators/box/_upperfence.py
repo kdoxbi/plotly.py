@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class UpperfenceValidator(_plotly_utils.basevalidators.DataArrayValidator):
+class UpperfenceValidator(_bv.DataArrayValidator):
     def __init__(self, plotly_name="upperfence", parent_name="box", **kwargs):
         super(UpperfenceValidator, self).__init__(
             plotly_name=plotly_name,

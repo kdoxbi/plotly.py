@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ArrowsideValidator(_plotly_utils.basevalidators.FlaglistValidator):
+class ArrowsideValidator(_bv.FlaglistValidator):
     def __init__(
         self, plotly_name="arrowside", parent_name="layout.scene.annotation", **kwargs
     ):

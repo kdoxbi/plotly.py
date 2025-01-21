@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CountssrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class CountssrcValidator(_bv.SrcValidator):
     def __init__(self, plotly_name="countssrc", parent_name="parcats", **kwargs):
         super(CountssrcValidator, self).__init__(
             plotly_name=plotly_name,

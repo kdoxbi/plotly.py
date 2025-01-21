@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class AngularaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
+class AngularaxisValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="angularaxis", parent_name="layout.polar", **kwargs):
         super(AngularaxisValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ValuesrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class ValuesrcValidator(_bv.SrcValidator):
     def __init__(self, plotly_name="valuesrc", parent_name="isosurface", **kwargs):
         super(ValuesrcValidator, self).__init__(
             plotly_name=plotly_name,

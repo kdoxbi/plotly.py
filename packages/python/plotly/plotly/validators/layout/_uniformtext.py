@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class UniformtextValidator(_plotly_utils.basevalidators.CompoundValidator):
+class UniformtextValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="uniformtext", parent_name="layout", **kwargs):
         super(UniformtextValidator, self).__init__(
             plotly_name=plotly_name,

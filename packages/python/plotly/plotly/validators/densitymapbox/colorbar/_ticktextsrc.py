@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TicktextsrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class TicktextsrcValidator(_bv.SrcValidator):
     def __init__(
         self, plotly_name="ticktextsrc", parent_name="densitymapbox.colorbar", **kwargs
     ):

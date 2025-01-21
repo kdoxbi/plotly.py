@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class AmbientValidator(_plotly_utils.basevalidators.NumberValidator):
+class AmbientValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="ambient", parent_name="cone.lighting", **kwargs):
         super(AmbientValidator, self).__init__(
             plotly_name=plotly_name,

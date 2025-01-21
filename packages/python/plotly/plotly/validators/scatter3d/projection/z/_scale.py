@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ScaleValidator(_plotly_utils.basevalidators.NumberValidator):
+class ScaleValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="scale", parent_name="scatter3d.projection.z", **kwargs
     ):

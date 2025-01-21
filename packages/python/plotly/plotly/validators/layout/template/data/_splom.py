@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SplomValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
+class SplomValidator(_bv.CompoundArrayValidator):
     def __init__(
         self, plotly_name="splom", parent_name="layout.template.data", **kwargs
     ):

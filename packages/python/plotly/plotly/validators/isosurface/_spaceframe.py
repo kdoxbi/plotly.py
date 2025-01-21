@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SpaceframeValidator(_plotly_utils.basevalidators.CompoundValidator):
+class SpaceframeValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="spaceframe", parent_name="isosurface", **kwargs):
         super(SpaceframeValidator, self).__init__(
             plotly_name=plotly_name,

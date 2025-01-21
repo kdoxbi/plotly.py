@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class MarkerValidator(_plotly_utils.basevalidators.CompoundValidator):
+class MarkerValidator(_bv.CompoundValidator):
     def __init__(
         self, plotly_name="marker", parent_name="choroplethmap.unselected", **kwargs
     ):

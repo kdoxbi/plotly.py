@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class HistfuncValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class HistfuncValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="histfunc", parent_name="histogram2dcontour", **kwargs
     ):

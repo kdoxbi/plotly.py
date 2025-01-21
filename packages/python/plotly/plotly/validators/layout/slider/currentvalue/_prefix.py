@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class PrefixValidator(_plotly_utils.basevalidators.StringValidator):
+class PrefixValidator(_bv.StringValidator):
     def __init__(
         self, plotly_name="prefix", parent_name="layout.slider.currentvalue", **kwargs
     ):

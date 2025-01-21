@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class FacenormalsepsilonValidator(_plotly_utils.basevalidators.NumberValidator):
+class FacenormalsepsilonValidator(_bv.NumberValidator):
     def __init__(
         self,
         plotly_name="facenormalsepsilon",

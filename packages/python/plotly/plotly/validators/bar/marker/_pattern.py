@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class PatternValidator(_plotly_utils.basevalidators.CompoundValidator):
+class PatternValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="pattern", parent_name="bar.marker", **kwargs):
         super(PatternValidator, self).__init__(
             plotly_name=plotly_name,

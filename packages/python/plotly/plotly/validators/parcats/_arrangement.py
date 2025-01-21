@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ArrangementValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class ArrangementValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="arrangement", parent_name="parcats", **kwargs):
         super(ArrangementValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class DashValidator(_plotly_utils.basevalidators.DataArrayValidator):
+class DashValidator(_bv.DataArrayValidator):
     def __init__(
         self, plotly_name="dash", parent_name="layout.mapbox.layer.line", **kwargs
     ):

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class BaseValidator(_plotly_utils.basevalidators.AnyValidator):
+class BaseValidator(_bv.AnyValidator):
     def __init__(self, plotly_name="base", parent_name="bar", **kwargs):
         super(BaseValidator, self).__init__(
             plotly_name=plotly_name,

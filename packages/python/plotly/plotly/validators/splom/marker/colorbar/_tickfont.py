@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TickfontValidator(_plotly_utils.basevalidators.CompoundValidator):
+class TickfontValidator(_bv.CompoundValidator):
     def __init__(
         self, plotly_name="tickfont", parent_name="splom.marker.colorbar", **kwargs
     ):

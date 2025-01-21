@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CategoryorderValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class CategoryorderValidator(_bv.EnumeratedValidator):
     def __init__(
         self,
         plotly_name="categoryorder",

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ShowdividersValidator(_plotly_utils.basevalidators.BooleanValidator):
+class ShowdividersValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="showdividers", parent_name="layout.yaxis", **kwargs
     ):

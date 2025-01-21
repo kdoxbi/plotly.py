@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class LonValidator(_plotly_utils.basevalidators.NumberValidator):
+class LonValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="lon", parent_name="layout.geo.projection.rotation", **kwargs
     ):

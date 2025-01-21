@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CloseValidator(_plotly_utils.basevalidators.DataArrayValidator):
+class CloseValidator(_bv.DataArrayValidator):
     def __init__(self, plotly_name="close", parent_name="ohlc", **kwargs):
         super(CloseValidator, self).__init__(
             plotly_name=plotly_name,

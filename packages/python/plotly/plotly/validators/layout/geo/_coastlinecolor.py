@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CoastlinecolorValidator(_plotly_utils.basevalidators.ColorValidator):
+class CoastlinecolorValidator(_bv.ColorValidator):
     def __init__(
         self, plotly_name="coastlinecolor", parent_name="layout.geo", **kwargs
     ):

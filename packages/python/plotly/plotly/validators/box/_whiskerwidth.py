@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class WhiskerwidthValidator(_plotly_utils.basevalidators.NumberValidator):
+class WhiskerwidthValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="whiskerwidth", parent_name="box", **kwargs):
         super(WhiskerwidthValidator, self).__init__(
             plotly_name=plotly_name,

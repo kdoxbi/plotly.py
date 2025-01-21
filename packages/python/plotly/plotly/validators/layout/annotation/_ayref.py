@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class AyrefValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class AyrefValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="ayref", parent_name="layout.annotation", **kwargs):
         super(AyrefValidator, self).__init__(
             plotly_name=plotly_name,

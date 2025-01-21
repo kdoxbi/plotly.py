@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SubplotValidator(_plotly_utils.basevalidators.SubplotidValidator):
+class SubplotValidator(_bv.SubplotidValidator):
     def __init__(self, plotly_name="subplot", parent_name="scattermapbox", **kwargs):
         super(SubplotValidator, self).__init__(
             plotly_name=plotly_name,

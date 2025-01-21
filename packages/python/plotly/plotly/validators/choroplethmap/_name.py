@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class NameValidator(_plotly_utils.basevalidators.StringValidator):
+class NameValidator(_bv.StringValidator):
     def __init__(self, plotly_name="name", parent_name="choroplethmap", **kwargs):
         super(NameValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class FramesValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
+class FramesValidator(_bv.CompoundArrayValidator):
     def __init__(self, plotly_name="frames", parent_name="", **kwargs):
         super(FramesValidator, self).__init__(
             plotly_name=plotly_name,

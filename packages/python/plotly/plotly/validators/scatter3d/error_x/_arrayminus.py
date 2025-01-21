@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ArrayminusValidator(_plotly_utils.basevalidators.DataArrayValidator):
+class ArrayminusValidator(_bv.DataArrayValidator):
     def __init__(
         self, plotly_name="arrayminus", parent_name="scatter3d.error_x", **kwargs
     ):

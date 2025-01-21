@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class LabelsValidator(_plotly_utils.basevalidators.DataArrayValidator):
+class LabelsValidator(_bv.DataArrayValidator):
     def __init__(self, plotly_name="labels", parent_name="treemap", **kwargs):
         super(LabelsValidator, self).__init__(
             plotly_name=plotly_name,

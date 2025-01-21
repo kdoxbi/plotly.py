@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class OrderingValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class OrderingValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="ordering", parent_name="layout.transition", **kwargs
     ):

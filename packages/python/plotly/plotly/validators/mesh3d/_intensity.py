@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class IntensityValidator(_plotly_utils.basevalidators.DataArrayValidator):
+class IntensityValidator(_bv.DataArrayValidator):
     def __init__(self, plotly_name="intensity", parent_name="mesh3d", **kwargs):
         super(IntensityValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ValuesValidator(_plotly_utils.basevalidators.InfoArrayValidator):
+class ValuesValidator(_bv.InfoArrayValidator):
     def __init__(
         self, plotly_name="values", parent_name="layout.yaxis.rangebreak", **kwargs
     ):

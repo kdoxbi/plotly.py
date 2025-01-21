@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TicklenValidator(_plotly_utils.basevalidators.NumberValidator):
+class TicklenValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="ticklen", parent_name="surface.colorbar", **kwargs):
         super(TicklenValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class LinkValidator(_plotly_utils.basevalidators.CompoundValidator):
+class LinkValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="link", parent_name="sankey", **kwargs):
         super(LinkValidator, self).__init__(
             plotly_name=plotly_name,

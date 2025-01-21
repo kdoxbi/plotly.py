@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ShowbackgroundValidator(_plotly_utils.basevalidators.BooleanValidator):
+class ShowbackgroundValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="showbackground", parent_name="layout.scene.zaxis", **kwargs
     ):

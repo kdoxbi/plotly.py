@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class HovermodeValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class HovermodeValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="hovermode", parent_name="layout", **kwargs):
         super(HovermodeValidator, self).__init__(
             plotly_name=plotly_name,

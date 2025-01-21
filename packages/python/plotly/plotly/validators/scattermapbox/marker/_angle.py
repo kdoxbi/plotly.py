@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class AngleValidator(_plotly_utils.basevalidators.NumberValidator):
+class AngleValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="angle", parent_name="scattermapbox.marker", **kwargs
     ):

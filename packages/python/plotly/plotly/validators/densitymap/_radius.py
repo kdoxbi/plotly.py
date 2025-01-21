@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class RadiusValidator(_plotly_utils.basevalidators.NumberValidator):
+class RadiusValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="radius", parent_name="densitymap", **kwargs):
         super(RadiusValidator, self).__init__(
             plotly_name=plotly_name,

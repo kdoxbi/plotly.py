@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class MinexponentValidator(_plotly_utils.basevalidators.NumberValidator):
+class MinexponentValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="minexponent", parent_name="surface.colorbar", **kwargs
     ):

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class NbinsyValidator(_plotly_utils.basevalidators.IntegerValidator):
+class NbinsyValidator(_bv.IntegerValidator):
     def __init__(
         self, plotly_name="nbinsy", parent_name="histogram2dcontour", **kwargs
     ):

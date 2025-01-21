@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class RowsValidator(_plotly_utils.basevalidators.IntegerValidator):
+class RowsValidator(_bv.IntegerValidator):
     def __init__(self, plotly_name="rows", parent_name="layout.grid", **kwargs):
         super(RowsValidator, self).__init__(
             plotly_name=plotly_name,

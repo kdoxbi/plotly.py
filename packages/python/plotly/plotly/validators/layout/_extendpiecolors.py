@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ExtendpiecolorsValidator(_plotly_utils.basevalidators.BooleanValidator):
+class ExtendpiecolorsValidator(_bv.BooleanValidator):
     def __init__(self, plotly_name="extendpiecolors", parent_name="layout", **kwargs):
         super(ExtendpiecolorsValidator, self).__init__(
             plotly_name=plotly_name,

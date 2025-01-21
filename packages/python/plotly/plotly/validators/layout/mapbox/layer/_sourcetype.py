@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SourcetypeValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class SourcetypeValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="sourcetype", parent_name="layout.mapbox.layer", **kwargs
     ):

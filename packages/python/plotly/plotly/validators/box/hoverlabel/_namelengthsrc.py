@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class NamelengthsrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class NamelengthsrcValidator(_bv.SrcValidator):
     def __init__(
         self, plotly_name="namelengthsrc", parent_name="box.hoverlabel", **kwargs
     ):

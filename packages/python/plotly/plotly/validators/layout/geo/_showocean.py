@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ShowoceanValidator(_plotly_utils.basevalidators.BooleanValidator):
+class ShowoceanValidator(_bv.BooleanValidator):
     def __init__(self, plotly_name="showocean", parent_name="layout.geo", **kwargs):
         super(ShowoceanValidator, self).__init__(
             plotly_name=plotly_name,

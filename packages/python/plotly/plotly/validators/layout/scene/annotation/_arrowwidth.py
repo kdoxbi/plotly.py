@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ArrowwidthValidator(_plotly_utils.basevalidators.NumberValidator):
+class ArrowwidthValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="arrowwidth", parent_name="layout.scene.annotation", **kwargs
     ):

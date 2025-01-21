@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class AutobinyValidator(_plotly_utils.basevalidators.BooleanValidator):
+class AutobinyValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="autobiny", parent_name="histogram2dcontour", **kwargs
     ):

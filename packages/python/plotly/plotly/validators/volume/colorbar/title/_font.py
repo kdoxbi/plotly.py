@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class FontValidator(_plotly_utils.basevalidators.CompoundValidator):
+class FontValidator(_bv.CompoundValidator):
     def __init__(
         self, plotly_name="font", parent_name="volume.colorbar.title", **kwargs
     ):

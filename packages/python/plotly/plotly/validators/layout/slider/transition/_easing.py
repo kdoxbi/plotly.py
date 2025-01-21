@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class EasingValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class EasingValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="easing", parent_name="layout.slider.transition", **kwargs
     ):

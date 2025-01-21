@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SizeminValidator(_plotly_utils.basevalidators.NumberValidator):
+class SizeminValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="sizemin", parent_name="scattercarpet.marker", **kwargs
     ):

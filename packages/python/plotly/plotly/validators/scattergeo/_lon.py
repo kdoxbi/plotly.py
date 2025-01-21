@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class LonValidator(_plotly_utils.basevalidators.DataArrayValidator):
+class LonValidator(_bv.DataArrayValidator):
     def __init__(self, plotly_name="lon", parent_name="scattergeo", **kwargs):
         super(LonValidator, self).__init__(
             plotly_name=plotly_name,

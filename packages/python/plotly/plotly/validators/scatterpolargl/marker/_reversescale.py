@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ReversescaleValidator(_plotly_utils.basevalidators.BooleanValidator):
+class ReversescaleValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="reversescale", parent_name="scatterpolargl.marker", **kwargs
     ):

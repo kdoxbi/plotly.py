@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class GroupclickValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class GroupclickValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="groupclick", parent_name="layout.legend", **kwargs):
         super(GroupclickValidator, self).__init__(
             plotly_name=plotly_name,

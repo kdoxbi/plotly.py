@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ThicknessmodeValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class ThicknessmodeValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="thicknessmode", parent_name="volume.colorbar", **kwargs
     ):

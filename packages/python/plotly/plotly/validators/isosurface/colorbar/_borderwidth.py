@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class BorderwidthValidator(_plotly_utils.basevalidators.NumberValidator):
+class BorderwidthValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="borderwidth", parent_name="isosurface.colorbar", **kwargs
     ):

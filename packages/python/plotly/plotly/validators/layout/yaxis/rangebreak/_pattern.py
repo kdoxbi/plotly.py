@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class PatternValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class PatternValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="pattern", parent_name="layout.yaxis.rangebreak", **kwargs
     ):

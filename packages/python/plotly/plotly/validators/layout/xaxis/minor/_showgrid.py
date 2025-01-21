@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ShowgridValidator(_plotly_utils.basevalidators.BooleanValidator):
+class ShowgridValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="showgrid", parent_name="layout.xaxis.minor", **kwargs
     ):

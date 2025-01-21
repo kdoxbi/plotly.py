@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class MaxdisplayedValidator(_plotly_utils.basevalidators.NumberValidator):
+class MaxdisplayedValidator(_bv.NumberValidator):
     def __init__(
         self, plotly_name="maxdisplayed", parent_name="scattercarpet.marker", **kwargs
     ):

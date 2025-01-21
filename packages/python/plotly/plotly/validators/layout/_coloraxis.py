@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ColoraxisValidator(_plotly_utils.basevalidators.CompoundValidator):
+class ColoraxisValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="coloraxis", parent_name="layout", **kwargs):
         super(ColoraxisValidator, self).__init__(
             plotly_name=plotly_name,

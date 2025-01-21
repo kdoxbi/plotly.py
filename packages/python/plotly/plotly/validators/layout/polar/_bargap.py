@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class BargapValidator(_plotly_utils.basevalidators.NumberValidator):
+class BargapValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="bargap", parent_name="layout.polar", **kwargs):
         super(BargapValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class FgcolorsrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class FgcolorsrcValidator(_bv.SrcValidator):
     def __init__(
         self, plotly_name="fgcolorsrc", parent_name="pie.marker.pattern", **kwargs
     ):

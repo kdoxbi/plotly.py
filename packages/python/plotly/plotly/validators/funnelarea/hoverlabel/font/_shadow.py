@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ShadowValidator(_plotly_utils.basevalidators.StringValidator):
+class ShadowValidator(_bv.StringValidator):
     def __init__(
         self, plotly_name="shadow", parent_name="funnelarea.hoverlabel.font", **kwargs
     ):

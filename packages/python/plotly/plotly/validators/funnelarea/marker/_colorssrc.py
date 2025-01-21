@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ColorssrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class ColorssrcValidator(_bv.SrcValidator):
     def __init__(
         self, plotly_name="colorssrc", parent_name="funnelarea.marker", **kwargs
     ):

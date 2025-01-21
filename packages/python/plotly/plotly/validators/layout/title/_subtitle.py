@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SubtitleValidator(_plotly_utils.basevalidators.CompoundValidator):
+class SubtitleValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="subtitle", parent_name="layout.title", **kwargs):
         super(SubtitleValidator, self).__init__(
             plotly_name=plotly_name,

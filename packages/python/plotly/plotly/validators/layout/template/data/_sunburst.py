@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SunburstValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
+class SunburstValidator(_bv.CompoundArrayValidator):
     def __init__(
         self, plotly_name="sunburst", parent_name="layout.template.data", **kwargs
     ):

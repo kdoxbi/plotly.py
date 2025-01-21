@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TicksonValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class TicksonValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="tickson", parent_name="layout.xaxis", **kwargs):
         super(TicksonValidator, self).__init__(
             plotly_name=plotly_name,

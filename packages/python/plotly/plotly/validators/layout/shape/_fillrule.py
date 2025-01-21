@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class FillruleValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class FillruleValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="fillrule", parent_name="layout.shape", **kwargs):
         super(FillruleValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class GriddashValidator(_plotly_utils.basevalidators.DashValidator):
+class GriddashValidator(_bv.DashValidator):
     def __init__(self, plotly_name="griddash", parent_name="carpet.aaxis", **kwargs):
         super(GriddashValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class YcalendarValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class YcalendarValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="ycalendar", parent_name="heatmap", **kwargs):
         super(YcalendarValidator, self).__init__(
             plotly_name=plotly_name,

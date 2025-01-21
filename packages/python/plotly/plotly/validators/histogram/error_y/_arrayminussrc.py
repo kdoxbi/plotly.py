@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ArrayminussrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class ArrayminussrcValidator(_bv.SrcValidator):
     def __init__(
         self, plotly_name="arrayminussrc", parent_name="histogram.error_y", **kwargs
     ):

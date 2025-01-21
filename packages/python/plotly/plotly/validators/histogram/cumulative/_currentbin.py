@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CurrentbinValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class CurrentbinValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="currentbin", parent_name="histogram.cumulative", **kwargs
     ):

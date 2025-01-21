@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ResolutionValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class ResolutionValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="resolution", parent_name="layout.geo", **kwargs):
         super(ResolutionValidator, self).__init__(
             plotly_name=plotly_name,

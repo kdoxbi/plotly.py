@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SymbolValidator(_plotly_utils.basevalidators.CompoundValidator):
+class SymbolValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="symbol", parent_name="layout.map.layer", **kwargs):
         super(SymbolValidator, self).__init__(
             plotly_name=plotly_name,

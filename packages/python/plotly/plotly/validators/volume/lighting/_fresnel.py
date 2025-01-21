@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class FresnelValidator(_plotly_utils.basevalidators.NumberValidator):
+class FresnelValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="fresnel", parent_name="volume.lighting", **kwargs):
         super(FresnelValidator, self).__init__(
             plotly_name=plotly_name,

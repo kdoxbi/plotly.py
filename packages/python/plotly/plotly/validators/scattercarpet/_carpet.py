@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CarpetValidator(_plotly_utils.basevalidators.StringValidator):
+class CarpetValidator(_bv.StringValidator):
     def __init__(self, plotly_name="carpet", parent_name="scattercarpet", **kwargs):
         super(CarpetValidator, self).__init__(
             plotly_name=plotly_name,

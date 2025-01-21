@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class NewshapeValidator(_plotly_utils.basevalidators.CompoundValidator):
+class NewshapeValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="newshape", parent_name="layout", **kwargs):
         super(NewshapeValidator, self).__init__(
             plotly_name=plotly_name,

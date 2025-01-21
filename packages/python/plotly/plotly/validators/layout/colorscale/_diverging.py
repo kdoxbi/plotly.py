@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class DivergingValidator(_plotly_utils.basevalidators.ColorscaleValidator):
+class DivergingValidator(_bv.ColorscaleValidator):
     def __init__(
         self, plotly_name="diverging", parent_name="layout.colorscale", **kwargs
     ):

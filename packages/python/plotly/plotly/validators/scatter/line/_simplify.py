@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SimplifyValidator(_plotly_utils.basevalidators.BooleanValidator):
+class SimplifyValidator(_bv.BooleanValidator):
     def __init__(self, plotly_name="simplify", parent_name="scatter.line", **kwargs):
         super(SimplifyValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class IsominValidator(_plotly_utils.basevalidators.NumberValidator):
+class IsominValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="isomin", parent_name="volume", **kwargs):
         super(IsominValidator, self).__init__(
             plotly_name=plotly_name,

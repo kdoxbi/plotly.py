@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TextangleValidator(_plotly_utils.basevalidators.AngleValidator):
+class TextangleValidator(_bv.AngleValidator):
     def __init__(
         self, plotly_name="textangle", parent_name="layout.annotation", **kwargs
     ):

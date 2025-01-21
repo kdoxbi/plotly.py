@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TemplateitemnameValidator(_plotly_utils.basevalidators.StringValidator):
+class TemplateitemnameValidator(_bv.StringValidator):
     def __init__(
         self, plotly_name="templateitemname", parent_name="splom.dimension", **kwargs
     ):

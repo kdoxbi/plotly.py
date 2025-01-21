@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ValueformatValidator(_plotly_utils.basevalidators.StringValidator):
+class ValueformatValidator(_bv.StringValidator):
     def __init__(
         self, plotly_name="valueformat", parent_name="indicator.number", **kwargs
     ):

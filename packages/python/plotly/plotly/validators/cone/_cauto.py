@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CautoValidator(_plotly_utils.basevalidators.BooleanValidator):
+class CautoValidator(_bv.BooleanValidator):
     def __init__(self, plotly_name="cauto", parent_name="cone", **kwargs):
         super(CautoValidator, self).__init__(
             plotly_name=plotly_name,

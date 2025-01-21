@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class AccesstokenValidator(_plotly_utils.basevalidators.StringValidator):
+class AccesstokenValidator(_bv.StringValidator):
     def __init__(
         self, plotly_name="accesstoken", parent_name="layout.mapbox", **kwargs
     ):

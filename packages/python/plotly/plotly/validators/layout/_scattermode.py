@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ScattermodeValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class ScattermodeValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="scattermode", parent_name="layout", **kwargs):
         super(ScattermodeValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class YanchorValidator(_plotly_utils.basevalidators.AnyValidator):
+class YanchorValidator(_bv.AnyValidator):
     def __init__(self, plotly_name="yanchor", parent_name="layout.shape", **kwargs):
         super(YanchorValidator, self).__init__(
             plotly_name=plotly_name,

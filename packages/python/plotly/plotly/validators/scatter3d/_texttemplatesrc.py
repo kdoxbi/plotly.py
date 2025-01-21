@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TexttemplatesrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class TexttemplatesrcValidator(_bv.SrcValidator):
     def __init__(
         self, plotly_name="texttemplatesrc", parent_name="scatter3d", **kwargs
     ):

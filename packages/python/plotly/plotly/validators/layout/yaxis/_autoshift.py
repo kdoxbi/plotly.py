@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class AutoshiftValidator(_plotly_utils.basevalidators.BooleanValidator):
+class AutoshiftValidator(_bv.BooleanValidator):
     def __init__(self, plotly_name="autoshift", parent_name="layout.yaxis", **kwargs):
         super(AutoshiftValidator, self).__init__(
             plotly_name=plotly_name,

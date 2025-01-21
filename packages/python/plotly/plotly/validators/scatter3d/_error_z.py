@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class Error_ZValidator(_plotly_utils.basevalidators.CompoundValidator):
+class Error_ZValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="error_z", parent_name="scatter3d", **kwargs):
         super(Error_ZValidator, self).__init__(
             plotly_name=plotly_name,

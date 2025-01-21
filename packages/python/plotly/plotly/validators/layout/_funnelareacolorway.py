@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class FunnelareacolorwayValidator(_plotly_utils.basevalidators.ColorlistValidator):
+class FunnelareacolorwayValidator(_bv.ColorlistValidator):
     def __init__(
         self, plotly_name="funnelareacolorway", parent_name="layout", **kwargs
     ):

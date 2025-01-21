@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class YaxisValidator(_plotly_utils.basevalidators.SubplotidValidator):
+class YaxisValidator(_bv.SubplotidValidator):
     def __init__(self, plotly_name="yaxis", parent_name="scattercarpet", **kwargs):
         super(YaxisValidator, self).__init__(
             plotly_name=plotly_name,

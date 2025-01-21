@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class AyValidator(_plotly_utils.basevalidators.AnyValidator):
+class AyValidator(_bv.AnyValidator):
     def __init__(self, plotly_name="ay", parent_name="layout.annotation", **kwargs):
         super(AyValidator, self).__init__(
             plotly_name=plotly_name,

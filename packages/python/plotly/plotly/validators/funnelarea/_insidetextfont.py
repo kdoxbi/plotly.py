@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class InsidetextfontValidator(_plotly_utils.basevalidators.CompoundValidator):
+class InsidetextfontValidator(_bv.CompoundValidator):
     def __init__(
         self, plotly_name="insidetextfont", parent_name="funnelarea", **kwargs
     ):

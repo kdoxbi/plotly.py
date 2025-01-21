@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class LocationsValidator(_plotly_utils.basevalidators.DataArrayValidator):
+class LocationsValidator(_bv.DataArrayValidator):
     def __init__(
         self, plotly_name="locations", parent_name="choroplethmapbox", **kwargs
     ):

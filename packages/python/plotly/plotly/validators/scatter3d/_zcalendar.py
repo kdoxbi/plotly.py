@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ZcalendarValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class ZcalendarValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="zcalendar", parent_name="scatter3d", **kwargs):
         super(ZcalendarValidator, self).__init__(
             plotly_name=plotly_name,

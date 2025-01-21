@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class VhoverformatValidator(_plotly_utils.basevalidators.StringValidator):
+class VhoverformatValidator(_bv.StringValidator):
     def __init__(self, plotly_name="vhoverformat", parent_name="cone", **kwargs):
         super(VhoverformatValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ColumnordersrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class ColumnordersrcValidator(_bv.SrcValidator):
     def __init__(self, plotly_name="columnordersrc", parent_name="table", **kwargs):
         super(ColumnordersrcValidator, self).__init__(
             plotly_name=plotly_name,

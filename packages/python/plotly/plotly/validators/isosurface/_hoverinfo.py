@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class HoverinfoValidator(_plotly_utils.basevalidators.FlaglistValidator):
+class HoverinfoValidator(_bv.FlaglistValidator):
     def __init__(self, plotly_name="hoverinfo", parent_name="isosurface", **kwargs):
         super(HoverinfoValidator, self).__init__(
             plotly_name=plotly_name,

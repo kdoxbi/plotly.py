@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TotalsValidator(_plotly_utils.basevalidators.CompoundValidator):
+class TotalsValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="totals", parent_name="waterfall", **kwargs):
         super(TotalsValidator, self).__init__(
             plotly_name=plotly_name,

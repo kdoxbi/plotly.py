@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TextcasesrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class TextcasesrcValidator(_bv.SrcValidator):
     def __init__(
         self, plotly_name="textcasesrc", parent_name="funnel.insidetextfont", **kwargs
     ):

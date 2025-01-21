@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CategoryarrayValidator(_plotly_utils.basevalidators.DataArrayValidator):
+class CategoryarrayValidator(_bv.DataArrayValidator):
     def __init__(
         self, plotly_name="categoryarray", parent_name="layout.scene.xaxis", **kwargs
     ):

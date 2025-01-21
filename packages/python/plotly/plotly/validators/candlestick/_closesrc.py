@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ClosesrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class ClosesrcValidator(_bv.SrcValidator):
     def __init__(self, plotly_name="closesrc", parent_name="candlestick", **kwargs):
         super(ClosesrcValidator, self).__init__(
             plotly_name=plotly_name,

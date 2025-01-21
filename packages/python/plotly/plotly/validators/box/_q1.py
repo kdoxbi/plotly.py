@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class Q1Validator(_plotly_utils.basevalidators.DataArrayValidator):
+class Q1Validator(_bv.DataArrayValidator):
     def __init__(self, plotly_name="q1", parent_name="box", **kwargs):
         super(Q1Validator, self).__init__(
             plotly_name=plotly_name,

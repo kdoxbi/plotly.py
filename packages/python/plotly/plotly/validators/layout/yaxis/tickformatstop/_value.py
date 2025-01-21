@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ValueValidator(_plotly_utils.basevalidators.StringValidator):
+class ValueValidator(_bv.StringValidator):
     def __init__(
         self, plotly_name="value", parent_name="layout.yaxis.tickformatstop", **kwargs
     ):

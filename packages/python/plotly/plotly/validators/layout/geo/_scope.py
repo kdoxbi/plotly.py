@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ScopeValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class ScopeValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="scope", parent_name="layout.geo", **kwargs):
         super(ScopeValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ZautoValidator(_plotly_utils.basevalidators.BooleanValidator):
+class ZautoValidator(_bv.BooleanValidator):
     def __init__(self, plotly_name="zauto", parent_name="densitymap", **kwargs):
         super(ZautoValidator, self).__init__(
             plotly_name=plotly_name,

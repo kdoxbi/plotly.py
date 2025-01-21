@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class BorderwidthValidator(_plotly_utils.basevalidators.IntegerValidator):
+class BorderwidthValidator(_bv.IntegerValidator):
     def __init__(
         self,
         plotly_name="borderwidth",

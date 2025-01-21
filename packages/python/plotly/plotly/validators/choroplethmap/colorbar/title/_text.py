@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TextValidator(_plotly_utils.basevalidators.StringValidator):
+class TextValidator(_bv.StringValidator):
     def __init__(
         self, plotly_name="text", parent_name="choroplethmap.colorbar.title", **kwargs
     ):

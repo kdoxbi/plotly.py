@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class HoverinfoValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class HoverinfoValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="hoverinfo", parent_name="sankey.link", **kwargs):
         super(HoverinfoValidator, self).__init__(
             plotly_name=plotly_name,

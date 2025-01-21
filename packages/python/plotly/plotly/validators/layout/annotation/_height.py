@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class HeightValidator(_plotly_utils.basevalidators.NumberValidator):
+class HeightValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="height", parent_name="layout.annotation", **kwargs):
         super(HeightValidator, self).__init__(
             plotly_name=plotly_name,

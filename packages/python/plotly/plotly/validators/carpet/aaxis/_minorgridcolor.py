@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class MinorgridcolorValidator(_plotly_utils.basevalidators.ColorValidator):
+class MinorgridcolorValidator(_bv.ColorValidator):
     def __init__(
         self, plotly_name="minorgridcolor", parent_name="carpet.aaxis", **kwargs
     ):

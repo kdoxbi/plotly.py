@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ArraysrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class ArraysrcValidator(_bv.SrcValidator):
     def __init__(self, plotly_name="arraysrc", parent_name="bar.error_y", **kwargs):
         super(ArraysrcValidator, self).__init__(
             plotly_name=plotly_name,

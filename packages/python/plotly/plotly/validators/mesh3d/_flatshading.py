@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class FlatshadingValidator(_plotly_utils.basevalidators.BooleanValidator):
+class FlatshadingValidator(_bv.BooleanValidator):
     def __init__(self, plotly_name="flatshading", parent_name="mesh3d", **kwargs):
         super(FlatshadingValidator, self).__init__(
             plotly_name=plotly_name,

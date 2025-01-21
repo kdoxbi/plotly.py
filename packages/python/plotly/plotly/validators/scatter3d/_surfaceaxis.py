@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SurfaceaxisValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class SurfaceaxisValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="surfaceaxis", parent_name="scatter3d", **kwargs):
         super(SurfaceaxisValidator, self).__init__(
             plotly_name=plotly_name,

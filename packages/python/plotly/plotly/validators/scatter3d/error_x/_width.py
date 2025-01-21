@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class WidthValidator(_plotly_utils.basevalidators.NumberValidator):
+class WidthValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="width", parent_name="scatter3d.error_x", **kwargs):
         super(WidthValidator, self).__init__(
             plotly_name=plotly_name,

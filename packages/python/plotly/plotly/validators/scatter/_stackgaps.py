@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class StackgapsValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class StackgapsValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="stackgaps", parent_name="scatter", **kwargs):
         super(StackgapsValidator, self).__init__(
             plotly_name=plotly_name,

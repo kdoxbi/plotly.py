@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ThetaunitValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class ThetaunitValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="thetaunit", parent_name="layout.polar.angularaxis", **kwargs
     ):

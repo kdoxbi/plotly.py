@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class IncludeValidator(_plotly_utils.basevalidators.AnyValidator):
+class IncludeValidator(_bv.AnyValidator):
     def __init__(
         self,
         plotly_name="include",

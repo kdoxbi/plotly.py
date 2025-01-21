@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ScatterternaryValidator(_plotly_utils.basevalidators.CompoundValidator):
+class ScatterternaryValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="scatterternary", parent_name="", **kwargs):
         super(ScatterternaryValidator, self).__init__(
             plotly_name=plotly_name,

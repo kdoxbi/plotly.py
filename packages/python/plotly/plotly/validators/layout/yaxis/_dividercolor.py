@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class DividercolorValidator(_plotly_utils.basevalidators.ColorValidator):
+class DividercolorValidator(_bv.ColorValidator):
     def __init__(
         self, plotly_name="dividercolor", parent_name="layout.yaxis", **kwargs
     ):

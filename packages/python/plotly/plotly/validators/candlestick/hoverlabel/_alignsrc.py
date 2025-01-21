@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class AlignsrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class AlignsrcValidator(_bv.SrcValidator):
     def __init__(
         self, plotly_name="alignsrc", parent_name="candlestick.hoverlabel", **kwargs
     ):

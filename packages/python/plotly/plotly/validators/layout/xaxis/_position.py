@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class PositionValidator(_plotly_utils.basevalidators.NumberValidator):
+class PositionValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="position", parent_name="layout.xaxis", **kwargs):
         super(PositionValidator, self).__init__(
             plotly_name=plotly_name,

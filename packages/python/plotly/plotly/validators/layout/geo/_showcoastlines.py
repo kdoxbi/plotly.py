@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ShowcoastlinesValidator(_plotly_utils.basevalidators.BooleanValidator):
+class ShowcoastlinesValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="showcoastlines", parent_name="layout.geo", **kwargs
     ):

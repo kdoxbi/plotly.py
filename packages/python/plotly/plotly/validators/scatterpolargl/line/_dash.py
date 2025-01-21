@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class DashValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class DashValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="dash", parent_name="scatterpolargl.line", **kwargs):
         super(DashValidator, self).__init__(
             plotly_name=plotly_name,

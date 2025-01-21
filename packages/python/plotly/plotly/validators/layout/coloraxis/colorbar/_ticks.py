@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TicksValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class TicksValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="ticks", parent_name="layout.coloraxis.colorbar", **kwargs
     ):

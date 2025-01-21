@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class GroupsValidator(_plotly_utils.basevalidators.InfoArrayValidator):
+class GroupsValidator(_bv.InfoArrayValidator):
     def __init__(self, plotly_name="groups", parent_name="sankey.node", **kwargs):
         super(GroupsValidator, self).__init__(
             plotly_name=plotly_name,

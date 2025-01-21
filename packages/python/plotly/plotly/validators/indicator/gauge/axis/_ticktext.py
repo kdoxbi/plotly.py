@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TicktextValidator(_plotly_utils.basevalidators.DataArrayValidator):
+class TicktextValidator(_bv.DataArrayValidator):
     def __init__(
         self, plotly_name="ticktext", parent_name="indicator.gauge.axis", **kwargs
     ):

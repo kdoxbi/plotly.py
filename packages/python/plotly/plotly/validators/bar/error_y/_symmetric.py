@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SymmetricValidator(_plotly_utils.basevalidators.BooleanValidator):
+class SymmetricValidator(_bv.BooleanValidator):
     def __init__(self, plotly_name="symmetric", parent_name="bar.error_y", **kwargs):
         super(SymmetricValidator, self).__init__(
             plotly_name=plotly_name,

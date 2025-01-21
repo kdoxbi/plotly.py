@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class RelativeValidator(_plotly_utils.basevalidators.BooleanValidator):
+class RelativeValidator(_bv.BooleanValidator):
     def __init__(self, plotly_name="relative", parent_name="indicator.delta", **kwargs):
         super(RelativeValidator, self).__init__(
             plotly_name=plotly_name,

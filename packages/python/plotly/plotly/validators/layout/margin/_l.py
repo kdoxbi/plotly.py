@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class LValidator(_plotly_utils.basevalidators.NumberValidator):
+class LValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="l", parent_name="layout.margin", **kwargs):
         super(LValidator, self).__init__(
             plotly_name=plotly_name,

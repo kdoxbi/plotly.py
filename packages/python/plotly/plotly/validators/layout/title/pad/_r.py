@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class RValidator(_plotly_utils.basevalidators.NumberValidator):
+class RValidator(_bv.NumberValidator):
     def __init__(self, plotly_name="r", parent_name="layout.title.pad", **kwargs):
         super(RValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TextpositionValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class TextpositionValidator(_bv.EnumeratedValidator):
     def __init__(
         self, plotly_name="textposition", parent_name="layout.newshape.label", **kwargs
     ):

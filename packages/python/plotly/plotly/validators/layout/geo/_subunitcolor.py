@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SubunitcolorValidator(_plotly_utils.basevalidators.ColorValidator):
+class SubunitcolorValidator(_bv.ColorValidator):
     def __init__(self, plotly_name="subunitcolor", parent_name="layout.geo", **kwargs):
         super(SubunitcolorValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class RivercolorValidator(_plotly_utils.basevalidators.ColorValidator):
+class RivercolorValidator(_bv.ColorValidator):
     def __init__(self, plotly_name="rivercolor", parent_name="layout.geo", **kwargs):
         super(RivercolorValidator, self).__init__(
             plotly_name=plotly_name,

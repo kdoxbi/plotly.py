@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class HistogramValidator(_plotly_utils.basevalidators.CompoundValidator):
+class HistogramValidator(_bv.CompoundValidator):
     def __init__(self, plotly_name="histogram", parent_name="", **kwargs):
         super(HistogramValidator, self).__init__(
             plotly_name=plotly_name,

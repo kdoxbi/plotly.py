@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TicksuffixValidator(_plotly_utils.basevalidators.StringValidator):
+class TicksuffixValidator(_bv.StringValidator):
     def __init__(
         self, plotly_name="ticksuffix", parent_name="densitymapbox.colorbar", **kwargs
     ):

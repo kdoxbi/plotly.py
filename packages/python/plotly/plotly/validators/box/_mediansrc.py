@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class MediansrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class MediansrcValidator(_bv.SrcValidator):
     def __init__(self, plotly_name="mediansrc", parent_name="box", **kwargs):
         super(MediansrcValidator, self).__init__(
             plotly_name=plotly_name,

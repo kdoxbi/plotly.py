@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class MetaValidator(_plotly_utils.basevalidators.AnyValidator):
+class MetaValidator(_bv.AnyValidator):
     def __init__(self, plotly_name="meta", parent_name="histogram2dcontour", **kwargs):
         super(MetaValidator, self).__init__(
             plotly_name=plotly_name,

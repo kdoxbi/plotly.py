@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SplitValidator(_plotly_utils.basevalidators.BooleanValidator):
+class SplitValidator(_bv.BooleanValidator):
     def __init__(
         self, plotly_name="split", parent_name="candlestick.hoverlabel", **kwargs
     ):

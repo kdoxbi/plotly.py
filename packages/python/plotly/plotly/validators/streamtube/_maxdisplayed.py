@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class MaxdisplayedValidator(_plotly_utils.basevalidators.IntegerValidator):
+class MaxdisplayedValidator(_bv.IntegerValidator):
     def __init__(self, plotly_name="maxdisplayed", parent_name="streamtube", **kwargs):
         super(MaxdisplayedValidator, self).__init__(
             plotly_name=plotly_name,

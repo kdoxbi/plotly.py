@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ZValidator(_plotly_utils.basevalidators.AnyValidator):
+class ZValidator(_bv.AnyValidator):
     def __init__(
         self, plotly_name="z", parent_name="layout.scene.annotation", **kwargs
     ):

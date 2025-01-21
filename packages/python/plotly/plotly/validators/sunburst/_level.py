@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class LevelValidator(_plotly_utils.basevalidators.AnyValidator):
+class LevelValidator(_bv.AnyValidator):
     def __init__(self, plotly_name="level", parent_name="sunburst", **kwargs):
         super(LevelValidator, self).__init__(
             plotly_name=plotly_name,

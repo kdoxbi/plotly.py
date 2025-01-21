@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class OverlayingValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class OverlayingValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="overlaying", parent_name="layout.xaxis", **kwargs):
         super(OverlayingValidator, self).__init__(
             plotly_name=plotly_name,

@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class ShowwhiskersValidator(_plotly_utils.basevalidators.BooleanValidator):
+class ShowwhiskersValidator(_bv.BooleanValidator):
     def __init__(self, plotly_name="showwhiskers", parent_name="box", **kwargs):
         super(ShowwhiskersValidator, self).__init__(
             plotly_name=plotly_name,

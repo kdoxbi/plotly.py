@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class CustomdatasrcValidator(_plotly_utils.basevalidators.SrcValidator):
+class CustomdatasrcValidator(_bv.SrcValidator):
     def __init__(self, plotly_name="customdatasrc", parent_name="scatter3d", **kwargs):
         super(CustomdatasrcValidator, self).__init__(
             plotly_name=plotly_name,

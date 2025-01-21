@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class SelectedpointsValidator(_plotly_utils.basevalidators.AnyValidator):
+class SelectedpointsValidator(_bv.AnyValidator):
     def __init__(
         self, plotly_name="selectedpoints", parent_name="scattergeo", **kwargs
     ):

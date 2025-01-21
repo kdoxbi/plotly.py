@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class BarmodeValidator(_plotly_utils.basevalidators.EnumeratedValidator):
+class BarmodeValidator(_bv.EnumeratedValidator):
     def __init__(self, plotly_name="barmode", parent_name="layout.polar", **kwargs):
         super(BarmodeValidator, self).__init__(
             plotly_name=plotly_name,

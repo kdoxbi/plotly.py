@@ -1,7 +1,7 @@
-import _plotly_utils.basevalidators
+import _plotly_utils.basevalidators as _bv
 
 
-class TemplateValidator(_plotly_utils.basevalidators.BaseTemplateValidator):
+class TemplateValidator(_bv.BaseTemplateValidator):
     def __init__(self, plotly_name="template", parent_name="layout", **kwargs):
         super(TemplateValidator, self).__init__(
             plotly_name=plotly_name,
