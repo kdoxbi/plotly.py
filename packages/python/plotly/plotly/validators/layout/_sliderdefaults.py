@@ -7,10 +7,5 @@ class SliderdefaultsValidator(_plotly_utils.basevalidators.CompoundValidator):
             plotly_name=plotly_name,
             parent_name=parent_name,
             data_class_str=kwargs.pop("data_class_str", "Slider"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
-""",
-            ),
             **kwargs,
         )

@@ -213,27 +213,6 @@ class Z(_BaseTraceHierarchyType):
           - A dict of string/value properties that will be passed
             to the Project constructor
 
-            Supported dict properties:
-
-                x
-                    Determines whether or not these contour lines
-                    are projected on the x plane. If `highlight` is
-                    set to True (the default), the projected lines
-                    are shown on hover. If `show` is set to True,
-                    the projected lines are shown in permanence.
-                y
-                    Determines whether or not these contour lines
-                    are projected on the y plane. If `highlight` is
-                    set to True (the default), the projected lines
-                    are shown on hover. If `show` is set to True,
-                    the projected lines are shown in permanence.
-                z
-                    Determines whether or not these contour lines
-                    are projected on the z plane. If `highlight` is
-                    set to True (the default), the projected lines
-                    are shown on hover. If `show` is set to True,
-                    the projected lines are shown in permanence.
-
         Returns
         -------
         plotly.graph_objs.surface.contours.z.Project

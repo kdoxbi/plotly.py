@@ -80,15 +80,6 @@ class Bar(_BaseTraceHierarchyType):
           - A dict of string/value properties that will be passed
             to the Line constructor
 
-            Supported dict properties:
-
-                color
-                    Sets the color of the line enclosing each
-                    sector.
-                width
-                    Sets the width (in px) of the line enclosing
-                    each sector.
-
         Returns
         -------
         plotly.graph_objs.indicator.gauge.bar.Line

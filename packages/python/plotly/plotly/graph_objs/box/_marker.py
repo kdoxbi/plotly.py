@@ -113,25 +113,6 @@ class Marker(_BaseTraceHierarchyType):
           - A dict of string/value properties that will be passed
             to the Line constructor
 
-            Supported dict properties:
-
-                color
-                    Sets the marker.line color. It accepts either a
-                    specific color or an array of numbers that are
-                    mapped to the colorscale relative to the max
-                    and min values of the array or relative to
-                    `marker.line.cmin` and `marker.line.cmax` if
-                    set.
-                outliercolor
-                    Sets the border line color of the outlier
-                    sample points. Defaults to marker.color
-                outlierwidth
-                    Sets the border line width (in px) of the
-                    outlier sample points.
-                width
-                    Sets the width (in px) of the lines bounding
-                    the marker points.
-
         Returns
         -------
         plotly.graph_objs.box.marker.Line

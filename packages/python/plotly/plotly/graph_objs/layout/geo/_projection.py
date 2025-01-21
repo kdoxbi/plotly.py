@@ -69,19 +69,6 @@ class Projection(_BaseLayoutHierarchyType):
           - A dict of string/value properties that will be passed
             to the Rotation constructor
 
-            Supported dict properties:
-
-                lat
-                    Rotates the map along meridians (in degrees
-                    North).
-                lon
-                    Rotates the map along parallels (in degrees
-                    East). Defaults to the center of the
-                    `lonaxis.range` values.
-                roll
-                    Roll the map (in degrees) For example, a roll
-                    of 180 makes the map appear upside down.
-
         Returns
         -------
         plotly.graph_objs.layout.geo.projection.Rotation

@@ -21,13 +21,6 @@ class Threshold(_BaseTraceHierarchyType):
           - A dict of string/value properties that will be passed
             to the Line constructor
 
-            Supported dict properties:
-
-                color
-                    Sets the color of the threshold line.
-                width
-                    Sets the width (in px) of the threshold line.
-
         Returns
         -------
         plotly.graph_objs.indicator.gauge.threshold.Line

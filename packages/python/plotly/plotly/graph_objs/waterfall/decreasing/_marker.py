@@ -80,13 +80,6 @@ class Marker(_BaseTraceHierarchyType):
           - A dict of string/value properties that will be passed
             to the Line constructor
 
-            Supported dict properties:
-
-                color
-                    Sets the line color of all decreasing values.
-                width
-                    Sets the line width of all decreasing values.
-
         Returns
         -------
         plotly.graph_objs.waterfall.decreasing.marker.Line

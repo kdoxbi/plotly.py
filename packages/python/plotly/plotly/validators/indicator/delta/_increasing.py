@@ -9,14 +9,5 @@ class IncreasingValidator(_plotly_utils.basevalidators.CompoundValidator):
             plotly_name=plotly_name,
             parent_name=parent_name,
             data_class_str=kwargs.pop("data_class_str", "Increasing"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
-            color
-                Sets the color for increasing value.
-            symbol
-                Sets the symbol to display for increasing value
-""",
-            ),
             **kwargs,
         )

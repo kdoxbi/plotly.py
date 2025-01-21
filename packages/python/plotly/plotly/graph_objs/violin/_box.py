@@ -80,13 +80,6 @@ class Box(_BaseTraceHierarchyType):
           - A dict of string/value properties that will be passed
             to the Line constructor
 
-            Supported dict properties:
-
-                color
-                    Sets the inner box plot bounding line color.
-                width
-                    Sets the inner box plot bounding line width.
-
         Returns
         -------
         plotly.graph_objs.violin.box.Line

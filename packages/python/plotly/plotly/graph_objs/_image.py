@@ -217,44 +217,6 @@ class Image(_BaseTraceType):
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
 
-            Supported dict properties:
-
-                align
-                    Sets the horizontal alignment of the text
-                    content within hover label box. Has an effect
-                    only if the hover label text spans more two or
-                    more lines
-                alignsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `align`.
-                bgcolor
-                    Sets the background color of the hover labels
-                    for this trace
-                bgcolorsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `bgcolor`.
-                bordercolor
-                    Sets the border color of the hover labels for
-                    this trace.
-                bordercolorsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `bordercolor`.
-                font
-                    Sets the font used in hover labels.
-                namelength
-                    Sets the default length (in number of
-                    characters) of the trace name in the hover
-                    labels for all traces. -1 shows the whole name
-                    regardless of length. 0-3 shows the first 0-3
-                    characters, and an integer >3 will show the
-                    whole name if it is less than that many
-                    characters, but if it is longer, will truncate
-                    to `namelength - 3` characters and add an
-                    ellipsis.
-                namelengthsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `namelength`.
-
         Returns
         -------
         plotly.graph_objs.image.Hoverlabel
@@ -451,13 +413,6 @@ class Image(_BaseTraceType):
           - A dict of string/value properties that will be passed
             to the Legendgrouptitle constructor
 
-            Supported dict properties:
-
-                font
-                    Sets this legend group's title font.
-                text
-                    Sets the title of the legend group.
-
         Returns
         -------
         plotly.graph_objs.image.Legendgrouptitle
@@ -638,18 +593,6 @@ class Image(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.image.Stream`
           - A dict of string/value properties that will be passed
             to the Stream constructor
-
-            Supported dict properties:
-
-                maxpoints
-                    Sets the maximum number of points to keep on
-                    the plots from an incoming stream. If
-                    `maxpoints` is set to 50, only the newest 50
-                    points will be displayed on the plot.
-                token
-                    The stream id number links a data trace on a
-                    plot with a stream. See https://chart-
-                    studio.plotly.com/settings for more details.
 
         Returns
         -------

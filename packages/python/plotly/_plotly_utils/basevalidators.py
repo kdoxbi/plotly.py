@@ -2428,7 +2428,7 @@ class ImageUriValidator(BaseValidator):
 
 
 class CompoundValidator(BaseValidator):
-    def __init__(self, plotly_name, parent_name, data_class_str, data_docs, **kwargs):
+    def __init__(self, plotly_name, parent_name, data_class_str, **kwargs):
         super(CompoundValidator, self).__init__(
             plotly_name=plotly_name, parent_name=parent_name, **kwargs
         )
@@ -2436,7 +2436,6 @@ class CompoundValidator(BaseValidator):
         # Save element class string
         self.data_class_str = data_class_str
         self._data_class = None
-        self.data_docs = data_docs
         self.module_str = CompoundValidator.compute_graph_obj_module_str(
             self.data_class_str, parent_name
         )
@@ -2483,15 +2482,11 @@ class CompoundValidator(BaseValidator):
     that may be specified as:
       - An instance of :class:`{module_str}.{class_str}`
       - A dict of string/value properties that will be passed
-        to the {class_str} constructor
-
-        Supported dict properties:
-            {constructor_params_str}"""
+        to the {class_str} constructor"""
         ).format(
             plotly_name=self.plotly_name,
             class_str=self.data_class_str,
             module_str=self.module_str,
-            constructor_params_str=self.data_docs,
         )
 
         return desc
@@ -2538,7 +2533,7 @@ class TitleValidator(CompoundValidator):
 
 
 class CompoundArrayValidator(BaseValidator):
-    def __init__(self, plotly_name, parent_name, data_class_str, data_docs, **kwargs):
+    def __init__(self, plotly_name, parent_name, data_class_str, **kwargs):
         super(CompoundArrayValidator, self).__init__(
             plotly_name=plotly_name, parent_name=parent_name, **kwargs
         )
@@ -2547,7 +2542,6 @@ class CompoundArrayValidator(BaseValidator):
         self.data_class_str = data_class_str
         self._data_class = None
 
-        self.data_docs = data_docs
         self.module_str = CompoundValidator.compute_graph_obj_module_str(
             self.data_class_str, parent_name
         )
@@ -2560,15 +2554,11 @@ class CompoundArrayValidator(BaseValidator):
     {class_str} that may be specified as:
       - A list or tuple of instances of {module_str}.{class_str}
       - A list or tuple of dicts of string/value properties that
-        will be passed to the {class_str} constructor
-
-        Supported dict properties:
-            {constructor_params_str}"""
+        will be passed to the {class_str} constructor"""
         ).format(
             plotly_name=self.plotly_name,
             class_str=self.data_class_str,
             module_str=self.module_str,
-            constructor_params_str=self.data_docs,
         )
 
         return desc
@@ -2741,13 +2731,12 @@ class BaseDataValidator(BaseValidator):
 
 
 class BaseTemplateValidator(CompoundValidator):
-    def __init__(self, plotly_name, parent_name, data_class_str, data_docs, **kwargs):
+    def __init__(self, plotly_name, parent_name, data_class_str, **kwargs):
 
         super(BaseTemplateValidator, self).__init__(
             plotly_name=plotly_name,
             parent_name=parent_name,
             data_class_str=data_class_str,
-            data_docs=data_docs,
             **kwargs,
         )
 

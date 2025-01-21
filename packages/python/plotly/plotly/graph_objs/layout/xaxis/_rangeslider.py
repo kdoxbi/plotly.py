@@ -263,20 +263,6 @@ class Rangeslider(_BaseLayoutHierarchyType):
           - A dict of string/value properties that will be passed
             to the YAxis constructor
 
-            Supported dict properties:
-
-                range
-                    Sets the range of this axis for the
-                    rangeslider.
-                rangemode
-                    Determines whether or not the range of this
-                    axis in the rangeslider use the same value than
-                    in the main plot when zooming in/out. If
-                    "auto", the autorange will be used. If "fixed",
-                    the `range` is used. If "match", the current
-                    range of the corresponding y-axis on the main
-                    subplot is used.
-
         Returns
         -------
         plotly.graph_objs.layout.xaxis.rangeslider.YAxis

@@ -21,17 +21,6 @@ class Projection(_BaseTraceHierarchyType):
           - A dict of string/value properties that will be passed
             to the X constructor
 
-            Supported dict properties:
-
-                opacity
-                    Sets the projection color.
-                scale
-                    Sets the scale factor determining the size of
-                    the projection marker points.
-                show
-                    Sets whether or not projections are shown along
-                    the x axis.
-
         Returns
         -------
         plotly.graph_objs.scatter3d.projection.X
@@ -53,17 +42,6 @@ class Projection(_BaseTraceHierarchyType):
           - A dict of string/value properties that will be passed
             to the Y constructor
 
-            Supported dict properties:
-
-                opacity
-                    Sets the projection color.
-                scale
-                    Sets the scale factor determining the size of
-                    the projection marker points.
-                show
-                    Sets whether or not projections are shown along
-                    the y axis.
-
         Returns
         -------
         plotly.graph_objs.scatter3d.projection.Y
@@ -84,17 +62,6 @@ class Projection(_BaseTraceHierarchyType):
           - An instance of :class:`plotly.graph_objs.scatter3d.projection.Z`
           - A dict of string/value properties that will be passed
             to the Z constructor
-
-            Supported dict properties:
-
-                opacity
-                    Sets the projection color.
-                scale
-                    Sets the scale factor determining the size of
-                    the projection marker points.
-                show
-                    Sets whether or not projections are shown along
-                    the z axis.
 
         Returns
         -------

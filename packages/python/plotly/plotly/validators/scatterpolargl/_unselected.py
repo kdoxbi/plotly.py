@@ -9,18 +9,5 @@ class UnselectedValidator(_plotly_utils.basevalidators.CompoundValidator):
             plotly_name=plotly_name,
             parent_name=parent_name,
             data_class_str=kwargs.pop("data_class_str", "Unselected"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
-            marker
-                :class:`plotly.graph_objects.scatterpolargl.uns
-                elected.Marker` instance or dict with
-                compatible properties
-            textfont
-                :class:`plotly.graph_objects.scatterpolargl.uns
-                elected.Textfont` instance or dict with
-                compatible properties
-""",
-            ),
             **kwargs,
         )

@@ -113,37 +113,6 @@ class Indicator(_BaseTraceType):
           - A dict of string/value properties that will be passed
             to the Delta constructor
 
-            Supported dict properties:
-
-                decreasing
-                    :class:`plotly.graph_objects.indicator.delta.De
-                    creasing` instance or dict with compatible
-                    properties
-                font
-                    Set the font used to display the delta
-                increasing
-                    :class:`plotly.graph_objects.indicator.delta.In
-                    creasing` instance or dict with compatible
-                    properties
-                position
-                    Sets the position of delta with respect to the
-                    number.
-                prefix
-                    Sets a prefix appearing before the delta.
-                reference
-                    Sets the reference value to compute the delta.
-                    By default, it is set to the current value.
-                relative
-                    Show relative change
-                suffix
-                    Sets a suffix appearing next to the delta.
-                valueformat
-                    Sets the value formatting rule using d3
-                    formatting mini-languages which are very
-                    similar to those in Python. For numbers, see: h
-                    ttps://github.com/d3/d3-format/tree/v1.4.5#d3-
-                    format.
-
         Returns
         -------
         plotly.graph_objs.indicator.Delta
@@ -164,22 +133,6 @@ class Indicator(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.indicator.Domain`
           - A dict of string/value properties that will be passed
             to the Domain constructor
-
-            Supported dict properties:
-
-                column
-                    If there is a layout grid, use the domain for
-                    this column in the grid for this indicator
-                    trace .
-                row
-                    If there is a layout grid, use the domain for
-                    this row in the grid for this indicator trace .
-                x
-                    Sets the horizontal domain of this indicator
-                    trace (in plot fraction).
-                y
-                    Sets the vertical domain of this indicator
-                    trace (in plot fraction).
 
         Returns
         -------
@@ -203,37 +156,6 @@ class Indicator(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.indicator.Gauge`
           - A dict of string/value properties that will be passed
             to the Gauge constructor
-
-            Supported dict properties:
-
-                axis
-                    :class:`plotly.graph_objects.indicator.gauge.Ax
-                    is` instance or dict with compatible properties
-                bar
-                    Set the appearance of the gauge's value
-                bgcolor
-                    Sets the gauge background color.
-                bordercolor
-                    Sets the color of the border enclosing the
-                    gauge.
-                borderwidth
-                    Sets the width (in px) of the border enclosing
-                    the gauge.
-                shape
-                    Set the shape of the gauge
-                steps
-                    A tuple of :class:`plotly.graph_objects.indicat
-                    or.gauge.Step` instances or dicts with
-                    compatible properties
-                stepdefaults
-                    When used in a template (as layout.template.dat
-                    a.indicator.gauge.stepdefaults), sets the
-                    default property values to use for elements of
-                    indicator.gauge.steps
-                threshold
-                    :class:`plotly.graph_objects.indicator.gauge.Th
-                    reshold` instance or dict with compatible
-                    properties
 
         Returns
         -------
@@ -322,13 +244,6 @@ class Indicator(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.indicator.Legendgrouptitle`
           - A dict of string/value properties that will be passed
             to the Legendgrouptitle constructor
-
-            Supported dict properties:
-
-                font
-                    Sets this legend group's title font.
-                text
-                    Sets the title of the legend group.
 
         Returns
         -------
@@ -494,21 +409,6 @@ class Indicator(_BaseTraceType):
           - A dict of string/value properties that will be passed
             to the Number constructor
 
-            Supported dict properties:
-
-                font
-                    Set the font used to display main number
-                prefix
-                    Sets a prefix appearing before the number.
-                suffix
-                    Sets a suffix appearing next to the number.
-                valueformat
-                    Sets the value formatting rule using d3
-                    formatting mini-languages which are very
-                    similar to those in Python. For numbers, see: h
-                    ttps://github.com/d3/d3-format/tree/v1.4.5#d3-
-                    format.
-
         Returns
         -------
         plotly.graph_objs.indicator.Number
@@ -530,18 +430,6 @@ class Indicator(_BaseTraceType):
           - A dict of string/value properties that will be passed
             to the Stream constructor
 
-            Supported dict properties:
-
-                maxpoints
-                    Sets the maximum number of points to keep on
-                    the plots from an incoming stream. If
-                    `maxpoints` is set to 50, only the newest 50
-                    points will be displayed on the plot.
-                token
-                    The stream id number links a data trace on a
-                    plot with a stream. See https://chart-
-                    studio.plotly.com/settings for more details.
-
         Returns
         -------
         plotly.graph_objs.indicator.Stream
@@ -562,17 +450,6 @@ class Indicator(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.indicator.Title`
           - A dict of string/value properties that will be passed
             to the Title constructor
-
-            Supported dict properties:
-
-                align
-                    Sets the horizontal alignment of the title. It
-                    defaults to `center` except for bullet charts
-                    for which it defaults to right.
-                font
-                    Set the font used to display the title
-                text
-                    Sets the title of this indicator.
 
         Returns
         -------

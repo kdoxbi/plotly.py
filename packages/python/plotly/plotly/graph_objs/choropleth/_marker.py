@@ -21,25 +21,6 @@ class Marker(_BaseTraceHierarchyType):
           - A dict of string/value properties that will be passed
             to the Line constructor
 
-            Supported dict properties:
-
-                color
-                    Sets the marker.line color. It accepts either a
-                    specific color or an array of numbers that are
-                    mapped to the colorscale relative to the max
-                    and min values of the array or relative to
-                    `marker.line.cmin` and `marker.line.cmax` if
-                    set.
-                colorsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `color`.
-                width
-                    Sets the width (in px) of the lines bounding
-                    the marker points.
-                widthsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `width`.
-
         Returns
         -------
         plotly.graph_objs.choropleth.marker.Line

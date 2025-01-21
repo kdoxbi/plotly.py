@@ -63,13 +63,6 @@ class Layer(_BaseLayoutHierarchyType):
           - A dict of string/value properties that will be passed
             to the Circle constructor
 
-            Supported dict properties:
-
-                radius
-                    Sets the circle radius
-                    (mapbox.layer.paint.circle-radius). Has an
-                    effect only when `type` is set to "circle".
-
         Returns
         -------
         plotly.graph_objs.layout.mapbox.layer.Circle
@@ -178,13 +171,6 @@ class Layer(_BaseLayoutHierarchyType):
           - A dict of string/value properties that will be passed
             to the Fill constructor
 
-            Supported dict properties:
-
-                outlinecolor
-                    Sets the fill outline color
-                    (mapbox.layer.paint.fill-outline-color). Has an
-                    effect only when `type` is set to "fill".
-
         Returns
         -------
         plotly.graph_objs.layout.mapbox.layer.Fill
@@ -205,20 +191,6 @@ class Layer(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.mapbox.layer.Line`
           - A dict of string/value properties that will be passed
             to the Line constructor
-
-            Supported dict properties:
-
-                dash
-                    Sets the length of dashes and gaps
-                    (mapbox.layer.paint.line-dasharray). Has an
-                    effect only when `type` is set to "line".
-                dashsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `dash`.
-                width
-                    Sets the line width (mapbox.layer.paint.line-
-                    width). Has an effect only when `type` is set
-                    to "line".
 
         Returns
         -------
@@ -427,37 +399,6 @@ class Layer(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.mapbox.layer.Symbol`
           - A dict of string/value properties that will be passed
             to the Symbol constructor
-
-            Supported dict properties:
-
-                icon
-                    Sets the symbol icon image
-                    (mapbox.layer.layout.icon-image). Full list:
-                    https://www.mapbox.com/maki-icons/
-                iconsize
-                    Sets the symbol icon size
-                    (mapbox.layer.layout.icon-size). Has an effect
-                    only when `type` is set to "symbol".
-                placement
-                    Sets the symbol and/or text placement
-                    (mapbox.layer.layout.symbol-placement). If
-                    `placement` is "point", the label is placed
-                    where the geometry is located If `placement` is
-                    "line", the label is placed along the line of
-                    the geometry If `placement` is "line-center",
-                    the label is placed on the center of the
-                    geometry
-                text
-                    Sets the symbol text (mapbox.layer.layout.text-
-                    field).
-                textfont
-                    Sets the icon text font
-                    (color=mapbox.layer.paint.text-color,
-                    size=mapbox.layer.layout.text-size). Has an
-                    effect only when `type` is set to "symbol".
-                textposition
-                    Sets the positions of the `text` elements with
-                    respects to the (x,y) coordinates.
 
         Returns
         -------

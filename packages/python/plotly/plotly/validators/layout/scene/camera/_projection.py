@@ -9,14 +9,5 @@ class ProjectionValidator(_plotly_utils.basevalidators.CompoundValidator):
             plotly_name=plotly_name,
             parent_name=parent_name,
             data_class_str=kwargs.pop("data_class_str", "Projection"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
-            type
-                Sets the projection type. The projection type
-                could be either "perspective" or
-                "orthographic". The default is "perspective".
-""",
-            ),
             **kwargs,
         )

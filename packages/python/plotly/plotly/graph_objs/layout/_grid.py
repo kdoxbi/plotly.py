@@ -60,19 +60,6 @@ class Grid(_BaseLayoutHierarchyType):
           - A dict of string/value properties that will be passed
             to the Domain constructor
 
-            Supported dict properties:
-
-                x
-                    Sets the horizontal domain of this grid subplot
-                    (in plot fraction). The first and last cells
-                    end exactly at the domain edges, with no grout
-                    around the edges.
-                y
-                    Sets the vertical domain of this grid subplot
-                    (in plot fraction). The first and last cells
-                    end exactly at the domain edges, with no grout
-                    around the edges.
-
         Returns
         -------
         plotly.graph_objs.layout.grid.Domain

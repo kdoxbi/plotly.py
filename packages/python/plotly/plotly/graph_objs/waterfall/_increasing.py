@@ -21,15 +21,6 @@ class Increasing(_BaseTraceHierarchyType):
           - A dict of string/value properties that will be passed
             to the Marker constructor
 
-            Supported dict properties:
-
-                color
-                    Sets the marker color of all increasing values.
-                line
-                    :class:`plotly.graph_objects.waterfall.increasi
-                    ng.marker.Line` instance or dict with
-                    compatible properties
-
         Returns
         -------
         plotly.graph_objs.waterfall.increasing.Marker

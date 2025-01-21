@@ -25,14 +25,6 @@ class Camera(_BaseLayoutHierarchyType):
           - A dict of string/value properties that will be passed
             to the Center constructor
 
-            Supported dict properties:
-
-                x
-
-                y
-
-                z
-
         Returns
         -------
         plotly.graph_objs.layout.scene.camera.Center
@@ -58,14 +50,6 @@ class Camera(_BaseLayoutHierarchyType):
           - A dict of string/value properties that will be passed
             to the Eye constructor
 
-            Supported dict properties:
-
-                x
-
-                y
-
-                z
-
         Returns
         -------
         plotly.graph_objs.layout.scene.camera.Eye
@@ -86,13 +70,6 @@ class Camera(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.scene.camera.Projection`
           - A dict of string/value properties that will be passed
             to the Projection constructor
-
-            Supported dict properties:
-
-                type
-                    Sets the projection type. The projection type
-                    could be either "perspective" or
-                    "orthographic". The default is "perspective".
 
         Returns
         -------
@@ -119,14 +96,6 @@ class Camera(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.scene.camera.Up`
           - A dict of string/value properties that will be passed
             to the Up constructor
-
-            Supported dict properties:
-
-                x
-
-                y
-
-                z
 
         Returns
         -------

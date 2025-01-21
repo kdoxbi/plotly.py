@@ -7,18 +7,5 @@ class ConnectorValidator(_plotly_utils.basevalidators.CompoundValidator):
             plotly_name=plotly_name,
             parent_name=parent_name,
             data_class_str=kwargs.pop("data_class_str", "Connector"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
-            line
-                :class:`plotly.graph_objects.waterfall.connecto
-                r.Line` instance or dict with compatible
-                properties
-            mode
-                Sets the shape of connector lines.
-            visible
-                Determines if connector lines are drawn.
-""",
-            ),
             **kwargs,
         )

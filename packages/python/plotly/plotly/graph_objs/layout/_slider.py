@@ -264,26 +264,6 @@ class Slider(_BaseLayoutHierarchyType):
           - A dict of string/value properties that will be passed
             to the Currentvalue constructor
 
-            Supported dict properties:
-
-                font
-                    Sets the font of the current value label text.
-                offset
-                    The amount of space, in pixels, between the
-                    current value label and the slider.
-                prefix
-                    When currentvalue.visible is true, this sets
-                    the prefix of the label.
-                suffix
-                    When currentvalue.visible is true, this sets
-                    the suffix of the label.
-                visible
-                    Shows the currently-selected value above the
-                    slider.
-                xanchor
-                    The alignment of the value readout relative to
-                    the length of the slider.
-
         Returns
         -------
         plotly.graph_objs.layout.slider.Currentvalue
@@ -306,52 +286,6 @@ class Slider(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.slider.Font`
           - A dict of string/value properties that will be passed
             to the Font constructor
-
-            Supported dict properties:
-
-                color
-
-                family
-                    HTML font family - the typeface that will be
-                    applied by the web browser. The web browser
-                    will only be able to apply a font if it is
-                    available on the system which it operates.
-                    Provide multiple font families, separated by
-                    commas, to indicate the preference in which to
-                    apply fonts if they aren't available on the
-                    system. The Chart Studio Cloud (at
-                    https://chart-studio.plotly.com or on-premise)
-                    generates images on a server, where only a
-                    select number of fonts are installed and
-                    supported. These include "Arial", "Balto",
-                    "Courier New", "Droid Sans", "Droid Serif",
-                    "Droid Sans Mono", "Gravitas One", "Old
-                    Standard TT", "Open Sans", "Overpass", "PT Sans
-                    Narrow", "Raleway", "Times New Roman".
-                lineposition
-                    Sets the kind of decoration line(s) with text,
-                    such as an "under", "over" or "through" as well
-                    as combinations e.g. "under+over", etc.
-                shadow
-                    Sets the shape and color of the shadow behind
-                    text. "auto" places minimal shadow and applies
-                    contrast text font color. See
-                    https://developer.mozilla.org/en-
-                    US/docs/Web/CSS/text-shadow for additional
-                    options.
-                size
-
-                style
-                    Sets whether a font should be styled with a
-                    normal or italic face from its family.
-                textcase
-                    Sets capitalization of text. It can be used to
-                    make text appear in all-uppercase or all-
-                    lowercase, or with each word capitalized.
-                variant
-                    Sets the variant of the font.
-                weight
-                    Sets the weight (or boldness) of the font.
 
         Returns
         -------
@@ -467,21 +401,6 @@ class Slider(_BaseLayoutHierarchyType):
           - A dict of string/value properties that will be passed
             to the Pad constructor
 
-            Supported dict properties:
-
-                b
-                    The amount of padding (in px) along the bottom
-                    of the component.
-                l
-                    The amount of padding (in px) on the left side
-                    of the component.
-                r
-                    The amount of padding (in px) on the right side
-                    of the component.
-                t
-                    The amount of padding (in px) along the top of
-                    the component.
-
         Returns
         -------
         plotly.graph_objs.layout.slider.Pad
@@ -502,60 +421,6 @@ class Slider(_BaseLayoutHierarchyType):
           - A list or tuple of instances of plotly.graph_objs.layout.slider.Step
           - A list or tuple of dicts of string/value properties that
             will be passed to the Step constructor
-
-            Supported dict properties:
-
-                args
-                    Sets the arguments values to be passed to the
-                    Plotly method set in `method` on slide.
-                execute
-                    When true, the API method is executed. When
-                    false, all other behaviors are the same and
-                    command execution is skipped. This may be
-                    useful when hooking into, for example, the
-                    `plotly_sliderchange` method and executing the
-                    API command manually without losing the benefit
-                    of the slider automatically binding to the
-                    state of the plot through the specification of
-                    `method` and `args`.
-                label
-                    Sets the text label to appear on the slider
-                method
-                    Sets the Plotly method to be called when the
-                    slider value is changed. If the `skip` method
-                    is used, the API slider will function as normal
-                    but will perform no API calls and will not bind
-                    automatically to state updates. This may be
-                    used to create a component interface and attach
-                    to slider events manually via JavaScript.
-                name
-                    When used in a template, named items are
-                    created in the output figure in addition to any
-                    items the figure already has in this array. You
-                    can modify these items in the output figure by
-                    making your own item with `templateitemname`
-                    matching this `name` alongside your
-                    modifications (including `visible: false` or
-                    `enabled: false` to hide it). Has no effect
-                    outside of a template.
-                templateitemname
-                    Used to refer to a named item in this array in
-                    the template. Named items from the template
-                    will be created even without a matching item in
-                    the input figure, but you can modify one by
-                    making an item with `templateitemname` matching
-                    its `name`, alongside your modifications
-                    (including `visible: false` or `enabled: false`
-                    to hide it). If there is no template or no
-                    matching item, this item will be hidden unless
-                    you explicitly show it with `visible: true`.
-                value
-                    Sets the value of the slider step, used to
-                    refer to the step programatically. Defaults to
-                    the slider label if not provided.
-                visible
-                    Determines whether or not this step is included
-                    in the slider.
 
         Returns
         -------
@@ -581,8 +446,6 @@ class Slider(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.slider.Step`
           - A dict of string/value properties that will be passed
             to the Step constructor
-
-            Supported dict properties:
 
         Returns
         -------
@@ -731,14 +594,6 @@ class Slider(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.slider.Transition`
           - A dict of string/value properties that will be passed
             to the Transition constructor
-
-            Supported dict properties:
-
-                duration
-                    Sets the duration of the slider transition
-                easing
-                    Sets the easing function of the slider
-                    transition
 
         Returns
         -------

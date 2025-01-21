@@ -182,21 +182,6 @@ class Pie(_BaseTraceType):
           - A dict of string/value properties that will be passed
             to the Domain constructor
 
-            Supported dict properties:
-
-                column
-                    If there is a layout grid, use the domain for
-                    this column in the grid for this pie trace .
-                row
-                    If there is a layout grid, use the domain for
-                    this row in the grid for this pie trace .
-                x
-                    Sets the horizontal domain of this pie trace
-                    (in plot fraction).
-                y
-                    Sets the vertical domain of this pie trace (in
-                    plot fraction).
-
         Returns
         -------
         plotly.graph_objs.pie.Domain
@@ -285,44 +270,6 @@ class Pie(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.pie.Hoverlabel`
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
-
-            Supported dict properties:
-
-                align
-                    Sets the horizontal alignment of the text
-                    content within hover label box. Has an effect
-                    only if the hover label text spans more two or
-                    more lines
-                alignsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `align`.
-                bgcolor
-                    Sets the background color of the hover labels
-                    for this trace
-                bgcolorsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `bgcolor`.
-                bordercolor
-                    Sets the border color of the hover labels for
-                    this trace.
-                bordercolorsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `bordercolor`.
-                font
-                    Sets the font used in hover labels.
-                namelength
-                    Sets the default length (in number of
-                    characters) of the trace name in the hover
-                    labels for all traces. -1 shows the whole name
-                    regardless of length. 0-3 shows the first 0-3
-                    characters, and an integer >3 will show the
-                    whole name if it is less than that many
-                    characters, but if it is longer, will truncate
-                    to `namelength - 3` characters and add an
-                    ellipsis.
-                namelengthsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `namelength`.
 
         Returns
         -------
@@ -503,79 +450,6 @@ class Pie(_BaseTraceType):
           - A dict of string/value properties that will be passed
             to the Insidetextfont constructor
 
-            Supported dict properties:
-
-                color
-
-                colorsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `color`.
-                family
-                    HTML font family - the typeface that will be
-                    applied by the web browser. The web browser
-                    will only be able to apply a font if it is
-                    available on the system which it operates.
-                    Provide multiple font families, separated by
-                    commas, to indicate the preference in which to
-                    apply fonts if they aren't available on the
-                    system. The Chart Studio Cloud (at
-                    https://chart-studio.plotly.com or on-premise)
-                    generates images on a server, where only a
-                    select number of fonts are installed and
-                    supported. These include "Arial", "Balto",
-                    "Courier New", "Droid Sans", "Droid Serif",
-                    "Droid Sans Mono", "Gravitas One", "Old
-                    Standard TT", "Open Sans", "Overpass", "PT Sans
-                    Narrow", "Raleway", "Times New Roman".
-                familysrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `family`.
-                lineposition
-                    Sets the kind of decoration line(s) with text,
-                    such as an "under", "over" or "through" as well
-                    as combinations e.g. "under+over", etc.
-                linepositionsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `lineposition`.
-                shadow
-                    Sets the shape and color of the shadow behind
-                    text. "auto" places minimal shadow and applies
-                    contrast text font color. See
-                    https://developer.mozilla.org/en-
-                    US/docs/Web/CSS/text-shadow for additional
-                    options.
-                shadowsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `shadow`.
-                size
-
-                sizesrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `size`.
-                style
-                    Sets whether a font should be styled with a
-                    normal or italic face from its family.
-                stylesrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `style`.
-                textcase
-                    Sets capitalization of text. It can be used to
-                    make text appear in all-uppercase or all-
-                    lowercase, or with each word capitalized.
-                textcasesrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `textcase`.
-                variant
-                    Sets the variant of the font.
-                variantsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `variant`.
-                weight
-                    Sets the weight (or boldness) of the font.
-                weightsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `weight`.
-
         Returns
         -------
         plotly.graph_objs.pie.Insidetextfont
@@ -739,13 +613,6 @@ class Pie(_BaseTraceType):
           - A dict of string/value properties that will be passed
             to the Legendgrouptitle constructor
 
-            Supported dict properties:
-
-                font
-                    Sets this legend group's title font.
-                text
-                    Sets the title of the legend group.
-
         Returns
         -------
         plotly.graph_objs.pie.Legendgrouptitle
@@ -814,21 +681,6 @@ class Pie(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.pie.Marker`
           - A dict of string/value properties that will be passed
             to the Marker constructor
-
-            Supported dict properties:
-
-                colors
-                    Sets the color of each sector. If not
-                    specified, the default trace color set is used
-                    to pick the sector colors.
-                colorssrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `colors`.
-                line
-                    :class:`plotly.graph_objects.pie.marker.Line`
-                    instance or dict with compatible properties
-                pattern
-                    Sets the pattern within the marker.
 
         Returns
         -------
@@ -942,79 +794,6 @@ class Pie(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.pie.Outsidetextfont`
           - A dict of string/value properties that will be passed
             to the Outsidetextfont constructor
-
-            Supported dict properties:
-
-                color
-
-                colorsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `color`.
-                family
-                    HTML font family - the typeface that will be
-                    applied by the web browser. The web browser
-                    will only be able to apply a font if it is
-                    available on the system which it operates.
-                    Provide multiple font families, separated by
-                    commas, to indicate the preference in which to
-                    apply fonts if they aren't available on the
-                    system. The Chart Studio Cloud (at
-                    https://chart-studio.plotly.com or on-premise)
-                    generates images on a server, where only a
-                    select number of fonts are installed and
-                    supported. These include "Arial", "Balto",
-                    "Courier New", "Droid Sans", "Droid Serif",
-                    "Droid Sans Mono", "Gravitas One", "Old
-                    Standard TT", "Open Sans", "Overpass", "PT Sans
-                    Narrow", "Raleway", "Times New Roman".
-                familysrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `family`.
-                lineposition
-                    Sets the kind of decoration line(s) with text,
-                    such as an "under", "over" or "through" as well
-                    as combinations e.g. "under+over", etc.
-                linepositionsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `lineposition`.
-                shadow
-                    Sets the shape and color of the shadow behind
-                    text. "auto" places minimal shadow and applies
-                    contrast text font color. See
-                    https://developer.mozilla.org/en-
-                    US/docs/Web/CSS/text-shadow for additional
-                    options.
-                shadowsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `shadow`.
-                size
-
-                sizesrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `size`.
-                style
-                    Sets whether a font should be styled with a
-                    normal or italic face from its family.
-                stylesrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `style`.
-                textcase
-                    Sets capitalization of text. It can be used to
-                    make text appear in all-uppercase or all-
-                    lowercase, or with each word capitalized.
-                textcasesrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `textcase`.
-                variant
-                    Sets the variant of the font.
-                variantsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `variant`.
-                weight
-                    Sets the weight (or boldness) of the font.
-                weightsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `weight`.
 
         Returns
         -------
@@ -1169,18 +948,6 @@ class Pie(_BaseTraceType):
           - A dict of string/value properties that will be passed
             to the Stream constructor
 
-            Supported dict properties:
-
-                maxpoints
-                    Sets the maximum number of points to keep on
-                    the plots from an incoming stream. If
-                    `maxpoints` is set to 50, only the newest 50
-                    points will be displayed on the plot.
-                token
-                    The stream id number links a data trace on a
-                    plot with a stream. See https://chart-
-                    studio.plotly.com/settings for more details.
-
         Returns
         -------
         plotly.graph_objs.pie.Stream
@@ -1227,79 +994,6 @@ class Pie(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.pie.Textfont`
           - A dict of string/value properties that will be passed
             to the Textfont constructor
-
-            Supported dict properties:
-
-                color
-
-                colorsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `color`.
-                family
-                    HTML font family - the typeface that will be
-                    applied by the web browser. The web browser
-                    will only be able to apply a font if it is
-                    available on the system which it operates.
-                    Provide multiple font families, separated by
-                    commas, to indicate the preference in which to
-                    apply fonts if they aren't available on the
-                    system. The Chart Studio Cloud (at
-                    https://chart-studio.plotly.com or on-premise)
-                    generates images on a server, where only a
-                    select number of fonts are installed and
-                    supported. These include "Arial", "Balto",
-                    "Courier New", "Droid Sans", "Droid Serif",
-                    "Droid Sans Mono", "Gravitas One", "Old
-                    Standard TT", "Open Sans", "Overpass", "PT Sans
-                    Narrow", "Raleway", "Times New Roman".
-                familysrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `family`.
-                lineposition
-                    Sets the kind of decoration line(s) with text,
-                    such as an "under", "over" or "through" as well
-                    as combinations e.g. "under+over", etc.
-                linepositionsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `lineposition`.
-                shadow
-                    Sets the shape and color of the shadow behind
-                    text. "auto" places minimal shadow and applies
-                    contrast text font color. See
-                    https://developer.mozilla.org/en-
-                    US/docs/Web/CSS/text-shadow for additional
-                    options.
-                shadowsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `shadow`.
-                size
-
-                sizesrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `size`.
-                style
-                    Sets whether a font should be styled with a
-                    normal or italic face from its family.
-                stylesrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `style`.
-                textcase
-                    Sets capitalization of text. It can be used to
-                    make text appear in all-uppercase or all-
-                    lowercase, or with each word capitalized.
-                textcasesrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `textcase`.
-                variant
-                    Sets the variant of the font.
-                variantsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `variant`.
-                weight
-                    Sets the weight (or boldness) of the font.
-                weightsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `weight`.
 
         Returns
         -------
@@ -1463,16 +1157,6 @@ class Pie(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.pie.Title`
           - A dict of string/value properties that will be passed
             to the Title constructor
-
-            Supported dict properties:
-
-                font
-                    Sets the font used for `title`.
-                position
-                    Specifies the location of the `title`.
-                text
-                    Sets the title of the chart. If it is empty, no
-                    title is displayed.
 
         Returns
         -------

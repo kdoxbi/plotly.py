@@ -95,86 +95,6 @@ class Parcoords(_BaseTraceType):
           - A list or tuple of dicts of string/value properties that
             will be passed to the Dimension constructor
 
-            Supported dict properties:
-
-                constraintrange
-                    The domain range to which the filter on the
-                    dimension is constrained. Must be an array of
-                    `[fromValue, toValue]` with `fromValue <=
-                    toValue`, or if `multiselect` is not disabled,
-                    you may give an array of arrays, where each
-                    inner array is `[fromValue, toValue]`.
-                label
-                    The shown name of the dimension.
-                multiselect
-                    Do we allow multiple selection ranges or just a
-                    single range?
-                name
-                    When used in a template, named items are
-                    created in the output figure in addition to any
-                    items the figure already has in this array. You
-                    can modify these items in the output figure by
-                    making your own item with `templateitemname`
-                    matching this `name` alongside your
-                    modifications (including `visible: false` or
-                    `enabled: false` to hide it). Has no effect
-                    outside of a template.
-                range
-                    The domain range that represents the full,
-                    shown axis extent. Defaults to the `values`
-                    extent. Must be an array of `[fromValue,
-                    toValue]` with finite numbers as elements.
-                templateitemname
-                    Used to refer to a named item in this array in
-                    the template. Named items from the template
-                    will be created even without a matching item in
-                    the input figure, but you can modify one by
-                    making an item with `templateitemname` matching
-                    its `name`, alongside your modifications
-                    (including `visible: false` or `enabled: false`
-                    to hide it). If there is no template or no
-                    matching item, this item will be hidden unless
-                    you explicitly show it with `visible: true`.
-                tickformat
-                    Sets the tick label formatting rule using d3
-                    formatting mini-languages which are very
-                    similar to those in Python. For numbers, see: h
-                    ttps://github.com/d3/d3-format/tree/v1.4.5#d3-
-                    format. And for dates see:
-                    https://github.com/d3/d3-time-
-                    format/tree/v2.2.3#locale_format. We add two
-                    items to d3's date formatter: "%h" for half of
-                    the year as a decimal number as well as "%{n}f"
-                    for fractional seconds with n digits. For
-                    example, *2016-10-13 09:15:23.456* with
-                    tickformat "%H~%M~%S.%2f" would display
-                    "09~15~23.46"
-                ticktext
-                    Sets the text displayed at the ticks position
-                    via `tickvals`.
-                ticktextsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `ticktext`.
-                tickvals
-                    Sets the values at which ticks on this axis
-                    appear.
-                tickvalssrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `tickvals`.
-                values
-                    Dimension values. `values[n]` represents the
-                    value of the `n`th point in the dataset,
-                    therefore the `values` vector for all
-                    dimensions must be the same (longer vectors
-                    will be truncated). Each value must be a finite
-                    number.
-                valuessrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `values`.
-                visible
-                    Shows the dimension when set to `true` (the
-                    default). Hides the dimension for `false`.
-
         Returns
         -------
         tuple[plotly.graph_objs.parcoords.Dimension]
@@ -201,8 +121,6 @@ class Parcoords(_BaseTraceType):
           - A dict of string/value properties that will be passed
             to the Dimension constructor
 
-            Supported dict properties:
-
         Returns
         -------
         plotly.graph_objs.parcoords.Dimension
@@ -223,22 +141,6 @@ class Parcoords(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.parcoords.Domain`
           - A dict of string/value properties that will be passed
             to the Domain constructor
-
-            Supported dict properties:
-
-                column
-                    If there is a layout grid, use the domain for
-                    this column in the grid for this parcoords
-                    trace .
-                row
-                    If there is a layout grid, use the domain for
-                    this row in the grid for this parcoords trace .
-                x
-                    Sets the horizontal domain of this parcoords
-                    trace (in plot fraction).
-                y
-                    Sets the vertical domain of this parcoords
-                    trace (in plot fraction).
 
         Returns
         -------
@@ -330,52 +232,6 @@ class Parcoords(_BaseTraceType):
           - A dict of string/value properties that will be passed
             to the Labelfont constructor
 
-            Supported dict properties:
-
-                color
-
-                family
-                    HTML font family - the typeface that will be
-                    applied by the web browser. The web browser
-                    will only be able to apply a font if it is
-                    available on the system which it operates.
-                    Provide multiple font families, separated by
-                    commas, to indicate the preference in which to
-                    apply fonts if they aren't available on the
-                    system. The Chart Studio Cloud (at
-                    https://chart-studio.plotly.com or on-premise)
-                    generates images on a server, where only a
-                    select number of fonts are installed and
-                    supported. These include "Arial", "Balto",
-                    "Courier New", "Droid Sans", "Droid Serif",
-                    "Droid Sans Mono", "Gravitas One", "Old
-                    Standard TT", "Open Sans", "Overpass", "PT Sans
-                    Narrow", "Raleway", "Times New Roman".
-                lineposition
-                    Sets the kind of decoration line(s) with text,
-                    such as an "under", "over" or "through" as well
-                    as combinations e.g. "under+over", etc.
-                shadow
-                    Sets the shape and color of the shadow behind
-                    text. "auto" places minimal shadow and applies
-                    contrast text font color. See
-                    https://developer.mozilla.org/en-
-                    US/docs/Web/CSS/text-shadow for additional
-                    options.
-                size
-
-                style
-                    Sets whether a font should be styled with a
-                    normal or italic face from its family.
-                textcase
-                    Sets capitalization of text. It can be used to
-                    make text appear in all-uppercase or all-
-                    lowercase, or with each word capitalized.
-                variant
-                    Sets the variant of the font.
-                weight
-                    Sets the weight (or boldness) of the font.
-
         Returns
         -------
         plotly.graph_objs.parcoords.Labelfont
@@ -446,13 +302,6 @@ class Parcoords(_BaseTraceType):
           - A dict of string/value properties that will be passed
             to the Legendgrouptitle constructor
 
-            Supported dict properties:
-
-                font
-                    Sets this legend group's title font.
-                text
-                    Sets the title of the legend group.
-
         Returns
         -------
         plotly.graph_objs.parcoords.Legendgrouptitle
@@ -521,95 +370,6 @@ class Parcoords(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.parcoords.Line`
           - A dict of string/value properties that will be passed
             to the Line constructor
-
-            Supported dict properties:
-
-                autocolorscale
-                    Determines whether the colorscale is a default
-                    palette (`autocolorscale: true`) or the palette
-                    determined by `line.colorscale`. Has an effect
-                    only if in `line.color` is set to a numerical
-                    array. In case `colorscale` is unspecified or
-                    `autocolorscale` is true, the default palette
-                    will be chosen according to whether numbers in
-                    the `color` array are all positive, all
-                    negative or mixed.
-                cauto
-                    Determines whether or not the color domain is
-                    computed with respect to the input data (here
-                    in `line.color`) or the bounds set in
-                    `line.cmin` and `line.cmax` Has an effect only
-                    if in `line.color` is set to a numerical array.
-                    Defaults to `false` when `line.cmin` and
-                    `line.cmax` are set by the user.
-                cmax
-                    Sets the upper bound of the color domain. Has
-                    an effect only if in `line.color` is set to a
-                    numerical array. Value should have the same
-                    units as in `line.color` and if set,
-                    `line.cmin` must be set as well.
-                cmid
-                    Sets the mid-point of the color domain by
-                    scaling `line.cmin` and/or `line.cmax` to be
-                    equidistant to this point. Has an effect only
-                    if in `line.color` is set to a numerical array.
-                    Value should have the same units as in
-                    `line.color`. Has no effect when `line.cauto`
-                    is `false`.
-                cmin
-                    Sets the lower bound of the color domain. Has
-                    an effect only if in `line.color` is set to a
-                    numerical array. Value should have the same
-                    units as in `line.color` and if set,
-                    `line.cmax` must be set as well.
-                color
-                    Sets the line color. It accepts either a
-                    specific color or an array of numbers that are
-                    mapped to the colorscale relative to the max
-                    and min values of the array or relative to
-                    `line.cmin` and `line.cmax` if set.
-                coloraxis
-                    Sets a reference to a shared color axis.
-                    References to these shared color axes are
-                    "coloraxis", "coloraxis2", "coloraxis3", etc.
-                    Settings for these shared color axes are set in
-                    the layout, under `layout.coloraxis`,
-                    `layout.coloraxis2`, etc. Note that multiple
-                    color scales can be linked to the same color
-                    axis.
-                colorbar
-                    :class:`plotly.graph_objects.parcoords.line.Col
-                    orBar` instance or dict with compatible
-                    properties
-                colorscale
-                    Sets the colorscale. Has an effect only if in
-                    `line.color` is set to a numerical array. The
-                    colorscale must be an array containing arrays
-                    mapping a normalized value to an rgb, rgba,
-                    hex, hsl, hsv, or named color string. At
-                    minimum, a mapping for the lowest (0) and
-                    highest (1) values are required. For example,
-                    `[[0, 'rgb(0,0,255)'], [1, 'rgb(255,0,0)']]`.
-                    To control the bounds of the colorscale in
-                    color space, use `line.cmin` and `line.cmax`.
-                    Alternatively, `colorscale` may be a palette
-                    name string of the following list: Blackbody,Bl
-                    uered,Blues,Cividis,Earth,Electric,Greens,Greys
-                    ,Hot,Jet,Picnic,Portland,Rainbow,RdBu,Reds,Viri
-                    dis,YlGnBu,YlOrRd.
-                colorsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `color`.
-                reversescale
-                    Reverses the color mapping if true. Has an
-                    effect only if in `line.color` is set to a
-                    numerical array. If true, `line.cmin` will
-                    correspond to the last color in the array and
-                    `line.cmax` will correspond to the first color.
-                showscale
-                    Determines whether or not a colorbar is
-                    displayed for this trace. Has an effect only if
-                    in `line.color` is set to a numerical array.
 
         Returns
         -------
@@ -704,52 +464,6 @@ class Parcoords(_BaseTraceType):
           - A dict of string/value properties that will be passed
             to the Rangefont constructor
 
-            Supported dict properties:
-
-                color
-
-                family
-                    HTML font family - the typeface that will be
-                    applied by the web browser. The web browser
-                    will only be able to apply a font if it is
-                    available on the system which it operates.
-                    Provide multiple font families, separated by
-                    commas, to indicate the preference in which to
-                    apply fonts if they aren't available on the
-                    system. The Chart Studio Cloud (at
-                    https://chart-studio.plotly.com or on-premise)
-                    generates images on a server, where only a
-                    select number of fonts are installed and
-                    supported. These include "Arial", "Balto",
-                    "Courier New", "Droid Sans", "Droid Serif",
-                    "Droid Sans Mono", "Gravitas One", "Old
-                    Standard TT", "Open Sans", "Overpass", "PT Sans
-                    Narrow", "Raleway", "Times New Roman".
-                lineposition
-                    Sets the kind of decoration line(s) with text,
-                    such as an "under", "over" or "through" as well
-                    as combinations e.g. "under+over", etc.
-                shadow
-                    Sets the shape and color of the shadow behind
-                    text. "auto" places minimal shadow and applies
-                    contrast text font color. See
-                    https://developer.mozilla.org/en-
-                    US/docs/Web/CSS/text-shadow for additional
-                    options.
-                size
-
-                style
-                    Sets whether a font should be styled with a
-                    normal or italic face from its family.
-                textcase
-                    Sets capitalization of text. It can be used to
-                    make text appear in all-uppercase or all-
-                    lowercase, or with each word capitalized.
-                variant
-                    Sets the variant of the font.
-                weight
-                    Sets the weight (or boldness) of the font.
-
         Returns
         -------
         plotly.graph_objs.parcoords.Rangefont
@@ -770,18 +484,6 @@ class Parcoords(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.parcoords.Stream`
           - A dict of string/value properties that will be passed
             to the Stream constructor
-
-            Supported dict properties:
-
-                maxpoints
-                    Sets the maximum number of points to keep on
-                    the plots from an incoming stream. If
-                    `maxpoints` is set to 50, only the newest 50
-                    points will be displayed on the plot.
-                token
-                    The stream id number links a data trace on a
-                    plot with a stream. See https://chart-
-                    studio.plotly.com/settings for more details.
 
         Returns
         -------
@@ -805,52 +507,6 @@ class Parcoords(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.parcoords.Tickfont`
           - A dict of string/value properties that will be passed
             to the Tickfont constructor
-
-            Supported dict properties:
-
-                color
-
-                family
-                    HTML font family - the typeface that will be
-                    applied by the web browser. The web browser
-                    will only be able to apply a font if it is
-                    available on the system which it operates.
-                    Provide multiple font families, separated by
-                    commas, to indicate the preference in which to
-                    apply fonts if they aren't available on the
-                    system. The Chart Studio Cloud (at
-                    https://chart-studio.plotly.com or on-premise)
-                    generates images on a server, where only a
-                    select number of fonts are installed and
-                    supported. These include "Arial", "Balto",
-                    "Courier New", "Droid Sans", "Droid Serif",
-                    "Droid Sans Mono", "Gravitas One", "Old
-                    Standard TT", "Open Sans", "Overpass", "PT Sans
-                    Narrow", "Raleway", "Times New Roman".
-                lineposition
-                    Sets the kind of decoration line(s) with text,
-                    such as an "under", "over" or "through" as well
-                    as combinations e.g. "under+over", etc.
-                shadow
-                    Sets the shape and color of the shadow behind
-                    text. "auto" places minimal shadow and applies
-                    contrast text font color. See
-                    https://developer.mozilla.org/en-
-                    US/docs/Web/CSS/text-shadow for additional
-                    options.
-                size
-
-                style
-                    Sets whether a font should be styled with a
-                    normal or italic face from its family.
-                textcase
-                    Sets capitalization of text. It can be used to
-                    make text appear in all-uppercase or all-
-                    lowercase, or with each word capitalized.
-                variant
-                    Sets the variant of the font.
-                weight
-                    Sets the weight (or boldness) of the font.
 
         Returns
         -------
@@ -927,13 +583,6 @@ class Parcoords(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.parcoords.Unselected`
           - A dict of string/value properties that will be passed
             to the Unselected constructor
-
-            Supported dict properties:
-
-                line
-                    :class:`plotly.graph_objects.parcoords.unselect
-                    ed.Line` instance or dict with compatible
-                    properties
 
         Returns
         -------

@@ -9,19 +9,5 @@ class ThresholdValidator(_plotly_utils.basevalidators.CompoundValidator):
             plotly_name=plotly_name,
             parent_name=parent_name,
             data_class_str=kwargs.pop("data_class_str", "Threshold"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
-            line
-                :class:`plotly.graph_objects.indicator.gauge.th
-                reshold.Line` instance or dict with compatible
-                properties
-            thickness
-                Sets the thickness of the threshold line as a
-                fraction of the thickness of the gauge.
-            value
-                Sets a treshold value drawn as a line.
-""",
-            ),
             **kwargs,
         )

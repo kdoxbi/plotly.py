@@ -129,21 +129,6 @@ class Violin(_BaseTraceType):
           - A dict of string/value properties that will be passed
             to the Box constructor
 
-            Supported dict properties:
-
-                fillcolor
-                    Sets the inner box plot fill color.
-                line
-                    :class:`plotly.graph_objects.violin.box.Line`
-                    instance or dict with compatible properties
-                visible
-                    Determines if an miniature box plot is drawn
-                    inside the violins.
-                width
-                    Sets the width of the inner box plots relative
-                    to the violins' width. For example, with 1, the
-                    inner box plots are as wide as the violins.
-
         Returns
         -------
         plotly.graph_objs.violin.Box
@@ -316,44 +301,6 @@ class Violin(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.violin.Hoverlabel`
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
-
-            Supported dict properties:
-
-                align
-                    Sets the horizontal alignment of the text
-                    content within hover label box. Has an effect
-                    only if the hover label text spans more two or
-                    more lines
-                alignsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `align`.
-                bgcolor
-                    Sets the background color of the hover labels
-                    for this trace
-                bgcolorsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `bgcolor`.
-                bordercolor
-                    Sets the border color of the hover labels for
-                    this trace.
-                bordercolorsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `bordercolor`.
-                font
-                    Sets the font used in hover labels.
-                namelength
-                    Sets the default length (in number of
-                    characters) of the trace name in the hover
-                    labels for all traces. -1 shows the whole name
-                    regardless of length. 0-3 shows the first 0-3
-                    characters, and an integer >3 will show the
-                    whole name if it is less than that many
-                    characters, but if it is longer, will truncate
-                    to `namelength - 3` characters and add an
-                    ellipsis.
-                namelengthsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `namelength`.
 
         Returns
         -------
@@ -622,13 +569,6 @@ class Violin(_BaseTraceType):
           - A dict of string/value properties that will be passed
             to the Legendgrouptitle constructor
 
-            Supported dict properties:
-
-                font
-                    Sets this legend group's title font.
-                text
-                    Sets the title of the legend group.
-
         Returns
         -------
         plotly.graph_objs.violin.Legendgrouptitle
@@ -698,14 +638,6 @@ class Violin(_BaseTraceType):
           - A dict of string/value properties that will be passed
             to the Line constructor
 
-            Supported dict properties:
-
-                color
-                    Sets the color of line bounding the violin(s).
-                width
-                    Sets the width (in px) of line bounding the
-                    violin(s).
-
         Returns
         -------
         plotly.graph_objs.violin.Line
@@ -727,33 +659,6 @@ class Violin(_BaseTraceType):
           - A dict of string/value properties that will be passed
             to the Marker constructor
 
-            Supported dict properties:
-
-                angle
-                    Sets the marker angle in respect to `angleref`.
-                color
-                    Sets the marker color. It accepts either a
-                    specific color or an array of numbers that are
-                    mapped to the colorscale relative to the max
-                    and min values of the array or relative to
-                    `marker.cmin` and `marker.cmax` if set.
-                line
-                    :class:`plotly.graph_objects.violin.marker.Line
-                    ` instance or dict with compatible properties
-                opacity
-                    Sets the marker opacity.
-                outliercolor
-                    Sets the color of the outlier sample points.
-                size
-                    Sets the marker size (in px).
-                symbol
-                    Sets the marker symbol type. Adding 100 is
-                    equivalent to appending "-open" to a symbol
-                    name. Adding 200 is equivalent to appending
-                    "-dot" to a symbol name. Adding 300 is
-                    equivalent to appending "-open-dot" or "dot-
-                    open" to a symbol name.
-
         Returns
         -------
         plotly.graph_objs.violin.Marker
@@ -774,20 +679,6 @@ class Violin(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.violin.Meanline`
           - A dict of string/value properties that will be passed
             to the Meanline constructor
-
-            Supported dict properties:
-
-                color
-                    Sets the mean line color.
-                visible
-                    Determines if a line corresponding to the
-                    sample's mean is shown inside the violins. If
-                    `box.visible` is turned on, the mean line is
-                    drawn inside the inner box. Otherwise, the mean
-                    line is drawn from one side of the violin to
-                    other.
-                width
-                    Sets the mean line width.
 
         Returns
         -------
@@ -1084,13 +975,6 @@ class Violin(_BaseTraceType):
           - A dict of string/value properties that will be passed
             to the Selected constructor
 
-            Supported dict properties:
-
-                marker
-                    :class:`plotly.graph_objects.violin.selected.Ma
-                    rker` instance or dict with compatible
-                    properties
-
         Returns
         -------
         plotly.graph_objs.violin.Selected
@@ -1233,18 +1117,6 @@ class Violin(_BaseTraceType):
           - A dict of string/value properties that will be passed
             to the Stream constructor
 
-            Supported dict properties:
-
-                maxpoints
-                    Sets the maximum number of points to keep on
-                    the plots from an incoming stream. If
-                    `maxpoints` is set to 50, only the newest 50
-                    points will be displayed on the plot.
-                token
-                    The stream id number links a data trace on a
-                    plot with a stream. See https://chart-
-                    studio.plotly.com/settings for more details.
-
         Returns
         -------
         plotly.graph_objs.violin.Stream
@@ -1366,13 +1238,6 @@ class Violin(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.violin.Unselected`
           - A dict of string/value properties that will be passed
             to the Unselected constructor
-
-            Supported dict properties:
-
-                marker
-                    :class:`plotly.graph_objects.violin.unselected.
-                    Marker` instance or dict with compatible
-                    properties
 
         Returns
         -------

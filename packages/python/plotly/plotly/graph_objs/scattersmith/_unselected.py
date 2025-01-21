@@ -21,18 +21,6 @@ class Unselected(_BaseTraceHierarchyType):
           - A dict of string/value properties that will be passed
             to the Marker constructor
 
-            Supported dict properties:
-
-                color
-                    Sets the marker color of unselected points,
-                    applied only when a selection exists.
-                opacity
-                    Sets the marker opacity of unselected points,
-                    applied only when a selection exists.
-                size
-                    Sets the marker size of unselected points,
-                    applied only when a selection exists.
-
         Returns
         -------
         plotly.graph_objs.scattersmith.unselected.Marker
@@ -53,12 +41,6 @@ class Unselected(_BaseTraceHierarchyType):
           - An instance of :class:`plotly.graph_objs.scattersmith.unselected.Textfont`
           - A dict of string/value properties that will be passed
             to the Textfont constructor
-
-            Supported dict properties:
-
-                color
-                    Sets the text font color of unselected points,
-                    applied only when a selection exists.
 
         Returns
         -------

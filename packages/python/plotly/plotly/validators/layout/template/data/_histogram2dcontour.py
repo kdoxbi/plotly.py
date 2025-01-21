@@ -12,10 +12,5 @@ class Histogram2DcontourValidator(_plotly_utils.basevalidators.CompoundArrayVali
             plotly_name=plotly_name,
             parent_name=parent_name,
             data_class_str=kwargs.pop("data_class_str", "Histogram2dContour"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
-""",
-            ),
             **kwargs,
         )

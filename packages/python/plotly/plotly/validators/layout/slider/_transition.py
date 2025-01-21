@@ -7,15 +7,5 @@ class TransitionValidator(_plotly_utils.basevalidators.CompoundValidator):
             plotly_name=plotly_name,
             parent_name=parent_name,
             data_class_str=kwargs.pop("data_class_str", "Transition"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
-            duration
-                Sets the duration of the slider transition
-            easing
-                Sets the easing function of the slider
-                transition
-""",
-            ),
             **kwargs,
         )

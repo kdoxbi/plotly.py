@@ -82,14 +82,6 @@ class Decreasing(_BaseTraceHierarchyType):
           - A dict of string/value properties that will be passed
             to the Line constructor
 
-            Supported dict properties:
-
-                color
-                    Sets the color of line bounding the box(es).
-                width
-                    Sets the width (in px) of line bounding the
-                    box(es).
-
         Returns
         -------
         plotly.graph_objs.candlestick.decreasing.Line

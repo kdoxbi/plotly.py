@@ -113,20 +113,6 @@ class Geo(_BaseLayoutHierarchyType):
           - A dict of string/value properties that will be passed
             to the Center constructor
 
-            Supported dict properties:
-
-                lat
-                    Sets the latitude of the map's center. For all
-                    projection types, the map's latitude center
-                    lies at the middle of the latitude range by
-                    default.
-                lon
-                    Sets the longitude of the map's center. By
-                    default, the map's longitude center lies at the
-                    middle of the longitude range for scoped
-                    projection and above `projection.rotation.lon`
-                    otherwise.
-
         Returns
         -------
         plotly.graph_objs.layout.geo.Center
@@ -305,35 +291,6 @@ class Geo(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.geo.Domain`
           - A dict of string/value properties that will be passed
             to the Domain constructor
-
-            Supported dict properties:
-
-                column
-                    If there is a layout grid, use the domain for
-                    this column in the grid for this geo subplot .
-                    Note that geo subplots are constrained by
-                    domain. In general, when `projection.scale` is
-                    set to 1. a map will fit either its x or y
-                    domain, but not both.
-                row
-                    If there is a layout grid, use the domain for
-                    this row in the grid for this geo subplot .
-                    Note that geo subplots are constrained by
-                    domain. In general, when `projection.scale` is
-                    set to 1. a map will fit either its x or y
-                    domain, but not both.
-                x
-                    Sets the horizontal domain of this geo subplot
-                    (in plot fraction). Note that geo subplots are
-                    constrained by domain. In general, when
-                    `projection.scale` is set to 1. a map will fit
-                    either its x or y domain, but not both.
-                y
-                    Sets the vertical domain of this geo subplot
-                    (in plot fraction). Note that geo subplots are
-                    constrained by domain. In general, when
-                    `projection.scale` is set to 1. a map will fit
-                    either its x or y domain, but not both.
 
         Returns
         -------
@@ -586,30 +543,6 @@ class Geo(_BaseLayoutHierarchyType):
           - A dict of string/value properties that will be passed
             to the Lataxis constructor
 
-            Supported dict properties:
-
-                dtick
-                    Sets the graticule's longitude/latitude tick
-                    step.
-                gridcolor
-                    Sets the graticule's stroke color.
-                griddash
-                    Sets the dash style of lines. Set to a dash
-                    type string ("solid", "dot", "dash",
-                    "longdash", "dashdot", or "longdashdot") or a
-                    dash length list in px (eg "5px,10px,2px,2px").
-                gridwidth
-                    Sets the graticule's stroke width (in px).
-                range
-                    Sets the range of this axis (in degrees), sets
-                    the map's clipped coordinates.
-                showgrid
-                    Sets whether or not graticule are shown on the
-                    map.
-                tick0
-                    Sets the graticule's starting tick
-                    longitude/latitude.
-
         Returns
         -------
         plotly.graph_objs.layout.geo.Lataxis
@@ -630,30 +563,6 @@ class Geo(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.geo.Lonaxis`
           - A dict of string/value properties that will be passed
             to the Lonaxis constructor
-
-            Supported dict properties:
-
-                dtick
-                    Sets the graticule's longitude/latitude tick
-                    step.
-                gridcolor
-                    Sets the graticule's stroke color.
-                griddash
-                    Sets the dash style of lines. Set to a dash
-                    type string ("solid", "dot", "dash",
-                    "longdash", "dashdot", or "longdashdot") or a
-                    dash length list in px (eg "5px,10px,2px,2px").
-                gridwidth
-                    Sets the graticule's stroke width (in px).
-                range
-                    Sets the range of this axis (in degrees), sets
-                    the map's clipped coordinates.
-                showgrid
-                    Sets whether or not graticule are shown on the
-                    map.
-                tick0
-                    Sets the graticule's starting tick
-                    longitude/latitude.
 
         Returns
         -------
@@ -734,31 +643,6 @@ class Geo(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.geo.Projection`
           - A dict of string/value properties that will be passed
             to the Projection constructor
-
-            Supported dict properties:
-
-                distance
-                    For satellite projection type only. Sets the
-                    distance from the center of the sphere to the
-                    point of view as a proportion of the sphere’s
-                    radius.
-                parallels
-                    For conic projection types only. Sets the
-                    parallels (tangent, secant) where the cone
-                    intersects the sphere.
-                rotation
-                    :class:`plotly.graph_objects.layout.geo.project
-                    ion.Rotation` instance or dict with compatible
-                    properties
-                scale
-                    Zooms in or out on the map view. A scale of 1
-                    corresponds to the largest zoom level that fits
-                    the map's lon and lat ranges.
-                tilt
-                    For satellite projection type only. Sets the
-                    tilt angle of perspective projection.
-                type
-                    Sets the projection type.
 
         Returns
         -------

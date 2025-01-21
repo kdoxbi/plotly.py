@@ -7,19 +7,5 @@ class ConnectorValidator(_plotly_utils.basevalidators.CompoundValidator):
             plotly_name=plotly_name,
             parent_name=parent_name,
             data_class_str=kwargs.pop("data_class_str", "Connector"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
-            fillcolor
-                Sets the fill color.
-            line
-                :class:`plotly.graph_objects.funnel.connector.L
-                ine` instance or dict with compatible
-                properties
-            visible
-                Determines if connector regions and lines are
-                drawn.
-""",
-            ),
             **kwargs,
         )

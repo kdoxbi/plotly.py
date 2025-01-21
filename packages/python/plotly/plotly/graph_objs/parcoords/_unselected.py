@@ -21,17 +21,6 @@ class Unselected(_BaseTraceHierarchyType):
           - A dict of string/value properties that will be passed
             to the Line constructor
 
-            Supported dict properties:
-
-                color
-                    Sets the base color of unselected lines. in
-                    connection with `unselected.line.opacity`.
-                opacity
-                    Sets the opacity of unselected lines. The
-                    default "auto" decreases the opacity smoothly
-                    as the number of lines increases. Use 1 to
-                    achieve exact `unselected.line.color`.
-
         Returns
         -------
         plotly.graph_objs.parcoords.unselected.Line

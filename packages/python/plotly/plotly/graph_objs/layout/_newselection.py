@@ -21,20 +21,6 @@ class Newselection(_BaseLayoutHierarchyType):
           - A dict of string/value properties that will be passed
             to the Line constructor
 
-            Supported dict properties:
-
-                color
-                    Sets the line color. By default uses either
-                    dark grey or white to increase contrast with
-                    background color.
-                dash
-                    Sets the dash style of lines. Set to a dash
-                    type string ("solid", "dot", "dash",
-                    "longdash", "dashdot", or "longdashdot") or a
-                    dash length list in px (eg "5px,10px,2px,2px").
-                width
-                    Sets the line width (in px).
-
         Returns
         -------
         plotly.graph_objs.layout.newselection.Line

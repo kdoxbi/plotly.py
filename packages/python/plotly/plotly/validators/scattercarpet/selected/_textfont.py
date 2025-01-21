@@ -9,12 +9,5 @@ class TextfontValidator(_plotly_utils.basevalidators.CompoundValidator):
             plotly_name=plotly_name,
             parent_name=parent_name,
             data_class_str=kwargs.pop("data_class_str", "Textfont"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
-            color
-                Sets the text font color of selected points.
-""",
-            ),
             **kwargs,
         )

@@ -21,16 +21,6 @@ class Totals(_BaseTraceHierarchyType):
           - A dict of string/value properties that will be passed
             to the Marker constructor
 
-            Supported dict properties:
-
-                color
-                    Sets the marker color of all intermediate sums
-                    and total values.
-                line
-                    :class:`plotly.graph_objects.waterfall.totals.m
-                    arker.Line` instance or dict with compatible
-                    properties
-
         Returns
         -------
         plotly.graph_objs.waterfall.totals.Marker

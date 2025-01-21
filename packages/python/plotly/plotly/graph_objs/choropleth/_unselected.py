@@ -21,12 +21,6 @@ class Unselected(_BaseTraceHierarchyType):
           - A dict of string/value properties that will be passed
             to the Marker constructor
 
-            Supported dict properties:
-
-                opacity
-                    Sets the marker opacity of unselected points,
-                    applied only when a selection exists.
-
         Returns
         -------
         plotly.graph_objs.choropleth.unselected.Marker

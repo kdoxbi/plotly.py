@@ -21,22 +21,6 @@ class Caps(_BaseTraceHierarchyType):
           - A dict of string/value properties that will be passed
             to the X constructor
 
-            Supported dict properties:
-
-                fill
-                    Sets the fill ratio of the `caps`. The default
-                    fill value of the `caps` is 1 meaning that they
-                    are entirely shaded. On the other hand Applying
-                    a `fill` ratio less than one would allow the
-                    creation of openings parallel to the edges.
-                show
-                    Sets the fill ratio of the `slices`. The
-                    default fill value of the x `slices` is 1
-                    meaning that they are entirely shaded. On the
-                    other hand Applying a `fill` ratio less than
-                    one would allow the creation of openings
-                    parallel to the edges.
-
         Returns
         -------
         plotly.graph_objs.isosurface.caps.X
@@ -58,22 +42,6 @@ class Caps(_BaseTraceHierarchyType):
           - A dict of string/value properties that will be passed
             to the Y constructor
 
-            Supported dict properties:
-
-                fill
-                    Sets the fill ratio of the `caps`. The default
-                    fill value of the `caps` is 1 meaning that they
-                    are entirely shaded. On the other hand Applying
-                    a `fill` ratio less than one would allow the
-                    creation of openings parallel to the edges.
-                show
-                    Sets the fill ratio of the `slices`. The
-                    default fill value of the y `slices` is 1
-                    meaning that they are entirely shaded. On the
-                    other hand Applying a `fill` ratio less than
-                    one would allow the creation of openings
-                    parallel to the edges.
-
         Returns
         -------
         plotly.graph_objs.isosurface.caps.Y
@@ -94,22 +62,6 @@ class Caps(_BaseTraceHierarchyType):
           - An instance of :class:`plotly.graph_objs.isosurface.caps.Z`
           - A dict of string/value properties that will be passed
             to the Z constructor
-
-            Supported dict properties:
-
-                fill
-                    Sets the fill ratio of the `caps`. The default
-                    fill value of the `caps` is 1 meaning that they
-                    are entirely shaded. On the other hand Applying
-                    a `fill` ratio less than one would allow the
-                    creation of openings parallel to the edges.
-                show
-                    Sets the fill ratio of the `slices`. The
-                    default fill value of the z `slices` is 1
-                    meaning that they are entirely shaded. On the
-                    other hand Applying a `fill` ratio less than
-                    one would allow the creation of openings
-                    parallel to the edges.
 
         Returns
         -------

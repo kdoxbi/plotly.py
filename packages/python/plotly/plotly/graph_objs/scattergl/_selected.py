@@ -21,15 +21,6 @@ class Selected(_BaseTraceHierarchyType):
           - A dict of string/value properties that will be passed
             to the Marker constructor
 
-            Supported dict properties:
-
-                color
-                    Sets the marker color of selected points.
-                opacity
-                    Sets the marker opacity of selected points.
-                size
-                    Sets the marker size of selected points.
-
         Returns
         -------
         plotly.graph_objs.scattergl.selected.Marker
@@ -50,11 +41,6 @@ class Selected(_BaseTraceHierarchyType):
           - An instance of :class:`plotly.graph_objs.scattergl.selected.Textfont`
           - A dict of string/value properties that will be passed
             to the Textfont constructor
-
-            Supported dict properties:
-
-                color
-                    Sets the text font color of selected points.
 
         Returns
         -------

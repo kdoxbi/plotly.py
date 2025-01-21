@@ -48,58 +48,6 @@ class Table(_BaseTraceType):
           - A dict of string/value properties that will be passed
             to the Cells constructor
 
-            Supported dict properties:
-
-                align
-                    Sets the horizontal alignment of the `text`
-                    within the box. Has an effect only if `text`
-                    spans two or more lines (i.e. `text` contains
-                    one or more <br> HTML tags) or if an explicit
-                    width is set to override the text width.
-                alignsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `align`.
-                fill
-                    :class:`plotly.graph_objects.table.cells.Fill`
-                    instance or dict with compatible properties
-                font
-                    :class:`plotly.graph_objects.table.cells.Font`
-                    instance or dict with compatible properties
-                format
-                    Sets the cell value formatting rule using d3
-                    formatting mini-languages which are very
-                    similar to those in Python. For numbers, see: h
-                    ttps://github.com/d3/d3-format/tree/v1.4.5#d3-
-                    format.
-                formatsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `format`.
-                height
-                    The height of cells.
-                line
-                    :class:`plotly.graph_objects.table.cells.Line`
-                    instance or dict with compatible properties
-                prefix
-                    Prefix for cell values.
-                prefixsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `prefix`.
-                suffix
-                    Suffix for cell values.
-                suffixsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `suffix`.
-                values
-                    Cell values. `values[m][n]` represents the
-                    value of the `n`th point in column `m`,
-                    therefore the `values[m]` vector length for all
-                    columns must be the same (longer vectors will
-                    be truncated). Each value must be a finite
-                    number or a string.
-                valuessrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `values`.
-
         Returns
         -------
         plotly.graph_objs.table.Cells
@@ -252,21 +200,6 @@ class Table(_BaseTraceType):
           - A dict of string/value properties that will be passed
             to the Domain constructor
 
-            Supported dict properties:
-
-                column
-                    If there is a layout grid, use the domain for
-                    this column in the grid for this table trace .
-                row
-                    If there is a layout grid, use the domain for
-                    this row in the grid for this table trace .
-                x
-                    Sets the horizontal domain of this table trace
-                    (in plot fraction).
-                y
-                    Sets the vertical domain of this table trace
-                    (in plot fraction).
-
         Returns
         -------
         plotly.graph_objs.table.Domain
@@ -287,58 +220,6 @@ class Table(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.table.Header`
           - A dict of string/value properties that will be passed
             to the Header constructor
-
-            Supported dict properties:
-
-                align
-                    Sets the horizontal alignment of the `text`
-                    within the box. Has an effect only if `text`
-                    spans two or more lines (i.e. `text` contains
-                    one or more <br> HTML tags) or if an explicit
-                    width is set to override the text width.
-                alignsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `align`.
-                fill
-                    :class:`plotly.graph_objects.table.header.Fill`
-                    instance or dict with compatible properties
-                font
-                    :class:`plotly.graph_objects.table.header.Font`
-                    instance or dict with compatible properties
-                format
-                    Sets the cell value formatting rule using d3
-                    formatting mini-languages which are very
-                    similar to those in Python. For numbers, see: h
-                    ttps://github.com/d3/d3-format/tree/v1.4.5#d3-
-                    format.
-                formatsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `format`.
-                height
-                    The height of cells.
-                line
-                    :class:`plotly.graph_objects.table.header.Line`
-                    instance or dict with compatible properties
-                prefix
-                    Prefix for cell values.
-                prefixsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `prefix`.
-                suffix
-                    Suffix for cell values.
-                suffixsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `suffix`.
-                values
-                    Header cell values. `values[m][n]` represents
-                    the value of the `n`th point in column `m`,
-                    therefore the `values[m]` vector length for all
-                    columns must be the same (longer vectors will
-                    be truncated). Each value must be a finite
-                    number or a string.
-                valuessrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `values`.
 
         Returns
         -------
@@ -407,44 +288,6 @@ class Table(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.table.Hoverlabel`
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
-
-            Supported dict properties:
-
-                align
-                    Sets the horizontal alignment of the text
-                    content within hover label box. Has an effect
-                    only if the hover label text spans more two or
-                    more lines
-                alignsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `align`.
-                bgcolor
-                    Sets the background color of the hover labels
-                    for this trace
-                bgcolorsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `bgcolor`.
-                bordercolor
-                    Sets the border color of the hover labels for
-                    this trace.
-                bordercolorsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `bordercolor`.
-                font
-                    Sets the font used in hover labels.
-                namelength
-                    Sets the default length (in number of
-                    characters) of the trace name in the hover
-                    labels for all traces. -1 shows the whole name
-                    regardless of length. 0-3 shows the first 0-3
-                    characters, and an integer >3 will show the
-                    whole name if it is less than that many
-                    characters, but if it is longer, will truncate
-                    to `namelength - 3` characters and add an
-                    ellipsis.
-                namelengthsrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `namelength`.
 
         Returns
         -------
@@ -533,13 +376,6 @@ class Table(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.table.Legendgrouptitle`
           - A dict of string/value properties that will be passed
             to the Legendgrouptitle constructor
-
-            Supported dict properties:
-
-                font
-                    Sets this legend group's title font.
-                text
-                    Sets the title of the legend group.
 
         Returns
         -------
@@ -679,18 +515,6 @@ class Table(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.table.Stream`
           - A dict of string/value properties that will be passed
             to the Stream constructor
-
-            Supported dict properties:
-
-                maxpoints
-                    Sets the maximum number of points to keep on
-                    the plots from an incoming stream. If
-                    `maxpoints` is set to 50, only the newest 50
-                    points will be displayed on the plot.
-                token
-                    The stream id number links a data trace on a
-                    plot with a stream. See https://chart-
-                    studio.plotly.com/settings for more details.
 
         Returns
         -------

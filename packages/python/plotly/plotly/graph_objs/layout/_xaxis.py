@@ -196,26 +196,6 @@ class XAxis(_BaseLayoutHierarchyType):
           - A dict of string/value properties that will be passed
             to the Autorangeoptions constructor
 
-            Supported dict properties:
-
-                clipmax
-                    Clip autorange maximum if it goes beyond this
-                    value. Has no effect when
-                    `autorangeoptions.maxallowed` is provided.
-                clipmin
-                    Clip autorange minimum if it goes beyond this
-                    value. Has no effect when
-                    `autorangeoptions.minallowed` is provided.
-                include
-                    Ensure this value is included in autorange.
-                includesrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `include`.
-                maxallowed
-                    Use this value exactly as autorange maximum.
-                minallowed
-                    Use this value exactly as autorange minimum.
-
         Returns
         -------
         plotly.graph_objs.layout.xaxis.Autorangeoptions
@@ -1081,97 +1061,6 @@ class XAxis(_BaseLayoutHierarchyType):
           - A dict of string/value properties that will be passed
             to the Minor constructor
 
-            Supported dict properties:
-
-                dtick
-                    Sets the step in-between ticks on this axis.
-                    Use with `tick0`. Must be a positive number, or
-                    special strings available to "log" and "date"
-                    axes. If the axis `type` is "log", then ticks
-                    are set every 10^(n*dtick) where n is the tick
-                    number. For example, to set a tick mark at 1,
-                    10, 100, 1000, ... set dtick to 1. To set tick
-                    marks at 1, 100, 10000, ... set dtick to 2. To
-                    set tick marks at 1, 5, 25, 125, 625, 3125, ...
-                    set dtick to log_10(5), or 0.69897000433. "log"
-                    has several special values; "L<f>", where `f`
-                    is a positive number, gives ticks linearly
-                    spaced in value (but not position). For example
-                    `tick0` = 0.1, `dtick` = "L0.5" will put ticks
-                    at 0.1, 0.6, 1.1, 1.6 etc. To show powers of 10
-                    plus small digits between, use "D1" (all
-                    digits) or "D2" (only 2 and 5). `tick0` is
-                    ignored for "D1" and "D2". If the axis `type`
-                    is "date", then you must convert the time to
-                    milliseconds. For example, to set the interval
-                    between ticks to one day, set `dtick` to
-                    86400000.0. "date" also has special values
-                    "M<n>" gives ticks spaced by a number of
-                    months. `n` must be a positive integer. To set
-                    ticks on the 15th of every third month, set
-                    `tick0` to "2000-01-15" and `dtick` to "M3". To
-                    set ticks every 4 years, set `dtick` to "M48"
-                gridcolor
-                    Sets the color of the grid lines.
-                griddash
-                    Sets the dash style of lines. Set to a dash
-                    type string ("solid", "dot", "dash",
-                    "longdash", "dashdot", or "longdashdot") or a
-                    dash length list in px (eg "5px,10px,2px,2px").
-                gridwidth
-                    Sets the width (in px) of the grid lines.
-                nticks
-                    Specifies the maximum number of ticks for the
-                    particular axis. The actual number of ticks
-                    will be chosen automatically to be less than or
-                    equal to `nticks`. Has an effect only if
-                    `tickmode` is set to "auto".
-                showgrid
-                    Determines whether or not grid lines are drawn.
-                    If True, the grid lines are drawn at every tick
-                    mark.
-                tick0
-                    Sets the placement of the first tick on this
-                    axis. Use with `dtick`. If the axis `type` is
-                    "log", then you must take the log of your
-                    starting tick (e.g. to set the starting tick to
-                    100, set the `tick0` to 2) except when
-                    `dtick`=*L<f>* (see `dtick` for more info). If
-                    the axis `type` is "date", it should be a date
-                    string, like date data. If the axis `type` is
-                    "category", it should be a number, using the
-                    scale where each category is assigned a serial
-                    number from zero in the order it appears.
-                tickcolor
-                    Sets the tick color.
-                ticklen
-                    Sets the tick length (in px).
-                tickmode
-                    Sets the tick mode for this axis. If "auto",
-                    the number of ticks is set via `nticks`. If
-                    "linear", the placement of the ticks is
-                    determined by a starting position `tick0` and a
-                    tick step `dtick` ("linear" is the default
-                    value if `tick0` and `dtick` are provided). If
-                    "array", the placement of the ticks is set via
-                    `tickvals` and the tick text is `ticktext`.
-                    ("array" is the default value if `tickvals` is
-                    provided).
-                ticks
-                    Determines whether ticks are drawn or not. If
-                    "", this axis' ticks are not drawn. If
-                    "outside" ("inside"), this axis' are drawn
-                    outside (inside) the axis lines.
-                tickvals
-                    Sets the values at which ticks on this axis
-                    appear. Only has an effect if `tickmode` is set
-                    to "array". Used with `ticktext`.
-                tickvalssrc
-                    Sets the source reference on Chart Studio Cloud
-                    for `tickvals`.
-                tickwidth
-                    Sets the tick width (in px).
-
         Returns
         -------
         plotly.graph_objs.layout.xaxis.Minor
@@ -1325,60 +1214,6 @@ class XAxis(_BaseLayoutHierarchyType):
           - A list or tuple of dicts of string/value properties that
             will be passed to the Rangebreak constructor
 
-            Supported dict properties:
-
-                bounds
-                    Sets the lower and upper bounds of this axis
-                    rangebreak. Can be used with `pattern`.
-                dvalue
-                    Sets the size of each `values` item. The
-                    default is one day in milliseconds.
-                enabled
-                    Determines whether this axis rangebreak is
-                    enabled or disabled. Please note that
-                    `rangebreaks` only work for "date" axis type.
-                name
-                    When used in a template, named items are
-                    created in the output figure in addition to any
-                    items the figure already has in this array. You
-                    can modify these items in the output figure by
-                    making your own item with `templateitemname`
-                    matching this `name` alongside your
-                    modifications (including `visible: false` or
-                    `enabled: false` to hide it). Has no effect
-                    outside of a template.
-                pattern
-                    Determines a pattern on the time line that
-                    generates breaks. If *day of week* - days of
-                    the week in English e.g. 'Sunday' or `sun`
-                    (matching is case-insensitive and considers
-                    only the first three characters), as well as
-                    Sunday-based integers between 0 and 6. If
-                    "hour" - hour (24-hour clock) as decimal
-                    numbers between 0 and 24. for more info.
-                    Examples: - { pattern: 'day of week', bounds:
-                    [6, 1] }  or simply { bounds: ['sat', 'mon'] }
-                    breaks from Saturday to Monday (i.e. skips the
-                    weekends). - { pattern: 'hour', bounds: [17, 8]
-                    }   breaks from 5pm to 8am (i.e. skips non-work
-                    hours).
-                templateitemname
-                    Used to refer to a named item in this array in
-                    the template. Named items from the template
-                    will be created even without a matching item in
-                    the input figure, but you can modify one by
-                    making an item with `templateitemname` matching
-                    its `name`, alongside your modifications
-                    (including `visible: false` or `enabled: false`
-                    to hide it). If there is no template or no
-                    matching item, this item will be hidden unless
-                    you explicitly show it with `visible: true`.
-                values
-                    Sets the coordinate values corresponding to the
-                    rangebreaks. An alternative to `bounds`. Use
-                    `dvalue` to set the size of the values along
-                    the axis.
-
         Returns
         -------
         tuple[plotly.graph_objs.layout.xaxis.Rangebreak]
@@ -1404,8 +1239,6 @@ class XAxis(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.xaxis.Rangebreak`
           - A dict of string/value properties that will be passed
             to the Rangebreak constructor
-
-            Supported dict properties:
 
         Returns
         -------
@@ -1453,54 +1286,6 @@ class XAxis(_BaseLayoutHierarchyType):
           - A dict of string/value properties that will be passed
             to the Rangeselector constructor
 
-            Supported dict properties:
-
-                activecolor
-                    Sets the background color of the active range
-                    selector button.
-                bgcolor
-                    Sets the background color of the range selector
-                    buttons.
-                bordercolor
-                    Sets the color of the border enclosing the
-                    range selector.
-                borderwidth
-                    Sets the width (in px) of the border enclosing
-                    the range selector.
-                buttons
-                    Sets the specifications for each buttons. By
-                    default, a range selector comes with no
-                    buttons.
-                buttondefaults
-                    When used in a template (as layout.template.lay
-                    out.xaxis.rangeselector.buttondefaults), sets
-                    the default property values to use for elements
-                    of layout.xaxis.rangeselector.buttons
-                font
-                    Sets the font of the range selector button
-                    text.
-                visible
-                    Determines whether or not this range selector
-                    is visible. Note that range selectors are only
-                    available for x axes of `type` set to or auto-
-                    typed to "date".
-                x
-                    Sets the x position (in normalized coordinates)
-                    of the range selector.
-                xanchor
-                    Sets the range selector's horizontal position
-                    anchor. This anchor binds the `x` position to
-                    the "left", "center" or "right" of the range
-                    selector.
-                y
-                    Sets the y position (in normalized coordinates)
-                    of the range selector.
-                yanchor
-                    Sets the range selector's vertical position
-                    anchor This anchor binds the `y` position to
-                    the "top", "middle" or "bottom" of the range
-                    selector.
-
         Returns
         -------
         plotly.graph_objs.layout.xaxis.Rangeselector
@@ -1521,43 +1306,6 @@ class XAxis(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.xaxis.Rangeslider`
           - A dict of string/value properties that will be passed
             to the Rangeslider constructor
-
-            Supported dict properties:
-
-                autorange
-                    Determines whether or not the range slider
-                    range is computed in relation to the input
-                    data. If `range` is provided, then `autorange`
-                    is set to False.
-                bgcolor
-                    Sets the background color of the range slider.
-                bordercolor
-                    Sets the border color of the range slider.
-                borderwidth
-                    Sets the border width of the range slider.
-                range
-                    Sets the range of the range slider. If not set,
-                    defaults to the full xaxis range. If the axis
-                    `type` is "log", then you must take the log of
-                    your desired range. If the axis `type` is
-                    "date", it should be date strings, like date
-                    data, though Date objects and unix milliseconds
-                    will be accepted and converted to strings. If
-                    the axis `type` is "category", it should be
-                    numbers, using the scale where each category is
-                    assigned a serial number from zero in the order
-                    it appears.
-                thickness
-                    The height of the range slider as a fraction of
-                    the total plot area height.
-                visible
-                    Determines whether or not the range slider will
-                    be visible. If visible, perpendicular axes will
-                    be set to `fixedrange`
-                yaxis
-                    :class:`plotly.graph_objects.layout.xaxis.range
-                    slider.YAxis` instance or dict with compatible
-                    properties
 
         Returns
         -------
@@ -2131,52 +1879,6 @@ class XAxis(_BaseLayoutHierarchyType):
           - A dict of string/value properties that will be passed
             to the Tickfont constructor
 
-            Supported dict properties:
-
-                color
-
-                family
-                    HTML font family - the typeface that will be
-                    applied by the web browser. The web browser
-                    will only be able to apply a font if it is
-                    available on the system which it operates.
-                    Provide multiple font families, separated by
-                    commas, to indicate the preference in which to
-                    apply fonts if they aren't available on the
-                    system. The Chart Studio Cloud (at
-                    https://chart-studio.plotly.com or on-premise)
-                    generates images on a server, where only a
-                    select number of fonts are installed and
-                    supported. These include "Arial", "Balto",
-                    "Courier New", "Droid Sans", "Droid Serif",
-                    "Droid Sans Mono", "Gravitas One", "Old
-                    Standard TT", "Open Sans", "Overpass", "PT Sans
-                    Narrow", "Raleway", "Times New Roman".
-                lineposition
-                    Sets the kind of decoration line(s) with text,
-                    such as an "under", "over" or "through" as well
-                    as combinations e.g. "under+over", etc.
-                shadow
-                    Sets the shape and color of the shadow behind
-                    text. "auto" places minimal shadow and applies
-                    contrast text font color. See
-                    https://developer.mozilla.org/en-
-                    US/docs/Web/CSS/text-shadow for additional
-                    options.
-                size
-
-                style
-                    Sets whether a font should be styled with a
-                    normal or italic face from its family.
-                textcase
-                    Sets capitalization of text. It can be used to
-                    make text appear in all-uppercase or all-
-                    lowercase, or with each word capitalized.
-                variant
-                    Sets the variant of the font.
-                weight
-                    Sets the weight (or boldness) of the font.
-
         Returns
         -------
         plotly.graph_objs.layout.xaxis.Tickfont
@@ -2228,42 +1930,6 @@ class XAxis(_BaseLayoutHierarchyType):
           - A list or tuple of dicts of string/value properties that
             will be passed to the Tickformatstop constructor
 
-            Supported dict properties:
-
-                dtickrange
-                    range [*min*, *max*], where "min", "max" -
-                    dtick values which describe some zoom level, it
-                    is possible to omit "min" or "max" value by
-                    passing "null"
-                enabled
-                    Determines whether or not this stop is used. If
-                    `false`, this stop is ignored even within its
-                    `dtickrange`.
-                name
-                    When used in a template, named items are
-                    created in the output figure in addition to any
-                    items the figure already has in this array. You
-                    can modify these items in the output figure by
-                    making your own item with `templateitemname`
-                    matching this `name` alongside your
-                    modifications (including `visible: false` or
-                    `enabled: false` to hide it). Has no effect
-                    outside of a template.
-                templateitemname
-                    Used to refer to a named item in this array in
-                    the template. Named items from the template
-                    will be created even without a matching item in
-                    the input figure, but you can modify one by
-                    making an item with `templateitemname` matching
-                    its `name`, alongside your modifications
-                    (including `visible: false` or `enabled: false`
-                    to hide it). If there is no template or no
-                    matching item, this item will be hidden unless
-                    you explicitly show it with `visible: true`.
-                value
-                    string - dtickformat for described zoom level,
-                    the same as "tickformat"
-
         Returns
         -------
         tuple[plotly.graph_objs.layout.xaxis.Tickformatstop]
@@ -2289,8 +1955,6 @@ class XAxis(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.xaxis.Tickformatstop`
           - A dict of string/value properties that will be passed
             to the Tickformatstop constructor
-
-            Supported dict properties:
 
         Returns
         -------
@@ -2758,25 +2422,6 @@ class XAxis(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.xaxis.Title`
           - A dict of string/value properties that will be passed
             to the Title constructor
-
-            Supported dict properties:
-
-                font
-                    Sets this axis' title font.
-                standoff
-                    Sets the standoff distance (in px) between the
-                    axis labels and the title text The default
-                    value is a function of the axis tick labels,
-                    the title `font.size` and the axis `linewidth`.
-                    Note that the axis title position is always
-                    constrained within the margins, so the actual
-                    standoff distance is always less than the set
-                    or default value. By setting `standoff` and
-                    turning on `automargin`, plotly.js will push
-                    the margins to fit the axis title at given
-                    standoff distance.
-                text
-                    Sets the title of this axis.
 
         Returns
         -------
