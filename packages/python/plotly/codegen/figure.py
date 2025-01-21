@@ -4,7 +4,6 @@ from os import path as opath
 from codegen.datatypes import (
     reindent_validator_description,
     add_constructor_params,
-    add_docstring,
 )
 from codegen.utils import write_source_py
 
@@ -251,14 +250,6 @@ class {fig_classname}({base_classname}):\n"""
 """,
                 )
             )
-
-        add_docstring(
-            buffer,
-            trace_node,
-            header,
-            append_extras=doc_extras,
-            return_type=fig_classname,
-        )
 
         # #### Function body ####
         buffer.write(
@@ -669,14 +660,6 @@ class {fig_classname}({base_classname}):\n"""
                 f"If True, {singular_name} will not be added to subplots without traces.",
             ),
         ]
-        add_docstring(
-            buffer,
-            node,
-            header=f"Create and add a new {singular_name} to the figure's layout",
-            prepend_extras=prepend_extras,
-            append_extras=append_extras,
-            return_type=fig_classname,
-        )
 
         # #### Function body ####
         buffer.write(

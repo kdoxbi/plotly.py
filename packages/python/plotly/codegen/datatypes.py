@@ -147,15 +147,7 @@ class {datatype_class}(_{node.name_base_datatype}):\n"""
             f"""
     @property
     def _subplotid_validators(self):
-        \"\"\"
-        dict of validator classes for each subplot type
-
-        Returns
-        -------
-        dict
-        \"\"\"
         from plotly.validators.layout import ({validator_csv})
-
         return {subplot_dict_str}
 
     def _subplot_re_match(self, prop):
@@ -170,8 +162,6 @@ class {datatype_class}(_{node.name_base_datatype}):\n"""
     )
     buffer.write(
         f"""
-    # class properties
-    # --------------------
     _parent_path_str = '{node.parent_path_str}'
     _path_str = '{node.path_str}'
     _valid_props = {{"{'", "'.join(valid_props_list)}"}}
@@ -229,17 +219,8 @@ class {datatype_class}(_{node.name_base_datatype}):\n"""
         buffer.write(
             f"""\
 
-    # {subtype_node.name_property}
-    # {'-' * len(subtype_node.name_property)}
     @property
     def {subtype_node.name_property}(self):
-        \"\"\"
-{property_docstring}
-
-        Returns
-        -------
-        {prop_type}
-        \"\"\"
         return self['{subtype_node.name_property}']"""
         )
 
@@ -257,8 +238,6 @@ class {datatype_class}(_{node.name_base_datatype}):\n"""
         buffer.write(
             f"""\
 
-    # {literal_node.name_property}
-    # {'-' * len(literal_node.name_property)}
     @property
     def {literal_node.name_property}(self):
         return self._props['{literal_node.name_property}']\n"""
@@ -268,14 +247,10 @@ class {datatype_class}(_{node.name_base_datatype}):\n"""
     valid_props = {node.name_property for node in subtype_nodes}
     buffer.write(
         f"""
-    # Self properties description
-    # ---------------------------
     @property
     def _prop_descriptions(self):
         return \"\"\"\\"""
     )
-
-    buffer.write(node.get_constructor_params_docstring(indent=8))
 
     buffer.write(
         f"""
@@ -299,28 +274,6 @@ class {datatype_class}(_{node.name_base_datatype}):\n"""
 
     add_constructor_params(buffer, subtype_nodes, prepend_extras=["arg"])
 
-    # ### Constructor Docstring ###
-    header = f"Construct a new {datatype_class} object"
-    class_name = (
-        f"plotly.graph_objs" f"{node.parent_dotpath_str}." f"{node.name_datatype_class}"
-    )
-
-    extras = [
-        (
-            f"arg",
-            f"dict of properties compatible with this constructor "
-            f"or an instance of :class:`{class_name}`",
-        )
-    ]
-
-    add_docstring(
-        buffer,
-        node,
-        header=header,
-        prepend_extras=extras,
-        return_type=node.name_datatype_class,
-    )
-
     buffer.write(
         f"""
         super({datatype_class}, self).__init__('{node.name_property}')
@@ -334,16 +287,15 @@ class {datatype_class}(_{node.name_base_datatype}):\n"""
     if datatype_class == "Layout":
         buffer.write(
             f"""
-        # Override _valid_props for instance so that instance can mutate set
-        # to support subplot properties (e.g. xaxis2)
         self._valid_props = {{"{'", "'.join(valid_props_list)}"}}
 """
         )
 
+    class_name = (
+        f"plotly.graph_objs" f"{node.parent_dotpath_str}." f"{node.name_datatype_class}"
+    )
     buffer.write(
         f"""
-        # Validate arg
-        # ------------
         if arg is None:
             arg = {{}}
         elif isinstance(arg, self.__class__):
@@ -356,19 +308,11 @@ The first argument to the {class_name}
 constructor must be a dict or
 an instance of :class:`{class_name}`\"\"\")
 
-        # Handle skip_invalid
-        # -------------------
         self._skip_invalid = kwargs.pop('skip_invalid', False)
         self._validate = kwargs.pop('_validate', True)
         """
     )
 
-    buffer.write(
-        f"""
-
-        # Populate data dict with properties
-        # ----------------------------------"""
-    )
     for subtype_node in subtype_nodes:
         name_prop = subtype_node.name_property
         buffer.write(
@@ -381,13 +325,6 @@ an instance of :class:`{class_name}`\"\"\")
 
     # ### Literals ###
     if literal_nodes:
-        buffer.write(
-            f"""
-
-        # Read-only literals
-        # ------------------
-"""
-        )
         for literal_node in literal_nodes:
             lit_name = literal_node.name_property
             lit_val = repr(literal_node.node_data)
@@ -399,13 +336,7 @@ an instance of :class:`{class_name}`\"\"\")
 
     buffer.write(
         f"""
-
-        # Process unknown kwargs
-        # ----------------------
         self._process_kwargs(**dict(arg, **kwargs))
-
-        # Reset skip_invalid
-        # ------------------
         self._skip_invalid = False
 """
     )
@@ -501,112 +432,6 @@ def add_constructor_params(
     if output_type:
         buffer.write(f"-> '{output_type}'")
     buffer.write(":")
-
-
-def add_docstring(
-    buffer, node, header, prepend_extras=(), append_extras=(), return_type=None
-):
-    """
-    Write docstring for a compound datatype node
-
-    Parameters
-    ----------
-    buffer : StringIO
-        Buffer to write to
-    node : PlotlyNode
-        Compound datatype plotly node for which to write docstring
-    header :
-        Top-level header for docstring that will preceded the input node's
-        own description. Header should be < 71 characters long
-    prepend_extras :
-        List or tuple of propery name / description pairs that should be
-        included at the beginning of the docstring
-    append_extras :
-        List or tuple of propery name / description pairs that should be
-        included at the end of the docstring
-    return_type :
-        The docstring return type
-    Returns
-    -------
-
-    """
-    # Validate inputs
-    # ---------------
-    assert node.is_compound
-
-    # Build wrapped description
-    # -------------------------
-    node_description = node.description
-    if node_description:
-        description_lines = textwrap.wrap(
-            node_description,
-            width=79 - 8,
-            initial_indent=" " * 8,
-            subsequent_indent=" " * 8,
-        )
-
-        node_description = "\n".join(description_lines) + "\n\n"
-
-    # Write header and description
-    # ----------------------------
-    buffer.write(
-        f"""
-        \"\"\"
-        {header}
-
-{node_description}        Parameters
-        ----------"""
-    )
-
-    # Write parameter descriptions
-    # ----------------------------
-    # Write any prepend extras
-    for p, v in prepend_extras:
-        v_wrapped = "\n".join(
-            textwrap.wrap(
-                v, width=79 - 12, initial_indent=" " * 12, subsequent_indent=" " * 12
-            )
-        )
-        buffer.write(
-            f"""
-        {p}
-{v_wrapped}"""
-        )
-
-    # Write core docstring
-    buffer.write(node.get_constructor_params_docstring(indent=8))
-
-    # Write any append extras
-    for p, v in append_extras:
-        if "\n" in v:
-            # If v contains newlines then assume it's already wrapped as
-            # desired
-            v_wrapped = v
-        else:
-            v_wrapped = "\n".join(
-                textwrap.wrap(
-                    v,
-                    width=79 - 12,
-                    initial_indent=" " * 12,
-                    subsequent_indent=" " * 12,
-                )
-            )
-        buffer.write(
-            f"""
-        {p}
-{v_wrapped}"""
-        )
-
-    # Write return block and close docstring
-    # --------------------------------------
-    buffer.write(
-        f"""
-
-        Returns
-        -------
-        {return_type}
-        \"\"\""""
-    )
 
 
 def write_datatype_py(outdir, node):
