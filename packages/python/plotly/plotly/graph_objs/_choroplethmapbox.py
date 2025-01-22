@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 from warnings import warn
@@ -7,59 +9,9 @@ class Choroplethmapbox(_BaseTraceType):
 
     # class properties
     # --------------------
-    _parent_path_str = ""
-    _path_str = "choroplethmapbox"
-    _valid_props = {
-        "autocolorscale",
-        "below",
-        "coloraxis",
-        "colorbar",
-        "colorscale",
-        "customdata",
-        "customdatasrc",
-        "featureidkey",
-        "geojson",
-        "hoverinfo",
-        "hoverinfosrc",
-        "hoverlabel",
-        "hovertemplate",
-        "hovertemplatesrc",
-        "hovertext",
-        "hovertextsrc",
-        "ids",
-        "idssrc",
-        "legend",
-        "legendgroup",
-        "legendgrouptitle",
-        "legendrank",
-        "legendwidth",
-        "locations",
-        "locationssrc",
-        "marker",
-        "meta",
-        "metasrc",
-        "name",
-        "reversescale",
-        "selected",
-        "selectedpoints",
-        "showlegend",
-        "showscale",
-        "stream",
-        "subplot",
-        "text",
-        "textsrc",
-        "type",
-        "uid",
-        "uirevision",
-        "unselected",
-        "visible",
-        "z",
-        "zauto",
-        "zmax",
-        "zmid",
-        "zmin",
-        "zsrc",
-    }
+    _parent_path_str = ''
+    _path_str = 'choroplethmapbox'
+    _valid_props = {"autocolorscale", "below", "coloraxis", "colorbar", "colorscale", "customdata", "customdatasrc", "featureidkey", "geojson", "hoverinfo", "hoverinfosrc", "hoverlabel", "hovertemplate", "hovertemplatesrc", "hovertext", "hovertextsrc", "ids", "idssrc", "legend", "legendgroup", "legendgrouptitle", "legendrank", "legendwidth", "locations", "locationssrc", "marker", "meta", "metasrc", "name", "reversescale", "selected", "selectedpoints", "showlegend", "showscale", "stream", "subplot", "text", "textsrc", "type", "uid", "uirevision", "unselected", "visible", "z", "zauto", "zmax", "zmid", "zmin", "zsrc"}
 
     # autocolorscale
     # --------------
@@ -80,11 +32,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         bool
         """
-        return self["autocolorscale"]
+        return self['autocolorscale']
 
     @autocolorscale.setter
     def autocolorscale(self, val):
-        self["autocolorscale"] = val
+        self['autocolorscale'] = val
 
     # below
     # -----
@@ -104,11 +56,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         str
         """
-        return self["below"]
+        return self['below']
 
     @below.setter
     def below(self, val):
-        self["below"] = val
+        self['below'] = val
 
     # coloraxis
     # ---------
@@ -131,11 +83,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         str
         """
-        return self["coloraxis"]
+        return self['coloraxis']
 
     @coloraxis.setter
     def coloraxis(self, val):
-        self["coloraxis"] = val
+        self['coloraxis'] = val
 
     # colorbar
     # --------
@@ -147,9 +99,9 @@ class Choroplethmapbox(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.choroplethmapbox.ColorBar`
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
-
+    
             Supported dict properties:
-
+                
                 bgcolor
                     Sets the color of padded area.
                 bordercolor
@@ -419,11 +371,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         plotly.graph_objs.choroplethmapbox.ColorBar
         """
-        return self["colorbar"]
+        return self['colorbar']
 
     @colorbar.setter
     def colorbar(self, val):
-        self["colorbar"] = val
+        self['colorbar'] = val
 
     # colorscale
     # ----------
@@ -472,11 +424,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         str
         """
-        return self["colorscale"]
+        return self['colorscale']
 
     @colorscale.setter
     def colorscale(self, val):
-        self["colorscale"] = val
+        self['colorscale'] = val
 
     # customdata
     # ----------
@@ -495,11 +447,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["customdata"]
+        return self['customdata']
 
     @customdata.setter
     def customdata(self, val):
-        self["customdata"] = val
+        self['customdata'] = val
 
     # customdatasrc
     # -------------
@@ -516,11 +468,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         str
         """
-        return self["customdatasrc"]
+        return self['customdatasrc']
 
     @customdatasrc.setter
     def customdatasrc(self, val):
-        self["customdatasrc"] = val
+        self['customdatasrc'] = val
 
     # featureidkey
     # ------------
@@ -539,11 +491,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         str
         """
-        return self["featureidkey"]
+        return self['featureidkey']
 
     @featureidkey.setter
     def featureidkey(self, val):
-        self["featureidkey"] = val
+        self['featureidkey'] = val
 
     # geojson
     # -------
@@ -561,11 +513,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         Any
         """
-        return self["geojson"]
+        return self['geojson']
 
     @geojson.setter
     def geojson(self, val):
-        self["geojson"] = val
+        self['geojson'] = val
 
     # hoverinfo
     # ---------
@@ -587,11 +539,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         Any|numpy.ndarray
         """
-        return self["hoverinfo"]
+        return self['hoverinfo']
 
     @hoverinfo.setter
     def hoverinfo(self, val):
-        self["hoverinfo"] = val
+        self['hoverinfo'] = val
 
     # hoverinfosrc
     # ------------
@@ -608,11 +560,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         str
         """
-        return self["hoverinfosrc"]
+        return self['hoverinfosrc']
 
     @hoverinfosrc.setter
     def hoverinfosrc(self, val):
-        self["hoverinfosrc"] = val
+        self['hoverinfosrc'] = val
 
     # hoverlabel
     # ----------
@@ -624,9 +576,9 @@ class Choroplethmapbox(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.choroplethmapbox.Hoverlabel`
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
-
+    
             Supported dict properties:
-
+                
                 align
                     Sets the horizontal alignment of the text
                     content within hover label box. Has an effect
@@ -667,11 +619,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         plotly.graph_objs.choroplethmapbox.Hoverlabel
         """
-        return self["hoverlabel"]
+        return self['hoverlabel']
 
     @hoverlabel.setter
     def hoverlabel(self, val):
-        self["hoverlabel"] = val
+        self['hoverlabel'] = val
 
     # hovertemplate
     # -------------
@@ -712,11 +664,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         str|numpy.ndarray
         """
-        return self["hovertemplate"]
+        return self['hovertemplate']
 
     @hovertemplate.setter
     def hovertemplate(self, val):
-        self["hovertemplate"] = val
+        self['hovertemplate'] = val
 
     # hovertemplatesrc
     # ----------------
@@ -733,11 +685,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         str
         """
-        return self["hovertemplatesrc"]
+        return self['hovertemplatesrc']
 
     @hovertemplatesrc.setter
     def hovertemplatesrc(self, val):
-        self["hovertemplatesrc"] = val
+        self['hovertemplatesrc'] = val
 
     # hovertext
     # ---------
@@ -755,11 +707,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         str|numpy.ndarray
         """
-        return self["hovertext"]
+        return self['hovertext']
 
     @hovertext.setter
     def hovertext(self, val):
-        self["hovertext"] = val
+        self['hovertext'] = val
 
     # hovertextsrc
     # ------------
@@ -776,11 +728,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         str
         """
-        return self["hovertextsrc"]
+        return self['hovertextsrc']
 
     @hovertextsrc.setter
     def hovertextsrc(self, val):
-        self["hovertextsrc"] = val
+        self['hovertextsrc'] = val
 
     # ids
     # ---
@@ -798,11 +750,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["ids"]
+        return self['ids']
 
     @ids.setter
     def ids(self, val):
-        self["ids"] = val
+        self['ids'] = val
 
     # idssrc
     # ------
@@ -818,11 +770,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         str
         """
-        return self["idssrc"]
+        return self['idssrc']
 
     @idssrc.setter
     def idssrc(self, val):
-        self["idssrc"] = val
+        self['idssrc'] = val
 
     # legend
     # ------
@@ -843,11 +795,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         str
         """
-        return self["legend"]
+        return self['legend']
 
     @legend.setter
     def legend(self, val):
-        self["legend"] = val
+        self['legend'] = val
 
     # legendgroup
     # -----------
@@ -866,11 +818,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         str
         """
-        return self["legendgroup"]
+        return self['legendgroup']
 
     @legendgroup.setter
     def legendgroup(self, val):
-        self["legendgroup"] = val
+        self['legendgroup'] = val
 
     # legendgrouptitle
     # ----------------
@@ -882,9 +834,9 @@ class Choroplethmapbox(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.choroplethmapbox.Legendgrouptitle`
           - A dict of string/value properties that will be passed
             to the Legendgrouptitle constructor
-
+    
             Supported dict properties:
-
+                
                 font
                     Sets this legend group's title font.
                 text
@@ -894,11 +846,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         plotly.graph_objs.choroplethmapbox.Legendgrouptitle
         """
-        return self["legendgrouptitle"]
+        return self['legendgrouptitle']
 
     @legendgrouptitle.setter
     def legendgrouptitle(self, val):
-        self["legendgrouptitle"] = val
+        self['legendgrouptitle'] = val
 
     # legendrank
     # ----------
@@ -921,11 +873,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         int|float
         """
-        return self["legendrank"]
+        return self['legendrank']
 
     @legendrank.setter
     def legendrank(self, val):
-        self["legendrank"] = val
+        self['legendrank'] = val
 
     # legendwidth
     # -----------
@@ -942,11 +894,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         int|float
         """
-        return self["legendwidth"]
+        return self['legendwidth']
 
     @legendwidth.setter
     def legendwidth(self, val):
-        self["legendwidth"] = val
+        self['legendwidth'] = val
 
     # locations
     # ---------
@@ -963,11 +915,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["locations"]
+        return self['locations']
 
     @locations.setter
     def locations(self, val):
-        self["locations"] = val
+        self['locations'] = val
 
     # locationssrc
     # ------------
@@ -984,11 +936,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         str
         """
-        return self["locationssrc"]
+        return self['locationssrc']
 
     @locationssrc.setter
     def locationssrc(self, val):
-        self["locationssrc"] = val
+        self['locationssrc'] = val
 
     # marker
     # ------
@@ -1000,9 +952,9 @@ class Choroplethmapbox(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.choroplethmapbox.Marker`
           - A dict of string/value properties that will be passed
             to the Marker constructor
-
+    
             Supported dict properties:
-
+                
                 line
                     :class:`plotly.graph_objects.choroplethmapbox.m
                     arker.Line` instance or dict with compatible
@@ -1017,11 +969,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         plotly.graph_objs.choroplethmapbox.Marker
         """
-        return self["marker"]
+        return self['marker']
 
     @marker.setter
     def marker(self, val):
-        self["marker"] = val
+        self['marker'] = val
 
     # meta
     # ----
@@ -1045,11 +997,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         Any|numpy.ndarray
         """
-        return self["meta"]
+        return self['meta']
 
     @meta.setter
     def meta(self, val):
-        self["meta"] = val
+        self['meta'] = val
 
     # metasrc
     # -------
@@ -1065,11 +1017,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         str
         """
-        return self["metasrc"]
+        return self['metasrc']
 
     @metasrc.setter
     def metasrc(self, val):
-        self["metasrc"] = val
+        self['metasrc'] = val
 
     # name
     # ----
@@ -1087,11 +1039,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         str
         """
-        return self["name"]
+        return self['name']
 
     @name.setter
     def name(self, val):
-        self["name"] = val
+        self['name'] = val
 
     # reversescale
     # ------------
@@ -1109,11 +1061,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         bool
         """
-        return self["reversescale"]
+        return self['reversescale']
 
     @reversescale.setter
     def reversescale(self, val):
-        self["reversescale"] = val
+        self['reversescale'] = val
 
     # selected
     # --------
@@ -1125,9 +1077,9 @@ class Choroplethmapbox(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.choroplethmapbox.Selected`
           - A dict of string/value properties that will be passed
             to the Selected constructor
-
+    
             Supported dict properties:
-
+                
                 marker
                     :class:`plotly.graph_objects.choroplethmapbox.s
                     elected.Marker` instance or dict with
@@ -1137,11 +1089,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         plotly.graph_objs.choroplethmapbox.Selected
         """
-        return self["selected"]
+        return self['selected']
 
     @selected.setter
     def selected(self, val):
-        self["selected"] = val
+        self['selected'] = val
 
     # selectedpoints
     # --------------
@@ -1161,11 +1113,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         Any
         """
-        return self["selectedpoints"]
+        return self['selectedpoints']
 
     @selectedpoints.setter
     def selectedpoints(self, val):
-        self["selectedpoints"] = val
+        self['selectedpoints'] = val
 
     # showlegend
     # ----------
@@ -1182,11 +1134,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         bool
         """
-        return self["showlegend"]
+        return self['showlegend']
 
     @showlegend.setter
     def showlegend(self, val):
-        self["showlegend"] = val
+        self['showlegend'] = val
 
     # showscale
     # ---------
@@ -1203,11 +1155,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         bool
         """
-        return self["showscale"]
+        return self['showscale']
 
     @showscale.setter
     def showscale(self, val):
-        self["showscale"] = val
+        self['showscale'] = val
 
     # stream
     # ------
@@ -1219,9 +1171,9 @@ class Choroplethmapbox(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.choroplethmapbox.Stream`
           - A dict of string/value properties that will be passed
             to the Stream constructor
-
+    
             Supported dict properties:
-
+                
                 maxpoints
                     Sets the maximum number of points to keep on
                     the plots from an incoming stream. If
@@ -1236,11 +1188,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         plotly.graph_objs.choroplethmapbox.Stream
         """
-        return self["stream"]
+        return self['stream']
 
     @stream.setter
     def stream(self, val):
-        self["stream"] = val
+        self['stream'] = val
 
     # subplot
     # -------
@@ -1265,11 +1217,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         str
         """
-        return self["subplot"]
+        return self['subplot']
 
     @subplot.setter
     def subplot(self, val):
-        self["subplot"] = val
+        self['subplot'] = val
 
     # text
     # ----
@@ -1287,11 +1239,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         str|numpy.ndarray
         """
-        return self["text"]
+        return self['text']
 
     @text.setter
     def text(self, val):
-        self["text"] = val
+        self['text'] = val
 
     # textsrc
     # -------
@@ -1307,11 +1259,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         str
         """
-        return self["textsrc"]
+        return self['textsrc']
 
     @textsrc.setter
     def textsrc(self, val):
-        self["textsrc"] = val
+        self['textsrc'] = val
 
     # uid
     # ---
@@ -1329,11 +1281,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         str
         """
-        return self["uid"]
+        return self['uid']
 
     @uid.setter
     def uid(self, val):
-        self["uid"] = val
+        self['uid'] = val
 
     # uirevision
     # ----------
@@ -1362,11 +1314,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         Any
         """
-        return self["uirevision"]
+        return self['uirevision']
 
     @uirevision.setter
     def uirevision(self, val):
-        self["uirevision"] = val
+        self['uirevision'] = val
 
     # unselected
     # ----------
@@ -1378,9 +1330,9 @@ class Choroplethmapbox(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.choroplethmapbox.Unselected`
           - A dict of string/value properties that will be passed
             to the Unselected constructor
-
+    
             Supported dict properties:
-
+                
                 marker
                     :class:`plotly.graph_objects.choroplethmapbox.u
                     nselected.Marker` instance or dict with
@@ -1390,11 +1342,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         plotly.graph_objs.choroplethmapbox.Unselected
         """
-        return self["unselected"]
+        return self['unselected']
 
     @unselected.setter
     def unselected(self, val):
-        self["unselected"] = val
+        self['unselected'] = val
 
     # visible
     # -------
@@ -1413,11 +1365,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         Any
         """
-        return self["visible"]
+        return self['visible']
 
     @visible.setter
     def visible(self, val):
-        self["visible"] = val
+        self['visible'] = val
 
     # z
     # -
@@ -1433,11 +1385,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["z"]
+        return self['z']
 
     @z.setter
     def z(self, val):
-        self["z"] = val
+        self['z'] = val
 
     # zauto
     # -----
@@ -1456,11 +1408,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         bool
         """
-        return self["zauto"]
+        return self['zauto']
 
     @zauto.setter
     def zauto(self, val):
-        self["zauto"] = val
+        self['zauto'] = val
 
     # zmax
     # ----
@@ -1477,11 +1429,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         int|float
         """
-        return self["zmax"]
+        return self['zmax']
 
     @zmax.setter
     def zmax(self, val):
-        self["zmax"] = val
+        self['zmax'] = val
 
     # zmid
     # ----
@@ -1499,11 +1451,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         int|float
         """
-        return self["zmid"]
+        return self['zmid']
 
     @zmid.setter
     def zmid(self, val):
-        self["zmid"] = val
+        self['zmid'] = val
 
     # zmin
     # ----
@@ -1520,11 +1472,11 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         int|float
         """
-        return self["zmin"]
+        return self['zmin']
 
     @zmin.setter
     def zmin(self, val):
-        self["zmin"] = val
+        self['zmin'] = val
 
     # zsrc
     # ----
@@ -1540,17 +1492,17 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         str
         """
-        return self["zsrc"]
+        return self['zsrc']
 
     @zsrc.setter
     def zsrc(self, val):
-        self["zsrc"] = val
+        self['zsrc'] = val
 
     # type
     # ----
     @property
     def type(self):
-        return self._props["type"]
+        return self._props['type']
 
     # Self properties description
     # ---------------------------
@@ -1813,60 +1765,58 @@ class Choroplethmapbox(_BaseTraceType):
             Sets the source reference on Chart Studio Cloud for
             `z`.
         """
-
-    def __init__(
-        self,
-        arg=None,
-        autocolorscale=None,
-        below=None,
-        coloraxis=None,
-        colorbar=None,
-        colorscale=None,
-        customdata=None,
-        customdatasrc=None,
-        featureidkey=None,
-        geojson=None,
-        hoverinfo=None,
-        hoverinfosrc=None,
-        hoverlabel=None,
-        hovertemplate=None,
-        hovertemplatesrc=None,
-        hovertext=None,
-        hovertextsrc=None,
-        ids=None,
-        idssrc=None,
-        legend=None,
-        legendgroup=None,
-        legendgrouptitle=None,
-        legendrank=None,
-        legendwidth=None,
-        locations=None,
-        locationssrc=None,
-        marker=None,
-        meta=None,
-        metasrc=None,
-        name=None,
-        reversescale=None,
-        selected=None,
-        selectedpoints=None,
-        showlegend=None,
-        showscale=None,
-        stream=None,
-        subplot=None,
-        text=None,
-        textsrc=None,
-        uid=None,
-        uirevision=None,
-        unselected=None,
-        visible=None,
-        z=None,
-        zauto=None,
-        zmax=None,
-        zmid=None,
-        zmin=None,
-        zsrc=None,
-        **kwargs,
-    ):
+    def __init__(self,
+            arg=None,
+            autocolorscale=None,
+            below=None,
+            coloraxis=None,
+            colorbar=None,
+            colorscale=None,
+            customdata=None,
+            customdatasrc=None,
+            featureidkey=None,
+            geojson=None,
+            hoverinfo=None,
+            hoverinfosrc=None,
+            hoverlabel=None,
+            hovertemplate=None,
+            hovertemplatesrc=None,
+            hovertext=None,
+            hovertextsrc=None,
+            ids=None,
+            idssrc=None,
+            legend=None,
+            legendgroup=None,
+            legendgrouptitle=None,
+            legendrank=None,
+            legendwidth=None,
+            locations=None,
+            locationssrc=None,
+            marker=None,
+            meta=None,
+            metasrc=None,
+            name=None,
+            reversescale=None,
+            selected=None,
+            selectedpoints=None,
+            showlegend=None,
+            showscale=None,
+            stream=None,
+            subplot=None,
+            text=None,
+            textsrc=None,
+            uid=None,
+            uirevision=None,
+            unselected=None,
+            visible=None,
+            z=None,
+            zauto=None,
+            zmax=None,
+            zmid=None,
+            zmin=None,
+            zsrc=None,
+            **kwargs
+        ):
         """
         Construct a new Choroplethmapbox object
 
@@ -2144,10 +2094,10 @@ class Choroplethmapbox(_BaseTraceType):
         -------
         Choroplethmapbox
         """
-        super(Choroplethmapbox, self).__init__("choroplethmapbox")
+        super(Choroplethmapbox, self).__init__('choroplethmapbox')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -2159,218 +2109,73 @@ class Choroplethmapbox(_BaseTraceType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.Choroplethmapbox
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.Choroplethmapbox`"""
-            )
+an instance of :class:`plotly.graph_objs.Choroplethmapbox`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("autocolorscale", None)
-        _v = autocolorscale if autocolorscale is not None else _v
-        if _v is not None:
-            self["autocolorscale"] = _v
-        _v = arg.pop("below", None)
-        _v = below if below is not None else _v
-        if _v is not None:
-            self["below"] = _v
-        _v = arg.pop("coloraxis", None)
-        _v = coloraxis if coloraxis is not None else _v
-        if _v is not None:
-            self["coloraxis"] = _v
-        _v = arg.pop("colorbar", None)
-        _v = colorbar if colorbar is not None else _v
-        if _v is not None:
-            self["colorbar"] = _v
-        _v = arg.pop("colorscale", None)
-        _v = colorscale if colorscale is not None else _v
-        if _v is not None:
-            self["colorscale"] = _v
-        _v = arg.pop("customdata", None)
-        _v = customdata if customdata is not None else _v
-        if _v is not None:
-            self["customdata"] = _v
-        _v = arg.pop("customdatasrc", None)
-        _v = customdatasrc if customdatasrc is not None else _v
-        if _v is not None:
-            self["customdatasrc"] = _v
-        _v = arg.pop("featureidkey", None)
-        _v = featureidkey if featureidkey is not None else _v
-        if _v is not None:
-            self["featureidkey"] = _v
-        _v = arg.pop("geojson", None)
-        _v = geojson if geojson is not None else _v
-        if _v is not None:
-            self["geojson"] = _v
-        _v = arg.pop("hoverinfo", None)
-        _v = hoverinfo if hoverinfo is not None else _v
-        if _v is not None:
-            self["hoverinfo"] = _v
-        _v = arg.pop("hoverinfosrc", None)
-        _v = hoverinfosrc if hoverinfosrc is not None else _v
-        if _v is not None:
-            self["hoverinfosrc"] = _v
-        _v = arg.pop("hoverlabel", None)
-        _v = hoverlabel if hoverlabel is not None else _v
-        if _v is not None:
-            self["hoverlabel"] = _v
-        _v = arg.pop("hovertemplate", None)
-        _v = hovertemplate if hovertemplate is not None else _v
-        if _v is not None:
-            self["hovertemplate"] = _v
-        _v = arg.pop("hovertemplatesrc", None)
-        _v = hovertemplatesrc if hovertemplatesrc is not None else _v
-        if _v is not None:
-            self["hovertemplatesrc"] = _v
-        _v = arg.pop("hovertext", None)
-        _v = hovertext if hovertext is not None else _v
-        if _v is not None:
-            self["hovertext"] = _v
-        _v = arg.pop("hovertextsrc", None)
-        _v = hovertextsrc if hovertextsrc is not None else _v
-        if _v is not None:
-            self["hovertextsrc"] = _v
-        _v = arg.pop("ids", None)
-        _v = ids if ids is not None else _v
-        if _v is not None:
-            self["ids"] = _v
-        _v = arg.pop("idssrc", None)
-        _v = idssrc if idssrc is not None else _v
-        if _v is not None:
-            self["idssrc"] = _v
-        _v = arg.pop("legend", None)
-        _v = legend if legend is not None else _v
-        if _v is not None:
-            self["legend"] = _v
-        _v = arg.pop("legendgroup", None)
-        _v = legendgroup if legendgroup is not None else _v
-        if _v is not None:
-            self["legendgroup"] = _v
-        _v = arg.pop("legendgrouptitle", None)
-        _v = legendgrouptitle if legendgrouptitle is not None else _v
-        if _v is not None:
-            self["legendgrouptitle"] = _v
-        _v = arg.pop("legendrank", None)
-        _v = legendrank if legendrank is not None else _v
-        if _v is not None:
-            self["legendrank"] = _v
-        _v = arg.pop("legendwidth", None)
-        _v = legendwidth if legendwidth is not None else _v
-        if _v is not None:
-            self["legendwidth"] = _v
-        _v = arg.pop("locations", None)
-        _v = locations if locations is not None else _v
-        if _v is not None:
-            self["locations"] = _v
-        _v = arg.pop("locationssrc", None)
-        _v = locationssrc if locationssrc is not None else _v
-        if _v is not None:
-            self["locationssrc"] = _v
-        _v = arg.pop("marker", None)
-        _v = marker if marker is not None else _v
-        if _v is not None:
-            self["marker"] = _v
-        _v = arg.pop("meta", None)
-        _v = meta if meta is not None else _v
-        if _v is not None:
-            self["meta"] = _v
-        _v = arg.pop("metasrc", None)
-        _v = metasrc if metasrc is not None else _v
-        if _v is not None:
-            self["metasrc"] = _v
-        _v = arg.pop("name", None)
-        _v = name if name is not None else _v
-        if _v is not None:
-            self["name"] = _v
-        _v = arg.pop("reversescale", None)
-        _v = reversescale if reversescale is not None else _v
-        if _v is not None:
-            self["reversescale"] = _v
-        _v = arg.pop("selected", None)
-        _v = selected if selected is not None else _v
-        if _v is not None:
-            self["selected"] = _v
-        _v = arg.pop("selectedpoints", None)
-        _v = selectedpoints if selectedpoints is not None else _v
-        if _v is not None:
-            self["selectedpoints"] = _v
-        _v = arg.pop("showlegend", None)
-        _v = showlegend if showlegend is not None else _v
-        if _v is not None:
-            self["showlegend"] = _v
-        _v = arg.pop("showscale", None)
-        _v = showscale if showscale is not None else _v
-        if _v is not None:
-            self["showscale"] = _v
-        _v = arg.pop("stream", None)
-        _v = stream if stream is not None else _v
-        if _v is not None:
-            self["stream"] = _v
-        _v = arg.pop("subplot", None)
-        _v = subplot if subplot is not None else _v
-        if _v is not None:
-            self["subplot"] = _v
-        _v = arg.pop("text", None)
-        _v = text if text is not None else _v
-        if _v is not None:
-            self["text"] = _v
-        _v = arg.pop("textsrc", None)
-        _v = textsrc if textsrc is not None else _v
-        if _v is not None:
-            self["textsrc"] = _v
-        _v = arg.pop("uid", None)
-        _v = uid if uid is not None else _v
-        if _v is not None:
-            self["uid"] = _v
-        _v = arg.pop("uirevision", None)
-        _v = uirevision if uirevision is not None else _v
-        if _v is not None:
-            self["uirevision"] = _v
-        _v = arg.pop("unselected", None)
-        _v = unselected if unselected is not None else _v
-        if _v is not None:
-            self["unselected"] = _v
-        _v = arg.pop("visible", None)
-        _v = visible if visible is not None else _v
-        if _v is not None:
-            self["visible"] = _v
-        _v = arg.pop("z", None)
-        _v = z if z is not None else _v
-        if _v is not None:
-            self["z"] = _v
-        _v = arg.pop("zauto", None)
-        _v = zauto if zauto is not None else _v
-        if _v is not None:
-            self["zauto"] = _v
-        _v = arg.pop("zmax", None)
-        _v = zmax if zmax is not None else _v
-        if _v is not None:
-            self["zmax"] = _v
-        _v = arg.pop("zmid", None)
-        _v = zmid if zmid is not None else _v
-        if _v is not None:
-            self["zmid"] = _v
-        _v = arg.pop("zmin", None)
-        _v = zmin if zmin is not None else _v
-        if _v is not None:
-            self["zmin"] = _v
-        _v = arg.pop("zsrc", None)
-        _v = zsrc if zsrc is not None else _v
-        if _v is not None:
-            self["zsrc"] = _v
+        self._init_provided('autocolorscale', arg, autocolorscale)
+        self._init_provided('below', arg, below)
+        self._init_provided('coloraxis', arg, coloraxis)
+        self._init_provided('colorbar', arg, colorbar)
+        self._init_provided('colorscale', arg, colorscale)
+        self._init_provided('customdata', arg, customdata)
+        self._init_provided('customdatasrc', arg, customdatasrc)
+        self._init_provided('featureidkey', arg, featureidkey)
+        self._init_provided('geojson', arg, geojson)
+        self._init_provided('hoverinfo', arg, hoverinfo)
+        self._init_provided('hoverinfosrc', arg, hoverinfosrc)
+        self._init_provided('hoverlabel', arg, hoverlabel)
+        self._init_provided('hovertemplate', arg, hovertemplate)
+        self._init_provided('hovertemplatesrc', arg, hovertemplatesrc)
+        self._init_provided('hovertext', arg, hovertext)
+        self._init_provided('hovertextsrc', arg, hovertextsrc)
+        self._init_provided('ids', arg, ids)
+        self._init_provided('idssrc', arg, idssrc)
+        self._init_provided('legend', arg, legend)
+        self._init_provided('legendgroup', arg, legendgroup)
+        self._init_provided('legendgrouptitle', arg, legendgrouptitle)
+        self._init_provided('legendrank', arg, legendrank)
+        self._init_provided('legendwidth', arg, legendwidth)
+        self._init_provided('locations', arg, locations)
+        self._init_provided('locationssrc', arg, locationssrc)
+        self._init_provided('marker', arg, marker)
+        self._init_provided('meta', arg, meta)
+        self._init_provided('metasrc', arg, metasrc)
+        self._init_provided('name', arg, name)
+        self._init_provided('reversescale', arg, reversescale)
+        self._init_provided('selected', arg, selected)
+        self._init_provided('selectedpoints', arg, selectedpoints)
+        self._init_provided('showlegend', arg, showlegend)
+        self._init_provided('showscale', arg, showscale)
+        self._init_provided('stream', arg, stream)
+        self._init_provided('subplot', arg, subplot)
+        self._init_provided('text', arg, text)
+        self._init_provided('textsrc', arg, textsrc)
+        self._init_provided('uid', arg, uid)
+        self._init_provided('uirevision', arg, uirevision)
+        self._init_provided('unselected', arg, unselected)
+        self._init_provided('visible', arg, visible)
+        self._init_provided('z', arg, z)
+        self._init_provided('zauto', arg, zauto)
+        self._init_provided('zmax', arg, zmax)
+        self._init_provided('zmid', arg, zmid)
+        self._init_provided('zmin', arg, zmin)
+        self._init_provided('zsrc', arg, zsrc)
 
         # Read-only literals
         # ------------------
 
-        self._props["type"] = "choroplethmapbox"
-        arg.pop("type", None)
+        self._props['type'] = 'choroplethmapbox'
+        arg.pop('type', None)
 
         # Process unknown kwargs
         # ----------------------

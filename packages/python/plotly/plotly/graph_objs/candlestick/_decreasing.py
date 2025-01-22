@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
@@ -6,8 +8,8 @@ class Decreasing(_BaseTraceHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "candlestick"
-    _path_str = "candlestick.decreasing"
+    _parent_path_str = 'candlestick'
+    _path_str = 'candlestick.decreasing'
     _valid_props = {"fillcolor", "line"}
 
     # fillcolor
@@ -65,11 +67,11 @@ class Decreasing(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["fillcolor"]
+        return self['fillcolor']
 
     @fillcolor.setter
     def fillcolor(self, val):
-        self["fillcolor"] = val
+        self['fillcolor'] = val
 
     # line
     # ----
@@ -81,9 +83,9 @@ class Decreasing(_BaseTraceHierarchyType):
           - An instance of :class:`plotly.graph_objs.candlestick.decreasing.Line`
           - A dict of string/value properties that will be passed
             to the Line constructor
-
+    
             Supported dict properties:
-
+                
                 color
                     Sets the color of line bounding the box(es).
                 width
@@ -94,11 +96,11 @@ class Decreasing(_BaseTraceHierarchyType):
         -------
         plotly.graph_objs.candlestick.decreasing.Line
         """
-        return self["line"]
+        return self['line']
 
     @line.setter
     def line(self, val):
-        self["line"] = val
+        self['line'] = val
 
     # Self properties description
     # ---------------------------
@@ -113,8 +115,12 @@ class Decreasing(_BaseTraceHierarchyType):
             :class:`plotly.graph_objects.candlestick.decreasing.Lin
             e` instance or dict with compatible properties
         """
-
-    def __init__(self, arg=None, fillcolor=None, line=None, **kwargs):
+    def __init__(self,
+            arg=None,
+            fillcolor=None,
+            line=None,
+            **kwargs
+        ):
         """
         Construct a new Decreasing object
 
@@ -136,10 +142,10 @@ class Decreasing(_BaseTraceHierarchyType):
         -------
         Decreasing
         """
-        super(Decreasing, self).__init__("decreasing")
+        super(Decreasing, self).__init__('decreasing')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -151,28 +157,21 @@ class Decreasing(_BaseTraceHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.candlestick.Decreasing
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.candlestick.Decreasing`"""
-            )
+an instance of :class:`plotly.graph_objs.candlestick.Decreasing`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("fillcolor", None)
-        _v = fillcolor if fillcolor is not None else _v
-        if _v is not None:
-            self["fillcolor"] = _v
-        _v = arg.pop("line", None)
-        _v = line if line is not None else _v
-        if _v is not None:
-            self["line"] = _v
+        self._init_provided('fillcolor', arg, fillcolor)
+        self._init_provided('line', arg, line)
 
         # Process unknown kwargs
         # ----------------------

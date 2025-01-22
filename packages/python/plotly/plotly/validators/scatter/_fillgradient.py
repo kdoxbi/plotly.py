@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class FillgradientValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="fillgradient", parent_name="scatter", **kwargs):
-        super(FillgradientValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Fillgradient"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='fillgradient',
+                       parent_name='scatter',
+                       **kwargs):
+        super(FillgradientValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Fillgradient'),
+                 data_docs=kwargs.pop('data_docs', """
             colorscale
                 Sets the fill gradient colors as a color scale.
                 The color scale is interpreted as a gradient
@@ -39,7 +40,5 @@ class FillgradientValidator(_plotly_utils.basevalidators.CompoundValidator):
             type
                 Sets the type/orientation of the color gradient
                 for the fill. Defaults to "none".
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

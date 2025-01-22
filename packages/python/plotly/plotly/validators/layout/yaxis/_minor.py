@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class MinorValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="minor", parent_name="layout.yaxis", **kwargs):
-        super(MinorValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Minor"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='minor',
+                       parent_name='layout.yaxis',
+                       **kwargs):
+        super(MinorValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Minor'),
+                 data_docs=kwargs.pop('data_docs', """
             dtick
                 Sets the step in-between ticks on this axis.
                 Use with `tick0`. Must be a positive number, or
@@ -98,7 +99,5 @@ class MinorValidator(_plotly_utils.basevalidators.CompoundValidator):
                 for `tickvals`.
             tickwidth
                 Sets the tick width (in px).
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class SunburstValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="sunburst", parent_name="", **kwargs):
-        super(SunburstValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Sunburst"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='sunburst',
+                       parent_name='',
+                       **kwargs):
+        super(SunburstValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Sunburst'),
+                 data_docs=kwargs.pop('data_docs', """
             branchvalues
                 Determines how the items in `values` are
                 summed. When set to "total", items in `values`
@@ -294,7 +295,5 @@ class SunburstValidator(_plotly_utils.basevalidators.CompoundValidator):
                 visible. If "legendonly", the trace is not
                 drawn, but can appear as a legend item
                 (provided that the legend itself is visible).
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

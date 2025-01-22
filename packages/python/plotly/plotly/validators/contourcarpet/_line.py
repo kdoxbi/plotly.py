@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class LineValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="line", parent_name="contourcarpet", **kwargs):
-        super(LineValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Line"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='line',
+                       parent_name='contourcarpet',
+                       **kwargs):
+        super(LineValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Line'),
+                 data_docs=kwargs.pop('data_docs', """
             color
                 Sets the color of the contour level. Has no
                 effect if `contours.coloring` is set to
@@ -27,7 +28,5 @@ class LineValidator(_plotly_utils.basevalidators.CompoundValidator):
                 to 0.5 when `contours.type` is "levels".
                 Defaults to 2 when `contour.type` is
                 "constraint".
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

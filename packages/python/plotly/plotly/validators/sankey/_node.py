@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class NodeValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="node", parent_name="sankey", **kwargs):
-        super(NodeValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Node"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='node',
+                       parent_name='sankey',
+                       **kwargs):
+        super(NodeValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Node'),
+                 data_docs=kwargs.pop('data_docs', """
             align
                 Sets the alignment method used to position the
                 nodes along the horizontal axis.
@@ -104,7 +105,5 @@ class NodeValidator(_plotly_utils.basevalidators.CompoundValidator):
             ysrc
                 Sets the source reference on Chart Studio Cloud
                 for `y`.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

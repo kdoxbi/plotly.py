@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class AngularaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="angularaxis", parent_name="layout.polar", **kwargs):
-        super(AngularaxisValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "AngularAxis"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='angularaxis',
+                       parent_name='layout.polar',
+                       **kwargs):
+        super(AngularaxisValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'AngularAxis'),
+                 data_docs=kwargs.pop('data_docs', """
             autotypenumbers
                 Using "strict" a numeric string in trace data
                 is not converted to a number. Using *convert
@@ -298,7 +299,5 @@ class AngularaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
                 preserving interaction like dragging. Default
                 is true when a cheater plot is present on the
                 axis, otherwise false
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

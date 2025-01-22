@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class HoverlabelValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="hoverlabel", parent_name="ohlc", **kwargs):
-        super(HoverlabelValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Hoverlabel"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='hoverlabel',
+                       parent_name='ohlc',
+                       **kwargs):
+        super(HoverlabelValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Hoverlabel'),
+                 data_docs=kwargs.pop('data_docs', """
             align
                 Sets the horizontal alignment of the text
                 content within hover label box. Has an effect
@@ -48,7 +49,5 @@ class HoverlabelValidator(_plotly_utils.basevalidators.CompoundValidator):
             split
                 Show hover information (open, close, high, low)
                 in separate labels.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

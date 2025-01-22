@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
@@ -6,8 +8,8 @@ class Newselection(_BaseLayoutHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "layout"
-    _path_str = "layout.newselection"
+    _parent_path_str = 'layout'
+    _path_str = 'layout.newselection'
     _valid_props = {"line", "mode"}
 
     # line
@@ -20,9 +22,9 @@ class Newselection(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.newselection.Line`
           - A dict of string/value properties that will be passed
             to the Line constructor
-
+    
             Supported dict properties:
-
+                
                 color
                     Sets the line color. By default uses either
                     dark grey or white to increase contrast with
@@ -39,11 +41,11 @@ class Newselection(_BaseLayoutHierarchyType):
         -------
         plotly.graph_objs.layout.newselection.Line
         """
-        return self["line"]
+        return self['line']
 
     @line.setter
     def line(self, val):
-        self["line"] = val
+        self['line'] = val
 
     # mode
     # ----
@@ -64,11 +66,11 @@ class Newselection(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["mode"]
+        return self['mode']
 
     @mode.setter
     def mode(self, val):
-        self["mode"] = val
+        self['mode'] = val
 
     # Self properties description
     # ---------------------------
@@ -86,8 +88,12 @@ class Newselection(_BaseLayoutHierarchyType):
             the initial selection, this option allows declaring
             extra outlines of the selection.
         """
-
-    def __init__(self, arg=None, line=None, mode=None, **kwargs):
+    def __init__(self,
+            arg=None,
+            line=None,
+            mode=None,
+            **kwargs
+        ):
         """
         Construct a new Newselection object
 
@@ -112,10 +118,10 @@ class Newselection(_BaseLayoutHierarchyType):
         -------
         Newselection
         """
-        super(Newselection, self).__init__("newselection")
+        super(Newselection, self).__init__('newselection')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -127,28 +133,21 @@ class Newselection(_BaseLayoutHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.layout.Newselection
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.layout.Newselection`"""
-            )
+an instance of :class:`plotly.graph_objs.layout.Newselection`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("line", None)
-        _v = line if line is not None else _v
-        if _v is not None:
-            self["line"] = _v
-        _v = arg.pop("mode", None)
-        _v = mode if mode is not None else _v
-        if _v is not None:
-            self["mode"] = _v
+        self._init_provided('line', arg, line)
+        self._init_provided('mode', arg, mode)
 
         # Process unknown kwargs
         # ----------------------

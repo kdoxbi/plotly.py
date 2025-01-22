@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class ScatterpolarglValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="scatterpolargl", parent_name="", **kwargs):
-        super(ScatterpolarglValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Scatterpolargl"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='scatterpolargl',
+                       parent_name='',
+                       **kwargs):
+        super(ScatterpolarglValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Scatterpolargl'),
+                 data_docs=kwargs.pop('data_docs', """
             connectgaps
                 Determines whether or not gaps (i.e. {nan} or
                 missing values) in the provided data arrays are
@@ -320,7 +321,5 @@ class ScatterpolarglValidator(_plotly_utils.basevalidators.CompoundValidator):
                 visible. If "legendonly", the trace is not
                 drawn, but can appear as a legend item
                 (provided that the legend itself is visible).
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

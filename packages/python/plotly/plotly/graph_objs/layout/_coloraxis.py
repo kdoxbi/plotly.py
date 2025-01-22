@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
@@ -6,19 +8,9 @@ class Coloraxis(_BaseLayoutHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "layout"
-    _path_str = "layout.coloraxis"
-    _valid_props = {
-        "autocolorscale",
-        "cauto",
-        "cmax",
-        "cmid",
-        "cmin",
-        "colorbar",
-        "colorscale",
-        "reversescale",
-        "showscale",
-    }
+    _parent_path_str = 'layout'
+    _path_str = 'layout.coloraxis'
+    _valid_props = {"autocolorscale", "cauto", "cmax", "cmid", "cmin", "colorbar", "colorscale", "reversescale", "showscale"}
 
     # autocolorscale
     # --------------
@@ -39,11 +31,11 @@ class Coloraxis(_BaseLayoutHierarchyType):
         -------
         bool
         """
-        return self["autocolorscale"]
+        return self['autocolorscale']
 
     @autocolorscale.setter
     def autocolorscale(self, val):
-        self["autocolorscale"] = val
+        self['autocolorscale'] = val
 
     # cauto
     # -----
@@ -62,11 +54,11 @@ class Coloraxis(_BaseLayoutHierarchyType):
         -------
         bool
         """
-        return self["cauto"]
+        return self['cauto']
 
     @cauto.setter
     def cauto(self, val):
-        self["cauto"] = val
+        self['cauto'] = val
 
     # cmax
     # ----
@@ -84,11 +76,11 @@ class Coloraxis(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["cmax"]
+        return self['cmax']
 
     @cmax.setter
     def cmax(self, val):
-        self["cmax"] = val
+        self['cmax'] = val
 
     # cmid
     # ----
@@ -107,11 +99,11 @@ class Coloraxis(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["cmid"]
+        return self['cmid']
 
     @cmid.setter
     def cmid(self, val):
-        self["cmid"] = val
+        self['cmid'] = val
 
     # cmin
     # ----
@@ -129,11 +121,11 @@ class Coloraxis(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["cmin"]
+        return self['cmin']
 
     @cmin.setter
     def cmin(self, val):
-        self["cmin"] = val
+        self['cmin'] = val
 
     # colorbar
     # --------
@@ -145,9 +137,9 @@ class Coloraxis(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.coloraxis.ColorBar`
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
-
+    
             Supported dict properties:
-
+                
                 bgcolor
                     Sets the color of padded area.
                 bordercolor
@@ -417,11 +409,11 @@ class Coloraxis(_BaseLayoutHierarchyType):
         -------
         plotly.graph_objs.layout.coloraxis.ColorBar
         """
-        return self["colorbar"]
+        return self['colorbar']
 
     @colorbar.setter
     def colorbar(self, val):
-        self["colorbar"] = val
+        self['colorbar'] = val
 
     # colorscale
     # ----------
@@ -470,11 +462,11 @@ class Coloraxis(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["colorscale"]
+        return self['colorscale']
 
     @colorscale.setter
     def colorscale(self, val):
-        self["colorscale"] = val
+        self['colorscale'] = val
 
     # reversescale
     # ------------
@@ -492,11 +484,11 @@ class Coloraxis(_BaseLayoutHierarchyType):
         -------
         bool
         """
-        return self["reversescale"]
+        return self['reversescale']
 
     @reversescale.setter
     def reversescale(self, val):
-        self["reversescale"] = val
+        self['reversescale'] = val
 
     # showscale
     # ---------
@@ -513,11 +505,11 @@ class Coloraxis(_BaseLayoutHierarchyType):
         -------
         bool
         """
-        return self["showscale"]
+        return self['showscale']
 
     @showscale.setter
     def showscale(self, val):
-        self["showscale"] = val
+        self['showscale'] = val
 
     # Self properties description
     # ---------------------------
@@ -573,21 +565,19 @@ class Coloraxis(_BaseLayoutHierarchyType):
             Determines whether or not a colorbar is displayed for
             this trace.
         """
-
-    def __init__(
-        self,
-        arg=None,
-        autocolorscale=None,
-        cauto=None,
-        cmax=None,
-        cmid=None,
-        cmin=None,
-        colorbar=None,
-        colorscale=None,
-        reversescale=None,
-        showscale=None,
-        **kwargs,
-    ):
+    def __init__(self,
+            arg=None,
+            autocolorscale=None,
+            cauto=None,
+            cmax=None,
+            cmid=None,
+            cmin=None,
+            colorbar=None,
+            colorscale=None,
+            reversescale=None,
+            showscale=None,
+            **kwargs
+        ):
         """
         Construct a new Coloraxis object
 
@@ -650,10 +640,10 @@ class Coloraxis(_BaseLayoutHierarchyType):
         -------
         Coloraxis
         """
-        super(Coloraxis, self).__init__("coloraxis")
+        super(Coloraxis, self).__init__('coloraxis')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -665,56 +655,28 @@ class Coloraxis(_BaseLayoutHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.layout.Coloraxis
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.layout.Coloraxis`"""
-            )
+an instance of :class:`plotly.graph_objs.layout.Coloraxis`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("autocolorscale", None)
-        _v = autocolorscale if autocolorscale is not None else _v
-        if _v is not None:
-            self["autocolorscale"] = _v
-        _v = arg.pop("cauto", None)
-        _v = cauto if cauto is not None else _v
-        if _v is not None:
-            self["cauto"] = _v
-        _v = arg.pop("cmax", None)
-        _v = cmax if cmax is not None else _v
-        if _v is not None:
-            self["cmax"] = _v
-        _v = arg.pop("cmid", None)
-        _v = cmid if cmid is not None else _v
-        if _v is not None:
-            self["cmid"] = _v
-        _v = arg.pop("cmin", None)
-        _v = cmin if cmin is not None else _v
-        if _v is not None:
-            self["cmin"] = _v
-        _v = arg.pop("colorbar", None)
-        _v = colorbar if colorbar is not None else _v
-        if _v is not None:
-            self["colorbar"] = _v
-        _v = arg.pop("colorscale", None)
-        _v = colorscale if colorscale is not None else _v
-        if _v is not None:
-            self["colorscale"] = _v
-        _v = arg.pop("reversescale", None)
-        _v = reversescale if reversescale is not None else _v
-        if _v is not None:
-            self["reversescale"] = _v
-        _v = arg.pop("showscale", None)
-        _v = showscale if showscale is not None else _v
-        if _v is not None:
-            self["showscale"] = _v
+        self._init_provided('autocolorscale', arg, autocolorscale)
+        self._init_provided('cauto', arg, cauto)
+        self._init_provided('cmax', arg, cmax)
+        self._init_provided('cmid', arg, cmid)
+        self._init_provided('cmin', arg, cmin)
+        self._init_provided('colorbar', arg, colorbar)
+        self._init_provided('colorscale', arg, colorscale)
+        self._init_provided('reversescale', arg, reversescale)
+        self._init_provided('showscale', arg, showscale)
 
         # Process unknown kwargs
         # ----------------------

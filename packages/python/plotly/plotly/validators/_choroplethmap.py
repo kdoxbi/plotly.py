@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class ChoroplethmapValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="choroplethmap", parent_name="", **kwargs):
-        super(ChoroplethmapValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Choroplethmap"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='choroplethmap',
+                       parent_name='',
+                       **kwargs):
+        super(ChoroplethmapValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Choroplethmap'),
+                 data_docs=kwargs.pop('data_docs', """
             autocolorscale
                 Determines whether the colorscale is a default
                 palette (`autocolorscale: true`) or the palette
@@ -294,7 +295,5 @@ class ChoroplethmapValidator(_plotly_utils.basevalidators.CompoundValidator):
             zsrc
                 Sets the source reference on Chart Studio Cloud
                 for `z`.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
@@ -6,17 +8,9 @@ class Line(_BaseTraceHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "scattercarpet"
-    _path_str = "scattercarpet.line"
-    _valid_props = {
-        "backoff",
-        "backoffsrc",
-        "color",
-        "dash",
-        "shape",
-        "smoothing",
-        "width",
-    }
+    _parent_path_str = 'scattercarpet'
+    _path_str = 'scattercarpet.line'
+    _valid_props = {"backoff", "backoffsrc", "color", "dash", "shape", "smoothing", "width"}
 
     # backoff
     # -------
@@ -36,11 +30,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         int|float|numpy.ndarray
         """
-        return self["backoff"]
+        return self['backoff']
 
     @backoff.setter
     def backoff(self, val):
-        self["backoff"] = val
+        self['backoff'] = val
 
     # backoffsrc
     # ----------
@@ -56,11 +50,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["backoffsrc"]
+        return self['backoffsrc']
 
     @backoffsrc.setter
     def backoffsrc(self, val):
-        self["backoffsrc"] = val
+        self['backoffsrc'] = val
 
     # color
     # -----
@@ -115,11 +109,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["color"]
+        return self['color']
 
     @color.setter
     def color(self, val):
-        self["color"] = val
+        self['color'] = val
 
     # dash
     # ----
@@ -141,11 +135,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["dash"]
+        return self['dash']
 
     @dash.setter
     def dash(self, val):
-        self["dash"] = val
+        self['dash'] = val
 
     # shape
     # -----
@@ -164,11 +158,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         Any
         """
-        return self["shape"]
+        return self['shape']
 
     @shape.setter
     def shape(self, val):
-        self["shape"] = val
+        self['shape'] = val
 
     # smoothing
     # ---------
@@ -186,11 +180,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         int|float
         """
-        return self["smoothing"]
+        return self['smoothing']
 
     @smoothing.setter
     def smoothing(self, val):
-        self["smoothing"] = val
+        self['smoothing'] = val
 
     # width
     # -----
@@ -206,11 +200,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         int|float
         """
-        return self["width"]
+        return self['width']
 
     @width.setter
     def width(self, val):
-        self["width"] = val
+        self['width'] = val
 
     # Self properties description
     # ---------------------------
@@ -244,19 +238,17 @@ class Line(_BaseTraceHierarchyType):
         width
             Sets the line width (in px).
         """
-
-    def __init__(
-        self,
-        arg=None,
-        backoff=None,
-        backoffsrc=None,
-        color=None,
-        dash=None,
-        shape=None,
-        smoothing=None,
-        width=None,
-        **kwargs,
-    ):
+    def __init__(self,
+            arg=None,
+            backoff=None,
+            backoffsrc=None,
+            color=None,
+            dash=None,
+            shape=None,
+            smoothing=None,
+            width=None,
+            **kwargs
+        ):
         """
         Construct a new Line object
 
@@ -297,10 +289,10 @@ class Line(_BaseTraceHierarchyType):
         -------
         Line
         """
-        super(Line, self).__init__("line")
+        super(Line, self).__init__('line')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -312,48 +304,26 @@ class Line(_BaseTraceHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.scattercarpet.Line
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.scattercarpet.Line`"""
-            )
+an instance of :class:`plotly.graph_objs.scattercarpet.Line`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("backoff", None)
-        _v = backoff if backoff is not None else _v
-        if _v is not None:
-            self["backoff"] = _v
-        _v = arg.pop("backoffsrc", None)
-        _v = backoffsrc if backoffsrc is not None else _v
-        if _v is not None:
-            self["backoffsrc"] = _v
-        _v = arg.pop("color", None)
-        _v = color if color is not None else _v
-        if _v is not None:
-            self["color"] = _v
-        _v = arg.pop("dash", None)
-        _v = dash if dash is not None else _v
-        if _v is not None:
-            self["dash"] = _v
-        _v = arg.pop("shape", None)
-        _v = shape if shape is not None else _v
-        if _v is not None:
-            self["shape"] = _v
-        _v = arg.pop("smoothing", None)
-        _v = smoothing if smoothing is not None else _v
-        if _v is not None:
-            self["smoothing"] = _v
-        _v = arg.pop("width", None)
-        _v = width if width is not None else _v
-        if _v is not None:
-            self["width"] = _v
+        self._init_provided('backoff', arg, backoff)
+        self._init_provided('backoffsrc', arg, backoffsrc)
+        self._init_provided('color', arg, color)
+        self._init_provided('dash', arg, dash)
+        self._init_provided('shape', arg, shape)
+        self._init_provided('smoothing', arg, smoothing)
+        self._init_provided('width', arg, width)
 
         # Process unknown kwargs
         # ----------------------

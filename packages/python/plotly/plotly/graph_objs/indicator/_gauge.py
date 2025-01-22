@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
@@ -6,19 +8,9 @@ class Gauge(_BaseTraceHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "indicator"
-    _path_str = "indicator.gauge"
-    _valid_props = {
-        "axis",
-        "bar",
-        "bgcolor",
-        "bordercolor",
-        "borderwidth",
-        "shape",
-        "stepdefaults",
-        "steps",
-        "threshold",
-    }
+    _parent_path_str = 'indicator'
+    _path_str = 'indicator.gauge'
+    _valid_props = {"axis", "bar", "bgcolor", "bordercolor", "borderwidth", "shape", "stepdefaults", "steps", "threshold"}
 
     # axis
     # ----
@@ -30,9 +22,9 @@ class Gauge(_BaseTraceHierarchyType):
           - An instance of :class:`plotly.graph_objs.indicator.gauge.Axis`
           - A dict of string/value properties that will be passed
             to the Axis constructor
-
+    
             Supported dict properties:
-
+                
                 dtick
                     Sets the step in-between ticks on this axis.
                     Use with `tick0`. Must be a positive number, or
@@ -215,11 +207,11 @@ class Gauge(_BaseTraceHierarchyType):
         -------
         plotly.graph_objs.indicator.gauge.Axis
         """
-        return self["axis"]
+        return self['axis']
 
     @axis.setter
     def axis(self, val):
-        self["axis"] = val
+        self['axis'] = val
 
     # bar
     # ---
@@ -233,9 +225,9 @@ class Gauge(_BaseTraceHierarchyType):
           - An instance of :class:`plotly.graph_objs.indicator.gauge.Bar`
           - A dict of string/value properties that will be passed
             to the Bar constructor
-
+    
             Supported dict properties:
-
+                
                 color
                     Sets the background color of the arc.
                 line
@@ -250,11 +242,11 @@ class Gauge(_BaseTraceHierarchyType):
         -------
         plotly.graph_objs.indicator.gauge.Bar
         """
-        return self["bar"]
+        return self['bar']
 
     @bar.setter
     def bar(self, val):
-        self["bar"] = val
+        self['bar'] = val
 
     # bgcolor
     # -------
@@ -309,11 +301,11 @@ class Gauge(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["bgcolor"]
+        return self['bgcolor']
 
     @bgcolor.setter
     def bgcolor(self, val):
-        self["bgcolor"] = val
+        self['bgcolor'] = val
 
     # bordercolor
     # -----------
@@ -368,11 +360,11 @@ class Gauge(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["bordercolor"]
+        return self['bordercolor']
 
     @bordercolor.setter
     def bordercolor(self, val):
-        self["bordercolor"] = val
+        self['bordercolor'] = val
 
     # borderwidth
     # -----------
@@ -388,11 +380,11 @@ class Gauge(_BaseTraceHierarchyType):
         -------
         int|float
         """
-        return self["borderwidth"]
+        return self['borderwidth']
 
     @borderwidth.setter
     def borderwidth(self, val):
-        self["borderwidth"] = val
+        self['borderwidth'] = val
 
     # shape
     # -----
@@ -409,11 +401,11 @@ class Gauge(_BaseTraceHierarchyType):
         -------
         Any
         """
-        return self["shape"]
+        return self['shape']
 
     @shape.setter
     def shape(self, val):
-        self["shape"] = val
+        self['shape'] = val
 
     # steps
     # -----
@@ -425,9 +417,9 @@ class Gauge(_BaseTraceHierarchyType):
           - A list or tuple of instances of plotly.graph_objs.indicator.gauge.Step
           - A list or tuple of dicts of string/value properties that
             will be passed to the Step constructor
-
+    
             Supported dict properties:
-
+                
                 color
                     Sets the background color of the arc.
                 line
@@ -465,11 +457,11 @@ class Gauge(_BaseTraceHierarchyType):
         -------
         tuple[plotly.graph_objs.indicator.gauge.Step]
         """
-        return self["steps"]
+        return self['steps']
 
     @steps.setter
     def steps(self, val):
-        self["steps"] = val
+        self['steps'] = val
 
     # stepdefaults
     # ------------
@@ -486,18 +478,18 @@ class Gauge(_BaseTraceHierarchyType):
           - An instance of :class:`plotly.graph_objs.indicator.gauge.Step`
           - A dict of string/value properties that will be passed
             to the Step constructor
-
+    
             Supported dict properties:
 
         Returns
         -------
         plotly.graph_objs.indicator.gauge.Step
         """
-        return self["stepdefaults"]
+        return self['stepdefaults']
 
     @stepdefaults.setter
     def stepdefaults(self, val):
-        self["stepdefaults"] = val
+        self['stepdefaults'] = val
 
     # threshold
     # ---------
@@ -509,9 +501,9 @@ class Gauge(_BaseTraceHierarchyType):
           - An instance of :class:`plotly.graph_objs.indicator.gauge.Threshold`
           - A dict of string/value properties that will be passed
             to the Threshold constructor
-
+    
             Supported dict properties:
-
+                
                 line
                     :class:`plotly.graph_objects.indicator.gauge.th
                     reshold.Line` instance or dict with compatible
@@ -526,11 +518,11 @@ class Gauge(_BaseTraceHierarchyType):
         -------
         plotly.graph_objs.indicator.gauge.Threshold
         """
-        return self["threshold"]
+        return self['threshold']
 
     @threshold.setter
     def threshold(self, val):
-        self["threshold"] = val
+        self['threshold'] = val
 
     # Self properties description
     # ---------------------------
@@ -564,21 +556,19 @@ class Gauge(_BaseTraceHierarchyType):
             :class:`plotly.graph_objects.indicator.gauge.Threshold`
             instance or dict with compatible properties
         """
-
-    def __init__(
-        self,
-        arg=None,
-        axis=None,
-        bar=None,
-        bgcolor=None,
-        bordercolor=None,
-        borderwidth=None,
-        shape=None,
-        steps=None,
-        stepdefaults=None,
-        threshold=None,
-        **kwargs,
-    ):
+    def __init__(self,
+            arg=None,
+            axis=None,
+            bar=None,
+            bgcolor=None,
+            bordercolor=None,
+            borderwidth=None,
+            shape=None,
+            steps=None,
+            stepdefaults=None,
+            threshold=None,
+            **kwargs
+        ):
         """
         Construct a new Gauge object
 
@@ -621,10 +611,10 @@ class Gauge(_BaseTraceHierarchyType):
         -------
         Gauge
         """
-        super(Gauge, self).__init__("gauge")
+        super(Gauge, self).__init__('gauge')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -636,56 +626,28 @@ class Gauge(_BaseTraceHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.indicator.Gauge
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.indicator.Gauge`"""
-            )
+an instance of :class:`plotly.graph_objs.indicator.Gauge`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("axis", None)
-        _v = axis if axis is not None else _v
-        if _v is not None:
-            self["axis"] = _v
-        _v = arg.pop("bar", None)
-        _v = bar if bar is not None else _v
-        if _v is not None:
-            self["bar"] = _v
-        _v = arg.pop("bgcolor", None)
-        _v = bgcolor if bgcolor is not None else _v
-        if _v is not None:
-            self["bgcolor"] = _v
-        _v = arg.pop("bordercolor", None)
-        _v = bordercolor if bordercolor is not None else _v
-        if _v is not None:
-            self["bordercolor"] = _v
-        _v = arg.pop("borderwidth", None)
-        _v = borderwidth if borderwidth is not None else _v
-        if _v is not None:
-            self["borderwidth"] = _v
-        _v = arg.pop("shape", None)
-        _v = shape if shape is not None else _v
-        if _v is not None:
-            self["shape"] = _v
-        _v = arg.pop("steps", None)
-        _v = steps if steps is not None else _v
-        if _v is not None:
-            self["steps"] = _v
-        _v = arg.pop("stepdefaults", None)
-        _v = stepdefaults if stepdefaults is not None else _v
-        if _v is not None:
-            self["stepdefaults"] = _v
-        _v = arg.pop("threshold", None)
-        _v = threshold if threshold is not None else _v
-        if _v is not None:
-            self["threshold"] = _v
+        self._init_provided('axis', arg, axis)
+        self._init_provided('bar', arg, bar)
+        self._init_provided('bgcolor', arg, bgcolor)
+        self._init_provided('bordercolor', arg, bordercolor)
+        self._init_provided('borderwidth', arg, borderwidth)
+        self._init_provided('shape', arg, shape)
+        self._init_provided('steps', arg, steps)
+        self._init_provided('stepdefaults', arg, stepdefaults)
+        self._init_provided('threshold', arg, threshold)
 
         # Process unknown kwargs
         # ----------------------

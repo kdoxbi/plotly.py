@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class LinkValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="link", parent_name="sankey", **kwargs):
-        super(LinkValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Link"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='link',
+                       parent_name='sankey',
+                       **kwargs):
+        super(LinkValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Link'),
+                 data_docs=kwargs.pop('data_docs', """
             arrowlen
                 Sets the length (in px) of the links arrow, if
                 0 no arrow will be drawn.
@@ -120,7 +121,5 @@ class LinkValidator(_plotly_utils.basevalidators.CompoundValidator):
             valuesrc
                 Sets the source reference on Chart Studio Cloud
                 for `value`.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

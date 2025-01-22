@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
@@ -6,8 +8,8 @@ class Gradient(_BaseTraceHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "scatter.marker"
-    _path_str = "scatter.marker.gradient"
+    _parent_path_str = 'scatter.marker'
+    _path_str = 'scatter.marker.gradient'
     _valid_props = {"color", "colorsrc", "type", "typesrc"}
 
     # color
@@ -65,11 +67,11 @@ class Gradient(_BaseTraceHierarchyType):
         -------
         str|numpy.ndarray
         """
-        return self["color"]
+        return self['color']
 
     @color.setter
     def color(self, val):
-        self["color"] = val
+        self['color'] = val
 
     # colorsrc
     # --------
@@ -85,11 +87,11 @@ class Gradient(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["colorsrc"]
+        return self['colorsrc']
 
     @colorsrc.setter
     def colorsrc(self, val):
-        self["colorsrc"] = val
+        self['colorsrc'] = val
 
     # type
     # ----
@@ -107,11 +109,11 @@ class Gradient(_BaseTraceHierarchyType):
         -------
         Any|numpy.ndarray
         """
-        return self["type"]
+        return self['type']
 
     @type.setter
     def type(self, val):
-        self["type"] = val
+        self['type'] = val
 
     # typesrc
     # -------
@@ -127,11 +129,11 @@ class Gradient(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["typesrc"]
+        return self['typesrc']
 
     @typesrc.setter
     def typesrc(self, val):
-        self["typesrc"] = val
+        self['typesrc'] = val
 
     # Self properties description
     # ---------------------------
@@ -151,10 +153,14 @@ class Gradient(_BaseTraceHierarchyType):
             Sets the source reference on Chart Studio Cloud for
             `type`.
         """
-
-    def __init__(
-        self, arg=None, color=None, colorsrc=None, type=None, typesrc=None, **kwargs
-    ):
+    def __init__(self,
+            arg=None,
+            color=None,
+            colorsrc=None,
+            type=None,
+            typesrc=None,
+            **kwargs
+        ):
         """
         Construct a new Gradient object
 
@@ -181,10 +187,10 @@ class Gradient(_BaseTraceHierarchyType):
         -------
         Gradient
         """
-        super(Gradient, self).__init__("gradient")
+        super(Gradient, self).__init__('gradient')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -196,36 +202,23 @@ class Gradient(_BaseTraceHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.scatter.marker.Gradient
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.scatter.marker.Gradient`"""
-            )
+an instance of :class:`plotly.graph_objs.scatter.marker.Gradient`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("color", None)
-        _v = color if color is not None else _v
-        if _v is not None:
-            self["color"] = _v
-        _v = arg.pop("colorsrc", None)
-        _v = colorsrc if colorsrc is not None else _v
-        if _v is not None:
-            self["colorsrc"] = _v
-        _v = arg.pop("type", None)
-        _v = type if type is not None else _v
-        if _v is not None:
-            self["type"] = _v
-        _v = arg.pop("typesrc", None)
-        _v = typesrc if typesrc is not None else _v
-        if _v is not None:
-            self["typesrc"] = _v
+        self._init_provided('color', arg, color)
+        self._init_provided('colorsrc', arg, colorsrc)
+        self._init_provided('type', arg, type)
+        self._init_provided('typesrc', arg, typesrc)
 
         # Process unknown kwargs
         # ----------------------

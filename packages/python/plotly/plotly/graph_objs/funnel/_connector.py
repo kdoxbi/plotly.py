@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
@@ -6,8 +8,8 @@ class Connector(_BaseTraceHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "funnel"
-    _path_str = "funnel.connector"
+    _parent_path_str = 'funnel'
+    _path_str = 'funnel.connector'
     _valid_props = {"fillcolor", "line", "visible"}
 
     # fillcolor
@@ -63,11 +65,11 @@ class Connector(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["fillcolor"]
+        return self['fillcolor']
 
     @fillcolor.setter
     def fillcolor(self, val):
-        self["fillcolor"] = val
+        self['fillcolor'] = val
 
     # line
     # ----
@@ -79,9 +81,9 @@ class Connector(_BaseTraceHierarchyType):
           - An instance of :class:`plotly.graph_objs.funnel.connector.Line`
           - A dict of string/value properties that will be passed
             to the Line constructor
-
+    
             Supported dict properties:
-
+                
                 color
                     Sets the line color.
                 dash
@@ -96,11 +98,11 @@ class Connector(_BaseTraceHierarchyType):
         -------
         plotly.graph_objs.funnel.connector.Line
         """
-        return self["line"]
+        return self['line']
 
     @line.setter
     def line(self, val):
-        self["line"] = val
+        self['line'] = val
 
     # visible
     # -------
@@ -116,11 +118,11 @@ class Connector(_BaseTraceHierarchyType):
         -------
         bool
         """
-        return self["visible"]
+        return self['visible']
 
     @visible.setter
     def visible(self, val):
-        self["visible"] = val
+        self['visible'] = val
 
     # Self properties description
     # ---------------------------
@@ -135,8 +137,13 @@ class Connector(_BaseTraceHierarchyType):
         visible
             Determines if connector regions and lines are drawn.
         """
-
-    def __init__(self, arg=None, fillcolor=None, line=None, visible=None, **kwargs):
+    def __init__(self,
+            arg=None,
+            fillcolor=None,
+            line=None,
+            visible=None,
+            **kwargs
+        ):
         """
         Construct a new Connector object
 
@@ -158,10 +165,10 @@ class Connector(_BaseTraceHierarchyType):
         -------
         Connector
         """
-        super(Connector, self).__init__("connector")
+        super(Connector, self).__init__('connector')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -173,32 +180,22 @@ class Connector(_BaseTraceHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.funnel.Connector
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.funnel.Connector`"""
-            )
+an instance of :class:`plotly.graph_objs.funnel.Connector`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("fillcolor", None)
-        _v = fillcolor if fillcolor is not None else _v
-        if _v is not None:
-            self["fillcolor"] = _v
-        _v = arg.pop("line", None)
-        _v = line if line is not None else _v
-        if _v is not None:
-            self["line"] = _v
-        _v = arg.pop("visible", None)
-        _v = visible if visible is not None else _v
-        if _v is not None:
-            self["visible"] = _v
+        self._init_provided('fillcolor', arg, fillcolor)
+        self._init_provided('line', arg, line)
+        self._init_provided('visible', arg, visible)
 
         # Process unknown kwargs
         # ----------------------

@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class SymbolValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="symbol", parent_name="layout.map.layer", **kwargs):
-        super(SymbolValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Symbol"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='symbol',
+                       parent_name='layout.map.layer',
+                       **kwargs):
+        super(SymbolValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Symbol'),
+                 data_docs=kwargs.pop('data_docs', """
             icon
                 Sets the symbol icon image
                 (map.layer.layout.icon-image). Full list:
@@ -38,7 +39,5 @@ class SymbolValidator(_plotly_utils.basevalidators.CompoundValidator):
             textposition
                 Sets the positions of the `text` elements with
                 respects to the (x,y) coordinates.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

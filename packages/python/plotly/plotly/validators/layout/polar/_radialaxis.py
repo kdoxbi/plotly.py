@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class RadialaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="radialaxis", parent_name="layout.polar", **kwargs):
-        super(RadialaxisValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "RadialAxis"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='radialaxis',
+                       parent_name='layout.polar',
+                       **kwargs):
+        super(RadialaxisValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'RadialAxis'),
+                 data_docs=kwargs.pop('data_docs', """
             angle
                 Sets the angle (in degrees) from which the
                 radial axis is drawn. Note that by default,
@@ -346,7 +347,5 @@ class RadialaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
                 preserving interaction like dragging. Default
                 is true when a cheater plot is present on the
                 axis, otherwise false
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

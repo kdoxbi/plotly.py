@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
@@ -6,36 +8,9 @@ class Parcoords(_BaseTraceType):
 
     # class properties
     # --------------------
-    _parent_path_str = ""
-    _path_str = "parcoords"
-    _valid_props = {
-        "customdata",
-        "customdatasrc",
-        "dimensiondefaults",
-        "dimensions",
-        "domain",
-        "ids",
-        "idssrc",
-        "labelangle",
-        "labelfont",
-        "labelside",
-        "legend",
-        "legendgrouptitle",
-        "legendrank",
-        "legendwidth",
-        "line",
-        "meta",
-        "metasrc",
-        "name",
-        "rangefont",
-        "stream",
-        "tickfont",
-        "type",
-        "uid",
-        "uirevision",
-        "unselected",
-        "visible",
-    }
+    _parent_path_str = ''
+    _path_str = 'parcoords'
+    _valid_props = {"customdata", "customdatasrc", "dimensiondefaults", "dimensions", "domain", "ids", "idssrc", "labelangle", "labelfont", "labelside", "legend", "legendgrouptitle", "legendrank", "legendwidth", "line", "meta", "metasrc", "name", "rangefont", "stream", "tickfont", "type", "uid", "uirevision", "unselected", "visible"}
 
     # customdata
     # ----------
@@ -54,11 +29,11 @@ class Parcoords(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["customdata"]
+        return self['customdata']
 
     @customdata.setter
     def customdata(self, val):
-        self["customdata"] = val
+        self['customdata'] = val
 
     # customdatasrc
     # -------------
@@ -75,11 +50,11 @@ class Parcoords(_BaseTraceType):
         -------
         str
         """
-        return self["customdatasrc"]
+        return self['customdatasrc']
 
     @customdatasrc.setter
     def customdatasrc(self, val):
-        self["customdatasrc"] = val
+        self['customdatasrc'] = val
 
     # dimensions
     # ----------
@@ -94,9 +69,9 @@ class Parcoords(_BaseTraceType):
           - A list or tuple of instances of plotly.graph_objs.parcoords.Dimension
           - A list or tuple of dicts of string/value properties that
             will be passed to the Dimension constructor
-
+    
             Supported dict properties:
-
+                
                 constraintrange
                     The domain range to which the filter on the
                     dimension is constrained. Must be an array of
@@ -179,11 +154,11 @@ class Parcoords(_BaseTraceType):
         -------
         tuple[plotly.graph_objs.parcoords.Dimension]
         """
-        return self["dimensions"]
+        return self['dimensions']
 
     @dimensions.setter
     def dimensions(self, val):
-        self["dimensions"] = val
+        self['dimensions'] = val
 
     # dimensiondefaults
     # -----------------
@@ -200,18 +175,18 @@ class Parcoords(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.parcoords.Dimension`
           - A dict of string/value properties that will be passed
             to the Dimension constructor
-
+    
             Supported dict properties:
 
         Returns
         -------
         plotly.graph_objs.parcoords.Dimension
         """
-        return self["dimensiondefaults"]
+        return self['dimensiondefaults']
 
     @dimensiondefaults.setter
     def dimensiondefaults(self, val):
-        self["dimensiondefaults"] = val
+        self['dimensiondefaults'] = val
 
     # domain
     # ------
@@ -223,9 +198,9 @@ class Parcoords(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.parcoords.Domain`
           - A dict of string/value properties that will be passed
             to the Domain constructor
-
+    
             Supported dict properties:
-
+                
                 column
                     If there is a layout grid, use the domain for
                     this column in the grid for this parcoords
@@ -244,11 +219,11 @@ class Parcoords(_BaseTraceType):
         -------
         plotly.graph_objs.parcoords.Domain
         """
-        return self["domain"]
+        return self['domain']
 
     @domain.setter
     def domain(self, val):
-        self["domain"] = val
+        self['domain'] = val
 
     # ids
     # ---
@@ -266,11 +241,11 @@ class Parcoords(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["ids"]
+        return self['ids']
 
     @ids.setter
     def ids(self, val):
-        self["ids"] = val
+        self['ids'] = val
 
     # idssrc
     # ------
@@ -286,11 +261,11 @@ class Parcoords(_BaseTraceType):
         -------
         str
         """
-        return self["idssrc"]
+        return self['idssrc']
 
     @idssrc.setter
     def idssrc(self, val):
-        self["idssrc"] = val
+        self['idssrc'] = val
 
     # labelangle
     # ----------
@@ -311,11 +286,11 @@ class Parcoords(_BaseTraceType):
         -------
         int|float
         """
-        return self["labelangle"]
+        return self['labelangle']
 
     @labelangle.setter
     def labelangle(self, val):
-        self["labelangle"] = val
+        self['labelangle'] = val
 
     # labelfont
     # ---------
@@ -329,11 +304,11 @@ class Parcoords(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.parcoords.Labelfont`
           - A dict of string/value properties that will be passed
             to the Labelfont constructor
-
+    
             Supported dict properties:
-
+                
                 color
-
+    
                 family
                     HTML font family - the typeface that will be
                     applied by the web browser. The web browser
@@ -363,7 +338,7 @@ class Parcoords(_BaseTraceType):
                     US/docs/Web/CSS/text-shadow for additional
                     options.
                 size
-
+    
                 style
                     Sets whether a font should be styled with a
                     normal or italic face from its family.
@@ -380,11 +355,11 @@ class Parcoords(_BaseTraceType):
         -------
         plotly.graph_objs.parcoords.Labelfont
         """
-        return self["labelfont"]
+        return self['labelfont']
 
     @labelfont.setter
     def labelfont(self, val):
-        self["labelfont"] = val
+        self['labelfont'] = val
 
     # labelside
     # ---------
@@ -404,11 +379,11 @@ class Parcoords(_BaseTraceType):
         -------
         Any
         """
-        return self["labelside"]
+        return self['labelside']
 
     @labelside.setter
     def labelside(self, val):
-        self["labelside"] = val
+        self['labelside'] = val
 
     # legend
     # ------
@@ -429,11 +404,11 @@ class Parcoords(_BaseTraceType):
         -------
         str
         """
-        return self["legend"]
+        return self['legend']
 
     @legend.setter
     def legend(self, val):
-        self["legend"] = val
+        self['legend'] = val
 
     # legendgrouptitle
     # ----------------
@@ -445,9 +420,9 @@ class Parcoords(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.parcoords.Legendgrouptitle`
           - A dict of string/value properties that will be passed
             to the Legendgrouptitle constructor
-
+    
             Supported dict properties:
-
+                
                 font
                     Sets this legend group's title font.
                 text
@@ -457,11 +432,11 @@ class Parcoords(_BaseTraceType):
         -------
         plotly.graph_objs.parcoords.Legendgrouptitle
         """
-        return self["legendgrouptitle"]
+        return self['legendgrouptitle']
 
     @legendgrouptitle.setter
     def legendgrouptitle(self, val):
-        self["legendgrouptitle"] = val
+        self['legendgrouptitle'] = val
 
     # legendrank
     # ----------
@@ -484,11 +459,11 @@ class Parcoords(_BaseTraceType):
         -------
         int|float
         """
-        return self["legendrank"]
+        return self['legendrank']
 
     @legendrank.setter
     def legendrank(self, val):
-        self["legendrank"] = val
+        self['legendrank'] = val
 
     # legendwidth
     # -----------
@@ -505,11 +480,11 @@ class Parcoords(_BaseTraceType):
         -------
         int|float
         """
-        return self["legendwidth"]
+        return self['legendwidth']
 
     @legendwidth.setter
     def legendwidth(self, val):
-        self["legendwidth"] = val
+        self['legendwidth'] = val
 
     # line
     # ----
@@ -521,9 +496,9 @@ class Parcoords(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.parcoords.Line`
           - A dict of string/value properties that will be passed
             to the Line constructor
-
+    
             Supported dict properties:
-
+                
                 autocolorscale
                     Determines whether the colorscale is a default
                     palette (`autocolorscale: true`) or the palette
@@ -615,11 +590,11 @@ class Parcoords(_BaseTraceType):
         -------
         plotly.graph_objs.parcoords.Line
         """
-        return self["line"]
+        return self['line']
 
     @line.setter
     def line(self, val):
-        self["line"] = val
+        self['line'] = val
 
     # meta
     # ----
@@ -643,11 +618,11 @@ class Parcoords(_BaseTraceType):
         -------
         Any|numpy.ndarray
         """
-        return self["meta"]
+        return self['meta']
 
     @meta.setter
     def meta(self, val):
-        self["meta"] = val
+        self['meta'] = val
 
     # metasrc
     # -------
@@ -663,11 +638,11 @@ class Parcoords(_BaseTraceType):
         -------
         str
         """
-        return self["metasrc"]
+        return self['metasrc']
 
     @metasrc.setter
     def metasrc(self, val):
-        self["metasrc"] = val
+        self['metasrc'] = val
 
     # name
     # ----
@@ -685,11 +660,11 @@ class Parcoords(_BaseTraceType):
         -------
         str
         """
-        return self["name"]
+        return self['name']
 
     @name.setter
     def name(self, val):
-        self["name"] = val
+        self['name'] = val
 
     # rangefont
     # ---------
@@ -703,11 +678,11 @@ class Parcoords(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.parcoords.Rangefont`
           - A dict of string/value properties that will be passed
             to the Rangefont constructor
-
+    
             Supported dict properties:
-
+                
                 color
-
+    
                 family
                     HTML font family - the typeface that will be
                     applied by the web browser. The web browser
@@ -737,7 +712,7 @@ class Parcoords(_BaseTraceType):
                     US/docs/Web/CSS/text-shadow for additional
                     options.
                 size
-
+    
                 style
                     Sets whether a font should be styled with a
                     normal or italic face from its family.
@@ -754,11 +729,11 @@ class Parcoords(_BaseTraceType):
         -------
         plotly.graph_objs.parcoords.Rangefont
         """
-        return self["rangefont"]
+        return self['rangefont']
 
     @rangefont.setter
     def rangefont(self, val):
-        self["rangefont"] = val
+        self['rangefont'] = val
 
     # stream
     # ------
@@ -770,9 +745,9 @@ class Parcoords(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.parcoords.Stream`
           - A dict of string/value properties that will be passed
             to the Stream constructor
-
+    
             Supported dict properties:
-
+                
                 maxpoints
                     Sets the maximum number of points to keep on
                     the plots from an incoming stream. If
@@ -787,11 +762,11 @@ class Parcoords(_BaseTraceType):
         -------
         plotly.graph_objs.parcoords.Stream
         """
-        return self["stream"]
+        return self['stream']
 
     @stream.setter
     def stream(self, val):
-        self["stream"] = val
+        self['stream'] = val
 
     # tickfont
     # --------
@@ -805,11 +780,11 @@ class Parcoords(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.parcoords.Tickfont`
           - A dict of string/value properties that will be passed
             to the Tickfont constructor
-
+    
             Supported dict properties:
-
+                
                 color
-
+    
                 family
                     HTML font family - the typeface that will be
                     applied by the web browser. The web browser
@@ -839,7 +814,7 @@ class Parcoords(_BaseTraceType):
                     US/docs/Web/CSS/text-shadow for additional
                     options.
                 size
-
+    
                 style
                     Sets whether a font should be styled with a
                     normal or italic face from its family.
@@ -856,11 +831,11 @@ class Parcoords(_BaseTraceType):
         -------
         plotly.graph_objs.parcoords.Tickfont
         """
-        return self["tickfont"]
+        return self['tickfont']
 
     @tickfont.setter
     def tickfont(self, val):
-        self["tickfont"] = val
+        self['tickfont'] = val
 
     # uid
     # ---
@@ -878,11 +853,11 @@ class Parcoords(_BaseTraceType):
         -------
         str
         """
-        return self["uid"]
+        return self['uid']
 
     @uid.setter
     def uid(self, val):
-        self["uid"] = val
+        self['uid'] = val
 
     # uirevision
     # ----------
@@ -911,11 +886,11 @@ class Parcoords(_BaseTraceType):
         -------
         Any
         """
-        return self["uirevision"]
+        return self['uirevision']
 
     @uirevision.setter
     def uirevision(self, val):
-        self["uirevision"] = val
+        self['uirevision'] = val
 
     # unselected
     # ----------
@@ -927,9 +902,9 @@ class Parcoords(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.parcoords.Unselected`
           - A dict of string/value properties that will be passed
             to the Unselected constructor
-
+    
             Supported dict properties:
-
+                
                 line
                     :class:`plotly.graph_objects.parcoords.unselect
                     ed.Line` instance or dict with compatible
@@ -939,11 +914,11 @@ class Parcoords(_BaseTraceType):
         -------
         plotly.graph_objs.parcoords.Unselected
         """
-        return self["unselected"]
+        return self['unselected']
 
     @unselected.setter
     def unselected(self, val):
-        self["unselected"] = val
+        self['unselected'] = val
 
     # visible
     # -------
@@ -962,17 +937,17 @@ class Parcoords(_BaseTraceType):
         -------
         Any
         """
-        return self["visible"]
+        return self['visible']
 
     @visible.setter
     def visible(self, val):
-        self["visible"] = val
+        self['visible'] = val
 
     # type
     # ----
     @property
     def type(self):
-        return self._props["type"]
+        return self._props['type']
 
     # Self properties description
     # ---------------------------
@@ -1102,37 +1077,35 @@ class Parcoords(_BaseTraceType):
             a legend item (provided that the legend itself is
             visible).
         """
-
-    def __init__(
-        self,
-        arg=None,
-        customdata=None,
-        customdatasrc=None,
-        dimensions=None,
-        dimensiondefaults=None,
-        domain=None,
-        ids=None,
-        idssrc=None,
-        labelangle=None,
-        labelfont=None,
-        labelside=None,
-        legend=None,
-        legendgrouptitle=None,
-        legendrank=None,
-        legendwidth=None,
-        line=None,
-        meta=None,
-        metasrc=None,
-        name=None,
-        rangefont=None,
-        stream=None,
-        tickfont=None,
-        uid=None,
-        uirevision=None,
-        unselected=None,
-        visible=None,
-        **kwargs,
-    ):
+    def __init__(self,
+            arg=None,
+            customdata=None,
+            customdatasrc=None,
+            dimensions=None,
+            dimensiondefaults=None,
+            domain=None,
+            ids=None,
+            idssrc=None,
+            labelangle=None,
+            labelfont=None,
+            labelside=None,
+            legend=None,
+            legendgrouptitle=None,
+            legendrank=None,
+            legendwidth=None,
+            line=None,
+            meta=None,
+            metasrc=None,
+            name=None,
+            rangefont=None,
+            stream=None,
+            tickfont=None,
+            uid=None,
+            uirevision=None,
+            unselected=None,
+            visible=None,
+            **kwargs
+        ):
         """
         Construct a new Parcoords object
 
@@ -1272,10 +1245,10 @@ class Parcoords(_BaseTraceType):
         -------
         Parcoords
         """
-        super(Parcoords, self).__init__("parcoords")
+        super(Parcoords, self).__init__('parcoords')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -1287,126 +1260,50 @@ class Parcoords(_BaseTraceType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.Parcoords
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.Parcoords`"""
-            )
+an instance of :class:`plotly.graph_objs.Parcoords`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("customdata", None)
-        _v = customdata if customdata is not None else _v
-        if _v is not None:
-            self["customdata"] = _v
-        _v = arg.pop("customdatasrc", None)
-        _v = customdatasrc if customdatasrc is not None else _v
-        if _v is not None:
-            self["customdatasrc"] = _v
-        _v = arg.pop("dimensions", None)
-        _v = dimensions if dimensions is not None else _v
-        if _v is not None:
-            self["dimensions"] = _v
-        _v = arg.pop("dimensiondefaults", None)
-        _v = dimensiondefaults if dimensiondefaults is not None else _v
-        if _v is not None:
-            self["dimensiondefaults"] = _v
-        _v = arg.pop("domain", None)
-        _v = domain if domain is not None else _v
-        if _v is not None:
-            self["domain"] = _v
-        _v = arg.pop("ids", None)
-        _v = ids if ids is not None else _v
-        if _v is not None:
-            self["ids"] = _v
-        _v = arg.pop("idssrc", None)
-        _v = idssrc if idssrc is not None else _v
-        if _v is not None:
-            self["idssrc"] = _v
-        _v = arg.pop("labelangle", None)
-        _v = labelangle if labelangle is not None else _v
-        if _v is not None:
-            self["labelangle"] = _v
-        _v = arg.pop("labelfont", None)
-        _v = labelfont if labelfont is not None else _v
-        if _v is not None:
-            self["labelfont"] = _v
-        _v = arg.pop("labelside", None)
-        _v = labelside if labelside is not None else _v
-        if _v is not None:
-            self["labelside"] = _v
-        _v = arg.pop("legend", None)
-        _v = legend if legend is not None else _v
-        if _v is not None:
-            self["legend"] = _v
-        _v = arg.pop("legendgrouptitle", None)
-        _v = legendgrouptitle if legendgrouptitle is not None else _v
-        if _v is not None:
-            self["legendgrouptitle"] = _v
-        _v = arg.pop("legendrank", None)
-        _v = legendrank if legendrank is not None else _v
-        if _v is not None:
-            self["legendrank"] = _v
-        _v = arg.pop("legendwidth", None)
-        _v = legendwidth if legendwidth is not None else _v
-        if _v is not None:
-            self["legendwidth"] = _v
-        _v = arg.pop("line", None)
-        _v = line if line is not None else _v
-        if _v is not None:
-            self["line"] = _v
-        _v = arg.pop("meta", None)
-        _v = meta if meta is not None else _v
-        if _v is not None:
-            self["meta"] = _v
-        _v = arg.pop("metasrc", None)
-        _v = metasrc if metasrc is not None else _v
-        if _v is not None:
-            self["metasrc"] = _v
-        _v = arg.pop("name", None)
-        _v = name if name is not None else _v
-        if _v is not None:
-            self["name"] = _v
-        _v = arg.pop("rangefont", None)
-        _v = rangefont if rangefont is not None else _v
-        if _v is not None:
-            self["rangefont"] = _v
-        _v = arg.pop("stream", None)
-        _v = stream if stream is not None else _v
-        if _v is not None:
-            self["stream"] = _v
-        _v = arg.pop("tickfont", None)
-        _v = tickfont if tickfont is not None else _v
-        if _v is not None:
-            self["tickfont"] = _v
-        _v = arg.pop("uid", None)
-        _v = uid if uid is not None else _v
-        if _v is not None:
-            self["uid"] = _v
-        _v = arg.pop("uirevision", None)
-        _v = uirevision if uirevision is not None else _v
-        if _v is not None:
-            self["uirevision"] = _v
-        _v = arg.pop("unselected", None)
-        _v = unselected if unselected is not None else _v
-        if _v is not None:
-            self["unselected"] = _v
-        _v = arg.pop("visible", None)
-        _v = visible if visible is not None else _v
-        if _v is not None:
-            self["visible"] = _v
+        self._init_provided('customdata', arg, customdata)
+        self._init_provided('customdatasrc', arg, customdatasrc)
+        self._init_provided('dimensions', arg, dimensions)
+        self._init_provided('dimensiondefaults', arg, dimensiondefaults)
+        self._init_provided('domain', arg, domain)
+        self._init_provided('ids', arg, ids)
+        self._init_provided('idssrc', arg, idssrc)
+        self._init_provided('labelangle', arg, labelangle)
+        self._init_provided('labelfont', arg, labelfont)
+        self._init_provided('labelside', arg, labelside)
+        self._init_provided('legend', arg, legend)
+        self._init_provided('legendgrouptitle', arg, legendgrouptitle)
+        self._init_provided('legendrank', arg, legendrank)
+        self._init_provided('legendwidth', arg, legendwidth)
+        self._init_provided('line', arg, line)
+        self._init_provided('meta', arg, meta)
+        self._init_provided('metasrc', arg, metasrc)
+        self._init_provided('name', arg, name)
+        self._init_provided('rangefont', arg, rangefont)
+        self._init_provided('stream', arg, stream)
+        self._init_provided('tickfont', arg, tickfont)
+        self._init_provided('uid', arg, uid)
+        self._init_provided('uirevision', arg, uirevision)
+        self._init_provided('unselected', arg, unselected)
+        self._init_provided('visible', arg, visible)
 
         # Read-only literals
         # ------------------
 
-        self._props["type"] = "parcoords"
-        arg.pop("type", None)
+        self._props['type'] = 'parcoords'
+        arg.pop('type', None)
 
         # Process unknown kwargs
         # ----------------------

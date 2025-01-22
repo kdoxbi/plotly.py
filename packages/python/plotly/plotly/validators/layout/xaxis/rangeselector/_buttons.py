@@ -1,17 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class ButtonsValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
-    def __init__(
-        self, plotly_name="buttons", parent_name="layout.xaxis.rangeselector", **kwargs
-    ):
-        super(ButtonsValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Button"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='buttons',
+                       parent_name='layout.xaxis.rangeselector',
+                       **kwargs):
+        super(ButtonsValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Button'),
+                 data_docs=kwargs.pop('data_docs', """
             count
                 Sets the number of steps to take to update the
                 range. Use with `step` to specify the update
@@ -57,7 +56,5 @@ class ButtonsValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
             visible
                 Determines whether or not this button is
                 visible.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

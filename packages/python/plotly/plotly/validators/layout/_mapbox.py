@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class MapboxValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="mapbox", parent_name="layout", **kwargs):
-        super(MapboxValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Mapbox"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='mapbox',
+                       parent_name='layout',
+                       **kwargs):
+        super(MapboxValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Mapbox'),
+                 data_docs=kwargs.pop('data_docs', """
             accesstoken
                 Sets the mapbox access token to be used for
                 this mapbox map. Alternatively, the mapbox
@@ -79,7 +80,5 @@ class MapboxValidator(_plotly_utils.basevalidators.CompoundValidator):
                 Defaults to `layout.uirevision`.
             zoom
                 Sets the zoom level of the map (mapbox.zoom).
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

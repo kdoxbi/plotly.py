@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class IcicleValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="icicle", parent_name="", **kwargs):
-        super(IcicleValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Icicle"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='icicle',
+                       parent_name='',
+                       **kwargs):
+        super(IcicleValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Icicle'),
+                 data_docs=kwargs.pop('data_docs', """
             branchvalues
                 Determines how the items in `values` are
                 summed. When set to "total", items in `values`
@@ -287,7 +288,5 @@ class IcicleValidator(_plotly_utils.basevalidators.CompoundValidator):
                 visible. If "legendonly", the trace is not
                 drawn, but can appear as a legend item
                 (provided that the legend itself is visible).
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

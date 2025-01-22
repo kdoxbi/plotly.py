@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
@@ -6,21 +8,9 @@ class Mapbox(_BaseLayoutHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "layout"
-    _path_str = "layout.mapbox"
-    _valid_props = {
-        "accesstoken",
-        "bearing",
-        "bounds",
-        "center",
-        "domain",
-        "layerdefaults",
-        "layers",
-        "pitch",
-        "style",
-        "uirevision",
-        "zoom",
-    }
+    _parent_path_str = 'layout'
+    _path_str = 'layout.mapbox'
+    _valid_props = {"accesstoken", "bearing", "bounds", "center", "domain", "layerdefaults", "layers", "pitch", "style", "uirevision", "zoom"}
 
     # accesstoken
     # -----------
@@ -41,11 +31,11 @@ class Mapbox(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["accesstoken"]
+        return self['accesstoken']
 
     @accesstoken.setter
     def accesstoken(self, val):
-        self["accesstoken"] = val
+        self['accesstoken'] = val
 
     # bearing
     # -------
@@ -62,11 +52,11 @@ class Mapbox(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["bearing"]
+        return self['bearing']
 
     @bearing.setter
     def bearing(self, val):
-        self["bearing"] = val
+        self['bearing'] = val
 
     # bounds
     # ------
@@ -78,9 +68,9 @@ class Mapbox(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.mapbox.Bounds`
           - A dict of string/value properties that will be passed
             to the Bounds constructor
-
+    
             Supported dict properties:
-
+                
                 east
                     Sets the maximum longitude of the map (in
                     degrees East) if `west`, `south` and `north`
@@ -102,11 +92,11 @@ class Mapbox(_BaseLayoutHierarchyType):
         -------
         plotly.graph_objs.layout.mapbox.Bounds
         """
-        return self["bounds"]
+        return self['bounds']
 
     @bounds.setter
     def bounds(self, val):
-        self["bounds"] = val
+        self['bounds'] = val
 
     # center
     # ------
@@ -118,9 +108,9 @@ class Mapbox(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.mapbox.Center`
           - A dict of string/value properties that will be passed
             to the Center constructor
-
+    
             Supported dict properties:
-
+                
                 lat
                     Sets the latitude of the center of the map (in
                     degrees North).
@@ -132,11 +122,11 @@ class Mapbox(_BaseLayoutHierarchyType):
         -------
         plotly.graph_objs.layout.mapbox.Center
         """
-        return self["center"]
+        return self['center']
 
     @center.setter
     def center(self, val):
-        self["center"] = val
+        self['center'] = val
 
     # domain
     # ------
@@ -148,9 +138,9 @@ class Mapbox(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.mapbox.Domain`
           - A dict of string/value properties that will be passed
             to the Domain constructor
-
+    
             Supported dict properties:
-
+                
                 column
                     If there is a layout grid, use the domain for
                     this column in the grid for this mapbox subplot
@@ -169,11 +159,11 @@ class Mapbox(_BaseLayoutHierarchyType):
         -------
         plotly.graph_objs.layout.mapbox.Domain
         """
-        return self["domain"]
+        return self['domain']
 
     @domain.setter
     def domain(self, val):
-        self["domain"] = val
+        self['domain'] = val
 
     # layers
     # ------
@@ -185,9 +175,9 @@ class Mapbox(_BaseLayoutHierarchyType):
           - A list or tuple of instances of plotly.graph_objs.layout.mapbox.Layer
           - A list or tuple of dicts of string/value properties that
             will be passed to the Layer constructor
-
+    
             Supported dict properties:
-
+                
                 below
                     Determines if the layer will be inserted before
                     the layer with the specified ID. If omitted or
@@ -304,11 +294,11 @@ class Mapbox(_BaseLayoutHierarchyType):
         -------
         tuple[plotly.graph_objs.layout.mapbox.Layer]
         """
-        return self["layers"]
+        return self['layers']
 
     @layers.setter
     def layers(self, val):
-        self["layers"] = val
+        self['layers'] = val
 
     # layerdefaults
     # -------------
@@ -324,18 +314,18 @@ class Mapbox(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.mapbox.Layer`
           - A dict of string/value properties that will be passed
             to the Layer constructor
-
+    
             Supported dict properties:
 
         Returns
         -------
         plotly.graph_objs.layout.mapbox.Layer
         """
-        return self["layerdefaults"]
+        return self['layerdefaults']
 
     @layerdefaults.setter
     def layerdefaults(self, val):
-        self["layerdefaults"] = val
+        self['layerdefaults'] = val
 
     # pitch
     # -----
@@ -352,11 +342,11 @@ class Mapbox(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["pitch"]
+        return self['pitch']
 
     @pitch.setter
     def pitch(self, val):
-        self["pitch"] = val
+        self['pitch'] = val
 
     # style
     # -----
@@ -390,11 +380,11 @@ class Mapbox(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["style"]
+        return self['style']
 
     @style.setter
     def style(self, val):
-        self["style"] = val
+        self['style'] = val
 
     # uirevision
     # ----------
@@ -411,11 +401,11 @@ class Mapbox(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["uirevision"]
+        return self['uirevision']
 
     @uirevision.setter
     def uirevision(self, val):
-        self["uirevision"] = val
+        self['uirevision'] = val
 
     # zoom
     # ----
@@ -431,11 +421,11 @@ class Mapbox(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["zoom"]
+        return self['zoom']
 
     @zoom.setter
     def zoom(self, val):
-        self["zoom"] = val
+        self['zoom'] = val
 
     # Self properties description
     # ---------------------------
@@ -507,23 +497,21 @@ class Mapbox(_BaseLayoutHierarchyType):
         zoom
             Sets the zoom level of the map (mapbox.zoom).
         """
-
-    def __init__(
-        self,
-        arg=None,
-        accesstoken=None,
-        bearing=None,
-        bounds=None,
-        center=None,
-        domain=None,
-        layers=None,
-        layerdefaults=None,
-        pitch=None,
-        style=None,
-        uirevision=None,
-        zoom=None,
-        **kwargs,
-    ):
+    def __init__(self,
+            arg=None,
+            accesstoken=None,
+            bearing=None,
+            bounds=None,
+            center=None,
+            domain=None,
+            layers=None,
+            layerdefaults=None,
+            pitch=None,
+            style=None,
+            uirevision=None,
+            zoom=None,
+            **kwargs
+        ):
         """
         Construct a new Mapbox object
 
@@ -601,10 +589,10 @@ class Mapbox(_BaseLayoutHierarchyType):
         -------
         Mapbox
         """
-        super(Mapbox, self).__init__("mapbox")
+        super(Mapbox, self).__init__('mapbox')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -616,64 +604,30 @@ class Mapbox(_BaseLayoutHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.layout.Mapbox
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.layout.Mapbox`"""
-            )
+an instance of :class:`plotly.graph_objs.layout.Mapbox`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("accesstoken", None)
-        _v = accesstoken if accesstoken is not None else _v
-        if _v is not None:
-            self["accesstoken"] = _v
-        _v = arg.pop("bearing", None)
-        _v = bearing if bearing is not None else _v
-        if _v is not None:
-            self["bearing"] = _v
-        _v = arg.pop("bounds", None)
-        _v = bounds if bounds is not None else _v
-        if _v is not None:
-            self["bounds"] = _v
-        _v = arg.pop("center", None)
-        _v = center if center is not None else _v
-        if _v is not None:
-            self["center"] = _v
-        _v = arg.pop("domain", None)
-        _v = domain if domain is not None else _v
-        if _v is not None:
-            self["domain"] = _v
-        _v = arg.pop("layers", None)
-        _v = layers if layers is not None else _v
-        if _v is not None:
-            self["layers"] = _v
-        _v = arg.pop("layerdefaults", None)
-        _v = layerdefaults if layerdefaults is not None else _v
-        if _v is not None:
-            self["layerdefaults"] = _v
-        _v = arg.pop("pitch", None)
-        _v = pitch if pitch is not None else _v
-        if _v is not None:
-            self["pitch"] = _v
-        _v = arg.pop("style", None)
-        _v = style if style is not None else _v
-        if _v is not None:
-            self["style"] = _v
-        _v = arg.pop("uirevision", None)
-        _v = uirevision if uirevision is not None else _v
-        if _v is not None:
-            self["uirevision"] = _v
-        _v = arg.pop("zoom", None)
-        _v = zoom if zoom is not None else _v
-        if _v is not None:
-            self["zoom"] = _v
+        self._init_provided('accesstoken', arg, accesstoken)
+        self._init_provided('bearing', arg, bearing)
+        self._init_provided('bounds', arg, bounds)
+        self._init_provided('center', arg, center)
+        self._init_provided('domain', arg, domain)
+        self._init_provided('layers', arg, layers)
+        self._init_provided('layerdefaults', arg, layerdefaults)
+        self._init_provided('pitch', arg, pitch)
+        self._init_provided('style', arg, style)
+        self._init_provided('uirevision', arg, uirevision)
+        self._init_provided('zoom', arg, zoom)
 
         # Process unknown kwargs
         # ----------------------

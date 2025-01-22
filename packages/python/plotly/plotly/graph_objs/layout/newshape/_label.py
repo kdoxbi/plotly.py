@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
@@ -6,18 +8,9 @@ class Label(_BaseLayoutHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "layout.newshape"
-    _path_str = "layout.newshape.label"
-    _valid_props = {
-        "font",
-        "padding",
-        "text",
-        "textangle",
-        "textposition",
-        "texttemplate",
-        "xanchor",
-        "yanchor",
-    }
+    _parent_path_str = 'layout.newshape'
+    _path_str = 'layout.newshape.label'
+    _valid_props = {"font", "padding", "text", "textangle", "textposition", "texttemplate", "xanchor", "yanchor"}
 
     # font
     # ----
@@ -31,11 +24,11 @@ class Label(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.newshape.label.Font`
           - A dict of string/value properties that will be passed
             to the Font constructor
-
+    
             Supported dict properties:
-
+                
                 color
-
+    
                 family
                     HTML font family - the typeface that will be
                     applied by the web browser. The web browser
@@ -65,7 +58,7 @@ class Label(_BaseLayoutHierarchyType):
                     US/docs/Web/CSS/text-shadow for additional
                     options.
                 size
-
+    
                 style
                     Sets whether a font should be styled with a
                     normal or italic face from its family.
@@ -82,11 +75,11 @@ class Label(_BaseLayoutHierarchyType):
         -------
         plotly.graph_objs.layout.newshape.label.Font
         """
-        return self["font"]
+        return self['font']
 
     @font.setter
     def font(self, val):
-        self["font"] = val
+        self['font'] = val
 
     # padding
     # -------
@@ -103,11 +96,11 @@ class Label(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["padding"]
+        return self['padding']
 
     @padding.setter
     def padding(self, val):
-        self["padding"] = val
+        self['padding'] = val
 
     # text
     # ----
@@ -125,11 +118,11 @@ class Label(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["text"]
+        return self['text']
 
     @text.setter
     def text(self, val):
-        self["text"] = val
+        self['text'] = val
 
     # textangle
     # ---------
@@ -149,11 +142,11 @@ class Label(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["textangle"]
+        return self['textangle']
 
     @textangle.setter
     def textangle(self, val):
-        self["textangle"] = val
+        self['textangle'] = val
 
     # textposition
     # ------------
@@ -178,11 +171,11 @@ class Label(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["textposition"]
+        return self['textposition']
 
     @textposition.setter
     def textposition(self, val):
-        self["textposition"] = val
+        self['textposition'] = val
 
     # texttemplate
     # ------------
@@ -218,11 +211,11 @@ class Label(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["texttemplate"]
+        return self['texttemplate']
 
     @texttemplate.setter
     def texttemplate(self, val):
-        self["texttemplate"] = val
+        self['texttemplate'] = val
 
     # xanchor
     # -------
@@ -244,11 +237,11 @@ class Label(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["xanchor"]
+        return self['xanchor']
 
     @xanchor.setter
     def xanchor(self, val):
-        self["xanchor"] = val
+        self['xanchor'] = val
 
     # yanchor
     # -------
@@ -269,11 +262,11 @@ class Label(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["yanchor"]
+        return self['yanchor']
 
     @yanchor.setter
     def yanchor(self, val):
-        self["yanchor"] = val
+        self['yanchor'] = val
 
     # Self properties description
     # ---------------------------
@@ -341,20 +334,18 @@ class Label(_BaseLayoutHierarchyType):
             "top" then the top-most portion of the label text lines
             up with the top-most edge of the new shape.
         """
-
-    def __init__(
-        self,
-        arg=None,
-        font=None,
-        padding=None,
-        text=None,
-        textangle=None,
-        textposition=None,
-        texttemplate=None,
-        xanchor=None,
-        yanchor=None,
-        **kwargs,
-    ):
+    def __init__(self,
+            arg=None,
+            font=None,
+            padding=None,
+            text=None,
+            textangle=None,
+            textposition=None,
+            texttemplate=None,
+            xanchor=None,
+            yanchor=None,
+            **kwargs
+        ):
         """
         Construct a new Label object
 
@@ -429,10 +420,10 @@ class Label(_BaseLayoutHierarchyType):
         -------
         Label
         """
-        super(Label, self).__init__("label")
+        super(Label, self).__init__('label')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -444,52 +435,27 @@ class Label(_BaseLayoutHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.layout.newshape.Label
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.layout.newshape.Label`"""
-            )
+an instance of :class:`plotly.graph_objs.layout.newshape.Label`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("font", None)
-        _v = font if font is not None else _v
-        if _v is not None:
-            self["font"] = _v
-        _v = arg.pop("padding", None)
-        _v = padding if padding is not None else _v
-        if _v is not None:
-            self["padding"] = _v
-        _v = arg.pop("text", None)
-        _v = text if text is not None else _v
-        if _v is not None:
-            self["text"] = _v
-        _v = arg.pop("textangle", None)
-        _v = textangle if textangle is not None else _v
-        if _v is not None:
-            self["textangle"] = _v
-        _v = arg.pop("textposition", None)
-        _v = textposition if textposition is not None else _v
-        if _v is not None:
-            self["textposition"] = _v
-        _v = arg.pop("texttemplate", None)
-        _v = texttemplate if texttemplate is not None else _v
-        if _v is not None:
-            self["texttemplate"] = _v
-        _v = arg.pop("xanchor", None)
-        _v = xanchor if xanchor is not None else _v
-        if _v is not None:
-            self["xanchor"] = _v
-        _v = arg.pop("yanchor", None)
-        _v = yanchor if yanchor is not None else _v
-        if _v is not None:
-            self["yanchor"] = _v
+        self._init_provided('font', arg, font)
+        self._init_provided('padding', arg, padding)
+        self._init_provided('text', arg, text)
+        self._init_provided('textangle', arg, textangle)
+        self._init_provided('textposition', arg, textposition)
+        self._init_provided('texttemplate', arg, texttemplate)
+        self._init_provided('xanchor', arg, xanchor)
+        self._init_provided('yanchor', arg, yanchor)
 
         # Process unknown kwargs
         # ----------------------

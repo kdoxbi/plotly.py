@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class HeaderValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="header", parent_name="table", **kwargs):
-        super(HeaderValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Header"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='header',
+                       parent_name='table',
+                       **kwargs):
+        super(HeaderValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Header'),
+                 data_docs=kwargs.pop('data_docs', """
             align
                 Sets the horizontal alignment of the `text`
                 within the box. Has an effect only if `text`
@@ -59,7 +60,5 @@ class HeaderValidator(_plotly_utils.basevalidators.CompoundValidator):
             valuessrc
                 Sets the source reference on Chart Studio Cloud
                 for `values`.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

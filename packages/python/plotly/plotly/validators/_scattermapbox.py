@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class ScattermapboxValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="scattermapbox", parent_name="", **kwargs):
-        super(ScattermapboxValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Scattermapbox"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='scattermapbox',
+                       parent_name='',
+                       **kwargs):
+        super(ScattermapboxValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Scattermapbox'),
+                 data_docs=kwargs.pop('data_docs', """
             below
                 Determines if this scattermapbox trace's layers
                 are to be inserted before the layer with the
@@ -298,7 +299,5 @@ class ScattermapboxValidator(_plotly_utils.basevalidators.CompoundValidator):
                 visible. If "legendonly", the trace is not
                 drawn, but can appear as a legend item
                 (provided that the legend itself is visible).
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

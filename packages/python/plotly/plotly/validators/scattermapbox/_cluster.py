@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class ClusterValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="cluster", parent_name="scattermapbox", **kwargs):
-        super(ClusterValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Cluster"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='cluster',
+                       parent_name='scattermapbox',
+                       **kwargs):
+        super(ClusterValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Cluster'),
+                 data_docs=kwargs.pop('data_docs', """
             color
                 Sets the color for each cluster step.
             colorsrc
@@ -43,7 +44,5 @@ class ClusterValidator(_plotly_utils.basevalidators.CompoundValidator):
             stepsrc
                 Sets the source reference on Chart Studio Cloud
                 for `step`.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

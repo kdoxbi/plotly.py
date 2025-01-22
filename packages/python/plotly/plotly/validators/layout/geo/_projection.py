@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class ProjectionValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="projection", parent_name="layout.geo", **kwargs):
-        super(ProjectionValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Projection"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='projection',
+                       parent_name='layout.geo',
+                       **kwargs):
+        super(ProjectionValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Projection'),
+                 data_docs=kwargs.pop('data_docs', """
             distance
                 For satellite projection type only. Sets the
                 distance from the center of the sphere to the
@@ -32,7 +33,5 @@ class ProjectionValidator(_plotly_utils.basevalidators.CompoundValidator):
                 tilt angle of perspective projection.
             type
                 Sets the projection type.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

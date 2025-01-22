@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
@@ -6,84 +8,9 @@ class Contour(_BaseTraceType):
 
     # class properties
     # --------------------
-    _parent_path_str = ""
-    _path_str = "contour"
-    _valid_props = {
-        "autocolorscale",
-        "autocontour",
-        "coloraxis",
-        "colorbar",
-        "colorscale",
-        "connectgaps",
-        "contours",
-        "customdata",
-        "customdatasrc",
-        "dx",
-        "dy",
-        "fillcolor",
-        "hoverinfo",
-        "hoverinfosrc",
-        "hoverlabel",
-        "hoverongaps",
-        "hovertemplate",
-        "hovertemplatesrc",
-        "hovertext",
-        "hovertextsrc",
-        "ids",
-        "idssrc",
-        "legend",
-        "legendgroup",
-        "legendgrouptitle",
-        "legendrank",
-        "legendwidth",
-        "line",
-        "meta",
-        "metasrc",
-        "name",
-        "ncontours",
-        "opacity",
-        "reversescale",
-        "showlegend",
-        "showscale",
-        "stream",
-        "text",
-        "textfont",
-        "textsrc",
-        "texttemplate",
-        "transpose",
-        "type",
-        "uid",
-        "uirevision",
-        "visible",
-        "x",
-        "x0",
-        "xaxis",
-        "xcalendar",
-        "xhoverformat",
-        "xperiod",
-        "xperiod0",
-        "xperiodalignment",
-        "xsrc",
-        "xtype",
-        "y",
-        "y0",
-        "yaxis",
-        "ycalendar",
-        "yhoverformat",
-        "yperiod",
-        "yperiod0",
-        "yperiodalignment",
-        "ysrc",
-        "ytype",
-        "z",
-        "zauto",
-        "zhoverformat",
-        "zmax",
-        "zmid",
-        "zmin",
-        "zorder",
-        "zsrc",
-    }
+    _parent_path_str = ''
+    _path_str = 'contour'
+    _valid_props = {"autocolorscale", "autocontour", "coloraxis", "colorbar", "colorscale", "connectgaps", "contours", "customdata", "customdatasrc", "dx", "dy", "fillcolor", "hoverinfo", "hoverinfosrc", "hoverlabel", "hoverongaps", "hovertemplate", "hovertemplatesrc", "hovertext", "hovertextsrc", "ids", "idssrc", "legend", "legendgroup", "legendgrouptitle", "legendrank", "legendwidth", "line", "meta", "metasrc", "name", "ncontours", "opacity", "reversescale", "showlegend", "showscale", "stream", "text", "textfont", "textsrc", "texttemplate", "transpose", "type", "uid", "uirevision", "visible", "x", "x0", "xaxis", "xcalendar", "xhoverformat", "xperiod", "xperiod0", "xperiodalignment", "xsrc", "xtype", "y", "y0", "yaxis", "ycalendar", "yhoverformat", "yperiod", "yperiod0", "yperiodalignment", "ysrc", "ytype", "z", "zauto", "zhoverformat", "zmax", "zmid", "zmin", "zorder", "zsrc"}
 
     # autocolorscale
     # --------------
@@ -104,11 +31,11 @@ class Contour(_BaseTraceType):
         -------
         bool
         """
-        return self["autocolorscale"]
+        return self['autocolorscale']
 
     @autocolorscale.setter
     def autocolorscale(self, val):
-        self["autocolorscale"] = val
+        self['autocolorscale'] = val
 
     # autocontour
     # -----------
@@ -127,11 +54,11 @@ class Contour(_BaseTraceType):
         -------
         bool
         """
-        return self["autocontour"]
+        return self['autocontour']
 
     @autocontour.setter
     def autocontour(self, val):
-        self["autocontour"] = val
+        self['autocontour'] = val
 
     # coloraxis
     # ---------
@@ -154,11 +81,11 @@ class Contour(_BaseTraceType):
         -------
         str
         """
-        return self["coloraxis"]
+        return self['coloraxis']
 
     @coloraxis.setter
     def coloraxis(self, val):
-        self["coloraxis"] = val
+        self['coloraxis'] = val
 
     # colorbar
     # --------
@@ -170,9 +97,9 @@ class Contour(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.contour.ColorBar`
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
-
+    
             Supported dict properties:
-
+                
                 bgcolor
                     Sets the color of padded area.
                 bordercolor
@@ -441,11 +368,11 @@ class Contour(_BaseTraceType):
         -------
         plotly.graph_objs.contour.ColorBar
         """
-        return self["colorbar"]
+        return self['colorbar']
 
     @colorbar.setter
     def colorbar(self, val):
-        self["colorbar"] = val
+        self['colorbar'] = val
 
     # colorscale
     # ----------
@@ -494,11 +421,11 @@ class Contour(_BaseTraceType):
         -------
         str
         """
-        return self["colorscale"]
+        return self['colorscale']
 
     @colorscale.setter
     def colorscale(self, val):
-        self["colorscale"] = val
+        self['colorscale'] = val
 
     # connectgaps
     # -----------
@@ -516,11 +443,11 @@ class Contour(_BaseTraceType):
         -------
         bool
         """
-        return self["connectgaps"]
+        return self['connectgaps']
 
     @connectgaps.setter
     def connectgaps(self, val):
-        self["connectgaps"] = val
+        self['connectgaps'] = val
 
     # contours
     # --------
@@ -532,9 +459,9 @@ class Contour(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.contour.Contours`
           - A dict of string/value properties that will be passed
             to the Contours constructor
-
+    
             Supported dict properties:
-
+                
                 coloring
                     Determines the coloring method showing the
                     contour values. If "fill", coloring is done
@@ -603,11 +530,11 @@ class Contour(_BaseTraceType):
         -------
         plotly.graph_objs.contour.Contours
         """
-        return self["contours"]
+        return self['contours']
 
     @contours.setter
     def contours(self, val):
-        self["contours"] = val
+        self['contours'] = val
 
     # customdata
     # ----------
@@ -626,11 +553,11 @@ class Contour(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["customdata"]
+        return self['customdata']
 
     @customdata.setter
     def customdata(self, val):
-        self["customdata"] = val
+        self['customdata'] = val
 
     # customdatasrc
     # -------------
@@ -647,11 +574,11 @@ class Contour(_BaseTraceType):
         -------
         str
         """
-        return self["customdatasrc"]
+        return self['customdatasrc']
 
     @customdatasrc.setter
     def customdatasrc(self, val):
-        self["customdatasrc"] = val
+        self['customdatasrc'] = val
 
     # dx
     # --
@@ -667,11 +594,11 @@ class Contour(_BaseTraceType):
         -------
         int|float
         """
-        return self["dx"]
+        return self['dx']
 
     @dx.setter
     def dx(self, val):
-        self["dx"] = val
+        self['dx'] = val
 
     # dy
     # --
@@ -687,11 +614,11 @@ class Contour(_BaseTraceType):
         -------
         int|float
         """
-        return self["dy"]
+        return self['dy']
 
     @dy.setter
     def dy(self, val):
-        self["dy"] = val
+        self['dy'] = val
 
     # fillcolor
     # ---------
@@ -750,11 +677,11 @@ class Contour(_BaseTraceType):
         -------
         str
         """
-        return self["fillcolor"]
+        return self['fillcolor']
 
     @fillcolor.setter
     def fillcolor(self, val):
-        self["fillcolor"] = val
+        self['fillcolor'] = val
 
     # hoverinfo
     # ---------
@@ -776,11 +703,11 @@ class Contour(_BaseTraceType):
         -------
         Any|numpy.ndarray
         """
-        return self["hoverinfo"]
+        return self['hoverinfo']
 
     @hoverinfo.setter
     def hoverinfo(self, val):
-        self["hoverinfo"] = val
+        self['hoverinfo'] = val
 
     # hoverinfosrc
     # ------------
@@ -797,11 +724,11 @@ class Contour(_BaseTraceType):
         -------
         str
         """
-        return self["hoverinfosrc"]
+        return self['hoverinfosrc']
 
     @hoverinfosrc.setter
     def hoverinfosrc(self, val):
-        self["hoverinfosrc"] = val
+        self['hoverinfosrc'] = val
 
     # hoverlabel
     # ----------
@@ -813,9 +740,9 @@ class Contour(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.contour.Hoverlabel`
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
-
+    
             Supported dict properties:
-
+                
                 align
                     Sets the horizontal alignment of the text
                     content within hover label box. Has an effect
@@ -856,11 +783,11 @@ class Contour(_BaseTraceType):
         -------
         plotly.graph_objs.contour.Hoverlabel
         """
-        return self["hoverlabel"]
+        return self['hoverlabel']
 
     @hoverlabel.setter
     def hoverlabel(self, val):
-        self["hoverlabel"] = val
+        self['hoverlabel'] = val
 
     # hoverongaps
     # -----------
@@ -877,11 +804,11 @@ class Contour(_BaseTraceType):
         -------
         bool
         """
-        return self["hoverongaps"]
+        return self['hoverongaps']
 
     @hoverongaps.setter
     def hoverongaps(self, val):
-        self["hoverongaps"] = val
+        self['hoverongaps'] = val
 
     # hovertemplate
     # -------------
@@ -921,11 +848,11 @@ class Contour(_BaseTraceType):
         -------
         str|numpy.ndarray
         """
-        return self["hovertemplate"]
+        return self['hovertemplate']
 
     @hovertemplate.setter
     def hovertemplate(self, val):
-        self["hovertemplate"] = val
+        self['hovertemplate'] = val
 
     # hovertemplatesrc
     # ----------------
@@ -942,11 +869,11 @@ class Contour(_BaseTraceType):
         -------
         str
         """
-        return self["hovertemplatesrc"]
+        return self['hovertemplatesrc']
 
     @hovertemplatesrc.setter
     def hovertemplatesrc(self, val):
-        self["hovertemplatesrc"] = val
+        self['hovertemplatesrc'] = val
 
     # hovertext
     # ---------
@@ -962,11 +889,11 @@ class Contour(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["hovertext"]
+        return self['hovertext']
 
     @hovertext.setter
     def hovertext(self, val):
-        self["hovertext"] = val
+        self['hovertext'] = val
 
     # hovertextsrc
     # ------------
@@ -983,11 +910,11 @@ class Contour(_BaseTraceType):
         -------
         str
         """
-        return self["hovertextsrc"]
+        return self['hovertextsrc']
 
     @hovertextsrc.setter
     def hovertextsrc(self, val):
-        self["hovertextsrc"] = val
+        self['hovertextsrc'] = val
 
     # ids
     # ---
@@ -1005,11 +932,11 @@ class Contour(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["ids"]
+        return self['ids']
 
     @ids.setter
     def ids(self, val):
-        self["ids"] = val
+        self['ids'] = val
 
     # idssrc
     # ------
@@ -1025,11 +952,11 @@ class Contour(_BaseTraceType):
         -------
         str
         """
-        return self["idssrc"]
+        return self['idssrc']
 
     @idssrc.setter
     def idssrc(self, val):
-        self["idssrc"] = val
+        self['idssrc'] = val
 
     # legend
     # ------
@@ -1050,11 +977,11 @@ class Contour(_BaseTraceType):
         -------
         str
         """
-        return self["legend"]
+        return self['legend']
 
     @legend.setter
     def legend(self, val):
-        self["legend"] = val
+        self['legend'] = val
 
     # legendgroup
     # -----------
@@ -1073,11 +1000,11 @@ class Contour(_BaseTraceType):
         -------
         str
         """
-        return self["legendgroup"]
+        return self['legendgroup']
 
     @legendgroup.setter
     def legendgroup(self, val):
-        self["legendgroup"] = val
+        self['legendgroup'] = val
 
     # legendgrouptitle
     # ----------------
@@ -1089,9 +1016,9 @@ class Contour(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.contour.Legendgrouptitle`
           - A dict of string/value properties that will be passed
             to the Legendgrouptitle constructor
-
+    
             Supported dict properties:
-
+                
                 font
                     Sets this legend group's title font.
                 text
@@ -1101,11 +1028,11 @@ class Contour(_BaseTraceType):
         -------
         plotly.graph_objs.contour.Legendgrouptitle
         """
-        return self["legendgrouptitle"]
+        return self['legendgrouptitle']
 
     @legendgrouptitle.setter
     def legendgrouptitle(self, val):
-        self["legendgrouptitle"] = val
+        self['legendgrouptitle'] = val
 
     # legendrank
     # ----------
@@ -1128,11 +1055,11 @@ class Contour(_BaseTraceType):
         -------
         int|float
         """
-        return self["legendrank"]
+        return self['legendrank']
 
     @legendrank.setter
     def legendrank(self, val):
-        self["legendrank"] = val
+        self['legendrank'] = val
 
     # legendwidth
     # -----------
@@ -1149,11 +1076,11 @@ class Contour(_BaseTraceType):
         -------
         int|float
         """
-        return self["legendwidth"]
+        return self['legendwidth']
 
     @legendwidth.setter
     def legendwidth(self, val):
-        self["legendwidth"] = val
+        self['legendwidth'] = val
 
     # line
     # ----
@@ -1165,9 +1092,9 @@ class Contour(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.contour.Line`
           - A dict of string/value properties that will be passed
             to the Line constructor
-
+    
             Supported dict properties:
-
+                
                 color
                     Sets the color of the contour level. Has no
                     effect if `contours.coloring` is set to
@@ -1190,11 +1117,11 @@ class Contour(_BaseTraceType):
         -------
         plotly.graph_objs.contour.Line
         """
-        return self["line"]
+        return self['line']
 
     @line.setter
     def line(self, val):
-        self["line"] = val
+        self['line'] = val
 
     # meta
     # ----
@@ -1218,11 +1145,11 @@ class Contour(_BaseTraceType):
         -------
         Any|numpy.ndarray
         """
-        return self["meta"]
+        return self['meta']
 
     @meta.setter
     def meta(self, val):
-        self["meta"] = val
+        self['meta'] = val
 
     # metasrc
     # -------
@@ -1238,11 +1165,11 @@ class Contour(_BaseTraceType):
         -------
         str
         """
-        return self["metasrc"]
+        return self['metasrc']
 
     @metasrc.setter
     def metasrc(self, val):
-        self["metasrc"] = val
+        self['metasrc'] = val
 
     # name
     # ----
@@ -1260,11 +1187,11 @@ class Contour(_BaseTraceType):
         -------
         str
         """
-        return self["name"]
+        return self['name']
 
     @name.setter
     def name(self, val):
-        self["name"] = val
+        self['name'] = val
 
     # ncontours
     # ---------
@@ -1284,11 +1211,11 @@ class Contour(_BaseTraceType):
         -------
         int
         """
-        return self["ncontours"]
+        return self['ncontours']
 
     @ncontours.setter
     def ncontours(self, val):
-        self["ncontours"] = val
+        self['ncontours'] = val
 
     # opacity
     # -------
@@ -1304,11 +1231,11 @@ class Contour(_BaseTraceType):
         -------
         int|float
         """
-        return self["opacity"]
+        return self['opacity']
 
     @opacity.setter
     def opacity(self, val):
-        self["opacity"] = val
+        self['opacity'] = val
 
     # reversescale
     # ------------
@@ -1326,11 +1253,11 @@ class Contour(_BaseTraceType):
         -------
         bool
         """
-        return self["reversescale"]
+        return self['reversescale']
 
     @reversescale.setter
     def reversescale(self, val):
-        self["reversescale"] = val
+        self['reversescale'] = val
 
     # showlegend
     # ----------
@@ -1347,11 +1274,11 @@ class Contour(_BaseTraceType):
         -------
         bool
         """
-        return self["showlegend"]
+        return self['showlegend']
 
     @showlegend.setter
     def showlegend(self, val):
-        self["showlegend"] = val
+        self['showlegend'] = val
 
     # showscale
     # ---------
@@ -1368,11 +1295,11 @@ class Contour(_BaseTraceType):
         -------
         bool
         """
-        return self["showscale"]
+        return self['showscale']
 
     @showscale.setter
     def showscale(self, val):
-        self["showscale"] = val
+        self['showscale'] = val
 
     # stream
     # ------
@@ -1384,9 +1311,9 @@ class Contour(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.contour.Stream`
           - A dict of string/value properties that will be passed
             to the Stream constructor
-
+    
             Supported dict properties:
-
+                
                 maxpoints
                     Sets the maximum number of points to keep on
                     the plots from an incoming stream. If
@@ -1401,11 +1328,11 @@ class Contour(_BaseTraceType):
         -------
         plotly.graph_objs.contour.Stream
         """
-        return self["stream"]
+        return self['stream']
 
     @stream.setter
     def stream(self, val):
-        self["stream"] = val
+        self['stream'] = val
 
     # text
     # ----
@@ -1421,11 +1348,11 @@ class Contour(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["text"]
+        return self['text']
 
     @text.setter
     def text(self, val):
-        self["text"] = val
+        self['text'] = val
 
     # textfont
     # --------
@@ -1440,11 +1367,11 @@ class Contour(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.contour.Textfont`
           - A dict of string/value properties that will be passed
             to the Textfont constructor
-
+    
             Supported dict properties:
-
+                
                 color
-
+    
                 family
                     HTML font family - the typeface that will be
                     applied by the web browser. The web browser
@@ -1474,7 +1401,7 @@ class Contour(_BaseTraceType):
                     US/docs/Web/CSS/text-shadow for additional
                     options.
                 size
-
+    
                 style
                     Sets whether a font should be styled with a
                     normal or italic face from its family.
@@ -1491,11 +1418,11 @@ class Contour(_BaseTraceType):
         -------
         plotly.graph_objs.contour.Textfont
         """
-        return self["textfont"]
+        return self['textfont']
 
     @textfont.setter
     def textfont(self, val):
-        self["textfont"] = val
+        self['textfont'] = val
 
     # textsrc
     # -------
@@ -1511,11 +1438,11 @@ class Contour(_BaseTraceType):
         -------
         str
         """
-        return self["textsrc"]
+        return self['textsrc']
 
     @textsrc.setter
     def textsrc(self, val):
-        self["textsrc"] = val
+        self['textsrc'] = val
 
     # texttemplate
     # ------------
@@ -1546,11 +1473,11 @@ class Contour(_BaseTraceType):
         -------
         str
         """
-        return self["texttemplate"]
+        return self['texttemplate']
 
     @texttemplate.setter
     def texttemplate(self, val):
-        self["texttemplate"] = val
+        self['texttemplate'] = val
 
     # transpose
     # ---------
@@ -1566,11 +1493,11 @@ class Contour(_BaseTraceType):
         -------
         bool
         """
-        return self["transpose"]
+        return self['transpose']
 
     @transpose.setter
     def transpose(self, val):
-        self["transpose"] = val
+        self['transpose'] = val
 
     # uid
     # ---
@@ -1588,11 +1515,11 @@ class Contour(_BaseTraceType):
         -------
         str
         """
-        return self["uid"]
+        return self['uid']
 
     @uid.setter
     def uid(self, val):
-        self["uid"] = val
+        self['uid'] = val
 
     # uirevision
     # ----------
@@ -1621,11 +1548,11 @@ class Contour(_BaseTraceType):
         -------
         Any
         """
-        return self["uirevision"]
+        return self['uirevision']
 
     @uirevision.setter
     def uirevision(self, val):
-        self["uirevision"] = val
+        self['uirevision'] = val
 
     # visible
     # -------
@@ -1644,11 +1571,11 @@ class Contour(_BaseTraceType):
         -------
         Any
         """
-        return self["visible"]
+        return self['visible']
 
     @visible.setter
     def visible(self, val):
-        self["visible"] = val
+        self['visible'] = val
 
     # x
     # -
@@ -1664,11 +1591,11 @@ class Contour(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["x"]
+        return self['x']
 
     @x.setter
     def x(self, val):
-        self["x"] = val
+        self['x'] = val
 
     # x0
     # --
@@ -1685,11 +1612,11 @@ class Contour(_BaseTraceType):
         -------
         Any
         """
-        return self["x0"]
+        return self['x0']
 
     @x0.setter
     def x0(self, val):
-        self["x0"] = val
+        self['x0'] = val
 
     # xaxis
     # -----
@@ -1710,11 +1637,11 @@ class Contour(_BaseTraceType):
         -------
         str
         """
-        return self["xaxis"]
+        return self['xaxis']
 
     @xaxis.setter
     def xaxis(self, val):
-        self["xaxis"] = val
+        self['xaxis'] = val
 
     # xcalendar
     # ---------
@@ -1734,11 +1661,11 @@ class Contour(_BaseTraceType):
         -------
         Any
         """
-        return self["xcalendar"]
+        return self['xcalendar']
 
     @xcalendar.setter
     def xcalendar(self, val):
-        self["xcalendar"] = val
+        self['xcalendar'] = val
 
     # xhoverformat
     # ------------
@@ -1765,11 +1692,11 @@ class Contour(_BaseTraceType):
         -------
         str
         """
-        return self["xhoverformat"]
+        return self['xhoverformat']
 
     @xhoverformat.setter
     def xhoverformat(self, val):
-        self["xhoverformat"] = val
+        self['xhoverformat'] = val
 
     # xperiod
     # -------
@@ -1787,11 +1714,11 @@ class Contour(_BaseTraceType):
         -------
         Any
         """
-        return self["xperiod"]
+        return self['xperiod']
 
     @xperiod.setter
     def xperiod(self, val):
-        self["xperiod"] = val
+        self['xperiod'] = val
 
     # xperiod0
     # --------
@@ -1810,11 +1737,11 @@ class Contour(_BaseTraceType):
         -------
         Any
         """
-        return self["xperiod0"]
+        return self['xperiod0']
 
     @xperiod0.setter
     def xperiod0(self, val):
-        self["xperiod0"] = val
+        self['xperiod0'] = val
 
     # xperiodalignment
     # ----------------
@@ -1832,11 +1759,11 @@ class Contour(_BaseTraceType):
         -------
         Any
         """
-        return self["xperiodalignment"]
+        return self['xperiodalignment']
 
     @xperiodalignment.setter
     def xperiodalignment(self, val):
-        self["xperiodalignment"] = val
+        self['xperiodalignment'] = val
 
     # xsrc
     # ----
@@ -1852,11 +1779,11 @@ class Contour(_BaseTraceType):
         -------
         str
         """
-        return self["xsrc"]
+        return self['xsrc']
 
     @xsrc.setter
     def xsrc(self, val):
-        self["xsrc"] = val
+        self['xsrc'] = val
 
     # xtype
     # -----
@@ -1876,11 +1803,11 @@ class Contour(_BaseTraceType):
         -------
         Any
         """
-        return self["xtype"]
+        return self['xtype']
 
     @xtype.setter
     def xtype(self, val):
-        self["xtype"] = val
+        self['xtype'] = val
 
     # y
     # -
@@ -1896,11 +1823,11 @@ class Contour(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["y"]
+        return self['y']
 
     @y.setter
     def y(self, val):
-        self["y"] = val
+        self['y'] = val
 
     # y0
     # --
@@ -1917,11 +1844,11 @@ class Contour(_BaseTraceType):
         -------
         Any
         """
-        return self["y0"]
+        return self['y0']
 
     @y0.setter
     def y0(self, val):
-        self["y0"] = val
+        self['y0'] = val
 
     # yaxis
     # -----
@@ -1942,11 +1869,11 @@ class Contour(_BaseTraceType):
         -------
         str
         """
-        return self["yaxis"]
+        return self['yaxis']
 
     @yaxis.setter
     def yaxis(self, val):
-        self["yaxis"] = val
+        self['yaxis'] = val
 
     # ycalendar
     # ---------
@@ -1966,11 +1893,11 @@ class Contour(_BaseTraceType):
         -------
         Any
         """
-        return self["ycalendar"]
+        return self['ycalendar']
 
     @ycalendar.setter
     def ycalendar(self, val):
-        self["ycalendar"] = val
+        self['ycalendar'] = val
 
     # yhoverformat
     # ------------
@@ -1997,11 +1924,11 @@ class Contour(_BaseTraceType):
         -------
         str
         """
-        return self["yhoverformat"]
+        return self['yhoverformat']
 
     @yhoverformat.setter
     def yhoverformat(self, val):
-        self["yhoverformat"] = val
+        self['yhoverformat'] = val
 
     # yperiod
     # -------
@@ -2019,11 +1946,11 @@ class Contour(_BaseTraceType):
         -------
         Any
         """
-        return self["yperiod"]
+        return self['yperiod']
 
     @yperiod.setter
     def yperiod(self, val):
-        self["yperiod"] = val
+        self['yperiod'] = val
 
     # yperiod0
     # --------
@@ -2042,11 +1969,11 @@ class Contour(_BaseTraceType):
         -------
         Any
         """
-        return self["yperiod0"]
+        return self['yperiod0']
 
     @yperiod0.setter
     def yperiod0(self, val):
-        self["yperiod0"] = val
+        self['yperiod0'] = val
 
     # yperiodalignment
     # ----------------
@@ -2064,11 +1991,11 @@ class Contour(_BaseTraceType):
         -------
         Any
         """
-        return self["yperiodalignment"]
+        return self['yperiodalignment']
 
     @yperiodalignment.setter
     def yperiodalignment(self, val):
-        self["yperiodalignment"] = val
+        self['yperiodalignment'] = val
 
     # ysrc
     # ----
@@ -2084,11 +2011,11 @@ class Contour(_BaseTraceType):
         -------
         str
         """
-        return self["ysrc"]
+        return self['ysrc']
 
     @ysrc.setter
     def ysrc(self, val):
-        self["ysrc"] = val
+        self['ysrc'] = val
 
     # ytype
     # -----
@@ -2108,11 +2035,11 @@ class Contour(_BaseTraceType):
         -------
         Any
         """
-        return self["ytype"]
+        return self['ytype']
 
     @ytype.setter
     def ytype(self, val):
-        self["ytype"] = val
+        self['ytype'] = val
 
     # z
     # -
@@ -2128,11 +2055,11 @@ class Contour(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["z"]
+        return self['z']
 
     @z.setter
     def z(self, val):
-        self["z"] = val
+        self['z'] = val
 
     # zauto
     # -----
@@ -2151,11 +2078,11 @@ class Contour(_BaseTraceType):
         -------
         bool
         """
-        return self["zauto"]
+        return self['zauto']
 
     @zauto.setter
     def zauto(self, val):
-        self["zauto"] = val
+        self['zauto'] = val
 
     # zhoverformat
     # ------------
@@ -2176,11 +2103,11 @@ class Contour(_BaseTraceType):
         -------
         str
         """
-        return self["zhoverformat"]
+        return self['zhoverformat']
 
     @zhoverformat.setter
     def zhoverformat(self, val):
-        self["zhoverformat"] = val
+        self['zhoverformat'] = val
 
     # zmax
     # ----
@@ -2197,11 +2124,11 @@ class Contour(_BaseTraceType):
         -------
         int|float
         """
-        return self["zmax"]
+        return self['zmax']
 
     @zmax.setter
     def zmax(self, val):
-        self["zmax"] = val
+        self['zmax'] = val
 
     # zmid
     # ----
@@ -2219,11 +2146,11 @@ class Contour(_BaseTraceType):
         -------
         int|float
         """
-        return self["zmid"]
+        return self['zmid']
 
     @zmid.setter
     def zmid(self, val):
-        self["zmid"] = val
+        self['zmid'] = val
 
     # zmin
     # ----
@@ -2240,11 +2167,11 @@ class Contour(_BaseTraceType):
         -------
         int|float
         """
-        return self["zmin"]
+        return self['zmin']
 
     @zmin.setter
     def zmin(self, val):
-        self["zmin"] = val
+        self['zmin'] = val
 
     # zorder
     # ------
@@ -2262,11 +2189,11 @@ class Contour(_BaseTraceType):
         -------
         int
         """
-        return self["zorder"]
+        return self['zorder']
 
     @zorder.setter
     def zorder(self, val):
-        self["zorder"] = val
+        self['zorder'] = val
 
     # zsrc
     # ----
@@ -2282,17 +2209,17 @@ class Contour(_BaseTraceType):
         -------
         str
         """
-        return self["zsrc"]
+        return self['zsrc']
 
     @zsrc.setter
     def zsrc(self, val):
-        self["zsrc"] = val
+        self['zsrc'] = val
 
     # type
     # ----
     @property
     def type(self):
-        return self._props["type"]
+        return self._props['type']
 
     # Self properties description
     # ---------------------------
@@ -2678,85 +2605,83 @@ class Contour(_BaseTraceType):
             Sets the source reference on Chart Studio Cloud for
             `z`.
         """
-
-    def __init__(
-        self,
-        arg=None,
-        autocolorscale=None,
-        autocontour=None,
-        coloraxis=None,
-        colorbar=None,
-        colorscale=None,
-        connectgaps=None,
-        contours=None,
-        customdata=None,
-        customdatasrc=None,
-        dx=None,
-        dy=None,
-        fillcolor=None,
-        hoverinfo=None,
-        hoverinfosrc=None,
-        hoverlabel=None,
-        hoverongaps=None,
-        hovertemplate=None,
-        hovertemplatesrc=None,
-        hovertext=None,
-        hovertextsrc=None,
-        ids=None,
-        idssrc=None,
-        legend=None,
-        legendgroup=None,
-        legendgrouptitle=None,
-        legendrank=None,
-        legendwidth=None,
-        line=None,
-        meta=None,
-        metasrc=None,
-        name=None,
-        ncontours=None,
-        opacity=None,
-        reversescale=None,
-        showlegend=None,
-        showscale=None,
-        stream=None,
-        text=None,
-        textfont=None,
-        textsrc=None,
-        texttemplate=None,
-        transpose=None,
-        uid=None,
-        uirevision=None,
-        visible=None,
-        x=None,
-        x0=None,
-        xaxis=None,
-        xcalendar=None,
-        xhoverformat=None,
-        xperiod=None,
-        xperiod0=None,
-        xperiodalignment=None,
-        xsrc=None,
-        xtype=None,
-        y=None,
-        y0=None,
-        yaxis=None,
-        ycalendar=None,
-        yhoverformat=None,
-        yperiod=None,
-        yperiod0=None,
-        yperiodalignment=None,
-        ysrc=None,
-        ytype=None,
-        z=None,
-        zauto=None,
-        zhoverformat=None,
-        zmax=None,
-        zmid=None,
-        zmin=None,
-        zorder=None,
-        zsrc=None,
-        **kwargs,
-    ):
+    def __init__(self,
+            arg=None,
+            autocolorscale=None,
+            autocontour=None,
+            coloraxis=None,
+            colorbar=None,
+            colorscale=None,
+            connectgaps=None,
+            contours=None,
+            customdata=None,
+            customdatasrc=None,
+            dx=None,
+            dy=None,
+            fillcolor=None,
+            hoverinfo=None,
+            hoverinfosrc=None,
+            hoverlabel=None,
+            hoverongaps=None,
+            hovertemplate=None,
+            hovertemplatesrc=None,
+            hovertext=None,
+            hovertextsrc=None,
+            ids=None,
+            idssrc=None,
+            legend=None,
+            legendgroup=None,
+            legendgrouptitle=None,
+            legendrank=None,
+            legendwidth=None,
+            line=None,
+            meta=None,
+            metasrc=None,
+            name=None,
+            ncontours=None,
+            opacity=None,
+            reversescale=None,
+            showlegend=None,
+            showscale=None,
+            stream=None,
+            text=None,
+            textfont=None,
+            textsrc=None,
+            texttemplate=None,
+            transpose=None,
+            uid=None,
+            uirevision=None,
+            visible=None,
+            x=None,
+            x0=None,
+            xaxis=None,
+            xcalendar=None,
+            xhoverformat=None,
+            xperiod=None,
+            xperiod0=None,
+            xperiodalignment=None,
+            xsrc=None,
+            xtype=None,
+            y=None,
+            y0=None,
+            yaxis=None,
+            ycalendar=None,
+            yhoverformat=None,
+            yperiod=None,
+            yperiod0=None,
+            yperiodalignment=None,
+            ysrc=None,
+            ytype=None,
+            z=None,
+            zauto=None,
+            zhoverformat=None,
+            zmax=None,
+            zmid=None,
+            zmin=None,
+            zorder=None,
+            zsrc=None,
+            **kwargs
+        ):
         """
         Construct a new Contour object
 
@@ -3156,10 +3081,10 @@ class Contour(_BaseTraceType):
         -------
         Contour
         """
-        super(Contour, self).__init__("contour")
+        super(Contour, self).__init__('contour')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -3171,318 +3096,98 @@ class Contour(_BaseTraceType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.Contour
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.Contour`"""
-            )
+an instance of :class:`plotly.graph_objs.Contour`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("autocolorscale", None)
-        _v = autocolorscale if autocolorscale is not None else _v
-        if _v is not None:
-            self["autocolorscale"] = _v
-        _v = arg.pop("autocontour", None)
-        _v = autocontour if autocontour is not None else _v
-        if _v is not None:
-            self["autocontour"] = _v
-        _v = arg.pop("coloraxis", None)
-        _v = coloraxis if coloraxis is not None else _v
-        if _v is not None:
-            self["coloraxis"] = _v
-        _v = arg.pop("colorbar", None)
-        _v = colorbar if colorbar is not None else _v
-        if _v is not None:
-            self["colorbar"] = _v
-        _v = arg.pop("colorscale", None)
-        _v = colorscale if colorscale is not None else _v
-        if _v is not None:
-            self["colorscale"] = _v
-        _v = arg.pop("connectgaps", None)
-        _v = connectgaps if connectgaps is not None else _v
-        if _v is not None:
-            self["connectgaps"] = _v
-        _v = arg.pop("contours", None)
-        _v = contours if contours is not None else _v
-        if _v is not None:
-            self["contours"] = _v
-        _v = arg.pop("customdata", None)
-        _v = customdata if customdata is not None else _v
-        if _v is not None:
-            self["customdata"] = _v
-        _v = arg.pop("customdatasrc", None)
-        _v = customdatasrc if customdatasrc is not None else _v
-        if _v is not None:
-            self["customdatasrc"] = _v
-        _v = arg.pop("dx", None)
-        _v = dx if dx is not None else _v
-        if _v is not None:
-            self["dx"] = _v
-        _v = arg.pop("dy", None)
-        _v = dy if dy is not None else _v
-        if _v is not None:
-            self["dy"] = _v
-        _v = arg.pop("fillcolor", None)
-        _v = fillcolor if fillcolor is not None else _v
-        if _v is not None:
-            self["fillcolor"] = _v
-        _v = arg.pop("hoverinfo", None)
-        _v = hoverinfo if hoverinfo is not None else _v
-        if _v is not None:
-            self["hoverinfo"] = _v
-        _v = arg.pop("hoverinfosrc", None)
-        _v = hoverinfosrc if hoverinfosrc is not None else _v
-        if _v is not None:
-            self["hoverinfosrc"] = _v
-        _v = arg.pop("hoverlabel", None)
-        _v = hoverlabel if hoverlabel is not None else _v
-        if _v is not None:
-            self["hoverlabel"] = _v
-        _v = arg.pop("hoverongaps", None)
-        _v = hoverongaps if hoverongaps is not None else _v
-        if _v is not None:
-            self["hoverongaps"] = _v
-        _v = arg.pop("hovertemplate", None)
-        _v = hovertemplate if hovertemplate is not None else _v
-        if _v is not None:
-            self["hovertemplate"] = _v
-        _v = arg.pop("hovertemplatesrc", None)
-        _v = hovertemplatesrc if hovertemplatesrc is not None else _v
-        if _v is not None:
-            self["hovertemplatesrc"] = _v
-        _v = arg.pop("hovertext", None)
-        _v = hovertext if hovertext is not None else _v
-        if _v is not None:
-            self["hovertext"] = _v
-        _v = arg.pop("hovertextsrc", None)
-        _v = hovertextsrc if hovertextsrc is not None else _v
-        if _v is not None:
-            self["hovertextsrc"] = _v
-        _v = arg.pop("ids", None)
-        _v = ids if ids is not None else _v
-        if _v is not None:
-            self["ids"] = _v
-        _v = arg.pop("idssrc", None)
-        _v = idssrc if idssrc is not None else _v
-        if _v is not None:
-            self["idssrc"] = _v
-        _v = arg.pop("legend", None)
-        _v = legend if legend is not None else _v
-        if _v is not None:
-            self["legend"] = _v
-        _v = arg.pop("legendgroup", None)
-        _v = legendgroup if legendgroup is not None else _v
-        if _v is not None:
-            self["legendgroup"] = _v
-        _v = arg.pop("legendgrouptitle", None)
-        _v = legendgrouptitle if legendgrouptitle is not None else _v
-        if _v is not None:
-            self["legendgrouptitle"] = _v
-        _v = arg.pop("legendrank", None)
-        _v = legendrank if legendrank is not None else _v
-        if _v is not None:
-            self["legendrank"] = _v
-        _v = arg.pop("legendwidth", None)
-        _v = legendwidth if legendwidth is not None else _v
-        if _v is not None:
-            self["legendwidth"] = _v
-        _v = arg.pop("line", None)
-        _v = line if line is not None else _v
-        if _v is not None:
-            self["line"] = _v
-        _v = arg.pop("meta", None)
-        _v = meta if meta is not None else _v
-        if _v is not None:
-            self["meta"] = _v
-        _v = arg.pop("metasrc", None)
-        _v = metasrc if metasrc is not None else _v
-        if _v is not None:
-            self["metasrc"] = _v
-        _v = arg.pop("name", None)
-        _v = name if name is not None else _v
-        if _v is not None:
-            self["name"] = _v
-        _v = arg.pop("ncontours", None)
-        _v = ncontours if ncontours is not None else _v
-        if _v is not None:
-            self["ncontours"] = _v
-        _v = arg.pop("opacity", None)
-        _v = opacity if opacity is not None else _v
-        if _v is not None:
-            self["opacity"] = _v
-        _v = arg.pop("reversescale", None)
-        _v = reversescale if reversescale is not None else _v
-        if _v is not None:
-            self["reversescale"] = _v
-        _v = arg.pop("showlegend", None)
-        _v = showlegend if showlegend is not None else _v
-        if _v is not None:
-            self["showlegend"] = _v
-        _v = arg.pop("showscale", None)
-        _v = showscale if showscale is not None else _v
-        if _v is not None:
-            self["showscale"] = _v
-        _v = arg.pop("stream", None)
-        _v = stream if stream is not None else _v
-        if _v is not None:
-            self["stream"] = _v
-        _v = arg.pop("text", None)
-        _v = text if text is not None else _v
-        if _v is not None:
-            self["text"] = _v
-        _v = arg.pop("textfont", None)
-        _v = textfont if textfont is not None else _v
-        if _v is not None:
-            self["textfont"] = _v
-        _v = arg.pop("textsrc", None)
-        _v = textsrc if textsrc is not None else _v
-        if _v is not None:
-            self["textsrc"] = _v
-        _v = arg.pop("texttemplate", None)
-        _v = texttemplate if texttemplate is not None else _v
-        if _v is not None:
-            self["texttemplate"] = _v
-        _v = arg.pop("transpose", None)
-        _v = transpose if transpose is not None else _v
-        if _v is not None:
-            self["transpose"] = _v
-        _v = arg.pop("uid", None)
-        _v = uid if uid is not None else _v
-        if _v is not None:
-            self["uid"] = _v
-        _v = arg.pop("uirevision", None)
-        _v = uirevision if uirevision is not None else _v
-        if _v is not None:
-            self["uirevision"] = _v
-        _v = arg.pop("visible", None)
-        _v = visible if visible is not None else _v
-        if _v is not None:
-            self["visible"] = _v
-        _v = arg.pop("x", None)
-        _v = x if x is not None else _v
-        if _v is not None:
-            self["x"] = _v
-        _v = arg.pop("x0", None)
-        _v = x0 if x0 is not None else _v
-        if _v is not None:
-            self["x0"] = _v
-        _v = arg.pop("xaxis", None)
-        _v = xaxis if xaxis is not None else _v
-        if _v is not None:
-            self["xaxis"] = _v
-        _v = arg.pop("xcalendar", None)
-        _v = xcalendar if xcalendar is not None else _v
-        if _v is not None:
-            self["xcalendar"] = _v
-        _v = arg.pop("xhoverformat", None)
-        _v = xhoverformat if xhoverformat is not None else _v
-        if _v is not None:
-            self["xhoverformat"] = _v
-        _v = arg.pop("xperiod", None)
-        _v = xperiod if xperiod is not None else _v
-        if _v is not None:
-            self["xperiod"] = _v
-        _v = arg.pop("xperiod0", None)
-        _v = xperiod0 if xperiod0 is not None else _v
-        if _v is not None:
-            self["xperiod0"] = _v
-        _v = arg.pop("xperiodalignment", None)
-        _v = xperiodalignment if xperiodalignment is not None else _v
-        if _v is not None:
-            self["xperiodalignment"] = _v
-        _v = arg.pop("xsrc", None)
-        _v = xsrc if xsrc is not None else _v
-        if _v is not None:
-            self["xsrc"] = _v
-        _v = arg.pop("xtype", None)
-        _v = xtype if xtype is not None else _v
-        if _v is not None:
-            self["xtype"] = _v
-        _v = arg.pop("y", None)
-        _v = y if y is not None else _v
-        if _v is not None:
-            self["y"] = _v
-        _v = arg.pop("y0", None)
-        _v = y0 if y0 is not None else _v
-        if _v is not None:
-            self["y0"] = _v
-        _v = arg.pop("yaxis", None)
-        _v = yaxis if yaxis is not None else _v
-        if _v is not None:
-            self["yaxis"] = _v
-        _v = arg.pop("ycalendar", None)
-        _v = ycalendar if ycalendar is not None else _v
-        if _v is not None:
-            self["ycalendar"] = _v
-        _v = arg.pop("yhoverformat", None)
-        _v = yhoverformat if yhoverformat is not None else _v
-        if _v is not None:
-            self["yhoverformat"] = _v
-        _v = arg.pop("yperiod", None)
-        _v = yperiod if yperiod is not None else _v
-        if _v is not None:
-            self["yperiod"] = _v
-        _v = arg.pop("yperiod0", None)
-        _v = yperiod0 if yperiod0 is not None else _v
-        if _v is not None:
-            self["yperiod0"] = _v
-        _v = arg.pop("yperiodalignment", None)
-        _v = yperiodalignment if yperiodalignment is not None else _v
-        if _v is not None:
-            self["yperiodalignment"] = _v
-        _v = arg.pop("ysrc", None)
-        _v = ysrc if ysrc is not None else _v
-        if _v is not None:
-            self["ysrc"] = _v
-        _v = arg.pop("ytype", None)
-        _v = ytype if ytype is not None else _v
-        if _v is not None:
-            self["ytype"] = _v
-        _v = arg.pop("z", None)
-        _v = z if z is not None else _v
-        if _v is not None:
-            self["z"] = _v
-        _v = arg.pop("zauto", None)
-        _v = zauto if zauto is not None else _v
-        if _v is not None:
-            self["zauto"] = _v
-        _v = arg.pop("zhoverformat", None)
-        _v = zhoverformat if zhoverformat is not None else _v
-        if _v is not None:
-            self["zhoverformat"] = _v
-        _v = arg.pop("zmax", None)
-        _v = zmax if zmax is not None else _v
-        if _v is not None:
-            self["zmax"] = _v
-        _v = arg.pop("zmid", None)
-        _v = zmid if zmid is not None else _v
-        if _v is not None:
-            self["zmid"] = _v
-        _v = arg.pop("zmin", None)
-        _v = zmin if zmin is not None else _v
-        if _v is not None:
-            self["zmin"] = _v
-        _v = arg.pop("zorder", None)
-        _v = zorder if zorder is not None else _v
-        if _v is not None:
-            self["zorder"] = _v
-        _v = arg.pop("zsrc", None)
-        _v = zsrc if zsrc is not None else _v
-        if _v is not None:
-            self["zsrc"] = _v
+        self._init_provided('autocolorscale', arg, autocolorscale)
+        self._init_provided('autocontour', arg, autocontour)
+        self._init_provided('coloraxis', arg, coloraxis)
+        self._init_provided('colorbar', arg, colorbar)
+        self._init_provided('colorscale', arg, colorscale)
+        self._init_provided('connectgaps', arg, connectgaps)
+        self._init_provided('contours', arg, contours)
+        self._init_provided('customdata', arg, customdata)
+        self._init_provided('customdatasrc', arg, customdatasrc)
+        self._init_provided('dx', arg, dx)
+        self._init_provided('dy', arg, dy)
+        self._init_provided('fillcolor', arg, fillcolor)
+        self._init_provided('hoverinfo', arg, hoverinfo)
+        self._init_provided('hoverinfosrc', arg, hoverinfosrc)
+        self._init_provided('hoverlabel', arg, hoverlabel)
+        self._init_provided('hoverongaps', arg, hoverongaps)
+        self._init_provided('hovertemplate', arg, hovertemplate)
+        self._init_provided('hovertemplatesrc', arg, hovertemplatesrc)
+        self._init_provided('hovertext', arg, hovertext)
+        self._init_provided('hovertextsrc', arg, hovertextsrc)
+        self._init_provided('ids', arg, ids)
+        self._init_provided('idssrc', arg, idssrc)
+        self._init_provided('legend', arg, legend)
+        self._init_provided('legendgroup', arg, legendgroup)
+        self._init_provided('legendgrouptitle', arg, legendgrouptitle)
+        self._init_provided('legendrank', arg, legendrank)
+        self._init_provided('legendwidth', arg, legendwidth)
+        self._init_provided('line', arg, line)
+        self._init_provided('meta', arg, meta)
+        self._init_provided('metasrc', arg, metasrc)
+        self._init_provided('name', arg, name)
+        self._init_provided('ncontours', arg, ncontours)
+        self._init_provided('opacity', arg, opacity)
+        self._init_provided('reversescale', arg, reversescale)
+        self._init_provided('showlegend', arg, showlegend)
+        self._init_provided('showscale', arg, showscale)
+        self._init_provided('stream', arg, stream)
+        self._init_provided('text', arg, text)
+        self._init_provided('textfont', arg, textfont)
+        self._init_provided('textsrc', arg, textsrc)
+        self._init_provided('texttemplate', arg, texttemplate)
+        self._init_provided('transpose', arg, transpose)
+        self._init_provided('uid', arg, uid)
+        self._init_provided('uirevision', arg, uirevision)
+        self._init_provided('visible', arg, visible)
+        self._init_provided('x', arg, x)
+        self._init_provided('x0', arg, x0)
+        self._init_provided('xaxis', arg, xaxis)
+        self._init_provided('xcalendar', arg, xcalendar)
+        self._init_provided('xhoverformat', arg, xhoverformat)
+        self._init_provided('xperiod', arg, xperiod)
+        self._init_provided('xperiod0', arg, xperiod0)
+        self._init_provided('xperiodalignment', arg, xperiodalignment)
+        self._init_provided('xsrc', arg, xsrc)
+        self._init_provided('xtype', arg, xtype)
+        self._init_provided('y', arg, y)
+        self._init_provided('y0', arg, y0)
+        self._init_provided('yaxis', arg, yaxis)
+        self._init_provided('ycalendar', arg, ycalendar)
+        self._init_provided('yhoverformat', arg, yhoverformat)
+        self._init_provided('yperiod', arg, yperiod)
+        self._init_provided('yperiod0', arg, yperiod0)
+        self._init_provided('yperiodalignment', arg, yperiodalignment)
+        self._init_provided('ysrc', arg, ysrc)
+        self._init_provided('ytype', arg, ytype)
+        self._init_provided('z', arg, z)
+        self._init_provided('zauto', arg, zauto)
+        self._init_provided('zhoverformat', arg, zhoverformat)
+        self._init_provided('zmax', arg, zmax)
+        self._init_provided('zmid', arg, zmid)
+        self._init_provided('zmin', arg, zmin)
+        self._init_provided('zorder', arg, zorder)
+        self._init_provided('zsrc', arg, zsrc)
 
         # Read-only literals
         # ------------------
 
-        self._props["type"] = "contour"
-        arg.pop("type", None)
+        self._props['type'] = 'contour'
+        arg.pop('type', None)
 
         # Process unknown kwargs
         # ----------------------

@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class Histogram2DcontourValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="histogram2dcontour", parent_name="", **kwargs):
-        super(Histogram2DcontourValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Histogram2dContour"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='histogram2dcontour',
+                       parent_name='',
+                       **kwargs):
+        super(Histogram2DcontourValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Histogram2dContour'),
+                 data_docs=kwargs.pop('data_docs', """
             autobinx
                 Obsolete: since v1.42 each bin attribute is
                 auto-determined separately and `autobinx` is
@@ -434,7 +435,5 @@ class Histogram2DcontourValidator(_plotly_utils.basevalidators.CompoundValidator
             zsrc
                 Sets the source reference on Chart Studio Cloud
                 for `z`.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

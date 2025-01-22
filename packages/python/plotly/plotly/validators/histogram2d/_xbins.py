@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class XbinsValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="xbins", parent_name="histogram2d", **kwargs):
-        super(XbinsValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "XBins"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='xbins',
+                       parent_name='histogram2d',
+                       **kwargs):
+        super(XbinsValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'XBins'),
+                 data_docs=kwargs.pop('data_docs', """
             end
                 Sets the end value for the x axis bins. The
                 last bin may not end exactly at this value, we
@@ -44,7 +45,5 @@ class XbinsValidator(_plotly_utils.basevalidators.CompoundValidator):
                 `start` should be a date string. For category
                 data, `start` is based on the category serial
                 numbers, and defaults to -0.5.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

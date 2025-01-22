@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class Error_YValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="error_y", parent_name="scattergl", **kwargs):
-        super(Error_YValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "ErrorY"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='error_y',
+                       parent_name='scattergl',
+                       **kwargs):
+        super(Error_YValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'ErrorY'),
+                 data_docs=kwargs.pop('data_docs', """
             array
                 Sets the data corresponding the length of each
                 error bar. Values are plotted relative to the
@@ -65,7 +66,5 @@ class Error_YValidator(_plotly_utils.basevalidators.CompoundValidator):
             width
                 Sets the width (in px) of the cross-bar at both
                 ends of the error bars.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

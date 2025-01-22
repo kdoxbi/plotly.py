@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
@@ -6,8 +8,8 @@ class Line(_BaseTraceHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "sankey.link"
-    _path_str = "sankey.link.line"
+    _parent_path_str = 'sankey.link'
+    _path_str = 'sankey.link.line'
     _valid_props = {"color", "colorsrc", "width", "widthsrc"}
 
     # color
@@ -64,11 +66,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         str|numpy.ndarray
         """
-        return self["color"]
+        return self['color']
 
     @color.setter
     def color(self, val):
-        self["color"] = val
+        self['color'] = val
 
     # colorsrc
     # --------
@@ -84,11 +86,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["colorsrc"]
+        return self['colorsrc']
 
     @colorsrc.setter
     def colorsrc(self, val):
-        self["colorsrc"] = val
+        self['colorsrc'] = val
 
     # width
     # -----
@@ -105,11 +107,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         int|float|numpy.ndarray
         """
-        return self["width"]
+        return self['width']
 
     @width.setter
     def width(self, val):
-        self["width"] = val
+        self['width'] = val
 
     # widthsrc
     # --------
@@ -125,11 +127,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["widthsrc"]
+        return self['widthsrc']
 
     @widthsrc.setter
     def widthsrc(self, val):
-        self["widthsrc"] = val
+        self['widthsrc'] = val
 
     # Self properties description
     # ---------------------------
@@ -148,10 +150,14 @@ class Line(_BaseTraceHierarchyType):
             Sets the source reference on Chart Studio Cloud for
             `width`.
         """
-
-    def __init__(
-        self, arg=None, color=None, colorsrc=None, width=None, widthsrc=None, **kwargs
-    ):
+    def __init__(self,
+            arg=None,
+            color=None,
+            colorsrc=None,
+            width=None,
+            widthsrc=None,
+            **kwargs
+        ):
         """
         Construct a new Line object
 
@@ -177,10 +183,10 @@ class Line(_BaseTraceHierarchyType):
         -------
         Line
         """
-        super(Line, self).__init__("line")
+        super(Line, self).__init__('line')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -192,36 +198,23 @@ class Line(_BaseTraceHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.sankey.link.Line
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.sankey.link.Line`"""
-            )
+an instance of :class:`plotly.graph_objs.sankey.link.Line`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("color", None)
-        _v = color if color is not None else _v
-        if _v is not None:
-            self["color"] = _v
-        _v = arg.pop("colorsrc", None)
-        _v = colorsrc if colorsrc is not None else _v
-        if _v is not None:
-            self["colorsrc"] = _v
-        _v = arg.pop("width", None)
-        _v = width if width is not None else _v
-        if _v is not None:
-            self["width"] = _v
-        _v = arg.pop("widthsrc", None)
-        _v = widthsrc if widthsrc is not None else _v
-        if _v is not None:
-            self["widthsrc"] = _v
+        self._init_provided('color', arg, color)
+        self._init_provided('colorsrc', arg, colorsrc)
+        self._init_provided('width', arg, width)
+        self._init_provided('widthsrc', arg, widthsrc)
 
         # Process unknown kwargs
         # ----------------------

@@ -1,17 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class ImaginaryaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(
-        self, plotly_name="imaginaryaxis", parent_name="layout.smith", **kwargs
-    ):
-        super(ImaginaryaxisValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Imaginaryaxis"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='imaginaryaxis',
+                       parent_name='layout.smith',
+                       **kwargs):
+        super(ImaginaryaxisValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Imaginaryaxis'),
+                 data_docs=kwargs.pop('data_docs', """
             color
                 Sets default for all colors associated with
                 this axis all at once: line, font, tick, and
@@ -128,7 +127,5 @@ class ImaginaryaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
                 preserving interaction like dragging. Default
                 is true when a cheater plot is present on the
                 axis, otherwise false
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

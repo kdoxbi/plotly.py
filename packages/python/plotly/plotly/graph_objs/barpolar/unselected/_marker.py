@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
@@ -6,8 +8,8 @@ class Marker(_BaseTraceHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "barpolar.unselected"
-    _path_str = "barpolar.unselected.marker"
+    _parent_path_str = 'barpolar.unselected'
+    _path_str = 'barpolar.unselected.marker'
     _valid_props = {"color", "opacity"}
 
     # color
@@ -64,11 +66,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["color"]
+        return self['color']
 
     @color.setter
     def color(self, val):
-        self["color"] = val
+        self['color'] = val
 
     # opacity
     # -------
@@ -85,11 +87,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         int|float
         """
-        return self["opacity"]
+        return self['opacity']
 
     @opacity.setter
     def opacity(self, val):
-        self["opacity"] = val
+        self['opacity'] = val
 
     # Self properties description
     # ---------------------------
@@ -103,8 +105,12 @@ class Marker(_BaseTraceHierarchyType):
             Sets the marker opacity of unselected points, applied
             only when a selection exists.
         """
-
-    def __init__(self, arg=None, color=None, opacity=None, **kwargs):
+    def __init__(self,
+            arg=None,
+            color=None,
+            opacity=None,
+            **kwargs
+        ):
         """
         Construct a new Marker object
 
@@ -125,10 +131,10 @@ class Marker(_BaseTraceHierarchyType):
         -------
         Marker
         """
-        super(Marker, self).__init__("marker")
+        super(Marker, self).__init__('marker')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -140,28 +146,21 @@ class Marker(_BaseTraceHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.barpolar.unselected.Marker
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.barpolar.unselected.Marker`"""
-            )
+an instance of :class:`plotly.graph_objs.barpolar.unselected.Marker`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("color", None)
-        _v = color if color is not None else _v
-        if _v is not None:
-            self["color"] = _v
-        _v = arg.pop("opacity", None)
-        _v = opacity if opacity is not None else _v
-        if _v is not None:
-            self["opacity"] = _v
+        self._init_provided('color', arg, color)
+        self._init_provided('opacity', arg, opacity)
 
         # Process unknown kwargs
         # ----------------------

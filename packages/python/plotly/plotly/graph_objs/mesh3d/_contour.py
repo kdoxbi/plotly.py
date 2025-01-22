@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
@@ -6,8 +8,8 @@ class Contour(_BaseTraceHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "mesh3d"
-    _path_str = "mesh3d.contour"
+    _parent_path_str = 'mesh3d'
+    _path_str = 'mesh3d.contour'
     _valid_props = {"color", "show", "width"}
 
     # color
@@ -63,11 +65,11 @@ class Contour(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["color"]
+        return self['color']
 
     @color.setter
     def color(self, val):
-        self["color"] = val
+        self['color'] = val
 
     # show
     # ----
@@ -83,11 +85,11 @@ class Contour(_BaseTraceHierarchyType):
         -------
         bool
         """
-        return self["show"]
+        return self['show']
 
     @show.setter
     def show(self, val):
-        self["show"] = val
+        self['show'] = val
 
     # width
     # -----
@@ -103,11 +105,11 @@ class Contour(_BaseTraceHierarchyType):
         -------
         int|float
         """
-        return self["width"]
+        return self['width']
 
     @width.setter
     def width(self, val):
-        self["width"] = val
+        self['width'] = val
 
     # Self properties description
     # ---------------------------
@@ -121,8 +123,13 @@ class Contour(_BaseTraceHierarchyType):
         width
             Sets the width of the contour lines.
         """
-
-    def __init__(self, arg=None, color=None, show=None, width=None, **kwargs):
+    def __init__(self,
+            arg=None,
+            color=None,
+            show=None,
+            width=None,
+            **kwargs
+        ):
         """
         Construct a new Contour object
 
@@ -143,10 +150,10 @@ class Contour(_BaseTraceHierarchyType):
         -------
         Contour
         """
-        super(Contour, self).__init__("contour")
+        super(Contour, self).__init__('contour')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -158,32 +165,22 @@ class Contour(_BaseTraceHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.mesh3d.Contour
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.mesh3d.Contour`"""
-            )
+an instance of :class:`plotly.graph_objs.mesh3d.Contour`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("color", None)
-        _v = color if color is not None else _v
-        if _v is not None:
-            self["color"] = _v
-        _v = arg.pop("show", None)
-        _v = show if show is not None else _v
-        if _v is not None:
-            self["show"] = _v
-        _v = arg.pop("width", None)
-        _v = width if width is not None else _v
-        if _v is not None:
-            self["width"] = _v
+        self._init_provided('color', arg, color)
+        self._init_provided('show', arg, show)
+        self._init_provided('width', arg, width)
 
         # Process unknown kwargs
         # ----------------------

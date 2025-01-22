@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
@@ -6,69 +8,9 @@ class Surface(_BaseTraceType):
 
     # class properties
     # --------------------
-    _parent_path_str = ""
-    _path_str = "surface"
-    _valid_props = {
-        "autocolorscale",
-        "cauto",
-        "cmax",
-        "cmid",
-        "cmin",
-        "coloraxis",
-        "colorbar",
-        "colorscale",
-        "connectgaps",
-        "contours",
-        "customdata",
-        "customdatasrc",
-        "hidesurface",
-        "hoverinfo",
-        "hoverinfosrc",
-        "hoverlabel",
-        "hovertemplate",
-        "hovertemplatesrc",
-        "hovertext",
-        "hovertextsrc",
-        "ids",
-        "idssrc",
-        "legend",
-        "legendgroup",
-        "legendgrouptitle",
-        "legendrank",
-        "legendwidth",
-        "lighting",
-        "lightposition",
-        "meta",
-        "metasrc",
-        "name",
-        "opacity",
-        "opacityscale",
-        "reversescale",
-        "scene",
-        "showlegend",
-        "showscale",
-        "stream",
-        "surfacecolor",
-        "surfacecolorsrc",
-        "text",
-        "textsrc",
-        "type",
-        "uid",
-        "uirevision",
-        "visible",
-        "x",
-        "xcalendar",
-        "xhoverformat",
-        "xsrc",
-        "y",
-        "ycalendar",
-        "yhoverformat",
-        "ysrc",
-        "z",
-        "zcalendar",
-        "zhoverformat",
-        "zsrc",
-    }
+    _parent_path_str = ''
+    _path_str = 'surface'
+    _valid_props = {"autocolorscale", "cauto", "cmax", "cmid", "cmin", "coloraxis", "colorbar", "colorscale", "connectgaps", "contours", "customdata", "customdatasrc", "hidesurface", "hoverinfo", "hoverinfosrc", "hoverlabel", "hovertemplate", "hovertemplatesrc", "hovertext", "hovertextsrc", "ids", "idssrc", "legend", "legendgroup", "legendgrouptitle", "legendrank", "legendwidth", "lighting", "lightposition", "meta", "metasrc", "name", "opacity", "opacityscale", "reversescale", "scene", "showlegend", "showscale", "stream", "surfacecolor", "surfacecolorsrc", "text", "textsrc", "type", "uid", "uirevision", "visible", "x", "xcalendar", "xhoverformat", "xsrc", "y", "ycalendar", "yhoverformat", "ysrc", "z", "zcalendar", "zhoverformat", "zsrc"}
 
     # autocolorscale
     # --------------
@@ -89,11 +31,11 @@ class Surface(_BaseTraceType):
         -------
         bool
         """
-        return self["autocolorscale"]
+        return self['autocolorscale']
 
     @autocolorscale.setter
     def autocolorscale(self, val):
-        self["autocolorscale"] = val
+        self['autocolorscale'] = val
 
     # cauto
     # -----
@@ -112,11 +54,11 @@ class Surface(_BaseTraceType):
         -------
         bool
         """
-        return self["cauto"]
+        return self['cauto']
 
     @cauto.setter
     def cauto(self, val):
-        self["cauto"] = val
+        self['cauto'] = val
 
     # cmax
     # ----
@@ -134,11 +76,11 @@ class Surface(_BaseTraceType):
         -------
         int|float
         """
-        return self["cmax"]
+        return self['cmax']
 
     @cmax.setter
     def cmax(self, val):
-        self["cmax"] = val
+        self['cmax'] = val
 
     # cmid
     # ----
@@ -157,11 +99,11 @@ class Surface(_BaseTraceType):
         -------
         int|float
         """
-        return self["cmid"]
+        return self['cmid']
 
     @cmid.setter
     def cmid(self, val):
-        self["cmid"] = val
+        self['cmid'] = val
 
     # cmin
     # ----
@@ -179,11 +121,11 @@ class Surface(_BaseTraceType):
         -------
         int|float
         """
-        return self["cmin"]
+        return self['cmin']
 
     @cmin.setter
     def cmin(self, val):
-        self["cmin"] = val
+        self['cmin'] = val
 
     # coloraxis
     # ---------
@@ -206,11 +148,11 @@ class Surface(_BaseTraceType):
         -------
         str
         """
-        return self["coloraxis"]
+        return self['coloraxis']
 
     @coloraxis.setter
     def coloraxis(self, val):
-        self["coloraxis"] = val
+        self['coloraxis'] = val
 
     # colorbar
     # --------
@@ -222,9 +164,9 @@ class Surface(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.surface.ColorBar`
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
-
+    
             Supported dict properties:
-
+                
                 bgcolor
                     Sets the color of padded area.
                 bordercolor
@@ -493,11 +435,11 @@ class Surface(_BaseTraceType):
         -------
         plotly.graph_objs.surface.ColorBar
         """
-        return self["colorbar"]
+        return self['colorbar']
 
     @colorbar.setter
     def colorbar(self, val):
-        self["colorbar"] = val
+        self['colorbar'] = val
 
     # colorscale
     # ----------
@@ -546,11 +488,11 @@ class Surface(_BaseTraceType):
         -------
         str
         """
-        return self["colorscale"]
+        return self['colorscale']
 
     @colorscale.setter
     def colorscale(self, val):
-        self["colorscale"] = val
+        self['colorscale'] = val
 
     # connectgaps
     # -----------
@@ -567,11 +509,11 @@ class Surface(_BaseTraceType):
         -------
         bool
         """
-        return self["connectgaps"]
+        return self['connectgaps']
 
     @connectgaps.setter
     def connectgaps(self, val):
-        self["connectgaps"] = val
+        self['connectgaps'] = val
 
     # contours
     # --------
@@ -583,9 +525,9 @@ class Surface(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.surface.Contours`
           - A dict of string/value properties that will be passed
             to the Contours constructor
-
+    
             Supported dict properties:
-
+                
                 x
                     :class:`plotly.graph_objects.surface.contours.X
                     ` instance or dict with compatible properties
@@ -600,11 +542,11 @@ class Surface(_BaseTraceType):
         -------
         plotly.graph_objs.surface.Contours
         """
-        return self["contours"]
+        return self['contours']
 
     @contours.setter
     def contours(self, val):
-        self["contours"] = val
+        self['contours'] = val
 
     # customdata
     # ----------
@@ -623,11 +565,11 @@ class Surface(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["customdata"]
+        return self['customdata']
 
     @customdata.setter
     def customdata(self, val):
-        self["customdata"] = val
+        self['customdata'] = val
 
     # customdatasrc
     # -------------
@@ -644,11 +586,11 @@ class Surface(_BaseTraceType):
         -------
         str
         """
-        return self["customdatasrc"]
+        return self['customdatasrc']
 
     @customdatasrc.setter
     def customdatasrc(self, val):
-        self["customdatasrc"] = val
+        self['customdatasrc'] = val
 
     # hidesurface
     # -----------
@@ -666,11 +608,11 @@ class Surface(_BaseTraceType):
         -------
         bool
         """
-        return self["hidesurface"]
+        return self['hidesurface']
 
     @hidesurface.setter
     def hidesurface(self, val):
-        self["hidesurface"] = val
+        self['hidesurface'] = val
 
     # hoverinfo
     # ---------
@@ -692,11 +634,11 @@ class Surface(_BaseTraceType):
         -------
         Any|numpy.ndarray
         """
-        return self["hoverinfo"]
+        return self['hoverinfo']
 
     @hoverinfo.setter
     def hoverinfo(self, val):
-        self["hoverinfo"] = val
+        self['hoverinfo'] = val
 
     # hoverinfosrc
     # ------------
@@ -713,11 +655,11 @@ class Surface(_BaseTraceType):
         -------
         str
         """
-        return self["hoverinfosrc"]
+        return self['hoverinfosrc']
 
     @hoverinfosrc.setter
     def hoverinfosrc(self, val):
-        self["hoverinfosrc"] = val
+        self['hoverinfosrc'] = val
 
     # hoverlabel
     # ----------
@@ -729,9 +671,9 @@ class Surface(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.surface.Hoverlabel`
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
-
+    
             Supported dict properties:
-
+                
                 align
                     Sets the horizontal alignment of the text
                     content within hover label box. Has an effect
@@ -772,11 +714,11 @@ class Surface(_BaseTraceType):
         -------
         plotly.graph_objs.surface.Hoverlabel
         """
-        return self["hoverlabel"]
+        return self['hoverlabel']
 
     @hoverlabel.setter
     def hoverlabel(self, val):
-        self["hoverlabel"] = val
+        self['hoverlabel'] = val
 
     # hovertemplate
     # -------------
@@ -816,11 +758,11 @@ class Surface(_BaseTraceType):
         -------
         str|numpy.ndarray
         """
-        return self["hovertemplate"]
+        return self['hovertemplate']
 
     @hovertemplate.setter
     def hovertemplate(self, val):
-        self["hovertemplate"] = val
+        self['hovertemplate'] = val
 
     # hovertemplatesrc
     # ----------------
@@ -837,11 +779,11 @@ class Surface(_BaseTraceType):
         -------
         str
         """
-        return self["hovertemplatesrc"]
+        return self['hovertemplatesrc']
 
     @hovertemplatesrc.setter
     def hovertemplatesrc(self, val):
-        self["hovertemplatesrc"] = val
+        self['hovertemplatesrc'] = val
 
     # hovertext
     # ---------
@@ -859,11 +801,11 @@ class Surface(_BaseTraceType):
         -------
         str|numpy.ndarray
         """
-        return self["hovertext"]
+        return self['hovertext']
 
     @hovertext.setter
     def hovertext(self, val):
-        self["hovertext"] = val
+        self['hovertext'] = val
 
     # hovertextsrc
     # ------------
@@ -880,11 +822,11 @@ class Surface(_BaseTraceType):
         -------
         str
         """
-        return self["hovertextsrc"]
+        return self['hovertextsrc']
 
     @hovertextsrc.setter
     def hovertextsrc(self, val):
-        self["hovertextsrc"] = val
+        self['hovertextsrc'] = val
 
     # ids
     # ---
@@ -902,11 +844,11 @@ class Surface(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["ids"]
+        return self['ids']
 
     @ids.setter
     def ids(self, val):
-        self["ids"] = val
+        self['ids'] = val
 
     # idssrc
     # ------
@@ -922,11 +864,11 @@ class Surface(_BaseTraceType):
         -------
         str
         """
-        return self["idssrc"]
+        return self['idssrc']
 
     @idssrc.setter
     def idssrc(self, val):
-        self["idssrc"] = val
+        self['idssrc'] = val
 
     # legend
     # ------
@@ -947,11 +889,11 @@ class Surface(_BaseTraceType):
         -------
         str
         """
-        return self["legend"]
+        return self['legend']
 
     @legend.setter
     def legend(self, val):
-        self["legend"] = val
+        self['legend'] = val
 
     # legendgroup
     # -----------
@@ -970,11 +912,11 @@ class Surface(_BaseTraceType):
         -------
         str
         """
-        return self["legendgroup"]
+        return self['legendgroup']
 
     @legendgroup.setter
     def legendgroup(self, val):
-        self["legendgroup"] = val
+        self['legendgroup'] = val
 
     # legendgrouptitle
     # ----------------
@@ -986,9 +928,9 @@ class Surface(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.surface.Legendgrouptitle`
           - A dict of string/value properties that will be passed
             to the Legendgrouptitle constructor
-
+    
             Supported dict properties:
-
+                
                 font
                     Sets this legend group's title font.
                 text
@@ -998,11 +940,11 @@ class Surface(_BaseTraceType):
         -------
         plotly.graph_objs.surface.Legendgrouptitle
         """
-        return self["legendgrouptitle"]
+        return self['legendgrouptitle']
 
     @legendgrouptitle.setter
     def legendgrouptitle(self, val):
-        self["legendgrouptitle"] = val
+        self['legendgrouptitle'] = val
 
     # legendrank
     # ----------
@@ -1025,11 +967,11 @@ class Surface(_BaseTraceType):
         -------
         int|float
         """
-        return self["legendrank"]
+        return self['legendrank']
 
     @legendrank.setter
     def legendrank(self, val):
-        self["legendrank"] = val
+        self['legendrank'] = val
 
     # legendwidth
     # -----------
@@ -1046,11 +988,11 @@ class Surface(_BaseTraceType):
         -------
         int|float
         """
-        return self["legendwidth"]
+        return self['legendwidth']
 
     @legendwidth.setter
     def legendwidth(self, val):
-        self["legendwidth"] = val
+        self['legendwidth'] = val
 
     # lighting
     # --------
@@ -1062,9 +1004,9 @@ class Surface(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.surface.Lighting`
           - A dict of string/value properties that will be passed
             to the Lighting constructor
-
+    
             Supported dict properties:
-
+                
                 ambient
                     Ambient light increases overall color
                     visibility but can wash out the image.
@@ -1088,11 +1030,11 @@ class Surface(_BaseTraceType):
         -------
         plotly.graph_objs.surface.Lighting
         """
-        return self["lighting"]
+        return self['lighting']
 
     @lighting.setter
     def lighting(self, val):
-        self["lighting"] = val
+        self['lighting'] = val
 
     # lightposition
     # -------------
@@ -1104,9 +1046,9 @@ class Surface(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.surface.Lightposition`
           - A dict of string/value properties that will be passed
             to the Lightposition constructor
-
+    
             Supported dict properties:
-
+                
                 x
                     Numeric vector, representing the X coordinate
                     for each vertex.
@@ -1121,11 +1063,11 @@ class Surface(_BaseTraceType):
         -------
         plotly.graph_objs.surface.Lightposition
         """
-        return self["lightposition"]
+        return self['lightposition']
 
     @lightposition.setter
     def lightposition(self, val):
-        self["lightposition"] = val
+        self['lightposition'] = val
 
     # meta
     # ----
@@ -1149,11 +1091,11 @@ class Surface(_BaseTraceType):
         -------
         Any|numpy.ndarray
         """
-        return self["meta"]
+        return self['meta']
 
     @meta.setter
     def meta(self, val):
-        self["meta"] = val
+        self['meta'] = val
 
     # metasrc
     # -------
@@ -1169,11 +1111,11 @@ class Surface(_BaseTraceType):
         -------
         str
         """
-        return self["metasrc"]
+        return self['metasrc']
 
     @metasrc.setter
     def metasrc(self, val):
-        self["metasrc"] = val
+        self['metasrc'] = val
 
     # name
     # ----
@@ -1191,11 +1133,11 @@ class Surface(_BaseTraceType):
         -------
         str
         """
-        return self["name"]
+        return self['name']
 
     @name.setter
     def name(self, val):
-        self["name"] = val
+        self['name'] = val
 
     # opacity
     # -------
@@ -1216,11 +1158,11 @@ class Surface(_BaseTraceType):
         -------
         int|float
         """
-        return self["opacity"]
+        return self['opacity']
 
     @opacity.setter
     def opacity(self, val):
-        self["opacity"] = val
+        self['opacity'] = val
 
     # opacityscale
     # ------------
@@ -1243,11 +1185,11 @@ class Surface(_BaseTraceType):
         -------
         Any
         """
-        return self["opacityscale"]
+        return self['opacityscale']
 
     @opacityscale.setter
     def opacityscale(self, val):
-        self["opacityscale"] = val
+        self['opacityscale'] = val
 
     # reversescale
     # ------------
@@ -1265,11 +1207,11 @@ class Surface(_BaseTraceType):
         -------
         bool
         """
-        return self["reversescale"]
+        return self['reversescale']
 
     @reversescale.setter
     def reversescale(self, val):
-        self["reversescale"] = val
+        self['reversescale'] = val
 
     # scene
     # -----
@@ -1290,11 +1232,11 @@ class Surface(_BaseTraceType):
         -------
         str
         """
-        return self["scene"]
+        return self['scene']
 
     @scene.setter
     def scene(self, val):
-        self["scene"] = val
+        self['scene'] = val
 
     # showlegend
     # ----------
@@ -1311,11 +1253,11 @@ class Surface(_BaseTraceType):
         -------
         bool
         """
-        return self["showlegend"]
+        return self['showlegend']
 
     @showlegend.setter
     def showlegend(self, val):
-        self["showlegend"] = val
+        self['showlegend'] = val
 
     # showscale
     # ---------
@@ -1332,11 +1274,11 @@ class Surface(_BaseTraceType):
         -------
         bool
         """
-        return self["showscale"]
+        return self['showscale']
 
     @showscale.setter
     def showscale(self, val):
-        self["showscale"] = val
+        self['showscale'] = val
 
     # stream
     # ------
@@ -1348,9 +1290,9 @@ class Surface(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.surface.Stream`
           - A dict of string/value properties that will be passed
             to the Stream constructor
-
+    
             Supported dict properties:
-
+                
                 maxpoints
                     Sets the maximum number of points to keep on
                     the plots from an incoming stream. If
@@ -1365,11 +1307,11 @@ class Surface(_BaseTraceType):
         -------
         plotly.graph_objs.surface.Stream
         """
-        return self["stream"]
+        return self['stream']
 
     @stream.setter
     def stream(self, val):
-        self["stream"] = val
+        self['stream'] = val
 
     # surfacecolor
     # ------------
@@ -1386,11 +1328,11 @@ class Surface(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["surfacecolor"]
+        return self['surfacecolor']
 
     @surfacecolor.setter
     def surfacecolor(self, val):
-        self["surfacecolor"] = val
+        self['surfacecolor'] = val
 
     # surfacecolorsrc
     # ---------------
@@ -1407,11 +1349,11 @@ class Surface(_BaseTraceType):
         -------
         str
         """
-        return self["surfacecolorsrc"]
+        return self['surfacecolorsrc']
 
     @surfacecolorsrc.setter
     def surfacecolorsrc(self, val):
-        self["surfacecolorsrc"] = val
+        self['surfacecolorsrc'] = val
 
     # text
     # ----
@@ -1431,11 +1373,11 @@ class Surface(_BaseTraceType):
         -------
         str|numpy.ndarray
         """
-        return self["text"]
+        return self['text']
 
     @text.setter
     def text(self, val):
-        self["text"] = val
+        self['text'] = val
 
     # textsrc
     # -------
@@ -1451,11 +1393,11 @@ class Surface(_BaseTraceType):
         -------
         str
         """
-        return self["textsrc"]
+        return self['textsrc']
 
     @textsrc.setter
     def textsrc(self, val):
-        self["textsrc"] = val
+        self['textsrc'] = val
 
     # uid
     # ---
@@ -1473,11 +1415,11 @@ class Surface(_BaseTraceType):
         -------
         str
         """
-        return self["uid"]
+        return self['uid']
 
     @uid.setter
     def uid(self, val):
-        self["uid"] = val
+        self['uid'] = val
 
     # uirevision
     # ----------
@@ -1506,11 +1448,11 @@ class Surface(_BaseTraceType):
         -------
         Any
         """
-        return self["uirevision"]
+        return self['uirevision']
 
     @uirevision.setter
     def uirevision(self, val):
-        self["uirevision"] = val
+        self['uirevision'] = val
 
     # visible
     # -------
@@ -1529,11 +1471,11 @@ class Surface(_BaseTraceType):
         -------
         Any
         """
-        return self["visible"]
+        return self['visible']
 
     @visible.setter
     def visible(self, val):
-        self["visible"] = val
+        self['visible'] = val
 
     # x
     # -
@@ -1549,11 +1491,11 @@ class Surface(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["x"]
+        return self['x']
 
     @x.setter
     def x(self, val):
-        self["x"] = val
+        self['x'] = val
 
     # xcalendar
     # ---------
@@ -1573,11 +1515,11 @@ class Surface(_BaseTraceType):
         -------
         Any
         """
-        return self["xcalendar"]
+        return self['xcalendar']
 
     @xcalendar.setter
     def xcalendar(self, val):
-        self["xcalendar"] = val
+        self['xcalendar'] = val
 
     # xhoverformat
     # ------------
@@ -1604,11 +1546,11 @@ class Surface(_BaseTraceType):
         -------
         str
         """
-        return self["xhoverformat"]
+        return self['xhoverformat']
 
     @xhoverformat.setter
     def xhoverformat(self, val):
-        self["xhoverformat"] = val
+        self['xhoverformat'] = val
 
     # xsrc
     # ----
@@ -1624,11 +1566,11 @@ class Surface(_BaseTraceType):
         -------
         str
         """
-        return self["xsrc"]
+        return self['xsrc']
 
     @xsrc.setter
     def xsrc(self, val):
-        self["xsrc"] = val
+        self['xsrc'] = val
 
     # y
     # -
@@ -1644,11 +1586,11 @@ class Surface(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["y"]
+        return self['y']
 
     @y.setter
     def y(self, val):
-        self["y"] = val
+        self['y'] = val
 
     # ycalendar
     # ---------
@@ -1668,11 +1610,11 @@ class Surface(_BaseTraceType):
         -------
         Any
         """
-        return self["ycalendar"]
+        return self['ycalendar']
 
     @ycalendar.setter
     def ycalendar(self, val):
-        self["ycalendar"] = val
+        self['ycalendar'] = val
 
     # yhoverformat
     # ------------
@@ -1699,11 +1641,11 @@ class Surface(_BaseTraceType):
         -------
         str
         """
-        return self["yhoverformat"]
+        return self['yhoverformat']
 
     @yhoverformat.setter
     def yhoverformat(self, val):
-        self["yhoverformat"] = val
+        self['yhoverformat'] = val
 
     # ysrc
     # ----
@@ -1719,11 +1661,11 @@ class Surface(_BaseTraceType):
         -------
         str
         """
-        return self["ysrc"]
+        return self['ysrc']
 
     @ysrc.setter
     def ysrc(self, val):
-        self["ysrc"] = val
+        self['ysrc'] = val
 
     # z
     # -
@@ -1739,11 +1681,11 @@ class Surface(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["z"]
+        return self['z']
 
     @z.setter
     def z(self, val):
-        self["z"] = val
+        self['z'] = val
 
     # zcalendar
     # ---------
@@ -1763,11 +1705,11 @@ class Surface(_BaseTraceType):
         -------
         Any
         """
-        return self["zcalendar"]
+        return self['zcalendar']
 
     @zcalendar.setter
     def zcalendar(self, val):
-        self["zcalendar"] = val
+        self['zcalendar'] = val
 
     # zhoverformat
     # ------------
@@ -1794,11 +1736,11 @@ class Surface(_BaseTraceType):
         -------
         str
         """
-        return self["zhoverformat"]
+        return self['zhoverformat']
 
     @zhoverformat.setter
     def zhoverformat(self, val):
-        self["zhoverformat"] = val
+        self['zhoverformat'] = val
 
     # zsrc
     # ----
@@ -1814,17 +1756,17 @@ class Surface(_BaseTraceType):
         -------
         str
         """
-        return self["zsrc"]
+        return self['zsrc']
 
     @zsrc.setter
     def zsrc(self, val):
-        self["zsrc"] = val
+        self['zsrc'] = val
 
     # type
     # ----
     @property
     def type(self):
-        return self._props["type"]
+        return self._props['type']
 
     # Self properties description
     # ---------------------------
@@ -2143,70 +2085,68 @@ class Surface(_BaseTraceType):
             Sets the source reference on Chart Studio Cloud for
             `z`.
         """
-
-    def __init__(
-        self,
-        arg=None,
-        autocolorscale=None,
-        cauto=None,
-        cmax=None,
-        cmid=None,
-        cmin=None,
-        coloraxis=None,
-        colorbar=None,
-        colorscale=None,
-        connectgaps=None,
-        contours=None,
-        customdata=None,
-        customdatasrc=None,
-        hidesurface=None,
-        hoverinfo=None,
-        hoverinfosrc=None,
-        hoverlabel=None,
-        hovertemplate=None,
-        hovertemplatesrc=None,
-        hovertext=None,
-        hovertextsrc=None,
-        ids=None,
-        idssrc=None,
-        legend=None,
-        legendgroup=None,
-        legendgrouptitle=None,
-        legendrank=None,
-        legendwidth=None,
-        lighting=None,
-        lightposition=None,
-        meta=None,
-        metasrc=None,
-        name=None,
-        opacity=None,
-        opacityscale=None,
-        reversescale=None,
-        scene=None,
-        showlegend=None,
-        showscale=None,
-        stream=None,
-        surfacecolor=None,
-        surfacecolorsrc=None,
-        text=None,
-        textsrc=None,
-        uid=None,
-        uirevision=None,
-        visible=None,
-        x=None,
-        xcalendar=None,
-        xhoverformat=None,
-        xsrc=None,
-        y=None,
-        ycalendar=None,
-        yhoverformat=None,
-        ysrc=None,
-        z=None,
-        zcalendar=None,
-        zhoverformat=None,
-        zsrc=None,
-        **kwargs,
-    ):
+    def __init__(self,
+            arg=None,
+            autocolorscale=None,
+            cauto=None,
+            cmax=None,
+            cmid=None,
+            cmin=None,
+            coloraxis=None,
+            colorbar=None,
+            colorscale=None,
+            connectgaps=None,
+            contours=None,
+            customdata=None,
+            customdatasrc=None,
+            hidesurface=None,
+            hoverinfo=None,
+            hoverinfosrc=None,
+            hoverlabel=None,
+            hovertemplate=None,
+            hovertemplatesrc=None,
+            hovertext=None,
+            hovertextsrc=None,
+            ids=None,
+            idssrc=None,
+            legend=None,
+            legendgroup=None,
+            legendgrouptitle=None,
+            legendrank=None,
+            legendwidth=None,
+            lighting=None,
+            lightposition=None,
+            meta=None,
+            metasrc=None,
+            name=None,
+            opacity=None,
+            opacityscale=None,
+            reversescale=None,
+            scene=None,
+            showlegend=None,
+            showscale=None,
+            stream=None,
+            surfacecolor=None,
+            surfacecolorsrc=None,
+            text=None,
+            textsrc=None,
+            uid=None,
+            uirevision=None,
+            visible=None,
+            x=None,
+            xcalendar=None,
+            xhoverformat=None,
+            xsrc=None,
+            y=None,
+            ycalendar=None,
+            yhoverformat=None,
+            ysrc=None,
+            z=None,
+            zcalendar=None,
+            zhoverformat=None,
+            zsrc=None,
+            **kwargs
+        ):
         """
         Construct a new Surface object
 
@@ -2541,10 +2481,10 @@ class Surface(_BaseTraceType):
         -------
         Surface
         """
-        super(Surface, self).__init__("surface")
+        super(Surface, self).__init__('surface')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -2556,258 +2496,83 @@ class Surface(_BaseTraceType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.Surface
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.Surface`"""
-            )
+an instance of :class:`plotly.graph_objs.Surface`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("autocolorscale", None)
-        _v = autocolorscale if autocolorscale is not None else _v
-        if _v is not None:
-            self["autocolorscale"] = _v
-        _v = arg.pop("cauto", None)
-        _v = cauto if cauto is not None else _v
-        if _v is not None:
-            self["cauto"] = _v
-        _v = arg.pop("cmax", None)
-        _v = cmax if cmax is not None else _v
-        if _v is not None:
-            self["cmax"] = _v
-        _v = arg.pop("cmid", None)
-        _v = cmid if cmid is not None else _v
-        if _v is not None:
-            self["cmid"] = _v
-        _v = arg.pop("cmin", None)
-        _v = cmin if cmin is not None else _v
-        if _v is not None:
-            self["cmin"] = _v
-        _v = arg.pop("coloraxis", None)
-        _v = coloraxis if coloraxis is not None else _v
-        if _v is not None:
-            self["coloraxis"] = _v
-        _v = arg.pop("colorbar", None)
-        _v = colorbar if colorbar is not None else _v
-        if _v is not None:
-            self["colorbar"] = _v
-        _v = arg.pop("colorscale", None)
-        _v = colorscale if colorscale is not None else _v
-        if _v is not None:
-            self["colorscale"] = _v
-        _v = arg.pop("connectgaps", None)
-        _v = connectgaps if connectgaps is not None else _v
-        if _v is not None:
-            self["connectgaps"] = _v
-        _v = arg.pop("contours", None)
-        _v = contours if contours is not None else _v
-        if _v is not None:
-            self["contours"] = _v
-        _v = arg.pop("customdata", None)
-        _v = customdata if customdata is not None else _v
-        if _v is not None:
-            self["customdata"] = _v
-        _v = arg.pop("customdatasrc", None)
-        _v = customdatasrc if customdatasrc is not None else _v
-        if _v is not None:
-            self["customdatasrc"] = _v
-        _v = arg.pop("hidesurface", None)
-        _v = hidesurface if hidesurface is not None else _v
-        if _v is not None:
-            self["hidesurface"] = _v
-        _v = arg.pop("hoverinfo", None)
-        _v = hoverinfo if hoverinfo is not None else _v
-        if _v is not None:
-            self["hoverinfo"] = _v
-        _v = arg.pop("hoverinfosrc", None)
-        _v = hoverinfosrc if hoverinfosrc is not None else _v
-        if _v is not None:
-            self["hoverinfosrc"] = _v
-        _v = arg.pop("hoverlabel", None)
-        _v = hoverlabel if hoverlabel is not None else _v
-        if _v is not None:
-            self["hoverlabel"] = _v
-        _v = arg.pop("hovertemplate", None)
-        _v = hovertemplate if hovertemplate is not None else _v
-        if _v is not None:
-            self["hovertemplate"] = _v
-        _v = arg.pop("hovertemplatesrc", None)
-        _v = hovertemplatesrc if hovertemplatesrc is not None else _v
-        if _v is not None:
-            self["hovertemplatesrc"] = _v
-        _v = arg.pop("hovertext", None)
-        _v = hovertext if hovertext is not None else _v
-        if _v is not None:
-            self["hovertext"] = _v
-        _v = arg.pop("hovertextsrc", None)
-        _v = hovertextsrc if hovertextsrc is not None else _v
-        if _v is not None:
-            self["hovertextsrc"] = _v
-        _v = arg.pop("ids", None)
-        _v = ids if ids is not None else _v
-        if _v is not None:
-            self["ids"] = _v
-        _v = arg.pop("idssrc", None)
-        _v = idssrc if idssrc is not None else _v
-        if _v is not None:
-            self["idssrc"] = _v
-        _v = arg.pop("legend", None)
-        _v = legend if legend is not None else _v
-        if _v is not None:
-            self["legend"] = _v
-        _v = arg.pop("legendgroup", None)
-        _v = legendgroup if legendgroup is not None else _v
-        if _v is not None:
-            self["legendgroup"] = _v
-        _v = arg.pop("legendgrouptitle", None)
-        _v = legendgrouptitle if legendgrouptitle is not None else _v
-        if _v is not None:
-            self["legendgrouptitle"] = _v
-        _v = arg.pop("legendrank", None)
-        _v = legendrank if legendrank is not None else _v
-        if _v is not None:
-            self["legendrank"] = _v
-        _v = arg.pop("legendwidth", None)
-        _v = legendwidth if legendwidth is not None else _v
-        if _v is not None:
-            self["legendwidth"] = _v
-        _v = arg.pop("lighting", None)
-        _v = lighting if lighting is not None else _v
-        if _v is not None:
-            self["lighting"] = _v
-        _v = arg.pop("lightposition", None)
-        _v = lightposition if lightposition is not None else _v
-        if _v is not None:
-            self["lightposition"] = _v
-        _v = arg.pop("meta", None)
-        _v = meta if meta is not None else _v
-        if _v is not None:
-            self["meta"] = _v
-        _v = arg.pop("metasrc", None)
-        _v = metasrc if metasrc is not None else _v
-        if _v is not None:
-            self["metasrc"] = _v
-        _v = arg.pop("name", None)
-        _v = name if name is not None else _v
-        if _v is not None:
-            self["name"] = _v
-        _v = arg.pop("opacity", None)
-        _v = opacity if opacity is not None else _v
-        if _v is not None:
-            self["opacity"] = _v
-        _v = arg.pop("opacityscale", None)
-        _v = opacityscale if opacityscale is not None else _v
-        if _v is not None:
-            self["opacityscale"] = _v
-        _v = arg.pop("reversescale", None)
-        _v = reversescale if reversescale is not None else _v
-        if _v is not None:
-            self["reversescale"] = _v
-        _v = arg.pop("scene", None)
-        _v = scene if scene is not None else _v
-        if _v is not None:
-            self["scene"] = _v
-        _v = arg.pop("showlegend", None)
-        _v = showlegend if showlegend is not None else _v
-        if _v is not None:
-            self["showlegend"] = _v
-        _v = arg.pop("showscale", None)
-        _v = showscale if showscale is not None else _v
-        if _v is not None:
-            self["showscale"] = _v
-        _v = arg.pop("stream", None)
-        _v = stream if stream is not None else _v
-        if _v is not None:
-            self["stream"] = _v
-        _v = arg.pop("surfacecolor", None)
-        _v = surfacecolor if surfacecolor is not None else _v
-        if _v is not None:
-            self["surfacecolor"] = _v
-        _v = arg.pop("surfacecolorsrc", None)
-        _v = surfacecolorsrc if surfacecolorsrc is not None else _v
-        if _v is not None:
-            self["surfacecolorsrc"] = _v
-        _v = arg.pop("text", None)
-        _v = text if text is not None else _v
-        if _v is not None:
-            self["text"] = _v
-        _v = arg.pop("textsrc", None)
-        _v = textsrc if textsrc is not None else _v
-        if _v is not None:
-            self["textsrc"] = _v
-        _v = arg.pop("uid", None)
-        _v = uid if uid is not None else _v
-        if _v is not None:
-            self["uid"] = _v
-        _v = arg.pop("uirevision", None)
-        _v = uirevision if uirevision is not None else _v
-        if _v is not None:
-            self["uirevision"] = _v
-        _v = arg.pop("visible", None)
-        _v = visible if visible is not None else _v
-        if _v is not None:
-            self["visible"] = _v
-        _v = arg.pop("x", None)
-        _v = x if x is not None else _v
-        if _v is not None:
-            self["x"] = _v
-        _v = arg.pop("xcalendar", None)
-        _v = xcalendar if xcalendar is not None else _v
-        if _v is not None:
-            self["xcalendar"] = _v
-        _v = arg.pop("xhoverformat", None)
-        _v = xhoverformat if xhoverformat is not None else _v
-        if _v is not None:
-            self["xhoverformat"] = _v
-        _v = arg.pop("xsrc", None)
-        _v = xsrc if xsrc is not None else _v
-        if _v is not None:
-            self["xsrc"] = _v
-        _v = arg.pop("y", None)
-        _v = y if y is not None else _v
-        if _v is not None:
-            self["y"] = _v
-        _v = arg.pop("ycalendar", None)
-        _v = ycalendar if ycalendar is not None else _v
-        if _v is not None:
-            self["ycalendar"] = _v
-        _v = arg.pop("yhoverformat", None)
-        _v = yhoverformat if yhoverformat is not None else _v
-        if _v is not None:
-            self["yhoverformat"] = _v
-        _v = arg.pop("ysrc", None)
-        _v = ysrc if ysrc is not None else _v
-        if _v is not None:
-            self["ysrc"] = _v
-        _v = arg.pop("z", None)
-        _v = z if z is not None else _v
-        if _v is not None:
-            self["z"] = _v
-        _v = arg.pop("zcalendar", None)
-        _v = zcalendar if zcalendar is not None else _v
-        if _v is not None:
-            self["zcalendar"] = _v
-        _v = arg.pop("zhoverformat", None)
-        _v = zhoverformat if zhoverformat is not None else _v
-        if _v is not None:
-            self["zhoverformat"] = _v
-        _v = arg.pop("zsrc", None)
-        _v = zsrc if zsrc is not None else _v
-        if _v is not None:
-            self["zsrc"] = _v
+        self._init_provided('autocolorscale', arg, autocolorscale)
+        self._init_provided('cauto', arg, cauto)
+        self._init_provided('cmax', arg, cmax)
+        self._init_provided('cmid', arg, cmid)
+        self._init_provided('cmin', arg, cmin)
+        self._init_provided('coloraxis', arg, coloraxis)
+        self._init_provided('colorbar', arg, colorbar)
+        self._init_provided('colorscale', arg, colorscale)
+        self._init_provided('connectgaps', arg, connectgaps)
+        self._init_provided('contours', arg, contours)
+        self._init_provided('customdata', arg, customdata)
+        self._init_provided('customdatasrc', arg, customdatasrc)
+        self._init_provided('hidesurface', arg, hidesurface)
+        self._init_provided('hoverinfo', arg, hoverinfo)
+        self._init_provided('hoverinfosrc', arg, hoverinfosrc)
+        self._init_provided('hoverlabel', arg, hoverlabel)
+        self._init_provided('hovertemplate', arg, hovertemplate)
+        self._init_provided('hovertemplatesrc', arg, hovertemplatesrc)
+        self._init_provided('hovertext', arg, hovertext)
+        self._init_provided('hovertextsrc', arg, hovertextsrc)
+        self._init_provided('ids', arg, ids)
+        self._init_provided('idssrc', arg, idssrc)
+        self._init_provided('legend', arg, legend)
+        self._init_provided('legendgroup', arg, legendgroup)
+        self._init_provided('legendgrouptitle', arg, legendgrouptitle)
+        self._init_provided('legendrank', arg, legendrank)
+        self._init_provided('legendwidth', arg, legendwidth)
+        self._init_provided('lighting', arg, lighting)
+        self._init_provided('lightposition', arg, lightposition)
+        self._init_provided('meta', arg, meta)
+        self._init_provided('metasrc', arg, metasrc)
+        self._init_provided('name', arg, name)
+        self._init_provided('opacity', arg, opacity)
+        self._init_provided('opacityscale', arg, opacityscale)
+        self._init_provided('reversescale', arg, reversescale)
+        self._init_provided('scene', arg, scene)
+        self._init_provided('showlegend', arg, showlegend)
+        self._init_provided('showscale', arg, showscale)
+        self._init_provided('stream', arg, stream)
+        self._init_provided('surfacecolor', arg, surfacecolor)
+        self._init_provided('surfacecolorsrc', arg, surfacecolorsrc)
+        self._init_provided('text', arg, text)
+        self._init_provided('textsrc', arg, textsrc)
+        self._init_provided('uid', arg, uid)
+        self._init_provided('uirevision', arg, uirevision)
+        self._init_provided('visible', arg, visible)
+        self._init_provided('x', arg, x)
+        self._init_provided('xcalendar', arg, xcalendar)
+        self._init_provided('xhoverformat', arg, xhoverformat)
+        self._init_provided('xsrc', arg, xsrc)
+        self._init_provided('y', arg, y)
+        self._init_provided('ycalendar', arg, ycalendar)
+        self._init_provided('yhoverformat', arg, yhoverformat)
+        self._init_provided('ysrc', arg, ysrc)
+        self._init_provided('z', arg, z)
+        self._init_provided('zcalendar', arg, zcalendar)
+        self._init_provided('zhoverformat', arg, zhoverformat)
+        self._init_provided('zsrc', arg, zsrc)
 
         # Read-only literals
         # ------------------
 
-        self._props["type"] = "surface"
-        arg.pop("type", None)
+        self._props['type'] = 'surface'
+        arg.pop('type', None)
 
         # Process unknown kwargs
         # ----------------------

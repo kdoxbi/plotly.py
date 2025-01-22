@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class NewshapeValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="newshape", parent_name="layout", **kwargs):
-        super(NewshapeValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Newshape"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='newshape',
+                       parent_name='layout',
+                       **kwargs):
+        super(NewshapeValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Newshape'),
+                 data_docs=kwargs.pop('data_docs', """
             drawdirection
                 When `dragmode` is set to "drawrect",
                 "drawline" or "drawcircle" this limits the drag
@@ -80,7 +81,5 @@ class NewshapeValidator(_plotly_utils.basevalidators.CompoundValidator):
                 If "legendonly", the shape is not drawn, but
                 can appear as a legend item (provided that the
                 legend itself is visible).
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

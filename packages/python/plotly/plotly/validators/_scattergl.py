@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class ScatterglValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="scattergl", parent_name="", **kwargs):
-        super(ScatterglValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Scattergl"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='scattergl',
+                       parent_name='',
+                       **kwargs):
+        super(ScatterglValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Scattergl'),
+                 data_docs=kwargs.pop('data_docs', """
             connectgaps
                 Determines whether or not gaps (i.e. {nan} or
                 missing values) in the provided data arrays are
@@ -390,7 +391,5 @@ class ScatterglValidator(_plotly_utils.basevalidators.CompoundValidator):
             ysrc
                 Sets the source reference on Chart Studio Cloud
                 for `y`.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

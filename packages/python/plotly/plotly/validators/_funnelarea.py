@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class FunnelareaValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="funnelarea", parent_name="", **kwargs):
-        super(FunnelareaValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Funnelarea"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='funnelarea',
+                       parent_name='',
+                       **kwargs):
+        super(FunnelareaValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Funnelarea'),
+                 data_docs=kwargs.pop('data_docs', """
             aspectratio
                 Sets the ratio between height and width
             baseratio
@@ -266,7 +267,5 @@ class FunnelareaValidator(_plotly_utils.basevalidators.CompoundValidator):
                 visible. If "legendonly", the trace is not
                 drawn, but can appear as a legend item
                 (provided that the legend itself is visible).
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

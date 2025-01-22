@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class BarpolarValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="barpolar", parent_name="", **kwargs):
-        super(BarpolarValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Barpolar"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='barpolar',
+                       parent_name='',
+                       **kwargs):
+        super(BarpolarValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Barpolar'),
+                 data_docs=kwargs.pop('data_docs', """
             base
                 Sets where the bar base is drawn (in radial
                 axis units). In "stack" barmode, traces that
@@ -251,7 +252,5 @@ class BarpolarValidator(_plotly_utils.basevalidators.CompoundValidator):
             widthsrc
                 Sets the source reference on Chart Studio Cloud
                 for `width`.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

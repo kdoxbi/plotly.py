@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class YbinsValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="ybins", parent_name="histogram", **kwargs):
-        super(YbinsValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "YBins"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='ybins',
+                       parent_name='histogram',
+                       **kwargs):
+        super(YbinsValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'YBins'),
+                 data_docs=kwargs.pop('data_docs', """
             end
                 Sets the end value for the y axis bins. The
                 last bin may not end exactly at this value, we
@@ -54,7 +55,5 @@ class YbinsValidator(_plotly_utils.basevalidators.CompoundValidator):
                 others are shifted down (if necessary) to
                 differ from that one by an integer number of
                 bins.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

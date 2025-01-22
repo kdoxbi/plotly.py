@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
@@ -6,8 +8,8 @@ class Box(_BaseTraceHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "violin"
-    _path_str = "violin.box"
+    _parent_path_str = 'violin'
+    _path_str = 'violin.box'
     _valid_props = {"fillcolor", "line", "visible", "width"}
 
     # fillcolor
@@ -63,11 +65,11 @@ class Box(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["fillcolor"]
+        return self['fillcolor']
 
     @fillcolor.setter
     def fillcolor(self, val):
-        self["fillcolor"] = val
+        self['fillcolor'] = val
 
     # line
     # ----
@@ -79,9 +81,9 @@ class Box(_BaseTraceHierarchyType):
           - An instance of :class:`plotly.graph_objs.violin.box.Line`
           - A dict of string/value properties that will be passed
             to the Line constructor
-
+    
             Supported dict properties:
-
+                
                 color
                     Sets the inner box plot bounding line color.
                 width
@@ -91,11 +93,11 @@ class Box(_BaseTraceHierarchyType):
         -------
         plotly.graph_objs.violin.box.Line
         """
-        return self["line"]
+        return self['line']
 
     @line.setter
     def line(self, val):
-        self["line"] = val
+        self['line'] = val
 
     # visible
     # -------
@@ -112,11 +114,11 @@ class Box(_BaseTraceHierarchyType):
         -------
         bool
         """
-        return self["visible"]
+        return self['visible']
 
     @visible.setter
     def visible(self, val):
-        self["visible"] = val
+        self['visible'] = val
 
     # width
     # -----
@@ -134,11 +136,11 @@ class Box(_BaseTraceHierarchyType):
         -------
         int|float
         """
-        return self["width"]
+        return self['width']
 
     @width.setter
     def width(self, val):
-        self["width"] = val
+        self['width'] = val
 
     # Self properties description
     # ---------------------------
@@ -158,10 +160,14 @@ class Box(_BaseTraceHierarchyType):
             violins' width. For example, with 1, the inner box
             plots are as wide as the violins.
         """
-
-    def __init__(
-        self, arg=None, fillcolor=None, line=None, visible=None, width=None, **kwargs
-    ):
+    def __init__(self,
+            arg=None,
+            fillcolor=None,
+            line=None,
+            visible=None,
+            width=None,
+            **kwargs
+        ):
         """
         Construct a new Box object
 
@@ -187,10 +193,10 @@ class Box(_BaseTraceHierarchyType):
         -------
         Box
         """
-        super(Box, self).__init__("box")
+        super(Box, self).__init__('box')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -202,36 +208,23 @@ class Box(_BaseTraceHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.violin.Box
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.violin.Box`"""
-            )
+an instance of :class:`plotly.graph_objs.violin.Box`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("fillcolor", None)
-        _v = fillcolor if fillcolor is not None else _v
-        if _v is not None:
-            self["fillcolor"] = _v
-        _v = arg.pop("line", None)
-        _v = line if line is not None else _v
-        if _v is not None:
-            self["line"] = _v
-        _v = arg.pop("visible", None)
-        _v = visible if visible is not None else _v
-        if _v is not None:
-            self["visible"] = _v
-        _v = arg.pop("width", None)
-        _v = width if width is not None else _v
-        if _v is not None:
-            self["width"] = _v
+        self._init_provided('fillcolor', arg, fillcolor)
+        self._init_provided('line', arg, line)
+        self._init_provided('visible', arg, visible)
+        self._init_provided('width', arg, width)
 
         # Process unknown kwargs
         # ----------------------

@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class StepsValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
-    def __init__(self, plotly_name="steps", parent_name="indicator.gauge", **kwargs):
-        super(StepsValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Step"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='steps',
+                       parent_name='indicator.gauge',
+                       **kwargs):
+        super(StepsValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Step'),
+                 data_docs=kwargs.pop('data_docs', """
             color
                 Sets the background color of the arc.
             line
@@ -42,7 +43,5 @@ class StepsValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
             thickness
                 Sets the thickness of the bar as a fraction of
                 the total thickness of the gauge.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class CarpetValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="carpet", parent_name="", **kwargs):
-        super(CarpetValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Carpet"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='carpet',
+                       parent_name='',
+                       **kwargs):
+        super(CarpetValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Carpet'),
+                 data_docs=kwargs.pop('data_docs', """
             a
                 An array containing values of the first
                 parameter value
@@ -189,7 +190,5 @@ class CarpetValidator(_plotly_utils.basevalidators.CompoundValidator):
                 displayed, relative to other SVG traces on the
                 same subplot. SVG traces with higher `zorder`
                 appear in front of those with lower `zorder`.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

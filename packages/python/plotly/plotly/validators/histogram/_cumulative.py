@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class CumulativeValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="cumulative", parent_name="histogram", **kwargs):
-        super(CumulativeValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Cumulative"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='cumulative',
+                       parent_name='histogram',
+                       **kwargs):
+        super(CumulativeValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Cumulative'),
+                 data_docs=kwargs.pop('data_docs', """
             currentbin
                 Only applies if cumulative is enabled. Sets
                 whether the current bin is included, excluded,
@@ -36,7 +37,5 @@ class CumulativeValidator(_plotly_utils.basevalidators.CompoundValidator):
                 points, and "probability" and *probability
                 density* both rise to the number of sample
                 points.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

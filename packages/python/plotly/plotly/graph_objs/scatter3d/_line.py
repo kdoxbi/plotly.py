@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
@@ -6,24 +8,9 @@ class Line(_BaseTraceHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "scatter3d"
-    _path_str = "scatter3d.line"
-    _valid_props = {
-        "autocolorscale",
-        "cauto",
-        "cmax",
-        "cmid",
-        "cmin",
-        "color",
-        "coloraxis",
-        "colorbar",
-        "colorscale",
-        "colorsrc",
-        "dash",
-        "reversescale",
-        "showscale",
-        "width",
-    }
+    _parent_path_str = 'scatter3d'
+    _path_str = 'scatter3d.line'
+    _valid_props = {"autocolorscale", "cauto", "cmax", "cmid", "cmin", "color", "coloraxis", "colorbar", "colorscale", "colorsrc", "dash", "reversescale", "showscale", "width"}
 
     # autocolorscale
     # --------------
@@ -45,11 +32,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         bool
         """
-        return self["autocolorscale"]
+        return self['autocolorscale']
 
     @autocolorscale.setter
     def autocolorscale(self, val):
-        self["autocolorscale"] = val
+        self['autocolorscale'] = val
 
     # cauto
     # -----
@@ -69,11 +56,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         bool
         """
-        return self["cauto"]
+        return self['cauto']
 
     @cauto.setter
     def cauto(self, val):
-        self["cauto"] = val
+        self['cauto'] = val
 
     # cmax
     # ----
@@ -92,11 +79,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         int|float
         """
-        return self["cmax"]
+        return self['cmax']
 
     @cmax.setter
     def cmax(self, val):
-        self["cmax"] = val
+        self['cmax'] = val
 
     # cmid
     # ----
@@ -116,11 +103,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         int|float
         """
-        return self["cmid"]
+        return self['cmid']
 
     @cmid.setter
     def cmid(self, val):
-        self["cmid"] = val
+        self['cmid'] = val
 
     # cmin
     # ----
@@ -139,11 +126,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         int|float
         """
-        return self["cmin"]
+        return self['cmin']
 
     @cmin.setter
     def cmin(self, val):
-        self["cmin"] = val
+        self['cmin'] = val
 
     # color
     # -----
@@ -204,11 +191,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         str|numpy.ndarray
         """
-        return self["color"]
+        return self['color']
 
     @color.setter
     def color(self, val):
-        self["color"] = val
+        self['color'] = val
 
     # coloraxis
     # ---------
@@ -231,11 +218,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["coloraxis"]
+        return self['coloraxis']
 
     @coloraxis.setter
     def coloraxis(self, val):
-        self["coloraxis"] = val
+        self['coloraxis'] = val
 
     # colorbar
     # --------
@@ -247,9 +234,9 @@ class Line(_BaseTraceHierarchyType):
           - An instance of :class:`plotly.graph_objs.scatter3d.line.ColorBar`
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
-
+    
             Supported dict properties:
-
+                
                 bgcolor
                     Sets the color of padded area.
                 bordercolor
@@ -519,11 +506,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         plotly.graph_objs.scatter3d.line.ColorBar
         """
-        return self["colorbar"]
+        return self['colorbar']
 
     @colorbar.setter
     def colorbar(self, val):
-        self["colorbar"] = val
+        self['colorbar'] = val
 
     # colorscale
     # ----------
@@ -573,11 +560,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["colorscale"]
+        return self['colorscale']
 
     @colorscale.setter
     def colorscale(self, val):
-        self["colorscale"] = val
+        self['colorscale'] = val
 
     # colorsrc
     # --------
@@ -593,11 +580,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["colorsrc"]
+        return self['colorsrc']
 
     @colorsrc.setter
     def colorsrc(self, val):
-        self["colorsrc"] = val
+        self['colorsrc'] = val
 
     # dash
     # ----
@@ -615,11 +602,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         Any
         """
-        return self["dash"]
+        return self['dash']
 
     @dash.setter
     def dash(self, val):
-        self["dash"] = val
+        self['dash'] = val
 
     # reversescale
     # ------------
@@ -638,11 +625,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         bool
         """
-        return self["reversescale"]
+        return self['reversescale']
 
     @reversescale.setter
     def reversescale(self, val):
-        self["reversescale"] = val
+        self['reversescale'] = val
 
     # showscale
     # ---------
@@ -660,11 +647,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         bool
         """
-        return self["showscale"]
+        return self['showscale']
 
     @showscale.setter
     def showscale(self, val):
-        self["showscale"] = val
+        self['showscale'] = val
 
     # width
     # -----
@@ -680,11 +667,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         int|float
         """
-        return self["width"]
+        return self['width']
 
     @width.setter
     def width(self, val):
-        self["width"] = val
+        self['width'] = val
 
     # Self properties description
     # ---------------------------
@@ -772,26 +759,24 @@ class Line(_BaseTraceHierarchyType):
         width
             Sets the line width (in px).
         """
-
-    def __init__(
-        self,
-        arg=None,
-        autocolorscale=None,
-        cauto=None,
-        cmax=None,
-        cmid=None,
-        cmin=None,
-        color=None,
-        coloraxis=None,
-        colorbar=None,
-        colorscale=None,
-        colorsrc=None,
-        dash=None,
-        reversescale=None,
-        showscale=None,
-        width=None,
-        **kwargs,
-    ):
+    def __init__(self,
+            arg=None,
+            autocolorscale=None,
+            cauto=None,
+            cmax=None,
+            cmid=None,
+            cmin=None,
+            color=None,
+            coloraxis=None,
+            colorbar=None,
+            colorscale=None,
+            colorsrc=None,
+            dash=None,
+            reversescale=None,
+            showscale=None,
+            width=None,
+            **kwargs
+        ):
         """
         Construct a new Line object
 
@@ -886,10 +871,10 @@ class Line(_BaseTraceHierarchyType):
         -------
         Line
         """
-        super(Line, self).__init__("line")
+        super(Line, self).__init__('line')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -901,76 +886,33 @@ class Line(_BaseTraceHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.scatter3d.Line
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.scatter3d.Line`"""
-            )
+an instance of :class:`plotly.graph_objs.scatter3d.Line`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("autocolorscale", None)
-        _v = autocolorscale if autocolorscale is not None else _v
-        if _v is not None:
-            self["autocolorscale"] = _v
-        _v = arg.pop("cauto", None)
-        _v = cauto if cauto is not None else _v
-        if _v is not None:
-            self["cauto"] = _v
-        _v = arg.pop("cmax", None)
-        _v = cmax if cmax is not None else _v
-        if _v is not None:
-            self["cmax"] = _v
-        _v = arg.pop("cmid", None)
-        _v = cmid if cmid is not None else _v
-        if _v is not None:
-            self["cmid"] = _v
-        _v = arg.pop("cmin", None)
-        _v = cmin if cmin is not None else _v
-        if _v is not None:
-            self["cmin"] = _v
-        _v = arg.pop("color", None)
-        _v = color if color is not None else _v
-        if _v is not None:
-            self["color"] = _v
-        _v = arg.pop("coloraxis", None)
-        _v = coloraxis if coloraxis is not None else _v
-        if _v is not None:
-            self["coloraxis"] = _v
-        _v = arg.pop("colorbar", None)
-        _v = colorbar if colorbar is not None else _v
-        if _v is not None:
-            self["colorbar"] = _v
-        _v = arg.pop("colorscale", None)
-        _v = colorscale if colorscale is not None else _v
-        if _v is not None:
-            self["colorscale"] = _v
-        _v = arg.pop("colorsrc", None)
-        _v = colorsrc if colorsrc is not None else _v
-        if _v is not None:
-            self["colorsrc"] = _v
-        _v = arg.pop("dash", None)
-        _v = dash if dash is not None else _v
-        if _v is not None:
-            self["dash"] = _v
-        _v = arg.pop("reversescale", None)
-        _v = reversescale if reversescale is not None else _v
-        if _v is not None:
-            self["reversescale"] = _v
-        _v = arg.pop("showscale", None)
-        _v = showscale if showscale is not None else _v
-        if _v is not None:
-            self["showscale"] = _v
-        _v = arg.pop("width", None)
-        _v = width if width is not None else _v
-        if _v is not None:
-            self["width"] = _v
+        self._init_provided('autocolorscale', arg, autocolorscale)
+        self._init_provided('cauto', arg, cauto)
+        self._init_provided('cmax', arg, cmax)
+        self._init_provided('cmid', arg, cmid)
+        self._init_provided('cmin', arg, cmin)
+        self._init_provided('color', arg, color)
+        self._init_provided('coloraxis', arg, coloraxis)
+        self._init_provided('colorbar', arg, colorbar)
+        self._init_provided('colorscale', arg, colorscale)
+        self._init_provided('colorsrc', arg, colorsrc)
+        self._init_provided('dash', arg, dash)
+        self._init_provided('reversescale', arg, reversescale)
+        self._init_provided('showscale', arg, showscale)
+        self._init_provided('width', arg, width)
 
         # Process unknown kwargs
         # ----------------------

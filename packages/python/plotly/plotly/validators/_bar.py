@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class BarValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="bar", parent_name="", **kwargs):
-        super(BarValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Bar"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='bar',
+                       parent_name='',
+                       **kwargs):
+        super(BarValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Bar'),
+                 data_docs=kwargs.pop('data_docs', """
             alignmentgroup
                 Set several traces linked to the same position
                 axis or matching axes to the same
@@ -426,7 +427,5 @@ class BarValidator(_plotly_utils.basevalidators.CompoundValidator):
                 displayed, relative to other SVG traces on the
                 same subplot. SVG traces with higher `zorder`
                 appear in front of those with lower `zorder`.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

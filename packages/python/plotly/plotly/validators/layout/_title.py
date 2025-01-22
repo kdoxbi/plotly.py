@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class TitleValidator(_plotly_utils.basevalidators.TitleValidator):
-    def __init__(self, plotly_name="title", parent_name="layout", **kwargs):
-        super(TitleValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Title"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='title',
+                       parent_name='layout',
+                       **kwargs):
+        super(TitleValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Title'),
+                 data_docs=kwargs.pop('data_docs', """
             automargin
                 Determines whether the title can automatically
                 push the figure margins. If `yref='paper'` then
@@ -77,7 +78,5 @@ class TitleValidator(_plotly_utils.basevalidators.TitleValidator):
                 Sets the container `y` refers to. "container"
                 spans the entire `height` of the plot. "paper"
                 refers to the height of the plotting area only.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

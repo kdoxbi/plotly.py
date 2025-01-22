@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class CandlestickValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="candlestick", parent_name="", **kwargs):
-        super(CandlestickValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Candlestick"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='candlestick',
+                       parent_name='',
+                       **kwargs):
+        super(CandlestickValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Candlestick'),
+                 data_docs=kwargs.pop('data_docs', """
             close
                 Sets the close values.
             closesrc
@@ -263,7 +264,5 @@ class CandlestickValidator(_plotly_utils.basevalidators.CompoundValidator):
                 displayed, relative to other SVG traces on the
                 same subplot. SVG traces with higher `zorder`
                 appear in front of those with lower `zorder`.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

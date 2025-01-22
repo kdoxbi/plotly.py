@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class SelectionsValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
-    def __init__(self, plotly_name="selections", parent_name="layout", **kwargs):
-        super(SelectionsValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Selection"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='selections',
+                       parent_name='layout',
+                       **kwargs):
+        super(SelectionsValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Selection'),
+                 data_docs=kwargs.pop('data_docs', """
             line
                 :class:`plotly.graph_objects.layout.selection.L
                 ine` instance or dict with compatible
@@ -87,7 +88,5 @@ class SelectionsValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
                 domain of the second y  axis and a y position
                 of 0.5 refers to the point between the bottom
                 and the top of the domain of the second y axis.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
@@ -6,8 +8,8 @@ class Decreasing(_BaseTraceHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "indicator.delta"
-    _path_str = "indicator.delta.decreasing"
+    _parent_path_str = 'indicator.delta'
+    _path_str = 'indicator.delta.decreasing'
     _valid_props = {"color", "symbol"}
 
     # color
@@ -63,11 +65,11 @@ class Decreasing(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["color"]
+        return self['color']
 
     @color.setter
     def color(self, val):
-        self["color"] = val
+        self['color'] = val
 
     # symbol
     # ------
@@ -84,11 +86,11 @@ class Decreasing(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["symbol"]
+        return self['symbol']
 
     @symbol.setter
     def symbol(self, val):
-        self["symbol"] = val
+        self['symbol'] = val
 
     # Self properties description
     # ---------------------------
@@ -100,8 +102,12 @@ class Decreasing(_BaseTraceHierarchyType):
         symbol
             Sets the symbol to display for increasing value
         """
-
-    def __init__(self, arg=None, color=None, symbol=None, **kwargs):
+    def __init__(self,
+            arg=None,
+            color=None,
+            symbol=None,
+            **kwargs
+        ):
         """
         Construct a new Decreasing object
 
@@ -120,10 +126,10 @@ class Decreasing(_BaseTraceHierarchyType):
         -------
         Decreasing
         """
-        super(Decreasing, self).__init__("decreasing")
+        super(Decreasing, self).__init__('decreasing')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -135,28 +141,21 @@ class Decreasing(_BaseTraceHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.indicator.delta.Decreasing
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.indicator.delta.Decreasing`"""
-            )
+an instance of :class:`plotly.graph_objs.indicator.delta.Decreasing`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("color", None)
-        _v = color if color is not None else _v
-        if _v is not None:
-            self["color"] = _v
-        _v = arg.pop("symbol", None)
-        _v = symbol if symbol is not None else _v
-        if _v is not None:
-            self["symbol"] = _v
+        self._init_provided('color', arg, color)
+        self._init_provided('symbol', arg, symbol)
 
         # Process unknown kwargs
         # ----------------------

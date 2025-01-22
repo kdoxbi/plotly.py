@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
@@ -6,8 +8,8 @@ class Fill(_BaseLayoutHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "layout.mapbox.layer"
-    _path_str = "layout.mapbox.layer.fill"
+    _parent_path_str = 'layout.mapbox.layer'
+    _path_str = 'layout.mapbox.layer.fill'
     _valid_props = {"outlinecolor"}
 
     # outlinecolor
@@ -64,11 +66,11 @@ class Fill(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["outlinecolor"]
+        return self['outlinecolor']
 
     @outlinecolor.setter
     def outlinecolor(self, val):
-        self["outlinecolor"] = val
+        self['outlinecolor'] = val
 
     # Self properties description
     # ---------------------------
@@ -80,8 +82,11 @@ class Fill(_BaseLayoutHierarchyType):
             outline-color). Has an effect only when `type` is set
             to "fill".
         """
-
-    def __init__(self, arg=None, outlinecolor=None, **kwargs):
+    def __init__(self,
+            arg=None,
+            outlinecolor=None,
+            **kwargs
+        ):
         """
         Construct a new Fill object
 
@@ -100,10 +105,10 @@ class Fill(_BaseLayoutHierarchyType):
         -------
         Fill
         """
-        super(Fill, self).__init__("fill")
+        super(Fill, self).__init__('fill')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -115,24 +120,20 @@ class Fill(_BaseLayoutHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.layout.mapbox.layer.Fill
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.layout.mapbox.layer.Fill`"""
-            )
+an instance of :class:`plotly.graph_objs.layout.mapbox.layer.Fill`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("outlinecolor", None)
-        _v = outlinecolor if outlinecolor is not None else _v
-        if _v is not None:
-            self["outlinecolor"] = _v
+        self._init_provided('outlinecolor', arg, outlinecolor)
 
         # Process unknown kwargs
         # ----------------------

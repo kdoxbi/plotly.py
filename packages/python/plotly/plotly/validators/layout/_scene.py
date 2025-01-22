@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class SceneValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="scene", parent_name="layout", **kwargs):
-        super(SceneValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Scene"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='scene',
+                       parent_name='layout',
+                       **kwargs):
+        super(SceneValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Scene'),
+                 data_docs=kwargs.pop('data_docs', """
             annotations
                 A tuple of :class:`plotly.graph_objects.layout.
                 scene.Annotation` instances or dicts with
@@ -61,7 +62,5 @@ class SceneValidator(_plotly_utils.basevalidators.CompoundValidator):
             zaxis
                 :class:`plotly.graph_objects.layout.scene.ZAxis
                 ` instance or dict with compatible properties
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

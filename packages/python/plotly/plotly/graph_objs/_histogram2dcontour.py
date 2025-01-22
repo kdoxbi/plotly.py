@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
@@ -6,75 +8,9 @@ class Histogram2dContour(_BaseTraceType):
 
     # class properties
     # --------------------
-    _parent_path_str = ""
-    _path_str = "histogram2dcontour"
-    _valid_props = {
-        "autobinx",
-        "autobiny",
-        "autocolorscale",
-        "autocontour",
-        "bingroup",
-        "coloraxis",
-        "colorbar",
-        "colorscale",
-        "contours",
-        "customdata",
-        "customdatasrc",
-        "histfunc",
-        "histnorm",
-        "hoverinfo",
-        "hoverinfosrc",
-        "hoverlabel",
-        "hovertemplate",
-        "hovertemplatesrc",
-        "ids",
-        "idssrc",
-        "legend",
-        "legendgroup",
-        "legendgrouptitle",
-        "legendrank",
-        "legendwidth",
-        "line",
-        "marker",
-        "meta",
-        "metasrc",
-        "name",
-        "nbinsx",
-        "nbinsy",
-        "ncontours",
-        "opacity",
-        "reversescale",
-        "showlegend",
-        "showscale",
-        "stream",
-        "textfont",
-        "texttemplate",
-        "type",
-        "uid",
-        "uirevision",
-        "visible",
-        "x",
-        "xaxis",
-        "xbingroup",
-        "xbins",
-        "xcalendar",
-        "xhoverformat",
-        "xsrc",
-        "y",
-        "yaxis",
-        "ybingroup",
-        "ybins",
-        "ycalendar",
-        "yhoverformat",
-        "ysrc",
-        "z",
-        "zauto",
-        "zhoverformat",
-        "zmax",
-        "zmid",
-        "zmin",
-        "zsrc",
-    }
+    _parent_path_str = ''
+    _path_str = 'histogram2dcontour'
+    _valid_props = {"autobinx", "autobiny", "autocolorscale", "autocontour", "bingroup", "coloraxis", "colorbar", "colorscale", "contours", "customdata", "customdatasrc", "histfunc", "histnorm", "hoverinfo", "hoverinfosrc", "hoverlabel", "hovertemplate", "hovertemplatesrc", "ids", "idssrc", "legend", "legendgroup", "legendgrouptitle", "legendrank", "legendwidth", "line", "marker", "meta", "metasrc", "name", "nbinsx", "nbinsy", "ncontours", "opacity", "reversescale", "showlegend", "showscale", "stream", "textfont", "texttemplate", "type", "uid", "uirevision", "visible", "x", "xaxis", "xbingroup", "xbins", "xcalendar", "xhoverformat", "xsrc", "y", "yaxis", "ybingroup", "ybins", "ycalendar", "yhoverformat", "ysrc", "z", "zauto", "zhoverformat", "zmax", "zmid", "zmin", "zsrc"}
 
     # autobinx
     # --------
@@ -93,11 +29,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         bool
         """
-        return self["autobinx"]
+        return self['autobinx']
 
     @autobinx.setter
     def autobinx(self, val):
-        self["autobinx"] = val
+        self['autobinx'] = val
 
     # autobiny
     # --------
@@ -116,11 +52,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         bool
         """
-        return self["autobiny"]
+        return self['autobiny']
 
     @autobiny.setter
     def autobiny(self, val):
-        self["autobiny"] = val
+        self['autobiny'] = val
 
     # autocolorscale
     # --------------
@@ -141,11 +77,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         bool
         """
-        return self["autocolorscale"]
+        return self['autocolorscale']
 
     @autocolorscale.setter
     def autocolorscale(self, val):
-        self["autocolorscale"] = val
+        self['autocolorscale'] = val
 
     # autocontour
     # -----------
@@ -164,11 +100,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         bool
         """
-        return self["autocontour"]
+        return self['autocontour']
 
     @autocontour.setter
     def autocontour(self, val):
-        self["autocontour"] = val
+        self['autocontour'] = val
 
     # bingroup
     # --------
@@ -187,11 +123,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         str
         """
-        return self["bingroup"]
+        return self['bingroup']
 
     @bingroup.setter
     def bingroup(self, val):
-        self["bingroup"] = val
+        self['bingroup'] = val
 
     # coloraxis
     # ---------
@@ -214,11 +150,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         str
         """
-        return self["coloraxis"]
+        return self['coloraxis']
 
     @coloraxis.setter
     def coloraxis(self, val):
-        self["coloraxis"] = val
+        self['coloraxis'] = val
 
     # colorbar
     # --------
@@ -230,9 +166,9 @@ class Histogram2dContour(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.histogram2dcontour.ColorBar`
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
-
+    
             Supported dict properties:
-
+                
                 bgcolor
                     Sets the color of padded area.
                 bordercolor
@@ -502,11 +438,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         plotly.graph_objs.histogram2dcontour.ColorBar
         """
-        return self["colorbar"]
+        return self['colorbar']
 
     @colorbar.setter
     def colorbar(self, val):
-        self["colorbar"] = val
+        self['colorbar'] = val
 
     # colorscale
     # ----------
@@ -555,11 +491,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         str
         """
-        return self["colorscale"]
+        return self['colorscale']
 
     @colorscale.setter
     def colorscale(self, val):
-        self["colorscale"] = val
+        self['colorscale'] = val
 
     # contours
     # --------
@@ -571,9 +507,9 @@ class Histogram2dContour(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.histogram2dcontour.Contours`
           - A dict of string/value properties that will be passed
             to the Contours constructor
-
+    
             Supported dict properties:
-
+                
                 coloring
                     Determines the coloring method showing the
                     contour values. If "fill", coloring is done
@@ -642,11 +578,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         plotly.graph_objs.histogram2dcontour.Contours
         """
-        return self["contours"]
+        return self['contours']
 
     @contours.setter
     def contours(self, val):
-        self["contours"] = val
+        self['contours'] = val
 
     # customdata
     # ----------
@@ -665,11 +601,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["customdata"]
+        return self['customdata']
 
     @customdata.setter
     def customdata(self, val):
-        self["customdata"] = val
+        self['customdata'] = val
 
     # customdatasrc
     # -------------
@@ -686,11 +622,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         str
         """
-        return self["customdatasrc"]
+        return self['customdatasrc']
 
     @customdatasrc.setter
     def customdatasrc(self, val):
-        self["customdatasrc"] = val
+        self['customdatasrc'] = val
 
     # histfunc
     # --------
@@ -712,11 +648,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         Any
         """
-        return self["histfunc"]
+        return self['histfunc']
 
     @histfunc.setter
     def histfunc(self, val):
-        self["histfunc"] = val
+        self['histfunc'] = val
 
     # histnorm
     # --------
@@ -746,11 +682,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         Any
         """
-        return self["histnorm"]
+        return self['histnorm']
 
     @histnorm.setter
     def histnorm(self, val):
-        self["histnorm"] = val
+        self['histnorm'] = val
 
     # hoverinfo
     # ---------
@@ -772,11 +708,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         Any|numpy.ndarray
         """
-        return self["hoverinfo"]
+        return self['hoverinfo']
 
     @hoverinfo.setter
     def hoverinfo(self, val):
-        self["hoverinfo"] = val
+        self['hoverinfo'] = val
 
     # hoverinfosrc
     # ------------
@@ -793,11 +729,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         str
         """
-        return self["hoverinfosrc"]
+        return self['hoverinfosrc']
 
     @hoverinfosrc.setter
     def hoverinfosrc(self, val):
-        self["hoverinfosrc"] = val
+        self['hoverinfosrc'] = val
 
     # hoverlabel
     # ----------
@@ -809,9 +745,9 @@ class Histogram2dContour(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.histogram2dcontour.Hoverlabel`
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
-
+    
             Supported dict properties:
-
+                
                 align
                     Sets the horizontal alignment of the text
                     content within hover label box. Has an effect
@@ -852,11 +788,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         plotly.graph_objs.histogram2dcontour.Hoverlabel
         """
-        return self["hoverlabel"]
+        return self['hoverlabel']
 
     @hoverlabel.setter
     def hoverlabel(self, val):
-        self["hoverlabel"] = val
+        self['hoverlabel'] = val
 
     # hovertemplate
     # -------------
@@ -897,11 +833,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         str|numpy.ndarray
         """
-        return self["hovertemplate"]
+        return self['hovertemplate']
 
     @hovertemplate.setter
     def hovertemplate(self, val):
-        self["hovertemplate"] = val
+        self['hovertemplate'] = val
 
     # hovertemplatesrc
     # ----------------
@@ -918,11 +854,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         str
         """
-        return self["hovertemplatesrc"]
+        return self['hovertemplatesrc']
 
     @hovertemplatesrc.setter
     def hovertemplatesrc(self, val):
-        self["hovertemplatesrc"] = val
+        self['hovertemplatesrc'] = val
 
     # ids
     # ---
@@ -940,11 +876,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["ids"]
+        return self['ids']
 
     @ids.setter
     def ids(self, val):
-        self["ids"] = val
+        self['ids'] = val
 
     # idssrc
     # ------
@@ -960,11 +896,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         str
         """
-        return self["idssrc"]
+        return self['idssrc']
 
     @idssrc.setter
     def idssrc(self, val):
-        self["idssrc"] = val
+        self['idssrc'] = val
 
     # legend
     # ------
@@ -985,11 +921,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         str
         """
-        return self["legend"]
+        return self['legend']
 
     @legend.setter
     def legend(self, val):
-        self["legend"] = val
+        self['legend'] = val
 
     # legendgroup
     # -----------
@@ -1008,11 +944,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         str
         """
-        return self["legendgroup"]
+        return self['legendgroup']
 
     @legendgroup.setter
     def legendgroup(self, val):
-        self["legendgroup"] = val
+        self['legendgroup'] = val
 
     # legendgrouptitle
     # ----------------
@@ -1024,9 +960,9 @@ class Histogram2dContour(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.histogram2dcontour.Legendgrouptitle`
           - A dict of string/value properties that will be passed
             to the Legendgrouptitle constructor
-
+    
             Supported dict properties:
-
+                
                 font
                     Sets this legend group's title font.
                 text
@@ -1036,11 +972,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         plotly.graph_objs.histogram2dcontour.Legendgrouptitle
         """
-        return self["legendgrouptitle"]
+        return self['legendgrouptitle']
 
     @legendgrouptitle.setter
     def legendgrouptitle(self, val):
-        self["legendgrouptitle"] = val
+        self['legendgrouptitle'] = val
 
     # legendrank
     # ----------
@@ -1063,11 +999,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         int|float
         """
-        return self["legendrank"]
+        return self['legendrank']
 
     @legendrank.setter
     def legendrank(self, val):
-        self["legendrank"] = val
+        self['legendrank'] = val
 
     # legendwidth
     # -----------
@@ -1084,11 +1020,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         int|float
         """
-        return self["legendwidth"]
+        return self['legendwidth']
 
     @legendwidth.setter
     def legendwidth(self, val):
-        self["legendwidth"] = val
+        self['legendwidth'] = val
 
     # line
     # ----
@@ -1100,9 +1036,9 @@ class Histogram2dContour(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.histogram2dcontour.Line`
           - A dict of string/value properties that will be passed
             to the Line constructor
-
+    
             Supported dict properties:
-
+                
                 color
                     Sets the color of the contour level. Has no
                     effect if `contours.coloring` is set to
@@ -1122,11 +1058,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         plotly.graph_objs.histogram2dcontour.Line
         """
-        return self["line"]
+        return self['line']
 
     @line.setter
     def line(self, val):
-        self["line"] = val
+        self['line'] = val
 
     # marker
     # ------
@@ -1138,9 +1074,9 @@ class Histogram2dContour(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.histogram2dcontour.Marker`
           - A dict of string/value properties that will be passed
             to the Marker constructor
-
+    
             Supported dict properties:
-
+                
                 color
                     Sets the aggregation data.
                 colorsrc
@@ -1151,11 +1087,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         plotly.graph_objs.histogram2dcontour.Marker
         """
-        return self["marker"]
+        return self['marker']
 
     @marker.setter
     def marker(self, val):
-        self["marker"] = val
+        self['marker'] = val
 
     # meta
     # ----
@@ -1179,11 +1115,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         Any|numpy.ndarray
         """
-        return self["meta"]
+        return self['meta']
 
     @meta.setter
     def meta(self, val):
-        self["meta"] = val
+        self['meta'] = val
 
     # metasrc
     # -------
@@ -1199,11 +1135,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         str
         """
-        return self["metasrc"]
+        return self['metasrc']
 
     @metasrc.setter
     def metasrc(self, val):
-        self["metasrc"] = val
+        self['metasrc'] = val
 
     # name
     # ----
@@ -1221,11 +1157,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         str
         """
-        return self["name"]
+        return self['name']
 
     @name.setter
     def name(self, val):
-        self["name"] = val
+        self['name'] = val
 
     # nbinsx
     # ------
@@ -1245,11 +1181,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         int
         """
-        return self["nbinsx"]
+        return self['nbinsx']
 
     @nbinsx.setter
     def nbinsx(self, val):
-        self["nbinsx"] = val
+        self['nbinsx'] = val
 
     # nbinsy
     # ------
@@ -1269,11 +1205,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         int
         """
-        return self["nbinsy"]
+        return self['nbinsy']
 
     @nbinsy.setter
     def nbinsy(self, val):
-        self["nbinsy"] = val
+        self['nbinsy'] = val
 
     # ncontours
     # ---------
@@ -1293,11 +1229,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         int
         """
-        return self["ncontours"]
+        return self['ncontours']
 
     @ncontours.setter
     def ncontours(self, val):
-        self["ncontours"] = val
+        self['ncontours'] = val
 
     # opacity
     # -------
@@ -1313,11 +1249,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         int|float
         """
-        return self["opacity"]
+        return self['opacity']
 
     @opacity.setter
     def opacity(self, val):
-        self["opacity"] = val
+        self['opacity'] = val
 
     # reversescale
     # ------------
@@ -1335,11 +1271,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         bool
         """
-        return self["reversescale"]
+        return self['reversescale']
 
     @reversescale.setter
     def reversescale(self, val):
-        self["reversescale"] = val
+        self['reversescale'] = val
 
     # showlegend
     # ----------
@@ -1356,11 +1292,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         bool
         """
-        return self["showlegend"]
+        return self['showlegend']
 
     @showlegend.setter
     def showlegend(self, val):
-        self["showlegend"] = val
+        self['showlegend'] = val
 
     # showscale
     # ---------
@@ -1377,11 +1313,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         bool
         """
-        return self["showscale"]
+        return self['showscale']
 
     @showscale.setter
     def showscale(self, val):
-        self["showscale"] = val
+        self['showscale'] = val
 
     # stream
     # ------
@@ -1393,9 +1329,9 @@ class Histogram2dContour(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.histogram2dcontour.Stream`
           - A dict of string/value properties that will be passed
             to the Stream constructor
-
+    
             Supported dict properties:
-
+                
                 maxpoints
                     Sets the maximum number of points to keep on
                     the plots from an incoming stream. If
@@ -1410,11 +1346,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         plotly.graph_objs.histogram2dcontour.Stream
         """
-        return self["stream"]
+        return self['stream']
 
     @stream.setter
     def stream(self, val):
-        self["stream"] = val
+        self['stream'] = val
 
     # textfont
     # --------
@@ -1429,11 +1365,11 @@ class Histogram2dContour(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.histogram2dcontour.Textfont`
           - A dict of string/value properties that will be passed
             to the Textfont constructor
-
+    
             Supported dict properties:
-
+                
                 color
-
+    
                 family
                     HTML font family - the typeface that will be
                     applied by the web browser. The web browser
@@ -1463,7 +1399,7 @@ class Histogram2dContour(_BaseTraceType):
                     US/docs/Web/CSS/text-shadow for additional
                     options.
                 size
-
+    
                 style
                     Sets whether a font should be styled with a
                     normal or italic face from its family.
@@ -1480,11 +1416,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         plotly.graph_objs.histogram2dcontour.Textfont
         """
-        return self["textfont"]
+        return self['textfont']
 
     @textfont.setter
     def textfont(self, val):
-        self["textfont"] = val
+        self['textfont'] = val
 
     # texttemplate
     # ------------
@@ -1515,11 +1451,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         str
         """
-        return self["texttemplate"]
+        return self['texttemplate']
 
     @texttemplate.setter
     def texttemplate(self, val):
-        self["texttemplate"] = val
+        self['texttemplate'] = val
 
     # uid
     # ---
@@ -1537,11 +1473,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         str
         """
-        return self["uid"]
+        return self['uid']
 
     @uid.setter
     def uid(self, val):
-        self["uid"] = val
+        self['uid'] = val
 
     # uirevision
     # ----------
@@ -1570,11 +1506,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         Any
         """
-        return self["uirevision"]
+        return self['uirevision']
 
     @uirevision.setter
     def uirevision(self, val):
-        self["uirevision"] = val
+        self['uirevision'] = val
 
     # visible
     # -------
@@ -1593,11 +1529,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         Any
         """
-        return self["visible"]
+        return self['visible']
 
     @visible.setter
     def visible(self, val):
-        self["visible"] = val
+        self['visible'] = val
 
     # x
     # -
@@ -1613,11 +1549,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["x"]
+        return self['x']
 
     @x.setter
     def x(self, val):
-        self["x"] = val
+        self['x'] = val
 
     # xaxis
     # -----
@@ -1638,11 +1574,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         str
         """
-        return self["xaxis"]
+        return self['xaxis']
 
     @xaxis.setter
     def xaxis(self, val):
-        self["xaxis"] = val
+        self['xaxis'] = val
 
     # xbingroup
     # ---------
@@ -1663,11 +1599,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         str
         """
-        return self["xbingroup"]
+        return self['xbingroup']
 
     @xbingroup.setter
     def xbingroup(self, val):
-        self["xbingroup"] = val
+        self['xbingroup'] = val
 
     # xbins
     # -----
@@ -1679,9 +1615,9 @@ class Histogram2dContour(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.histogram2dcontour.XBins`
           - A dict of string/value properties that will be passed
             to the XBins constructor
-
+    
             Supported dict properties:
-
+                
                 end
                     Sets the end value for the x axis bins. The
                     last bin may not end exactly at this value, we
@@ -1721,11 +1657,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         plotly.graph_objs.histogram2dcontour.XBins
         """
-        return self["xbins"]
+        return self['xbins']
 
     @xbins.setter
     def xbins(self, val):
-        self["xbins"] = val
+        self['xbins'] = val
 
     # xcalendar
     # ---------
@@ -1745,11 +1681,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         Any
         """
-        return self["xcalendar"]
+        return self['xcalendar']
 
     @xcalendar.setter
     def xcalendar(self, val):
-        self["xcalendar"] = val
+        self['xcalendar'] = val
 
     # xhoverformat
     # ------------
@@ -1776,11 +1712,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         str
         """
-        return self["xhoverformat"]
+        return self['xhoverformat']
 
     @xhoverformat.setter
     def xhoverformat(self, val):
-        self["xhoverformat"] = val
+        self['xhoverformat'] = val
 
     # xsrc
     # ----
@@ -1796,11 +1732,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         str
         """
-        return self["xsrc"]
+        return self['xsrc']
 
     @xsrc.setter
     def xsrc(self, val):
-        self["xsrc"] = val
+        self['xsrc'] = val
 
     # y
     # -
@@ -1816,11 +1752,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["y"]
+        return self['y']
 
     @y.setter
     def y(self, val):
-        self["y"] = val
+        self['y'] = val
 
     # yaxis
     # -----
@@ -1841,11 +1777,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         str
         """
-        return self["yaxis"]
+        return self['yaxis']
 
     @yaxis.setter
     def yaxis(self, val):
-        self["yaxis"] = val
+        self['yaxis'] = val
 
     # ybingroup
     # ---------
@@ -1866,11 +1802,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         str
         """
-        return self["ybingroup"]
+        return self['ybingroup']
 
     @ybingroup.setter
     def ybingroup(self, val):
-        self["ybingroup"] = val
+        self['ybingroup'] = val
 
     # ybins
     # -----
@@ -1882,9 +1818,9 @@ class Histogram2dContour(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.histogram2dcontour.YBins`
           - A dict of string/value properties that will be passed
             to the YBins constructor
-
+    
             Supported dict properties:
-
+                
                 end
                     Sets the end value for the y axis bins. The
                     last bin may not end exactly at this value, we
@@ -1924,11 +1860,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         plotly.graph_objs.histogram2dcontour.YBins
         """
-        return self["ybins"]
+        return self['ybins']
 
     @ybins.setter
     def ybins(self, val):
-        self["ybins"] = val
+        self['ybins'] = val
 
     # ycalendar
     # ---------
@@ -1948,11 +1884,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         Any
         """
-        return self["ycalendar"]
+        return self['ycalendar']
 
     @ycalendar.setter
     def ycalendar(self, val):
-        self["ycalendar"] = val
+        self['ycalendar'] = val
 
     # yhoverformat
     # ------------
@@ -1979,11 +1915,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         str
         """
-        return self["yhoverformat"]
+        return self['yhoverformat']
 
     @yhoverformat.setter
     def yhoverformat(self, val):
-        self["yhoverformat"] = val
+        self['yhoverformat'] = val
 
     # ysrc
     # ----
@@ -1999,11 +1935,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         str
         """
-        return self["ysrc"]
+        return self['ysrc']
 
     @ysrc.setter
     def ysrc(self, val):
-        self["ysrc"] = val
+        self['ysrc'] = val
 
     # z
     # -
@@ -2019,11 +1955,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["z"]
+        return self['z']
 
     @z.setter
     def z(self, val):
-        self["z"] = val
+        self['z'] = val
 
     # zauto
     # -----
@@ -2042,11 +1978,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         bool
         """
-        return self["zauto"]
+        return self['zauto']
 
     @zauto.setter
     def zauto(self, val):
-        self["zauto"] = val
+        self['zauto'] = val
 
     # zhoverformat
     # ------------
@@ -2067,11 +2003,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         str
         """
-        return self["zhoverformat"]
+        return self['zhoverformat']
 
     @zhoverformat.setter
     def zhoverformat(self, val):
-        self["zhoverformat"] = val
+        self['zhoverformat'] = val
 
     # zmax
     # ----
@@ -2088,11 +2024,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         int|float
         """
-        return self["zmax"]
+        return self['zmax']
 
     @zmax.setter
     def zmax(self, val):
-        self["zmax"] = val
+        self['zmax'] = val
 
     # zmid
     # ----
@@ -2110,11 +2046,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         int|float
         """
-        return self["zmid"]
+        return self['zmid']
 
     @zmid.setter
     def zmid(self, val):
-        self["zmid"] = val
+        self['zmid'] = val
 
     # zmin
     # ----
@@ -2131,11 +2067,11 @@ class Histogram2dContour(_BaseTraceType):
         -------
         int|float
         """
-        return self["zmin"]
+        return self['zmin']
 
     @zmin.setter
     def zmin(self, val):
-        self["zmin"] = val
+        self['zmin'] = val
 
     # zsrc
     # ----
@@ -2151,17 +2087,17 @@ class Histogram2dContour(_BaseTraceType):
         -------
         str
         """
-        return self["zsrc"]
+        return self['zsrc']
 
     @zsrc.setter
     def zsrc(self, val):
-        self["zsrc"] = val
+        self['zsrc'] = val
 
     # type
     # ----
     @property
     def type(self):
-        return self._props["type"]
+        return self._props['type']
 
     # Self properties description
     # ---------------------------
@@ -2538,76 +2474,74 @@ class Histogram2dContour(_BaseTraceType):
             Sets the source reference on Chart Studio Cloud for
             `z`.
         """
-
-    def __init__(
-        self,
-        arg=None,
-        autobinx=None,
-        autobiny=None,
-        autocolorscale=None,
-        autocontour=None,
-        bingroup=None,
-        coloraxis=None,
-        colorbar=None,
-        colorscale=None,
-        contours=None,
-        customdata=None,
-        customdatasrc=None,
-        histfunc=None,
-        histnorm=None,
-        hoverinfo=None,
-        hoverinfosrc=None,
-        hoverlabel=None,
-        hovertemplate=None,
-        hovertemplatesrc=None,
-        ids=None,
-        idssrc=None,
-        legend=None,
-        legendgroup=None,
-        legendgrouptitle=None,
-        legendrank=None,
-        legendwidth=None,
-        line=None,
-        marker=None,
-        meta=None,
-        metasrc=None,
-        name=None,
-        nbinsx=None,
-        nbinsy=None,
-        ncontours=None,
-        opacity=None,
-        reversescale=None,
-        showlegend=None,
-        showscale=None,
-        stream=None,
-        textfont=None,
-        texttemplate=None,
-        uid=None,
-        uirevision=None,
-        visible=None,
-        x=None,
-        xaxis=None,
-        xbingroup=None,
-        xbins=None,
-        xcalendar=None,
-        xhoverformat=None,
-        xsrc=None,
-        y=None,
-        yaxis=None,
-        ybingroup=None,
-        ybins=None,
-        ycalendar=None,
-        yhoverformat=None,
-        ysrc=None,
-        z=None,
-        zauto=None,
-        zhoverformat=None,
-        zmax=None,
-        zmid=None,
-        zmin=None,
-        zsrc=None,
-        **kwargs,
-    ):
+    def __init__(self,
+            arg=None,
+            autobinx=None,
+            autobiny=None,
+            autocolorscale=None,
+            autocontour=None,
+            bingroup=None,
+            coloraxis=None,
+            colorbar=None,
+            colorscale=None,
+            contours=None,
+            customdata=None,
+            customdatasrc=None,
+            histfunc=None,
+            histnorm=None,
+            hoverinfo=None,
+            hoverinfosrc=None,
+            hoverlabel=None,
+            hovertemplate=None,
+            hovertemplatesrc=None,
+            ids=None,
+            idssrc=None,
+            legend=None,
+            legendgroup=None,
+            legendgrouptitle=None,
+            legendrank=None,
+            legendwidth=None,
+            line=None,
+            marker=None,
+            meta=None,
+            metasrc=None,
+            name=None,
+            nbinsx=None,
+            nbinsy=None,
+            ncontours=None,
+            opacity=None,
+            reversescale=None,
+            showlegend=None,
+            showscale=None,
+            stream=None,
+            textfont=None,
+            texttemplate=None,
+            uid=None,
+            uirevision=None,
+            visible=None,
+            x=None,
+            xaxis=None,
+            xbingroup=None,
+            xbins=None,
+            xcalendar=None,
+            xhoverformat=None,
+            xsrc=None,
+            y=None,
+            yaxis=None,
+            ybingroup=None,
+            ybins=None,
+            ycalendar=None,
+            yhoverformat=None,
+            ysrc=None,
+            z=None,
+            zauto=None,
+            zhoverformat=None,
+            zmax=None,
+            zmid=None,
+            zmin=None,
+            zsrc=None,
+            **kwargs
+        ):
         """
         Construct a new Histogram2dContour object
 
@@ -2998,10 +2932,10 @@ class Histogram2dContour(_BaseTraceType):
         -------
         Histogram2dContour
         """
-        super(Histogram2dContour, self).__init__("histogram2dcontour")
+        super(Histogram2dContour, self).__init__('histogram2dcontour')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -3013,282 +2947,89 @@ class Histogram2dContour(_BaseTraceType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.Histogram2dContour
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.Histogram2dContour`"""
-            )
+an instance of :class:`plotly.graph_objs.Histogram2dContour`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("autobinx", None)
-        _v = autobinx if autobinx is not None else _v
-        if _v is not None:
-            self["autobinx"] = _v
-        _v = arg.pop("autobiny", None)
-        _v = autobiny if autobiny is not None else _v
-        if _v is not None:
-            self["autobiny"] = _v
-        _v = arg.pop("autocolorscale", None)
-        _v = autocolorscale if autocolorscale is not None else _v
-        if _v is not None:
-            self["autocolorscale"] = _v
-        _v = arg.pop("autocontour", None)
-        _v = autocontour if autocontour is not None else _v
-        if _v is not None:
-            self["autocontour"] = _v
-        _v = arg.pop("bingroup", None)
-        _v = bingroup if bingroup is not None else _v
-        if _v is not None:
-            self["bingroup"] = _v
-        _v = arg.pop("coloraxis", None)
-        _v = coloraxis if coloraxis is not None else _v
-        if _v is not None:
-            self["coloraxis"] = _v
-        _v = arg.pop("colorbar", None)
-        _v = colorbar if colorbar is not None else _v
-        if _v is not None:
-            self["colorbar"] = _v
-        _v = arg.pop("colorscale", None)
-        _v = colorscale if colorscale is not None else _v
-        if _v is not None:
-            self["colorscale"] = _v
-        _v = arg.pop("contours", None)
-        _v = contours if contours is not None else _v
-        if _v is not None:
-            self["contours"] = _v
-        _v = arg.pop("customdata", None)
-        _v = customdata if customdata is not None else _v
-        if _v is not None:
-            self["customdata"] = _v
-        _v = arg.pop("customdatasrc", None)
-        _v = customdatasrc if customdatasrc is not None else _v
-        if _v is not None:
-            self["customdatasrc"] = _v
-        _v = arg.pop("histfunc", None)
-        _v = histfunc if histfunc is not None else _v
-        if _v is not None:
-            self["histfunc"] = _v
-        _v = arg.pop("histnorm", None)
-        _v = histnorm if histnorm is not None else _v
-        if _v is not None:
-            self["histnorm"] = _v
-        _v = arg.pop("hoverinfo", None)
-        _v = hoverinfo if hoverinfo is not None else _v
-        if _v is not None:
-            self["hoverinfo"] = _v
-        _v = arg.pop("hoverinfosrc", None)
-        _v = hoverinfosrc if hoverinfosrc is not None else _v
-        if _v is not None:
-            self["hoverinfosrc"] = _v
-        _v = arg.pop("hoverlabel", None)
-        _v = hoverlabel if hoverlabel is not None else _v
-        if _v is not None:
-            self["hoverlabel"] = _v
-        _v = arg.pop("hovertemplate", None)
-        _v = hovertemplate if hovertemplate is not None else _v
-        if _v is not None:
-            self["hovertemplate"] = _v
-        _v = arg.pop("hovertemplatesrc", None)
-        _v = hovertemplatesrc if hovertemplatesrc is not None else _v
-        if _v is not None:
-            self["hovertemplatesrc"] = _v
-        _v = arg.pop("ids", None)
-        _v = ids if ids is not None else _v
-        if _v is not None:
-            self["ids"] = _v
-        _v = arg.pop("idssrc", None)
-        _v = idssrc if idssrc is not None else _v
-        if _v is not None:
-            self["idssrc"] = _v
-        _v = arg.pop("legend", None)
-        _v = legend if legend is not None else _v
-        if _v is not None:
-            self["legend"] = _v
-        _v = arg.pop("legendgroup", None)
-        _v = legendgroup if legendgroup is not None else _v
-        if _v is not None:
-            self["legendgroup"] = _v
-        _v = arg.pop("legendgrouptitle", None)
-        _v = legendgrouptitle if legendgrouptitle is not None else _v
-        if _v is not None:
-            self["legendgrouptitle"] = _v
-        _v = arg.pop("legendrank", None)
-        _v = legendrank if legendrank is not None else _v
-        if _v is not None:
-            self["legendrank"] = _v
-        _v = arg.pop("legendwidth", None)
-        _v = legendwidth if legendwidth is not None else _v
-        if _v is not None:
-            self["legendwidth"] = _v
-        _v = arg.pop("line", None)
-        _v = line if line is not None else _v
-        if _v is not None:
-            self["line"] = _v
-        _v = arg.pop("marker", None)
-        _v = marker if marker is not None else _v
-        if _v is not None:
-            self["marker"] = _v
-        _v = arg.pop("meta", None)
-        _v = meta if meta is not None else _v
-        if _v is not None:
-            self["meta"] = _v
-        _v = arg.pop("metasrc", None)
-        _v = metasrc if metasrc is not None else _v
-        if _v is not None:
-            self["metasrc"] = _v
-        _v = arg.pop("name", None)
-        _v = name if name is not None else _v
-        if _v is not None:
-            self["name"] = _v
-        _v = arg.pop("nbinsx", None)
-        _v = nbinsx if nbinsx is not None else _v
-        if _v is not None:
-            self["nbinsx"] = _v
-        _v = arg.pop("nbinsy", None)
-        _v = nbinsy if nbinsy is not None else _v
-        if _v is not None:
-            self["nbinsy"] = _v
-        _v = arg.pop("ncontours", None)
-        _v = ncontours if ncontours is not None else _v
-        if _v is not None:
-            self["ncontours"] = _v
-        _v = arg.pop("opacity", None)
-        _v = opacity if opacity is not None else _v
-        if _v is not None:
-            self["opacity"] = _v
-        _v = arg.pop("reversescale", None)
-        _v = reversescale if reversescale is not None else _v
-        if _v is not None:
-            self["reversescale"] = _v
-        _v = arg.pop("showlegend", None)
-        _v = showlegend if showlegend is not None else _v
-        if _v is not None:
-            self["showlegend"] = _v
-        _v = arg.pop("showscale", None)
-        _v = showscale if showscale is not None else _v
-        if _v is not None:
-            self["showscale"] = _v
-        _v = arg.pop("stream", None)
-        _v = stream if stream is not None else _v
-        if _v is not None:
-            self["stream"] = _v
-        _v = arg.pop("textfont", None)
-        _v = textfont if textfont is not None else _v
-        if _v is not None:
-            self["textfont"] = _v
-        _v = arg.pop("texttemplate", None)
-        _v = texttemplate if texttemplate is not None else _v
-        if _v is not None:
-            self["texttemplate"] = _v
-        _v = arg.pop("uid", None)
-        _v = uid if uid is not None else _v
-        if _v is not None:
-            self["uid"] = _v
-        _v = arg.pop("uirevision", None)
-        _v = uirevision if uirevision is not None else _v
-        if _v is not None:
-            self["uirevision"] = _v
-        _v = arg.pop("visible", None)
-        _v = visible if visible is not None else _v
-        if _v is not None:
-            self["visible"] = _v
-        _v = arg.pop("x", None)
-        _v = x if x is not None else _v
-        if _v is not None:
-            self["x"] = _v
-        _v = arg.pop("xaxis", None)
-        _v = xaxis if xaxis is not None else _v
-        if _v is not None:
-            self["xaxis"] = _v
-        _v = arg.pop("xbingroup", None)
-        _v = xbingroup if xbingroup is not None else _v
-        if _v is not None:
-            self["xbingroup"] = _v
-        _v = arg.pop("xbins", None)
-        _v = xbins if xbins is not None else _v
-        if _v is not None:
-            self["xbins"] = _v
-        _v = arg.pop("xcalendar", None)
-        _v = xcalendar if xcalendar is not None else _v
-        if _v is not None:
-            self["xcalendar"] = _v
-        _v = arg.pop("xhoverformat", None)
-        _v = xhoverformat if xhoverformat is not None else _v
-        if _v is not None:
-            self["xhoverformat"] = _v
-        _v = arg.pop("xsrc", None)
-        _v = xsrc if xsrc is not None else _v
-        if _v is not None:
-            self["xsrc"] = _v
-        _v = arg.pop("y", None)
-        _v = y if y is not None else _v
-        if _v is not None:
-            self["y"] = _v
-        _v = arg.pop("yaxis", None)
-        _v = yaxis if yaxis is not None else _v
-        if _v is not None:
-            self["yaxis"] = _v
-        _v = arg.pop("ybingroup", None)
-        _v = ybingroup if ybingroup is not None else _v
-        if _v is not None:
-            self["ybingroup"] = _v
-        _v = arg.pop("ybins", None)
-        _v = ybins if ybins is not None else _v
-        if _v is not None:
-            self["ybins"] = _v
-        _v = arg.pop("ycalendar", None)
-        _v = ycalendar if ycalendar is not None else _v
-        if _v is not None:
-            self["ycalendar"] = _v
-        _v = arg.pop("yhoverformat", None)
-        _v = yhoverformat if yhoverformat is not None else _v
-        if _v is not None:
-            self["yhoverformat"] = _v
-        _v = arg.pop("ysrc", None)
-        _v = ysrc if ysrc is not None else _v
-        if _v is not None:
-            self["ysrc"] = _v
-        _v = arg.pop("z", None)
-        _v = z if z is not None else _v
-        if _v is not None:
-            self["z"] = _v
-        _v = arg.pop("zauto", None)
-        _v = zauto if zauto is not None else _v
-        if _v is not None:
-            self["zauto"] = _v
-        _v = arg.pop("zhoverformat", None)
-        _v = zhoverformat if zhoverformat is not None else _v
-        if _v is not None:
-            self["zhoverformat"] = _v
-        _v = arg.pop("zmax", None)
-        _v = zmax if zmax is not None else _v
-        if _v is not None:
-            self["zmax"] = _v
-        _v = arg.pop("zmid", None)
-        _v = zmid if zmid is not None else _v
-        if _v is not None:
-            self["zmid"] = _v
-        _v = arg.pop("zmin", None)
-        _v = zmin if zmin is not None else _v
-        if _v is not None:
-            self["zmin"] = _v
-        _v = arg.pop("zsrc", None)
-        _v = zsrc if zsrc is not None else _v
-        if _v is not None:
-            self["zsrc"] = _v
+        self._init_provided('autobinx', arg, autobinx)
+        self._init_provided('autobiny', arg, autobiny)
+        self._init_provided('autocolorscale', arg, autocolorscale)
+        self._init_provided('autocontour', arg, autocontour)
+        self._init_provided('bingroup', arg, bingroup)
+        self._init_provided('coloraxis', arg, coloraxis)
+        self._init_provided('colorbar', arg, colorbar)
+        self._init_provided('colorscale', arg, colorscale)
+        self._init_provided('contours', arg, contours)
+        self._init_provided('customdata', arg, customdata)
+        self._init_provided('customdatasrc', arg, customdatasrc)
+        self._init_provided('histfunc', arg, histfunc)
+        self._init_provided('histnorm', arg, histnorm)
+        self._init_provided('hoverinfo', arg, hoverinfo)
+        self._init_provided('hoverinfosrc', arg, hoverinfosrc)
+        self._init_provided('hoverlabel', arg, hoverlabel)
+        self._init_provided('hovertemplate', arg, hovertemplate)
+        self._init_provided('hovertemplatesrc', arg, hovertemplatesrc)
+        self._init_provided('ids', arg, ids)
+        self._init_provided('idssrc', arg, idssrc)
+        self._init_provided('legend', arg, legend)
+        self._init_provided('legendgroup', arg, legendgroup)
+        self._init_provided('legendgrouptitle', arg, legendgrouptitle)
+        self._init_provided('legendrank', arg, legendrank)
+        self._init_provided('legendwidth', arg, legendwidth)
+        self._init_provided('line', arg, line)
+        self._init_provided('marker', arg, marker)
+        self._init_provided('meta', arg, meta)
+        self._init_provided('metasrc', arg, metasrc)
+        self._init_provided('name', arg, name)
+        self._init_provided('nbinsx', arg, nbinsx)
+        self._init_provided('nbinsy', arg, nbinsy)
+        self._init_provided('ncontours', arg, ncontours)
+        self._init_provided('opacity', arg, opacity)
+        self._init_provided('reversescale', arg, reversescale)
+        self._init_provided('showlegend', arg, showlegend)
+        self._init_provided('showscale', arg, showscale)
+        self._init_provided('stream', arg, stream)
+        self._init_provided('textfont', arg, textfont)
+        self._init_provided('texttemplate', arg, texttemplate)
+        self._init_provided('uid', arg, uid)
+        self._init_provided('uirevision', arg, uirevision)
+        self._init_provided('visible', arg, visible)
+        self._init_provided('x', arg, x)
+        self._init_provided('xaxis', arg, xaxis)
+        self._init_provided('xbingroup', arg, xbingroup)
+        self._init_provided('xbins', arg, xbins)
+        self._init_provided('xcalendar', arg, xcalendar)
+        self._init_provided('xhoverformat', arg, xhoverformat)
+        self._init_provided('xsrc', arg, xsrc)
+        self._init_provided('y', arg, y)
+        self._init_provided('yaxis', arg, yaxis)
+        self._init_provided('ybingroup', arg, ybingroup)
+        self._init_provided('ybins', arg, ybins)
+        self._init_provided('ycalendar', arg, ycalendar)
+        self._init_provided('yhoverformat', arg, yhoverformat)
+        self._init_provided('ysrc', arg, ysrc)
+        self._init_provided('z', arg, z)
+        self._init_provided('zauto', arg, zauto)
+        self._init_provided('zhoverformat', arg, zhoverformat)
+        self._init_provided('zmax', arg, zmax)
+        self._init_provided('zmid', arg, zmid)
+        self._init_provided('zmin', arg, zmin)
+        self._init_provided('zsrc', arg, zsrc)
 
         # Read-only literals
         # ------------------
 
-        self._props["type"] = "histogram2dcontour"
-        arg.pop("type", None)
+        self._props['type'] = 'histogram2dcontour'
+        arg.pop('type', None)
 
         # Process unknown kwargs
         # ----------------------

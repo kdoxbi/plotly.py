@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
@@ -6,8 +8,8 @@ class Title(_BaseTraceHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "carpet.baxis"
-    _path_str = "carpet.baxis.title"
+    _parent_path_str = 'carpet.baxis'
+    _path_str = 'carpet.baxis.title'
     _valid_props = {"font", "offset", "text"}
 
     # font
@@ -22,11 +24,11 @@ class Title(_BaseTraceHierarchyType):
           - An instance of :class:`plotly.graph_objs.carpet.baxis.title.Font`
           - A dict of string/value properties that will be passed
             to the Font constructor
-
+    
             Supported dict properties:
-
+                
                 color
-
+    
                 family
                     HTML font family - the typeface that will be
                     applied by the web browser. The web browser
@@ -56,7 +58,7 @@ class Title(_BaseTraceHierarchyType):
                     US/docs/Web/CSS/text-shadow for additional
                     options.
                 size
-
+    
                 style
                     Sets whether a font should be styled with a
                     normal or italic face from its family.
@@ -73,11 +75,11 @@ class Title(_BaseTraceHierarchyType):
         -------
         plotly.graph_objs.carpet.baxis.title.Font
         """
-        return self["font"]
+        return self['font']
 
     @font.setter
     def font(self, val):
-        self["font"] = val
+        self['font'] = val
 
     # offset
     # ------
@@ -94,11 +96,11 @@ class Title(_BaseTraceHierarchyType):
         -------
         int|float
         """
-        return self["offset"]
+        return self['offset']
 
     @offset.setter
     def offset(self, val):
-        self["offset"] = val
+        self['offset'] = val
 
     # text
     # ----
@@ -115,11 +117,11 @@ class Title(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["text"]
+        return self['text']
 
     @text.setter
     def text(self, val):
-        self["text"] = val
+        self['text'] = val
 
     # Self properties description
     # ---------------------------
@@ -134,8 +136,13 @@ class Title(_BaseTraceHierarchyType):
         text
             Sets the title of this axis.
         """
-
-    def __init__(self, arg=None, font=None, offset=None, text=None, **kwargs):
+    def __init__(self,
+            arg=None,
+            font=None,
+            offset=None,
+            text=None,
+            **kwargs
+        ):
         """
         Construct a new Title object
 
@@ -157,10 +164,10 @@ class Title(_BaseTraceHierarchyType):
         -------
         Title
         """
-        super(Title, self).__init__("title")
+        super(Title, self).__init__('title')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -172,32 +179,22 @@ class Title(_BaseTraceHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.carpet.baxis.Title
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.carpet.baxis.Title`"""
-            )
+an instance of :class:`plotly.graph_objs.carpet.baxis.Title`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("font", None)
-        _v = font if font is not None else _v
-        if _v is not None:
-            self["font"] = _v
-        _v = arg.pop("offset", None)
-        _v = offset if offset is not None else _v
-        if _v is not None:
-            self["offset"] = _v
-        _v = arg.pop("text", None)
-        _v = text if text is not None else _v
-        if _v is not None:
-            self["text"] = _v
+        self._init_provided('font', arg, font)
+        self._init_provided('offset', arg, offset)
+        self._init_provided('text', arg, text)
 
         # Process unknown kwargs
         # ----------------------

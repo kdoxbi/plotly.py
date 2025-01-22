@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class YValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="y", parent_name="volume.slices", **kwargs):
-        super(YValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Y"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='y',
+                       parent_name='volume.slices',
+                       **kwargs):
+        super(YValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Y'),
+                 data_docs=kwargs.pop('data_docs', """
             fill
                 Sets the fill ratio of the `slices`. The
                 default fill value of the `slices` is 1 meaning
@@ -28,7 +29,5 @@ class YValidator(_plotly_utils.basevalidators.CompoundValidator):
             show
                 Determines whether or not slice planes about
                 the y dimension are drawn.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

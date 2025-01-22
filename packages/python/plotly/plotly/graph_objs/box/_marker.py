@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
@@ -6,17 +8,9 @@ class Marker(_BaseTraceHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "box"
-    _path_str = "box.marker"
-    _valid_props = {
-        "angle",
-        "color",
-        "line",
-        "opacity",
-        "outliercolor",
-        "size",
-        "symbol",
-    }
+    _parent_path_str = 'box'
+    _path_str = 'box.marker'
+    _valid_props = {"angle", "color", "line", "opacity", "outliercolor", "size", "symbol"}
 
     # angle
     # -----
@@ -34,11 +28,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         int|float
         """
-        return self["angle"]
+        return self['angle']
 
     @angle.setter
     def angle(self, val):
-        self["angle"] = val
+        self['angle'] = val
 
     # color
     # -----
@@ -96,11 +90,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["color"]
+        return self['color']
 
     @color.setter
     def color(self, val):
-        self["color"] = val
+        self['color'] = val
 
     # line
     # ----
@@ -112,9 +106,9 @@ class Marker(_BaseTraceHierarchyType):
           - An instance of :class:`plotly.graph_objs.box.marker.Line`
           - A dict of string/value properties that will be passed
             to the Line constructor
-
+    
             Supported dict properties:
-
+                
                 color
                     Sets the marker.line color. It accepts either a
                     specific color or an array of numbers that are
@@ -136,11 +130,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         plotly.graph_objs.box.marker.Line
         """
-        return self["line"]
+        return self['line']
 
     @line.setter
     def line(self, val):
-        self["line"] = val
+        self['line'] = val
 
     # opacity
     # -------
@@ -156,11 +150,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         int|float
         """
-        return self["opacity"]
+        return self['opacity']
 
     @opacity.setter
     def opacity(self, val):
-        self["opacity"] = val
+        self['opacity'] = val
 
     # outliercolor
     # ------------
@@ -215,11 +209,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["outliercolor"]
+        return self['outliercolor']
 
     @outliercolor.setter
     def outliercolor(self, val):
-        self["outliercolor"] = val
+        self['outliercolor'] = val
 
     # size
     # ----
@@ -235,11 +229,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         int|float
         """
-        return self["size"]
+        return self['size']
 
     @size.setter
     def size(self, val):
-        self["size"] = val
+        self['size'] = val
 
     # symbol
     # ------
@@ -347,11 +341,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         Any
         """
-        return self["symbol"]
+        return self['symbol']
 
     @symbol.setter
     def symbol(self, val):
-        self["symbol"] = val
+        self['symbol'] = val
 
     # Self properties description
     # ---------------------------
@@ -382,19 +376,17 @@ class Marker(_BaseTraceHierarchyType):
             300 is equivalent to appending "-open-dot" or "dot-
             open" to a symbol name.
         """
-
-    def __init__(
-        self,
-        arg=None,
-        angle=None,
-        color=None,
-        line=None,
-        opacity=None,
-        outliercolor=None,
-        size=None,
-        symbol=None,
-        **kwargs,
-    ):
+    def __init__(self,
+            arg=None,
+            angle=None,
+            color=None,
+            line=None,
+            opacity=None,
+            outliercolor=None,
+            size=None,
+            symbol=None,
+            **kwargs
+        ):
         """
         Construct a new Marker object
 
@@ -431,10 +423,10 @@ class Marker(_BaseTraceHierarchyType):
         -------
         Marker
         """
-        super(Marker, self).__init__("marker")
+        super(Marker, self).__init__('marker')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -446,48 +438,26 @@ class Marker(_BaseTraceHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.box.Marker
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.box.Marker`"""
-            )
+an instance of :class:`plotly.graph_objs.box.Marker`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("angle", None)
-        _v = angle if angle is not None else _v
-        if _v is not None:
-            self["angle"] = _v
-        _v = arg.pop("color", None)
-        _v = color if color is not None else _v
-        if _v is not None:
-            self["color"] = _v
-        _v = arg.pop("line", None)
-        _v = line if line is not None else _v
-        if _v is not None:
-            self["line"] = _v
-        _v = arg.pop("opacity", None)
-        _v = opacity if opacity is not None else _v
-        if _v is not None:
-            self["opacity"] = _v
-        _v = arg.pop("outliercolor", None)
-        _v = outliercolor if outliercolor is not None else _v
-        if _v is not None:
-            self["outliercolor"] = _v
-        _v = arg.pop("size", None)
-        _v = size if size is not None else _v
-        if _v is not None:
-            self["size"] = _v
-        _v = arg.pop("symbol", None)
-        _v = symbol if symbol is not None else _v
-        if _v is not None:
-            self["symbol"] = _v
+        self._init_provided('angle', arg, angle)
+        self._init_provided('color', arg, color)
+        self._init_provided('line', arg, line)
+        self._init_provided('opacity', arg, opacity)
+        self._init_provided('outliercolor', arg, outliercolor)
+        self._init_provided('size', arg, size)
+        self._init_provided('symbol', arg, symbol)
 
         # Process unknown kwargs
         # ----------------------

@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
@@ -6,21 +8,9 @@ class Title(_BaseLayoutHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "layout"
-    _path_str = "layout.title"
-    _valid_props = {
-        "automargin",
-        "font",
-        "pad",
-        "subtitle",
-        "text",
-        "x",
-        "xanchor",
-        "xref",
-        "y",
-        "yanchor",
-        "yref",
-    }
+    _parent_path_str = 'layout'
+    _path_str = 'layout.title'
+    _valid_props = {"automargin", "font", "pad", "subtitle", "text", "x", "xanchor", "xref", "y", "yanchor", "yref"}
 
     # automargin
     # ----------
@@ -46,11 +36,11 @@ class Title(_BaseLayoutHierarchyType):
         -------
         bool
         """
-        return self["automargin"]
+        return self['automargin']
 
     @automargin.setter
     def automargin(self, val):
-        self["automargin"] = val
+        self['automargin'] = val
 
     # font
     # ----
@@ -64,11 +54,11 @@ class Title(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.title.Font`
           - A dict of string/value properties that will be passed
             to the Font constructor
-
+    
             Supported dict properties:
-
+                
                 color
-
+    
                 family
                     HTML font family - the typeface that will be
                     applied by the web browser. The web browser
@@ -98,7 +88,7 @@ class Title(_BaseLayoutHierarchyType):
                     US/docs/Web/CSS/text-shadow for additional
                     options.
                 size
-
+    
                 style
                     Sets whether a font should be styled with a
                     normal or italic face from its family.
@@ -115,11 +105,11 @@ class Title(_BaseLayoutHierarchyType):
         -------
         plotly.graph_objs.layout.title.Font
         """
-        return self["font"]
+        return self['font']
 
     @font.setter
     def font(self, val):
-        self["font"] = val
+        self['font'] = val
 
     # pad
     # ---
@@ -138,9 +128,9 @@ class Title(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.title.Pad`
           - A dict of string/value properties that will be passed
             to the Pad constructor
-
+    
             Supported dict properties:
-
+                
                 b
                     The amount of padding (in px) along the bottom
                     of the component.
@@ -158,11 +148,11 @@ class Title(_BaseLayoutHierarchyType):
         -------
         plotly.graph_objs.layout.title.Pad
         """
-        return self["pad"]
+        return self['pad']
 
     @pad.setter
     def pad(self, val):
-        self["pad"] = val
+        self['pad'] = val
 
     # subtitle
     # --------
@@ -174,9 +164,9 @@ class Title(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.title.Subtitle`
           - A dict of string/value properties that will be passed
             to the Subtitle constructor
-
+    
             Supported dict properties:
-
+                
                 font
                     Sets the subtitle font.
                 text
@@ -186,11 +176,11 @@ class Title(_BaseLayoutHierarchyType):
         -------
         plotly.graph_objs.layout.title.Subtitle
         """
-        return self["subtitle"]
+        return self['subtitle']
 
     @subtitle.setter
     def subtitle(self, val):
-        self["subtitle"] = val
+        self['subtitle'] = val
 
     # text
     # ----
@@ -207,11 +197,11 @@ class Title(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["text"]
+        return self['text']
 
     @text.setter
     def text(self, val):
-        self["text"] = val
+        self['text'] = val
 
     # x
     # -
@@ -228,11 +218,11 @@ class Title(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["x"]
+        return self['x']
 
     @x.setter
     def x(self, val):
-        self["x"] = val
+        self['x'] = val
 
     # xanchor
     # -------
@@ -254,11 +244,11 @@ class Title(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["xanchor"]
+        return self['xanchor']
 
     @xanchor.setter
     def xanchor(self, val):
-        self["xanchor"] = val
+        self['xanchor'] = val
 
     # xref
     # ----
@@ -277,11 +267,11 @@ class Title(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["xref"]
+        return self['xref']
 
     @xref.setter
     def xref(self, val):
-        self["xref"] = val
+        self['xref'] = val
 
     # y
     # -
@@ -300,11 +290,11 @@ class Title(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["y"]
+        return self['y']
 
     @y.setter
     def y(self, val):
-        self["y"] = val
+        self['y'] = val
 
     # yanchor
     # -------
@@ -326,11 +316,11 @@ class Title(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["yanchor"]
+        return self['yanchor']
 
     @yanchor.setter
     def yanchor(self, val):
-        self["yanchor"] = val
+        self['yanchor'] = val
 
     # yref
     # ----
@@ -349,11 +339,11 @@ class Title(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["yref"]
+        return self['yref']
 
     @yref.setter
     def yref(self, val):
-        self["yref"] = val
+        self['yref'] = val
 
     # Self properties description
     # ---------------------------
@@ -419,23 +409,21 @@ class Title(_BaseLayoutHierarchyType):
             entire `height` of the plot. "paper" refers to the
             height of the plotting area only.
         """
-
-    def __init__(
-        self,
-        arg=None,
-        automargin=None,
-        font=None,
-        pad=None,
-        subtitle=None,
-        text=None,
-        x=None,
-        xanchor=None,
-        xref=None,
-        y=None,
-        yanchor=None,
-        yref=None,
-        **kwargs,
-    ):
+    def __init__(self,
+            arg=None,
+            automargin=None,
+            font=None,
+            pad=None,
+            subtitle=None,
+            text=None,
+            x=None,
+            xanchor=None,
+            xref=None,
+            y=None,
+            yanchor=None,
+            yref=None,
+            **kwargs
+        ):
         """
         Construct a new Title object
 
@@ -507,10 +495,10 @@ class Title(_BaseLayoutHierarchyType):
         -------
         Title
         """
-        super(Title, self).__init__("title")
+        super(Title, self).__init__('title')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -522,64 +510,30 @@ class Title(_BaseLayoutHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.layout.Title
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.layout.Title`"""
-            )
+an instance of :class:`plotly.graph_objs.layout.Title`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("automargin", None)
-        _v = automargin if automargin is not None else _v
-        if _v is not None:
-            self["automargin"] = _v
-        _v = arg.pop("font", None)
-        _v = font if font is not None else _v
-        if _v is not None:
-            self["font"] = _v
-        _v = arg.pop("pad", None)
-        _v = pad if pad is not None else _v
-        if _v is not None:
-            self["pad"] = _v
-        _v = arg.pop("subtitle", None)
-        _v = subtitle if subtitle is not None else _v
-        if _v is not None:
-            self["subtitle"] = _v
-        _v = arg.pop("text", None)
-        _v = text if text is not None else _v
-        if _v is not None:
-            self["text"] = _v
-        _v = arg.pop("x", None)
-        _v = x if x is not None else _v
-        if _v is not None:
-            self["x"] = _v
-        _v = arg.pop("xanchor", None)
-        _v = xanchor if xanchor is not None else _v
-        if _v is not None:
-            self["xanchor"] = _v
-        _v = arg.pop("xref", None)
-        _v = xref if xref is not None else _v
-        if _v is not None:
-            self["xref"] = _v
-        _v = arg.pop("y", None)
-        _v = y if y is not None else _v
-        if _v is not None:
-            self["y"] = _v
-        _v = arg.pop("yanchor", None)
-        _v = yanchor if yanchor is not None else _v
-        if _v is not None:
-            self["yanchor"] = _v
-        _v = arg.pop("yref", None)
-        _v = yref if yref is not None else _v
-        if _v is not None:
-            self["yref"] = _v
+        self._init_provided('automargin', arg, automargin)
+        self._init_provided('font', arg, font)
+        self._init_provided('pad', arg, pad)
+        self._init_provided('subtitle', arg, subtitle)
+        self._init_provided('text', arg, text)
+        self._init_provided('x', arg, x)
+        self._init_provided('xanchor', arg, xanchor)
+        self._init_provided('xref', arg, xref)
+        self._init_provided('y', arg, y)
+        self._init_provided('yanchor', arg, yanchor)
+        self._init_provided('yref', arg, yref)
 
         # Process unknown kwargs
         # ----------------------

@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
@@ -6,8 +8,8 @@ class Meanline(_BaseTraceHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "violin"
-    _path_str = "violin.meanline"
+    _parent_path_str = 'violin'
+    _path_str = 'violin.meanline'
     _valid_props = {"color", "visible", "width"}
 
     # color
@@ -63,11 +65,11 @@ class Meanline(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["color"]
+        return self['color']
 
     @color.setter
     def color(self, val):
-        self["color"] = val
+        self['color'] = val
 
     # visible
     # -------
@@ -86,11 +88,11 @@ class Meanline(_BaseTraceHierarchyType):
         -------
         bool
         """
-        return self["visible"]
+        return self['visible']
 
     @visible.setter
     def visible(self, val):
-        self["visible"] = val
+        self['visible'] = val
 
     # width
     # -----
@@ -106,11 +108,11 @@ class Meanline(_BaseTraceHierarchyType):
         -------
         int|float
         """
-        return self["width"]
+        return self['width']
 
     @width.setter
     def width(self, val):
-        self["width"] = val
+        self['width'] = val
 
     # Self properties description
     # ---------------------------
@@ -128,8 +130,13 @@ class Meanline(_BaseTraceHierarchyType):
         width
             Sets the mean line width.
         """
-
-    def __init__(self, arg=None, color=None, visible=None, width=None, **kwargs):
+    def __init__(self,
+            arg=None,
+            color=None,
+            visible=None,
+            width=None,
+            **kwargs
+        ):
         """
         Construct a new Meanline object
 
@@ -154,10 +161,10 @@ class Meanline(_BaseTraceHierarchyType):
         -------
         Meanline
         """
-        super(Meanline, self).__init__("meanline")
+        super(Meanline, self).__init__('meanline')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -169,32 +176,22 @@ class Meanline(_BaseTraceHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.violin.Meanline
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.violin.Meanline`"""
-            )
+an instance of :class:`plotly.graph_objs.violin.Meanline`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("color", None)
-        _v = color if color is not None else _v
-        if _v is not None:
-            self["color"] = _v
-        _v = arg.pop("visible", None)
-        _v = visible if visible is not None else _v
-        if _v is not None:
-            self["visible"] = _v
-        _v = arg.pop("width", None)
-        _v = width if width is not None else _v
-        if _v is not None:
-            self["width"] = _v
+        self._init_provided('color', arg, color)
+        self._init_provided('visible', arg, visible)
+        self._init_provided('width', arg, width)
 
         # Process unknown kwargs
         # ----------------------

@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class AnnotationsValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
-    def __init__(self, plotly_name="annotations", parent_name="layout", **kwargs):
-        super(AnnotationsValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Annotation"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='annotations',
+                       parent_name='layout',
+                       **kwargs):
+        super(AnnotationsValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Annotation'),
+                 data_docs=kwargs.pop('data_docs', """
             align
                 Sets the horizontal alignment of the `text`
                 within the box. Has an effect only if `text`
@@ -327,7 +328,5 @@ class AnnotationsValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
                 Shifts the position of the whole annotation and
                 arrow up (positive) or down (negative) by this
                 many pixels.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

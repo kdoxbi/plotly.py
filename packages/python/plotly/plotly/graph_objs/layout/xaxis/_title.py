@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
@@ -6,8 +8,8 @@ class Title(_BaseLayoutHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "layout.xaxis"
-    _path_str = "layout.xaxis.title"
+    _parent_path_str = 'layout.xaxis'
+    _path_str = 'layout.xaxis.title'
     _valid_props = {"font", "standoff", "text"}
 
     # font
@@ -22,11 +24,11 @@ class Title(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.xaxis.title.Font`
           - A dict of string/value properties that will be passed
             to the Font constructor
-
+    
             Supported dict properties:
-
+                
                 color
-
+    
                 family
                     HTML font family - the typeface that will be
                     applied by the web browser. The web browser
@@ -56,7 +58,7 @@ class Title(_BaseLayoutHierarchyType):
                     US/docs/Web/CSS/text-shadow for additional
                     options.
                 size
-
+    
                 style
                     Sets whether a font should be styled with a
                     normal or italic face from its family.
@@ -73,11 +75,11 @@ class Title(_BaseLayoutHierarchyType):
         -------
         plotly.graph_objs.layout.xaxis.title.Font
         """
-        return self["font"]
+        return self['font']
 
     @font.setter
     def font(self, val):
-        self["font"] = val
+        self['font'] = val
 
     # standoff
     # --------
@@ -100,11 +102,11 @@ class Title(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["standoff"]
+        return self['standoff']
 
     @standoff.setter
     def standoff(self, val):
-        self["standoff"] = val
+        self['standoff'] = val
 
     # text
     # ----
@@ -121,11 +123,11 @@ class Title(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["text"]
+        return self['text']
 
     @text.setter
     def text(self, val):
-        self["text"] = val
+        self['text'] = val
 
     # Self properties description
     # ---------------------------
@@ -147,8 +149,13 @@ class Title(_BaseLayoutHierarchyType):
         text
             Sets the title of this axis.
         """
-
-    def __init__(self, arg=None, font=None, standoff=None, text=None, **kwargs):
+    def __init__(self,
+            arg=None,
+            font=None,
+            standoff=None,
+            text=None,
+            **kwargs
+        ):
         """
         Construct a new Title object
 
@@ -177,10 +184,10 @@ class Title(_BaseLayoutHierarchyType):
         -------
         Title
         """
-        super(Title, self).__init__("title")
+        super(Title, self).__init__('title')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -192,32 +199,22 @@ class Title(_BaseLayoutHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.layout.xaxis.Title
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.layout.xaxis.Title`"""
-            )
+an instance of :class:`plotly.graph_objs.layout.xaxis.Title`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("font", None)
-        _v = font if font is not None else _v
-        if _v is not None:
-            self["font"] = _v
-        _v = arg.pop("standoff", None)
-        _v = standoff if standoff is not None else _v
-        if _v is not None:
-            self["standoff"] = _v
-        _v = arg.pop("text", None)
-        _v = text if text is not None else _v
-        if _v is not None:
-            self["text"] = _v
+        self._init_provided('font', arg, font)
+        self._init_provided('standoff', arg, standoff)
+        self._init_provided('text', arg, text)
 
         # Process unknown kwargs
         # ----------------------

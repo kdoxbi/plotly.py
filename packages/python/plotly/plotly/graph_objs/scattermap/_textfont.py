@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
@@ -6,8 +8,8 @@ class Textfont(_BaseTraceHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "scattermap"
-    _path_str = "scattermap.textfont"
+    _parent_path_str = 'scattermap'
+    _path_str = 'scattermap.textfont'
     _valid_props = {"color", "family", "size", "style", "weight"}
 
     # color
@@ -61,11 +63,11 @@ class Textfont(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["color"]
+        return self['color']
 
     @color.setter
     def color(self, val):
-        self["color"] = val
+        self['color'] = val
 
     # family
     # ------
@@ -92,11 +94,11 @@ class Textfont(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["family"]
+        return self['family']
 
     @family.setter
     def family(self, val):
-        self["family"] = val
+        self['family'] = val
 
     # size
     # ----
@@ -110,11 +112,11 @@ class Textfont(_BaseTraceHierarchyType):
         -------
         int|float
         """
-        return self["size"]
+        return self['size']
 
     @size.setter
     def size(self, val):
-        self["size"] = val
+        self['size'] = val
 
     # style
     # -----
@@ -132,11 +134,11 @@ class Textfont(_BaseTraceHierarchyType):
         -------
         Any
         """
-        return self["style"]
+        return self['style']
 
     @style.setter
     def style(self, val):
-        self["style"] = val
+        self['style'] = val
 
     # weight
     # ------
@@ -154,11 +156,11 @@ class Textfont(_BaseTraceHierarchyType):
         -------
         int
         """
-        return self["weight"]
+        return self['weight']
 
     @weight.setter
     def weight(self, val):
-        self["weight"] = val
+        self['weight'] = val
 
     # Self properties description
     # ---------------------------
@@ -189,17 +191,15 @@ class Textfont(_BaseTraceHierarchyType):
         weight
             Sets the weight (or boldness) of the font.
         """
-
-    def __init__(
-        self,
-        arg=None,
-        color=None,
-        family=None,
-        size=None,
-        style=None,
-        weight=None,
-        **kwargs,
-    ):
+    def __init__(self,
+            arg=None,
+            color=None,
+            family=None,
+            size=None,
+            style=None,
+            weight=None,
+            **kwargs
+        ):
         """
         Construct a new Textfont object
 
@@ -241,10 +241,10 @@ class Textfont(_BaseTraceHierarchyType):
         -------
         Textfont
         """
-        super(Textfont, self).__init__("textfont")
+        super(Textfont, self).__init__('textfont')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -256,40 +256,24 @@ class Textfont(_BaseTraceHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.scattermap.Textfont
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.scattermap.Textfont`"""
-            )
+an instance of :class:`plotly.graph_objs.scattermap.Textfont`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("color", None)
-        _v = color if color is not None else _v
-        if _v is not None:
-            self["color"] = _v
-        _v = arg.pop("family", None)
-        _v = family if family is not None else _v
-        if _v is not None:
-            self["family"] = _v
-        _v = arg.pop("size", None)
-        _v = size if size is not None else _v
-        if _v is not None:
-            self["size"] = _v
-        _v = arg.pop("style", None)
-        _v = style if style is not None else _v
-        if _v is not None:
-            self["style"] = _v
-        _v = arg.pop("weight", None)
-        _v = weight if weight is not None else _v
-        if _v is not None:
-            self["weight"] = _v
+        self._init_provided('color', arg, color)
+        self._init_provided('family', arg, family)
+        self._init_provided('size', arg, size)
+        self._init_provided('style', arg, style)
+        self._init_provided('weight', arg, weight)
 
         # Process unknown kwargs
         # ----------------------

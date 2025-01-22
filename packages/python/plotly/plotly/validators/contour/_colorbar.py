@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class ColorbarValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="colorbar", parent_name="contour", **kwargs):
-        super(ColorbarValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "ColorBar"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='colorbar',
+                       parent_name='contour',
+                       **kwargs):
+        super(ColorbarValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'ColorBar'),
+                 data_docs=kwargs.pop('data_docs', """
             bgcolor
                 Sets the color of padded area.
             bordercolor
@@ -273,7 +274,5 @@ class ColorbarValidator(_plotly_utils.basevalidators.CompoundValidator):
                 Sets the container `y` refers to. "container"
                 spans the entire `height` of the plot. "paper"
                 refers to the height of the plotting area only.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

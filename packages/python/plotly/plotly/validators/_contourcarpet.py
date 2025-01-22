@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class ContourcarpetValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="contourcarpet", parent_name="", **kwargs):
-        super(ContourcarpetValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Contourcarpet"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='contourcarpet',
+                       parent_name='',
+                       **kwargs):
+        super(ContourcarpetValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Contourcarpet'),
+                 data_docs=kwargs.pop('data_docs', """
             a
                 Sets the x coordinates.
             a0
@@ -279,7 +280,5 @@ class ContourcarpetValidator(_plotly_utils.basevalidators.CompoundValidator):
             zsrc
                 Sets the source reference on Chart Studio Cloud
                 for `z`.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class SplomValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="splom", parent_name="", **kwargs):
-        super(SplomValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Splom"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='splom',
+                       parent_name='',
+                       **kwargs):
+        super(SplomValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Splom'),
+                 data_docs=kwargs.pop('data_docs', """
             customdata
                 Assigns extra data each datum. This may be
                 useful when listening to hover, click and
@@ -264,7 +265,5 @@ class SplomValidator(_plotly_utils.basevalidators.CompoundValidator):
                 tickformat "%H~%M~%S.%2f" would display
                 *09~15~23.46*By default the values are
                 formatted using `yaxis.hoverformat`.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

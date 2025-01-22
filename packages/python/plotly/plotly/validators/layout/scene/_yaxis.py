@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class YaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="yaxis", parent_name="layout.scene", **kwargs):
-        super(YaxisValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "YAxis"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='yaxis',
+                       parent_name='layout.scene',
+                       **kwargs):
+        super(YaxisValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'YAxis'),
+                 data_docs=kwargs.pop('data_docs', """
             autorange
                 Determines whether or not the range of this
                 axis is computed in relation to the input data.
@@ -337,7 +338,5 @@ class YaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
                 Sets the line color of the zero line.
             zerolinewidth
                 Sets the width (in px) of the zero line.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

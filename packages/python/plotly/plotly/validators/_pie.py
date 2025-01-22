@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class PieValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="pie", parent_name="", **kwargs):
-        super(PieValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Pie"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='pie',
+                       parent_name='',
+                       **kwargs):
+        super(PieValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Pie'),
+                 data_docs=kwargs.pop('data_docs', """
             automargin
                 Determines whether outside text labels can push
                 the margins.
@@ -297,7 +298,5 @@ class PieValidator(_plotly_utils.basevalidators.CompoundValidator):
                 visible. If "legendonly", the trace is not
                 drawn, but can appear as a legend item
                 (provided that the legend itself is visible).
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

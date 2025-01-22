@@ -1,26 +1,16 @@
+
+
 from plotly.basedatatypes import BaseLayoutType as _BaseLayoutType
 import copy as _copy
 
 
 class Layout(_BaseLayoutType):
 
-    _subplotid_prop_names = [
-        "coloraxis",
-        "geo",
-        "legend",
-        "map",
-        "mapbox",
-        "polar",
-        "scene",
-        "smith",
-        "ternary",
-        "xaxis",
-        "yaxis",
-    ]
+    _subplotid_prop_names = ['coloraxis', 'geo', 'legend', 'map', 'mapbox', 'polar', 'scene', 'smith', 'ternary', 'xaxis', 'yaxis']
 
     import re
-
-    _subplotid_prop_re = re.compile("^(" + "|".join(_subplotid_prop_names) + r")(\d+)$")
+    _subplotid_prop_re = re.compile(
+        '^(' + '|'.join(_subplotid_prop_names) + r')(\d+)$')
 
     @property
     def _subplotid_validators(self):
@@ -31,138 +21,18 @@ class Layout(_BaseLayoutType):
         -------
         dict
         """
-        from plotly.validators.layout import (
-            ColoraxisValidator,
-            GeoValidator,
-            LegendValidator,
-            MapValidator,
-            MapboxValidator,
-            PolarValidator,
-            SceneValidator,
-            SmithValidator,
-            TernaryValidator,
-            XaxisValidator,
-            YaxisValidator,
-        )
+        from plotly.validators.layout import (ColoraxisValidator, GeoValidator, LegendValidator, MapValidator, MapboxValidator, PolarValidator, SceneValidator, SmithValidator, TernaryValidator, XaxisValidator, YaxisValidator)
 
-        return {
-            "coloraxis": ColoraxisValidator,
-            "geo": GeoValidator,
-            "legend": LegendValidator,
-            "map": MapValidator,
-            "mapbox": MapboxValidator,
-            "polar": PolarValidator,
-            "scene": SceneValidator,
-            "smith": SmithValidator,
-            "ternary": TernaryValidator,
-            "xaxis": XaxisValidator,
-            "yaxis": YaxisValidator,
-        }
+        return {'coloraxis': ColoraxisValidator, 'geo': GeoValidator, 'legend': LegendValidator, 'map': MapValidator, 'mapbox': MapboxValidator, 'polar': PolarValidator, 'scene': SceneValidator, 'smith': SmithValidator, 'ternary': TernaryValidator, 'xaxis': XaxisValidator, 'yaxis': YaxisValidator}
 
     def _subplot_re_match(self, prop):
         return self._subplotid_prop_re.match(prop)
 
     # class properties
     # --------------------
-    _parent_path_str = ""
-    _path_str = "layout"
-    _valid_props = {
-        "activeselection",
-        "activeshape",
-        "annotationdefaults",
-        "annotations",
-        "autosize",
-        "autotypenumbers",
-        "barcornerradius",
-        "bargap",
-        "bargroupgap",
-        "barmode",
-        "barnorm",
-        "boxgap",
-        "boxgroupgap",
-        "boxmode",
-        "calendar",
-        "clickmode",
-        "coloraxis",
-        "colorscale",
-        "colorway",
-        "computed",
-        "datarevision",
-        "dragmode",
-        "editrevision",
-        "extendfunnelareacolors",
-        "extendiciclecolors",
-        "extendpiecolors",
-        "extendsunburstcolors",
-        "extendtreemapcolors",
-        "font",
-        "funnelareacolorway",
-        "funnelgap",
-        "funnelgroupgap",
-        "funnelmode",
-        "geo",
-        "grid",
-        "height",
-        "hiddenlabels",
-        "hiddenlabelssrc",
-        "hidesources",
-        "hoverdistance",
-        "hoverlabel",
-        "hovermode",
-        "hoversubplots",
-        "iciclecolorway",
-        "imagedefaults",
-        "images",
-        "legend",
-        "map",
-        "mapbox",
-        "margin",
-        "meta",
-        "metasrc",
-        "minreducedheight",
-        "minreducedwidth",
-        "modebar",
-        "newselection",
-        "newshape",
-        "paper_bgcolor",
-        "piecolorway",
-        "plot_bgcolor",
-        "polar",
-        "scattergap",
-        "scattermode",
-        "scene",
-        "selectdirection",
-        "selectiondefaults",
-        "selectionrevision",
-        "selections",
-        "separators",
-        "shapedefaults",
-        "shapes",
-        "showlegend",
-        "sliderdefaults",
-        "sliders",
-        "smith",
-        "spikedistance",
-        "sunburstcolorway",
-        "template",
-        "ternary",
-        "title",
-        "transition",
-        "treemapcolorway",
-        "uirevision",
-        "uniformtext",
-        "updatemenudefaults",
-        "updatemenus",
-        "violingap",
-        "violingroupgap",
-        "violinmode",
-        "waterfallgap",
-        "waterfallgroupgap",
-        "waterfallmode",
-        "width",
-        "xaxis",
-        "yaxis",
-    }
+    _parent_path_str = ''
+    _path_str = 'layout'
+    _valid_props = {"activeselection", "activeshape", "annotationdefaults", "annotations", "autosize", "autotypenumbers", "barcornerradius", "bargap", "bargroupgap", "barmode", "barnorm", "boxgap", "boxgroupgap", "boxmode", "calendar", "clickmode", "coloraxis", "colorscale", "colorway", "computed", "datarevision", "dragmode", "editrevision", "extendfunnelareacolors", "extendiciclecolors", "extendpiecolors", "extendsunburstcolors", "extendtreemapcolors", "font", "funnelareacolorway", "funnelgap", "funnelgroupgap", "funnelmode", "geo", "grid", "height", "hiddenlabels", "hiddenlabelssrc", "hidesources", "hoverdistance", "hoverlabel", "hovermode", "hoversubplots", "iciclecolorway", "imagedefaults", "images", "legend", "map", "mapbox", "margin", "meta", "metasrc", "minreducedheight", "minreducedwidth", "modebar", "newselection", "newshape", "paper_bgcolor", "piecolorway", "plot_bgcolor", "polar", "scattergap", "scattermode", "scene", "selectdirection", "selectiondefaults", "selectionrevision", "selections", "separators", "shapedefaults", "shapes", "showlegend", "sliderdefaults", "sliders", "smith", "spikedistance", "sunburstcolorway", "template", "ternary", "title", "transition", "treemapcolorway", "uirevision", "uniformtext", "updatemenudefaults", "updatemenus", "violingap", "violingroupgap", "violinmode", "waterfallgap", "waterfallgroupgap", "waterfallmode", "width", "xaxis", "yaxis"}
 
     # activeselection
     # ---------------
@@ -174,9 +44,9 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Activeselection`
           - A dict of string/value properties that will be passed
             to the Activeselection constructor
-
+    
             Supported dict properties:
-
+                
                 fillcolor
                     Sets the color filling the active selection'
                     interior.
@@ -187,11 +57,11 @@ class Layout(_BaseLayoutType):
         -------
         plotly.graph_objs.layout.Activeselection
         """
-        return self["activeselection"]
+        return self['activeselection']
 
     @activeselection.setter
     def activeselection(self, val):
-        self["activeselection"] = val
+        self['activeselection'] = val
 
     # activeshape
     # -----------
@@ -203,9 +73,9 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Activeshape`
           - A dict of string/value properties that will be passed
             to the Activeshape constructor
-
+    
             Supported dict properties:
-
+                
                 fillcolor
                     Sets the color filling the active shape'
                     interior.
@@ -216,11 +86,11 @@ class Layout(_BaseLayoutType):
         -------
         plotly.graph_objs.layout.Activeshape
         """
-        return self["activeshape"]
+        return self['activeshape']
 
     @activeshape.setter
     def activeshape(self, val):
-        self["activeshape"] = val
+        self['activeshape'] = val
 
     # annotations
     # -----------
@@ -232,9 +102,9 @@ class Layout(_BaseLayoutType):
           - A list or tuple of instances of plotly.graph_objs.layout.Annotation
           - A list or tuple of dicts of string/value properties that
             will be passed to the Annotation constructor
-
+    
             Supported dict properties:
-
+                
                 align
                     Sets the horizontal alignment of the `text`
                     within the box. Has an effect only if `text`
@@ -557,11 +427,11 @@ class Layout(_BaseLayoutType):
         -------
         tuple[plotly.graph_objs.layout.Annotation]
         """
-        return self["annotations"]
+        return self['annotations']
 
     @annotations.setter
     def annotations(self, val):
-        self["annotations"] = val
+        self['annotations'] = val
 
     # annotationdefaults
     # ------------------
@@ -577,18 +447,18 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Annotation`
           - A dict of string/value properties that will be passed
             to the Annotation constructor
-
+    
             Supported dict properties:
 
         Returns
         -------
         plotly.graph_objs.layout.Annotation
         """
-        return self["annotationdefaults"]
+        return self['annotationdefaults']
 
     @annotationdefaults.setter
     def annotationdefaults(self, val):
-        self["annotationdefaults"] = val
+        self['annotationdefaults'] = val
 
     # autosize
     # --------
@@ -608,11 +478,11 @@ class Layout(_BaseLayoutType):
         -------
         bool
         """
-        return self["autosize"]
+        return self['autosize']
 
     @autosize.setter
     def autosize(self, val):
-        self["autosize"] = val
+        self['autosize'] = val
 
     # autotypenumbers
     # ---------------
@@ -633,11 +503,11 @@ class Layout(_BaseLayoutType):
         -------
         Any
         """
-        return self["autotypenumbers"]
+        return self['autotypenumbers']
 
     @autotypenumbers.setter
     def autotypenumbers(self, val):
-        self["autotypenumbers"] = val
+        self['autotypenumbers'] = val
 
     # barcornerradius
     # ---------------
@@ -653,11 +523,11 @@ class Layout(_BaseLayoutType):
         -------
         Any
         """
-        return self["barcornerradius"]
+        return self['barcornerradius']
 
     @barcornerradius.setter
     def barcornerradius(self, val):
-        self["barcornerradius"] = val
+        self['barcornerradius'] = val
 
     # bargap
     # ------
@@ -674,11 +544,11 @@ class Layout(_BaseLayoutType):
         -------
         int|float
         """
-        return self["bargap"]
+        return self['bargap']
 
     @bargap.setter
     def bargap(self, val):
-        self["bargap"] = val
+        self['bargap'] = val
 
     # bargroupgap
     # -----------
@@ -695,11 +565,11 @@ class Layout(_BaseLayoutType):
         -------
         int|float
         """
-        return self["bargroupgap"]
+        return self['bargroupgap']
 
     @bargroupgap.setter
     def bargroupgap(self, val):
-        self["bargroupgap"] = val
+        self['bargroupgap'] = val
 
     # barmode
     # -------
@@ -723,11 +593,11 @@ class Layout(_BaseLayoutType):
         -------
         Any
         """
-        return self["barmode"]
+        return self['barmode']
 
     @barmode.setter
     def barmode(self, val):
-        self["barmode"] = val
+        self['barmode'] = val
 
     # barnorm
     # -------
@@ -747,11 +617,11 @@ class Layout(_BaseLayoutType):
         -------
         Any
         """
-        return self["barnorm"]
+        return self['barnorm']
 
     @barnorm.setter
     def barnorm(self, val):
-        self["barnorm"] = val
+        self['barnorm'] = val
 
     # boxgap
     # ------
@@ -769,11 +639,11 @@ class Layout(_BaseLayoutType):
         -------
         int|float
         """
-        return self["boxgap"]
+        return self['boxgap']
 
     @boxgap.setter
     def boxgap(self, val):
-        self["boxgap"] = val
+        self['boxgap'] = val
 
     # boxgroupgap
     # -----------
@@ -791,11 +661,11 @@ class Layout(_BaseLayoutType):
         -------
         int|float
         """
-        return self["boxgroupgap"]
+        return self['boxgroupgap']
 
     @boxgroupgap.setter
     def boxgroupgap(self, val):
-        self["boxgroupgap"] = val
+        self['boxgroupgap'] = val
 
     # boxmode
     # -------
@@ -817,11 +687,11 @@ class Layout(_BaseLayoutType):
         -------
         Any
         """
-        return self["boxmode"]
+        return self['boxmode']
 
     @boxmode.setter
     def boxmode(self, val):
-        self["boxmode"] = val
+        self['boxmode'] = val
 
     # calendar
     # --------
@@ -842,11 +712,11 @@ class Layout(_BaseLayoutType):
         -------
         Any
         """
-        return self["calendar"]
+        return self['calendar']
 
     @calendar.setter
     def calendar(self, val):
-        self["calendar"] = val
+        self['calendar'] = val
 
     # clickmode
     # ---------
@@ -877,11 +747,11 @@ class Layout(_BaseLayoutType):
         -------
         Any
         """
-        return self["clickmode"]
+        return self['clickmode']
 
     @clickmode.setter
     def clickmode(self, val):
-        self["clickmode"] = val
+        self['clickmode'] = val
 
     # coloraxis
     # ---------
@@ -893,9 +763,9 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Coloraxis`
           - A dict of string/value properties that will be passed
             to the Coloraxis constructor
-
+    
             Supported dict properties:
-
+                
                 autocolorscale
                     Determines whether the colorscale is a default
                     palette (`autocolorscale: true`) or the palette
@@ -958,11 +828,11 @@ class Layout(_BaseLayoutType):
         -------
         plotly.graph_objs.layout.Coloraxis
         """
-        return self["coloraxis"]
+        return self['coloraxis']
 
     @coloraxis.setter
     def coloraxis(self, val):
-        self["coloraxis"] = val
+        self['coloraxis'] = val
 
     # colorscale
     # ----------
@@ -974,9 +844,9 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Colorscale`
           - A dict of string/value properties that will be passed
             to the Colorscale constructor
-
+    
             Supported dict properties:
-
+                
                 diverging
                     Sets the default diverging colorscale. Note
                     that `autocolorscale` must be true for this
@@ -994,11 +864,11 @@ class Layout(_BaseLayoutType):
         -------
         plotly.graph_objs.layout.Colorscale
         """
-        return self["colorscale"]
+        return self['colorscale']
 
     @colorscale.setter
     def colorscale(self, val):
-        self["colorscale"] = val
+        self['colorscale'] = val
 
     # colorway
     # --------
@@ -1015,11 +885,11 @@ class Layout(_BaseLayoutType):
         -------
         list
         """
-        return self["colorway"]
+        return self['colorway']
 
     @colorway.setter
     def colorway(self, val):
-        self["colorway"] = val
+        self['colorway'] = val
 
     # computed
     # --------
@@ -1036,11 +906,11 @@ class Layout(_BaseLayoutType):
         -------
         Any
         """
-        return self["computed"]
+        return self['computed']
 
     @computed.setter
     def computed(self, val):
-        self["computed"] = val
+        self['computed'] = val
 
     # datarevision
     # ------------
@@ -1061,11 +931,11 @@ class Layout(_BaseLayoutType):
         -------
         Any
         """
-        return self["datarevision"]
+        return self['datarevision']
 
     @datarevision.setter
     def datarevision(self, val):
-        self["datarevision"] = val
+        self['datarevision'] = val
 
     # dragmode
     # --------
@@ -1086,11 +956,11 @@ class Layout(_BaseLayoutType):
         -------
         Any
         """
-        return self["dragmode"]
+        return self['dragmode']
 
     @dragmode.setter
     def dragmode(self, val):
-        self["dragmode"] = val
+        self['dragmode'] = val
 
     # editrevision
     # ------------
@@ -1107,11 +977,11 @@ class Layout(_BaseLayoutType):
         -------
         Any
         """
-        return self["editrevision"]
+        return self['editrevision']
 
     @editrevision.setter
     def editrevision(self, val):
-        self["editrevision"] = val
+        self['editrevision'] = val
 
     # extendfunnelareacolors
     # ----------------------
@@ -1134,11 +1004,11 @@ class Layout(_BaseLayoutType):
         -------
         bool
         """
-        return self["extendfunnelareacolors"]
+        return self['extendfunnelareacolors']
 
     @extendfunnelareacolors.setter
     def extendfunnelareacolors(self, val):
-        self["extendfunnelareacolors"] = val
+        self['extendfunnelareacolors'] = val
 
     # extendiciclecolors
     # ------------------
@@ -1161,11 +1031,11 @@ class Layout(_BaseLayoutType):
         -------
         bool
         """
-        return self["extendiciclecolors"]
+        return self['extendiciclecolors']
 
     @extendiciclecolors.setter
     def extendiciclecolors(self, val):
-        self["extendiciclecolors"] = val
+        self['extendiciclecolors'] = val
 
     # extendpiecolors
     # ---------------
@@ -1187,11 +1057,11 @@ class Layout(_BaseLayoutType):
         -------
         bool
         """
-        return self["extendpiecolors"]
+        return self['extendpiecolors']
 
     @extendpiecolors.setter
     def extendpiecolors(self, val):
-        self["extendpiecolors"] = val
+        self['extendpiecolors'] = val
 
     # extendsunburstcolors
     # --------------------
@@ -1214,11 +1084,11 @@ class Layout(_BaseLayoutType):
         -------
         bool
         """
-        return self["extendsunburstcolors"]
+        return self['extendsunburstcolors']
 
     @extendsunburstcolors.setter
     def extendsunburstcolors(self, val):
-        self["extendsunburstcolors"] = val
+        self['extendsunburstcolors'] = val
 
     # extendtreemapcolors
     # -------------------
@@ -1241,11 +1111,11 @@ class Layout(_BaseLayoutType):
         -------
         bool
         """
-        return self["extendtreemapcolors"]
+        return self['extendtreemapcolors']
 
     @extendtreemapcolors.setter
     def extendtreemapcolors(self, val):
-        self["extendtreemapcolors"] = val
+        self['extendtreemapcolors'] = val
 
     # font
     # ----
@@ -1260,11 +1130,11 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Font`
           - A dict of string/value properties that will be passed
             to the Font constructor
-
+    
             Supported dict properties:
-
+                
                 color
-
+    
                 family
                     HTML font family - the typeface that will be
                     applied by the web browser. The web browser
@@ -1294,7 +1164,7 @@ class Layout(_BaseLayoutType):
                     US/docs/Web/CSS/text-shadow for additional
                     options.
                 size
-
+    
                 style
                     Sets whether a font should be styled with a
                     normal or italic face from its family.
@@ -1311,11 +1181,11 @@ class Layout(_BaseLayoutType):
         -------
         plotly.graph_objs.layout.Font
         """
-        return self["font"]
+        return self['font']
 
     @font.setter
     def font(self, val):
-        self["font"] = val
+        self['font'] = val
 
     # funnelareacolorway
     # ------------------
@@ -1335,11 +1205,11 @@ class Layout(_BaseLayoutType):
         -------
         list
         """
-        return self["funnelareacolorway"]
+        return self['funnelareacolorway']
 
     @funnelareacolorway.setter
     def funnelareacolorway(self, val):
-        self["funnelareacolorway"] = val
+        self['funnelareacolorway'] = val
 
     # funnelgap
     # ---------
@@ -1356,11 +1226,11 @@ class Layout(_BaseLayoutType):
         -------
         int|float
         """
-        return self["funnelgap"]
+        return self['funnelgap']
 
     @funnelgap.setter
     def funnelgap(self, val):
-        self["funnelgap"] = val
+        self['funnelgap'] = val
 
     # funnelgroupgap
     # --------------
@@ -1377,11 +1247,11 @@ class Layout(_BaseLayoutType):
         -------
         int|float
         """
-        return self["funnelgroupgap"]
+        return self['funnelgroupgap']
 
     @funnelgroupgap.setter
     def funnelgroupgap(self, val):
-        self["funnelgroupgap"] = val
+        self['funnelgroupgap'] = val
 
     # funnelmode
     # ----------
@@ -1403,11 +1273,11 @@ class Layout(_BaseLayoutType):
         -------
         Any
         """
-        return self["funnelmode"]
+        return self['funnelmode']
 
     @funnelmode.setter
     def funnelmode(self, val):
-        self["funnelmode"] = val
+        self['funnelmode'] = val
 
     # geo
     # ---
@@ -1419,9 +1289,9 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Geo`
           - A dict of string/value properties that will be passed
             to the Geo constructor
-
+    
             Supported dict properties:
-
+                
                 bgcolor
                     Set the background color of the map
                 center
@@ -1525,11 +1395,11 @@ class Layout(_BaseLayoutType):
         -------
         plotly.graph_objs.layout.Geo
         """
-        return self["geo"]
+        return self['geo']
 
     @geo.setter
     def geo(self, val):
-        self["geo"] = val
+        self['geo'] = val
 
     # grid
     # ----
@@ -1541,9 +1411,9 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Grid`
           - A dict of string/value properties that will be passed
             to the Grid constructor
-
+    
             Supported dict properties:
-
+                
                 columns
                     The number of columns in the grid. If you
                     provide a 2D `subplots` array, the length of
@@ -1628,11 +1498,11 @@ class Layout(_BaseLayoutType):
         -------
         plotly.graph_objs.layout.Grid
         """
-        return self["grid"]
+        return self['grid']
 
     @grid.setter
     def grid(self, val):
-        self["grid"] = val
+        self['grid'] = val
 
     # height
     # ------
@@ -1648,11 +1518,11 @@ class Layout(_BaseLayoutType):
         -------
         int|float
         """
-        return self["height"]
+        return self['height']
 
     @height.setter
     def height(self, val):
-        self["height"] = val
+        self['height'] = val
 
     # hiddenlabels
     # ------------
@@ -1670,11 +1540,11 @@ class Layout(_BaseLayoutType):
         -------
         numpy.ndarray
         """
-        return self["hiddenlabels"]
+        return self['hiddenlabels']
 
     @hiddenlabels.setter
     def hiddenlabels(self, val):
-        self["hiddenlabels"] = val
+        self['hiddenlabels'] = val
 
     # hiddenlabelssrc
     # ---------------
@@ -1691,11 +1561,11 @@ class Layout(_BaseLayoutType):
         -------
         str
         """
-        return self["hiddenlabelssrc"]
+        return self['hiddenlabelssrc']
 
     @hiddenlabelssrc.setter
     def hiddenlabelssrc(self, val):
-        self["hiddenlabelssrc"] = val
+        self['hiddenlabelssrc'] = val
 
     # hidesources
     # -----------
@@ -1715,11 +1585,11 @@ class Layout(_BaseLayoutType):
         -------
         bool
         """
-        return self["hidesources"]
+        return self['hidesources']
 
     @hidesources.setter
     def hidesources(self, val):
-        self["hidesources"] = val
+        self['hidesources'] = val
 
     # hoverdistance
     # -------------
@@ -1742,11 +1612,11 @@ class Layout(_BaseLayoutType):
         -------
         int
         """
-        return self["hoverdistance"]
+        return self['hoverdistance']
 
     @hoverdistance.setter
     def hoverdistance(self, val):
-        self["hoverdistance"] = val
+        self['hoverdistance'] = val
 
     # hoverlabel
     # ----------
@@ -1758,9 +1628,9 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Hoverlabel`
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
-
+    
             Supported dict properties:
-
+                
                 align
                     Sets the horizontal alignment of the text
                     content within hover label box. Has an effect
@@ -1793,11 +1663,11 @@ class Layout(_BaseLayoutType):
         -------
         plotly.graph_objs.layout.Hoverlabel
         """
-        return self["hoverlabel"]
+        return self['hoverlabel']
 
     @hoverlabel.setter
     def hoverlabel(self, val):
-        self["hoverlabel"] = val
+        self['hoverlabel'] = val
 
     # hovermode
     # ---------
@@ -1825,11 +1695,11 @@ class Layout(_BaseLayoutType):
         -------
         Any
         """
-        return self["hovermode"]
+        return self['hovermode']
 
     @hovermode.setter
     def hovermode(self, val):
-        self["hovermode"] = val
+        self['hovermode'] = val
 
     # hoversubplots
     # -------------
@@ -1851,11 +1721,11 @@ class Layout(_BaseLayoutType):
         -------
         Any
         """
-        return self["hoversubplots"]
+        return self['hoversubplots']
 
     @hoversubplots.setter
     def hoversubplots(self, val):
-        self["hoversubplots"] = val
+        self['hoversubplots'] = val
 
     # iciclecolorway
     # --------------
@@ -1875,11 +1745,11 @@ class Layout(_BaseLayoutType):
         -------
         list
         """
-        return self["iciclecolorway"]
+        return self['iciclecolorway']
 
     @iciclecolorway.setter
     def iciclecolorway(self, val):
-        self["iciclecolorway"] = val
+        self['iciclecolorway'] = val
 
     # images
     # ------
@@ -1891,9 +1761,9 @@ class Layout(_BaseLayoutType):
           - A list or tuple of instances of plotly.graph_objs.layout.Image
           - A list or tuple of dicts of string/value properties that
             will be passed to the Image constructor
-
+    
             Supported dict properties:
-
+                
                 layer
                     Specifies whether images are drawn below or
                     above traces. When `xref` and `yref` are both
@@ -1996,11 +1866,11 @@ class Layout(_BaseLayoutType):
         -------
         tuple[plotly.graph_objs.layout.Image]
         """
-        return self["images"]
+        return self['images']
 
     @images.setter
     def images(self, val):
-        self["images"] = val
+        self['images'] = val
 
     # imagedefaults
     # -------------
@@ -2016,18 +1886,18 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Image`
           - A dict of string/value properties that will be passed
             to the Image constructor
-
+    
             Supported dict properties:
 
         Returns
         -------
         plotly.graph_objs.layout.Image
         """
-        return self["imagedefaults"]
+        return self['imagedefaults']
 
     @imagedefaults.setter
     def imagedefaults(self, val):
-        self["imagedefaults"] = val
+        self['imagedefaults'] = val
 
     # legend
     # ------
@@ -2039,9 +1909,9 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Legend`
           - A dict of string/value properties that will be passed
             to the Legend constructor
-
+    
             Supported dict properties:
-
+                
                 bgcolor
                     Sets the legend background color. Defaults to
                     `layout.paper_bgcolor`.
@@ -2176,11 +2046,11 @@ class Layout(_BaseLayoutType):
         -------
         plotly.graph_objs.layout.Legend
         """
-        return self["legend"]
+        return self['legend']
 
     @legend.setter
     def legend(self, val):
-        self["legend"] = val
+        self['legend'] = val
 
     # map
     # ---
@@ -2192,9 +2062,9 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Map`
           - A dict of string/value properties that will be passed
             to the Map constructor
-
+    
             Supported dict properties:
-
+                
                 bearing
                     Sets the bearing angle of the map in degrees
                     counter-clockwise from North (map.bearing).
@@ -2253,11 +2123,11 @@ class Layout(_BaseLayoutType):
         -------
         plotly.graph_objs.layout.Map
         """
-        return self["map"]
+        return self['map']
 
     @map.setter
     def map(self, val):
-        self["map"] = val
+        self['map'] = val
 
     # mapbox
     # ------
@@ -2269,9 +2139,9 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Mapbox`
           - A dict of string/value properties that will be passed
             to the Mapbox constructor
-
+    
             Supported dict properties:
-
+                
                 accesstoken
                     Sets the mapbox access token to be used for
                     this mapbox map. Alternatively, the mapbox
@@ -2346,11 +2216,11 @@ class Layout(_BaseLayoutType):
         -------
         plotly.graph_objs.layout.Mapbox
         """
-        return self["mapbox"]
+        return self['mapbox']
 
     @mapbox.setter
     def mapbox(self, val):
-        self["mapbox"] = val
+        self['mapbox'] = val
 
     # margin
     # ------
@@ -2362,9 +2232,9 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Margin`
           - A dict of string/value properties that will be passed
             to the Margin constructor
-
+    
             Supported dict properties:
-
+                
                 autoexpand
                     Turns on/off margin expansion computations.
                     Legends, colorbars, updatemenus, sliders, axis
@@ -2386,11 +2256,11 @@ class Layout(_BaseLayoutType):
         -------
         plotly.graph_objs.layout.Margin
         """
-        return self["margin"]
+        return self['margin']
 
     @margin.setter
     def margin(self, val):
-        self["margin"] = val
+        self['margin'] = val
 
     # meta
     # ----
@@ -2412,11 +2282,11 @@ class Layout(_BaseLayoutType):
         -------
         Any|numpy.ndarray
         """
-        return self["meta"]
+        return self['meta']
 
     @meta.setter
     def meta(self, val):
-        self["meta"] = val
+        self['meta'] = val
 
     # metasrc
     # -------
@@ -2432,11 +2302,11 @@ class Layout(_BaseLayoutType):
         -------
         str
         """
-        return self["metasrc"]
+        return self['metasrc']
 
     @metasrc.setter
     def metasrc(self, val):
-        self["metasrc"] = val
+        self['metasrc'] = val
 
     # minreducedheight
     # ----------------
@@ -2453,11 +2323,11 @@ class Layout(_BaseLayoutType):
         -------
         int|float
         """
-        return self["minreducedheight"]
+        return self['minreducedheight']
 
     @minreducedheight.setter
     def minreducedheight(self, val):
-        self["minreducedheight"] = val
+        self['minreducedheight'] = val
 
     # minreducedwidth
     # ---------------
@@ -2474,11 +2344,11 @@ class Layout(_BaseLayoutType):
         -------
         int|float
         """
-        return self["minreducedwidth"]
+        return self['minreducedwidth']
 
     @minreducedwidth.setter
     def minreducedwidth(self, val):
-        self["minreducedwidth"] = val
+        self['minreducedwidth'] = val
 
     # modebar
     # -------
@@ -2490,9 +2360,9 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Modebar`
           - A dict of string/value properties that will be passed
             to the Modebar constructor
-
+    
             Supported dict properties:
-
+                
                 activecolor
                     Sets the color of the active or hovered on
                     icons in the modebar.
@@ -2555,11 +2425,11 @@ class Layout(_BaseLayoutType):
         -------
         plotly.graph_objs.layout.Modebar
         """
-        return self["modebar"]
+        return self['modebar']
 
     @modebar.setter
     def modebar(self, val):
-        self["modebar"] = val
+        self['modebar'] = val
 
     # newselection
     # ------------
@@ -2571,9 +2441,9 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Newselection`
           - A dict of string/value properties that will be passed
             to the Newselection constructor
-
+    
             Supported dict properties:
-
+                
                 line
                     :class:`plotly.graph_objects.layout.newselectio
                     n.Line` instance or dict with compatible
@@ -2591,11 +2461,11 @@ class Layout(_BaseLayoutType):
         -------
         plotly.graph_objs.layout.Newselection
         """
-        return self["newselection"]
+        return self['newselection']
 
     @newselection.setter
     def newselection(self, val):
-        self["newselection"] = val
+        self['newselection'] = val
 
     # newshape
     # --------
@@ -2607,9 +2477,9 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Newshape`
           - A dict of string/value properties that will be passed
             to the Newshape constructor
-
+    
             Supported dict properties:
-
+                
                 drawdirection
                     When `dragmode` is set to "drawrect",
                     "drawline" or "drawcircle" this limits the drag
@@ -2685,11 +2555,11 @@ class Layout(_BaseLayoutType):
         -------
         plotly.graph_objs.layout.Newshape
         """
-        return self["newshape"]
+        return self['newshape']
 
     @newshape.setter
     def newshape(self, val):
-        self["newshape"] = val
+        self['newshape'] = val
 
     # paper_bgcolor
     # -------------
@@ -2745,11 +2615,11 @@ class Layout(_BaseLayoutType):
         -------
         str
         """
-        return self["paper_bgcolor"]
+        return self['paper_bgcolor']
 
     @paper_bgcolor.setter
     def paper_bgcolor(self, val):
-        self["paper_bgcolor"] = val
+        self['paper_bgcolor'] = val
 
     # piecolorway
     # -----------
@@ -2769,11 +2639,11 @@ class Layout(_BaseLayoutType):
         -------
         list
         """
-        return self["piecolorway"]
+        return self['piecolorway']
 
     @piecolorway.setter
     def piecolorway(self, val):
-        self["piecolorway"] = val
+        self['piecolorway'] = val
 
     # plot_bgcolor
     # ------------
@@ -2829,11 +2699,11 @@ class Layout(_BaseLayoutType):
         -------
         str
         """
-        return self["plot_bgcolor"]
+        return self['plot_bgcolor']
 
     @plot_bgcolor.setter
     def plot_bgcolor(self, val):
-        self["plot_bgcolor"] = val
+        self['plot_bgcolor'] = val
 
     # polar
     # -----
@@ -2845,9 +2715,9 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Polar`
           - A dict of string/value properties that will be passed
             to the Polar constructor
-
+    
             Supported dict properties:
-
+                
                 angularaxis
                     :class:`plotly.graph_objects.layout.polar.Angul
                     arAxis` instance or dict with compatible
@@ -2901,11 +2771,11 @@ class Layout(_BaseLayoutType):
         -------
         plotly.graph_objs.layout.Polar
         """
-        return self["polar"]
+        return self['polar']
 
     @polar.setter
     def polar(self, val):
-        self["polar"] = val
+        self['polar'] = val
 
     # scattergap
     # ----------
@@ -2922,11 +2792,11 @@ class Layout(_BaseLayoutType):
         -------
         int|float
         """
-        return self["scattergap"]
+        return self['scattergap']
 
     @scattergap.setter
     def scattergap(self, val):
-        self["scattergap"] = val
+        self['scattergap'] = val
 
     # scattermode
     # -----------
@@ -2948,11 +2818,11 @@ class Layout(_BaseLayoutType):
         -------
         Any
         """
-        return self["scattermode"]
+        return self['scattermode']
 
     @scattermode.setter
     def scattermode(self, val):
-        self["scattermode"] = val
+        self['scattermode'] = val
 
     # scene
     # -----
@@ -2964,9 +2834,9 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Scene`
           - A dict of string/value properties that will be passed
             to the Scene constructor
-
+    
             Supported dict properties:
-
+                
                 annotations
                     A tuple of :class:`plotly.graph_objects.layout.
                     scene.Annotation` instances or dicts with
@@ -2992,7 +2862,7 @@ class Layout(_BaseLayoutType):
                 aspectratio
                     Sets this scene's axis aspectratio.
                 bgcolor
-
+    
                 camera
                     :class:`plotly.graph_objects.layout.scene.Camer
                     a` instance or dict with compatible properties
@@ -3023,11 +2893,11 @@ class Layout(_BaseLayoutType):
         -------
         plotly.graph_objs.layout.Scene
         """
-        return self["scene"]
+        return self['scene']
 
     @scene.setter
     def scene(self, val):
-        self["scene"] = val
+        self['scene'] = val
 
     # selectdirection
     # ---------------
@@ -3047,11 +2917,11 @@ class Layout(_BaseLayoutType):
         -------
         Any
         """
-        return self["selectdirection"]
+        return self['selectdirection']
 
     @selectdirection.setter
     def selectdirection(self, val):
-        self["selectdirection"] = val
+        self['selectdirection'] = val
 
     # selectionrevision
     # -----------------
@@ -3067,11 +2937,11 @@ class Layout(_BaseLayoutType):
         -------
         Any
         """
-        return self["selectionrevision"]
+        return self['selectionrevision']
 
     @selectionrevision.setter
     def selectionrevision(self, val):
-        self["selectionrevision"] = val
+        self['selectionrevision'] = val
 
     # selections
     # ----------
@@ -3083,9 +2953,9 @@ class Layout(_BaseLayoutType):
           - A list or tuple of instances of plotly.graph_objs.layout.Selection
           - A list or tuple of dicts of string/value properties that
             will be passed to the Selection constructor
-
+    
             Supported dict properties:
-
+                
                 line
                     :class:`plotly.graph_objects.layout.selection.L
                     ine` instance or dict with compatible
@@ -3168,11 +3038,11 @@ class Layout(_BaseLayoutType):
         -------
         tuple[plotly.graph_objs.layout.Selection]
         """
-        return self["selections"]
+        return self['selections']
 
     @selections.setter
     def selections(self, val):
-        self["selections"] = val
+        self['selections'] = val
 
     # selectiondefaults
     # -----------------
@@ -3188,18 +3058,18 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Selection`
           - A dict of string/value properties that will be passed
             to the Selection constructor
-
+    
             Supported dict properties:
 
         Returns
         -------
         plotly.graph_objs.layout.Selection
         """
-        return self["selectiondefaults"]
+        return self['selectiondefaults']
 
     @selectiondefaults.setter
     def selectiondefaults(self, val):
-        self["selectiondefaults"] = val
+        self['selectiondefaults'] = val
 
     # separators
     # ----------
@@ -3219,11 +3089,11 @@ class Layout(_BaseLayoutType):
         -------
         str
         """
-        return self["separators"]
+        return self['separators']
 
     @separators.setter
     def separators(self, val):
-        self["separators"] = val
+        self['separators'] = val
 
     # shapes
     # ------
@@ -3235,9 +3105,9 @@ class Layout(_BaseLayoutType):
           - A list or tuple of instances of plotly.graph_objs.layout.Shape
           - A list or tuple of dicts of string/value properties that
             will be passed to the Shape constructor
-
+    
             Supported dict properties:
-
+                
                 editable
                     Determines whether the shape could be activated
                     for edit or not. Has no effect when the older
@@ -3477,11 +3347,11 @@ class Layout(_BaseLayoutType):
         -------
         tuple[plotly.graph_objs.layout.Shape]
         """
-        return self["shapes"]
+        return self['shapes']
 
     @shapes.setter
     def shapes(self, val):
-        self["shapes"] = val
+        self['shapes'] = val
 
     # shapedefaults
     # -------------
@@ -3497,18 +3367,18 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Shape`
           - A dict of string/value properties that will be passed
             to the Shape constructor
-
+    
             Supported dict properties:
 
         Returns
         -------
         plotly.graph_objs.layout.Shape
         """
-        return self["shapedefaults"]
+        return self['shapedefaults']
 
     @shapedefaults.setter
     def shapedefaults(self, val):
-        self["shapedefaults"] = val
+        self['shapedefaults'] = val
 
     # showlegend
     # ----------
@@ -3528,11 +3398,11 @@ class Layout(_BaseLayoutType):
         -------
         bool
         """
-        return self["showlegend"]
+        return self['showlegend']
 
     @showlegend.setter
     def showlegend(self, val):
-        self["showlegend"] = val
+        self['showlegend'] = val
 
     # sliders
     # -------
@@ -3544,9 +3414,9 @@ class Layout(_BaseLayoutType):
           - A list or tuple of instances of plotly.graph_objs.layout.Slider
           - A list or tuple of dicts of string/value properties that
             will be passed to the Slider constructor
-
+    
             Supported dict properties:
-
+                
                 active
                     Determines which button (by index starting from
                     0) is considered active.
@@ -3646,11 +3516,11 @@ class Layout(_BaseLayoutType):
         -------
         tuple[plotly.graph_objs.layout.Slider]
         """
-        return self["sliders"]
+        return self['sliders']
 
     @sliders.setter
     def sliders(self, val):
-        self["sliders"] = val
+        self['sliders'] = val
 
     # sliderdefaults
     # --------------
@@ -3666,18 +3536,18 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Slider`
           - A dict of string/value properties that will be passed
             to the Slider constructor
-
+    
             Supported dict properties:
 
         Returns
         -------
         plotly.graph_objs.layout.Slider
         """
-        return self["sliderdefaults"]
+        return self['sliderdefaults']
 
     @sliderdefaults.setter
     def sliderdefaults(self, val):
-        self["sliderdefaults"] = val
+        self['sliderdefaults'] = val
 
     # smith
     # -----
@@ -3689,9 +3559,9 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Smith`
           - A dict of string/value properties that will be passed
             to the Smith constructor
-
+    
             Supported dict properties:
-
+                
                 bgcolor
                     Set the background color of the subplot
                 domain
@@ -3710,11 +3580,11 @@ class Layout(_BaseLayoutType):
         -------
         plotly.graph_objs.layout.Smith
         """
-        return self["smith"]
+        return self['smith']
 
     @smith.setter
     def smith(self, val):
-        self["smith"] = val
+        self['smith'] = val
 
     # spikedistance
     # -------------
@@ -3735,11 +3605,11 @@ class Layout(_BaseLayoutType):
         -------
         int
         """
-        return self["spikedistance"]
+        return self['spikedistance']
 
     @spikedistance.setter
     def spikedistance(self, val):
-        self["spikedistance"] = val
+        self['spikedistance'] = val
 
     # sunburstcolorway
     # ----------------
@@ -3759,11 +3629,11 @@ class Layout(_BaseLayoutType):
         -------
         list
         """
-        return self["sunburstcolorway"]
+        return self['sunburstcolorway']
 
     @sunburstcolorway.setter
     def sunburstcolorway(self, val):
-        self["sunburstcolorway"] = val
+        self['sunburstcolorway'] = val
 
     # template
     # --------
@@ -3795,23 +3665,23 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Template`
           - A dict of string/value properties that will be passed
             to the Template constructor
-
+    
             Supported dict properties:
-
+                
                 data
                     :class:`plotly.graph_objects.layout.template.Da
                     ta` instance or dict with compatible properties
                 layout
                     :class:`plotly.graph_objects.Layout` instance
                     or dict with compatible properties
-
+    
           - The name of a registered template where current registered templates
             are stored in the plotly.io.templates configuration object. The names
             of all registered templates can be retrieved with:
                 >>> import plotly.io as pio
                 >>> list(pio.templates)  # doctest: +ELLIPSIS
                 ['ggplot2', 'seaborn', 'simple_white', 'plotly', 'plotly_white', ...]
-
+    
           - A string containing multiple registered template names, joined on '+'
             characters (e.g. 'template1+template2'). In this case the resulting
             template is computed by merging together the collection of registered
@@ -3821,11 +3691,11 @@ class Layout(_BaseLayoutType):
         -------
         plotly.graph_objs.layout.Template
         """
-        return self["template"]
+        return self['template']
 
     @template.setter
     def template(self, val):
-        self["template"] = val
+        self['template'] = val
 
     # ternary
     # -------
@@ -3837,9 +3707,9 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Ternary`
           - A dict of string/value properties that will be passed
             to the Ternary constructor
-
+    
             Supported dict properties:
-
+                
                 aaxis
                     :class:`plotly.graph_objects.layout.ternary.Aax
                     is` instance or dict with compatible properties
@@ -3868,11 +3738,11 @@ class Layout(_BaseLayoutType):
         -------
         plotly.graph_objs.layout.Ternary
         """
-        return self["ternary"]
+        return self['ternary']
 
     @ternary.setter
     def ternary(self, val):
-        self["ternary"] = val
+        self['ternary'] = val
 
     # title
     # -----
@@ -3884,9 +3754,9 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Title`
           - A dict of string/value properties that will be passed
             to the Title constructor
-
+    
             Supported dict properties:
-
+                
                 automargin
                     Determines whether the title can automatically
                     push the figure margins. If `yref='paper'` then
@@ -3959,11 +3829,11 @@ class Layout(_BaseLayoutType):
         -------
         plotly.graph_objs.layout.Title
         """
-        return self["title"]
+        return self['title']
 
     @title.setter
     def title(self, val):
-        self["title"] = val
+        self['title'] = val
 
     # transition
     # ----------
@@ -3977,9 +3847,9 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Transition`
           - A dict of string/value properties that will be passed
             to the Transition constructor
-
+    
             Supported dict properties:
-
+                
                 duration
                     The duration of the transition, in
                     milliseconds. If equal to zero, updates are
@@ -3995,11 +3865,11 @@ class Layout(_BaseLayoutType):
         -------
         plotly.graph_objs.layout.Transition
         """
-        return self["transition"]
+        return self['transition']
 
     @transition.setter
     def transition(self, val):
-        self["transition"] = val
+        self['transition'] = val
 
     # treemapcolorway
     # ---------------
@@ -4019,11 +3889,11 @@ class Layout(_BaseLayoutType):
         -------
         list
         """
-        return self["treemapcolorway"]
+        return self['treemapcolorway']
 
     @treemapcolorway.setter
     def treemapcolorway(self, val):
-        self["treemapcolorway"] = val
+        self['treemapcolorway'] = val
 
     # uirevision
     # ----------
@@ -4053,11 +3923,11 @@ class Layout(_BaseLayoutType):
         -------
         Any
         """
-        return self["uirevision"]
+        return self['uirevision']
 
     @uirevision.setter
     def uirevision(self, val):
-        self["uirevision"] = val
+        self['uirevision'] = val
 
     # uniformtext
     # -----------
@@ -4069,9 +3939,9 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Uniformtext`
           - A dict of string/value properties that will be passed
             to the Uniformtext constructor
-
+    
             Supported dict properties:
-
+                
                 minsize
                     Sets the minimum text size between traces of
                     the same type.
@@ -4091,11 +3961,11 @@ class Layout(_BaseLayoutType):
         -------
         plotly.graph_objs.layout.Uniformtext
         """
-        return self["uniformtext"]
+        return self['uniformtext']
 
     @uniformtext.setter
     def uniformtext(self, val):
-        self["uniformtext"] = val
+        self['uniformtext'] = val
 
     # updatemenus
     # -----------
@@ -4107,9 +3977,9 @@ class Layout(_BaseLayoutType):
           - A list or tuple of instances of plotly.graph_objs.layout.Updatemenu
           - A list or tuple of dicts of string/value properties that
             will be passed to the Updatemenu constructor
-
+    
             Supported dict properties:
-
+                
                 active
                     Determines which button (by index starting from
                     0) is considered active.
@@ -4194,11 +4064,11 @@ class Layout(_BaseLayoutType):
         -------
         tuple[plotly.graph_objs.layout.Updatemenu]
         """
-        return self["updatemenus"]
+        return self['updatemenus']
 
     @updatemenus.setter
     def updatemenus(self, val):
-        self["updatemenus"] = val
+        self['updatemenus'] = val
 
     # updatemenudefaults
     # ------------------
@@ -4214,18 +4084,18 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.Updatemenu`
           - A dict of string/value properties that will be passed
             to the Updatemenu constructor
-
+    
             Supported dict properties:
 
         Returns
         -------
         plotly.graph_objs.layout.Updatemenu
         """
-        return self["updatemenudefaults"]
+        return self['updatemenudefaults']
 
     @updatemenudefaults.setter
     def updatemenudefaults(self, val):
-        self["updatemenudefaults"] = val
+        self['updatemenudefaults'] = val
 
     # violingap
     # ---------
@@ -4243,11 +4113,11 @@ class Layout(_BaseLayoutType):
         -------
         int|float
         """
-        return self["violingap"]
+        return self['violingap']
 
     @violingap.setter
     def violingap(self, val):
-        self["violingap"] = val
+        self['violingap'] = val
 
     # violingroupgap
     # --------------
@@ -4265,11 +4135,11 @@ class Layout(_BaseLayoutType):
         -------
         int|float
         """
-        return self["violingroupgap"]
+        return self['violingroupgap']
 
     @violingroupgap.setter
     def violingroupgap(self, val):
-        self["violingroupgap"] = val
+        self['violingroupgap'] = val
 
     # violinmode
     # ----------
@@ -4291,11 +4161,11 @@ class Layout(_BaseLayoutType):
         -------
         Any
         """
-        return self["violinmode"]
+        return self['violinmode']
 
     @violinmode.setter
     def violinmode(self, val):
-        self["violinmode"] = val
+        self['violinmode'] = val
 
     # waterfallgap
     # ------------
@@ -4312,11 +4182,11 @@ class Layout(_BaseLayoutType):
         -------
         int|float
         """
-        return self["waterfallgap"]
+        return self['waterfallgap']
 
     @waterfallgap.setter
     def waterfallgap(self, val):
-        self["waterfallgap"] = val
+        self['waterfallgap'] = val
 
     # waterfallgroupgap
     # -----------------
@@ -4333,11 +4203,11 @@ class Layout(_BaseLayoutType):
         -------
         int|float
         """
-        return self["waterfallgroupgap"]
+        return self['waterfallgroupgap']
 
     @waterfallgroupgap.setter
     def waterfallgroupgap(self, val):
-        self["waterfallgroupgap"] = val
+        self['waterfallgroupgap'] = val
 
     # waterfallmode
     # -------------
@@ -4358,11 +4228,11 @@ class Layout(_BaseLayoutType):
         -------
         Any
         """
-        return self["waterfallmode"]
+        return self['waterfallmode']
 
     @waterfallmode.setter
     def waterfallmode(self, val):
-        self["waterfallmode"] = val
+        self['waterfallmode'] = val
 
     # width
     # -----
@@ -4378,11 +4248,11 @@ class Layout(_BaseLayoutType):
         -------
         int|float
         """
-        return self["width"]
+        return self['width']
 
     @width.setter
     def width(self, val):
-        self["width"] = val
+        self['width'] = val
 
     # xaxis
     # -----
@@ -4394,9 +4264,9 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.XAxis`
           - A dict of string/value properties that will be passed
             to the XAxis constructor
-
+    
             Supported dict properties:
-
+                
                 anchor
                     If set to an opposite-letter axis id (e.g.
                     `x2`, `y`), this axis is bound to the
@@ -4971,11 +4841,11 @@ class Layout(_BaseLayoutType):
         -------
         plotly.graph_objs.layout.XAxis
         """
-        return self["xaxis"]
+        return self['xaxis']
 
     @xaxis.setter
     def xaxis(self, val):
-        self["xaxis"] = val
+        self['xaxis'] = val
 
     # yaxis
     # -----
@@ -4987,9 +4857,9 @@ class Layout(_BaseLayoutType):
           - An instance of :class:`plotly.graph_objs.layout.YAxis`
           - A dict of string/value properties that will be passed
             to the YAxis constructor
-
+    
             Supported dict properties:
-
+                
                 anchor
                     If set to an opposite-letter axis id (e.g.
                     `x2`, `y`), this axis is bound to the
@@ -5575,11 +5445,11 @@ class Layout(_BaseLayoutType):
         -------
         plotly.graph_objs.layout.YAxis
         """
-        return self["yaxis"]
+        return self['yaxis']
 
     @yaxis.setter
     def yaxis(self, val):
-        self["yaxis"] = val
+        self['yaxis'] = val
 
     # Self properties description
     # ---------------------------
@@ -6077,107 +5947,105 @@ class Layout(_BaseLayoutType):
             :class:`plotly.graph_objects.layout.YAxis` instance or
             dict with compatible properties
         """
-
-    def __init__(
-        self,
-        arg=None,
-        activeselection=None,
-        activeshape=None,
-        annotations=None,
-        annotationdefaults=None,
-        autosize=None,
-        autotypenumbers=None,
-        barcornerradius=None,
-        bargap=None,
-        bargroupgap=None,
-        barmode=None,
-        barnorm=None,
-        boxgap=None,
-        boxgroupgap=None,
-        boxmode=None,
-        calendar=None,
-        clickmode=None,
-        coloraxis=None,
-        colorscale=None,
-        colorway=None,
-        computed=None,
-        datarevision=None,
-        dragmode=None,
-        editrevision=None,
-        extendfunnelareacolors=None,
-        extendiciclecolors=None,
-        extendpiecolors=None,
-        extendsunburstcolors=None,
-        extendtreemapcolors=None,
-        font=None,
-        funnelareacolorway=None,
-        funnelgap=None,
-        funnelgroupgap=None,
-        funnelmode=None,
-        geo=None,
-        grid=None,
-        height=None,
-        hiddenlabels=None,
-        hiddenlabelssrc=None,
-        hidesources=None,
-        hoverdistance=None,
-        hoverlabel=None,
-        hovermode=None,
-        hoversubplots=None,
-        iciclecolorway=None,
-        images=None,
-        imagedefaults=None,
-        legend=None,
-        map=None,
-        mapbox=None,
-        margin=None,
-        meta=None,
-        metasrc=None,
-        minreducedheight=None,
-        minreducedwidth=None,
-        modebar=None,
-        newselection=None,
-        newshape=None,
-        paper_bgcolor=None,
-        piecolorway=None,
-        plot_bgcolor=None,
-        polar=None,
-        scattergap=None,
-        scattermode=None,
-        scene=None,
-        selectdirection=None,
-        selectionrevision=None,
-        selections=None,
-        selectiondefaults=None,
-        separators=None,
-        shapes=None,
-        shapedefaults=None,
-        showlegend=None,
-        sliders=None,
-        sliderdefaults=None,
-        smith=None,
-        spikedistance=None,
-        sunburstcolorway=None,
-        template=None,
-        ternary=None,
-        title=None,
-        transition=None,
-        treemapcolorway=None,
-        uirevision=None,
-        uniformtext=None,
-        updatemenus=None,
-        updatemenudefaults=None,
-        violingap=None,
-        violingroupgap=None,
-        violinmode=None,
-        waterfallgap=None,
-        waterfallgroupgap=None,
-        waterfallmode=None,
-        width=None,
-        xaxis=None,
-        yaxis=None,
-        **kwargs,
-    ):
+    def __init__(self,
+            arg=None,
+            activeselection=None,
+            activeshape=None,
+            annotations=None,
+            annotationdefaults=None,
+            autosize=None,
+            autotypenumbers=None,
+            barcornerradius=None,
+            bargap=None,
+            bargroupgap=None,
+            barmode=None,
+            barnorm=None,
+            boxgap=None,
+            boxgroupgap=None,
+            boxmode=None,
+            calendar=None,
+            clickmode=None,
+            coloraxis=None,
+            colorscale=None,
+            colorway=None,
+            computed=None,
+            datarevision=None,
+            dragmode=None,
+            editrevision=None,
+            extendfunnelareacolors=None,
+            extendiciclecolors=None,
+            extendpiecolors=None,
+            extendsunburstcolors=None,
+            extendtreemapcolors=None,
+            font=None,
+            funnelareacolorway=None,
+            funnelgap=None,
+            funnelgroupgap=None,
+            funnelmode=None,
+            geo=None,
+            grid=None,
+            height=None,
+            hiddenlabels=None,
+            hiddenlabelssrc=None,
+            hidesources=None,
+            hoverdistance=None,
+            hoverlabel=None,
+            hovermode=None,
+            hoversubplots=None,
+            iciclecolorway=None,
+            images=None,
+            imagedefaults=None,
+            legend=None,
+            map=None,
+            mapbox=None,
+            margin=None,
+            meta=None,
+            metasrc=None,
+            minreducedheight=None,
+            minreducedwidth=None,
+            modebar=None,
+            newselection=None,
+            newshape=None,
+            paper_bgcolor=None,
+            piecolorway=None,
+            plot_bgcolor=None,
+            polar=None,
+            scattergap=None,
+            scattermode=None,
+            scene=None,
+            selectdirection=None,
+            selectionrevision=None,
+            selections=None,
+            selectiondefaults=None,
+            separators=None,
+            shapes=None,
+            shapedefaults=None,
+            showlegend=None,
+            sliders=None,
+            sliderdefaults=None,
+            smith=None,
+            spikedistance=None,
+            sunburstcolorway=None,
+            template=None,
+            ternary=None,
+            title=None,
+            transition=None,
+            treemapcolorway=None,
+            uirevision=None,
+            uniformtext=None,
+            updatemenus=None,
+            updatemenudefaults=None,
+            violingap=None,
+            violingroupgap=None,
+            violinmode=None,
+            waterfallgap=None,
+            waterfallgroupgap=None,
+            waterfallmode=None,
+            width=None,
+            xaxis=None,
+            yaxis=None,
+            **kwargs
+        ):
         """
         Construct a new Layout object
 
@@ -6681,111 +6549,15 @@ class Layout(_BaseLayoutType):
         -------
         Layout
         """
-        super(Layout, self).__init__("layout")
+        super(Layout, self).__init__('layout')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Override _valid_props for instance so that instance can mutate set
         # to support subplot properties (e.g. xaxis2)
-        self._valid_props = {
-            "activeselection",
-            "activeshape",
-            "annotationdefaults",
-            "annotations",
-            "autosize",
-            "autotypenumbers",
-            "barcornerradius",
-            "bargap",
-            "bargroupgap",
-            "barmode",
-            "barnorm",
-            "boxgap",
-            "boxgroupgap",
-            "boxmode",
-            "calendar",
-            "clickmode",
-            "coloraxis",
-            "colorscale",
-            "colorway",
-            "computed",
-            "datarevision",
-            "dragmode",
-            "editrevision",
-            "extendfunnelareacolors",
-            "extendiciclecolors",
-            "extendpiecolors",
-            "extendsunburstcolors",
-            "extendtreemapcolors",
-            "font",
-            "funnelareacolorway",
-            "funnelgap",
-            "funnelgroupgap",
-            "funnelmode",
-            "geo",
-            "grid",
-            "height",
-            "hiddenlabels",
-            "hiddenlabelssrc",
-            "hidesources",
-            "hoverdistance",
-            "hoverlabel",
-            "hovermode",
-            "hoversubplots",
-            "iciclecolorway",
-            "imagedefaults",
-            "images",
-            "legend",
-            "map",
-            "mapbox",
-            "margin",
-            "meta",
-            "metasrc",
-            "minreducedheight",
-            "minreducedwidth",
-            "modebar",
-            "newselection",
-            "newshape",
-            "paper_bgcolor",
-            "piecolorway",
-            "plot_bgcolor",
-            "polar",
-            "scattergap",
-            "scattermode",
-            "scene",
-            "selectdirection",
-            "selectiondefaults",
-            "selectionrevision",
-            "selections",
-            "separators",
-            "shapedefaults",
-            "shapes",
-            "showlegend",
-            "sliderdefaults",
-            "sliders",
-            "smith",
-            "spikedistance",
-            "sunburstcolorway",
-            "template",
-            "ternary",
-            "title",
-            "transition",
-            "treemapcolorway",
-            "uirevision",
-            "uniformtext",
-            "updatemenudefaults",
-            "updatemenus",
-            "violingap",
-            "violingroupgap",
-            "violinmode",
-            "waterfallgap",
-            "waterfallgroupgap",
-            "waterfallmode",
-            "width",
-            "xaxis",
-            "yaxis",
-        }
+        self._valid_props = {"activeselection", "activeshape", "annotationdefaults", "annotations", "autosize", "autotypenumbers", "barcornerradius", "bargap", "bargroupgap", "barmode", "barnorm", "boxgap", "boxgroupgap", "boxmode", "calendar", "clickmode", "coloraxis", "colorscale", "colorway", "computed", "datarevision", "dragmode", "editrevision", "extendfunnelareacolors", "extendiciclecolors", "extendpiecolors", "extendsunburstcolors", "extendtreemapcolors", "font", "funnelareacolorway", "funnelgap", "funnelgroupgap", "funnelmode", "geo", "grid", "height", "hiddenlabels", "hiddenlabelssrc", "hidesources", "hoverdistance", "hoverlabel", "hovermode", "hoversubplots", "iciclecolorway", "imagedefaults", "images", "legend", "map", "mapbox", "margin", "meta", "metasrc", "minreducedheight", "minreducedwidth", "modebar", "newselection", "newshape", "paper_bgcolor", "piecolorway", "plot_bgcolor", "polar", "scattergap", "scattermode", "scene", "selectdirection", "selectiondefaults", "selectionrevision", "selections", "separators", "shapedefaults", "shapes", "showlegend", "sliderdefaults", "sliders", "smith", "spikedistance", "sunburstcolorway", "template", "ternary", "title", "transition", "treemapcolorway", "uirevision", "uniformtext", "updatemenudefaults", "updatemenus", "violingap", "violingroupgap", "violinmode", "waterfallgap", "waterfallgroupgap", "waterfallmode", "width", "xaxis", "yaxis"}
 
         # Validate arg
         # ------------
@@ -6796,400 +6568,114 @@ class Layout(_BaseLayoutType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.Layout
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.Layout`"""
-            )
+an instance of :class:`plotly.graph_objs.Layout`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("activeselection", None)
-        _v = activeselection if activeselection is not None else _v
-        if _v is not None:
-            self["activeselection"] = _v
-        _v = arg.pop("activeshape", None)
-        _v = activeshape if activeshape is not None else _v
-        if _v is not None:
-            self["activeshape"] = _v
-        _v = arg.pop("annotations", None)
-        _v = annotations if annotations is not None else _v
-        if _v is not None:
-            self["annotations"] = _v
-        _v = arg.pop("annotationdefaults", None)
-        _v = annotationdefaults if annotationdefaults is not None else _v
-        if _v is not None:
-            self["annotationdefaults"] = _v
-        _v = arg.pop("autosize", None)
-        _v = autosize if autosize is not None else _v
-        if _v is not None:
-            self["autosize"] = _v
-        _v = arg.pop("autotypenumbers", None)
-        _v = autotypenumbers if autotypenumbers is not None else _v
-        if _v is not None:
-            self["autotypenumbers"] = _v
-        _v = arg.pop("barcornerradius", None)
-        _v = barcornerradius if barcornerradius is not None else _v
-        if _v is not None:
-            self["barcornerradius"] = _v
-        _v = arg.pop("bargap", None)
-        _v = bargap if bargap is not None else _v
-        if _v is not None:
-            self["bargap"] = _v
-        _v = arg.pop("bargroupgap", None)
-        _v = bargroupgap if bargroupgap is not None else _v
-        if _v is not None:
-            self["bargroupgap"] = _v
-        _v = arg.pop("barmode", None)
-        _v = barmode if barmode is not None else _v
-        if _v is not None:
-            self["barmode"] = _v
-        _v = arg.pop("barnorm", None)
-        _v = barnorm if barnorm is not None else _v
-        if _v is not None:
-            self["barnorm"] = _v
-        _v = arg.pop("boxgap", None)
-        _v = boxgap if boxgap is not None else _v
-        if _v is not None:
-            self["boxgap"] = _v
-        _v = arg.pop("boxgroupgap", None)
-        _v = boxgroupgap if boxgroupgap is not None else _v
-        if _v is not None:
-            self["boxgroupgap"] = _v
-        _v = arg.pop("boxmode", None)
-        _v = boxmode if boxmode is not None else _v
-        if _v is not None:
-            self["boxmode"] = _v
-        _v = arg.pop("calendar", None)
-        _v = calendar if calendar is not None else _v
-        if _v is not None:
-            self["calendar"] = _v
-        _v = arg.pop("clickmode", None)
-        _v = clickmode if clickmode is not None else _v
-        if _v is not None:
-            self["clickmode"] = _v
-        _v = arg.pop("coloraxis", None)
-        _v = coloraxis if coloraxis is not None else _v
-        if _v is not None:
-            self["coloraxis"] = _v
-        _v = arg.pop("colorscale", None)
-        _v = colorscale if colorscale is not None else _v
-        if _v is not None:
-            self["colorscale"] = _v
-        _v = arg.pop("colorway", None)
-        _v = colorway if colorway is not None else _v
-        if _v is not None:
-            self["colorway"] = _v
-        _v = arg.pop("computed", None)
-        _v = computed if computed is not None else _v
-        if _v is not None:
-            self["computed"] = _v
-        _v = arg.pop("datarevision", None)
-        _v = datarevision if datarevision is not None else _v
-        if _v is not None:
-            self["datarevision"] = _v
-        _v = arg.pop("dragmode", None)
-        _v = dragmode if dragmode is not None else _v
-        if _v is not None:
-            self["dragmode"] = _v
-        _v = arg.pop("editrevision", None)
-        _v = editrevision if editrevision is not None else _v
-        if _v is not None:
-            self["editrevision"] = _v
-        _v = arg.pop("extendfunnelareacolors", None)
-        _v = extendfunnelareacolors if extendfunnelareacolors is not None else _v
-        if _v is not None:
-            self["extendfunnelareacolors"] = _v
-        _v = arg.pop("extendiciclecolors", None)
-        _v = extendiciclecolors if extendiciclecolors is not None else _v
-        if _v is not None:
-            self["extendiciclecolors"] = _v
-        _v = arg.pop("extendpiecolors", None)
-        _v = extendpiecolors if extendpiecolors is not None else _v
-        if _v is not None:
-            self["extendpiecolors"] = _v
-        _v = arg.pop("extendsunburstcolors", None)
-        _v = extendsunburstcolors if extendsunburstcolors is not None else _v
-        if _v is not None:
-            self["extendsunburstcolors"] = _v
-        _v = arg.pop("extendtreemapcolors", None)
-        _v = extendtreemapcolors if extendtreemapcolors is not None else _v
-        if _v is not None:
-            self["extendtreemapcolors"] = _v
-        _v = arg.pop("font", None)
-        _v = font if font is not None else _v
-        if _v is not None:
-            self["font"] = _v
-        _v = arg.pop("funnelareacolorway", None)
-        _v = funnelareacolorway if funnelareacolorway is not None else _v
-        if _v is not None:
-            self["funnelareacolorway"] = _v
-        _v = arg.pop("funnelgap", None)
-        _v = funnelgap if funnelgap is not None else _v
-        if _v is not None:
-            self["funnelgap"] = _v
-        _v = arg.pop("funnelgroupgap", None)
-        _v = funnelgroupgap if funnelgroupgap is not None else _v
-        if _v is not None:
-            self["funnelgroupgap"] = _v
-        _v = arg.pop("funnelmode", None)
-        _v = funnelmode if funnelmode is not None else _v
-        if _v is not None:
-            self["funnelmode"] = _v
-        _v = arg.pop("geo", None)
-        _v = geo if geo is not None else _v
-        if _v is not None:
-            self["geo"] = _v
-        _v = arg.pop("grid", None)
-        _v = grid if grid is not None else _v
-        if _v is not None:
-            self["grid"] = _v
-        _v = arg.pop("height", None)
-        _v = height if height is not None else _v
-        if _v is not None:
-            self["height"] = _v
-        _v = arg.pop("hiddenlabels", None)
-        _v = hiddenlabels if hiddenlabels is not None else _v
-        if _v is not None:
-            self["hiddenlabels"] = _v
-        _v = arg.pop("hiddenlabelssrc", None)
-        _v = hiddenlabelssrc if hiddenlabelssrc is not None else _v
-        if _v is not None:
-            self["hiddenlabelssrc"] = _v
-        _v = arg.pop("hidesources", None)
-        _v = hidesources if hidesources is not None else _v
-        if _v is not None:
-            self["hidesources"] = _v
-        _v = arg.pop("hoverdistance", None)
-        _v = hoverdistance if hoverdistance is not None else _v
-        if _v is not None:
-            self["hoverdistance"] = _v
-        _v = arg.pop("hoverlabel", None)
-        _v = hoverlabel if hoverlabel is not None else _v
-        if _v is not None:
-            self["hoverlabel"] = _v
-        _v = arg.pop("hovermode", None)
-        _v = hovermode if hovermode is not None else _v
-        if _v is not None:
-            self["hovermode"] = _v
-        _v = arg.pop("hoversubplots", None)
-        _v = hoversubplots if hoversubplots is not None else _v
-        if _v is not None:
-            self["hoversubplots"] = _v
-        _v = arg.pop("iciclecolorway", None)
-        _v = iciclecolorway if iciclecolorway is not None else _v
-        if _v is not None:
-            self["iciclecolorway"] = _v
-        _v = arg.pop("images", None)
-        _v = images if images is not None else _v
-        if _v is not None:
-            self["images"] = _v
-        _v = arg.pop("imagedefaults", None)
-        _v = imagedefaults if imagedefaults is not None else _v
-        if _v is not None:
-            self["imagedefaults"] = _v
-        _v = arg.pop("legend", None)
-        _v = legend if legend is not None else _v
-        if _v is not None:
-            self["legend"] = _v
-        _v = arg.pop("map", None)
-        _v = map if map is not None else _v
-        if _v is not None:
-            self["map"] = _v
-        _v = arg.pop("mapbox", None)
-        _v = mapbox if mapbox is not None else _v
-        if _v is not None:
-            self["mapbox"] = _v
-        _v = arg.pop("margin", None)
-        _v = margin if margin is not None else _v
-        if _v is not None:
-            self["margin"] = _v
-        _v = arg.pop("meta", None)
-        _v = meta if meta is not None else _v
-        if _v is not None:
-            self["meta"] = _v
-        _v = arg.pop("metasrc", None)
-        _v = metasrc if metasrc is not None else _v
-        if _v is not None:
-            self["metasrc"] = _v
-        _v = arg.pop("minreducedheight", None)
-        _v = minreducedheight if minreducedheight is not None else _v
-        if _v is not None:
-            self["minreducedheight"] = _v
-        _v = arg.pop("minreducedwidth", None)
-        _v = minreducedwidth if minreducedwidth is not None else _v
-        if _v is not None:
-            self["minreducedwidth"] = _v
-        _v = arg.pop("modebar", None)
-        _v = modebar if modebar is not None else _v
-        if _v is not None:
-            self["modebar"] = _v
-        _v = arg.pop("newselection", None)
-        _v = newselection if newselection is not None else _v
-        if _v is not None:
-            self["newselection"] = _v
-        _v = arg.pop("newshape", None)
-        _v = newshape if newshape is not None else _v
-        if _v is not None:
-            self["newshape"] = _v
-        _v = arg.pop("paper_bgcolor", None)
-        _v = paper_bgcolor if paper_bgcolor is not None else _v
-        if _v is not None:
-            self["paper_bgcolor"] = _v
-        _v = arg.pop("piecolorway", None)
-        _v = piecolorway if piecolorway is not None else _v
-        if _v is not None:
-            self["piecolorway"] = _v
-        _v = arg.pop("plot_bgcolor", None)
-        _v = plot_bgcolor if plot_bgcolor is not None else _v
-        if _v is not None:
-            self["plot_bgcolor"] = _v
-        _v = arg.pop("polar", None)
-        _v = polar if polar is not None else _v
-        if _v is not None:
-            self["polar"] = _v
-        _v = arg.pop("scattergap", None)
-        _v = scattergap if scattergap is not None else _v
-        if _v is not None:
-            self["scattergap"] = _v
-        _v = arg.pop("scattermode", None)
-        _v = scattermode if scattermode is not None else _v
-        if _v is not None:
-            self["scattermode"] = _v
-        _v = arg.pop("scene", None)
-        _v = scene if scene is not None else _v
-        if _v is not None:
-            self["scene"] = _v
-        _v = arg.pop("selectdirection", None)
-        _v = selectdirection if selectdirection is not None else _v
-        if _v is not None:
-            self["selectdirection"] = _v
-        _v = arg.pop("selectionrevision", None)
-        _v = selectionrevision if selectionrevision is not None else _v
-        if _v is not None:
-            self["selectionrevision"] = _v
-        _v = arg.pop("selections", None)
-        _v = selections if selections is not None else _v
-        if _v is not None:
-            self["selections"] = _v
-        _v = arg.pop("selectiondefaults", None)
-        _v = selectiondefaults if selectiondefaults is not None else _v
-        if _v is not None:
-            self["selectiondefaults"] = _v
-        _v = arg.pop("separators", None)
-        _v = separators if separators is not None else _v
-        if _v is not None:
-            self["separators"] = _v
-        _v = arg.pop("shapes", None)
-        _v = shapes if shapes is not None else _v
-        if _v is not None:
-            self["shapes"] = _v
-        _v = arg.pop("shapedefaults", None)
-        _v = shapedefaults if shapedefaults is not None else _v
-        if _v is not None:
-            self["shapedefaults"] = _v
-        _v = arg.pop("showlegend", None)
-        _v = showlegend if showlegend is not None else _v
-        if _v is not None:
-            self["showlegend"] = _v
-        _v = arg.pop("sliders", None)
-        _v = sliders if sliders is not None else _v
-        if _v is not None:
-            self["sliders"] = _v
-        _v = arg.pop("sliderdefaults", None)
-        _v = sliderdefaults if sliderdefaults is not None else _v
-        if _v is not None:
-            self["sliderdefaults"] = _v
-        _v = arg.pop("smith", None)
-        _v = smith if smith is not None else _v
-        if _v is not None:
-            self["smith"] = _v
-        _v = arg.pop("spikedistance", None)
-        _v = spikedistance if spikedistance is not None else _v
-        if _v is not None:
-            self["spikedistance"] = _v
-        _v = arg.pop("sunburstcolorway", None)
-        _v = sunburstcolorway if sunburstcolorway is not None else _v
-        if _v is not None:
-            self["sunburstcolorway"] = _v
-        _v = arg.pop("template", None)
-        _v = template if template is not None else _v
-        if _v is not None:
-            self["template"] = _v
-        _v = arg.pop("ternary", None)
-        _v = ternary if ternary is not None else _v
-        if _v is not None:
-            self["ternary"] = _v
-        _v = arg.pop("title", None)
-        _v = title if title is not None else _v
-        if _v is not None:
-            self["title"] = _v
-        _v = arg.pop("transition", None)
-        _v = transition if transition is not None else _v
-        if _v is not None:
-            self["transition"] = _v
-        _v = arg.pop("treemapcolorway", None)
-        _v = treemapcolorway if treemapcolorway is not None else _v
-        if _v is not None:
-            self["treemapcolorway"] = _v
-        _v = arg.pop("uirevision", None)
-        _v = uirevision if uirevision is not None else _v
-        if _v is not None:
-            self["uirevision"] = _v
-        _v = arg.pop("uniformtext", None)
-        _v = uniformtext if uniformtext is not None else _v
-        if _v is not None:
-            self["uniformtext"] = _v
-        _v = arg.pop("updatemenus", None)
-        _v = updatemenus if updatemenus is not None else _v
-        if _v is not None:
-            self["updatemenus"] = _v
-        _v = arg.pop("updatemenudefaults", None)
-        _v = updatemenudefaults if updatemenudefaults is not None else _v
-        if _v is not None:
-            self["updatemenudefaults"] = _v
-        _v = arg.pop("violingap", None)
-        _v = violingap if violingap is not None else _v
-        if _v is not None:
-            self["violingap"] = _v
-        _v = arg.pop("violingroupgap", None)
-        _v = violingroupgap if violingroupgap is not None else _v
-        if _v is not None:
-            self["violingroupgap"] = _v
-        _v = arg.pop("violinmode", None)
-        _v = violinmode if violinmode is not None else _v
-        if _v is not None:
-            self["violinmode"] = _v
-        _v = arg.pop("waterfallgap", None)
-        _v = waterfallgap if waterfallgap is not None else _v
-        if _v is not None:
-            self["waterfallgap"] = _v
-        _v = arg.pop("waterfallgroupgap", None)
-        _v = waterfallgroupgap if waterfallgroupgap is not None else _v
-        if _v is not None:
-            self["waterfallgroupgap"] = _v
-        _v = arg.pop("waterfallmode", None)
-        _v = waterfallmode if waterfallmode is not None else _v
-        if _v is not None:
-            self["waterfallmode"] = _v
-        _v = arg.pop("width", None)
-        _v = width if width is not None else _v
-        if _v is not None:
-            self["width"] = _v
-        _v = arg.pop("xaxis", None)
-        _v = xaxis if xaxis is not None else _v
-        if _v is not None:
-            self["xaxis"] = _v
-        _v = arg.pop("yaxis", None)
-        _v = yaxis if yaxis is not None else _v
-        if _v is not None:
-            self["yaxis"] = _v
+        self._init_provided('activeselection', arg, activeselection)
+        self._init_provided('activeshape', arg, activeshape)
+        self._init_provided('annotations', arg, annotations)
+        self._init_provided('annotationdefaults', arg, annotationdefaults)
+        self._init_provided('autosize', arg, autosize)
+        self._init_provided('autotypenumbers', arg, autotypenumbers)
+        self._init_provided('barcornerradius', arg, barcornerradius)
+        self._init_provided('bargap', arg, bargap)
+        self._init_provided('bargroupgap', arg, bargroupgap)
+        self._init_provided('barmode', arg, barmode)
+        self._init_provided('barnorm', arg, barnorm)
+        self._init_provided('boxgap', arg, boxgap)
+        self._init_provided('boxgroupgap', arg, boxgroupgap)
+        self._init_provided('boxmode', arg, boxmode)
+        self._init_provided('calendar', arg, calendar)
+        self._init_provided('clickmode', arg, clickmode)
+        self._init_provided('coloraxis', arg, coloraxis)
+        self._init_provided('colorscale', arg, colorscale)
+        self._init_provided('colorway', arg, colorway)
+        self._init_provided('computed', arg, computed)
+        self._init_provided('datarevision', arg, datarevision)
+        self._init_provided('dragmode', arg, dragmode)
+        self._init_provided('editrevision', arg, editrevision)
+        self._init_provided('extendfunnelareacolors', arg, extendfunnelareacolors)
+        self._init_provided('extendiciclecolors', arg, extendiciclecolors)
+        self._init_provided('extendpiecolors', arg, extendpiecolors)
+        self._init_provided('extendsunburstcolors', arg, extendsunburstcolors)
+        self._init_provided('extendtreemapcolors', arg, extendtreemapcolors)
+        self._init_provided('font', arg, font)
+        self._init_provided('funnelareacolorway', arg, funnelareacolorway)
+        self._init_provided('funnelgap', arg, funnelgap)
+        self._init_provided('funnelgroupgap', arg, funnelgroupgap)
+        self._init_provided('funnelmode', arg, funnelmode)
+        self._init_provided('geo', arg, geo)
+        self._init_provided('grid', arg, grid)
+        self._init_provided('height', arg, height)
+        self._init_provided('hiddenlabels', arg, hiddenlabels)
+        self._init_provided('hiddenlabelssrc', arg, hiddenlabelssrc)
+        self._init_provided('hidesources', arg, hidesources)
+        self._init_provided('hoverdistance', arg, hoverdistance)
+        self._init_provided('hoverlabel', arg, hoverlabel)
+        self._init_provided('hovermode', arg, hovermode)
+        self._init_provided('hoversubplots', arg, hoversubplots)
+        self._init_provided('iciclecolorway', arg, iciclecolorway)
+        self._init_provided('images', arg, images)
+        self._init_provided('imagedefaults', arg, imagedefaults)
+        self._init_provided('legend', arg, legend)
+        self._init_provided('map', arg, map)
+        self._init_provided('mapbox', arg, mapbox)
+        self._init_provided('margin', arg, margin)
+        self._init_provided('meta', arg, meta)
+        self._init_provided('metasrc', arg, metasrc)
+        self._init_provided('minreducedheight', arg, minreducedheight)
+        self._init_provided('minreducedwidth', arg, minreducedwidth)
+        self._init_provided('modebar', arg, modebar)
+        self._init_provided('newselection', arg, newselection)
+        self._init_provided('newshape', arg, newshape)
+        self._init_provided('paper_bgcolor', arg, paper_bgcolor)
+        self._init_provided('piecolorway', arg, piecolorway)
+        self._init_provided('plot_bgcolor', arg, plot_bgcolor)
+        self._init_provided('polar', arg, polar)
+        self._init_provided('scattergap', arg, scattergap)
+        self._init_provided('scattermode', arg, scattermode)
+        self._init_provided('scene', arg, scene)
+        self._init_provided('selectdirection', arg, selectdirection)
+        self._init_provided('selectionrevision', arg, selectionrevision)
+        self._init_provided('selections', arg, selections)
+        self._init_provided('selectiondefaults', arg, selectiondefaults)
+        self._init_provided('separators', arg, separators)
+        self._init_provided('shapes', arg, shapes)
+        self._init_provided('shapedefaults', arg, shapedefaults)
+        self._init_provided('showlegend', arg, showlegend)
+        self._init_provided('sliders', arg, sliders)
+        self._init_provided('sliderdefaults', arg, sliderdefaults)
+        self._init_provided('smith', arg, smith)
+        self._init_provided('spikedistance', arg, spikedistance)
+        self._init_provided('sunburstcolorway', arg, sunburstcolorway)
+        self._init_provided('template', arg, template)
+        self._init_provided('ternary', arg, ternary)
+        self._init_provided('title', arg, title)
+        self._init_provided('transition', arg, transition)
+        self._init_provided('treemapcolorway', arg, treemapcolorway)
+        self._init_provided('uirevision', arg, uirevision)
+        self._init_provided('uniformtext', arg, uniformtext)
+        self._init_provided('updatemenus', arg, updatemenus)
+        self._init_provided('updatemenudefaults', arg, updatemenudefaults)
+        self._init_provided('violingap', arg, violingap)
+        self._init_provided('violingroupgap', arg, violingroupgap)
+        self._init_provided('violinmode', arg, violinmode)
+        self._init_provided('waterfallgap', arg, waterfallgap)
+        self._init_provided('waterfallgroupgap', arg, waterfallgroupgap)
+        self._init_provided('waterfallmode', arg, waterfallmode)
+        self._init_provided('width', arg, width)
+        self._init_provided('xaxis', arg, xaxis)
+        self._init_provided('yaxis', arg, yaxis)
 
         # Process unknown kwargs
         # ----------------------

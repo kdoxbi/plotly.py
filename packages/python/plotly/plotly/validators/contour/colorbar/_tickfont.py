@@ -1,17 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class TickfontValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(
-        self, plotly_name="tickfont", parent_name="contour.colorbar", **kwargs
-    ):
-        super(TickfontValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Tickfont"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='tickfont',
+                       parent_name='contour.colorbar',
+                       **kwargs):
+        super(TickfontValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Tickfont'),
+                 data_docs=kwargs.pop('data_docs', """
             color
 
             family
@@ -55,7 +54,5 @@ class TickfontValidator(_plotly_utils.basevalidators.CompoundValidator):
                 Sets the variant of the font.
             weight
                 Sets the weight (or boldness) of the font.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

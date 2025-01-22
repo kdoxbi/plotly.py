@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class AxisValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="axis", parent_name="indicator.gauge", **kwargs):
-        super(AxisValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Axis"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='axis',
+                       parent_name='indicator.gauge',
+                       **kwargs):
+        super(AxisValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Axis'),
+                 data_docs=kwargs.pop('data_docs', """
             dtick
                 Sets the step in-between ticks on this axis.
                 Use with `tick0`. Must be a positive number, or
@@ -187,7 +188,5 @@ class AxisValidator(_plotly_utils.basevalidators.CompoundValidator):
                 preserving interaction like dragging. Default
                 is true when a cheater plot is present on the
                 axis, otherwise false
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

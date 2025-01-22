@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class ScattermapValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="scattermap", parent_name="", **kwargs):
-        super(ScattermapValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Scattermap"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='scattermap',
+                       parent_name='',
+                       **kwargs):
+        super(ScattermapValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Scattermap'),
+                 data_docs=kwargs.pop('data_docs', """
             below
                 Determines if this scattermap trace's layers
                 are to be inserted before the layer with the
@@ -290,7 +291,5 @@ class ScattermapValidator(_plotly_utils.basevalidators.CompoundValidator):
                 visible. If "legendonly", the trace is not
                 drawn, but can appear as a legend item
                 (provided that the legend itself is visible).
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class BaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="baxis", parent_name="carpet", **kwargs):
-        super(BaxisValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Baxis"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='baxis',
+                       parent_name='carpet',
+                       **kwargs):
+        super(BaxisValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Baxis'),
+                 data_docs=kwargs.pop('data_docs', """
             arraydtick
                 The stride between grid lines along the axis
             arraytick0
@@ -245,7 +246,5 @@ class BaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
                 to determined the axis type by looking into the
                 data of the traces that referenced the axis in
                 question.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

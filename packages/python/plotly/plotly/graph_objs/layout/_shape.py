@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
@@ -6,42 +8,9 @@ class Shape(_BaseLayoutHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "layout"
-    _path_str = "layout.shape"
-    _valid_props = {
-        "editable",
-        "fillcolor",
-        "fillrule",
-        "label",
-        "layer",
-        "legend",
-        "legendgroup",
-        "legendgrouptitle",
-        "legendrank",
-        "legendwidth",
-        "line",
-        "name",
-        "opacity",
-        "path",
-        "showlegend",
-        "templateitemname",
-        "type",
-        "visible",
-        "x0",
-        "x0shift",
-        "x1",
-        "x1shift",
-        "xanchor",
-        "xref",
-        "xsizemode",
-        "y0",
-        "y0shift",
-        "y1",
-        "y1shift",
-        "yanchor",
-        "yref",
-        "ysizemode",
-    }
+    _parent_path_str = 'layout'
+    _path_str = 'layout.shape'
+    _valid_props = {"editable", "fillcolor", "fillrule", "label", "layer", "legend", "legendgroup", "legendgrouptitle", "legendrank", "legendwidth", "line", "name", "opacity", "path", "showlegend", "templateitemname", "type", "visible", "x0", "x0shift", "x1", "x1shift", "xanchor", "xref", "xsizemode", "y0", "y0shift", "y1", "y1shift", "yanchor", "yref", "ysizemode"}
 
     # editable
     # --------
@@ -59,11 +28,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         bool
         """
-        return self["editable"]
+        return self['editable']
 
     @editable.setter
     def editable(self, val):
-        self["editable"] = val
+        self['editable'] = val
 
     # fillcolor
     # ---------
@@ -119,11 +88,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["fillcolor"]
+        return self['fillcolor']
 
     @fillcolor.setter
     def fillcolor(self, val):
-        self["fillcolor"] = val
+        self['fillcolor'] = val
 
     # fillrule
     # --------
@@ -143,11 +112,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["fillrule"]
+        return self['fillrule']
 
     @fillrule.setter
     def fillrule(self, val):
-        self["fillrule"] = val
+        self['fillrule'] = val
 
     # label
     # -----
@@ -159,9 +128,9 @@ class Shape(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.shape.Label`
           - A dict of string/value properties that will be passed
             to the Label constructor
-
+    
             Supported dict properties:
-
+                
                 font
                     Sets the shape label text font.
                 padding
@@ -233,11 +202,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         plotly.graph_objs.layout.shape.Label
         """
-        return self["label"]
+        return self['label']
 
     @label.setter
     def label(self, val):
-        self["label"] = val
+        self['label'] = val
 
     # layer
     # -----
@@ -256,11 +225,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["layer"]
+        return self['layer']
 
     @layer.setter
     def layer(self, val):
-        self["layer"] = val
+        self['layer'] = val
 
     # legend
     # ------
@@ -281,11 +250,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["legend"]
+        return self['legend']
 
     @legend.setter
     def legend(self, val):
-        self["legend"] = val
+        self['legend'] = val
 
     # legendgroup
     # -----------
@@ -304,11 +273,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["legendgroup"]
+        return self['legendgroup']
 
     @legendgroup.setter
     def legendgroup(self, val):
-        self["legendgroup"] = val
+        self['legendgroup'] = val
 
     # legendgrouptitle
     # ----------------
@@ -320,9 +289,9 @@ class Shape(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.shape.Legendgrouptitle`
           - A dict of string/value properties that will be passed
             to the Legendgrouptitle constructor
-
+    
             Supported dict properties:
-
+                
                 font
                     Sets this legend group's title font.
                 text
@@ -332,11 +301,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         plotly.graph_objs.layout.shape.Legendgrouptitle
         """
-        return self["legendgrouptitle"]
+        return self['legendgrouptitle']
 
     @legendgrouptitle.setter
     def legendgrouptitle(self, val):
-        self["legendgrouptitle"] = val
+        self['legendgrouptitle'] = val
 
     # legendrank
     # ----------
@@ -359,11 +328,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["legendrank"]
+        return self['legendrank']
 
     @legendrank.setter
     def legendrank(self, val):
-        self["legendrank"] = val
+        self['legendrank'] = val
 
     # legendwidth
     # -----------
@@ -380,11 +349,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["legendwidth"]
+        return self['legendwidth']
 
     @legendwidth.setter
     def legendwidth(self, val):
-        self["legendwidth"] = val
+        self['legendwidth'] = val
 
     # line
     # ----
@@ -396,9 +365,9 @@ class Shape(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.shape.Line`
           - A dict of string/value properties that will be passed
             to the Line constructor
-
+    
             Supported dict properties:
-
+                
                 color
                     Sets the line color.
                 dash
@@ -413,11 +382,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         plotly.graph_objs.layout.shape.Line
         """
-        return self["line"]
+        return self['line']
 
     @line.setter
     def line(self, val):
-        self["line"] = val
+        self['line'] = val
 
     # name
     # ----
@@ -440,11 +409,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["name"]
+        return self['name']
 
     @name.setter
     def name(self, val):
-        self["name"] = val
+        self['name'] = val
 
     # opacity
     # -------
@@ -460,11 +429,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["opacity"]
+        return self['opacity']
 
     @opacity.setter
     def opacity(self, val):
-        self["opacity"] = val
+        self['opacity'] = val
 
     # path
     # ----
@@ -499,11 +468,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["path"]
+        return self['path']
 
     @path.setter
     def path(self, val):
-        self["path"] = val
+        self['path'] = val
 
     # showlegend
     # ----------
@@ -519,11 +488,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         bool
         """
-        return self["showlegend"]
+        return self['showlegend']
 
     @showlegend.setter
     def showlegend(self, val):
-        self["showlegend"] = val
+        self['showlegend'] = val
 
     # templateitemname
     # ----------------
@@ -547,11 +516,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["templateitemname"]
+        return self['templateitemname']
 
     @templateitemname.setter
     def templateitemname(self, val):
-        self["templateitemname"] = val
+        self['templateitemname'] = val
 
     # type
     # ----
@@ -576,11 +545,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["type"]
+        return self['type']
 
     @type.setter
     def type(self, val):
-        self["type"] = val
+        self['type'] = val
 
     # visible
     # -------
@@ -599,11 +568,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["visible"]
+        return self['visible']
 
     @visible.setter
     def visible(self, val):
-        self["visible"] = val
+        self['visible'] = val
 
     # x0
     # --
@@ -619,11 +588,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["x0"]
+        return self['x0']
 
     @x0.setter
     def x0(self, val):
-        self["x0"] = val
+        self['x0'] = val
 
     # x0shift
     # -------
@@ -642,11 +611,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["x0shift"]
+        return self['x0shift']
 
     @x0shift.setter
     def x0shift(self, val):
-        self["x0shift"] = val
+        self['x0shift'] = val
 
     # x1
     # --
@@ -662,11 +631,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["x1"]
+        return self['x1']
 
     @x1.setter
     def x1(self, val):
-        self["x1"] = val
+        self['x1'] = val
 
     # x1shift
     # -------
@@ -685,11 +654,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["x1shift"]
+        return self['x1shift']
 
     @x1shift.setter
     def x1shift(self, val):
-        self["x1shift"] = val
+        self['x1shift'] = val
 
     # xanchor
     # -------
@@ -708,11 +677,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["xanchor"]
+        return self['xanchor']
 
     @xanchor.setter
     def xanchor(self, val):
-        self["xanchor"] = val
+        self['xanchor'] = val
 
     # xref
     # ----
@@ -741,11 +710,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["xref"]
+        return self['xref']
 
     @xref.setter
     def xref(self, val):
-        self["xref"] = val
+        self['xref'] = val
 
     # xsizemode
     # ---------
@@ -769,11 +738,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["xsizemode"]
+        return self['xsizemode']
 
     @xsizemode.setter
     def xsizemode(self, val):
-        self["xsizemode"] = val
+        self['xsizemode'] = val
 
     # y0
     # --
@@ -789,11 +758,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["y0"]
+        return self['y0']
 
     @y0.setter
     def y0(self, val):
-        self["y0"] = val
+        self['y0'] = val
 
     # y0shift
     # -------
@@ -812,11 +781,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["y0shift"]
+        return self['y0shift']
 
     @y0shift.setter
     def y0shift(self, val):
-        self["y0shift"] = val
+        self['y0shift'] = val
 
     # y1
     # --
@@ -832,11 +801,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["y1"]
+        return self['y1']
 
     @y1.setter
     def y1(self, val):
-        self["y1"] = val
+        self['y1'] = val
 
     # y1shift
     # -------
@@ -855,11 +824,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["y1shift"]
+        return self['y1shift']
 
     @y1shift.setter
     def y1shift(self, val):
-        self["y1shift"] = val
+        self['y1shift'] = val
 
     # yanchor
     # -------
@@ -878,11 +847,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["yanchor"]
+        return self['yanchor']
 
     @yanchor.setter
     def yanchor(self, val):
-        self["yanchor"] = val
+        self['yanchor'] = val
 
     # yref
     # ----
@@ -911,11 +880,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["yref"]
+        return self['yref']
 
     @yref.setter
     def yref(self, val):
-        self["yref"] = val
+        self['yref'] = val
 
     # ysizemode
     # ---------
@@ -939,11 +908,11 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["ysizemode"]
+        return self['ysizemode']
 
     @ysizemode.setter
     def ysizemode(self, val):
-        self["ysizemode"] = val
+        self['ysizemode'] = val
 
     # Self properties description
     # ---------------------------
@@ -1160,44 +1129,42 @@ class Shape(_BaseLayoutHierarchyType):
             maintaining a position relative to data or plot
             fraction.
         """
-
-    def __init__(
-        self,
-        arg=None,
-        editable=None,
-        fillcolor=None,
-        fillrule=None,
-        label=None,
-        layer=None,
-        legend=None,
-        legendgroup=None,
-        legendgrouptitle=None,
-        legendrank=None,
-        legendwidth=None,
-        line=None,
-        name=None,
-        opacity=None,
-        path=None,
-        showlegend=None,
-        templateitemname=None,
-        type=None,
-        visible=None,
-        x0=None,
-        x0shift=None,
-        x1=None,
-        x1shift=None,
-        xanchor=None,
-        xref=None,
-        xsizemode=None,
-        y0=None,
-        y0shift=None,
-        y1=None,
-        y1shift=None,
-        yanchor=None,
-        yref=None,
-        ysizemode=None,
-        **kwargs,
-    ):
+    def __init__(self,
+            arg=None,
+            editable=None,
+            fillcolor=None,
+            fillrule=None,
+            label=None,
+            layer=None,
+            legend=None,
+            legendgroup=None,
+            legendgrouptitle=None,
+            legendrank=None,
+            legendwidth=None,
+            line=None,
+            name=None,
+            opacity=None,
+            path=None,
+            showlegend=None,
+            templateitemname=None,
+            type=None,
+            visible=None,
+            x0=None,
+            x0shift=None,
+            x1=None,
+            x1shift=None,
+            xanchor=None,
+            xref=None,
+            xsizemode=None,
+            y0=None,
+            y0shift=None,
+            y1=None,
+            y1shift=None,
+            yanchor=None,
+            yref=None,
+            ysizemode=None,
+            **kwargs
+        ):
         """
         Construct a new Shape object
 
@@ -1420,10 +1387,10 @@ class Shape(_BaseLayoutHierarchyType):
         -------
         Shape
         """
-        super(Shape, self).__init__("shapes")
+        super(Shape, self).__init__('shapes')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -1435,148 +1402,51 @@ class Shape(_BaseLayoutHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.layout.Shape
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.layout.Shape`"""
-            )
+an instance of :class:`plotly.graph_objs.layout.Shape`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("editable", None)
-        _v = editable if editable is not None else _v
-        if _v is not None:
-            self["editable"] = _v
-        _v = arg.pop("fillcolor", None)
-        _v = fillcolor if fillcolor is not None else _v
-        if _v is not None:
-            self["fillcolor"] = _v
-        _v = arg.pop("fillrule", None)
-        _v = fillrule if fillrule is not None else _v
-        if _v is not None:
-            self["fillrule"] = _v
-        _v = arg.pop("label", None)
-        _v = label if label is not None else _v
-        if _v is not None:
-            self["label"] = _v
-        _v = arg.pop("layer", None)
-        _v = layer if layer is not None else _v
-        if _v is not None:
-            self["layer"] = _v
-        _v = arg.pop("legend", None)
-        _v = legend if legend is not None else _v
-        if _v is not None:
-            self["legend"] = _v
-        _v = arg.pop("legendgroup", None)
-        _v = legendgroup if legendgroup is not None else _v
-        if _v is not None:
-            self["legendgroup"] = _v
-        _v = arg.pop("legendgrouptitle", None)
-        _v = legendgrouptitle if legendgrouptitle is not None else _v
-        if _v is not None:
-            self["legendgrouptitle"] = _v
-        _v = arg.pop("legendrank", None)
-        _v = legendrank if legendrank is not None else _v
-        if _v is not None:
-            self["legendrank"] = _v
-        _v = arg.pop("legendwidth", None)
-        _v = legendwidth if legendwidth is not None else _v
-        if _v is not None:
-            self["legendwidth"] = _v
-        _v = arg.pop("line", None)
-        _v = line if line is not None else _v
-        if _v is not None:
-            self["line"] = _v
-        _v = arg.pop("name", None)
-        _v = name if name is not None else _v
-        if _v is not None:
-            self["name"] = _v
-        _v = arg.pop("opacity", None)
-        _v = opacity if opacity is not None else _v
-        if _v is not None:
-            self["opacity"] = _v
-        _v = arg.pop("path", None)
-        _v = path if path is not None else _v
-        if _v is not None:
-            self["path"] = _v
-        _v = arg.pop("showlegend", None)
-        _v = showlegend if showlegend is not None else _v
-        if _v is not None:
-            self["showlegend"] = _v
-        _v = arg.pop("templateitemname", None)
-        _v = templateitemname if templateitemname is not None else _v
-        if _v is not None:
-            self["templateitemname"] = _v
-        _v = arg.pop("type", None)
-        _v = type if type is not None else _v
-        if _v is not None:
-            self["type"] = _v
-        _v = arg.pop("visible", None)
-        _v = visible if visible is not None else _v
-        if _v is not None:
-            self["visible"] = _v
-        _v = arg.pop("x0", None)
-        _v = x0 if x0 is not None else _v
-        if _v is not None:
-            self["x0"] = _v
-        _v = arg.pop("x0shift", None)
-        _v = x0shift if x0shift is not None else _v
-        if _v is not None:
-            self["x0shift"] = _v
-        _v = arg.pop("x1", None)
-        _v = x1 if x1 is not None else _v
-        if _v is not None:
-            self["x1"] = _v
-        _v = arg.pop("x1shift", None)
-        _v = x1shift if x1shift is not None else _v
-        if _v is not None:
-            self["x1shift"] = _v
-        _v = arg.pop("xanchor", None)
-        _v = xanchor if xanchor is not None else _v
-        if _v is not None:
-            self["xanchor"] = _v
-        _v = arg.pop("xref", None)
-        _v = xref if xref is not None else _v
-        if _v is not None:
-            self["xref"] = _v
-        _v = arg.pop("xsizemode", None)
-        _v = xsizemode if xsizemode is not None else _v
-        if _v is not None:
-            self["xsizemode"] = _v
-        _v = arg.pop("y0", None)
-        _v = y0 if y0 is not None else _v
-        if _v is not None:
-            self["y0"] = _v
-        _v = arg.pop("y0shift", None)
-        _v = y0shift if y0shift is not None else _v
-        if _v is not None:
-            self["y0shift"] = _v
-        _v = arg.pop("y1", None)
-        _v = y1 if y1 is not None else _v
-        if _v is not None:
-            self["y1"] = _v
-        _v = arg.pop("y1shift", None)
-        _v = y1shift if y1shift is not None else _v
-        if _v is not None:
-            self["y1shift"] = _v
-        _v = arg.pop("yanchor", None)
-        _v = yanchor if yanchor is not None else _v
-        if _v is not None:
-            self["yanchor"] = _v
-        _v = arg.pop("yref", None)
-        _v = yref if yref is not None else _v
-        if _v is not None:
-            self["yref"] = _v
-        _v = arg.pop("ysizemode", None)
-        _v = ysizemode if ysizemode is not None else _v
-        if _v is not None:
-            self["ysizemode"] = _v
+        self._init_provided('editable', arg, editable)
+        self._init_provided('fillcolor', arg, fillcolor)
+        self._init_provided('fillrule', arg, fillrule)
+        self._init_provided('label', arg, label)
+        self._init_provided('layer', arg, layer)
+        self._init_provided('legend', arg, legend)
+        self._init_provided('legendgroup', arg, legendgroup)
+        self._init_provided('legendgrouptitle', arg, legendgrouptitle)
+        self._init_provided('legendrank', arg, legendrank)
+        self._init_provided('legendwidth', arg, legendwidth)
+        self._init_provided('line', arg, line)
+        self._init_provided('name', arg, name)
+        self._init_provided('opacity', arg, opacity)
+        self._init_provided('path', arg, path)
+        self._init_provided('showlegend', arg, showlegend)
+        self._init_provided('templateitemname', arg, templateitemname)
+        self._init_provided('type', arg, type)
+        self._init_provided('visible', arg, visible)
+        self._init_provided('x0', arg, x0)
+        self._init_provided('x0shift', arg, x0shift)
+        self._init_provided('x1', arg, x1)
+        self._init_provided('x1shift', arg, x1shift)
+        self._init_provided('xanchor', arg, xanchor)
+        self._init_provided('xref', arg, xref)
+        self._init_provided('xsizemode', arg, xsizemode)
+        self._init_provided('y0', arg, y0)
+        self._init_provided('y0shift', arg, y0shift)
+        self._init_provided('y1', arg, y1)
+        self._init_provided('y1shift', arg, y1shift)
+        self._init_provided('yanchor', arg, yanchor)
+        self._init_provided('yref', arg, yref)
+        self._init_provided('ysizemode', arg, ysizemode)
 
         # Process unknown kwargs
         # ----------------------

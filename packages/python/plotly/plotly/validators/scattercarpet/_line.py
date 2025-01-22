@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class LineValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="line", parent_name="scattercarpet", **kwargs):
-        super(LineValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Line"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='line',
+                       parent_name='scattercarpet',
+                       **kwargs):
+        super(LineValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Line'),
+                 data_docs=kwargs.pop('data_docs', """
             backoff
                 Sets the line back off from the end point of
                 the nth line segment (in px). This option is
@@ -39,7 +40,5 @@ class LineValidator(_plotly_utils.basevalidators.CompoundValidator):
                 "linear" shape).
             width
                 Sets the line width (in px).
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

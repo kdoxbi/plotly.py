@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
@@ -6,8 +8,8 @@ class Ternary(_BaseLayoutHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "layout"
-    _path_str = "layout.ternary"
+    _parent_path_str = 'layout'
+    _path_str = 'layout.ternary'
     _valid_props = {"aaxis", "baxis", "bgcolor", "caxis", "domain", "sum", "uirevision"}
 
     # aaxis
@@ -20,9 +22,9 @@ class Ternary(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.ternary.Aaxis`
           - A dict of string/value properties that will be passed
             to the Aaxis constructor
-
+    
             Supported dict properties:
-
+                
                 color
                     Sets default for all colors associated with
                     this axis all at once: line, font, tick, and
@@ -260,11 +262,11 @@ class Ternary(_BaseLayoutHierarchyType):
         -------
         plotly.graph_objs.layout.ternary.Aaxis
         """
-        return self["aaxis"]
+        return self['aaxis']
 
     @aaxis.setter
     def aaxis(self, val):
-        self["aaxis"] = val
+        self['aaxis'] = val
 
     # baxis
     # -----
@@ -276,9 +278,9 @@ class Ternary(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.ternary.Baxis`
           - A dict of string/value properties that will be passed
             to the Baxis constructor
-
+    
             Supported dict properties:
-
+                
                 color
                     Sets default for all colors associated with
                     this axis all at once: line, font, tick, and
@@ -516,11 +518,11 @@ class Ternary(_BaseLayoutHierarchyType):
         -------
         plotly.graph_objs.layout.ternary.Baxis
         """
-        return self["baxis"]
+        return self['baxis']
 
     @baxis.setter
     def baxis(self, val):
-        self["baxis"] = val
+        self['baxis'] = val
 
     # bgcolor
     # -------
@@ -575,11 +577,11 @@ class Ternary(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["bgcolor"]
+        return self['bgcolor']
 
     @bgcolor.setter
     def bgcolor(self, val):
-        self["bgcolor"] = val
+        self['bgcolor'] = val
 
     # caxis
     # -----
@@ -591,9 +593,9 @@ class Ternary(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.ternary.Caxis`
           - A dict of string/value properties that will be passed
             to the Caxis constructor
-
+    
             Supported dict properties:
-
+                
                 color
                     Sets default for all colors associated with
                     this axis all at once: line, font, tick, and
@@ -831,11 +833,11 @@ class Ternary(_BaseLayoutHierarchyType):
         -------
         plotly.graph_objs.layout.ternary.Caxis
         """
-        return self["caxis"]
+        return self['caxis']
 
     @caxis.setter
     def caxis(self, val):
-        self["caxis"] = val
+        self['caxis'] = val
 
     # domain
     # ------
@@ -847,9 +849,9 @@ class Ternary(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.ternary.Domain`
           - A dict of string/value properties that will be passed
             to the Domain constructor
-
+    
             Supported dict properties:
-
+                
                 column
                     If there is a layout grid, use the domain for
                     this column in the grid for this ternary
@@ -868,11 +870,11 @@ class Ternary(_BaseLayoutHierarchyType):
         -------
         plotly.graph_objs.layout.ternary.Domain
         """
-        return self["domain"]
+        return self['domain']
 
     @domain.setter
     def domain(self, val):
-        self["domain"] = val
+        self['domain'] = val
 
     # sum
     # ---
@@ -889,11 +891,11 @@ class Ternary(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["sum"]
+        return self['sum']
 
     @sum.setter
     def sum(self, val):
-        self["sum"] = val
+        self['sum'] = val
 
     # uirevision
     # ----------
@@ -910,11 +912,11 @@ class Ternary(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["uirevision"]
+        return self['uirevision']
 
     @uirevision.setter
     def uirevision(self, val):
-        self["uirevision"] = val
+        self['uirevision'] = val
 
     # Self properties description
     # ---------------------------
@@ -943,19 +945,17 @@ class Ternary(_BaseLayoutHierarchyType):
             `min` and `title`, if not overridden in the individual
             axes. Defaults to `layout.uirevision`.
         """
-
-    def __init__(
-        self,
-        arg=None,
-        aaxis=None,
-        baxis=None,
-        bgcolor=None,
-        caxis=None,
-        domain=None,
-        sum=None,
-        uirevision=None,
-        **kwargs,
-    ):
+    def __init__(self,
+            arg=None,
+            aaxis=None,
+            baxis=None,
+            bgcolor=None,
+            caxis=None,
+            domain=None,
+            sum=None,
+            uirevision=None,
+            **kwargs
+        ):
         """
         Construct a new Ternary object
 
@@ -991,10 +991,10 @@ class Ternary(_BaseLayoutHierarchyType):
         -------
         Ternary
         """
-        super(Ternary, self).__init__("ternary")
+        super(Ternary, self).__init__('ternary')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -1006,48 +1006,26 @@ class Ternary(_BaseLayoutHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.layout.Ternary
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.layout.Ternary`"""
-            )
+an instance of :class:`plotly.graph_objs.layout.Ternary`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("aaxis", None)
-        _v = aaxis if aaxis is not None else _v
-        if _v is not None:
-            self["aaxis"] = _v
-        _v = arg.pop("baxis", None)
-        _v = baxis if baxis is not None else _v
-        if _v is not None:
-            self["baxis"] = _v
-        _v = arg.pop("bgcolor", None)
-        _v = bgcolor if bgcolor is not None else _v
-        if _v is not None:
-            self["bgcolor"] = _v
-        _v = arg.pop("caxis", None)
-        _v = caxis if caxis is not None else _v
-        if _v is not None:
-            self["caxis"] = _v
-        _v = arg.pop("domain", None)
-        _v = domain if domain is not None else _v
-        if _v is not None:
-            self["domain"] = _v
-        _v = arg.pop("sum", None)
-        _v = sum if sum is not None else _v
-        if _v is not None:
-            self["sum"] = _v
-        _v = arg.pop("uirevision", None)
-        _v = uirevision if uirevision is not None else _v
-        if _v is not None:
-            self["uirevision"] = _v
+        self._init_provided('aaxis', arg, aaxis)
+        self._init_provided('baxis', arg, baxis)
+        self._init_provided('bgcolor', arg, bgcolor)
+        self._init_provided('caxis', arg, caxis)
+        self._init_provided('domain', arg, domain)
+        self._init_provided('sum', arg, sum)
+        self._init_provided('uirevision', arg, uirevision)
 
         # Process unknown kwargs
         # ----------------------

@@ -1,17 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class YaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(
-        self, plotly_name="yaxis", parent_name="layout.xaxis.rangeslider", **kwargs
-    ):
-        super(YaxisValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "YAxis"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='yaxis',
+                       parent_name='layout.xaxis.rangeslider',
+                       **kwargs):
+        super(YaxisValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'YAxis'),
+                 data_docs=kwargs.pop('data_docs', """
             range
                 Sets the range of this axis for the
                 rangeslider.
@@ -23,7 +22,5 @@ class YaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
                 the `range` is used. If "match", the current
                 range of the corresponding y-axis on the main
                 subplot is used.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

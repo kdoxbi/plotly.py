@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
@@ -6,8 +8,8 @@ class Smith(_BaseLayoutHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "layout"
-    _path_str = "layout.smith"
+    _parent_path_str = 'layout'
+    _path_str = 'layout.smith'
     _valid_props = {"bgcolor", "domain", "imaginaryaxis", "realaxis"}
 
     # bgcolor
@@ -63,11 +65,11 @@ class Smith(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["bgcolor"]
+        return self['bgcolor']
 
     @bgcolor.setter
     def bgcolor(self, val):
-        self["bgcolor"] = val
+        self['bgcolor'] = val
 
     # domain
     # ------
@@ -79,9 +81,9 @@ class Smith(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.smith.Domain`
           - A dict of string/value properties that will be passed
             to the Domain constructor
-
+    
             Supported dict properties:
-
+                
                 column
                     If there is a layout grid, use the domain for
                     this column in the grid for this smith subplot
@@ -100,11 +102,11 @@ class Smith(_BaseLayoutHierarchyType):
         -------
         plotly.graph_objs.layout.smith.Domain
         """
-        return self["domain"]
+        return self['domain']
 
     @domain.setter
     def domain(self, val):
-        self["domain"] = val
+        self['domain'] = val
 
     # imaginaryaxis
     # -------------
@@ -116,9 +118,9 @@ class Smith(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.smith.Imaginaryaxis`
           - A dict of string/value properties that will be passed
             to the Imaginaryaxis constructor
-
+    
             Supported dict properties:
-
+                
                 color
                     Sets default for all colors associated with
                     this axis all at once: line, font, tick, and
@@ -240,11 +242,11 @@ class Smith(_BaseLayoutHierarchyType):
         -------
         plotly.graph_objs.layout.smith.Imaginaryaxis
         """
-        return self["imaginaryaxis"]
+        return self['imaginaryaxis']
 
     @imaginaryaxis.setter
     def imaginaryaxis(self, val):
-        self["imaginaryaxis"] = val
+        self['imaginaryaxis'] = val
 
     # realaxis
     # --------
@@ -256,9 +258,9 @@ class Smith(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.smith.Realaxis`
           - A dict of string/value properties that will be passed
             to the Realaxis constructor
-
+    
             Supported dict properties:
-
+                
                 color
                     Sets default for all colors associated with
                     this axis all at once: line, font, tick, and
@@ -386,11 +388,11 @@ class Smith(_BaseLayoutHierarchyType):
         -------
         plotly.graph_objs.layout.smith.Realaxis
         """
-        return self["realaxis"]
+        return self['realaxis']
 
     @realaxis.setter
     def realaxis(self, val):
-        self["realaxis"] = val
+        self['realaxis'] = val
 
     # Self properties description
     # ---------------------------
@@ -409,16 +411,14 @@ class Smith(_BaseLayoutHierarchyType):
             :class:`plotly.graph_objects.layout.smith.Realaxis`
             instance or dict with compatible properties
         """
-
-    def __init__(
-        self,
-        arg=None,
-        bgcolor=None,
-        domain=None,
-        imaginaryaxis=None,
-        realaxis=None,
-        **kwargs,
-    ):
+    def __init__(self,
+            arg=None,
+            bgcolor=None,
+            domain=None,
+            imaginaryaxis=None,
+            realaxis=None,
+            **kwargs
+        ):
         """
         Construct a new Smith object
 
@@ -443,10 +443,10 @@ class Smith(_BaseLayoutHierarchyType):
         -------
         Smith
         """
-        super(Smith, self).__init__("smith")
+        super(Smith, self).__init__('smith')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -458,36 +458,23 @@ class Smith(_BaseLayoutHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.layout.Smith
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.layout.Smith`"""
-            )
+an instance of :class:`plotly.graph_objs.layout.Smith`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("bgcolor", None)
-        _v = bgcolor if bgcolor is not None else _v
-        if _v is not None:
-            self["bgcolor"] = _v
-        _v = arg.pop("domain", None)
-        _v = domain if domain is not None else _v
-        if _v is not None:
-            self["domain"] = _v
-        _v = arg.pop("imaginaryaxis", None)
-        _v = imaginaryaxis if imaginaryaxis is not None else _v
-        if _v is not None:
-            self["imaginaryaxis"] = _v
-        _v = arg.pop("realaxis", None)
-        _v = realaxis if realaxis is not None else _v
-        if _v is not None:
-            self["realaxis"] = _v
+        self._init_provided('bgcolor', arg, bgcolor)
+        self._init_provided('domain', arg, domain)
+        self._init_provided('imaginaryaxis', arg, imaginaryaxis)
+        self._init_provided('realaxis', arg, realaxis)
 
         # Process unknown kwargs
         # ----------------------

@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class PathbarValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="pathbar", parent_name="treemap", **kwargs):
-        super(PathbarValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Pathbar"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='pathbar',
+                       parent_name='treemap',
+                       **kwargs):
+        super(PathbarValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Pathbar'),
+                 data_docs=kwargs.pop('data_docs', """
             edgeshape
                 Determines which shape is used for edges
                 between `barpath` labels.
@@ -26,7 +27,5 @@ class PathbarValidator(_plotly_utils.basevalidators.CompoundValidator):
                 Determines if the path bar is drawn i.e.
                 outside the trace `domain` and with one pixel
                 gap.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

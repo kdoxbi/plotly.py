@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class TableValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="table", parent_name="", **kwargs):
-        super(TableValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Table"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='table',
+                       parent_name='',
+                       **kwargs):
+        super(TableValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Table'),
+                 data_docs=kwargs.pop('data_docs', """
             cells
                 :class:`plotly.graph_objects.table.Cells`
                 instance or dict with compatible properties
@@ -144,7 +145,5 @@ class TableValidator(_plotly_utils.basevalidators.CompoundValidator):
                 visible. If "legendonly", the trace is not
                 drawn, but can appear as a legend item
                 (provided that the legend itself is visible).
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

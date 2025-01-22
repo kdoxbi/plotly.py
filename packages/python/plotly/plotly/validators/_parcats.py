@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class ParcatsValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="parcats", parent_name="", **kwargs):
-        super(ParcatsValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Parcats"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='parcats',
+                       parent_name='',
+                       **kwargs):
+        super(ParcatsValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Parcats'),
+                 data_docs=kwargs.pop('data_docs', """
             arrangement
                 Sets the drag interaction mode for categories
                 and dimensions. If `perpendicular`, the
@@ -165,7 +166,5 @@ class ParcatsValidator(_plotly_utils.basevalidators.CompoundValidator):
                 visible. If "legendonly", the trace is not
                 drawn, but can appear as a legend item
                 (provided that the legend itself is visible).
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class DeltaValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="delta", parent_name="indicator", **kwargs):
-        super(DeltaValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Delta"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='delta',
+                       parent_name='indicator',
+                       **kwargs):
+        super(DeltaValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Delta'),
+                 data_docs=kwargs.pop('data_docs', """
             decreasing
                 :class:`plotly.graph_objects.indicator.delta.De
                 creasing` instance or dict with compatible
@@ -38,7 +39,5 @@ class DeltaValidator(_plotly_utils.basevalidators.CompoundValidator):
                 similar to those in Python. For numbers, see: h
                 ttps://github.com/d3/d3-format/tree/v1.4.5#d3-
                 format.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

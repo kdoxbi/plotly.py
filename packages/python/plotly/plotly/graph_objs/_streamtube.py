@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
@@ -6,70 +8,9 @@ class Streamtube(_BaseTraceType):
 
     # class properties
     # --------------------
-    _parent_path_str = ""
-    _path_str = "streamtube"
-    _valid_props = {
-        "autocolorscale",
-        "cauto",
-        "cmax",
-        "cmid",
-        "cmin",
-        "coloraxis",
-        "colorbar",
-        "colorscale",
-        "customdata",
-        "customdatasrc",
-        "hoverinfo",
-        "hoverinfosrc",
-        "hoverlabel",
-        "hovertemplate",
-        "hovertemplatesrc",
-        "hovertext",
-        "ids",
-        "idssrc",
-        "legend",
-        "legendgroup",
-        "legendgrouptitle",
-        "legendrank",
-        "legendwidth",
-        "lighting",
-        "lightposition",
-        "maxdisplayed",
-        "meta",
-        "metasrc",
-        "name",
-        "opacity",
-        "reversescale",
-        "scene",
-        "showlegend",
-        "showscale",
-        "sizeref",
-        "starts",
-        "stream",
-        "text",
-        "type",
-        "u",
-        "uhoverformat",
-        "uid",
-        "uirevision",
-        "usrc",
-        "v",
-        "vhoverformat",
-        "visible",
-        "vsrc",
-        "w",
-        "whoverformat",
-        "wsrc",
-        "x",
-        "xhoverformat",
-        "xsrc",
-        "y",
-        "yhoverformat",
-        "ysrc",
-        "z",
-        "zhoverformat",
-        "zsrc",
-    }
+    _parent_path_str = ''
+    _path_str = 'streamtube'
+    _valid_props = {"autocolorscale", "cauto", "cmax", "cmid", "cmin", "coloraxis", "colorbar", "colorscale", "customdata", "customdatasrc", "hoverinfo", "hoverinfosrc", "hoverlabel", "hovertemplate", "hovertemplatesrc", "hovertext", "ids", "idssrc", "legend", "legendgroup", "legendgrouptitle", "legendrank", "legendwidth", "lighting", "lightposition", "maxdisplayed", "meta", "metasrc", "name", "opacity", "reversescale", "scene", "showlegend", "showscale", "sizeref", "starts", "stream", "text", "type", "u", "uhoverformat", "uid", "uirevision", "usrc", "v", "vhoverformat", "visible", "vsrc", "w", "whoverformat", "wsrc", "x", "xhoverformat", "xsrc", "y", "yhoverformat", "ysrc", "z", "zhoverformat", "zsrc"}
 
     # autocolorscale
     # --------------
@@ -90,11 +31,11 @@ class Streamtube(_BaseTraceType):
         -------
         bool
         """
-        return self["autocolorscale"]
+        return self['autocolorscale']
 
     @autocolorscale.setter
     def autocolorscale(self, val):
-        self["autocolorscale"] = val
+        self['autocolorscale'] = val
 
     # cauto
     # -----
@@ -113,11 +54,11 @@ class Streamtube(_BaseTraceType):
         -------
         bool
         """
-        return self["cauto"]
+        return self['cauto']
 
     @cauto.setter
     def cauto(self, val):
-        self["cauto"] = val
+        self['cauto'] = val
 
     # cmax
     # ----
@@ -135,11 +76,11 @@ class Streamtube(_BaseTraceType):
         -------
         int|float
         """
-        return self["cmax"]
+        return self['cmax']
 
     @cmax.setter
     def cmax(self, val):
-        self["cmax"] = val
+        self['cmax'] = val
 
     # cmid
     # ----
@@ -158,11 +99,11 @@ class Streamtube(_BaseTraceType):
         -------
         int|float
         """
-        return self["cmid"]
+        return self['cmid']
 
     @cmid.setter
     def cmid(self, val):
-        self["cmid"] = val
+        self['cmid'] = val
 
     # cmin
     # ----
@@ -180,11 +121,11 @@ class Streamtube(_BaseTraceType):
         -------
         int|float
         """
-        return self["cmin"]
+        return self['cmin']
 
     @cmin.setter
     def cmin(self, val):
-        self["cmin"] = val
+        self['cmin'] = val
 
     # coloraxis
     # ---------
@@ -207,11 +148,11 @@ class Streamtube(_BaseTraceType):
         -------
         str
         """
-        return self["coloraxis"]
+        return self['coloraxis']
 
     @coloraxis.setter
     def coloraxis(self, val):
-        self["coloraxis"] = val
+        self['coloraxis'] = val
 
     # colorbar
     # --------
@@ -223,9 +164,9 @@ class Streamtube(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.streamtube.ColorBar`
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
-
+    
             Supported dict properties:
-
+                
                 bgcolor
                     Sets the color of padded area.
                 bordercolor
@@ -494,11 +435,11 @@ class Streamtube(_BaseTraceType):
         -------
         plotly.graph_objs.streamtube.ColorBar
         """
-        return self["colorbar"]
+        return self['colorbar']
 
     @colorbar.setter
     def colorbar(self, val):
-        self["colorbar"] = val
+        self['colorbar'] = val
 
     # colorscale
     # ----------
@@ -547,11 +488,11 @@ class Streamtube(_BaseTraceType):
         -------
         str
         """
-        return self["colorscale"]
+        return self['colorscale']
 
     @colorscale.setter
     def colorscale(self, val):
-        self["colorscale"] = val
+        self['colorscale'] = val
 
     # customdata
     # ----------
@@ -570,11 +511,11 @@ class Streamtube(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["customdata"]
+        return self['customdata']
 
     @customdata.setter
     def customdata(self, val):
-        self["customdata"] = val
+        self['customdata'] = val
 
     # customdatasrc
     # -------------
@@ -591,11 +532,11 @@ class Streamtube(_BaseTraceType):
         -------
         str
         """
-        return self["customdatasrc"]
+        return self['customdatasrc']
 
     @customdatasrc.setter
     def customdatasrc(self, val):
-        self["customdatasrc"] = val
+        self['customdatasrc'] = val
 
     # hoverinfo
     # ---------
@@ -617,11 +558,11 @@ class Streamtube(_BaseTraceType):
         -------
         Any|numpy.ndarray
         """
-        return self["hoverinfo"]
+        return self['hoverinfo']
 
     @hoverinfo.setter
     def hoverinfo(self, val):
-        self["hoverinfo"] = val
+        self['hoverinfo'] = val
 
     # hoverinfosrc
     # ------------
@@ -638,11 +579,11 @@ class Streamtube(_BaseTraceType):
         -------
         str
         """
-        return self["hoverinfosrc"]
+        return self['hoverinfosrc']
 
     @hoverinfosrc.setter
     def hoverinfosrc(self, val):
-        self["hoverinfosrc"] = val
+        self['hoverinfosrc'] = val
 
     # hoverlabel
     # ----------
@@ -654,9 +595,9 @@ class Streamtube(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.streamtube.Hoverlabel`
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
-
+    
             Supported dict properties:
-
+                
                 align
                     Sets the horizontal alignment of the text
                     content within hover label box. Has an effect
@@ -697,11 +638,11 @@ class Streamtube(_BaseTraceType):
         -------
         plotly.graph_objs.streamtube.Hoverlabel
         """
-        return self["hoverlabel"]
+        return self['hoverlabel']
 
     @hoverlabel.setter
     def hoverlabel(self, val):
-        self["hoverlabel"] = val
+        self['hoverlabel'] = val
 
     # hovertemplate
     # -------------
@@ -744,11 +685,11 @@ class Streamtube(_BaseTraceType):
         -------
         str|numpy.ndarray
         """
-        return self["hovertemplate"]
+        return self['hovertemplate']
 
     @hovertemplate.setter
     def hovertemplate(self, val):
-        self["hovertemplate"] = val
+        self['hovertemplate'] = val
 
     # hovertemplatesrc
     # ----------------
@@ -765,11 +706,11 @@ class Streamtube(_BaseTraceType):
         -------
         str
         """
-        return self["hovertemplatesrc"]
+        return self['hovertemplatesrc']
 
     @hovertemplatesrc.setter
     def hovertemplatesrc(self, val):
-        self["hovertemplatesrc"] = val
+        self['hovertemplatesrc'] = val
 
     # hovertext
     # ---------
@@ -786,11 +727,11 @@ class Streamtube(_BaseTraceType):
         -------
         str
         """
-        return self["hovertext"]
+        return self['hovertext']
 
     @hovertext.setter
     def hovertext(self, val):
-        self["hovertext"] = val
+        self['hovertext'] = val
 
     # ids
     # ---
@@ -808,11 +749,11 @@ class Streamtube(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["ids"]
+        return self['ids']
 
     @ids.setter
     def ids(self, val):
-        self["ids"] = val
+        self['ids'] = val
 
     # idssrc
     # ------
@@ -828,11 +769,11 @@ class Streamtube(_BaseTraceType):
         -------
         str
         """
-        return self["idssrc"]
+        return self['idssrc']
 
     @idssrc.setter
     def idssrc(self, val):
-        self["idssrc"] = val
+        self['idssrc'] = val
 
     # legend
     # ------
@@ -853,11 +794,11 @@ class Streamtube(_BaseTraceType):
         -------
         str
         """
-        return self["legend"]
+        return self['legend']
 
     @legend.setter
     def legend(self, val):
-        self["legend"] = val
+        self['legend'] = val
 
     # legendgroup
     # -----------
@@ -876,11 +817,11 @@ class Streamtube(_BaseTraceType):
         -------
         str
         """
-        return self["legendgroup"]
+        return self['legendgroup']
 
     @legendgroup.setter
     def legendgroup(self, val):
-        self["legendgroup"] = val
+        self['legendgroup'] = val
 
     # legendgrouptitle
     # ----------------
@@ -892,9 +833,9 @@ class Streamtube(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.streamtube.Legendgrouptitle`
           - A dict of string/value properties that will be passed
             to the Legendgrouptitle constructor
-
+    
             Supported dict properties:
-
+                
                 font
                     Sets this legend group's title font.
                 text
@@ -904,11 +845,11 @@ class Streamtube(_BaseTraceType):
         -------
         plotly.graph_objs.streamtube.Legendgrouptitle
         """
-        return self["legendgrouptitle"]
+        return self['legendgrouptitle']
 
     @legendgrouptitle.setter
     def legendgrouptitle(self, val):
-        self["legendgrouptitle"] = val
+        self['legendgrouptitle'] = val
 
     # legendrank
     # ----------
@@ -931,11 +872,11 @@ class Streamtube(_BaseTraceType):
         -------
         int|float
         """
-        return self["legendrank"]
+        return self['legendrank']
 
     @legendrank.setter
     def legendrank(self, val):
-        self["legendrank"] = val
+        self['legendrank'] = val
 
     # legendwidth
     # -----------
@@ -952,11 +893,11 @@ class Streamtube(_BaseTraceType):
         -------
         int|float
         """
-        return self["legendwidth"]
+        return self['legendwidth']
 
     @legendwidth.setter
     def legendwidth(self, val):
-        self["legendwidth"] = val
+        self['legendwidth'] = val
 
     # lighting
     # --------
@@ -968,9 +909,9 @@ class Streamtube(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.streamtube.Lighting`
           - A dict of string/value properties that will be passed
             to the Lighting constructor
-
+    
             Supported dict properties:
-
+                
                 ambient
                     Ambient light increases overall color
                     visibility but can wash out the image.
@@ -1000,11 +941,11 @@ class Streamtube(_BaseTraceType):
         -------
         plotly.graph_objs.streamtube.Lighting
         """
-        return self["lighting"]
+        return self['lighting']
 
     @lighting.setter
     def lighting(self, val):
-        self["lighting"] = val
+        self['lighting'] = val
 
     # lightposition
     # -------------
@@ -1016,9 +957,9 @@ class Streamtube(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.streamtube.Lightposition`
           - A dict of string/value properties that will be passed
             to the Lightposition constructor
-
+    
             Supported dict properties:
-
+                
                 x
                     Numeric vector, representing the X coordinate
                     for each vertex.
@@ -1033,11 +974,11 @@ class Streamtube(_BaseTraceType):
         -------
         plotly.graph_objs.streamtube.Lightposition
         """
-        return self["lightposition"]
+        return self['lightposition']
 
     @lightposition.setter
     def lightposition(self, val):
-        self["lightposition"] = val
+        self['lightposition'] = val
 
     # maxdisplayed
     # ------------
@@ -1054,11 +995,11 @@ class Streamtube(_BaseTraceType):
         -------
         int
         """
-        return self["maxdisplayed"]
+        return self['maxdisplayed']
 
     @maxdisplayed.setter
     def maxdisplayed(self, val):
-        self["maxdisplayed"] = val
+        self['maxdisplayed'] = val
 
     # meta
     # ----
@@ -1082,11 +1023,11 @@ class Streamtube(_BaseTraceType):
         -------
         Any|numpy.ndarray
         """
-        return self["meta"]
+        return self['meta']
 
     @meta.setter
     def meta(self, val):
-        self["meta"] = val
+        self['meta'] = val
 
     # metasrc
     # -------
@@ -1102,11 +1043,11 @@ class Streamtube(_BaseTraceType):
         -------
         str
         """
-        return self["metasrc"]
+        return self['metasrc']
 
     @metasrc.setter
     def metasrc(self, val):
-        self["metasrc"] = val
+        self['metasrc'] = val
 
     # name
     # ----
@@ -1124,11 +1065,11 @@ class Streamtube(_BaseTraceType):
         -------
         str
         """
-        return self["name"]
+        return self['name']
 
     @name.setter
     def name(self, val):
-        self["name"] = val
+        self['name'] = val
 
     # opacity
     # -------
@@ -1149,11 +1090,11 @@ class Streamtube(_BaseTraceType):
         -------
         int|float
         """
-        return self["opacity"]
+        return self['opacity']
 
     @opacity.setter
     def opacity(self, val):
-        self["opacity"] = val
+        self['opacity'] = val
 
     # reversescale
     # ------------
@@ -1171,11 +1112,11 @@ class Streamtube(_BaseTraceType):
         -------
         bool
         """
-        return self["reversescale"]
+        return self['reversescale']
 
     @reversescale.setter
     def reversescale(self, val):
-        self["reversescale"] = val
+        self['reversescale'] = val
 
     # scene
     # -----
@@ -1196,11 +1137,11 @@ class Streamtube(_BaseTraceType):
         -------
         str
         """
-        return self["scene"]
+        return self['scene']
 
     @scene.setter
     def scene(self, val):
-        self["scene"] = val
+        self['scene'] = val
 
     # showlegend
     # ----------
@@ -1217,11 +1158,11 @@ class Streamtube(_BaseTraceType):
         -------
         bool
         """
-        return self["showlegend"]
+        return self['showlegend']
 
     @showlegend.setter
     def showlegend(self, val):
-        self["showlegend"] = val
+        self['showlegend'] = val
 
     # showscale
     # ---------
@@ -1238,11 +1179,11 @@ class Streamtube(_BaseTraceType):
         -------
         bool
         """
-        return self["showscale"]
+        return self['showscale']
 
     @showscale.setter
     def showscale(self, val):
-        self["showscale"] = val
+        self['showscale'] = val
 
     # sizeref
     # -------
@@ -1260,11 +1201,11 @@ class Streamtube(_BaseTraceType):
         -------
         int|float
         """
-        return self["sizeref"]
+        return self['sizeref']
 
     @sizeref.setter
     def sizeref(self, val):
-        self["sizeref"] = val
+        self['sizeref'] = val
 
     # starts
     # ------
@@ -1276,9 +1217,9 @@ class Streamtube(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.streamtube.Starts`
           - A dict of string/value properties that will be passed
             to the Starts constructor
-
+    
             Supported dict properties:
-
+                
                 x
                     Sets the x components of the starting position
                     of the streamtubes
@@ -1302,11 +1243,11 @@ class Streamtube(_BaseTraceType):
         -------
         plotly.graph_objs.streamtube.Starts
         """
-        return self["starts"]
+        return self['starts']
 
     @starts.setter
     def starts(self, val):
-        self["starts"] = val
+        self['starts'] = val
 
     # stream
     # ------
@@ -1318,9 +1259,9 @@ class Streamtube(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.streamtube.Stream`
           - A dict of string/value properties that will be passed
             to the Stream constructor
-
+    
             Supported dict properties:
-
+                
                 maxpoints
                     Sets the maximum number of points to keep on
                     the plots from an incoming stream. If
@@ -1335,11 +1276,11 @@ class Streamtube(_BaseTraceType):
         -------
         plotly.graph_objs.streamtube.Stream
         """
-        return self["stream"]
+        return self['stream']
 
     @stream.setter
     def stream(self, val):
-        self["stream"] = val
+        self['stream'] = val
 
     # text
     # ----
@@ -1359,11 +1300,11 @@ class Streamtube(_BaseTraceType):
         -------
         str
         """
-        return self["text"]
+        return self['text']
 
     @text.setter
     def text(self, val):
-        self["text"] = val
+        self['text'] = val
 
     # u
     # -
@@ -1379,11 +1320,11 @@ class Streamtube(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["u"]
+        return self['u']
 
     @u.setter
     def u(self, val):
-        self["u"] = val
+        self['u'] = val
 
     # uhoverformat
     # ------------
@@ -1404,11 +1345,11 @@ class Streamtube(_BaseTraceType):
         -------
         str
         """
-        return self["uhoverformat"]
+        return self['uhoverformat']
 
     @uhoverformat.setter
     def uhoverformat(self, val):
-        self["uhoverformat"] = val
+        self['uhoverformat'] = val
 
     # uid
     # ---
@@ -1426,11 +1367,11 @@ class Streamtube(_BaseTraceType):
         -------
         str
         """
-        return self["uid"]
+        return self['uid']
 
     @uid.setter
     def uid(self, val):
-        self["uid"] = val
+        self['uid'] = val
 
     # uirevision
     # ----------
@@ -1459,11 +1400,11 @@ class Streamtube(_BaseTraceType):
         -------
         Any
         """
-        return self["uirevision"]
+        return self['uirevision']
 
     @uirevision.setter
     def uirevision(self, val):
-        self["uirevision"] = val
+        self['uirevision'] = val
 
     # usrc
     # ----
@@ -1479,11 +1420,11 @@ class Streamtube(_BaseTraceType):
         -------
         str
         """
-        return self["usrc"]
+        return self['usrc']
 
     @usrc.setter
     def usrc(self, val):
-        self["usrc"] = val
+        self['usrc'] = val
 
     # v
     # -
@@ -1499,11 +1440,11 @@ class Streamtube(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["v"]
+        return self['v']
 
     @v.setter
     def v(self, val):
-        self["v"] = val
+        self['v'] = val
 
     # vhoverformat
     # ------------
@@ -1524,11 +1465,11 @@ class Streamtube(_BaseTraceType):
         -------
         str
         """
-        return self["vhoverformat"]
+        return self['vhoverformat']
 
     @vhoverformat.setter
     def vhoverformat(self, val):
-        self["vhoverformat"] = val
+        self['vhoverformat'] = val
 
     # visible
     # -------
@@ -1547,11 +1488,11 @@ class Streamtube(_BaseTraceType):
         -------
         Any
         """
-        return self["visible"]
+        return self['visible']
 
     @visible.setter
     def visible(self, val):
-        self["visible"] = val
+        self['visible'] = val
 
     # vsrc
     # ----
@@ -1567,11 +1508,11 @@ class Streamtube(_BaseTraceType):
         -------
         str
         """
-        return self["vsrc"]
+        return self['vsrc']
 
     @vsrc.setter
     def vsrc(self, val):
-        self["vsrc"] = val
+        self['vsrc'] = val
 
     # w
     # -
@@ -1587,11 +1528,11 @@ class Streamtube(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["w"]
+        return self['w']
 
     @w.setter
     def w(self, val):
-        self["w"] = val
+        self['w'] = val
 
     # whoverformat
     # ------------
@@ -1612,11 +1553,11 @@ class Streamtube(_BaseTraceType):
         -------
         str
         """
-        return self["whoverformat"]
+        return self['whoverformat']
 
     @whoverformat.setter
     def whoverformat(self, val):
-        self["whoverformat"] = val
+        self['whoverformat'] = val
 
     # wsrc
     # ----
@@ -1632,11 +1573,11 @@ class Streamtube(_BaseTraceType):
         -------
         str
         """
-        return self["wsrc"]
+        return self['wsrc']
 
     @wsrc.setter
     def wsrc(self, val):
-        self["wsrc"] = val
+        self['wsrc'] = val
 
     # x
     # -
@@ -1652,11 +1593,11 @@ class Streamtube(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["x"]
+        return self['x']
 
     @x.setter
     def x(self, val):
-        self["x"] = val
+        self['x'] = val
 
     # xhoverformat
     # ------------
@@ -1683,11 +1624,11 @@ class Streamtube(_BaseTraceType):
         -------
         str
         """
-        return self["xhoverformat"]
+        return self['xhoverformat']
 
     @xhoverformat.setter
     def xhoverformat(self, val):
-        self["xhoverformat"] = val
+        self['xhoverformat'] = val
 
     # xsrc
     # ----
@@ -1703,11 +1644,11 @@ class Streamtube(_BaseTraceType):
         -------
         str
         """
-        return self["xsrc"]
+        return self['xsrc']
 
     @xsrc.setter
     def xsrc(self, val):
-        self["xsrc"] = val
+        self['xsrc'] = val
 
     # y
     # -
@@ -1723,11 +1664,11 @@ class Streamtube(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["y"]
+        return self['y']
 
     @y.setter
     def y(self, val):
-        self["y"] = val
+        self['y'] = val
 
     # yhoverformat
     # ------------
@@ -1754,11 +1695,11 @@ class Streamtube(_BaseTraceType):
         -------
         str
         """
-        return self["yhoverformat"]
+        return self['yhoverformat']
 
     @yhoverformat.setter
     def yhoverformat(self, val):
-        self["yhoverformat"] = val
+        self['yhoverformat'] = val
 
     # ysrc
     # ----
@@ -1774,11 +1715,11 @@ class Streamtube(_BaseTraceType):
         -------
         str
         """
-        return self["ysrc"]
+        return self['ysrc']
 
     @ysrc.setter
     def ysrc(self, val):
-        self["ysrc"] = val
+        self['ysrc'] = val
 
     # z
     # -
@@ -1794,11 +1735,11 @@ class Streamtube(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["z"]
+        return self['z']
 
     @z.setter
     def z(self, val):
-        self["z"] = val
+        self['z'] = val
 
     # zhoverformat
     # ------------
@@ -1825,11 +1766,11 @@ class Streamtube(_BaseTraceType):
         -------
         str
         """
-        return self["zhoverformat"]
+        return self['zhoverformat']
 
     @zhoverformat.setter
     def zhoverformat(self, val):
-        self["zhoverformat"] = val
+        self['zhoverformat'] = val
 
     # zsrc
     # ----
@@ -1845,17 +1786,17 @@ class Streamtube(_BaseTraceType):
         -------
         str
         """
-        return self["zsrc"]
+        return self['zsrc']
 
     @zsrc.setter
     def zsrc(self, val):
-        self["zsrc"] = val
+        self['zsrc'] = val
 
     # type
     # ----
     @property
     def type(self):
-        return self._props["type"]
+        return self._props['type']
 
     # Self properties description
     # ---------------------------
@@ -2180,71 +2121,69 @@ class Streamtube(_BaseTraceType):
             Sets the source reference on Chart Studio Cloud for
             `z`.
         """
-
-    def __init__(
-        self,
-        arg=None,
-        autocolorscale=None,
-        cauto=None,
-        cmax=None,
-        cmid=None,
-        cmin=None,
-        coloraxis=None,
-        colorbar=None,
-        colorscale=None,
-        customdata=None,
-        customdatasrc=None,
-        hoverinfo=None,
-        hoverinfosrc=None,
-        hoverlabel=None,
-        hovertemplate=None,
-        hovertemplatesrc=None,
-        hovertext=None,
-        ids=None,
-        idssrc=None,
-        legend=None,
-        legendgroup=None,
-        legendgrouptitle=None,
-        legendrank=None,
-        legendwidth=None,
-        lighting=None,
-        lightposition=None,
-        maxdisplayed=None,
-        meta=None,
-        metasrc=None,
-        name=None,
-        opacity=None,
-        reversescale=None,
-        scene=None,
-        showlegend=None,
-        showscale=None,
-        sizeref=None,
-        starts=None,
-        stream=None,
-        text=None,
-        u=None,
-        uhoverformat=None,
-        uid=None,
-        uirevision=None,
-        usrc=None,
-        v=None,
-        vhoverformat=None,
-        visible=None,
-        vsrc=None,
-        w=None,
-        whoverformat=None,
-        wsrc=None,
-        x=None,
-        xhoverformat=None,
-        xsrc=None,
-        y=None,
-        yhoverformat=None,
-        ysrc=None,
-        z=None,
-        zhoverformat=None,
-        zsrc=None,
-        **kwargs,
-    ):
+    def __init__(self,
+            arg=None,
+            autocolorscale=None,
+            cauto=None,
+            cmax=None,
+            cmid=None,
+            cmin=None,
+            coloraxis=None,
+            colorbar=None,
+            colorscale=None,
+            customdata=None,
+            customdatasrc=None,
+            hoverinfo=None,
+            hoverinfosrc=None,
+            hoverlabel=None,
+            hovertemplate=None,
+            hovertemplatesrc=None,
+            hovertext=None,
+            ids=None,
+            idssrc=None,
+            legend=None,
+            legendgroup=None,
+            legendgrouptitle=None,
+            legendrank=None,
+            legendwidth=None,
+            lighting=None,
+            lightposition=None,
+            maxdisplayed=None,
+            meta=None,
+            metasrc=None,
+            name=None,
+            opacity=None,
+            reversescale=None,
+            scene=None,
+            showlegend=None,
+            showscale=None,
+            sizeref=None,
+            starts=None,
+            stream=None,
+            text=None,
+            u=None,
+            uhoverformat=None,
+            uid=None,
+            uirevision=None,
+            usrc=None,
+            v=None,
+            vhoverformat=None,
+            visible=None,
+            vsrc=None,
+            w=None,
+            whoverformat=None,
+            wsrc=None,
+            x=None,
+            xhoverformat=None,
+            xsrc=None,
+            y=None,
+            yhoverformat=None,
+            ysrc=None,
+            z=None,
+            zhoverformat=None,
+            zsrc=None,
+            **kwargs
+        ):
         """
         Construct a new Streamtube object
 
@@ -2585,10 +2524,10 @@ class Streamtube(_BaseTraceType):
         -------
         Streamtube
         """
-        super(Streamtube, self).__init__("streamtube")
+        super(Streamtube, self).__init__('streamtube')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -2600,262 +2539,84 @@ class Streamtube(_BaseTraceType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.Streamtube
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.Streamtube`"""
-            )
+an instance of :class:`plotly.graph_objs.Streamtube`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("autocolorscale", None)
-        _v = autocolorscale if autocolorscale is not None else _v
-        if _v is not None:
-            self["autocolorscale"] = _v
-        _v = arg.pop("cauto", None)
-        _v = cauto if cauto is not None else _v
-        if _v is not None:
-            self["cauto"] = _v
-        _v = arg.pop("cmax", None)
-        _v = cmax if cmax is not None else _v
-        if _v is not None:
-            self["cmax"] = _v
-        _v = arg.pop("cmid", None)
-        _v = cmid if cmid is not None else _v
-        if _v is not None:
-            self["cmid"] = _v
-        _v = arg.pop("cmin", None)
-        _v = cmin if cmin is not None else _v
-        if _v is not None:
-            self["cmin"] = _v
-        _v = arg.pop("coloraxis", None)
-        _v = coloraxis if coloraxis is not None else _v
-        if _v is not None:
-            self["coloraxis"] = _v
-        _v = arg.pop("colorbar", None)
-        _v = colorbar if colorbar is not None else _v
-        if _v is not None:
-            self["colorbar"] = _v
-        _v = arg.pop("colorscale", None)
-        _v = colorscale if colorscale is not None else _v
-        if _v is not None:
-            self["colorscale"] = _v
-        _v = arg.pop("customdata", None)
-        _v = customdata if customdata is not None else _v
-        if _v is not None:
-            self["customdata"] = _v
-        _v = arg.pop("customdatasrc", None)
-        _v = customdatasrc if customdatasrc is not None else _v
-        if _v is not None:
-            self["customdatasrc"] = _v
-        _v = arg.pop("hoverinfo", None)
-        _v = hoverinfo if hoverinfo is not None else _v
-        if _v is not None:
-            self["hoverinfo"] = _v
-        _v = arg.pop("hoverinfosrc", None)
-        _v = hoverinfosrc if hoverinfosrc is not None else _v
-        if _v is not None:
-            self["hoverinfosrc"] = _v
-        _v = arg.pop("hoverlabel", None)
-        _v = hoverlabel if hoverlabel is not None else _v
-        if _v is not None:
-            self["hoverlabel"] = _v
-        _v = arg.pop("hovertemplate", None)
-        _v = hovertemplate if hovertemplate is not None else _v
-        if _v is not None:
-            self["hovertemplate"] = _v
-        _v = arg.pop("hovertemplatesrc", None)
-        _v = hovertemplatesrc if hovertemplatesrc is not None else _v
-        if _v is not None:
-            self["hovertemplatesrc"] = _v
-        _v = arg.pop("hovertext", None)
-        _v = hovertext if hovertext is not None else _v
-        if _v is not None:
-            self["hovertext"] = _v
-        _v = arg.pop("ids", None)
-        _v = ids if ids is not None else _v
-        if _v is not None:
-            self["ids"] = _v
-        _v = arg.pop("idssrc", None)
-        _v = idssrc if idssrc is not None else _v
-        if _v is not None:
-            self["idssrc"] = _v
-        _v = arg.pop("legend", None)
-        _v = legend if legend is not None else _v
-        if _v is not None:
-            self["legend"] = _v
-        _v = arg.pop("legendgroup", None)
-        _v = legendgroup if legendgroup is not None else _v
-        if _v is not None:
-            self["legendgroup"] = _v
-        _v = arg.pop("legendgrouptitle", None)
-        _v = legendgrouptitle if legendgrouptitle is not None else _v
-        if _v is not None:
-            self["legendgrouptitle"] = _v
-        _v = arg.pop("legendrank", None)
-        _v = legendrank if legendrank is not None else _v
-        if _v is not None:
-            self["legendrank"] = _v
-        _v = arg.pop("legendwidth", None)
-        _v = legendwidth if legendwidth is not None else _v
-        if _v is not None:
-            self["legendwidth"] = _v
-        _v = arg.pop("lighting", None)
-        _v = lighting if lighting is not None else _v
-        if _v is not None:
-            self["lighting"] = _v
-        _v = arg.pop("lightposition", None)
-        _v = lightposition if lightposition is not None else _v
-        if _v is not None:
-            self["lightposition"] = _v
-        _v = arg.pop("maxdisplayed", None)
-        _v = maxdisplayed if maxdisplayed is not None else _v
-        if _v is not None:
-            self["maxdisplayed"] = _v
-        _v = arg.pop("meta", None)
-        _v = meta if meta is not None else _v
-        if _v is not None:
-            self["meta"] = _v
-        _v = arg.pop("metasrc", None)
-        _v = metasrc if metasrc is not None else _v
-        if _v is not None:
-            self["metasrc"] = _v
-        _v = arg.pop("name", None)
-        _v = name if name is not None else _v
-        if _v is not None:
-            self["name"] = _v
-        _v = arg.pop("opacity", None)
-        _v = opacity if opacity is not None else _v
-        if _v is not None:
-            self["opacity"] = _v
-        _v = arg.pop("reversescale", None)
-        _v = reversescale if reversescale is not None else _v
-        if _v is not None:
-            self["reversescale"] = _v
-        _v = arg.pop("scene", None)
-        _v = scene if scene is not None else _v
-        if _v is not None:
-            self["scene"] = _v
-        _v = arg.pop("showlegend", None)
-        _v = showlegend if showlegend is not None else _v
-        if _v is not None:
-            self["showlegend"] = _v
-        _v = arg.pop("showscale", None)
-        _v = showscale if showscale is not None else _v
-        if _v is not None:
-            self["showscale"] = _v
-        _v = arg.pop("sizeref", None)
-        _v = sizeref if sizeref is not None else _v
-        if _v is not None:
-            self["sizeref"] = _v
-        _v = arg.pop("starts", None)
-        _v = starts if starts is not None else _v
-        if _v is not None:
-            self["starts"] = _v
-        _v = arg.pop("stream", None)
-        _v = stream if stream is not None else _v
-        if _v is not None:
-            self["stream"] = _v
-        _v = arg.pop("text", None)
-        _v = text if text is not None else _v
-        if _v is not None:
-            self["text"] = _v
-        _v = arg.pop("u", None)
-        _v = u if u is not None else _v
-        if _v is not None:
-            self["u"] = _v
-        _v = arg.pop("uhoverformat", None)
-        _v = uhoverformat if uhoverformat is not None else _v
-        if _v is not None:
-            self["uhoverformat"] = _v
-        _v = arg.pop("uid", None)
-        _v = uid if uid is not None else _v
-        if _v is not None:
-            self["uid"] = _v
-        _v = arg.pop("uirevision", None)
-        _v = uirevision if uirevision is not None else _v
-        if _v is not None:
-            self["uirevision"] = _v
-        _v = arg.pop("usrc", None)
-        _v = usrc if usrc is not None else _v
-        if _v is not None:
-            self["usrc"] = _v
-        _v = arg.pop("v", None)
-        _v = v if v is not None else _v
-        if _v is not None:
-            self["v"] = _v
-        _v = arg.pop("vhoverformat", None)
-        _v = vhoverformat if vhoverformat is not None else _v
-        if _v is not None:
-            self["vhoverformat"] = _v
-        _v = arg.pop("visible", None)
-        _v = visible if visible is not None else _v
-        if _v is not None:
-            self["visible"] = _v
-        _v = arg.pop("vsrc", None)
-        _v = vsrc if vsrc is not None else _v
-        if _v is not None:
-            self["vsrc"] = _v
-        _v = arg.pop("w", None)
-        _v = w if w is not None else _v
-        if _v is not None:
-            self["w"] = _v
-        _v = arg.pop("whoverformat", None)
-        _v = whoverformat if whoverformat is not None else _v
-        if _v is not None:
-            self["whoverformat"] = _v
-        _v = arg.pop("wsrc", None)
-        _v = wsrc if wsrc is not None else _v
-        if _v is not None:
-            self["wsrc"] = _v
-        _v = arg.pop("x", None)
-        _v = x if x is not None else _v
-        if _v is not None:
-            self["x"] = _v
-        _v = arg.pop("xhoverformat", None)
-        _v = xhoverformat if xhoverformat is not None else _v
-        if _v is not None:
-            self["xhoverformat"] = _v
-        _v = arg.pop("xsrc", None)
-        _v = xsrc if xsrc is not None else _v
-        if _v is not None:
-            self["xsrc"] = _v
-        _v = arg.pop("y", None)
-        _v = y if y is not None else _v
-        if _v is not None:
-            self["y"] = _v
-        _v = arg.pop("yhoverformat", None)
-        _v = yhoverformat if yhoverformat is not None else _v
-        if _v is not None:
-            self["yhoverformat"] = _v
-        _v = arg.pop("ysrc", None)
-        _v = ysrc if ysrc is not None else _v
-        if _v is not None:
-            self["ysrc"] = _v
-        _v = arg.pop("z", None)
-        _v = z if z is not None else _v
-        if _v is not None:
-            self["z"] = _v
-        _v = arg.pop("zhoverformat", None)
-        _v = zhoverformat if zhoverformat is not None else _v
-        if _v is not None:
-            self["zhoverformat"] = _v
-        _v = arg.pop("zsrc", None)
-        _v = zsrc if zsrc is not None else _v
-        if _v is not None:
-            self["zsrc"] = _v
+        self._init_provided('autocolorscale', arg, autocolorscale)
+        self._init_provided('cauto', arg, cauto)
+        self._init_provided('cmax', arg, cmax)
+        self._init_provided('cmid', arg, cmid)
+        self._init_provided('cmin', arg, cmin)
+        self._init_provided('coloraxis', arg, coloraxis)
+        self._init_provided('colorbar', arg, colorbar)
+        self._init_provided('colorscale', arg, colorscale)
+        self._init_provided('customdata', arg, customdata)
+        self._init_provided('customdatasrc', arg, customdatasrc)
+        self._init_provided('hoverinfo', arg, hoverinfo)
+        self._init_provided('hoverinfosrc', arg, hoverinfosrc)
+        self._init_provided('hoverlabel', arg, hoverlabel)
+        self._init_provided('hovertemplate', arg, hovertemplate)
+        self._init_provided('hovertemplatesrc', arg, hovertemplatesrc)
+        self._init_provided('hovertext', arg, hovertext)
+        self._init_provided('ids', arg, ids)
+        self._init_provided('idssrc', arg, idssrc)
+        self._init_provided('legend', arg, legend)
+        self._init_provided('legendgroup', arg, legendgroup)
+        self._init_provided('legendgrouptitle', arg, legendgrouptitle)
+        self._init_provided('legendrank', arg, legendrank)
+        self._init_provided('legendwidth', arg, legendwidth)
+        self._init_provided('lighting', arg, lighting)
+        self._init_provided('lightposition', arg, lightposition)
+        self._init_provided('maxdisplayed', arg, maxdisplayed)
+        self._init_provided('meta', arg, meta)
+        self._init_provided('metasrc', arg, metasrc)
+        self._init_provided('name', arg, name)
+        self._init_provided('opacity', arg, opacity)
+        self._init_provided('reversescale', arg, reversescale)
+        self._init_provided('scene', arg, scene)
+        self._init_provided('showlegend', arg, showlegend)
+        self._init_provided('showscale', arg, showscale)
+        self._init_provided('sizeref', arg, sizeref)
+        self._init_provided('starts', arg, starts)
+        self._init_provided('stream', arg, stream)
+        self._init_provided('text', arg, text)
+        self._init_provided('u', arg, u)
+        self._init_provided('uhoverformat', arg, uhoverformat)
+        self._init_provided('uid', arg, uid)
+        self._init_provided('uirevision', arg, uirevision)
+        self._init_provided('usrc', arg, usrc)
+        self._init_provided('v', arg, v)
+        self._init_provided('vhoverformat', arg, vhoverformat)
+        self._init_provided('visible', arg, visible)
+        self._init_provided('vsrc', arg, vsrc)
+        self._init_provided('w', arg, w)
+        self._init_provided('whoverformat', arg, whoverformat)
+        self._init_provided('wsrc', arg, wsrc)
+        self._init_provided('x', arg, x)
+        self._init_provided('xhoverformat', arg, xhoverformat)
+        self._init_provided('xsrc', arg, xsrc)
+        self._init_provided('y', arg, y)
+        self._init_provided('yhoverformat', arg, yhoverformat)
+        self._init_provided('ysrc', arg, ysrc)
+        self._init_provided('z', arg, z)
+        self._init_provided('zhoverformat', arg, zhoverformat)
+        self._init_provided('zsrc', arg, zsrc)
 
         # Read-only literals
         # ------------------
 
-        self._props["type"] = "streamtube"
-        arg.pop("type", None)
+        self._props['type'] = 'streamtube'
+        arg.pop('type', None)
 
         # Process unknown kwargs
         # ----------------------

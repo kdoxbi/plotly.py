@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class SurfaceValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="surface", parent_name="isosurface", **kwargs):
-        super(SurfaceValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Surface"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='surface',
+                       parent_name='isosurface',
+                       **kwargs):
+        super(SurfaceValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Surface'),
+                 data_docs=kwargs.pop('data_docs', """
             count
                 Sets the number of iso-surfaces between minimum
                 and maximum iso-values. By default this value
@@ -36,7 +37,5 @@ class SurfaceValidator(_plotly_utils.basevalidators.CompoundValidator):
             show
                 Hides/displays surfaces between minimum and
                 maximum iso-values.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
@@ -6,19 +8,9 @@ class Font(_BaseTraceHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "carpet.baxis.title"
-    _path_str = "carpet.baxis.title.font"
-    _valid_props = {
-        "color",
-        "family",
-        "lineposition",
-        "shadow",
-        "size",
-        "style",
-        "textcase",
-        "variant",
-        "weight",
-    }
+    _parent_path_str = 'carpet.baxis.title'
+    _path_str = 'carpet.baxis.title.font'
+    _valid_props = {"color", "family", "lineposition", "shadow", "size", "style", "textcase", "variant", "weight"}
 
     # color
     # -----
@@ -71,11 +63,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["color"]
+        return self['color']
 
     @color.setter
     def color(self, val):
-        self["color"] = val
+        self['color'] = val
 
     # family
     # ------
@@ -102,11 +94,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["family"]
+        return self['family']
 
     @family.setter
     def family(self, val):
-        self["family"] = val
+        self['family'] = val
 
     # lineposition
     # ------------
@@ -127,11 +119,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         Any
         """
-        return self["lineposition"]
+        return self['lineposition']
 
     @lineposition.setter
     def lineposition(self, val):
-        self["lineposition"] = val
+        self['lineposition'] = val
 
     # shadow
     # ------
@@ -151,11 +143,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["shadow"]
+        return self['shadow']
 
     @shadow.setter
     def shadow(self, val):
-        self["shadow"] = val
+        self['shadow'] = val
 
     # size
     # ----
@@ -169,11 +161,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         int|float
         """
-        return self["size"]
+        return self['size']
 
     @size.setter
     def size(self, val):
-        self["size"] = val
+        self['size'] = val
 
     # style
     # -----
@@ -191,11 +183,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         Any
         """
-        return self["style"]
+        return self['style']
 
     @style.setter
     def style(self, val):
-        self["style"] = val
+        self['style'] = val
 
     # textcase
     # --------
@@ -214,11 +206,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         Any
         """
-        return self["textcase"]
+        return self['textcase']
 
     @textcase.setter
     def textcase(self, val):
-        self["textcase"] = val
+        self['textcase'] = val
 
     # variant
     # -------
@@ -236,11 +228,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         Any
         """
-        return self["variant"]
+        return self['variant']
 
     @variant.setter
     def variant(self, val):
-        self["variant"] = val
+        self['variant'] = val
 
     # weight
     # ------
@@ -258,11 +250,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         int
         """
-        return self["weight"]
+        return self['weight']
 
     @weight.setter
     def weight(self, val):
-        self["weight"] = val
+        self['weight'] = val
 
     # Self properties description
     # ---------------------------
@@ -308,21 +300,19 @@ class Font(_BaseTraceHierarchyType):
         weight
             Sets the weight (or boldness) of the font.
         """
-
-    def __init__(
-        self,
-        arg=None,
-        color=None,
-        family=None,
-        lineposition=None,
-        shadow=None,
-        size=None,
-        style=None,
-        textcase=None,
-        variant=None,
-        weight=None,
-        **kwargs,
-    ):
+    def __init__(self,
+            arg=None,
+            color=None,
+            family=None,
+            lineposition=None,
+            shadow=None,
+            size=None,
+            style=None,
+            textcase=None,
+            variant=None,
+            weight=None,
+            **kwargs
+        ):
         """
         Construct a new Font object
 
@@ -377,10 +367,10 @@ class Font(_BaseTraceHierarchyType):
         -------
         Font
         """
-        super(Font, self).__init__("font")
+        super(Font, self).__init__('font')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -392,56 +382,28 @@ class Font(_BaseTraceHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.carpet.baxis.title.Font
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.carpet.baxis.title.Font`"""
-            )
+an instance of :class:`plotly.graph_objs.carpet.baxis.title.Font`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("color", None)
-        _v = color if color is not None else _v
-        if _v is not None:
-            self["color"] = _v
-        _v = arg.pop("family", None)
-        _v = family if family is not None else _v
-        if _v is not None:
-            self["family"] = _v
-        _v = arg.pop("lineposition", None)
-        _v = lineposition if lineposition is not None else _v
-        if _v is not None:
-            self["lineposition"] = _v
-        _v = arg.pop("shadow", None)
-        _v = shadow if shadow is not None else _v
-        if _v is not None:
-            self["shadow"] = _v
-        _v = arg.pop("size", None)
-        _v = size if size is not None else _v
-        if _v is not None:
-            self["size"] = _v
-        _v = arg.pop("style", None)
-        _v = style if style is not None else _v
-        if _v is not None:
-            self["style"] = _v
-        _v = arg.pop("textcase", None)
-        _v = textcase if textcase is not None else _v
-        if _v is not None:
-            self["textcase"] = _v
-        _v = arg.pop("variant", None)
-        _v = variant if variant is not None else _v
-        if _v is not None:
-            self["variant"] = _v
-        _v = arg.pop("weight", None)
-        _v = weight if weight is not None else _v
-        if _v is not None:
-            self["weight"] = _v
+        self._init_provided('color', arg, color)
+        self._init_provided('family', arg, family)
+        self._init_provided('lineposition', arg, lineposition)
+        self._init_provided('shadow', arg, shadow)
+        self._init_provided('size', arg, size)
+        self._init_provided('style', arg, style)
+        self._init_provided('textcase', arg, textcase)
+        self._init_provided('variant', arg, variant)
+        self._init_provided('weight', arg, weight)
 
         # Process unknown kwargs
         # ----------------------

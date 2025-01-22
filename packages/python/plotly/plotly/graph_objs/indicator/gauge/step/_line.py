@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
@@ -6,8 +8,8 @@ class Line(_BaseTraceHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "indicator.gauge.step"
-    _path_str = "indicator.gauge.step.line"
+    _parent_path_str = 'indicator.gauge.step'
+    _path_str = 'indicator.gauge.step.line'
     _valid_props = {"color", "width"}
 
     # color
@@ -63,11 +65,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["color"]
+        return self['color']
 
     @color.setter
     def color(self, val):
-        self["color"] = val
+        self['color'] = val
 
     # width
     # -----
@@ -83,11 +85,11 @@ class Line(_BaseTraceHierarchyType):
         -------
         int|float
         """
-        return self["width"]
+        return self['width']
 
     @width.setter
     def width(self, val):
-        self["width"] = val
+        self['width'] = val
 
     # Self properties description
     # ---------------------------
@@ -100,8 +102,12 @@ class Line(_BaseTraceHierarchyType):
             Sets the width (in px) of the line enclosing each
             sector.
         """
-
-    def __init__(self, arg=None, color=None, width=None, **kwargs):
+    def __init__(self,
+            arg=None,
+            color=None,
+            width=None,
+            **kwargs
+        ):
         """
         Construct a new Line object
 
@@ -121,10 +127,10 @@ class Line(_BaseTraceHierarchyType):
         -------
         Line
         """
-        super(Line, self).__init__("line")
+        super(Line, self).__init__('line')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -136,28 +142,21 @@ class Line(_BaseTraceHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.indicator.gauge.step.Line
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.indicator.gauge.step.Line`"""
-            )
+an instance of :class:`plotly.graph_objs.indicator.gauge.step.Line`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("color", None)
-        _v = color if color is not None else _v
-        if _v is not None:
-            self["color"] = _v
-        _v = arg.pop("width", None)
-        _v = width if width is not None else _v
-        if _v is not None:
-            self["width"] = _v
+        self._init_provided('color', arg, color)
+        self._init_provided('width', arg, width)
 
         # Process unknown kwargs
         # ----------------------

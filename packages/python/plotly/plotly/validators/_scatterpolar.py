@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class ScatterpolarValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="scatterpolar", parent_name="", **kwargs):
-        super(ScatterpolarValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Scatterpolar"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='scatterpolar',
+                       parent_name='',
+                       **kwargs):
+        super(ScatterpolarValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Scatterpolar'),
+                 data_docs=kwargs.pop('data_docs', """
             cliponaxis
                 Determines whether or not markers and text
                 nodes are clipped about the subplot axes. To
@@ -317,7 +318,5 @@ class ScatterpolarValidator(_plotly_utils.basevalidators.CompoundValidator):
                 visible. If "legendonly", the trace is not
                 drawn, but can appear as a legend item
                 (provided that the legend itself is visible).
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

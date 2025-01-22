@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
@@ -6,62 +8,9 @@ class Scatterternary(_BaseTraceType):
 
     # class properties
     # --------------------
-    _parent_path_str = ""
-    _path_str = "scatterternary"
-    _valid_props = {
-        "a",
-        "asrc",
-        "b",
-        "bsrc",
-        "c",
-        "cliponaxis",
-        "connectgaps",
-        "csrc",
-        "customdata",
-        "customdatasrc",
-        "fill",
-        "fillcolor",
-        "hoverinfo",
-        "hoverinfosrc",
-        "hoverlabel",
-        "hoveron",
-        "hovertemplate",
-        "hovertemplatesrc",
-        "hovertext",
-        "hovertextsrc",
-        "ids",
-        "idssrc",
-        "legend",
-        "legendgroup",
-        "legendgrouptitle",
-        "legendrank",
-        "legendwidth",
-        "line",
-        "marker",
-        "meta",
-        "metasrc",
-        "mode",
-        "name",
-        "opacity",
-        "selected",
-        "selectedpoints",
-        "showlegend",
-        "stream",
-        "subplot",
-        "sum",
-        "text",
-        "textfont",
-        "textposition",
-        "textpositionsrc",
-        "textsrc",
-        "texttemplate",
-        "texttemplatesrc",
-        "type",
-        "uid",
-        "uirevision",
-        "unselected",
-        "visible",
-    }
+    _parent_path_str = ''
+    _path_str = 'scatterternary'
+    _valid_props = {"a", "asrc", "b", "bsrc", "c", "cliponaxis", "connectgaps", "csrc", "customdata", "customdatasrc", "fill", "fillcolor", "hoverinfo", "hoverinfosrc", "hoverlabel", "hoveron", "hovertemplate", "hovertemplatesrc", "hovertext", "hovertextsrc", "ids", "idssrc", "legend", "legendgroup", "legendgrouptitle", "legendrank", "legendwidth", "line", "marker", "meta", "metasrc", "mode", "name", "opacity", "selected", "selectedpoints", "showlegend", "stream", "subplot", "sum", "text", "textfont", "textposition", "textpositionsrc", "textsrc", "texttemplate", "texttemplatesrc", "type", "uid", "uirevision", "unselected", "visible"}
 
     # a
     # -
@@ -80,11 +29,11 @@ class Scatterternary(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["a"]
+        return self['a']
 
     @a.setter
     def a(self, val):
-        self["a"] = val
+        self['a'] = val
 
     # asrc
     # ----
@@ -100,11 +49,11 @@ class Scatterternary(_BaseTraceType):
         -------
         str
         """
-        return self["asrc"]
+        return self['asrc']
 
     @asrc.setter
     def asrc(self, val):
-        self["asrc"] = val
+        self['asrc'] = val
 
     # b
     # -
@@ -123,11 +72,11 @@ class Scatterternary(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["b"]
+        return self['b']
 
     @b.setter
     def b(self, val):
-        self["b"] = val
+        self['b'] = val
 
     # bsrc
     # ----
@@ -143,11 +92,11 @@ class Scatterternary(_BaseTraceType):
         -------
         str
         """
-        return self["bsrc"]
+        return self['bsrc']
 
     @bsrc.setter
     def bsrc(self, val):
-        self["bsrc"] = val
+        self['bsrc'] = val
 
     # c
     # -
@@ -166,11 +115,11 @@ class Scatterternary(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["c"]
+        return self['c']
 
     @c.setter
     def c(self, val):
-        self["c"] = val
+        self['c'] = val
 
     # cliponaxis
     # ----------
@@ -189,11 +138,11 @@ class Scatterternary(_BaseTraceType):
         -------
         bool
         """
-        return self["cliponaxis"]
+        return self['cliponaxis']
 
     @cliponaxis.setter
     def cliponaxis(self, val):
-        self["cliponaxis"] = val
+        self['cliponaxis'] = val
 
     # connectgaps
     # -----------
@@ -210,11 +159,11 @@ class Scatterternary(_BaseTraceType):
         -------
         bool
         """
-        return self["connectgaps"]
+        return self['connectgaps']
 
     @connectgaps.setter
     def connectgaps(self, val):
-        self["connectgaps"] = val
+        self['connectgaps'] = val
 
     # csrc
     # ----
@@ -230,11 +179,11 @@ class Scatterternary(_BaseTraceType):
         -------
         str
         """
-        return self["csrc"]
+        return self['csrc']
 
     @csrc.setter
     def csrc(self, val):
-        self["csrc"] = val
+        self['csrc'] = val
 
     # customdata
     # ----------
@@ -253,11 +202,11 @@ class Scatterternary(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["customdata"]
+        return self['customdata']
 
     @customdata.setter
     def customdata(self, val):
-        self["customdata"] = val
+        self['customdata'] = val
 
     # customdatasrc
     # -------------
@@ -274,11 +223,11 @@ class Scatterternary(_BaseTraceType):
         -------
         str
         """
-        return self["customdatasrc"]
+        return self['customdatasrc']
 
     @customdatasrc.setter
     def customdatasrc(self, val):
-        self["customdatasrc"] = val
+        self['customdatasrc'] = val
 
     # fill
     # ----
@@ -303,11 +252,11 @@ class Scatterternary(_BaseTraceType):
         -------
         Any
         """
-        return self["fill"]
+        return self['fill']
 
     @fill.setter
     def fill(self, val):
-        self["fill"] = val
+        self['fill'] = val
 
     # fillcolor
     # ---------
@@ -364,11 +313,11 @@ class Scatterternary(_BaseTraceType):
         -------
         str
         """
-        return self["fillcolor"]
+        return self['fillcolor']
 
     @fillcolor.setter
     def fillcolor(self, val):
-        self["fillcolor"] = val
+        self['fillcolor'] = val
 
     # hoverinfo
     # ---------
@@ -390,11 +339,11 @@ class Scatterternary(_BaseTraceType):
         -------
         Any|numpy.ndarray
         """
-        return self["hoverinfo"]
+        return self['hoverinfo']
 
     @hoverinfo.setter
     def hoverinfo(self, val):
-        self["hoverinfo"] = val
+        self['hoverinfo'] = val
 
     # hoverinfosrc
     # ------------
@@ -411,11 +360,11 @@ class Scatterternary(_BaseTraceType):
         -------
         str
         """
-        return self["hoverinfosrc"]
+        return self['hoverinfosrc']
 
     @hoverinfosrc.setter
     def hoverinfosrc(self, val):
-        self["hoverinfosrc"] = val
+        self['hoverinfosrc'] = val
 
     # hoverlabel
     # ----------
@@ -427,9 +376,9 @@ class Scatterternary(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.scatterternary.Hoverlabel`
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
-
+    
             Supported dict properties:
-
+                
                 align
                     Sets the horizontal alignment of the text
                     content within hover label box. Has an effect
@@ -470,11 +419,11 @@ class Scatterternary(_BaseTraceType):
         -------
         plotly.graph_objs.scatterternary.Hoverlabel
         """
-        return self["hoverlabel"]
+        return self['hoverlabel']
 
     @hoverlabel.setter
     def hoverlabel(self, val):
-        self["hoverlabel"] = val
+        self['hoverlabel'] = val
 
     # hoveron
     # -------
@@ -495,11 +444,11 @@ class Scatterternary(_BaseTraceType):
         -------
         Any
         """
-        return self["hoveron"]
+        return self['hoveron']
 
     @hoveron.setter
     def hoveron(self, val):
-        self["hoveron"] = val
+        self['hoveron'] = val
 
     # hovertemplate
     # -------------
@@ -539,11 +488,11 @@ class Scatterternary(_BaseTraceType):
         -------
         str|numpy.ndarray
         """
-        return self["hovertemplate"]
+        return self['hovertemplate']
 
     @hovertemplate.setter
     def hovertemplate(self, val):
-        self["hovertemplate"] = val
+        self['hovertemplate'] = val
 
     # hovertemplatesrc
     # ----------------
@@ -560,11 +509,11 @@ class Scatterternary(_BaseTraceType):
         -------
         str
         """
-        return self["hovertemplatesrc"]
+        return self['hovertemplatesrc']
 
     @hovertemplatesrc.setter
     def hovertemplatesrc(self, val):
-        self["hovertemplatesrc"] = val
+        self['hovertemplatesrc'] = val
 
     # hovertext
     # ---------
@@ -586,11 +535,11 @@ class Scatterternary(_BaseTraceType):
         -------
         str|numpy.ndarray
         """
-        return self["hovertext"]
+        return self['hovertext']
 
     @hovertext.setter
     def hovertext(self, val):
-        self["hovertext"] = val
+        self['hovertext'] = val
 
     # hovertextsrc
     # ------------
@@ -607,11 +556,11 @@ class Scatterternary(_BaseTraceType):
         -------
         str
         """
-        return self["hovertextsrc"]
+        return self['hovertextsrc']
 
     @hovertextsrc.setter
     def hovertextsrc(self, val):
-        self["hovertextsrc"] = val
+        self['hovertextsrc'] = val
 
     # ids
     # ---
@@ -629,11 +578,11 @@ class Scatterternary(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["ids"]
+        return self['ids']
 
     @ids.setter
     def ids(self, val):
-        self["ids"] = val
+        self['ids'] = val
 
     # idssrc
     # ------
@@ -649,11 +598,11 @@ class Scatterternary(_BaseTraceType):
         -------
         str
         """
-        return self["idssrc"]
+        return self['idssrc']
 
     @idssrc.setter
     def idssrc(self, val):
-        self["idssrc"] = val
+        self['idssrc'] = val
 
     # legend
     # ------
@@ -674,11 +623,11 @@ class Scatterternary(_BaseTraceType):
         -------
         str
         """
-        return self["legend"]
+        return self['legend']
 
     @legend.setter
     def legend(self, val):
-        self["legend"] = val
+        self['legend'] = val
 
     # legendgroup
     # -----------
@@ -697,11 +646,11 @@ class Scatterternary(_BaseTraceType):
         -------
         str
         """
-        return self["legendgroup"]
+        return self['legendgroup']
 
     @legendgroup.setter
     def legendgroup(self, val):
-        self["legendgroup"] = val
+        self['legendgroup'] = val
 
     # legendgrouptitle
     # ----------------
@@ -713,9 +662,9 @@ class Scatterternary(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.scatterternary.Legendgrouptitle`
           - A dict of string/value properties that will be passed
             to the Legendgrouptitle constructor
-
+    
             Supported dict properties:
-
+                
                 font
                     Sets this legend group's title font.
                 text
@@ -725,11 +674,11 @@ class Scatterternary(_BaseTraceType):
         -------
         plotly.graph_objs.scatterternary.Legendgrouptitle
         """
-        return self["legendgrouptitle"]
+        return self['legendgrouptitle']
 
     @legendgrouptitle.setter
     def legendgrouptitle(self, val):
-        self["legendgrouptitle"] = val
+        self['legendgrouptitle'] = val
 
     # legendrank
     # ----------
@@ -752,11 +701,11 @@ class Scatterternary(_BaseTraceType):
         -------
         int|float
         """
-        return self["legendrank"]
+        return self['legendrank']
 
     @legendrank.setter
     def legendrank(self, val):
-        self["legendrank"] = val
+        self['legendrank'] = val
 
     # legendwidth
     # -----------
@@ -773,11 +722,11 @@ class Scatterternary(_BaseTraceType):
         -------
         int|float
         """
-        return self["legendwidth"]
+        return self['legendwidth']
 
     @legendwidth.setter
     def legendwidth(self, val):
-        self["legendwidth"] = val
+        self['legendwidth'] = val
 
     # line
     # ----
@@ -789,9 +738,9 @@ class Scatterternary(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.scatterternary.Line`
           - A dict of string/value properties that will be passed
             to the Line constructor
-
+    
             Supported dict properties:
-
+                
                 backoff
                     Sets the line back off from the end point of
                     the nth line segment (in px). This option is
@@ -826,11 +775,11 @@ class Scatterternary(_BaseTraceType):
         -------
         plotly.graph_objs.scatterternary.Line
         """
-        return self["line"]
+        return self['line']
 
     @line.setter
     def line(self, val):
-        self["line"] = val
+        self['line'] = val
 
     # marker
     # ------
@@ -842,9 +791,9 @@ class Scatterternary(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.scatterternary.Marker`
           - A dict of string/value properties that will be passed
             to the Marker constructor
-
+    
             Supported dict properties:
-
+                
                 angle
                     Sets the marker angle in respect to `angleref`.
                 angleref
@@ -1000,11 +949,11 @@ class Scatterternary(_BaseTraceType):
         -------
         plotly.graph_objs.scatterternary.Marker
         """
-        return self["marker"]
+        return self['marker']
 
     @marker.setter
     def marker(self, val):
-        self["marker"] = val
+        self['marker'] = val
 
     # meta
     # ----
@@ -1028,11 +977,11 @@ class Scatterternary(_BaseTraceType):
         -------
         Any|numpy.ndarray
         """
-        return self["meta"]
+        return self['meta']
 
     @meta.setter
     def meta(self, val):
-        self["meta"] = val
+        self['meta'] = val
 
     # metasrc
     # -------
@@ -1048,11 +997,11 @@ class Scatterternary(_BaseTraceType):
         -------
         str
         """
-        return self["metasrc"]
+        return self['metasrc']
 
     @metasrc.setter
     def metasrc(self, val):
-        self["metasrc"] = val
+        self['metasrc'] = val
 
     # mode
     # ----
@@ -1076,11 +1025,11 @@ class Scatterternary(_BaseTraceType):
         -------
         Any
         """
-        return self["mode"]
+        return self['mode']
 
     @mode.setter
     def mode(self, val):
-        self["mode"] = val
+        self['mode'] = val
 
     # name
     # ----
@@ -1098,11 +1047,11 @@ class Scatterternary(_BaseTraceType):
         -------
         str
         """
-        return self["name"]
+        return self['name']
 
     @name.setter
     def name(self, val):
-        self["name"] = val
+        self['name'] = val
 
     # opacity
     # -------
@@ -1118,11 +1067,11 @@ class Scatterternary(_BaseTraceType):
         -------
         int|float
         """
-        return self["opacity"]
+        return self['opacity']
 
     @opacity.setter
     def opacity(self, val):
-        self["opacity"] = val
+        self['opacity'] = val
 
     # selected
     # --------
@@ -1134,9 +1083,9 @@ class Scatterternary(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.scatterternary.Selected`
           - A dict of string/value properties that will be passed
             to the Selected constructor
-
+    
             Supported dict properties:
-
+                
                 marker
                     :class:`plotly.graph_objects.scatterternary.sel
                     ected.Marker` instance or dict with compatible
@@ -1150,11 +1099,11 @@ class Scatterternary(_BaseTraceType):
         -------
         plotly.graph_objs.scatterternary.Selected
         """
-        return self["selected"]
+        return self['selected']
 
     @selected.setter
     def selected(self, val):
-        self["selected"] = val
+        self['selected'] = val
 
     # selectedpoints
     # --------------
@@ -1174,11 +1123,11 @@ class Scatterternary(_BaseTraceType):
         -------
         Any
         """
-        return self["selectedpoints"]
+        return self['selectedpoints']
 
     @selectedpoints.setter
     def selectedpoints(self, val):
-        self["selectedpoints"] = val
+        self['selectedpoints'] = val
 
     # showlegend
     # ----------
@@ -1195,11 +1144,11 @@ class Scatterternary(_BaseTraceType):
         -------
         bool
         """
-        return self["showlegend"]
+        return self['showlegend']
 
     @showlegend.setter
     def showlegend(self, val):
-        self["showlegend"] = val
+        self['showlegend'] = val
 
     # stream
     # ------
@@ -1211,9 +1160,9 @@ class Scatterternary(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.scatterternary.Stream`
           - A dict of string/value properties that will be passed
             to the Stream constructor
-
+    
             Supported dict properties:
-
+                
                 maxpoints
                     Sets the maximum number of points to keep on
                     the plots from an incoming stream. If
@@ -1228,11 +1177,11 @@ class Scatterternary(_BaseTraceType):
         -------
         plotly.graph_objs.scatterternary.Stream
         """
-        return self["stream"]
+        return self['stream']
 
     @stream.setter
     def stream(self, val):
-        self["stream"] = val
+        self['stream'] = val
 
     # subplot
     # -------
@@ -1253,11 +1202,11 @@ class Scatterternary(_BaseTraceType):
         -------
         str
         """
-        return self["subplot"]
+        return self['subplot']
 
     @subplot.setter
     def subplot(self, val):
-        self["subplot"] = val
+        self['subplot'] = val
 
     # sum
     # ---
@@ -1277,11 +1226,11 @@ class Scatterternary(_BaseTraceType):
         -------
         int|float
         """
-        return self["sum"]
+        return self['sum']
 
     @sum.setter
     def sum(self, val):
-        self["sum"] = val
+        self['sum'] = val
 
     # text
     # ----
@@ -1304,11 +1253,11 @@ class Scatterternary(_BaseTraceType):
         -------
         str|numpy.ndarray
         """
-        return self["text"]
+        return self['text']
 
     @text.setter
     def text(self, val):
-        self["text"] = val
+        self['text'] = val
 
     # textfont
     # --------
@@ -1322,11 +1271,11 @@ class Scatterternary(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.scatterternary.Textfont`
           - A dict of string/value properties that will be passed
             to the Textfont constructor
-
+    
             Supported dict properties:
-
+                
                 color
-
+    
                 colorsrc
                     Sets the source reference on Chart Studio Cloud
                     for `color`.
@@ -1368,7 +1317,7 @@ class Scatterternary(_BaseTraceType):
                     Sets the source reference on Chart Studio Cloud
                     for `shadow`.
                 size
-
+    
                 sizesrc
                     Sets the source reference on Chart Studio Cloud
                     for `size`.
@@ -1400,11 +1349,11 @@ class Scatterternary(_BaseTraceType):
         -------
         plotly.graph_objs.scatterternary.Textfont
         """
-        return self["textfont"]
+        return self['textfont']
 
     @textfont.setter
     def textfont(self, val):
-        self["textfont"] = val
+        self['textfont'] = val
 
     # textposition
     # ------------
@@ -1425,11 +1374,11 @@ class Scatterternary(_BaseTraceType):
         -------
         Any|numpy.ndarray
         """
-        return self["textposition"]
+        return self['textposition']
 
     @textposition.setter
     def textposition(self, val):
-        self["textposition"] = val
+        self['textposition'] = val
 
     # textpositionsrc
     # ---------------
@@ -1446,11 +1395,11 @@ class Scatterternary(_BaseTraceType):
         -------
         str
         """
-        return self["textpositionsrc"]
+        return self['textpositionsrc']
 
     @textpositionsrc.setter
     def textpositionsrc(self, val):
-        self["textpositionsrc"] = val
+        self['textpositionsrc'] = val
 
     # textsrc
     # -------
@@ -1466,11 +1415,11 @@ class Scatterternary(_BaseTraceType):
         -------
         str
         """
-        return self["textsrc"]
+        return self['textsrc']
 
     @textsrc.setter
     def textsrc(self, val):
-        self["textsrc"] = val
+        self['textsrc'] = val
 
     # texttemplate
     # ------------
@@ -1501,11 +1450,11 @@ class Scatterternary(_BaseTraceType):
         -------
         str|numpy.ndarray
         """
-        return self["texttemplate"]
+        return self['texttemplate']
 
     @texttemplate.setter
     def texttemplate(self, val):
-        self["texttemplate"] = val
+        self['texttemplate'] = val
 
     # texttemplatesrc
     # ---------------
@@ -1522,11 +1471,11 @@ class Scatterternary(_BaseTraceType):
         -------
         str
         """
-        return self["texttemplatesrc"]
+        return self['texttemplatesrc']
 
     @texttemplatesrc.setter
     def texttemplatesrc(self, val):
-        self["texttemplatesrc"] = val
+        self['texttemplatesrc'] = val
 
     # uid
     # ---
@@ -1544,11 +1493,11 @@ class Scatterternary(_BaseTraceType):
         -------
         str
         """
-        return self["uid"]
+        return self['uid']
 
     @uid.setter
     def uid(self, val):
-        self["uid"] = val
+        self['uid'] = val
 
     # uirevision
     # ----------
@@ -1577,11 +1526,11 @@ class Scatterternary(_BaseTraceType):
         -------
         Any
         """
-        return self["uirevision"]
+        return self['uirevision']
 
     @uirevision.setter
     def uirevision(self, val):
-        self["uirevision"] = val
+        self['uirevision'] = val
 
     # unselected
     # ----------
@@ -1593,9 +1542,9 @@ class Scatterternary(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.scatterternary.Unselected`
           - A dict of string/value properties that will be passed
             to the Unselected constructor
-
+    
             Supported dict properties:
-
+                
                 marker
                     :class:`plotly.graph_objects.scatterternary.uns
                     elected.Marker` instance or dict with
@@ -1609,11 +1558,11 @@ class Scatterternary(_BaseTraceType):
         -------
         plotly.graph_objs.scatterternary.Unselected
         """
-        return self["unselected"]
+        return self['unselected']
 
     @unselected.setter
     def unselected(self, val):
-        self["unselected"] = val
+        self['unselected'] = val
 
     # visible
     # -------
@@ -1632,17 +1581,17 @@ class Scatterternary(_BaseTraceType):
         -------
         Any
         """
-        return self["visible"]
+        return self['visible']
 
     @visible.setter
     def visible(self, val):
-        self["visible"] = val
+        self['visible'] = val
 
     # type
     # ----
     @property
     def type(self):
-        return self._props["type"]
+        return self._props['type']
 
     # Self properties description
     # ---------------------------
@@ -1932,63 +1881,61 @@ class Scatterternary(_BaseTraceType):
             a legend item (provided that the legend itself is
             visible).
         """
-
-    def __init__(
-        self,
-        arg=None,
-        a=None,
-        asrc=None,
-        b=None,
-        bsrc=None,
-        c=None,
-        cliponaxis=None,
-        connectgaps=None,
-        csrc=None,
-        customdata=None,
-        customdatasrc=None,
-        fill=None,
-        fillcolor=None,
-        hoverinfo=None,
-        hoverinfosrc=None,
-        hoverlabel=None,
-        hoveron=None,
-        hovertemplate=None,
-        hovertemplatesrc=None,
-        hovertext=None,
-        hovertextsrc=None,
-        ids=None,
-        idssrc=None,
-        legend=None,
-        legendgroup=None,
-        legendgrouptitle=None,
-        legendrank=None,
-        legendwidth=None,
-        line=None,
-        marker=None,
-        meta=None,
-        metasrc=None,
-        mode=None,
-        name=None,
-        opacity=None,
-        selected=None,
-        selectedpoints=None,
-        showlegend=None,
-        stream=None,
-        subplot=None,
-        sum=None,
-        text=None,
-        textfont=None,
-        textposition=None,
-        textpositionsrc=None,
-        textsrc=None,
-        texttemplate=None,
-        texttemplatesrc=None,
-        uid=None,
-        uirevision=None,
-        unselected=None,
-        visible=None,
-        **kwargs,
-    ):
+    def __init__(self,
+            arg=None,
+            a=None,
+            asrc=None,
+            b=None,
+            bsrc=None,
+            c=None,
+            cliponaxis=None,
+            connectgaps=None,
+            csrc=None,
+            customdata=None,
+            customdatasrc=None,
+            fill=None,
+            fillcolor=None,
+            hoverinfo=None,
+            hoverinfosrc=None,
+            hoverlabel=None,
+            hoveron=None,
+            hovertemplate=None,
+            hovertemplatesrc=None,
+            hovertext=None,
+            hovertextsrc=None,
+            ids=None,
+            idssrc=None,
+            legend=None,
+            legendgroup=None,
+            legendgrouptitle=None,
+            legendrank=None,
+            legendwidth=None,
+            line=None,
+            marker=None,
+            meta=None,
+            metasrc=None,
+            mode=None,
+            name=None,
+            opacity=None,
+            selected=None,
+            selectedpoints=None,
+            showlegend=None,
+            stream=None,
+            subplot=None,
+            sum=None,
+            text=None,
+            textfont=None,
+            textposition=None,
+            textpositionsrc=None,
+            textsrc=None,
+            texttemplate=None,
+            texttemplatesrc=None,
+            uid=None,
+            uirevision=None,
+            unselected=None,
+            visible=None,
+            **kwargs
+        ):
         """
         Construct a new Scatterternary object
 
@@ -2289,10 +2236,10 @@ class Scatterternary(_BaseTraceType):
         -------
         Scatterternary
         """
-        super(Scatterternary, self).__init__("scatterternary")
+        super(Scatterternary, self).__init__('scatterternary')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -2304,230 +2251,76 @@ class Scatterternary(_BaseTraceType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.Scatterternary
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.Scatterternary`"""
-            )
+an instance of :class:`plotly.graph_objs.Scatterternary`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("a", None)
-        _v = a if a is not None else _v
-        if _v is not None:
-            self["a"] = _v
-        _v = arg.pop("asrc", None)
-        _v = asrc if asrc is not None else _v
-        if _v is not None:
-            self["asrc"] = _v
-        _v = arg.pop("b", None)
-        _v = b if b is not None else _v
-        if _v is not None:
-            self["b"] = _v
-        _v = arg.pop("bsrc", None)
-        _v = bsrc if bsrc is not None else _v
-        if _v is not None:
-            self["bsrc"] = _v
-        _v = arg.pop("c", None)
-        _v = c if c is not None else _v
-        if _v is not None:
-            self["c"] = _v
-        _v = arg.pop("cliponaxis", None)
-        _v = cliponaxis if cliponaxis is not None else _v
-        if _v is not None:
-            self["cliponaxis"] = _v
-        _v = arg.pop("connectgaps", None)
-        _v = connectgaps if connectgaps is not None else _v
-        if _v is not None:
-            self["connectgaps"] = _v
-        _v = arg.pop("csrc", None)
-        _v = csrc if csrc is not None else _v
-        if _v is not None:
-            self["csrc"] = _v
-        _v = arg.pop("customdata", None)
-        _v = customdata if customdata is not None else _v
-        if _v is not None:
-            self["customdata"] = _v
-        _v = arg.pop("customdatasrc", None)
-        _v = customdatasrc if customdatasrc is not None else _v
-        if _v is not None:
-            self["customdatasrc"] = _v
-        _v = arg.pop("fill", None)
-        _v = fill if fill is not None else _v
-        if _v is not None:
-            self["fill"] = _v
-        _v = arg.pop("fillcolor", None)
-        _v = fillcolor if fillcolor is not None else _v
-        if _v is not None:
-            self["fillcolor"] = _v
-        _v = arg.pop("hoverinfo", None)
-        _v = hoverinfo if hoverinfo is not None else _v
-        if _v is not None:
-            self["hoverinfo"] = _v
-        _v = arg.pop("hoverinfosrc", None)
-        _v = hoverinfosrc if hoverinfosrc is not None else _v
-        if _v is not None:
-            self["hoverinfosrc"] = _v
-        _v = arg.pop("hoverlabel", None)
-        _v = hoverlabel if hoverlabel is not None else _v
-        if _v is not None:
-            self["hoverlabel"] = _v
-        _v = arg.pop("hoveron", None)
-        _v = hoveron if hoveron is not None else _v
-        if _v is not None:
-            self["hoveron"] = _v
-        _v = arg.pop("hovertemplate", None)
-        _v = hovertemplate if hovertemplate is not None else _v
-        if _v is not None:
-            self["hovertemplate"] = _v
-        _v = arg.pop("hovertemplatesrc", None)
-        _v = hovertemplatesrc if hovertemplatesrc is not None else _v
-        if _v is not None:
-            self["hovertemplatesrc"] = _v
-        _v = arg.pop("hovertext", None)
-        _v = hovertext if hovertext is not None else _v
-        if _v is not None:
-            self["hovertext"] = _v
-        _v = arg.pop("hovertextsrc", None)
-        _v = hovertextsrc if hovertextsrc is not None else _v
-        if _v is not None:
-            self["hovertextsrc"] = _v
-        _v = arg.pop("ids", None)
-        _v = ids if ids is not None else _v
-        if _v is not None:
-            self["ids"] = _v
-        _v = arg.pop("idssrc", None)
-        _v = idssrc if idssrc is not None else _v
-        if _v is not None:
-            self["idssrc"] = _v
-        _v = arg.pop("legend", None)
-        _v = legend if legend is not None else _v
-        if _v is not None:
-            self["legend"] = _v
-        _v = arg.pop("legendgroup", None)
-        _v = legendgroup if legendgroup is not None else _v
-        if _v is not None:
-            self["legendgroup"] = _v
-        _v = arg.pop("legendgrouptitle", None)
-        _v = legendgrouptitle if legendgrouptitle is not None else _v
-        if _v is not None:
-            self["legendgrouptitle"] = _v
-        _v = arg.pop("legendrank", None)
-        _v = legendrank if legendrank is not None else _v
-        if _v is not None:
-            self["legendrank"] = _v
-        _v = arg.pop("legendwidth", None)
-        _v = legendwidth if legendwidth is not None else _v
-        if _v is not None:
-            self["legendwidth"] = _v
-        _v = arg.pop("line", None)
-        _v = line if line is not None else _v
-        if _v is not None:
-            self["line"] = _v
-        _v = arg.pop("marker", None)
-        _v = marker if marker is not None else _v
-        if _v is not None:
-            self["marker"] = _v
-        _v = arg.pop("meta", None)
-        _v = meta if meta is not None else _v
-        if _v is not None:
-            self["meta"] = _v
-        _v = arg.pop("metasrc", None)
-        _v = metasrc if metasrc is not None else _v
-        if _v is not None:
-            self["metasrc"] = _v
-        _v = arg.pop("mode", None)
-        _v = mode if mode is not None else _v
-        if _v is not None:
-            self["mode"] = _v
-        _v = arg.pop("name", None)
-        _v = name if name is not None else _v
-        if _v is not None:
-            self["name"] = _v
-        _v = arg.pop("opacity", None)
-        _v = opacity if opacity is not None else _v
-        if _v is not None:
-            self["opacity"] = _v
-        _v = arg.pop("selected", None)
-        _v = selected if selected is not None else _v
-        if _v is not None:
-            self["selected"] = _v
-        _v = arg.pop("selectedpoints", None)
-        _v = selectedpoints if selectedpoints is not None else _v
-        if _v is not None:
-            self["selectedpoints"] = _v
-        _v = arg.pop("showlegend", None)
-        _v = showlegend if showlegend is not None else _v
-        if _v is not None:
-            self["showlegend"] = _v
-        _v = arg.pop("stream", None)
-        _v = stream if stream is not None else _v
-        if _v is not None:
-            self["stream"] = _v
-        _v = arg.pop("subplot", None)
-        _v = subplot if subplot is not None else _v
-        if _v is not None:
-            self["subplot"] = _v
-        _v = arg.pop("sum", None)
-        _v = sum if sum is not None else _v
-        if _v is not None:
-            self["sum"] = _v
-        _v = arg.pop("text", None)
-        _v = text if text is not None else _v
-        if _v is not None:
-            self["text"] = _v
-        _v = arg.pop("textfont", None)
-        _v = textfont if textfont is not None else _v
-        if _v is not None:
-            self["textfont"] = _v
-        _v = arg.pop("textposition", None)
-        _v = textposition if textposition is not None else _v
-        if _v is not None:
-            self["textposition"] = _v
-        _v = arg.pop("textpositionsrc", None)
-        _v = textpositionsrc if textpositionsrc is not None else _v
-        if _v is not None:
-            self["textpositionsrc"] = _v
-        _v = arg.pop("textsrc", None)
-        _v = textsrc if textsrc is not None else _v
-        if _v is not None:
-            self["textsrc"] = _v
-        _v = arg.pop("texttemplate", None)
-        _v = texttemplate if texttemplate is not None else _v
-        if _v is not None:
-            self["texttemplate"] = _v
-        _v = arg.pop("texttemplatesrc", None)
-        _v = texttemplatesrc if texttemplatesrc is not None else _v
-        if _v is not None:
-            self["texttemplatesrc"] = _v
-        _v = arg.pop("uid", None)
-        _v = uid if uid is not None else _v
-        if _v is not None:
-            self["uid"] = _v
-        _v = arg.pop("uirevision", None)
-        _v = uirevision if uirevision is not None else _v
-        if _v is not None:
-            self["uirevision"] = _v
-        _v = arg.pop("unselected", None)
-        _v = unselected if unselected is not None else _v
-        if _v is not None:
-            self["unselected"] = _v
-        _v = arg.pop("visible", None)
-        _v = visible if visible is not None else _v
-        if _v is not None:
-            self["visible"] = _v
+        self._init_provided('a', arg, a)
+        self._init_provided('asrc', arg, asrc)
+        self._init_provided('b', arg, b)
+        self._init_provided('bsrc', arg, bsrc)
+        self._init_provided('c', arg, c)
+        self._init_provided('cliponaxis', arg, cliponaxis)
+        self._init_provided('connectgaps', arg, connectgaps)
+        self._init_provided('csrc', arg, csrc)
+        self._init_provided('customdata', arg, customdata)
+        self._init_provided('customdatasrc', arg, customdatasrc)
+        self._init_provided('fill', arg, fill)
+        self._init_provided('fillcolor', arg, fillcolor)
+        self._init_provided('hoverinfo', arg, hoverinfo)
+        self._init_provided('hoverinfosrc', arg, hoverinfosrc)
+        self._init_provided('hoverlabel', arg, hoverlabel)
+        self._init_provided('hoveron', arg, hoveron)
+        self._init_provided('hovertemplate', arg, hovertemplate)
+        self._init_provided('hovertemplatesrc', arg, hovertemplatesrc)
+        self._init_provided('hovertext', arg, hovertext)
+        self._init_provided('hovertextsrc', arg, hovertextsrc)
+        self._init_provided('ids', arg, ids)
+        self._init_provided('idssrc', arg, idssrc)
+        self._init_provided('legend', arg, legend)
+        self._init_provided('legendgroup', arg, legendgroup)
+        self._init_provided('legendgrouptitle', arg, legendgrouptitle)
+        self._init_provided('legendrank', arg, legendrank)
+        self._init_provided('legendwidth', arg, legendwidth)
+        self._init_provided('line', arg, line)
+        self._init_provided('marker', arg, marker)
+        self._init_provided('meta', arg, meta)
+        self._init_provided('metasrc', arg, metasrc)
+        self._init_provided('mode', arg, mode)
+        self._init_provided('name', arg, name)
+        self._init_provided('opacity', arg, opacity)
+        self._init_provided('selected', arg, selected)
+        self._init_provided('selectedpoints', arg, selectedpoints)
+        self._init_provided('showlegend', arg, showlegend)
+        self._init_provided('stream', arg, stream)
+        self._init_provided('subplot', arg, subplot)
+        self._init_provided('sum', arg, sum)
+        self._init_provided('text', arg, text)
+        self._init_provided('textfont', arg, textfont)
+        self._init_provided('textposition', arg, textposition)
+        self._init_provided('textpositionsrc', arg, textpositionsrc)
+        self._init_provided('textsrc', arg, textsrc)
+        self._init_provided('texttemplate', arg, texttemplate)
+        self._init_provided('texttemplatesrc', arg, texttemplatesrc)
+        self._init_provided('uid', arg, uid)
+        self._init_provided('uirevision', arg, uirevision)
+        self._init_provided('unselected', arg, unselected)
+        self._init_provided('visible', arg, visible)
 
         # Read-only literals
         # ------------------
 
-        self._props["type"] = "scatterternary"
-        arg.pop("type", None)
+        self._props['type'] = 'scatterternary'
+        arg.pop('type', None)
 
         # Process unknown kwargs
         # ----------------------

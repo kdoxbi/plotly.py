@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
@@ -6,28 +8,9 @@ class Font(_BaseTraceHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "scatter.hoverlabel"
-    _path_str = "scatter.hoverlabel.font"
-    _valid_props = {
-        "color",
-        "colorsrc",
-        "family",
-        "familysrc",
-        "lineposition",
-        "linepositionsrc",
-        "shadow",
-        "shadowsrc",
-        "size",
-        "sizesrc",
-        "style",
-        "stylesrc",
-        "textcase",
-        "textcasesrc",
-        "variant",
-        "variantsrc",
-        "weight",
-        "weightsrc",
-    }
+    _parent_path_str = 'scatter.hoverlabel'
+    _path_str = 'scatter.hoverlabel.font'
+    _valid_props = {"color", "colorsrc", "family", "familysrc", "lineposition", "linepositionsrc", "shadow", "shadowsrc", "size", "sizesrc", "style", "stylesrc", "textcase", "textcasesrc", "variant", "variantsrc", "weight", "weightsrc"}
 
     # color
     # -----
@@ -81,11 +64,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         str|numpy.ndarray
         """
-        return self["color"]
+        return self['color']
 
     @color.setter
     def color(self, val):
-        self["color"] = val
+        self['color'] = val
 
     # colorsrc
     # --------
@@ -101,11 +84,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["colorsrc"]
+        return self['colorsrc']
 
     @colorsrc.setter
     def colorsrc(self, val):
-        self["colorsrc"] = val
+        self['colorsrc'] = val
 
     # family
     # ------
@@ -133,11 +116,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         str|numpy.ndarray
         """
-        return self["family"]
+        return self['family']
 
     @family.setter
     def family(self, val):
-        self["family"] = val
+        self['family'] = val
 
     # familysrc
     # ---------
@@ -153,11 +136,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["familysrc"]
+        return self['familysrc']
 
     @familysrc.setter
     def familysrc(self, val):
-        self["familysrc"] = val
+        self['familysrc'] = val
 
     # lineposition
     # ------------
@@ -179,11 +162,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         Any|numpy.ndarray
         """
-        return self["lineposition"]
+        return self['lineposition']
 
     @lineposition.setter
     def lineposition(self, val):
-        self["lineposition"] = val
+        self['lineposition'] = val
 
     # linepositionsrc
     # ---------------
@@ -200,11 +183,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["linepositionsrc"]
+        return self['linepositionsrc']
 
     @linepositionsrc.setter
     def linepositionsrc(self, val):
-        self["linepositionsrc"] = val
+        self['linepositionsrc'] = val
 
     # shadow
     # ------
@@ -225,11 +208,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         str|numpy.ndarray
         """
-        return self["shadow"]
+        return self['shadow']
 
     @shadow.setter
     def shadow(self, val):
-        self["shadow"] = val
+        self['shadow'] = val
 
     # shadowsrc
     # ---------
@@ -245,11 +228,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["shadowsrc"]
+        return self['shadowsrc']
 
     @shadowsrc.setter
     def shadowsrc(self, val):
-        self["shadowsrc"] = val
+        self['shadowsrc'] = val
 
     # size
     # ----
@@ -264,11 +247,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         int|float|numpy.ndarray
         """
-        return self["size"]
+        return self['size']
 
     @size.setter
     def size(self, val):
-        self["size"] = val
+        self['size'] = val
 
     # sizesrc
     # -------
@@ -284,11 +267,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["sizesrc"]
+        return self['sizesrc']
 
     @sizesrc.setter
     def sizesrc(self, val):
-        self["sizesrc"] = val
+        self['sizesrc'] = val
 
     # style
     # -----
@@ -307,11 +290,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         Any|numpy.ndarray
         """
-        return self["style"]
+        return self['style']
 
     @style.setter
     def style(self, val):
-        self["style"] = val
+        self['style'] = val
 
     # stylesrc
     # --------
@@ -327,11 +310,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["stylesrc"]
+        return self['stylesrc']
 
     @stylesrc.setter
     def stylesrc(self, val):
-        self["stylesrc"] = val
+        self['stylesrc'] = val
 
     # textcase
     # --------
@@ -351,11 +334,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         Any|numpy.ndarray
         """
-        return self["textcase"]
+        return self['textcase']
 
     @textcase.setter
     def textcase(self, val):
-        self["textcase"] = val
+        self['textcase'] = val
 
     # textcasesrc
     # -----------
@@ -371,11 +354,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["textcasesrc"]
+        return self['textcasesrc']
 
     @textcasesrc.setter
     def textcasesrc(self, val):
-        self["textcasesrc"] = val
+        self['textcasesrc'] = val
 
     # variant
     # -------
@@ -394,11 +377,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         Any|numpy.ndarray
         """
-        return self["variant"]
+        return self['variant']
 
     @variant.setter
     def variant(self, val):
-        self["variant"] = val
+        self['variant'] = val
 
     # variantsrc
     # ----------
@@ -414,11 +397,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["variantsrc"]
+        return self['variantsrc']
 
     @variantsrc.setter
     def variantsrc(self, val):
-        self["variantsrc"] = val
+        self['variantsrc'] = val
 
     # weight
     # ------
@@ -437,11 +420,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         int|numpy.ndarray
         """
-        return self["weight"]
+        return self['weight']
 
     @weight.setter
     def weight(self, val):
-        self["weight"] = val
+        self['weight'] = val
 
     # weightsrc
     # ---------
@@ -457,11 +440,11 @@ class Font(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["weightsrc"]
+        return self['weightsrc']
 
     @weightsrc.setter
     def weightsrc(self, val):
-        self["weightsrc"] = val
+        self['weightsrc'] = val
 
     # Self properties description
     # ---------------------------
@@ -534,30 +517,28 @@ class Font(_BaseTraceHierarchyType):
             Sets the source reference on Chart Studio Cloud for
             `weight`.
         """
-
-    def __init__(
-        self,
-        arg=None,
-        color=None,
-        colorsrc=None,
-        family=None,
-        familysrc=None,
-        lineposition=None,
-        linepositionsrc=None,
-        shadow=None,
-        shadowsrc=None,
-        size=None,
-        sizesrc=None,
-        style=None,
-        stylesrc=None,
-        textcase=None,
-        textcasesrc=None,
-        variant=None,
-        variantsrc=None,
-        weight=None,
-        weightsrc=None,
-        **kwargs,
-    ):
+    def __init__(self,
+            arg=None,
+            color=None,
+            colorsrc=None,
+            family=None,
+            familysrc=None,
+            lineposition=None,
+            linepositionsrc=None,
+            shadow=None,
+            shadowsrc=None,
+            size=None,
+            sizesrc=None,
+            style=None,
+            stylesrc=None,
+            textcase=None,
+            textcasesrc=None,
+            variant=None,
+            variantsrc=None,
+            weight=None,
+            weightsrc=None,
+            **kwargs
+        ):
         """
         Construct a new Font object
 
@@ -639,10 +620,10 @@ class Font(_BaseTraceHierarchyType):
         -------
         Font
         """
-        super(Font, self).__init__("font")
+        super(Font, self).__init__('font')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -654,92 +635,37 @@ class Font(_BaseTraceHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.scatter.hoverlabel.Font
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.scatter.hoverlabel.Font`"""
-            )
+an instance of :class:`plotly.graph_objs.scatter.hoverlabel.Font`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("color", None)
-        _v = color if color is not None else _v
-        if _v is not None:
-            self["color"] = _v
-        _v = arg.pop("colorsrc", None)
-        _v = colorsrc if colorsrc is not None else _v
-        if _v is not None:
-            self["colorsrc"] = _v
-        _v = arg.pop("family", None)
-        _v = family if family is not None else _v
-        if _v is not None:
-            self["family"] = _v
-        _v = arg.pop("familysrc", None)
-        _v = familysrc if familysrc is not None else _v
-        if _v is not None:
-            self["familysrc"] = _v
-        _v = arg.pop("lineposition", None)
-        _v = lineposition if lineposition is not None else _v
-        if _v is not None:
-            self["lineposition"] = _v
-        _v = arg.pop("linepositionsrc", None)
-        _v = linepositionsrc if linepositionsrc is not None else _v
-        if _v is not None:
-            self["linepositionsrc"] = _v
-        _v = arg.pop("shadow", None)
-        _v = shadow if shadow is not None else _v
-        if _v is not None:
-            self["shadow"] = _v
-        _v = arg.pop("shadowsrc", None)
-        _v = shadowsrc if shadowsrc is not None else _v
-        if _v is not None:
-            self["shadowsrc"] = _v
-        _v = arg.pop("size", None)
-        _v = size if size is not None else _v
-        if _v is not None:
-            self["size"] = _v
-        _v = arg.pop("sizesrc", None)
-        _v = sizesrc if sizesrc is not None else _v
-        if _v is not None:
-            self["sizesrc"] = _v
-        _v = arg.pop("style", None)
-        _v = style if style is not None else _v
-        if _v is not None:
-            self["style"] = _v
-        _v = arg.pop("stylesrc", None)
-        _v = stylesrc if stylesrc is not None else _v
-        if _v is not None:
-            self["stylesrc"] = _v
-        _v = arg.pop("textcase", None)
-        _v = textcase if textcase is not None else _v
-        if _v is not None:
-            self["textcase"] = _v
-        _v = arg.pop("textcasesrc", None)
-        _v = textcasesrc if textcasesrc is not None else _v
-        if _v is not None:
-            self["textcasesrc"] = _v
-        _v = arg.pop("variant", None)
-        _v = variant if variant is not None else _v
-        if _v is not None:
-            self["variant"] = _v
-        _v = arg.pop("variantsrc", None)
-        _v = variantsrc if variantsrc is not None else _v
-        if _v is not None:
-            self["variantsrc"] = _v
-        _v = arg.pop("weight", None)
-        _v = weight if weight is not None else _v
-        if _v is not None:
-            self["weight"] = _v
-        _v = arg.pop("weightsrc", None)
-        _v = weightsrc if weightsrc is not None else _v
-        if _v is not None:
-            self["weightsrc"] = _v
+        self._init_provided('color', arg, color)
+        self._init_provided('colorsrc', arg, colorsrc)
+        self._init_provided('family', arg, family)
+        self._init_provided('familysrc', arg, familysrc)
+        self._init_provided('lineposition', arg, lineposition)
+        self._init_provided('linepositionsrc', arg, linepositionsrc)
+        self._init_provided('shadow', arg, shadow)
+        self._init_provided('shadowsrc', arg, shadowsrc)
+        self._init_provided('size', arg, size)
+        self._init_provided('sizesrc', arg, sizesrc)
+        self._init_provided('style', arg, style)
+        self._init_provided('stylesrc', arg, stylesrc)
+        self._init_provided('textcase', arg, textcase)
+        self._init_provided('textcasesrc', arg, textcasesrc)
+        self._init_provided('variant', arg, variant)
+        self._init_provided('variantsrc', arg, variantsrc)
+        self._init_provided('weight', arg, weight)
+        self._init_provided('weightsrc', arg, weightsrc)
 
         # Process unknown kwargs
         # ----------------------

@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class ShapesValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
-    def __init__(self, plotly_name="shapes", parent_name="layout", **kwargs):
-        super(ShapesValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Shape"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='shapes',
+                       parent_name='layout',
+                       **kwargs):
+        super(ShapesValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Shape'),
+                 data_docs=kwargs.pop('data_docs', """
             editable
                 Determines whether the shape could be activated
                 for edit or not. Has no effect when the older
@@ -244,7 +245,5 @@ class ShapesValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
                 relative to `yanchor`. This way, the shape can
                 have a fixed height while maintaining a
                 position relative to data or plot fraction.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

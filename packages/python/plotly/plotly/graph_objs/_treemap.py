@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
@@ -6,59 +8,9 @@ class Treemap(_BaseTraceType):
 
     # class properties
     # --------------------
-    _parent_path_str = ""
-    _path_str = "treemap"
-    _valid_props = {
-        "branchvalues",
-        "count",
-        "customdata",
-        "customdatasrc",
-        "domain",
-        "hoverinfo",
-        "hoverinfosrc",
-        "hoverlabel",
-        "hovertemplate",
-        "hovertemplatesrc",
-        "hovertext",
-        "hovertextsrc",
-        "ids",
-        "idssrc",
-        "insidetextfont",
-        "labels",
-        "labelssrc",
-        "legend",
-        "legendgrouptitle",
-        "legendrank",
-        "legendwidth",
-        "level",
-        "marker",
-        "maxdepth",
-        "meta",
-        "metasrc",
-        "name",
-        "opacity",
-        "outsidetextfont",
-        "parents",
-        "parentssrc",
-        "pathbar",
-        "root",
-        "sort",
-        "stream",
-        "text",
-        "textfont",
-        "textinfo",
-        "textposition",
-        "textsrc",
-        "texttemplate",
-        "texttemplatesrc",
-        "tiling",
-        "type",
-        "uid",
-        "uirevision",
-        "values",
-        "valuessrc",
-        "visible",
-    }
+    _parent_path_str = ''
+    _path_str = 'treemap'
+    _valid_props = {"branchvalues", "count", "customdata", "customdatasrc", "domain", "hoverinfo", "hoverinfosrc", "hoverlabel", "hovertemplate", "hovertemplatesrc", "hovertext", "hovertextsrc", "ids", "idssrc", "insidetextfont", "labels", "labelssrc", "legend", "legendgrouptitle", "legendrank", "legendwidth", "level", "marker", "maxdepth", "meta", "metasrc", "name", "opacity", "outsidetextfont", "parents", "parentssrc", "pathbar", "root", "sort", "stream", "text", "textfont", "textinfo", "textposition", "textsrc", "texttemplate", "texttemplatesrc", "tiling", "type", "uid", "uirevision", "values", "valuessrc", "visible"}
 
     # branchvalues
     # ------------
@@ -80,11 +32,11 @@ class Treemap(_BaseTraceType):
         -------
         Any
         """
-        return self["branchvalues"]
+        return self['branchvalues']
 
     @branchvalues.setter
     def branchvalues(self, val):
-        self["branchvalues"] = val
+        self['branchvalues'] = val
 
     # count
     # -----
@@ -104,11 +56,11 @@ class Treemap(_BaseTraceType):
         -------
         Any
         """
-        return self["count"]
+        return self['count']
 
     @count.setter
     def count(self, val):
-        self["count"] = val
+        self['count'] = val
 
     # customdata
     # ----------
@@ -127,11 +79,11 @@ class Treemap(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["customdata"]
+        return self['customdata']
 
     @customdata.setter
     def customdata(self, val):
-        self["customdata"] = val
+        self['customdata'] = val
 
     # customdatasrc
     # -------------
@@ -148,11 +100,11 @@ class Treemap(_BaseTraceType):
         -------
         str
         """
-        return self["customdatasrc"]
+        return self['customdatasrc']
 
     @customdatasrc.setter
     def customdatasrc(self, val):
-        self["customdatasrc"] = val
+        self['customdatasrc'] = val
 
     # domain
     # ------
@@ -164,9 +116,9 @@ class Treemap(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.treemap.Domain`
           - A dict of string/value properties that will be passed
             to the Domain constructor
-
+    
             Supported dict properties:
-
+                
                 column
                     If there is a layout grid, use the domain for
                     this column in the grid for this treemap trace
@@ -185,11 +137,11 @@ class Treemap(_BaseTraceType):
         -------
         plotly.graph_objs.treemap.Domain
         """
-        return self["domain"]
+        return self['domain']
 
     @domain.setter
     def domain(self, val):
-        self["domain"] = val
+        self['domain'] = val
 
     # hoverinfo
     # ---------
@@ -211,11 +163,11 @@ class Treemap(_BaseTraceType):
         -------
         Any|numpy.ndarray
         """
-        return self["hoverinfo"]
+        return self['hoverinfo']
 
     @hoverinfo.setter
     def hoverinfo(self, val):
-        self["hoverinfo"] = val
+        self['hoverinfo'] = val
 
     # hoverinfosrc
     # ------------
@@ -232,11 +184,11 @@ class Treemap(_BaseTraceType):
         -------
         str
         """
-        return self["hoverinfosrc"]
+        return self['hoverinfosrc']
 
     @hoverinfosrc.setter
     def hoverinfosrc(self, val):
-        self["hoverinfosrc"] = val
+        self['hoverinfosrc'] = val
 
     # hoverlabel
     # ----------
@@ -248,9 +200,9 @@ class Treemap(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.treemap.Hoverlabel`
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
-
+    
             Supported dict properties:
-
+                
                 align
                     Sets the horizontal alignment of the text
                     content within hover label box. Has an effect
@@ -291,11 +243,11 @@ class Treemap(_BaseTraceType):
         -------
         plotly.graph_objs.treemap.Hoverlabel
         """
-        return self["hoverlabel"]
+        return self['hoverlabel']
 
     @hoverlabel.setter
     def hoverlabel(self, val):
-        self["hoverlabel"] = val
+        self['hoverlabel'] = val
 
     # hovertemplate
     # -------------
@@ -338,11 +290,11 @@ class Treemap(_BaseTraceType):
         -------
         str|numpy.ndarray
         """
-        return self["hovertemplate"]
+        return self['hovertemplate']
 
     @hovertemplate.setter
     def hovertemplate(self, val):
-        self["hovertemplate"] = val
+        self['hovertemplate'] = val
 
     # hovertemplatesrc
     # ----------------
@@ -359,11 +311,11 @@ class Treemap(_BaseTraceType):
         -------
         str
         """
-        return self["hovertemplatesrc"]
+        return self['hovertemplatesrc']
 
     @hovertemplatesrc.setter
     def hovertemplatesrc(self, val):
-        self["hovertemplatesrc"] = val
+        self['hovertemplatesrc'] = val
 
     # hovertext
     # ---------
@@ -385,11 +337,11 @@ class Treemap(_BaseTraceType):
         -------
         str|numpy.ndarray
         """
-        return self["hovertext"]
+        return self['hovertext']
 
     @hovertext.setter
     def hovertext(self, val):
-        self["hovertext"] = val
+        self['hovertext'] = val
 
     # hovertextsrc
     # ------------
@@ -406,11 +358,11 @@ class Treemap(_BaseTraceType):
         -------
         str
         """
-        return self["hovertextsrc"]
+        return self['hovertextsrc']
 
     @hovertextsrc.setter
     def hovertextsrc(self, val):
-        self["hovertextsrc"] = val
+        self['hovertextsrc'] = val
 
     # ids
     # ---
@@ -428,11 +380,11 @@ class Treemap(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["ids"]
+        return self['ids']
 
     @ids.setter
     def ids(self, val):
-        self["ids"] = val
+        self['ids'] = val
 
     # idssrc
     # ------
@@ -448,11 +400,11 @@ class Treemap(_BaseTraceType):
         -------
         str
         """
-        return self["idssrc"]
+        return self['idssrc']
 
     @idssrc.setter
     def idssrc(self, val):
-        self["idssrc"] = val
+        self['idssrc'] = val
 
     # insidetextfont
     # --------------
@@ -466,11 +418,11 @@ class Treemap(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.treemap.Insidetextfont`
           - A dict of string/value properties that will be passed
             to the Insidetextfont constructor
-
+    
             Supported dict properties:
-
+                
                 color
-
+    
                 colorsrc
                     Sets the source reference on Chart Studio Cloud
                     for `color`.
@@ -512,7 +464,7 @@ class Treemap(_BaseTraceType):
                     Sets the source reference on Chart Studio Cloud
                     for `shadow`.
                 size
-
+    
                 sizesrc
                     Sets the source reference on Chart Studio Cloud
                     for `size`.
@@ -544,11 +496,11 @@ class Treemap(_BaseTraceType):
         -------
         plotly.graph_objs.treemap.Insidetextfont
         """
-        return self["insidetextfont"]
+        return self['insidetextfont']
 
     @insidetextfont.setter
     def insidetextfont(self, val):
-        self["insidetextfont"] = val
+        self['insidetextfont'] = val
 
     # labels
     # ------
@@ -564,11 +516,11 @@ class Treemap(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["labels"]
+        return self['labels']
 
     @labels.setter
     def labels(self, val):
-        self["labels"] = val
+        self['labels'] = val
 
     # labelssrc
     # ---------
@@ -584,11 +536,11 @@ class Treemap(_BaseTraceType):
         -------
         str
         """
-        return self["labelssrc"]
+        return self['labelssrc']
 
     @labelssrc.setter
     def labelssrc(self, val):
-        self["labelssrc"] = val
+        self['labelssrc'] = val
 
     # legend
     # ------
@@ -609,11 +561,11 @@ class Treemap(_BaseTraceType):
         -------
         str
         """
-        return self["legend"]
+        return self['legend']
 
     @legend.setter
     def legend(self, val):
-        self["legend"] = val
+        self['legend'] = val
 
     # legendgrouptitle
     # ----------------
@@ -625,9 +577,9 @@ class Treemap(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.treemap.Legendgrouptitle`
           - A dict of string/value properties that will be passed
             to the Legendgrouptitle constructor
-
+    
             Supported dict properties:
-
+                
                 font
                     Sets this legend group's title font.
                 text
@@ -637,11 +589,11 @@ class Treemap(_BaseTraceType):
         -------
         plotly.graph_objs.treemap.Legendgrouptitle
         """
-        return self["legendgrouptitle"]
+        return self['legendgrouptitle']
 
     @legendgrouptitle.setter
     def legendgrouptitle(self, val):
-        self["legendgrouptitle"] = val
+        self['legendgrouptitle'] = val
 
     # legendrank
     # ----------
@@ -664,11 +616,11 @@ class Treemap(_BaseTraceType):
         -------
         int|float
         """
-        return self["legendrank"]
+        return self['legendrank']
 
     @legendrank.setter
     def legendrank(self, val):
-        self["legendrank"] = val
+        self['legendrank'] = val
 
     # legendwidth
     # -----------
@@ -685,11 +637,11 @@ class Treemap(_BaseTraceType):
         -------
         int|float
         """
-        return self["legendwidth"]
+        return self['legendwidth']
 
     @legendwidth.setter
     def legendwidth(self, val):
-        self["legendwidth"] = val
+        self['legendwidth'] = val
 
     # level
     # -----
@@ -707,11 +659,11 @@ class Treemap(_BaseTraceType):
         -------
         Any
         """
-        return self["level"]
+        return self['level']
 
     @level.setter
     def level(self, val):
-        self["level"] = val
+        self['level'] = val
 
     # marker
     # ------
@@ -723,9 +675,9 @@ class Treemap(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.treemap.Marker`
           - A dict of string/value properties that will be passed
             to the Marker constructor
-
+    
             Supported dict properties:
-
+                
                 autocolorscale
                     Determines whether the colorscale is a default
                     palette (`autocolorscale: true`) or the palette
@@ -836,11 +788,11 @@ class Treemap(_BaseTraceType):
         -------
         plotly.graph_objs.treemap.Marker
         """
-        return self["marker"]
+        return self['marker']
 
     @marker.setter
     def marker(self, val):
-        self["marker"] = val
+        self['marker'] = val
 
     # maxdepth
     # --------
@@ -857,11 +809,11 @@ class Treemap(_BaseTraceType):
         -------
         int
         """
-        return self["maxdepth"]
+        return self['maxdepth']
 
     @maxdepth.setter
     def maxdepth(self, val):
-        self["maxdepth"] = val
+        self['maxdepth'] = val
 
     # meta
     # ----
@@ -885,11 +837,11 @@ class Treemap(_BaseTraceType):
         -------
         Any|numpy.ndarray
         """
-        return self["meta"]
+        return self['meta']
 
     @meta.setter
     def meta(self, val):
-        self["meta"] = val
+        self['meta'] = val
 
     # metasrc
     # -------
@@ -905,11 +857,11 @@ class Treemap(_BaseTraceType):
         -------
         str
         """
-        return self["metasrc"]
+        return self['metasrc']
 
     @metasrc.setter
     def metasrc(self, val):
-        self["metasrc"] = val
+        self['metasrc'] = val
 
     # name
     # ----
@@ -927,11 +879,11 @@ class Treemap(_BaseTraceType):
         -------
         str
         """
-        return self["name"]
+        return self['name']
 
     @name.setter
     def name(self, val):
-        self["name"] = val
+        self['name'] = val
 
     # opacity
     # -------
@@ -947,11 +899,11 @@ class Treemap(_BaseTraceType):
         -------
         int|float
         """
-        return self["opacity"]
+        return self['opacity']
 
     @opacity.setter
     def opacity(self, val):
-        self["opacity"] = val
+        self['opacity'] = val
 
     # outsidetextfont
     # ---------------
@@ -969,11 +921,11 @@ class Treemap(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.treemap.Outsidetextfont`
           - A dict of string/value properties that will be passed
             to the Outsidetextfont constructor
-
+    
             Supported dict properties:
-
+                
                 color
-
+    
                 colorsrc
                     Sets the source reference on Chart Studio Cloud
                     for `color`.
@@ -1015,7 +967,7 @@ class Treemap(_BaseTraceType):
                     Sets the source reference on Chart Studio Cloud
                     for `shadow`.
                 size
-
+    
                 sizesrc
                     Sets the source reference on Chart Studio Cloud
                     for `size`.
@@ -1047,11 +999,11 @@ class Treemap(_BaseTraceType):
         -------
         plotly.graph_objs.treemap.Outsidetextfont
         """
-        return self["outsidetextfont"]
+        return self['outsidetextfont']
 
     @outsidetextfont.setter
     def outsidetextfont(self, val):
-        self["outsidetextfont"] = val
+        self['outsidetextfont'] = val
 
     # parents
     # -------
@@ -1072,11 +1024,11 @@ class Treemap(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["parents"]
+        return self['parents']
 
     @parents.setter
     def parents(self, val):
-        self["parents"] = val
+        self['parents'] = val
 
     # parentssrc
     # ----------
@@ -1092,11 +1044,11 @@ class Treemap(_BaseTraceType):
         -------
         str
         """
-        return self["parentssrc"]
+        return self['parentssrc']
 
     @parentssrc.setter
     def parentssrc(self, val):
-        self["parentssrc"] = val
+        self['parentssrc'] = val
 
     # pathbar
     # -------
@@ -1108,9 +1060,9 @@ class Treemap(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.treemap.Pathbar`
           - A dict of string/value properties that will be passed
             to the Pathbar constructor
-
+    
             Supported dict properties:
-
+                
                 edgeshape
                     Determines which shape is used for edges
                     between `barpath` labels.
@@ -1132,11 +1084,11 @@ class Treemap(_BaseTraceType):
         -------
         plotly.graph_objs.treemap.Pathbar
         """
-        return self["pathbar"]
+        return self['pathbar']
 
     @pathbar.setter
     def pathbar(self, val):
-        self["pathbar"] = val
+        self['pathbar'] = val
 
     # root
     # ----
@@ -1148,9 +1100,9 @@ class Treemap(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.treemap.Root`
           - A dict of string/value properties that will be passed
             to the Root constructor
-
+    
             Supported dict properties:
-
+                
                 color
                     sets the color of the root node for a
                     sunburst/treemap/icicle trace. this has no
@@ -1161,11 +1113,11 @@ class Treemap(_BaseTraceType):
         -------
         plotly.graph_objs.treemap.Root
         """
-        return self["root"]
+        return self['root']
 
     @root.setter
     def root(self, val):
-        self["root"] = val
+        self['root'] = val
 
     # sort
     # ----
@@ -1182,11 +1134,11 @@ class Treemap(_BaseTraceType):
         -------
         bool
         """
-        return self["sort"]
+        return self['sort']
 
     @sort.setter
     def sort(self, val):
-        self["sort"] = val
+        self['sort'] = val
 
     # stream
     # ------
@@ -1198,9 +1150,9 @@ class Treemap(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.treemap.Stream`
           - A dict of string/value properties that will be passed
             to the Stream constructor
-
+    
             Supported dict properties:
-
+                
                 maxpoints
                     Sets the maximum number of points to keep on
                     the plots from an incoming stream. If
@@ -1215,11 +1167,11 @@ class Treemap(_BaseTraceType):
         -------
         plotly.graph_objs.treemap.Stream
         """
-        return self["stream"]
+        return self['stream']
 
     @stream.setter
     def stream(self, val):
-        self["stream"] = val
+        self['stream'] = val
 
     # text
     # ----
@@ -1239,11 +1191,11 @@ class Treemap(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["text"]
+        return self['text']
 
     @text.setter
     def text(self, val):
-        self["text"] = val
+        self['text'] = val
 
     # textfont
     # --------
@@ -1257,11 +1209,11 @@ class Treemap(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.treemap.Textfont`
           - A dict of string/value properties that will be passed
             to the Textfont constructor
-
+    
             Supported dict properties:
-
+                
                 color
-
+    
                 colorsrc
                     Sets the source reference on Chart Studio Cloud
                     for `color`.
@@ -1303,7 +1255,7 @@ class Treemap(_BaseTraceType):
                     Sets the source reference on Chart Studio Cloud
                     for `shadow`.
                 size
-
+    
                 sizesrc
                     Sets the source reference on Chart Studio Cloud
                     for `size`.
@@ -1335,11 +1287,11 @@ class Treemap(_BaseTraceType):
         -------
         plotly.graph_objs.treemap.Textfont
         """
-        return self["textfont"]
+        return self['textfont']
 
     @textfont.setter
     def textfont(self, val):
-        self["textfont"] = val
+        self['textfont'] = val
 
     # textinfo
     # --------
@@ -1358,11 +1310,11 @@ class Treemap(_BaseTraceType):
         -------
         Any
         """
-        return self["textinfo"]
+        return self['textinfo']
 
     @textinfo.setter
     def textinfo(self, val):
-        self["textinfo"] = val
+        self['textinfo'] = val
 
     # textposition
     # ------------
@@ -1381,11 +1333,11 @@ class Treemap(_BaseTraceType):
         -------
         Any
         """
-        return self["textposition"]
+        return self['textposition']
 
     @textposition.setter
     def textposition(self, val):
-        self["textposition"] = val
+        self['textposition'] = val
 
     # textsrc
     # -------
@@ -1401,11 +1353,11 @@ class Treemap(_BaseTraceType):
         -------
         str
         """
-        return self["textsrc"]
+        return self['textsrc']
 
     @textsrc.setter
     def textsrc(self, val):
-        self["textsrc"] = val
+        self['textsrc'] = val
 
     # texttemplate
     # ------------
@@ -1437,11 +1389,11 @@ class Treemap(_BaseTraceType):
         -------
         str|numpy.ndarray
         """
-        return self["texttemplate"]
+        return self['texttemplate']
 
     @texttemplate.setter
     def texttemplate(self, val):
-        self["texttemplate"] = val
+        self['texttemplate'] = val
 
     # texttemplatesrc
     # ---------------
@@ -1458,11 +1410,11 @@ class Treemap(_BaseTraceType):
         -------
         str
         """
-        return self["texttemplatesrc"]
+        return self['texttemplatesrc']
 
     @texttemplatesrc.setter
     def texttemplatesrc(self, val):
-        self["texttemplatesrc"] = val
+        self['texttemplatesrc'] = val
 
     # tiling
     # ------
@@ -1474,9 +1426,9 @@ class Treemap(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.treemap.Tiling`
           - A dict of string/value properties that will be passed
             to the Tiling constructor
-
+    
             Supported dict properties:
-
+                
                 flip
                     Determines if the positions obtained from
                     solver are flipped on each axis.
@@ -1507,11 +1459,11 @@ class Treemap(_BaseTraceType):
         -------
         plotly.graph_objs.treemap.Tiling
         """
-        return self["tiling"]
+        return self['tiling']
 
     @tiling.setter
     def tiling(self, val):
-        self["tiling"] = val
+        self['tiling'] = val
 
     # uid
     # ---
@@ -1529,11 +1481,11 @@ class Treemap(_BaseTraceType):
         -------
         str
         """
-        return self["uid"]
+        return self['uid']
 
     @uid.setter
     def uid(self, val):
-        self["uid"] = val
+        self['uid'] = val
 
     # uirevision
     # ----------
@@ -1562,11 +1514,11 @@ class Treemap(_BaseTraceType):
         -------
         Any
         """
-        return self["uirevision"]
+        return self['uirevision']
 
     @uirevision.setter
     def uirevision(self, val):
-        self["uirevision"] = val
+        self['uirevision'] = val
 
     # values
     # ------
@@ -1583,11 +1535,11 @@ class Treemap(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["values"]
+        return self['values']
 
     @values.setter
     def values(self, val):
-        self["values"] = val
+        self['values'] = val
 
     # valuessrc
     # ---------
@@ -1603,11 +1555,11 @@ class Treemap(_BaseTraceType):
         -------
         str
         """
-        return self["valuessrc"]
+        return self['valuessrc']
 
     @valuessrc.setter
     def valuessrc(self, val):
-        self["valuessrc"] = val
+        self['valuessrc'] = val
 
     # visible
     # -------
@@ -1626,17 +1578,17 @@ class Treemap(_BaseTraceType):
         -------
         Any
         """
-        return self["visible"]
+        return self['visible']
 
     @visible.setter
     def visible(self, val):
-        self["visible"] = val
+        self['visible'] = val
 
     # type
     # ----
     @property
     def type(self):
-        return self._props["type"]
+        return self._props['type']
 
     # Self properties description
     # ---------------------------
@@ -1895,60 +1847,58 @@ class Treemap(_BaseTraceType):
             a legend item (provided that the legend itself is
             visible).
         """
-
-    def __init__(
-        self,
-        arg=None,
-        branchvalues=None,
-        count=None,
-        customdata=None,
-        customdatasrc=None,
-        domain=None,
-        hoverinfo=None,
-        hoverinfosrc=None,
-        hoverlabel=None,
-        hovertemplate=None,
-        hovertemplatesrc=None,
-        hovertext=None,
-        hovertextsrc=None,
-        ids=None,
-        idssrc=None,
-        insidetextfont=None,
-        labels=None,
-        labelssrc=None,
-        legend=None,
-        legendgrouptitle=None,
-        legendrank=None,
-        legendwidth=None,
-        level=None,
-        marker=None,
-        maxdepth=None,
-        meta=None,
-        metasrc=None,
-        name=None,
-        opacity=None,
-        outsidetextfont=None,
-        parents=None,
-        parentssrc=None,
-        pathbar=None,
-        root=None,
-        sort=None,
-        stream=None,
-        text=None,
-        textfont=None,
-        textinfo=None,
-        textposition=None,
-        textsrc=None,
-        texttemplate=None,
-        texttemplatesrc=None,
-        tiling=None,
-        uid=None,
-        uirevision=None,
-        values=None,
-        valuessrc=None,
-        visible=None,
-        **kwargs,
-    ):
+    def __init__(self,
+            arg=None,
+            branchvalues=None,
+            count=None,
+            customdata=None,
+            customdatasrc=None,
+            domain=None,
+            hoverinfo=None,
+            hoverinfosrc=None,
+            hoverlabel=None,
+            hovertemplate=None,
+            hovertemplatesrc=None,
+            hovertext=None,
+            hovertextsrc=None,
+            ids=None,
+            idssrc=None,
+            insidetextfont=None,
+            labels=None,
+            labelssrc=None,
+            legend=None,
+            legendgrouptitle=None,
+            legendrank=None,
+            legendwidth=None,
+            level=None,
+            marker=None,
+            maxdepth=None,
+            meta=None,
+            metasrc=None,
+            name=None,
+            opacity=None,
+            outsidetextfont=None,
+            parents=None,
+            parentssrc=None,
+            pathbar=None,
+            root=None,
+            sort=None,
+            stream=None,
+            text=None,
+            textfont=None,
+            textinfo=None,
+            textposition=None,
+            textsrc=None,
+            texttemplate=None,
+            texttemplatesrc=None,
+            tiling=None,
+            uid=None,
+            uirevision=None,
+            values=None,
+            valuessrc=None,
+            visible=None,
+            **kwargs
+        ):
         """
         Construct a new Treemap object
 
@@ -2218,10 +2168,10 @@ class Treemap(_BaseTraceType):
         -------
         Treemap
         """
-        super(Treemap, self).__init__("treemap")
+        super(Treemap, self).__init__('treemap')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -2233,218 +2183,73 @@ class Treemap(_BaseTraceType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.Treemap
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.Treemap`"""
-            )
+an instance of :class:`plotly.graph_objs.Treemap`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("branchvalues", None)
-        _v = branchvalues if branchvalues is not None else _v
-        if _v is not None:
-            self["branchvalues"] = _v
-        _v = arg.pop("count", None)
-        _v = count if count is not None else _v
-        if _v is not None:
-            self["count"] = _v
-        _v = arg.pop("customdata", None)
-        _v = customdata if customdata is not None else _v
-        if _v is not None:
-            self["customdata"] = _v
-        _v = arg.pop("customdatasrc", None)
-        _v = customdatasrc if customdatasrc is not None else _v
-        if _v is not None:
-            self["customdatasrc"] = _v
-        _v = arg.pop("domain", None)
-        _v = domain if domain is not None else _v
-        if _v is not None:
-            self["domain"] = _v
-        _v = arg.pop("hoverinfo", None)
-        _v = hoverinfo if hoverinfo is not None else _v
-        if _v is not None:
-            self["hoverinfo"] = _v
-        _v = arg.pop("hoverinfosrc", None)
-        _v = hoverinfosrc if hoverinfosrc is not None else _v
-        if _v is not None:
-            self["hoverinfosrc"] = _v
-        _v = arg.pop("hoverlabel", None)
-        _v = hoverlabel if hoverlabel is not None else _v
-        if _v is not None:
-            self["hoverlabel"] = _v
-        _v = arg.pop("hovertemplate", None)
-        _v = hovertemplate if hovertemplate is not None else _v
-        if _v is not None:
-            self["hovertemplate"] = _v
-        _v = arg.pop("hovertemplatesrc", None)
-        _v = hovertemplatesrc if hovertemplatesrc is not None else _v
-        if _v is not None:
-            self["hovertemplatesrc"] = _v
-        _v = arg.pop("hovertext", None)
-        _v = hovertext if hovertext is not None else _v
-        if _v is not None:
-            self["hovertext"] = _v
-        _v = arg.pop("hovertextsrc", None)
-        _v = hovertextsrc if hovertextsrc is not None else _v
-        if _v is not None:
-            self["hovertextsrc"] = _v
-        _v = arg.pop("ids", None)
-        _v = ids if ids is not None else _v
-        if _v is not None:
-            self["ids"] = _v
-        _v = arg.pop("idssrc", None)
-        _v = idssrc if idssrc is not None else _v
-        if _v is not None:
-            self["idssrc"] = _v
-        _v = arg.pop("insidetextfont", None)
-        _v = insidetextfont if insidetextfont is not None else _v
-        if _v is not None:
-            self["insidetextfont"] = _v
-        _v = arg.pop("labels", None)
-        _v = labels if labels is not None else _v
-        if _v is not None:
-            self["labels"] = _v
-        _v = arg.pop("labelssrc", None)
-        _v = labelssrc if labelssrc is not None else _v
-        if _v is not None:
-            self["labelssrc"] = _v
-        _v = arg.pop("legend", None)
-        _v = legend if legend is not None else _v
-        if _v is not None:
-            self["legend"] = _v
-        _v = arg.pop("legendgrouptitle", None)
-        _v = legendgrouptitle if legendgrouptitle is not None else _v
-        if _v is not None:
-            self["legendgrouptitle"] = _v
-        _v = arg.pop("legendrank", None)
-        _v = legendrank if legendrank is not None else _v
-        if _v is not None:
-            self["legendrank"] = _v
-        _v = arg.pop("legendwidth", None)
-        _v = legendwidth if legendwidth is not None else _v
-        if _v is not None:
-            self["legendwidth"] = _v
-        _v = arg.pop("level", None)
-        _v = level if level is not None else _v
-        if _v is not None:
-            self["level"] = _v
-        _v = arg.pop("marker", None)
-        _v = marker if marker is not None else _v
-        if _v is not None:
-            self["marker"] = _v
-        _v = arg.pop("maxdepth", None)
-        _v = maxdepth if maxdepth is not None else _v
-        if _v is not None:
-            self["maxdepth"] = _v
-        _v = arg.pop("meta", None)
-        _v = meta if meta is not None else _v
-        if _v is not None:
-            self["meta"] = _v
-        _v = arg.pop("metasrc", None)
-        _v = metasrc if metasrc is not None else _v
-        if _v is not None:
-            self["metasrc"] = _v
-        _v = arg.pop("name", None)
-        _v = name if name is not None else _v
-        if _v is not None:
-            self["name"] = _v
-        _v = arg.pop("opacity", None)
-        _v = opacity if opacity is not None else _v
-        if _v is not None:
-            self["opacity"] = _v
-        _v = arg.pop("outsidetextfont", None)
-        _v = outsidetextfont if outsidetextfont is not None else _v
-        if _v is not None:
-            self["outsidetextfont"] = _v
-        _v = arg.pop("parents", None)
-        _v = parents if parents is not None else _v
-        if _v is not None:
-            self["parents"] = _v
-        _v = arg.pop("parentssrc", None)
-        _v = parentssrc if parentssrc is not None else _v
-        if _v is not None:
-            self["parentssrc"] = _v
-        _v = arg.pop("pathbar", None)
-        _v = pathbar if pathbar is not None else _v
-        if _v is not None:
-            self["pathbar"] = _v
-        _v = arg.pop("root", None)
-        _v = root if root is not None else _v
-        if _v is not None:
-            self["root"] = _v
-        _v = arg.pop("sort", None)
-        _v = sort if sort is not None else _v
-        if _v is not None:
-            self["sort"] = _v
-        _v = arg.pop("stream", None)
-        _v = stream if stream is not None else _v
-        if _v is not None:
-            self["stream"] = _v
-        _v = arg.pop("text", None)
-        _v = text if text is not None else _v
-        if _v is not None:
-            self["text"] = _v
-        _v = arg.pop("textfont", None)
-        _v = textfont if textfont is not None else _v
-        if _v is not None:
-            self["textfont"] = _v
-        _v = arg.pop("textinfo", None)
-        _v = textinfo if textinfo is not None else _v
-        if _v is not None:
-            self["textinfo"] = _v
-        _v = arg.pop("textposition", None)
-        _v = textposition if textposition is not None else _v
-        if _v is not None:
-            self["textposition"] = _v
-        _v = arg.pop("textsrc", None)
-        _v = textsrc if textsrc is not None else _v
-        if _v is not None:
-            self["textsrc"] = _v
-        _v = arg.pop("texttemplate", None)
-        _v = texttemplate if texttemplate is not None else _v
-        if _v is not None:
-            self["texttemplate"] = _v
-        _v = arg.pop("texttemplatesrc", None)
-        _v = texttemplatesrc if texttemplatesrc is not None else _v
-        if _v is not None:
-            self["texttemplatesrc"] = _v
-        _v = arg.pop("tiling", None)
-        _v = tiling if tiling is not None else _v
-        if _v is not None:
-            self["tiling"] = _v
-        _v = arg.pop("uid", None)
-        _v = uid if uid is not None else _v
-        if _v is not None:
-            self["uid"] = _v
-        _v = arg.pop("uirevision", None)
-        _v = uirevision if uirevision is not None else _v
-        if _v is not None:
-            self["uirevision"] = _v
-        _v = arg.pop("values", None)
-        _v = values if values is not None else _v
-        if _v is not None:
-            self["values"] = _v
-        _v = arg.pop("valuessrc", None)
-        _v = valuessrc if valuessrc is not None else _v
-        if _v is not None:
-            self["valuessrc"] = _v
-        _v = arg.pop("visible", None)
-        _v = visible if visible is not None else _v
-        if _v is not None:
-            self["visible"] = _v
+        self._init_provided('branchvalues', arg, branchvalues)
+        self._init_provided('count', arg, count)
+        self._init_provided('customdata', arg, customdata)
+        self._init_provided('customdatasrc', arg, customdatasrc)
+        self._init_provided('domain', arg, domain)
+        self._init_provided('hoverinfo', arg, hoverinfo)
+        self._init_provided('hoverinfosrc', arg, hoverinfosrc)
+        self._init_provided('hoverlabel', arg, hoverlabel)
+        self._init_provided('hovertemplate', arg, hovertemplate)
+        self._init_provided('hovertemplatesrc', arg, hovertemplatesrc)
+        self._init_provided('hovertext', arg, hovertext)
+        self._init_provided('hovertextsrc', arg, hovertextsrc)
+        self._init_provided('ids', arg, ids)
+        self._init_provided('idssrc', arg, idssrc)
+        self._init_provided('insidetextfont', arg, insidetextfont)
+        self._init_provided('labels', arg, labels)
+        self._init_provided('labelssrc', arg, labelssrc)
+        self._init_provided('legend', arg, legend)
+        self._init_provided('legendgrouptitle', arg, legendgrouptitle)
+        self._init_provided('legendrank', arg, legendrank)
+        self._init_provided('legendwidth', arg, legendwidth)
+        self._init_provided('level', arg, level)
+        self._init_provided('marker', arg, marker)
+        self._init_provided('maxdepth', arg, maxdepth)
+        self._init_provided('meta', arg, meta)
+        self._init_provided('metasrc', arg, metasrc)
+        self._init_provided('name', arg, name)
+        self._init_provided('opacity', arg, opacity)
+        self._init_provided('outsidetextfont', arg, outsidetextfont)
+        self._init_provided('parents', arg, parents)
+        self._init_provided('parentssrc', arg, parentssrc)
+        self._init_provided('pathbar', arg, pathbar)
+        self._init_provided('root', arg, root)
+        self._init_provided('sort', arg, sort)
+        self._init_provided('stream', arg, stream)
+        self._init_provided('text', arg, text)
+        self._init_provided('textfont', arg, textfont)
+        self._init_provided('textinfo', arg, textinfo)
+        self._init_provided('textposition', arg, textposition)
+        self._init_provided('textsrc', arg, textsrc)
+        self._init_provided('texttemplate', arg, texttemplate)
+        self._init_provided('texttemplatesrc', arg, texttemplatesrc)
+        self._init_provided('tiling', arg, tiling)
+        self._init_provided('uid', arg, uid)
+        self._init_provided('uirevision', arg, uirevision)
+        self._init_provided('values', arg, values)
+        self._init_provided('valuessrc', arg, valuessrc)
+        self._init_provided('visible', arg, visible)
 
         # Read-only literals
         # ------------------
 
-        self._props["type"] = "treemap"
-        arg.pop("type", None)
+        self._props['type'] = 'treemap'
+        arg.pop('type', None)
 
         # Process unknown kwargs
         # ----------------------

@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class ScattercarpetValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="scattercarpet", parent_name="", **kwargs):
-        super(ScattercarpetValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Scattercarpet"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='scattercarpet',
+                       parent_name='',
+                       **kwargs):
+        super(ScattercarpetValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Scattercarpet'),
+                 data_docs=kwargs.pop('data_docs', """
             a
                 Sets the a-axis coordinates.
             asrc
@@ -308,7 +309,5 @@ class ScattercarpetValidator(_plotly_utils.basevalidators.CompoundValidator):
                 displayed, relative to other SVG traces on the
                 same subplot. SVG traces with higher `zorder`
                 appear in front of those with lower `zorder`.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

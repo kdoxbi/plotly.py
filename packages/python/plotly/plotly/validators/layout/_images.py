@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class ImagesValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
-    def __init__(self, plotly_name="images", parent_name="layout", **kwargs):
-        super(ImagesValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Image"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='images',
+                       parent_name='layout',
+                       **kwargs):
+        super(ImagesValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Image'),
+                 data_docs=kwargs.pop('data_docs', """
             layer
                 Specifies whether images are drawn below or
                 above traces. When `xref` and `yref` are both
@@ -107,7 +108,5 @@ class ImagesValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
                 domain of the second y  axis and a y position
                 of 0.5 refers to the point between the bottom
                 and the top of the domain of the second y axis.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)

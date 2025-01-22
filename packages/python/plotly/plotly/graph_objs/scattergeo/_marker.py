@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
@@ -6,38 +8,9 @@ class Marker(_BaseTraceHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "scattergeo"
-    _path_str = "scattergeo.marker"
-    _valid_props = {
-        "angle",
-        "angleref",
-        "anglesrc",
-        "autocolorscale",
-        "cauto",
-        "cmax",
-        "cmid",
-        "cmin",
-        "color",
-        "coloraxis",
-        "colorbar",
-        "colorscale",
-        "colorsrc",
-        "gradient",
-        "line",
-        "opacity",
-        "opacitysrc",
-        "reversescale",
-        "showscale",
-        "size",
-        "sizemin",
-        "sizemode",
-        "sizeref",
-        "sizesrc",
-        "standoff",
-        "standoffsrc",
-        "symbol",
-        "symbolsrc",
-    }
+    _parent_path_str = 'scattergeo'
+    _path_str = 'scattergeo.marker'
+    _valid_props = {"angle", "angleref", "anglesrc", "autocolorscale", "cauto", "cmax", "cmid", "cmin", "color", "coloraxis", "colorbar", "colorscale", "colorsrc", "gradient", "line", "opacity", "opacitysrc", "reversescale", "showscale", "size", "sizemin", "sizemode", "sizeref", "sizesrc", "standoff", "standoffsrc", "symbol", "symbolsrc"}
 
     # angle
     # -----
@@ -55,11 +28,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         int|float|numpy.ndarray
         """
-        return self["angle"]
+        return self['angle']
 
     @angle.setter
     def angle(self, val):
-        self["angle"] = val
+        self['angle'] = val
 
     # angleref
     # --------
@@ -80,11 +53,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         Any
         """
-        return self["angleref"]
+        return self['angleref']
 
     @angleref.setter
     def angleref(self, val):
-        self["angleref"] = val
+        self['angleref'] = val
 
     # anglesrc
     # --------
@@ -100,11 +73,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["anglesrc"]
+        return self['anglesrc']
 
     @anglesrc.setter
     def anglesrc(self, val):
-        self["anglesrc"] = val
+        self['anglesrc'] = val
 
     # autocolorscale
     # --------------
@@ -126,11 +99,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         bool
         """
-        return self["autocolorscale"]
+        return self['autocolorscale']
 
     @autocolorscale.setter
     def autocolorscale(self, val):
-        self["autocolorscale"] = val
+        self['autocolorscale'] = val
 
     # cauto
     # -----
@@ -151,11 +124,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         bool
         """
-        return self["cauto"]
+        return self['cauto']
 
     @cauto.setter
     def cauto(self, val):
-        self["cauto"] = val
+        self['cauto'] = val
 
     # cmax
     # ----
@@ -174,11 +147,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         int|float
         """
-        return self["cmax"]
+        return self['cmax']
 
     @cmax.setter
     def cmax(self, val):
-        self["cmax"] = val
+        self['cmax'] = val
 
     # cmid
     # ----
@@ -198,11 +171,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         int|float
         """
-        return self["cmid"]
+        return self['cmid']
 
     @cmid.setter
     def cmid(self, val):
-        self["cmid"] = val
+        self['cmid'] = val
 
     # cmin
     # ----
@@ -221,11 +194,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         int|float
         """
-        return self["cmin"]
+        return self['cmin']
 
     @cmin.setter
     def cmin(self, val):
-        self["cmin"] = val
+        self['cmin'] = val
 
     # color
     # -----
@@ -286,11 +259,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         str|numpy.ndarray
         """
-        return self["color"]
+        return self['color']
 
     @color.setter
     def color(self, val):
-        self["color"] = val
+        self['color'] = val
 
     # coloraxis
     # ---------
@@ -313,11 +286,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["coloraxis"]
+        return self['coloraxis']
 
     @coloraxis.setter
     def coloraxis(self, val):
-        self["coloraxis"] = val
+        self['coloraxis'] = val
 
     # colorbar
     # --------
@@ -329,9 +302,9 @@ class Marker(_BaseTraceHierarchyType):
           - An instance of :class:`plotly.graph_objs.scattergeo.marker.ColorBar`
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
-
+    
             Supported dict properties:
-
+                
                 bgcolor
                     Sets the color of padded area.
                 bordercolor
@@ -601,11 +574,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         plotly.graph_objs.scattergeo.marker.ColorBar
         """
-        return self["colorbar"]
+        return self['colorbar']
 
     @colorbar.setter
     def colorbar(self, val):
-        self["colorbar"] = val
+        self['colorbar'] = val
 
     # colorscale
     # ----------
@@ -655,11 +628,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["colorscale"]
+        return self['colorscale']
 
     @colorscale.setter
     def colorscale(self, val):
-        self["colorscale"] = val
+        self['colorscale'] = val
 
     # colorsrc
     # --------
@@ -675,11 +648,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["colorsrc"]
+        return self['colorsrc']
 
     @colorsrc.setter
     def colorsrc(self, val):
-        self["colorsrc"] = val
+        self['colorsrc'] = val
 
     # gradient
     # --------
@@ -691,9 +664,9 @@ class Marker(_BaseTraceHierarchyType):
           - An instance of :class:`plotly.graph_objs.scattergeo.marker.Gradient`
           - A dict of string/value properties that will be passed
             to the Gradient constructor
-
+    
             Supported dict properties:
-
+                
                 color
                     Sets the final color of the gradient fill: the
                     center color for radial, the right for
@@ -712,11 +685,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         plotly.graph_objs.scattergeo.marker.Gradient
         """
-        return self["gradient"]
+        return self['gradient']
 
     @gradient.setter
     def gradient(self, val):
-        self["gradient"] = val
+        self['gradient'] = val
 
     # line
     # ----
@@ -728,9 +701,9 @@ class Marker(_BaseTraceHierarchyType):
           - An instance of :class:`plotly.graph_objs.scattergeo.marker.Line`
           - A dict of string/value properties that will be passed
             to the Line constructor
-
+    
             Supported dict properties:
-
+                
                 autocolorscale
                     Determines whether the colorscale is a default
                     palette (`autocolorscale: true`) or the palette
@@ -825,11 +798,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         plotly.graph_objs.scattergeo.marker.Line
         """
-        return self["line"]
+        return self['line']
 
     @line.setter
     def line(self, val):
-        self["line"] = val
+        self['line'] = val
 
     # opacity
     # -------
@@ -846,11 +819,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         int|float|numpy.ndarray
         """
-        return self["opacity"]
+        return self['opacity']
 
     @opacity.setter
     def opacity(self, val):
-        self["opacity"] = val
+        self['opacity'] = val
 
     # opacitysrc
     # ----------
@@ -866,11 +839,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["opacitysrc"]
+        return self['opacitysrc']
 
     @opacitysrc.setter
     def opacitysrc(self, val):
-        self["opacitysrc"] = val
+        self['opacitysrc'] = val
 
     # reversescale
     # ------------
@@ -889,11 +862,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         bool
         """
-        return self["reversescale"]
+        return self['reversescale']
 
     @reversescale.setter
     def reversescale(self, val):
-        self["reversescale"] = val
+        self['reversescale'] = val
 
     # showscale
     # ---------
@@ -911,11 +884,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         bool
         """
-        return self["showscale"]
+        return self['showscale']
 
     @showscale.setter
     def showscale(self, val):
-        self["showscale"] = val
+        self['showscale'] = val
 
     # size
     # ----
@@ -932,11 +905,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         int|float|numpy.ndarray
         """
-        return self["size"]
+        return self['size']
 
     @size.setter
     def size(self, val):
-        self["size"] = val
+        self['size'] = val
 
     # sizemin
     # -------
@@ -954,11 +927,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         int|float
         """
-        return self["sizemin"]
+        return self['sizemin']
 
     @sizemin.setter
     def sizemin(self, val):
-        self["sizemin"] = val
+        self['sizemin'] = val
 
     # sizemode
     # --------
@@ -977,11 +950,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         Any
         """
-        return self["sizemode"]
+        return self['sizemode']
 
     @sizemode.setter
     def sizemode(self, val):
-        self["sizemode"] = val
+        self['sizemode'] = val
 
     # sizeref
     # -------
@@ -999,11 +972,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         int|float
         """
-        return self["sizeref"]
+        return self['sizeref']
 
     @sizeref.setter
     def sizeref(self, val):
-        self["sizeref"] = val
+        self['sizeref'] = val
 
     # sizesrc
     # -------
@@ -1019,11 +992,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["sizesrc"]
+        return self['sizesrc']
 
     @sizesrc.setter
     def sizesrc(self, val):
-        self["sizesrc"] = val
+        self['sizesrc'] = val
 
     # standoff
     # --------
@@ -1043,11 +1016,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         int|float|numpy.ndarray
         """
-        return self["standoff"]
+        return self['standoff']
 
     @standoff.setter
     def standoff(self, val):
-        self["standoff"] = val
+        self['standoff'] = val
 
     # standoffsrc
     # -----------
@@ -1063,11 +1036,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["standoffsrc"]
+        return self['standoffsrc']
 
     @standoffsrc.setter
     def standoffsrc(self, val):
-        self["standoffsrc"] = val
+        self['standoffsrc'] = val
 
     # symbol
     # ------
@@ -1176,11 +1149,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         Any|numpy.ndarray
         """
-        return self["symbol"]
+        return self['symbol']
 
     @symbol.setter
     def symbol(self, val):
-        self["symbol"] = val
+        self['symbol'] = val
 
     # symbolsrc
     # ---------
@@ -1196,11 +1169,11 @@ class Marker(_BaseTraceHierarchyType):
         -------
         str
         """
-        return self["symbolsrc"]
+        return self['symbolsrc']
 
     @symbolsrc.setter
     def symbolsrc(self, val):
-        self["symbolsrc"] = val
+        self['symbolsrc'] = val
 
     # Self properties description
     # ---------------------------
@@ -1341,40 +1314,38 @@ class Marker(_BaseTraceHierarchyType):
             Sets the source reference on Chart Studio Cloud for
             `symbol`.
         """
-
-    def __init__(
-        self,
-        arg=None,
-        angle=None,
-        angleref=None,
-        anglesrc=None,
-        autocolorscale=None,
-        cauto=None,
-        cmax=None,
-        cmid=None,
-        cmin=None,
-        color=None,
-        coloraxis=None,
-        colorbar=None,
-        colorscale=None,
-        colorsrc=None,
-        gradient=None,
-        line=None,
-        opacity=None,
-        opacitysrc=None,
-        reversescale=None,
-        showscale=None,
-        size=None,
-        sizemin=None,
-        sizemode=None,
-        sizeref=None,
-        sizesrc=None,
-        standoff=None,
-        standoffsrc=None,
-        symbol=None,
-        symbolsrc=None,
-        **kwargs,
-    ):
+    def __init__(self,
+            arg=None,
+            angle=None,
+            angleref=None,
+            anglesrc=None,
+            autocolorscale=None,
+            cauto=None,
+            cmax=None,
+            cmid=None,
+            cmin=None,
+            color=None,
+            coloraxis=None,
+            colorbar=None,
+            colorscale=None,
+            colorsrc=None,
+            gradient=None,
+            line=None,
+            opacity=None,
+            opacitysrc=None,
+            reversescale=None,
+            showscale=None,
+            size=None,
+            sizemin=None,
+            sizemode=None,
+            sizeref=None,
+            sizesrc=None,
+            standoff=None,
+            standoffsrc=None,
+            symbol=None,
+            symbolsrc=None,
+            **kwargs
+        ):
         """
         Construct a new Marker object
 
@@ -1522,10 +1493,10 @@ class Marker(_BaseTraceHierarchyType):
         -------
         Marker
         """
-        super(Marker, self).__init__("marker")
+        super(Marker, self).__init__('marker')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -1537,132 +1508,47 @@ class Marker(_BaseTraceHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.scattergeo.Marker
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.scattergeo.Marker`"""
-            )
+an instance of :class:`plotly.graph_objs.scattergeo.Marker`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("angle", None)
-        _v = angle if angle is not None else _v
-        if _v is not None:
-            self["angle"] = _v
-        _v = arg.pop("angleref", None)
-        _v = angleref if angleref is not None else _v
-        if _v is not None:
-            self["angleref"] = _v
-        _v = arg.pop("anglesrc", None)
-        _v = anglesrc if anglesrc is not None else _v
-        if _v is not None:
-            self["anglesrc"] = _v
-        _v = arg.pop("autocolorscale", None)
-        _v = autocolorscale if autocolorscale is not None else _v
-        if _v is not None:
-            self["autocolorscale"] = _v
-        _v = arg.pop("cauto", None)
-        _v = cauto if cauto is not None else _v
-        if _v is not None:
-            self["cauto"] = _v
-        _v = arg.pop("cmax", None)
-        _v = cmax if cmax is not None else _v
-        if _v is not None:
-            self["cmax"] = _v
-        _v = arg.pop("cmid", None)
-        _v = cmid if cmid is not None else _v
-        if _v is not None:
-            self["cmid"] = _v
-        _v = arg.pop("cmin", None)
-        _v = cmin if cmin is not None else _v
-        if _v is not None:
-            self["cmin"] = _v
-        _v = arg.pop("color", None)
-        _v = color if color is not None else _v
-        if _v is not None:
-            self["color"] = _v
-        _v = arg.pop("coloraxis", None)
-        _v = coloraxis if coloraxis is not None else _v
-        if _v is not None:
-            self["coloraxis"] = _v
-        _v = arg.pop("colorbar", None)
-        _v = colorbar if colorbar is not None else _v
-        if _v is not None:
-            self["colorbar"] = _v
-        _v = arg.pop("colorscale", None)
-        _v = colorscale if colorscale is not None else _v
-        if _v is not None:
-            self["colorscale"] = _v
-        _v = arg.pop("colorsrc", None)
-        _v = colorsrc if colorsrc is not None else _v
-        if _v is not None:
-            self["colorsrc"] = _v
-        _v = arg.pop("gradient", None)
-        _v = gradient if gradient is not None else _v
-        if _v is not None:
-            self["gradient"] = _v
-        _v = arg.pop("line", None)
-        _v = line if line is not None else _v
-        if _v is not None:
-            self["line"] = _v
-        _v = arg.pop("opacity", None)
-        _v = opacity if opacity is not None else _v
-        if _v is not None:
-            self["opacity"] = _v
-        _v = arg.pop("opacitysrc", None)
-        _v = opacitysrc if opacitysrc is not None else _v
-        if _v is not None:
-            self["opacitysrc"] = _v
-        _v = arg.pop("reversescale", None)
-        _v = reversescale if reversescale is not None else _v
-        if _v is not None:
-            self["reversescale"] = _v
-        _v = arg.pop("showscale", None)
-        _v = showscale if showscale is not None else _v
-        if _v is not None:
-            self["showscale"] = _v
-        _v = arg.pop("size", None)
-        _v = size if size is not None else _v
-        if _v is not None:
-            self["size"] = _v
-        _v = arg.pop("sizemin", None)
-        _v = sizemin if sizemin is not None else _v
-        if _v is not None:
-            self["sizemin"] = _v
-        _v = arg.pop("sizemode", None)
-        _v = sizemode if sizemode is not None else _v
-        if _v is not None:
-            self["sizemode"] = _v
-        _v = arg.pop("sizeref", None)
-        _v = sizeref if sizeref is not None else _v
-        if _v is not None:
-            self["sizeref"] = _v
-        _v = arg.pop("sizesrc", None)
-        _v = sizesrc if sizesrc is not None else _v
-        if _v is not None:
-            self["sizesrc"] = _v
-        _v = arg.pop("standoff", None)
-        _v = standoff if standoff is not None else _v
-        if _v is not None:
-            self["standoff"] = _v
-        _v = arg.pop("standoffsrc", None)
-        _v = standoffsrc if standoffsrc is not None else _v
-        if _v is not None:
-            self["standoffsrc"] = _v
-        _v = arg.pop("symbol", None)
-        _v = symbol if symbol is not None else _v
-        if _v is not None:
-            self["symbol"] = _v
-        _v = arg.pop("symbolsrc", None)
-        _v = symbolsrc if symbolsrc is not None else _v
-        if _v is not None:
-            self["symbolsrc"] = _v
+        self._init_provided('angle', arg, angle)
+        self._init_provided('angleref', arg, angleref)
+        self._init_provided('anglesrc', arg, anglesrc)
+        self._init_provided('autocolorscale', arg, autocolorscale)
+        self._init_provided('cauto', arg, cauto)
+        self._init_provided('cmax', arg, cmax)
+        self._init_provided('cmid', arg, cmid)
+        self._init_provided('cmin', arg, cmin)
+        self._init_provided('color', arg, color)
+        self._init_provided('coloraxis', arg, coloraxis)
+        self._init_provided('colorbar', arg, colorbar)
+        self._init_provided('colorscale', arg, colorscale)
+        self._init_provided('colorsrc', arg, colorsrc)
+        self._init_provided('gradient', arg, gradient)
+        self._init_provided('line', arg, line)
+        self._init_provided('opacity', arg, opacity)
+        self._init_provided('opacitysrc', arg, opacitysrc)
+        self._init_provided('reversescale', arg, reversescale)
+        self._init_provided('showscale', arg, showscale)
+        self._init_provided('size', arg, size)
+        self._init_provided('sizemin', arg, sizemin)
+        self._init_provided('sizemode', arg, sizemode)
+        self._init_provided('sizeref', arg, sizeref)
+        self._init_provided('sizesrc', arg, sizesrc)
+        self._init_provided('standoff', arg, standoff)
+        self._init_provided('standoffsrc', arg, standoffsrc)
+        self._init_provided('symbol', arg, symbol)
+        self._init_provided('symbolsrc', arg, symbolsrc)
 
         # Process unknown kwargs
         # ----------------------

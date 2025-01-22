@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
@@ -6,8 +8,8 @@ class Subtitle(_BaseLayoutHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "layout.title"
-    _path_str = "layout.title.subtitle"
+    _parent_path_str = 'layout.title'
+    _path_str = 'layout.title.subtitle'
     _valid_props = {"font", "text"}
 
     # font
@@ -22,11 +24,11 @@ class Subtitle(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.title.subtitle.Font`
           - A dict of string/value properties that will be passed
             to the Font constructor
-
+    
             Supported dict properties:
-
+                
                 color
-
+    
                 family
                     HTML font family - the typeface that will be
                     applied by the web browser. The web browser
@@ -56,7 +58,7 @@ class Subtitle(_BaseLayoutHierarchyType):
                     US/docs/Web/CSS/text-shadow for additional
                     options.
                 size
-
+    
                 style
                     Sets whether a font should be styled with a
                     normal or italic face from its family.
@@ -73,11 +75,11 @@ class Subtitle(_BaseLayoutHierarchyType):
         -------
         plotly.graph_objs.layout.title.subtitle.Font
         """
-        return self["font"]
+        return self['font']
 
     @font.setter
     def font(self, val):
-        self["font"] = val
+        self['font'] = val
 
     # text
     # ----
@@ -94,11 +96,11 @@ class Subtitle(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["text"]
+        return self['text']
 
     @text.setter
     def text(self, val):
-        self["text"] = val
+        self['text'] = val
 
     # Self properties description
     # ---------------------------
@@ -110,8 +112,12 @@ class Subtitle(_BaseLayoutHierarchyType):
         text
             Sets the plot's subtitle.
         """
-
-    def __init__(self, arg=None, font=None, text=None, **kwargs):
+    def __init__(self,
+            arg=None,
+            font=None,
+            text=None,
+            **kwargs
+        ):
         """
         Construct a new Subtitle object
 
@@ -130,10 +136,10 @@ class Subtitle(_BaseLayoutHierarchyType):
         -------
         Subtitle
         """
-        super(Subtitle, self).__init__("subtitle")
+        super(Subtitle, self).__init__('subtitle')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -145,28 +151,21 @@ class Subtitle(_BaseLayoutHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.layout.title.Subtitle
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.layout.title.Subtitle`"""
-            )
+an instance of :class:`plotly.graph_objs.layout.title.Subtitle`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("font", None)
-        _v = font if font is not None else _v
-        if _v is not None:
-            self["font"] = _v
-        _v = arg.pop("text", None)
-        _v = text if text is not None else _v
-        if _v is not None:
-            self["text"] = _v
+        self._init_provided('font', arg, font)
+        self._init_provided('text', arg, text)
 
         # Process unknown kwargs
         # ----------------------

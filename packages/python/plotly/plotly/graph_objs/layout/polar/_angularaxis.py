@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
@@ -6,59 +8,9 @@ class AngularAxis(_BaseLayoutHierarchyType):
 
     # class properties
     # --------------------
-    _parent_path_str = "layout.polar"
-    _path_str = "layout.polar.angularaxis"
-    _valid_props = {
-        "autotypenumbers",
-        "categoryarray",
-        "categoryarraysrc",
-        "categoryorder",
-        "color",
-        "direction",
-        "dtick",
-        "exponentformat",
-        "gridcolor",
-        "griddash",
-        "gridwidth",
-        "hoverformat",
-        "labelalias",
-        "layer",
-        "linecolor",
-        "linewidth",
-        "minexponent",
-        "nticks",
-        "period",
-        "rotation",
-        "separatethousands",
-        "showexponent",
-        "showgrid",
-        "showline",
-        "showticklabels",
-        "showtickprefix",
-        "showticksuffix",
-        "thetaunit",
-        "tick0",
-        "tickangle",
-        "tickcolor",
-        "tickfont",
-        "tickformat",
-        "tickformatstopdefaults",
-        "tickformatstops",
-        "ticklabelstep",
-        "ticklen",
-        "tickmode",
-        "tickprefix",
-        "ticks",
-        "ticksuffix",
-        "ticktext",
-        "ticktextsrc",
-        "tickvals",
-        "tickvalssrc",
-        "tickwidth",
-        "type",
-        "uirevision",
-        "visible",
-    }
+    _parent_path_str = 'layout.polar'
+    _path_str = 'layout.polar.angularaxis'
+    _valid_props = {"autotypenumbers", "categoryarray", "categoryarraysrc", "categoryorder", "color", "direction", "dtick", "exponentformat", "gridcolor", "griddash", "gridwidth", "hoverformat", "labelalias", "layer", "linecolor", "linewidth", "minexponent", "nticks", "period", "rotation", "separatethousands", "showexponent", "showgrid", "showline", "showticklabels", "showtickprefix", "showticksuffix", "thetaunit", "tick0", "tickangle", "tickcolor", "tickfont", "tickformat", "tickformatstopdefaults", "tickformatstops", "ticklabelstep", "ticklen", "tickmode", "tickprefix", "ticks", "ticksuffix", "ticktext", "ticktextsrc", "tickvals", "tickvalssrc", "tickwidth", "type", "uirevision", "visible"}
 
     # autotypenumbers
     # ---------------
@@ -78,11 +30,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["autotypenumbers"]
+        return self['autotypenumbers']
 
     @autotypenumbers.setter
     def autotypenumbers(self, val):
-        self["autotypenumbers"] = val
+        self['autotypenumbers'] = val
 
     # categoryarray
     # -------------
@@ -100,11 +52,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         numpy.ndarray
         """
-        return self["categoryarray"]
+        return self['categoryarray']
 
     @categoryarray.setter
     def categoryarray(self, val):
-        self["categoryarray"] = val
+        self['categoryarray'] = val
 
     # categoryarraysrc
     # ----------------
@@ -121,11 +73,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["categoryarraysrc"]
+        return self['categoryarraysrc']
 
     @categoryarraysrc.setter
     def categoryarraysrc(self, val):
-        self["categoryarraysrc"] = val
+        self['categoryarraysrc'] = val
 
     # categoryorder
     # -------------
@@ -162,11 +114,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["categoryorder"]
+        return self['categoryorder']
 
     @categoryorder.setter
     def categoryorder(self, val):
-        self["categoryorder"] = val
+        self['categoryorder'] = val
 
     # color
     # -----
@@ -224,11 +176,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["color"]
+        return self['color']
 
     @color.setter
     def color(self, val):
-        self["color"] = val
+        self['color'] = val
 
     # direction
     # ---------
@@ -245,11 +197,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["direction"]
+        return self['direction']
 
     @direction.setter
     def direction(self, val):
-        self["direction"] = val
+        self['direction'] = val
 
     # dtick
     # -----
@@ -283,11 +235,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["dtick"]
+        return self['dtick']
 
     @dtick.setter
     def dtick(self, val):
-        self["dtick"] = val
+        self['dtick'] = val
 
     # exponentformat
     # --------------
@@ -308,11 +260,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["exponentformat"]
+        return self['exponentformat']
 
     @exponentformat.setter
     def exponentformat(self, val):
-        self["exponentformat"] = val
+        self['exponentformat'] = val
 
     # gridcolor
     # ---------
@@ -367,11 +319,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["gridcolor"]
+        return self['gridcolor']
 
     @gridcolor.setter
     def gridcolor(self, val):
-        self["gridcolor"] = val
+        self['gridcolor'] = val
 
     # griddash
     # --------
@@ -393,11 +345,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["griddash"]
+        return self['griddash']
 
     @griddash.setter
     def griddash(self, val):
-        self["griddash"] = val
+        self['griddash'] = val
 
     # gridwidth
     # ---------
@@ -413,11 +365,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["gridwidth"]
+        return self['gridwidth']
 
     @gridwidth.setter
     def gridwidth(self, val):
-        self["gridwidth"] = val
+        self['gridwidth'] = val
 
     # hoverformat
     # -----------
@@ -443,11 +395,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["hoverformat"]
+        return self['hoverformat']
 
     @hoverformat.setter
     def hoverformat(self, val):
-        self["hoverformat"] = val
+        self['hoverformat'] = val
 
     # labelalias
     # ----------
@@ -470,11 +422,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["labelalias"]
+        return self['labelalias']
 
     @labelalias.setter
     def labelalias(self, val):
-        self["labelalias"] = val
+        self['labelalias'] = val
 
     # layer
     # -----
@@ -496,11 +448,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["layer"]
+        return self['layer']
 
     @layer.setter
     def layer(self, val):
-        self["layer"] = val
+        self['layer'] = val
 
     # linecolor
     # ---------
@@ -555,11 +507,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["linecolor"]
+        return self['linecolor']
 
     @linecolor.setter
     def linecolor(self, val):
-        self["linecolor"] = val
+        self['linecolor'] = val
 
     # linewidth
     # ---------
@@ -575,11 +527,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["linewidth"]
+        return self['linewidth']
 
     @linewidth.setter
     def linewidth(self, val):
-        self["linewidth"] = val
+        self['linewidth'] = val
 
     # minexponent
     # -----------
@@ -596,11 +548,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["minexponent"]
+        return self['minexponent']
 
     @minexponent.setter
     def minexponent(self, val):
-        self["minexponent"] = val
+        self['minexponent'] = val
 
     # nticks
     # ------
@@ -620,11 +572,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         int
         """
-        return self["nticks"]
+        return self['nticks']
 
     @nticks.setter
     def nticks(self, val):
-        self["nticks"] = val
+        self['nticks'] = val
 
     # period
     # ------
@@ -641,11 +593,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["period"]
+        return self['period']
 
     @period.setter
     def period(self, val):
-        self["period"] = val
+        self['period'] = val
 
     # rotation
     # --------
@@ -668,11 +620,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["rotation"]
+        return self['rotation']
 
     @rotation.setter
     def rotation(self, val):
-        self["rotation"] = val
+        self['rotation'] = val
 
     # separatethousands
     # -----------------
@@ -688,11 +640,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         bool
         """
-        return self["separatethousands"]
+        return self['separatethousands']
 
     @separatethousands.setter
     def separatethousands(self, val):
-        self["separatethousands"] = val
+        self['separatethousands'] = val
 
     # showexponent
     # ------------
@@ -712,11 +664,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["showexponent"]
+        return self['showexponent']
 
     @showexponent.setter
     def showexponent(self, val):
-        self["showexponent"] = val
+        self['showexponent'] = val
 
     # showgrid
     # --------
@@ -733,11 +685,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         bool
         """
-        return self["showgrid"]
+        return self['showgrid']
 
     @showgrid.setter
     def showgrid(self, val):
-        self["showgrid"] = val
+        self['showgrid'] = val
 
     # showline
     # --------
@@ -753,11 +705,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         bool
         """
-        return self["showline"]
+        return self['showline']
 
     @showline.setter
     def showline(self, val):
-        self["showline"] = val
+        self['showline'] = val
 
     # showticklabels
     # --------------
@@ -773,11 +725,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         bool
         """
-        return self["showticklabels"]
+        return self['showticklabels']
 
     @showticklabels.setter
     def showticklabels(self, val):
-        self["showticklabels"] = val
+        self['showticklabels'] = val
 
     # showtickprefix
     # --------------
@@ -797,11 +749,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["showtickprefix"]
+        return self['showtickprefix']
 
     @showtickprefix.setter
     def showtickprefix(self, val):
-        self["showtickprefix"] = val
+        self['showtickprefix'] = val
 
     # showticksuffix
     # --------------
@@ -818,11 +770,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["showticksuffix"]
+        return self['showticksuffix']
 
     @showticksuffix.setter
     def showticksuffix(self, val):
-        self["showticksuffix"] = val
+        self['showticksuffix'] = val
 
     # thetaunit
     # ---------
@@ -840,11 +792,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["thetaunit"]
+        return self['thetaunit']
 
     @thetaunit.setter
     def thetaunit(self, val):
-        self["thetaunit"] = val
+        self['thetaunit'] = val
 
     # tick0
     # -----
@@ -867,11 +819,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["tick0"]
+        return self['tick0']
 
     @tick0.setter
     def tick0(self, val):
-        self["tick0"] = val
+        self['tick0'] = val
 
     # tickangle
     # ---------
@@ -891,11 +843,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["tickangle"]
+        return self['tickangle']
 
     @tickangle.setter
     def tickangle(self, val):
-        self["tickangle"] = val
+        self['tickangle'] = val
 
     # tickcolor
     # ---------
@@ -950,11 +902,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["tickcolor"]
+        return self['tickcolor']
 
     @tickcolor.setter
     def tickcolor(self, val):
-        self["tickcolor"] = val
+        self['tickcolor'] = val
 
     # tickfont
     # --------
@@ -968,11 +920,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.polar.angularaxis.Tickfont`
           - A dict of string/value properties that will be passed
             to the Tickfont constructor
-
+    
             Supported dict properties:
-
+                
                 color
-
+    
                 family
                     HTML font family - the typeface that will be
                     applied by the web browser. The web browser
@@ -1002,7 +954,7 @@ class AngularAxis(_BaseLayoutHierarchyType):
                     US/docs/Web/CSS/text-shadow for additional
                     options.
                 size
-
+    
                 style
                     Sets whether a font should be styled with a
                     normal or italic face from its family.
@@ -1019,11 +971,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         plotly.graph_objs.layout.polar.angularaxis.Tickfont
         """
-        return self["tickfont"]
+        return self['tickfont']
 
     @tickfont.setter
     def tickfont(self, val):
-        self["tickfont"] = val
+        self['tickfont'] = val
 
     # tickformat
     # ----------
@@ -1049,11 +1001,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["tickformat"]
+        return self['tickformat']
 
     @tickformat.setter
     def tickformat(self, val):
-        self["tickformat"] = val
+        self['tickformat'] = val
 
     # tickformatstops
     # ---------------
@@ -1065,9 +1017,9 @@ class AngularAxis(_BaseLayoutHierarchyType):
           - A list or tuple of instances of plotly.graph_objs.layout.polar.angularaxis.Tickformatstop
           - A list or tuple of dicts of string/value properties that
             will be passed to the Tickformatstop constructor
-
+    
             Supported dict properties:
-
+                
                 dtickrange
                     range [*min*, *max*], where "min", "max" -
                     dtick values which describe some zoom level, it
@@ -1106,11 +1058,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         tuple[plotly.graph_objs.layout.polar.angularaxis.Tickformatstop]
         """
-        return self["tickformatstops"]
+        return self['tickformatstops']
 
     @tickformatstops.setter
     def tickformatstops(self, val):
-        self["tickformatstops"] = val
+        self['tickformatstops'] = val
 
     # tickformatstopdefaults
     # ----------------------
@@ -1126,18 +1078,18 @@ class AngularAxis(_BaseLayoutHierarchyType):
           - An instance of :class:`plotly.graph_objs.layout.polar.angularaxis.Tickformatstop`
           - A dict of string/value properties that will be passed
             to the Tickformatstop constructor
-
+    
             Supported dict properties:
 
         Returns
         -------
         plotly.graph_objs.layout.polar.angularaxis.Tickformatstop
         """
-        return self["tickformatstopdefaults"]
+        return self['tickformatstopdefaults']
 
     @tickformatstopdefaults.setter
     def tickformatstopdefaults(self, val):
-        self["tickformatstopdefaults"] = val
+        self['tickformatstopdefaults'] = val
 
     # ticklabelstep
     # -------------
@@ -1159,11 +1111,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         int
         """
-        return self["ticklabelstep"]
+        return self['ticklabelstep']
 
     @ticklabelstep.setter
     def ticklabelstep(self, val):
-        self["ticklabelstep"] = val
+        self['ticklabelstep'] = val
 
     # ticklen
     # -------
@@ -1179,11 +1131,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["ticklen"]
+        return self['ticklen']
 
     @ticklen.setter
     def ticklen(self, val):
-        self["ticklen"] = val
+        self['ticklen'] = val
 
     # tickmode
     # --------
@@ -1206,11 +1158,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["tickmode"]
+        return self['tickmode']
 
     @tickmode.setter
     def tickmode(self, val):
-        self["tickmode"] = val
+        self['tickmode'] = val
 
     # tickprefix
     # ----------
@@ -1227,11 +1179,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["tickprefix"]
+        return self['tickprefix']
 
     @tickprefix.setter
     def tickprefix(self, val):
-        self["tickprefix"] = val
+        self['tickprefix'] = val
 
     # ticks
     # -----
@@ -1250,11 +1202,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["ticks"]
+        return self['ticks']
 
     @ticks.setter
     def ticks(self, val):
-        self["ticks"] = val
+        self['ticks'] = val
 
     # ticksuffix
     # ----------
@@ -1271,11 +1223,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["ticksuffix"]
+        return self['ticksuffix']
 
     @ticksuffix.setter
     def ticksuffix(self, val):
-        self["ticksuffix"] = val
+        self['ticksuffix'] = val
 
     # ticktext
     # --------
@@ -1293,11 +1245,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         numpy.ndarray
         """
-        return self["ticktext"]
+        return self['ticktext']
 
     @ticktext.setter
     def ticktext(self, val):
-        self["ticktext"] = val
+        self['ticktext'] = val
 
     # ticktextsrc
     # -----------
@@ -1313,11 +1265,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["ticktextsrc"]
+        return self['ticktextsrc']
 
     @ticktextsrc.setter
     def ticktextsrc(self, val):
-        self["ticktextsrc"] = val
+        self['ticktextsrc'] = val
 
     # tickvals
     # --------
@@ -1334,11 +1286,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         numpy.ndarray
         """
-        return self["tickvals"]
+        return self['tickvals']
 
     @tickvals.setter
     def tickvals(self, val):
-        self["tickvals"] = val
+        self['tickvals'] = val
 
     # tickvalssrc
     # -----------
@@ -1354,11 +1306,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         str
         """
-        return self["tickvalssrc"]
+        return self['tickvalssrc']
 
     @tickvalssrc.setter
     def tickvalssrc(self, val):
-        self["tickvalssrc"] = val
+        self['tickvalssrc'] = val
 
     # tickwidth
     # ---------
@@ -1374,11 +1326,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         int|float
         """
-        return self["tickwidth"]
+        return self['tickwidth']
 
     @tickwidth.setter
     def tickwidth(self, val):
-        self["tickwidth"] = val
+        self['tickwidth'] = val
 
     # type
     # ----
@@ -1398,11 +1350,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["type"]
+        return self['type']
 
     @type.setter
     def type(self, val):
-        self["type"] = val
+        self['type'] = val
 
     # uirevision
     # ----------
@@ -1418,11 +1370,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         Any
         """
-        return self["uirevision"]
+        return self['uirevision']
 
     @uirevision.setter
     def uirevision(self, val):
-        self["uirevision"] = val
+        self['uirevision'] = val
 
     # visible
     # -------
@@ -1440,11 +1392,11 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         bool
         """
-        return self["visible"]
+        return self['visible']
 
     @visible.setter
     def visible(self, val):
-        self["visible"] = val
+        self['visible'] = val
 
     # Self properties description
     # ---------------------------
@@ -1705,61 +1657,59 @@ class AngularAxis(_BaseLayoutHierarchyType):
             interaction like dragging. Default is true when a
             cheater plot is present on the axis, otherwise false
         """
-
-    def __init__(
-        self,
-        arg=None,
-        autotypenumbers=None,
-        categoryarray=None,
-        categoryarraysrc=None,
-        categoryorder=None,
-        color=None,
-        direction=None,
-        dtick=None,
-        exponentformat=None,
-        gridcolor=None,
-        griddash=None,
-        gridwidth=None,
-        hoverformat=None,
-        labelalias=None,
-        layer=None,
-        linecolor=None,
-        linewidth=None,
-        minexponent=None,
-        nticks=None,
-        period=None,
-        rotation=None,
-        separatethousands=None,
-        showexponent=None,
-        showgrid=None,
-        showline=None,
-        showticklabels=None,
-        showtickprefix=None,
-        showticksuffix=None,
-        thetaunit=None,
-        tick0=None,
-        tickangle=None,
-        tickcolor=None,
-        tickfont=None,
-        tickformat=None,
-        tickformatstops=None,
-        tickformatstopdefaults=None,
-        ticklabelstep=None,
-        ticklen=None,
-        tickmode=None,
-        tickprefix=None,
-        ticks=None,
-        ticksuffix=None,
-        ticktext=None,
-        ticktextsrc=None,
-        tickvals=None,
-        tickvalssrc=None,
-        tickwidth=None,
-        type=None,
-        uirevision=None,
-        visible=None,
-        **kwargs,
-    ):
+    def __init__(self,
+            arg=None,
+            autotypenumbers=None,
+            categoryarray=None,
+            categoryarraysrc=None,
+            categoryorder=None,
+            color=None,
+            direction=None,
+            dtick=None,
+            exponentformat=None,
+            gridcolor=None,
+            griddash=None,
+            gridwidth=None,
+            hoverformat=None,
+            labelalias=None,
+            layer=None,
+            linecolor=None,
+            linewidth=None,
+            minexponent=None,
+            nticks=None,
+            period=None,
+            rotation=None,
+            separatethousands=None,
+            showexponent=None,
+            showgrid=None,
+            showline=None,
+            showticklabels=None,
+            showtickprefix=None,
+            showticksuffix=None,
+            thetaunit=None,
+            tick0=None,
+            tickangle=None,
+            tickcolor=None,
+            tickfont=None,
+            tickformat=None,
+            tickformatstops=None,
+            tickformatstopdefaults=None,
+            ticklabelstep=None,
+            ticklen=None,
+            tickmode=None,
+            tickprefix=None,
+            ticks=None,
+            ticksuffix=None,
+            ticktext=None,
+            ticktextsrc=None,
+            tickvals=None,
+            tickvalssrc=None,
+            tickwidth=None,
+            type=None,
+            uirevision=None,
+            visible=None,
+            **kwargs
+        ):
         """
         Construct a new AngularAxis object
 
@@ -2027,10 +1977,10 @@ class AngularAxis(_BaseLayoutHierarchyType):
         -------
         AngularAxis
         """
-        super(AngularAxis, self).__init__("angularaxis")
+        super(AngularAxis, self).__init__('angularaxis')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -2042,216 +1992,68 @@ class AngularAxis(_BaseLayoutHierarchyType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.layout.polar.AngularAxis
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.layout.polar.AngularAxis`"""
-            )
+an instance of :class:`plotly.graph_objs.layout.polar.AngularAxis`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("autotypenumbers", None)
-        _v = autotypenumbers if autotypenumbers is not None else _v
-        if _v is not None:
-            self["autotypenumbers"] = _v
-        _v = arg.pop("categoryarray", None)
-        _v = categoryarray if categoryarray is not None else _v
-        if _v is not None:
-            self["categoryarray"] = _v
-        _v = arg.pop("categoryarraysrc", None)
-        _v = categoryarraysrc if categoryarraysrc is not None else _v
-        if _v is not None:
-            self["categoryarraysrc"] = _v
-        _v = arg.pop("categoryorder", None)
-        _v = categoryorder if categoryorder is not None else _v
-        if _v is not None:
-            self["categoryorder"] = _v
-        _v = arg.pop("color", None)
-        _v = color if color is not None else _v
-        if _v is not None:
-            self["color"] = _v
-        _v = arg.pop("direction", None)
-        _v = direction if direction is not None else _v
-        if _v is not None:
-            self["direction"] = _v
-        _v = arg.pop("dtick", None)
-        _v = dtick if dtick is not None else _v
-        if _v is not None:
-            self["dtick"] = _v
-        _v = arg.pop("exponentformat", None)
-        _v = exponentformat if exponentformat is not None else _v
-        if _v is not None:
-            self["exponentformat"] = _v
-        _v = arg.pop("gridcolor", None)
-        _v = gridcolor if gridcolor is not None else _v
-        if _v is not None:
-            self["gridcolor"] = _v
-        _v = arg.pop("griddash", None)
-        _v = griddash if griddash is not None else _v
-        if _v is not None:
-            self["griddash"] = _v
-        _v = arg.pop("gridwidth", None)
-        _v = gridwidth if gridwidth is not None else _v
-        if _v is not None:
-            self["gridwidth"] = _v
-        _v = arg.pop("hoverformat", None)
-        _v = hoverformat if hoverformat is not None else _v
-        if _v is not None:
-            self["hoverformat"] = _v
-        _v = arg.pop("labelalias", None)
-        _v = labelalias if labelalias is not None else _v
-        if _v is not None:
-            self["labelalias"] = _v
-        _v = arg.pop("layer", None)
-        _v = layer if layer is not None else _v
-        if _v is not None:
-            self["layer"] = _v
-        _v = arg.pop("linecolor", None)
-        _v = linecolor if linecolor is not None else _v
-        if _v is not None:
-            self["linecolor"] = _v
-        _v = arg.pop("linewidth", None)
-        _v = linewidth if linewidth is not None else _v
-        if _v is not None:
-            self["linewidth"] = _v
-        _v = arg.pop("minexponent", None)
-        _v = minexponent if minexponent is not None else _v
-        if _v is not None:
-            self["minexponent"] = _v
-        _v = arg.pop("nticks", None)
-        _v = nticks if nticks is not None else _v
-        if _v is not None:
-            self["nticks"] = _v
-        _v = arg.pop("period", None)
-        _v = period if period is not None else _v
-        if _v is not None:
-            self["period"] = _v
-        _v = arg.pop("rotation", None)
-        _v = rotation if rotation is not None else _v
-        if _v is not None:
-            self["rotation"] = _v
-        _v = arg.pop("separatethousands", None)
-        _v = separatethousands if separatethousands is not None else _v
-        if _v is not None:
-            self["separatethousands"] = _v
-        _v = arg.pop("showexponent", None)
-        _v = showexponent if showexponent is not None else _v
-        if _v is not None:
-            self["showexponent"] = _v
-        _v = arg.pop("showgrid", None)
-        _v = showgrid if showgrid is not None else _v
-        if _v is not None:
-            self["showgrid"] = _v
-        _v = arg.pop("showline", None)
-        _v = showline if showline is not None else _v
-        if _v is not None:
-            self["showline"] = _v
-        _v = arg.pop("showticklabels", None)
-        _v = showticklabels if showticklabels is not None else _v
-        if _v is not None:
-            self["showticklabels"] = _v
-        _v = arg.pop("showtickprefix", None)
-        _v = showtickprefix if showtickprefix is not None else _v
-        if _v is not None:
-            self["showtickprefix"] = _v
-        _v = arg.pop("showticksuffix", None)
-        _v = showticksuffix if showticksuffix is not None else _v
-        if _v is not None:
-            self["showticksuffix"] = _v
-        _v = arg.pop("thetaunit", None)
-        _v = thetaunit if thetaunit is not None else _v
-        if _v is not None:
-            self["thetaunit"] = _v
-        _v = arg.pop("tick0", None)
-        _v = tick0 if tick0 is not None else _v
-        if _v is not None:
-            self["tick0"] = _v
-        _v = arg.pop("tickangle", None)
-        _v = tickangle if tickangle is not None else _v
-        if _v is not None:
-            self["tickangle"] = _v
-        _v = arg.pop("tickcolor", None)
-        _v = tickcolor if tickcolor is not None else _v
-        if _v is not None:
-            self["tickcolor"] = _v
-        _v = arg.pop("tickfont", None)
-        _v = tickfont if tickfont is not None else _v
-        if _v is not None:
-            self["tickfont"] = _v
-        _v = arg.pop("tickformat", None)
-        _v = tickformat if tickformat is not None else _v
-        if _v is not None:
-            self["tickformat"] = _v
-        _v = arg.pop("tickformatstops", None)
-        _v = tickformatstops if tickformatstops is not None else _v
-        if _v is not None:
-            self["tickformatstops"] = _v
-        _v = arg.pop("tickformatstopdefaults", None)
-        _v = tickformatstopdefaults if tickformatstopdefaults is not None else _v
-        if _v is not None:
-            self["tickformatstopdefaults"] = _v
-        _v = arg.pop("ticklabelstep", None)
-        _v = ticklabelstep if ticklabelstep is not None else _v
-        if _v is not None:
-            self["ticklabelstep"] = _v
-        _v = arg.pop("ticklen", None)
-        _v = ticklen if ticklen is not None else _v
-        if _v is not None:
-            self["ticklen"] = _v
-        _v = arg.pop("tickmode", None)
-        _v = tickmode if tickmode is not None else _v
-        if _v is not None:
-            self["tickmode"] = _v
-        _v = arg.pop("tickprefix", None)
-        _v = tickprefix if tickprefix is not None else _v
-        if _v is not None:
-            self["tickprefix"] = _v
-        _v = arg.pop("ticks", None)
-        _v = ticks if ticks is not None else _v
-        if _v is not None:
-            self["ticks"] = _v
-        _v = arg.pop("ticksuffix", None)
-        _v = ticksuffix if ticksuffix is not None else _v
-        if _v is not None:
-            self["ticksuffix"] = _v
-        _v = arg.pop("ticktext", None)
-        _v = ticktext if ticktext is not None else _v
-        if _v is not None:
-            self["ticktext"] = _v
-        _v = arg.pop("ticktextsrc", None)
-        _v = ticktextsrc if ticktextsrc is not None else _v
-        if _v is not None:
-            self["ticktextsrc"] = _v
-        _v = arg.pop("tickvals", None)
-        _v = tickvals if tickvals is not None else _v
-        if _v is not None:
-            self["tickvals"] = _v
-        _v = arg.pop("tickvalssrc", None)
-        _v = tickvalssrc if tickvalssrc is not None else _v
-        if _v is not None:
-            self["tickvalssrc"] = _v
-        _v = arg.pop("tickwidth", None)
-        _v = tickwidth if tickwidth is not None else _v
-        if _v is not None:
-            self["tickwidth"] = _v
-        _v = arg.pop("type", None)
-        _v = type if type is not None else _v
-        if _v is not None:
-            self["type"] = _v
-        _v = arg.pop("uirevision", None)
-        _v = uirevision if uirevision is not None else _v
-        if _v is not None:
-            self["uirevision"] = _v
-        _v = arg.pop("visible", None)
-        _v = visible if visible is not None else _v
-        if _v is not None:
-            self["visible"] = _v
+        self._init_provided('autotypenumbers', arg, autotypenumbers)
+        self._init_provided('categoryarray', arg, categoryarray)
+        self._init_provided('categoryarraysrc', arg, categoryarraysrc)
+        self._init_provided('categoryorder', arg, categoryorder)
+        self._init_provided('color', arg, color)
+        self._init_provided('direction', arg, direction)
+        self._init_provided('dtick', arg, dtick)
+        self._init_provided('exponentformat', arg, exponentformat)
+        self._init_provided('gridcolor', arg, gridcolor)
+        self._init_provided('griddash', arg, griddash)
+        self._init_provided('gridwidth', arg, gridwidth)
+        self._init_provided('hoverformat', arg, hoverformat)
+        self._init_provided('labelalias', arg, labelalias)
+        self._init_provided('layer', arg, layer)
+        self._init_provided('linecolor', arg, linecolor)
+        self._init_provided('linewidth', arg, linewidth)
+        self._init_provided('minexponent', arg, minexponent)
+        self._init_provided('nticks', arg, nticks)
+        self._init_provided('period', arg, period)
+        self._init_provided('rotation', arg, rotation)
+        self._init_provided('separatethousands', arg, separatethousands)
+        self._init_provided('showexponent', arg, showexponent)
+        self._init_provided('showgrid', arg, showgrid)
+        self._init_provided('showline', arg, showline)
+        self._init_provided('showticklabels', arg, showticklabels)
+        self._init_provided('showtickprefix', arg, showtickprefix)
+        self._init_provided('showticksuffix', arg, showticksuffix)
+        self._init_provided('thetaunit', arg, thetaunit)
+        self._init_provided('tick0', arg, tick0)
+        self._init_provided('tickangle', arg, tickangle)
+        self._init_provided('tickcolor', arg, tickcolor)
+        self._init_provided('tickfont', arg, tickfont)
+        self._init_provided('tickformat', arg, tickformat)
+        self._init_provided('tickformatstops', arg, tickformatstops)
+        self._init_provided('tickformatstopdefaults', arg, tickformatstopdefaults)
+        self._init_provided('ticklabelstep', arg, ticklabelstep)
+        self._init_provided('ticklen', arg, ticklen)
+        self._init_provided('tickmode', arg, tickmode)
+        self._init_provided('tickprefix', arg, tickprefix)
+        self._init_provided('ticks', arg, ticks)
+        self._init_provided('ticksuffix', arg, ticksuffix)
+        self._init_provided('ticktext', arg, ticktext)
+        self._init_provided('ticktextsrc', arg, ticktextsrc)
+        self._init_provided('tickvals', arg, tickvals)
+        self._init_provided('tickvalssrc', arg, tickvalssrc)
+        self._init_provided('tickwidth', arg, tickwidth)
+        self._init_provided('type', arg, type)
+        self._init_provided('uirevision', arg, uirevision)
+        self._init_provided('visible', arg, visible)
 
         # Process unknown kwargs
         # ----------------------

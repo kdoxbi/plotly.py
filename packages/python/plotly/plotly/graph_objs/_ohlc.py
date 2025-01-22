@@ -1,3 +1,5 @@
+
+
 from plotly.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
@@ -6,60 +8,9 @@ class Ohlc(_BaseTraceType):
 
     # class properties
     # --------------------
-    _parent_path_str = ""
-    _path_str = "ohlc"
-    _valid_props = {
-        "close",
-        "closesrc",
-        "customdata",
-        "customdatasrc",
-        "decreasing",
-        "high",
-        "highsrc",
-        "hoverinfo",
-        "hoverinfosrc",
-        "hoverlabel",
-        "hovertext",
-        "hovertextsrc",
-        "ids",
-        "idssrc",
-        "increasing",
-        "legend",
-        "legendgroup",
-        "legendgrouptitle",
-        "legendrank",
-        "legendwidth",
-        "line",
-        "low",
-        "lowsrc",
-        "meta",
-        "metasrc",
-        "name",
-        "opacity",
-        "open",
-        "opensrc",
-        "selectedpoints",
-        "showlegend",
-        "stream",
-        "text",
-        "textsrc",
-        "tickwidth",
-        "type",
-        "uid",
-        "uirevision",
-        "visible",
-        "x",
-        "xaxis",
-        "xcalendar",
-        "xhoverformat",
-        "xperiod",
-        "xperiod0",
-        "xperiodalignment",
-        "xsrc",
-        "yaxis",
-        "yhoverformat",
-        "zorder",
-    }
+    _parent_path_str = ''
+    _path_str = 'ohlc'
+    _valid_props = {"close", "closesrc", "customdata", "customdatasrc", "decreasing", "high", "highsrc", "hoverinfo", "hoverinfosrc", "hoverlabel", "hovertext", "hovertextsrc", "ids", "idssrc", "increasing", "legend", "legendgroup", "legendgrouptitle", "legendrank", "legendwidth", "line", "low", "lowsrc", "meta", "metasrc", "name", "opacity", "open", "opensrc", "selectedpoints", "showlegend", "stream", "text", "textsrc", "tickwidth", "type", "uid", "uirevision", "visible", "x", "xaxis", "xcalendar", "xhoverformat", "xperiod", "xperiod0", "xperiodalignment", "xsrc", "yaxis", "yhoverformat", "zorder"}
 
     # close
     # -----
@@ -75,11 +26,11 @@ class Ohlc(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["close"]
+        return self['close']
 
     @close.setter
     def close(self, val):
-        self["close"] = val
+        self['close'] = val
 
     # closesrc
     # --------
@@ -95,11 +46,11 @@ class Ohlc(_BaseTraceType):
         -------
         str
         """
-        return self["closesrc"]
+        return self['closesrc']
 
     @closesrc.setter
     def closesrc(self, val):
-        self["closesrc"] = val
+        self['closesrc'] = val
 
     # customdata
     # ----------
@@ -118,11 +69,11 @@ class Ohlc(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["customdata"]
+        return self['customdata']
 
     @customdata.setter
     def customdata(self, val):
-        self["customdata"] = val
+        self['customdata'] = val
 
     # customdatasrc
     # -------------
@@ -139,11 +90,11 @@ class Ohlc(_BaseTraceType):
         -------
         str
         """
-        return self["customdatasrc"]
+        return self['customdatasrc']
 
     @customdatasrc.setter
     def customdatasrc(self, val):
-        self["customdatasrc"] = val
+        self['customdatasrc'] = val
 
     # decreasing
     # ----------
@@ -155,9 +106,9 @@ class Ohlc(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.ohlc.Decreasing`
           - A dict of string/value properties that will be passed
             to the Decreasing constructor
-
+    
             Supported dict properties:
-
+                
                 line
                     :class:`plotly.graph_objects.ohlc.decreasing.Li
                     ne` instance or dict with compatible properties
@@ -166,11 +117,11 @@ class Ohlc(_BaseTraceType):
         -------
         plotly.graph_objs.ohlc.Decreasing
         """
-        return self["decreasing"]
+        return self['decreasing']
 
     @decreasing.setter
     def decreasing(self, val):
-        self["decreasing"] = val
+        self['decreasing'] = val
 
     # high
     # ----
@@ -186,11 +137,11 @@ class Ohlc(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["high"]
+        return self['high']
 
     @high.setter
     def high(self, val):
-        self["high"] = val
+        self['high'] = val
 
     # highsrc
     # -------
@@ -206,11 +157,11 @@ class Ohlc(_BaseTraceType):
         -------
         str
         """
-        return self["highsrc"]
+        return self['highsrc']
 
     @highsrc.setter
     def highsrc(self, val):
-        self["highsrc"] = val
+        self['highsrc'] = val
 
     # hoverinfo
     # ---------
@@ -232,11 +183,11 @@ class Ohlc(_BaseTraceType):
         -------
         Any|numpy.ndarray
         """
-        return self["hoverinfo"]
+        return self['hoverinfo']
 
     @hoverinfo.setter
     def hoverinfo(self, val):
-        self["hoverinfo"] = val
+        self['hoverinfo'] = val
 
     # hoverinfosrc
     # ------------
@@ -253,11 +204,11 @@ class Ohlc(_BaseTraceType):
         -------
         str
         """
-        return self["hoverinfosrc"]
+        return self['hoverinfosrc']
 
     @hoverinfosrc.setter
     def hoverinfosrc(self, val):
-        self["hoverinfosrc"] = val
+        self['hoverinfosrc'] = val
 
     # hoverlabel
     # ----------
@@ -269,9 +220,9 @@ class Ohlc(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.ohlc.Hoverlabel`
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
-
+    
             Supported dict properties:
-
+                
                 align
                     Sets the horizontal alignment of the text
                     content within hover label box. Has an effect
@@ -315,11 +266,11 @@ class Ohlc(_BaseTraceType):
         -------
         plotly.graph_objs.ohlc.Hoverlabel
         """
-        return self["hoverlabel"]
+        return self['hoverlabel']
 
     @hoverlabel.setter
     def hoverlabel(self, val):
-        self["hoverlabel"] = val
+        self['hoverlabel'] = val
 
     # hovertext
     # ---------
@@ -337,11 +288,11 @@ class Ohlc(_BaseTraceType):
         -------
         str|numpy.ndarray
         """
-        return self["hovertext"]
+        return self['hovertext']
 
     @hovertext.setter
     def hovertext(self, val):
-        self["hovertext"] = val
+        self['hovertext'] = val
 
     # hovertextsrc
     # ------------
@@ -358,11 +309,11 @@ class Ohlc(_BaseTraceType):
         -------
         str
         """
-        return self["hovertextsrc"]
+        return self['hovertextsrc']
 
     @hovertextsrc.setter
     def hovertextsrc(self, val):
-        self["hovertextsrc"] = val
+        self['hovertextsrc'] = val
 
     # ids
     # ---
@@ -380,11 +331,11 @@ class Ohlc(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["ids"]
+        return self['ids']
 
     @ids.setter
     def ids(self, val):
-        self["ids"] = val
+        self['ids'] = val
 
     # idssrc
     # ------
@@ -400,11 +351,11 @@ class Ohlc(_BaseTraceType):
         -------
         str
         """
-        return self["idssrc"]
+        return self['idssrc']
 
     @idssrc.setter
     def idssrc(self, val):
-        self["idssrc"] = val
+        self['idssrc'] = val
 
     # increasing
     # ----------
@@ -416,9 +367,9 @@ class Ohlc(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.ohlc.Increasing`
           - A dict of string/value properties that will be passed
             to the Increasing constructor
-
+    
             Supported dict properties:
-
+                
                 line
                     :class:`plotly.graph_objects.ohlc.increasing.Li
                     ne` instance or dict with compatible properties
@@ -427,11 +378,11 @@ class Ohlc(_BaseTraceType):
         -------
         plotly.graph_objs.ohlc.Increasing
         """
-        return self["increasing"]
+        return self['increasing']
 
     @increasing.setter
     def increasing(self, val):
-        self["increasing"] = val
+        self['increasing'] = val
 
     # legend
     # ------
@@ -452,11 +403,11 @@ class Ohlc(_BaseTraceType):
         -------
         str
         """
-        return self["legend"]
+        return self['legend']
 
     @legend.setter
     def legend(self, val):
-        self["legend"] = val
+        self['legend'] = val
 
     # legendgroup
     # -----------
@@ -475,11 +426,11 @@ class Ohlc(_BaseTraceType):
         -------
         str
         """
-        return self["legendgroup"]
+        return self['legendgroup']
 
     @legendgroup.setter
     def legendgroup(self, val):
-        self["legendgroup"] = val
+        self['legendgroup'] = val
 
     # legendgrouptitle
     # ----------------
@@ -491,9 +442,9 @@ class Ohlc(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.ohlc.Legendgrouptitle`
           - A dict of string/value properties that will be passed
             to the Legendgrouptitle constructor
-
+    
             Supported dict properties:
-
+                
                 font
                     Sets this legend group's title font.
                 text
@@ -503,11 +454,11 @@ class Ohlc(_BaseTraceType):
         -------
         plotly.graph_objs.ohlc.Legendgrouptitle
         """
-        return self["legendgrouptitle"]
+        return self['legendgrouptitle']
 
     @legendgrouptitle.setter
     def legendgrouptitle(self, val):
-        self["legendgrouptitle"] = val
+        self['legendgrouptitle'] = val
 
     # legendrank
     # ----------
@@ -530,11 +481,11 @@ class Ohlc(_BaseTraceType):
         -------
         int|float
         """
-        return self["legendrank"]
+        return self['legendrank']
 
     @legendrank.setter
     def legendrank(self, val):
-        self["legendrank"] = val
+        self['legendrank'] = val
 
     # legendwidth
     # -----------
@@ -551,11 +502,11 @@ class Ohlc(_BaseTraceType):
         -------
         int|float
         """
-        return self["legendwidth"]
+        return self['legendwidth']
 
     @legendwidth.setter
     def legendwidth(self, val):
-        self["legendwidth"] = val
+        self['legendwidth'] = val
 
     # line
     # ----
@@ -567,9 +518,9 @@ class Ohlc(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.ohlc.Line`
           - A dict of string/value properties that will be passed
             to the Line constructor
-
+    
             Supported dict properties:
-
+                
                 dash
                     Sets the dash style of lines. Set to a dash
                     type string ("solid", "dot", "dash",
@@ -588,11 +539,11 @@ class Ohlc(_BaseTraceType):
         -------
         plotly.graph_objs.ohlc.Line
         """
-        return self["line"]
+        return self['line']
 
     @line.setter
     def line(self, val):
-        self["line"] = val
+        self['line'] = val
 
     # low
     # ---
@@ -608,11 +559,11 @@ class Ohlc(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["low"]
+        return self['low']
 
     @low.setter
     def low(self, val):
-        self["low"] = val
+        self['low'] = val
 
     # lowsrc
     # ------
@@ -628,11 +579,11 @@ class Ohlc(_BaseTraceType):
         -------
         str
         """
-        return self["lowsrc"]
+        return self['lowsrc']
 
     @lowsrc.setter
     def lowsrc(self, val):
-        self["lowsrc"] = val
+        self['lowsrc'] = val
 
     # meta
     # ----
@@ -656,11 +607,11 @@ class Ohlc(_BaseTraceType):
         -------
         Any|numpy.ndarray
         """
-        return self["meta"]
+        return self['meta']
 
     @meta.setter
     def meta(self, val):
-        self["meta"] = val
+        self['meta'] = val
 
     # metasrc
     # -------
@@ -676,11 +627,11 @@ class Ohlc(_BaseTraceType):
         -------
         str
         """
-        return self["metasrc"]
+        return self['metasrc']
 
     @metasrc.setter
     def metasrc(self, val):
-        self["metasrc"] = val
+        self['metasrc'] = val
 
     # name
     # ----
@@ -698,11 +649,11 @@ class Ohlc(_BaseTraceType):
         -------
         str
         """
-        return self["name"]
+        return self['name']
 
     @name.setter
     def name(self, val):
-        self["name"] = val
+        self['name'] = val
 
     # opacity
     # -------
@@ -718,11 +669,11 @@ class Ohlc(_BaseTraceType):
         -------
         int|float
         """
-        return self["opacity"]
+        return self['opacity']
 
     @opacity.setter
     def opacity(self, val):
-        self["opacity"] = val
+        self['opacity'] = val
 
     # open
     # ----
@@ -738,11 +689,11 @@ class Ohlc(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["open"]
+        return self['open']
 
     @open.setter
     def open(self, val):
-        self["open"] = val
+        self['open'] = val
 
     # opensrc
     # -------
@@ -758,11 +709,11 @@ class Ohlc(_BaseTraceType):
         -------
         str
         """
-        return self["opensrc"]
+        return self['opensrc']
 
     @opensrc.setter
     def opensrc(self, val):
-        self["opensrc"] = val
+        self['opensrc'] = val
 
     # selectedpoints
     # --------------
@@ -782,11 +733,11 @@ class Ohlc(_BaseTraceType):
         -------
         Any
         """
-        return self["selectedpoints"]
+        return self['selectedpoints']
 
     @selectedpoints.setter
     def selectedpoints(self, val):
-        self["selectedpoints"] = val
+        self['selectedpoints'] = val
 
     # showlegend
     # ----------
@@ -803,11 +754,11 @@ class Ohlc(_BaseTraceType):
         -------
         bool
         """
-        return self["showlegend"]
+        return self['showlegend']
 
     @showlegend.setter
     def showlegend(self, val):
-        self["showlegend"] = val
+        self['showlegend'] = val
 
     # stream
     # ------
@@ -819,9 +770,9 @@ class Ohlc(_BaseTraceType):
           - An instance of :class:`plotly.graph_objs.ohlc.Stream`
           - A dict of string/value properties that will be passed
             to the Stream constructor
-
+    
             Supported dict properties:
-
+                
                 maxpoints
                     Sets the maximum number of points to keep on
                     the plots from an incoming stream. If
@@ -836,11 +787,11 @@ class Ohlc(_BaseTraceType):
         -------
         plotly.graph_objs.ohlc.Stream
         """
-        return self["stream"]
+        return self['stream']
 
     @stream.setter
     def stream(self, val):
-        self["stream"] = val
+        self['stream'] = val
 
     # text
     # ----
@@ -861,11 +812,11 @@ class Ohlc(_BaseTraceType):
         -------
         str|numpy.ndarray
         """
-        return self["text"]
+        return self['text']
 
     @text.setter
     def text(self, val):
-        self["text"] = val
+        self['text'] = val
 
     # textsrc
     # -------
@@ -881,11 +832,11 @@ class Ohlc(_BaseTraceType):
         -------
         str
         """
-        return self["textsrc"]
+        return self['textsrc']
 
     @textsrc.setter
     def textsrc(self, val):
-        self["textsrc"] = val
+        self['textsrc'] = val
 
     # tickwidth
     # ---------
@@ -902,11 +853,11 @@ class Ohlc(_BaseTraceType):
         -------
         int|float
         """
-        return self["tickwidth"]
+        return self['tickwidth']
 
     @tickwidth.setter
     def tickwidth(self, val):
-        self["tickwidth"] = val
+        self['tickwidth'] = val
 
     # uid
     # ---
@@ -924,11 +875,11 @@ class Ohlc(_BaseTraceType):
         -------
         str
         """
-        return self["uid"]
+        return self['uid']
 
     @uid.setter
     def uid(self, val):
-        self["uid"] = val
+        self['uid'] = val
 
     # uirevision
     # ----------
@@ -957,11 +908,11 @@ class Ohlc(_BaseTraceType):
         -------
         Any
         """
-        return self["uirevision"]
+        return self['uirevision']
 
     @uirevision.setter
     def uirevision(self, val):
-        self["uirevision"] = val
+        self['uirevision'] = val
 
     # visible
     # -------
@@ -980,11 +931,11 @@ class Ohlc(_BaseTraceType):
         -------
         Any
         """
-        return self["visible"]
+        return self['visible']
 
     @visible.setter
     def visible(self, val):
-        self["visible"] = val
+        self['visible'] = val
 
     # x
     # -
@@ -1001,11 +952,11 @@ class Ohlc(_BaseTraceType):
         -------
         numpy.ndarray
         """
-        return self["x"]
+        return self['x']
 
     @x.setter
     def x(self, val):
-        self["x"] = val
+        self['x'] = val
 
     # xaxis
     # -----
@@ -1026,11 +977,11 @@ class Ohlc(_BaseTraceType):
         -------
         str
         """
-        return self["xaxis"]
+        return self['xaxis']
 
     @xaxis.setter
     def xaxis(self, val):
-        self["xaxis"] = val
+        self['xaxis'] = val
 
     # xcalendar
     # ---------
@@ -1050,11 +1001,11 @@ class Ohlc(_BaseTraceType):
         -------
         Any
         """
-        return self["xcalendar"]
+        return self['xcalendar']
 
     @xcalendar.setter
     def xcalendar(self, val):
-        self["xcalendar"] = val
+        self['xcalendar'] = val
 
     # xhoverformat
     # ------------
@@ -1081,11 +1032,11 @@ class Ohlc(_BaseTraceType):
         -------
         str
         """
-        return self["xhoverformat"]
+        return self['xhoverformat']
 
     @xhoverformat.setter
     def xhoverformat(self, val):
-        self["xhoverformat"] = val
+        self['xhoverformat'] = val
 
     # xperiod
     # -------
@@ -1103,11 +1054,11 @@ class Ohlc(_BaseTraceType):
         -------
         Any
         """
-        return self["xperiod"]
+        return self['xperiod']
 
     @xperiod.setter
     def xperiod(self, val):
-        self["xperiod"] = val
+        self['xperiod'] = val
 
     # xperiod0
     # --------
@@ -1126,11 +1077,11 @@ class Ohlc(_BaseTraceType):
         -------
         Any
         """
-        return self["xperiod0"]
+        return self['xperiod0']
 
     @xperiod0.setter
     def xperiod0(self, val):
-        self["xperiod0"] = val
+        self['xperiod0'] = val
 
     # xperiodalignment
     # ----------------
@@ -1148,11 +1099,11 @@ class Ohlc(_BaseTraceType):
         -------
         Any
         """
-        return self["xperiodalignment"]
+        return self['xperiodalignment']
 
     @xperiodalignment.setter
     def xperiodalignment(self, val):
-        self["xperiodalignment"] = val
+        self['xperiodalignment'] = val
 
     # xsrc
     # ----
@@ -1168,11 +1119,11 @@ class Ohlc(_BaseTraceType):
         -------
         str
         """
-        return self["xsrc"]
+        return self['xsrc']
 
     @xsrc.setter
     def xsrc(self, val):
-        self["xsrc"] = val
+        self['xsrc'] = val
 
     # yaxis
     # -----
@@ -1193,11 +1144,11 @@ class Ohlc(_BaseTraceType):
         -------
         str
         """
-        return self["yaxis"]
+        return self['yaxis']
 
     @yaxis.setter
     def yaxis(self, val):
-        self["yaxis"] = val
+        self['yaxis'] = val
 
     # yhoverformat
     # ------------
@@ -1224,11 +1175,11 @@ class Ohlc(_BaseTraceType):
         -------
         str
         """
-        return self["yhoverformat"]
+        return self['yhoverformat']
 
     @yhoverformat.setter
     def yhoverformat(self, val):
-        self["yhoverformat"] = val
+        self['yhoverformat'] = val
 
     # zorder
     # ------
@@ -1246,17 +1197,17 @@ class Ohlc(_BaseTraceType):
         -------
         int
         """
-        return self["zorder"]
+        return self['zorder']
 
     @zorder.setter
     def zorder(self, val):
-        self["zorder"] = val
+        self['zorder'] = val
 
     # type
     # ----
     @property
     def type(self):
-        return self._props["type"]
+        return self._props['type']
 
     # Self properties description
     # ---------------------------
@@ -1488,61 +1439,59 @@ class Ohlc(_BaseTraceType):
             traces with higher `zorder` appear in front of those
             with lower `zorder`.
         """
-
-    def __init__(
-        self,
-        arg=None,
-        close=None,
-        closesrc=None,
-        customdata=None,
-        customdatasrc=None,
-        decreasing=None,
-        high=None,
-        highsrc=None,
-        hoverinfo=None,
-        hoverinfosrc=None,
-        hoverlabel=None,
-        hovertext=None,
-        hovertextsrc=None,
-        ids=None,
-        idssrc=None,
-        increasing=None,
-        legend=None,
-        legendgroup=None,
-        legendgrouptitle=None,
-        legendrank=None,
-        legendwidth=None,
-        line=None,
-        low=None,
-        lowsrc=None,
-        meta=None,
-        metasrc=None,
-        name=None,
-        opacity=None,
-        open=None,
-        opensrc=None,
-        selectedpoints=None,
-        showlegend=None,
-        stream=None,
-        text=None,
-        textsrc=None,
-        tickwidth=None,
-        uid=None,
-        uirevision=None,
-        visible=None,
-        x=None,
-        xaxis=None,
-        xcalendar=None,
-        xhoverformat=None,
-        xperiod=None,
-        xperiod0=None,
-        xperiodalignment=None,
-        xsrc=None,
-        yaxis=None,
-        yhoverformat=None,
-        zorder=None,
-        **kwargs,
-    ):
+    def __init__(self,
+            arg=None,
+            close=None,
+            closesrc=None,
+            customdata=None,
+            customdatasrc=None,
+            decreasing=None,
+            high=None,
+            highsrc=None,
+            hoverinfo=None,
+            hoverinfosrc=None,
+            hoverlabel=None,
+            hovertext=None,
+            hovertextsrc=None,
+            ids=None,
+            idssrc=None,
+            increasing=None,
+            legend=None,
+            legendgroup=None,
+            legendgrouptitle=None,
+            legendrank=None,
+            legendwidth=None,
+            line=None,
+            low=None,
+            lowsrc=None,
+            meta=None,
+            metasrc=None,
+            name=None,
+            opacity=None,
+            open=None,
+            opensrc=None,
+            selectedpoints=None,
+            showlegend=None,
+            stream=None,
+            text=None,
+            textsrc=None,
+            tickwidth=None,
+            uid=None,
+            uirevision=None,
+            visible=None,
+            x=None,
+            xaxis=None,
+            xcalendar=None,
+            xhoverformat=None,
+            xperiod=None,
+            xperiod0=None,
+            xperiodalignment=None,
+            xsrc=None,
+            yaxis=None,
+            yhoverformat=None,
+            zorder=None,
+            **kwargs
+        ):
         """
         Construct a new Ohlc object
 
@@ -1789,10 +1738,10 @@ class Ohlc(_BaseTraceType):
         -------
         Ohlc
         """
-        super(Ohlc, self).__init__("ohlc")
+        super(Ohlc, self).__init__('ohlc')
 
-        if "_parent" in kwargs:
-            self._parent = kwargs["_parent"]
+        if '_parent' in kwargs:
+            self._parent = kwargs['_parent']
             return
 
         # Validate arg
@@ -1804,222 +1753,74 @@ class Ohlc(_BaseTraceType):
         elif isinstance(arg, dict):
             arg = _copy.copy(arg)
         else:
-            raise ValueError(
-                """\
+            raise ValueError("""\
 The first argument to the plotly.graph_objs.Ohlc
 constructor must be a dict or
-an instance of :class:`plotly.graph_objs.Ohlc`"""
-            )
+an instance of :class:`plotly.graph_objs.Ohlc`""")
 
         # Handle skip_invalid
         # -------------------
-        self._skip_invalid = kwargs.pop("skip_invalid", False)
-        self._validate = kwargs.pop("_validate", True)
+        self._skip_invalid = kwargs.pop('skip_invalid', False)
+        self._validate = kwargs.pop('_validate', True)
+        
 
         # Populate data dict with properties
         # ----------------------------------
-        _v = arg.pop("close", None)
-        _v = close if close is not None else _v
-        if _v is not None:
-            self["close"] = _v
-        _v = arg.pop("closesrc", None)
-        _v = closesrc if closesrc is not None else _v
-        if _v is not None:
-            self["closesrc"] = _v
-        _v = arg.pop("customdata", None)
-        _v = customdata if customdata is not None else _v
-        if _v is not None:
-            self["customdata"] = _v
-        _v = arg.pop("customdatasrc", None)
-        _v = customdatasrc if customdatasrc is not None else _v
-        if _v is not None:
-            self["customdatasrc"] = _v
-        _v = arg.pop("decreasing", None)
-        _v = decreasing if decreasing is not None else _v
-        if _v is not None:
-            self["decreasing"] = _v
-        _v = arg.pop("high", None)
-        _v = high if high is not None else _v
-        if _v is not None:
-            self["high"] = _v
-        _v = arg.pop("highsrc", None)
-        _v = highsrc if highsrc is not None else _v
-        if _v is not None:
-            self["highsrc"] = _v
-        _v = arg.pop("hoverinfo", None)
-        _v = hoverinfo if hoverinfo is not None else _v
-        if _v is not None:
-            self["hoverinfo"] = _v
-        _v = arg.pop("hoverinfosrc", None)
-        _v = hoverinfosrc if hoverinfosrc is not None else _v
-        if _v is not None:
-            self["hoverinfosrc"] = _v
-        _v = arg.pop("hoverlabel", None)
-        _v = hoverlabel if hoverlabel is not None else _v
-        if _v is not None:
-            self["hoverlabel"] = _v
-        _v = arg.pop("hovertext", None)
-        _v = hovertext if hovertext is not None else _v
-        if _v is not None:
-            self["hovertext"] = _v
-        _v = arg.pop("hovertextsrc", None)
-        _v = hovertextsrc if hovertextsrc is not None else _v
-        if _v is not None:
-            self["hovertextsrc"] = _v
-        _v = arg.pop("ids", None)
-        _v = ids if ids is not None else _v
-        if _v is not None:
-            self["ids"] = _v
-        _v = arg.pop("idssrc", None)
-        _v = idssrc if idssrc is not None else _v
-        if _v is not None:
-            self["idssrc"] = _v
-        _v = arg.pop("increasing", None)
-        _v = increasing if increasing is not None else _v
-        if _v is not None:
-            self["increasing"] = _v
-        _v = arg.pop("legend", None)
-        _v = legend if legend is not None else _v
-        if _v is not None:
-            self["legend"] = _v
-        _v = arg.pop("legendgroup", None)
-        _v = legendgroup if legendgroup is not None else _v
-        if _v is not None:
-            self["legendgroup"] = _v
-        _v = arg.pop("legendgrouptitle", None)
-        _v = legendgrouptitle if legendgrouptitle is not None else _v
-        if _v is not None:
-            self["legendgrouptitle"] = _v
-        _v = arg.pop("legendrank", None)
-        _v = legendrank if legendrank is not None else _v
-        if _v is not None:
-            self["legendrank"] = _v
-        _v = arg.pop("legendwidth", None)
-        _v = legendwidth if legendwidth is not None else _v
-        if _v is not None:
-            self["legendwidth"] = _v
-        _v = arg.pop("line", None)
-        _v = line if line is not None else _v
-        if _v is not None:
-            self["line"] = _v
-        _v = arg.pop("low", None)
-        _v = low if low is not None else _v
-        if _v is not None:
-            self["low"] = _v
-        _v = arg.pop("lowsrc", None)
-        _v = lowsrc if lowsrc is not None else _v
-        if _v is not None:
-            self["lowsrc"] = _v
-        _v = arg.pop("meta", None)
-        _v = meta if meta is not None else _v
-        if _v is not None:
-            self["meta"] = _v
-        _v = arg.pop("metasrc", None)
-        _v = metasrc if metasrc is not None else _v
-        if _v is not None:
-            self["metasrc"] = _v
-        _v = arg.pop("name", None)
-        _v = name if name is not None else _v
-        if _v is not None:
-            self["name"] = _v
-        _v = arg.pop("opacity", None)
-        _v = opacity if opacity is not None else _v
-        if _v is not None:
-            self["opacity"] = _v
-        _v = arg.pop("open", None)
-        _v = open if open is not None else _v
-        if _v is not None:
-            self["open"] = _v
-        _v = arg.pop("opensrc", None)
-        _v = opensrc if opensrc is not None else _v
-        if _v is not None:
-            self["opensrc"] = _v
-        _v = arg.pop("selectedpoints", None)
-        _v = selectedpoints if selectedpoints is not None else _v
-        if _v is not None:
-            self["selectedpoints"] = _v
-        _v = arg.pop("showlegend", None)
-        _v = showlegend if showlegend is not None else _v
-        if _v is not None:
-            self["showlegend"] = _v
-        _v = arg.pop("stream", None)
-        _v = stream if stream is not None else _v
-        if _v is not None:
-            self["stream"] = _v
-        _v = arg.pop("text", None)
-        _v = text if text is not None else _v
-        if _v is not None:
-            self["text"] = _v
-        _v = arg.pop("textsrc", None)
-        _v = textsrc if textsrc is not None else _v
-        if _v is not None:
-            self["textsrc"] = _v
-        _v = arg.pop("tickwidth", None)
-        _v = tickwidth if tickwidth is not None else _v
-        if _v is not None:
-            self["tickwidth"] = _v
-        _v = arg.pop("uid", None)
-        _v = uid if uid is not None else _v
-        if _v is not None:
-            self["uid"] = _v
-        _v = arg.pop("uirevision", None)
-        _v = uirevision if uirevision is not None else _v
-        if _v is not None:
-            self["uirevision"] = _v
-        _v = arg.pop("visible", None)
-        _v = visible if visible is not None else _v
-        if _v is not None:
-            self["visible"] = _v
-        _v = arg.pop("x", None)
-        _v = x if x is not None else _v
-        if _v is not None:
-            self["x"] = _v
-        _v = arg.pop("xaxis", None)
-        _v = xaxis if xaxis is not None else _v
-        if _v is not None:
-            self["xaxis"] = _v
-        _v = arg.pop("xcalendar", None)
-        _v = xcalendar if xcalendar is not None else _v
-        if _v is not None:
-            self["xcalendar"] = _v
-        _v = arg.pop("xhoverformat", None)
-        _v = xhoverformat if xhoverformat is not None else _v
-        if _v is not None:
-            self["xhoverformat"] = _v
-        _v = arg.pop("xperiod", None)
-        _v = xperiod if xperiod is not None else _v
-        if _v is not None:
-            self["xperiod"] = _v
-        _v = arg.pop("xperiod0", None)
-        _v = xperiod0 if xperiod0 is not None else _v
-        if _v is not None:
-            self["xperiod0"] = _v
-        _v = arg.pop("xperiodalignment", None)
-        _v = xperiodalignment if xperiodalignment is not None else _v
-        if _v is not None:
-            self["xperiodalignment"] = _v
-        _v = arg.pop("xsrc", None)
-        _v = xsrc if xsrc is not None else _v
-        if _v is not None:
-            self["xsrc"] = _v
-        _v = arg.pop("yaxis", None)
-        _v = yaxis if yaxis is not None else _v
-        if _v is not None:
-            self["yaxis"] = _v
-        _v = arg.pop("yhoverformat", None)
-        _v = yhoverformat if yhoverformat is not None else _v
-        if _v is not None:
-            self["yhoverformat"] = _v
-        _v = arg.pop("zorder", None)
-        _v = zorder if zorder is not None else _v
-        if _v is not None:
-            self["zorder"] = _v
+        self._init_provided('close', arg, close)
+        self._init_provided('closesrc', arg, closesrc)
+        self._init_provided('customdata', arg, customdata)
+        self._init_provided('customdatasrc', arg, customdatasrc)
+        self._init_provided('decreasing', arg, decreasing)
+        self._init_provided('high', arg, high)
+        self._init_provided('highsrc', arg, highsrc)
+        self._init_provided('hoverinfo', arg, hoverinfo)
+        self._init_provided('hoverinfosrc', arg, hoverinfosrc)
+        self._init_provided('hoverlabel', arg, hoverlabel)
+        self._init_provided('hovertext', arg, hovertext)
+        self._init_provided('hovertextsrc', arg, hovertextsrc)
+        self._init_provided('ids', arg, ids)
+        self._init_provided('idssrc', arg, idssrc)
+        self._init_provided('increasing', arg, increasing)
+        self._init_provided('legend', arg, legend)
+        self._init_provided('legendgroup', arg, legendgroup)
+        self._init_provided('legendgrouptitle', arg, legendgrouptitle)
+        self._init_provided('legendrank', arg, legendrank)
+        self._init_provided('legendwidth', arg, legendwidth)
+        self._init_provided('line', arg, line)
+        self._init_provided('low', arg, low)
+        self._init_provided('lowsrc', arg, lowsrc)
+        self._init_provided('meta', arg, meta)
+        self._init_provided('metasrc', arg, metasrc)
+        self._init_provided('name', arg, name)
+        self._init_provided('opacity', arg, opacity)
+        self._init_provided('open', arg, open)
+        self._init_provided('opensrc', arg, opensrc)
+        self._init_provided('selectedpoints', arg, selectedpoints)
+        self._init_provided('showlegend', arg, showlegend)
+        self._init_provided('stream', arg, stream)
+        self._init_provided('text', arg, text)
+        self._init_provided('textsrc', arg, textsrc)
+        self._init_provided('tickwidth', arg, tickwidth)
+        self._init_provided('uid', arg, uid)
+        self._init_provided('uirevision', arg, uirevision)
+        self._init_provided('visible', arg, visible)
+        self._init_provided('x', arg, x)
+        self._init_provided('xaxis', arg, xaxis)
+        self._init_provided('xcalendar', arg, xcalendar)
+        self._init_provided('xhoverformat', arg, xhoverformat)
+        self._init_provided('xperiod', arg, xperiod)
+        self._init_provided('xperiod0', arg, xperiod0)
+        self._init_provided('xperiodalignment', arg, xperiodalignment)
+        self._init_provided('xsrc', arg, xsrc)
+        self._init_provided('yaxis', arg, yaxis)
+        self._init_provided('yhoverformat', arg, yhoverformat)
+        self._init_provided('zorder', arg, zorder)
 
         # Read-only literals
         # ------------------
 
-        self._props["type"] = "ohlc"
-        arg.pop("type", None)
+        self._props['type'] = 'ohlc'
+        arg.pop('type', None)
 
         # Process unknown kwargs
         # ----------------------

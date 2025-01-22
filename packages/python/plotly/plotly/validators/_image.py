@@ -1,15 +1,16 @@
+
+
 import _plotly_utils.basevalidators
 
 
 class ImageValidator(_plotly_utils.basevalidators.CompoundValidator):
-    def __init__(self, plotly_name="image", parent_name="", **kwargs):
-        super(ImageValidator, self).__init__(
-            plotly_name=plotly_name,
-            parent_name=parent_name,
-            data_class_str=kwargs.pop("data_class_str", "Image"),
-            data_docs=kwargs.pop(
-                "data_docs",
-                """
+    def __init__(self, plotly_name='image',
+                       parent_name='',
+                       **kwargs):
+        super(ImageValidator, self).__init__(plotly_name=plotly_name,
+                         parent_name=parent_name,
+                 data_class_str=kwargs.pop('data_class_str', 'Image'),
+                 data_docs=kwargs.pop('data_docs', """
             colormodel
                 Color model used to map the numerical color
                 components described in `z` into colors. If
@@ -245,7 +246,5 @@ class ImageValidator(_plotly_utils.basevalidators.CompoundValidator):
             zsrc
                 Sets the source reference on Chart Studio Cloud
                 for `z`.
-""",
-            ),
-            **kwargs,
-        )
+"""),
+        **kwargs)
